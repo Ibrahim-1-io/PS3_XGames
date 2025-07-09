@@ -72,18 +72,20 @@ std::string cpu_get_simple_info(const std::vector<core_info_t>& core_info_list){
     return ss.str();
 }
 
+std::set<std::string,std::greater<>> get_processor_name_set(const std::vector<core_info_t>& core_info_list){
+    std::set<std::string,std::greater<>> processor_name_set;
+    if(!core_info_list.empty()){
+        std::for_each(core_info_list.begin(), core_info_list.end(), [&processor_name_set](const core_info_t& core_info) {
+            processor_name_set.insert(cpu_get_processor_name(core_info));
+        });
+    }
+    else{
+        const std::vector<core_info_t> core_info_list2= cpu_get_core_info();
+        std::for_each(core_info_list2.begin(), core_info_list2.end(), [&processor_name_set](const core_info_t& core_info) {
+            processor_name_set.insert(cpu_get_processor_name(core_info));
+        });
+    }
 
-std::set<core_info_t> get_processor_info_set(){
-    std::vector<core_info_t> core_info_list = cpu_get_core_info();
-    return std::set<core_info_t>(core_info_list.begin(), core_info_list.end());
-}
-
-std::set<std::string> get_processor_name_set(){
-    std::vector<core_info_t> core_info_list = cpu_get_core_info();
-    std::set<std::string> processor_name_set;
-    std::for_each(core_info_list.begin(), core_info_list.end(), [&processor_name_set](const core_info_t& core_info) {
-        processor_name_set.insert(cpu_get_processor_name(core_info));
-    });
     return processor_name_set;
 }
 

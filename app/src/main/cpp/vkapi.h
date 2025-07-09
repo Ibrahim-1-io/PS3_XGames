@@ -10,7 +10,7 @@
 #define VK_NO_PROTOTYPES
 #include <vulkan/vulkan.h>
 
-#define VKFN(func) extern PFN_##func _##func
+#define VKFN(func) extern PFN_##func func##_
 #include "vksym.h"
 #undef VKFN
 

@@ -19,7 +19,7 @@ import java.io.File;
 
 public class EmulatorActivity extends Activity implements View.OnGenericMotionListener,SurfaceHolder.Callback
 {
-    { System.loadLibrary("e"); }
+    //{ System.loadLibrary("e"); }
 
     private SparseIntArray keysMap = new SparseIntArray();
     private GameFrameView gv;

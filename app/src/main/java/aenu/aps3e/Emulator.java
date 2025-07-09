@@ -65,15 +65,18 @@ public class Emulator
 
 	public static class Config{
 
-		String config_path;
+		String config_path=null;
 		private long n_handle;
 
-		private Config(String config_path) throws ConfigFileException
+		/*private Config(String config_path) throws ConfigFileException
 		{
 			this.config_path=config_path;
 			if((n_handle=native_open_config_file(config_path))==0)
 				throw new ConfigFileException();
-		}
+		}*/
+
+		private native long native_open_config(String config_str) ;
+		private native String native_close_config(long n_handle);
 		private native long native_open_config_file(String config_path) ;
 		private native String native_load_config_entry(long n_handle,String tag);
 
@@ -84,7 +87,19 @@ public class Emulator
 		private native void native_close_config_file(long n_handle,String config_path);
 		public static Config open_config_file(String config_path) throws ConfigFileException
 		{
-			return new Config(config_path);
+			Config config=new Config();
+			config.config_path=config_path;
+			if((config.n_handle=config.native_open_config_file(config_path))==0)
+				throw new ConfigFileException();
+			return config;
+		}
+
+		public static Config open_config_from_string(String config_str) throws ConfigFileException
+		{
+			Config config=new Config();
+			if((config.n_handle=config.native_open_config(config_str))==0)
+				throw new ConfigFileException();
+			return config;
 		}
 
 		public String load_config_entry(String tag)
@@ -108,7 +123,16 @@ public class Emulator
 		}
 		public void close_config_file()
 		{
+			if(config_path==null)
+				throw new RuntimeException("should use method close_config");
 			native_close_config_file(n_handle,config_path);
+		}
+
+		public String close_config()
+		{
+			if(config_path!=null)
+				throw new RuntimeException("should use method close_config_file");
+			return native_close_config(n_handle);
 		}
 	}
 
@@ -457,6 +481,9 @@ public class Emulator
 	}
 
 	 public native String[] get_support_llvm_cpu_list();
+
+
+	public native String[] get_native_llvm_cpu_list();
 
 	public native String[] get_vulkan_physical_dev_list();
 

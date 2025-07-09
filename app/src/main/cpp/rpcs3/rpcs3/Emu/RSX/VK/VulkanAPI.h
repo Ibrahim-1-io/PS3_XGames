@@ -6,7 +6,7 @@
 #define VK_USE_PLATFORM_MACOS_MVK
 #elif defined(__ANDROID__)
 #define VK_USE_PLATFORM_ANDROID_KHR
-#define VK_NO_PROTOTYPES
+//#define VK_NO_PROTOTYPES
 #elif HAVE_X11
 #define VK_USE_PLATFORM_XLIB_KHR
 #endif
@@ -29,12 +29,18 @@ constexpr VkDriverId VK_DRIVER_ID_MESA_HONEYKRISP = static_cast<VkDriverId>(26);
 #endif
 
 extern bool cfg_vertex_buffer_upload_mode_use_buffer_view();
+//#define DBG_ADRENO_GPU_MEM 1
+
+#include "meminfo.h"
+#ifdef DBG_ADRENO_GPU_MEM
+extern void save_msg(const std::string& path,const std::string& tag,int64_t v);
+#endif
 
 #define DECL_VK_FUNCTION 1
 #include "VKPFNTable.h"
 #undef DECL_VK_FUNCTION
 
-#if 0
+#ifdef DBG_ADRENO_GPU_MEM
 #define VK_FUNC(func) extern PFN_##func _##func
 #define INSTANCE_VK_FUNCTION
 #define DEVICE_VK_FUNCTION

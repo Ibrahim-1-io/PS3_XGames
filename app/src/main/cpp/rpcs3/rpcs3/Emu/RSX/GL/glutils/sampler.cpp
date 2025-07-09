@@ -19,8 +19,10 @@ namespace gl
 		case rsx::texture_wrap_mode::border: return GL_CLAMP_TO_BORDER;
 		case rsx::texture_wrap_mode::clamp: return GL_CLAMP_TO_EDGE;
 		case rsx::texture_wrap_mode::mirror_once_clamp_to_edge: return GL_MIRROR_CLAMP_TO_EDGE_EXT;
+#ifndef USE_GLES
 		case rsx::texture_wrap_mode::mirror_once_border: return GL_MIRROR_CLAMP_TO_BORDER_EXT;
 		case rsx::texture_wrap_mode::mirror_once_clamp: return GL_MIRROR_CLAMP_EXT;
+#endif
 		}
 
 		rsx_log.error("Texture wrap error: bad wrap (%d)", static_cast<u32>(wrap));
@@ -113,14 +115,18 @@ namespace gl
 			}
 
 			set_parameteri(GL_TEXTURE_MIN_FILTER, min_filter);
+#ifndef USE_GLES
 			set_parameterf(GL_TEXTURE_LOD_BIAS, 0.f);
+#endif
 			set_parameterf(GL_TEXTURE_MIN_LOD, -1000.f);
 			set_parameterf(GL_TEXTURE_MAX_LOD, 1000.f);
 		}
 		else
 		{
 			set_parameteri(GL_TEXTURE_MIN_FILTER, tex_min_filter(tex.min_filter()));
+#ifndef USE_GLES
 			set_parameterf(GL_TEXTURE_LOD_BIAS, tex.bias());
+#endif
 			set_parameterf(GL_TEXTURE_MIN_LOD, tex.min_lod());
 			set_parameterf(GL_TEXTURE_MAX_LOD, tex.max_lod());
 		}
@@ -171,7 +177,9 @@ namespace gl
 		set_parameteri(GL_TEXTURE_WRAP_R, wrap_mode(tex.wrap_r()));
 		set_parameteri(GL_TEXTURE_MIN_FILTER, GL_NEAREST);
 		set_parameteri(GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+#ifndef USE_GLES
 		set_parameterf(GL_TEXTURE_LOD_BIAS, tex.bias());
+#endif
 		set_parameterf(GL_TEXTURE_MIN_LOD, tex.min_lod());
 		set_parameterf(GL_TEXTURE_MAX_LOD, tex.max_lod());
 		set_parameteri(GL_TEXTURE_COMPARE_MODE, GL_NONE);
@@ -184,7 +192,9 @@ namespace gl
 		set_parameteri(GL_TEXTURE_WRAP_R, GL_REPEAT);
 		set_parameteri(GL_TEXTURE_MIN_FILTER, default_filter);
 		set_parameteri(GL_TEXTURE_MAG_FILTER, default_filter);
+#ifndef USE_GLES
 		set_parameterf(GL_TEXTURE_LOD_BIAS, 0.f);
+#endif
 		set_parameteri(GL_TEXTURE_MIN_LOD, 0);
 		set_parameteri(GL_TEXTURE_MAX_LOD, 0);
 		set_parameteri(GL_TEXTURE_COMPARE_MODE, GL_NONE);

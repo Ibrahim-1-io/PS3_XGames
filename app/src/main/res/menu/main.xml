@@ -32,5 +32,9 @@
 	<item
 		android:id="@+id/menu_set_iso_dir"
 		android:title="@string/set_iso_dir"/>
+
+	<item
+		android:id="@+id/menu_quick_start_page"
+		android:title="@string/quick_start_page"/>
 	
 </menu>

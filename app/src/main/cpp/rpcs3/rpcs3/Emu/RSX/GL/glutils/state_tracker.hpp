@@ -258,7 +258,9 @@ namespace gl
 			const u64 value = (static_cast<u64>(std::bit_cast<u32>(max)) << 32) | std::bit_cast<u32>(min);
 			if (!test_and_set_property(DEPTH_RANGE, value))
 			{
-#ifndef USE_GLES
+#ifdef USE_GLES
+                glDepthRangef(min, max);
+#else
 				if (get_driver_caps().NV_depth_buffer_float_supported)
 				{
 					glDepthRangedNV(min, max);
@@ -347,7 +349,17 @@ namespace gl
 			{
 				for (u32 i = 0; i < 6; ++i)
 				{
-#ifndef USE_GLES
+#ifdef USE_GLES
+
+                    if (mask & (1 << i))
+					{
+						glEnable(GL_CLIP_DISTANCE0_EXT + i);
+					}
+					else
+					{
+						glDisable(GL_CLIP_DISTANCE0_EXT + i);
+					}
+#else
 					if (mask & (1 << i))
 					{
 						glEnable(GL_CLIP_DISTANCE0 + i);

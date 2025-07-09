@@ -142,6 +142,7 @@ namespace vk
 			bool require_rw_barrier = true;
 			image_readback_options_t xfer_options{};
 			xfer_options.swap_bytes = require_format_conversion && pack_unpack_swap_bytes;
+
 			vk::copy_image_to_buffer(cmd, src, working_buffer, region, xfer_options);
 
 			// NOTE: For depth/stencil formats, copying to buffer and byteswap are combined into one step above
@@ -157,9 +158,9 @@ namespace vk
 				}
 				else if (elem_size == 4)
 				{
-                    if(is_ror8)
+                    /*if(replace_swap_as_ror8)
                         shuffle_kernel = vk::get_compute_task<vk::cs_shuffle_ror8>();
-                        else
+                        else*/
 					shuffle_kernel = vk::get_compute_task<vk::cs_shuffle_32>();
 				}
 				else
@@ -455,11 +456,13 @@ namespace vk
 			if (section.xform == rsx::surface_transform::coordinate_transform)
 			{
 				// Dimensions were given in 'dst' space. Work out the real source coordinates
-				const auto src_bpp = vk::get_format_texel_width(section.src->format());
+				const auto _src_bpp = vk::get_format_texel_width(section.src->format());
+                static const bool force_convert_texture=g_cfg.video.force_convert_texture.get();
+                //FIXME 需要验证
+                const auto src_bpp = force_convert_texture?(_src_bpp==2?dst_bpp:_src_bpp):_src_bpp;
 				src_x = (src_x * dst_bpp) / src_bpp;
 				src_w = utils::aligned_div<u16>(src_w * dst_bpp, src_bpp);
-
-				transform &= ~(rsx::surface_transform::coordinate_transform);
+                transform &= ~(rsx::surface_transform::coordinate_transform);
 			}
 
 			if (auto surface = dynamic_cast<vk::render_target*>(section.src))
@@ -481,7 +484,7 @@ namespace vk
 					// TODO: Handle level and layer offsets
 					const areai src_rect = coordi{{ src_x, src_y }, { src_w, src_h }};
 					const areai dst_rect = coordi{{ section.dst_x, section.dst_y }, { section.dst_w, section.dst_h }};
-					vk::copy_image_typeless(cmd, section.src, dst, src_rect, dst_rect, 1);
+                    vk::copy_image_typeless(cmd, section.src, dst, src_rect, dst_rect, 1);
 
 					section.src->pop_layout(cmd);
 					continue;
@@ -492,6 +495,7 @@ namespace vk
 
 				const areai src_rect = coordi{{ src_x, src_y }, { src_w, src_h }};
 				const areai dst_rect = coordi{{ 0, 0 }, { convert_w, src_h }};
+
 				vk::copy_image_typeless(cmd, section.src, src_image, src_rect, dst_rect, 1);
 				src_image->change_layout(cmd, VK_IMAGE_LAYOUT_TRANSFER_SRC_OPTIMAL);
 
@@ -730,6 +734,7 @@ namespace vk
 			} };
 
 			vk::change_image_layout(cmd, image.get(), VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL);
+
 			copy_transfer_regions_impl(cmd, image.get(), region);
 			vk::change_image_layout(cmd, image.get(), VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL);
 		}
@@ -780,7 +785,6 @@ namespace vk
 			VkClearDepthStencilValue clear = { 1.f, 0 };
 			_vkCmdClearDepthStencilImage(cmd, image->value, image->current_layout, &clear, 1, &dst_range);
 		}
-
 		copy_transfer_regions_impl(cmd, image, sections_to_copy);
 
 		vk::change_image_layout(cmd, image, VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL, dst_range);
@@ -853,7 +857,6 @@ namespace vk
 				_vkCmdClearDepthStencilImage(cmd, image->value, image->current_layout, &clear, 1, &dst_range);
 			}
 		}
-
 		copy_transfer_regions_impl(cmd, image, sections_to_copy);
 
 		vk::change_image_layout(cmd, image, VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL, dst_range);
@@ -920,6 +923,7 @@ namespace vk
 
 		auto dst = dst_view->image();
 		dst->push_layout(cmd, VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL);
+
 		copy_transfer_regions_impl(cmd, dst, region);
 		dst->pop_layout(cmd);
 	}

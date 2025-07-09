@@ -6,6 +6,45 @@
 
 namespace gl
 {
+
+#ifdef USE_GLES
+	class ring_buffer final: public buffer
+	{
+	protected:
+		u32 m_data_loc = 0;
+		void* m_memory_mapping = nullptr;
+
+		fence m_fence;
+
+		u32 m_mapped_bytes = 0;
+		u32 m_mapping_offset = 0;
+		u32 m_alignment_offset = 0;
+	public:
+		~ring_buffer() = default;
+
+		void bind()
+		{
+			buffer::bind();
+		}
+
+		 void recreate(GLsizeiptr size, const void* data = nullptr);
+
+		void create(target target_, GLsizeiptr size, const void* data_ = nullptr);
+
+		 std::pair<void*, u32> alloc_from_heap(u32 alloc_size, u16 alignment);
+
+		 void remove();
+
+		 void reserve_storage_on_heap(u32 /*alloc_size*/);
+
+		 void unmap();
+
+		 void flush() {}
+
+		 void notify() {}
+	};
+	using legacy_ring_buffer = ring_buffer;
+	#else
 	class ring_buffer : public buffer
 	{
 	protected:
@@ -81,7 +120,7 @@ namespace gl
 
 		void unmap() override;
 	};
-
+	#endif
 	// Simple GPU-side ring buffer with no map/unmap semantics
 	class scratch_ring_buffer
 	{

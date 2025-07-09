@@ -7,7 +7,6 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
-import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -15,8 +14,6 @@ import android.os.ParcelFileDescriptor;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.ForegroundColorSpan;
-import android.text.style.StrikethroughSpan;
-import android.text.style.StyleSpan;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -34,21 +31,22 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
-import androidx.preference.CheckBoxPreference;
-import androidx.preference.ListPreference;
-import androidx.preference.ListPreferenceDialogFragmentCompat;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceDataStore;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceScreen;
-//import androidx.preference.SeekBarPreference;
-import aenu.preference.SeekbarPreference;
+
+import aenu.preference.CheckBoxPreference;
+import aenu.preference.ListPreference;
+import aenu.preference.SeekBarPreference;
 
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -64,8 +62,19 @@ public class EmulatorSettings extends AppCompatActivity {
 
     static final String EXTRA_CONFIG_PATH="config_path";
 
-    static final int REQUEST_CODE_SELECT_CUSTOM_DRIVER=6001;
-    static final int REQUEST_CODE_SELECT_CUSTOM_FONT=6002;
+    static final int REQUEST_CODE_SELECT_CUSTOM_DRIVER=6101;
+    static final int REQUEST_CODE_SELECT_CUSTOM_FONT=6102;
+
+    static final int WARNING_COLOR=0xffff8000;
+
+    static final String Miscellaneous$Font_File_Selection="Miscellaneous|Font File Selection";
+    static final String Miscellaneous$Custom_Font_File_Path="Miscellaneous|Custom Font File Path";
+    static final String Video$Vulkan$Use_Custom_Driver="Video|Vulkan|Use Custom Driver";
+    static final String Video$Vulkan$Custom_Driver_Library_Path="Video|Vulkan|Custom Driver Library Path";
+    static final String Video$Use_BGRA_Format="Video|Use BGRA Format";
+    static final String Video$Force_Convert_Texture="Video|Force Convert Texture";
+    static final String Video$Texture_Upload_Mode ="Video|Texture Upload Mode";
+    static final String Core$Use_LLVM_CPU="Core|Use LLVM CPU";
 
     @SuppressLint("ValidFragment")
     public static class SettingsFragment extends PreferenceFragmentCompat implements
@@ -153,7 +162,7 @@ public class EmulatorSettings extends AppCompatActivity {
             }
         };
 
-        Preference reset_as_default_pref(){
+        Preference reset_as_default_pref(File _config_file){
             Preference p=new Preference(requireContext());
             p.setTitle(R.string.reset_as_default);
             p.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener(){
@@ -167,8 +176,9 @@ public class EmulatorSettings extends AppCompatActivity {
                                         config.close_config_file();
                                         config=null;
                                     }
-                                    Application.get_global_config_file().delete();
-                                    Application.extractAssetsDir(requireContext(),"config",Application.get_global_config_file().getParentFile());
+                                    //Application.get_global_config_file().delete();
+                                    //Application.extractAssetsDir(requireContext(),"config",Application.get_global_config_file().getParentFile());
+                                    Application.copy_file(Application.get_default_config_file(),_config_file);
                                     requireActivity().finish();
                                 }
                             })
@@ -223,10 +233,13 @@ public class EmulatorSettings extends AppCompatActivity {
             setPreferencesFromResource(R.xml.emulator_settings, rootKey);
             root_pref=getPreferenceScreen();
 
-            if(is_global)
-            root_pref.addPreference(reset_as_default_pref());
-            else
-            root_pref.addPreference(reset_as_global_pref());
+            if(is_global) {
+                root_pref.addPreference(reset_as_default_pref(Application.get_global_config_file()));
+            }
+            else{
+                root_pref.addPreference(reset_as_default_pref(new File(config_path)));
+                root_pref.addPreference(reset_as_global_pref());
+            }
 
             requireActivity().getOnBackPressedDispatcher().addCallback(back_callback);
 
@@ -248,7 +261,6 @@ public class EmulatorSettings extends AppCompatActivity {
 
 
             final String[] BOOL_KEYS={
-                    "Video|Force Convert Texture",
                     "Miscellaneous|Memory Debug overlay",
 
                     "Video|Vulkan|Debug|disable_barycentric_coords",
@@ -334,10 +346,11 @@ public class EmulatorSettings extends AppCompatActivity {
                     "Video|DECR memory layout",
                     "Video|Allow Host GPU Labels",
                     "Video|Disable Asynchronous Memory Manager",
-                    "Video|Use BGRA Format",
+                    Video$Use_BGRA_Format,
+                    Video$Force_Convert_Texture,
                     "Video|Vulkan|Force FIFO present mode",
                     "Video|Vulkan|Asynchronous Texture Streaming 2",
-                    "Video|Vulkan|Use Custom Driver",
+                    Video$Vulkan$Use_Custom_Driver,
                     "Video|Vulkan|Custom Driver Force Max Clocks",
                     "Video|Performance Overlay|Enabled",
                     "Video|Performance Overlay|Enable Framerate Graph",
@@ -445,7 +458,7 @@ public class EmulatorSettings extends AppCompatActivity {
                     "Video|3D Display Mode",
                     "Video|Output Scaling Mode",
                     "Video|Vertex Buffer Upload Mode",
-                    "Video|Texture Upload Mode",
+                    Video$Texture_Upload_Mode,
                     "Video|Vulkan|Exclusive Fullscreen Mode",
                     "Video|Vulkan|Asynchronous Queue Scheduler",
                     "Video|Performance Overlay|Detail level",
@@ -473,7 +486,7 @@ public class EmulatorSettings extends AppCompatActivity {
                     "System|Language",
                     "System|Keyboard Type",
                     "System|Enter button assignment",
-                    "Miscellaneous|Font File Selection",
+                    Miscellaneous$Font_File_Selection
             };
             final String[] NODE_KEYS={
                     "Core",
@@ -498,11 +511,12 @@ public class EmulatorSettings extends AppCompatActivity {
                     pref.setChecked(val);
                 }
                 //pref.setOnPreferenceChangeListener(this);
+                //pref.set_title_color(WARNING_COLOR);
                 pref.setPreferenceDataStore(data_store);
             }
 
             for (String key:INT_KEYS){
-                SeekbarPreference pref=findPreference(key);
+                SeekBarPreference pref=findPreference(key);
                 String val_str=config.load_config_entry(key);
                 if (val_str!=null) {
                     //FIXME
@@ -553,21 +567,21 @@ public class EmulatorSettings extends AppCompatActivity {
             findPreference("Core|Libraries Control").setOnPreferenceClickListener(this);
 
             String val;
-            findPreference("Core|Use LLVM CPU").setOnPreferenceClickListener(this);
-            if((val=config.load_config_entry("Core|Use LLVM CPU"))!=null) findPreference("Core|Use LLVM CPU").setSummary(val);
+            findPreference(Core$Use_LLVM_CPU).setOnPreferenceClickListener(this);
+            if((val=config.load_config_entry(Core$Use_LLVM_CPU))!=null) findPreference(Core$Use_LLVM_CPU).setSummary(val);
 
             findPreference("Video|Vulkan|Adapter").setOnPreferenceClickListener(this);
             if((val=config.load_config_entry("Video|Vulkan|Adapter"))!=null) findPreference("Video|Vulkan|Adapter").setSummary(val);
 
-            findPreference("Video|Vulkan|Custom Driver Library Path").setOnPreferenceClickListener(this);
-            findPreference("Miscellaneous|Custom Font File Path").setOnPreferenceClickListener(this);
+            findPreference(Video$Vulkan$Custom_Driver_Library_Path).setOnPreferenceClickListener(this);
+            findPreference(Miscellaneous$Custom_Font_File_Path).setOnPreferenceClickListener(this);
 
             setup_costom_driver_library_path(null);
             setup_costom_font_path(null);
 
             if(!Emulator.get.support_custom_driver()){
-                findPreference("Video|Vulkan|Use Custom Driver").setEnabled(false);
-                findPreference("Video|Vulkan|Custom Driver Library Path").setEnabled(false);
+                findPreference(Video$Vulkan$Use_Custom_Driver).setEnabled(false);
+                findPreference(Video$Vulkan$Custom_Driver_Library_Path).setEnabled(false);
                 findPreference("Video|Vulkan|Custom Driver Force Max Clocks").setEnabled(false);
                 //return;
             }
@@ -608,8 +622,8 @@ public class EmulatorSettings extends AppCompatActivity {
             f.show(getParentFragmentManager(), "DIALOG_FRAGMENT_TAG");
             return;
         }
-        if (pref instanceof aenu.preference.SeekbarPreference) {
-            final DialogFragment f = aenu.preference.SeekbarPreference.SeekbarPreferenceFragmentCompat.newInstance(pref.getKey());
+        if (pref instanceof SeekBarPreference) {
+            final DialogFragment f = SeekBarPreference.SeekBarPreferenceFragmentCompat.newInstance(pref.getKey());
             f.setTargetFragment(this, 0);
             f.show(getParentFragmentManager(), "DIALOG_FRAGMENT_TAG");
             return;
@@ -620,7 +634,7 @@ public class EmulatorSettings extends AppCompatActivity {
 
 
         void setup_costom_driver_library_path(String new_path) {
-            final String key="Video|Vulkan|Custom Driver Library Path";
+            final String key=Video$Vulkan$Custom_Driver_Library_Path;
             if(new_path==null){
                 String val_str=config.load_config_entry(key);
                 if (val_str!=null) {
@@ -634,7 +648,7 @@ public class EmulatorSettings extends AppCompatActivity {
         }
 
         void setup_costom_font_path(String new_path) {
-            final String key="Miscellaneous|Custom Font File Path";
+            final String key=Miscellaneous$Custom_Font_File_Path;
             if(new_path==null){
                 String val_str=config.load_config_entry(key);
                 if (val_str!=null) {
@@ -684,7 +698,7 @@ public class EmulatorSettings extends AppCompatActivity {
         @Override
         public boolean onPreferenceClick(@NonNull Preference preference) {
 
-            if(preference.getKey().equals("Core|Use LLVM CPU")){
+            if(preference.getKey().equals(Core$Use_LLVM_CPU)){
                 show_select_llvm_cpu_list();
                 return false;
             }
@@ -694,11 +708,11 @@ public class EmulatorSettings extends AppCompatActivity {
                 return false;
             }
 
-            if(preference.getKey().equals("Video|Vulkan|Custom Driver Library Path")){
+            if(preference.getKey().equals(Video$Vulkan$Custom_Driver_Library_Path)){
                 show_select_custom_driver_list();
                 return false;
             }
-            if(preference.getKey().equals("Miscellaneous|Custom Font File Path")){
+            if(preference.getKey().equals(Miscellaneous$Custom_Font_File_Path)){
                 //request_select_font_file();
                 show_select_font_file_list();
                 return false;
@@ -729,8 +743,8 @@ public class EmulatorSettings extends AppCompatActivity {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     dialog.dismiss();
-                    config.save_config_entry("Core|Use LLVM CPU",items[which]);
-                    findPreference("Core|Use LLVM CPU").setSummary(items[which]);
+                    config.save_config_entry(Core$Use_LLVM_CPU,items[which]);
+                    findPreference(Core$Use_LLVM_CPU).setSummary(items[which]);
                 }
             });
         }
@@ -861,7 +875,11 @@ public class EmulatorSettings extends AppCompatActivity {
             ZipInputStream zis = new ZipInputStream(fis);
             for (ZipEntry ze = zis.getNextEntry(); ze != null; ze = zis.getNextEntry()) {
                 if (ze.getName().endsWith(".so")) {
-                    String lib_path=new File(Application.get_custom_driver_dir() , ze.getName()).getAbsolutePath();
+                    //String lib_path=new File(Application.get_custom_driver_dir() , ze.getName()).getAbsolutePath();
+                    String lib_name=MainActivity.getFileNameFromUri(uri);
+                    lib_name=lib_name.substring(0,lib_name.lastIndexOf('.'));
+                    lib_name=lib_name+".so";
+                    String lib_path=new File(Application.get_custom_driver_dir() , lib_name).getAbsolutePath();
                     FileOutputStream lib_os = new FileOutputStream(lib_path);
                     try {
                         byte[] buffer = new byte[16384];
@@ -1208,4 +1226,5 @@ libs.put("libwmadec.sprx", 0);
             return convertView;
         }
     }
+
 }

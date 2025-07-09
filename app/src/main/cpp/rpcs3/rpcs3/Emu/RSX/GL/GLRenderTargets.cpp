@@ -14,8 +14,13 @@ color_format rsx::internals::surface_color_format_to_gl(rsx::surface_color_forma
 		return{ ::gl::texture::type::ushort_5_6_5, ::gl::texture::format::rgb, ::gl::texture::internal_format::rgb565, true };
 
 	case rsx::surface_color_format::a8r8g8b8:
-		return{ ::gl::texture::type::uint_8_8_8_8_rev, ::gl::texture::format::bgra, ::gl::texture::internal_format::bgra8, true };
 
+#ifdef USE_GLES
+
+		return {::gl::texture::type::ubyte, ::gl::texture::format::rgba, ::gl::texture::internal_format::bgra8, true};
+		#else
+		return{ ::gl::texture::type::uint_8_8_8_8_rev, ::gl::texture::format::bgra, ::gl::texture::internal_format::bgra8, true };
+		#endif
 	//These formats discard their alpha component, forced to 0 or 1
 	//All XBGR formats will have remapping before they can be read back in shaders as DRGB8
 	//Prefix o = 1, z = 0
@@ -28,20 +33,45 @@ color_format rsx::internals::surface_color_format_to_gl(rsx::surface_color_forma
 		{ ::gl::texture::channel::zero, ::gl::texture::channel::r, ::gl::texture::channel::g, ::gl::texture::channel::b } };
 
 	case rsx::surface_color_format::x8r8g8b8_z8r8g8b8:
+
+#ifdef USE_GLES
+
+		return {::gl::texture::type::ubyte, ::gl::texture::format::rgba, ::gl::texture::internal_format::bgra8, true,
+			{::gl::texture::channel::zero, ::gl::texture::channel::r, ::gl::texture::channel::g, ::gl::texture::channel::b}};
+		#else
 		return{ ::gl::texture::type::uint_8_8_8_8_rev, ::gl::texture::format::bgra, ::gl::texture::internal_format::bgra8, true,
 		{ ::gl::texture::channel::zero, ::gl::texture::channel::r, ::gl::texture::channel::g, ::gl::texture::channel::b } };
+		#endif
 
 	case rsx::surface_color_format::x8b8g8r8_o8b8g8r8:
+
+#ifdef USE_GLES
+		return {::gl::texture::type::ubyte, ::gl::texture::format::rgba, ::gl::texture::internal_format::rgba8, true,
+			{::gl::texture::channel::one, ::gl::texture::channel::r, ::gl::texture::channel::g, ::gl::texture::channel::b}};
+#else
 		return{ ::gl::texture::type::uint_8_8_8_8_rev, ::gl::texture::format::rgba, ::gl::texture::internal_format::rgba8, true,
 		{ ::gl::texture::channel::one, ::gl::texture::channel::r, ::gl::texture::channel::g, ::gl::texture::channel::b } };
-
+		#endif
 	case rsx::surface_color_format::x8b8g8r8_z8b8g8r8:
+
+#ifdef USE_GLES
+
+		return {::gl::texture::type::ubyte, ::gl::texture::format::rgba, ::gl::texture::internal_format::rgba8, true,
+			{::gl::texture::channel::zero, ::gl::texture::channel::r, ::gl::texture::channel::g, ::gl::texture::channel::b}};
+		#else
 		return{ ::gl::texture::type::uint_8_8_8_8_rev, ::gl::texture::format::rgba, ::gl::texture::internal_format::rgba8, true,
 		{ ::gl::texture::channel::zero, ::gl::texture::channel::r, ::gl::texture::channel::g, ::gl::texture::channel::b } };
-
+		#endif
 	case rsx::surface_color_format::x8r8g8b8_o8r8g8b8:
+
+#ifdef USE_GLES
+
+		return {::gl::texture::type::ubyte, ::gl::texture::format::rgba, ::gl::texture::internal_format::bgra8, true,
+			{::gl::texture::channel::one, ::gl::texture::channel::r, ::gl::texture::channel::g, ::gl::texture::channel::b}};
+		#else
 		return{ ::gl::texture::type::uint_8_8_8_8_rev, ::gl::texture::format::bgra, ::gl::texture::internal_format::bgra8, true,
 		{ ::gl::texture::channel::one, ::gl::texture::channel::r, ::gl::texture::channel::g, ::gl::texture::channel::b } };
+		#endif
 
 	case rsx::surface_color_format::w16z16y16x16:
 		return{ ::gl::texture::type::f16, ::gl::texture::format::rgba, ::gl::texture::internal_format::rgba16f, true};
@@ -62,7 +92,12 @@ color_format rsx::internals::surface_color_format_to_gl(rsx::surface_color_forma
 		{ ::gl::texture::channel::r, ::gl::texture::channel::r, ::gl::texture::channel::r, ::gl::texture::channel::r } };
 
 	case rsx::surface_color_format::a8b8g8r8:
+
+#ifdef USE_GLES
+		return {::gl::texture::type::ubyte, ::gl::texture::format::rgba, ::gl::texture::internal_format::rgba8, true};
+		#else
 		return{ ::gl::texture::type::uint_8_8_8_8_rev, ::gl::texture::format::rgba, ::gl::texture::internal_format::rgba8, true };
+		#endif
 
 	default:
 		fmt::throw_exception("Unsupported surface color format 0x%x", static_cast<u32>(color_format));

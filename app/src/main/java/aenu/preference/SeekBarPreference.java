@@ -21,23 +21,20 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.preference.DialogPreference;
-import androidx.preference.ListPreference;
-import androidx.preference.ListPreferenceDialogFragmentCompat;
 import androidx.preference.PreferenceDialogFragmentCompat;
 import androidx.preference.PreferenceViewHolder;
-import androidx.preference.SeekBarPreference;
 
 import androidx.preference.R;
 
-public class SeekbarPreference extends DialogPreference {
+public class SeekBarPreference extends DialogPreference {
 
 
-    public static class SeekbarPreferenceFragmentCompat extends PreferenceDialogFragmentCompat {
+    public static class SeekBarPreferenceFragmentCompat extends PreferenceDialogFragmentCompat {
 
-        private static final String SAVE_STATE_VALUE = "SeekbarPreferenceFragmentCompat.value";
-        private static final String SAVE_STATE_MIN = "SeekbarPreferenceFragmentCompat.min";
+        private static final String SAVE_STATE_VALUE = "SeekBarPreferenceFragmentCompat.value";
+        private static final String SAVE_STATE_MIN = "SeekBarPreferenceFragmentCompat.min";
         private static final String SAVE_STATE_MAX =
-                "SeekbarPreferenceFragmentCompat.max";
+                "SeekBarPreferenceFragmentCompat.max";
 
         int m_value;
         int m_min;
@@ -46,9 +43,9 @@ public class SeekbarPreference extends DialogPreference {
         EditText mEditText;
 
         @NonNull
-        public static SeekbarPreference.SeekbarPreferenceFragmentCompat newInstance(String key) {
-            final SeekbarPreference.SeekbarPreferenceFragmentCompat fragment =
-                    new SeekbarPreference.SeekbarPreferenceFragmentCompat();
+        public static SeekBarPreference.SeekBarPreferenceFragmentCompat newInstance(String key) {
+            final SeekBarPreference.SeekBarPreferenceFragmentCompat fragment =
+                    new SeekBarPreference.SeekBarPreferenceFragmentCompat();
             final Bundle b = new Bundle(1);
             b.putString(ARG_KEY, key);
             fragment.setArguments(b);
@@ -59,7 +56,7 @@ public class SeekbarPreference extends DialogPreference {
         public void onCreate(@Nullable Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             if (savedInstanceState == null) {
-                final SeekbarPreference preference = getSeekbarPreference();
+                final SeekBarPreference preference = getSeekBarPreference();
                 m_value = preference.getValue();
                 m_min = preference.getMin();
                 m_max = preference.getMax();
@@ -78,8 +75,8 @@ public class SeekbarPreference extends DialogPreference {
             outState.putInt(SAVE_STATE_MAX, m_max);
         }
 
-        private SeekbarPreference getSeekbarPreference() {
-            return (SeekbarPreference) getPreference();
+        private SeekBarPreference getSeekBarPreference() {
+            return (SeekBarPreference) getPreference();
         }
 
 
@@ -105,7 +102,7 @@ public class SeekbarPreference extends DialogPreference {
                         try{
                             int value = Integer.parseInt(mEditText.getText().toString());
                             if (value >= m_min && value <= m_max){
-                                final SeekbarPreference preference = getSeekbarPreference();
+                                final SeekBarPreference preference = getSeekBarPreference();
                                 if(preference.callChangeListener(value))
                                     preference.setValue(value);
                             }
@@ -124,7 +121,7 @@ public class SeekbarPreference extends DialogPreference {
                 try{
                     int value = Integer.parseInt(mEditText.getText().toString());
                     if (value >= m_min && value <= m_max){
-                        final SeekbarPreference preference = getSeekbarPreference();
+                        final SeekBarPreference preference = getSeekBarPreference();
                         if(preference.callChangeListener(value))
                             preference.setValue(value);
                     }
@@ -209,7 +206,7 @@ public class SeekbarPreference extends DialogPreference {
         }
     };
 
-    public SeekbarPreference(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+    public SeekBarPreference(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
 
         setDialogLayoutResource(aenu.aps3e.R.layout.edit_seek_bar);
@@ -229,23 +226,25 @@ public class SeekbarPreference extends DialogPreference {
         a.recycle();
     }
 
-    public SeekbarPreference(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public SeekBarPreference(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
 
         this(context, attrs, defStyleAttr, 0);
     }
 
 
-    public SeekbarPreference(@NonNull Context context, @Nullable AttributeSet attrs) {
+    public SeekBarPreference(@NonNull Context context, @Nullable AttributeSet attrs) {
         this(context, attrs, R.attr.seekBarPreferenceStyle);
     }
 
-    public SeekbarPreference(@NonNull Context context) {
+    public SeekBarPreference(@NonNull Context context) {
         this(context, null);
     }
+
 
     @Override
     public void onBindViewHolder(@NonNull PreferenceViewHolder holder) {
         super.onBindViewHolder(holder);
+
         holder.itemView.setOnKeyListener(mSeekBarKeyListener);
         mSeekBar = (SeekBar) holder.findViewById(R.id.seekbar);
         mSeekBarValueTextView = (TextView) holder.findViewById(R.id.seekbar_value);

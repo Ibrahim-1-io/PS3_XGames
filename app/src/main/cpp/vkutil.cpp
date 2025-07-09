@@ -26,19 +26,19 @@ std::optional<VkInstance> vk_create_instance(const char * name) {
         inst_create_info.pApplicationInfo = &appinfo;
 
         VkInstance inst;
-        if (_vkCreateInstance(&inst_create_info, nullptr, &inst)!= VK_SUCCESS) {
+        if (vkCreateInstance_(&inst_create_info, nullptr, &inst)!= VK_SUCCESS) {
             return std::nullopt;
         }
         return inst;
 }
 
 void vk_destroy_instance(VkInstance inst) {
-    _vkDestroyInstance(inst, nullptr);
+    vkDestroyInstance_(inst, nullptr);
 }
 
 int vk_get_physical_device_count(VkInstance inst){
     uint32_t count;
-    _vkEnumeratePhysicalDevices(inst, &count, nullptr);
+    vkEnumeratePhysicalDevices_(inst, &count, nullptr);
     return count;
 }
 std::optional<VkPhysicalDevice> vk_get_physical_device(VkInstance inst, int index){
@@ -46,13 +46,13 @@ std::optional<VkPhysicalDevice> vk_get_physical_device(VkInstance inst, int inde
      if (count == 0)
         return std::nullopt;
      std ::vector<VkPhysicalDevice> devices(count);
-     _vkEnumeratePhysicalDevices(inst, &count, devices.data());
+     vkEnumeratePhysicalDevices_(inst, &count, devices.data());
      return devices[index];
 }
 
  VkPhysicalDeviceProperties vk_get_physical_device_properties(VkPhysicalDevice dev){
     VkPhysicalDeviceProperties props;
-    _vkGetPhysicalDeviceProperties(dev, &props);
+    vkGetPhysicalDeviceProperties_(dev, &props);
     return props;
 }
 
@@ -62,9 +62,9 @@ VkPhysicalDeviceLimits vk_get_physical_device_limits(VkPhysicalDevice dev){
 
 std::vector<VkExtensionProperties> vk_get_physical_device_extension_properties(VkPhysicalDevice dev){
     uint32_t count;
-    _vkEnumerateDeviceExtensionProperties(dev, nullptr, &count, nullptr);
+    vkEnumerateDeviceExtensionProperties_(dev, nullptr, &count, nullptr);
     std::vector<VkExtensionProperties> props(count);
-    _vkEnumerateDeviceExtensionProperties(dev, nullptr, &count, props.data());
+    vkEnumerateDeviceExtensionProperties_(dev, nullptr, &count, props.data());
     std::sort(props.begin(), props.end(), [](const VkExtensionProperties& a, const VkExtensionProperties& b) {
          return strcmp(a.extensionName, b.extensionName) < 0;
     });
@@ -73,14 +73,14 @@ std::vector<VkExtensionProperties> vk_get_physical_device_extension_properties(V
 
 int vk_get_queue_family_properties_count(VkPhysicalDevice dev) {
     uint32_t count;
-    _vkGetPhysicalDeviceQueueFamilyProperties(dev, &count, nullptr);
+    vkGetPhysicalDeviceQueueFamilyProperties_(dev, &count, nullptr);
     return count;
 }
 
 VkQueueFamilyProperties vk_get_queue_family_properties(VkPhysicalDevice dev,int index) {
     uint32_t count= vk_get_queue_family_properties_count( dev);
     std::vector<VkQueueFamilyProperties> props(count);
-    _vkGetPhysicalDeviceQueueFamilyProperties(dev, &count, props.data());
+    vkGetPhysicalDeviceQueueFamilyProperties_(dev, &count, props.data());
     return props[index];
 }
 
@@ -108,14 +108,14 @@ std::optional<VkDevice> vk_create_device(VkPhysicalDevice pdev,uint32_t queueFam
             .pEnabledFeatures = nullptr
     };
     VkDevice dev;
-    if(_vkCreateDevice(pdev, &device_create_info, nullptr, &dev) != VK_SUCCESS){
+    if(vkCreateDevice_(pdev, &device_create_info, nullptr, &dev) != VK_SUCCESS){
          return std::nullopt;
     }
     return dev;
 }
 
 void vk_destroy_device(VkDevice dev) {
-    _vkDestroyDevice(dev, nullptr);
+    vkDestroyDevice_(dev, nullptr);
 }
 
 std::optional<VkDescriptorSetLayout> vk_create_descriptor_set_layout(VkDevice dev,const std::vector<VkDescriptorSetLayoutBinding>& binds) {
@@ -127,7 +127,7 @@ std::optional<VkDescriptorSetLayout> vk_create_descriptor_set_layout(VkDevice de
             .pBindings = binds .data()
     };
     VkDescriptorSetLayout layout;
-    if(_vkCreateDescriptorSetLayout( dev, &descriptor_set_layout_create_info, nullptr, &layout)!= VK_SUCCESS){
+    if(vkCreateDescriptorSetLayout_( dev, &descriptor_set_layout_create_info, nullptr, &layout)!= VK_SUCCESS){
         LOGE( "create descriptor set layout failed");
         return std::nullopt;
     }
@@ -135,7 +135,7 @@ std::optional<VkDescriptorSetLayout> vk_create_descriptor_set_layout(VkDevice de
  }
 
   void vk_destroy_descriptor_set_layout(VkDevice dev,VkDescriptorSetLayout layout) {
-     _vkDestroyDescriptorSetLayout(dev,layout, nullptr);
+     vkDestroyDescriptorSetLayout_(dev,layout, nullptr);
  }
 
 std::optional<VkPipelineLayout> vk_create_pipeline_layout(VkDevice dev,VkDescriptorSetLayout descriptor_set_layout) {
@@ -149,7 +149,7 @@ std::optional<VkPipelineLayout> vk_create_pipeline_layout(VkDevice dev,VkDescrip
             .pPushConstantRanges = nullptr
     };
      VkPipelineLayout layout;
-     if(_vkCreatePipelineLayout(dev, &pipeline_layout_create_info, nullptr, &layout)!= VK_SUCCESS){
+     if(vkCreatePipelineLayout_(dev, &pipeline_layout_create_info, nullptr, &layout)!= VK_SUCCESS){
           LOGE( "create pipeline layout failed");
          return std::nullopt;
      }
@@ -175,7 +175,7 @@ std::optional<VkShaderModule> vk_create_shader_module(VkDevice dev,const std::ve
             .pCode = code.data()
     };
      VkShaderModule module;
-     if(_vkCreateShaderModule(dev, &shader_module_create_info, nullptr, &module)!= VK_SUCCESS){
+     if(vkCreateShaderModule_(dev, &shader_module_create_info, nullptr, &module)!= VK_SUCCESS){
           LOGE( "create shader module failed");
          return std::nullopt;
      }
@@ -183,11 +183,11 @@ std::optional<VkShaderModule> vk_create_shader_module(VkDevice dev,const std::ve
 }
 
 void vk_destroy_shader_module(VkDevice dev,VkShaderModule module){
-    _vkDestroyShaderModule(dev, module, nullptr);
+    vkDestroyShaderModule_(dev, module, nullptr);
 }
 
 void vk_destroy_pipeline_layout(VkDevice dev,VkPipelineLayout layout) {
-    _vkDestroyPipelineLayout(dev, layout, nullptr);
+    vkDestroyPipelineLayout_(dev, layout, nullptr);
 }
 
 std::optional <VkPipeline> vk_create_compute_pipeline(VkDevice dev,VkPipelineLayout layout,VkShaderModule module) {
@@ -208,7 +208,7 @@ std::optional <VkPipeline> vk_create_compute_pipeline(VkDevice dev,VkPipelineLay
             .basePipelineIndex = -1,
      };
     VkPipeline pipeline;
-     if(_vkCreateComputePipelines(dev, VK_NULL_HANDLE, 1, &compute_pipeline_create_info, nullptr, &pipeline)!= VK_SUCCESS){
+     if(vkCreateComputePipelines_(dev, VK_NULL_HANDLE, 1, &compute_pipeline_create_info, nullptr, &pipeline)!= VK_SUCCESS){
           LOGE( "create pipeline failed");
         return std::nullopt;
     }
@@ -216,5 +216,5 @@ std::optional <VkPipeline> vk_create_compute_pipeline(VkDevice dev,VkPipelineLay
 }
 
 void  vk_destroy_pipeline(VkDevice dev,VkPipeline pipeline) {
-    _vkDestroyPipeline(dev, pipeline, nullptr);
+    vkDestroyPipeline_(dev, pipeline, nullptr);
 }

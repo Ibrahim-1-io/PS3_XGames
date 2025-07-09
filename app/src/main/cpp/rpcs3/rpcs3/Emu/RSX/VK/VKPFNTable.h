@@ -1,7 +1,8 @@
 // Wrangler for Vulkan functions.
 // TODO: Eventually, we shall declare vulkan with NO_PROTOTYPES and wrap everything here for android multi-driver support.
 // For now, we just use it for extensions since we're on VK_1_0
-#if 1
+
+#ifndef DBG_ADRENO_GPU_MEM
 #if defined(DECL_VK_FUNCTION)
 #define VK_FUNC(func) extern PFN_##func _##func
 #elif defined(DEF_VK_FUNCTION)
@@ -14,13 +15,20 @@
 #else
 
 #if defined(DECL_VK_FUNCTION)
-#define VK_FUNC(func) extern int n_##func;\
+#define VK_FUNC(func) extern int64_t n_##func;\
 template<typename... Args> \
-auto _##func(Args&&... args)->decltype(func(args...)){            \
-++n_##func;return func(std::forward<Args>(args)...);\
-}
+auto _##func(Args&&... args)->decltype(func(args...)){ \
+     n_##func=  static_cast<int64_t>(meminfo_gpu_mem_usage_kb());                                       \
+   if constexpr(std::is_same_v<decltype(func(args...)),void>){ \
+      func(std::forward<Args>(args)...);                                        \
+    save_msg(std::format("/storage/emulated/0/Android/data/aenu.aps3e/files/aps3e/logs/{}.txt",#func),#func,static_cast<int64_t>(meminfo_gpu_mem_usage_kb())-n_##func)   ; \
+    }else{                                        \
+         auto r= func(std::forward<Args>(args)...);    \
+        save_msg(std::format("/storage/emulated/0/Android/data/aenu.aps3e/files/aps3e/logs/{}.txt",#func),#func,static_cast<int64_t>(meminfo_gpu_mem_usage_kb())-n_##func)   ; \
+        return r;                               \
+}}
 #elif defined(DEF_VK_FUNCTION)
-#define VK_FUNC(func) int n_##func=0
+#define VK_FUNC(func) int64_t n_##func=0
 
 #elif defined(LOAD_VK_FUNCTION)
 #define VK_FUNC(func)
@@ -188,12 +196,14 @@ VK_FUNC(vkAcquireNextImageKHR);
 
 VK_FUNC(vkQueuePresentKHR);
 
+#ifndef DBG_ADRENO_GPU_MEM
 #if defined(DECL_VK_FUNCTION)||defined(DEF_VK_FUNCTION)||defined(CLEAR_N_VK_FUNCTION)||defined(PRINT_N_VK_FUNCTION)
 #define INSTANCE_VK_FUNCTION
 #define DEVICE_VK_FUNCTION
 #include "VKPFNTableEXT.h"
 #undef INSTANCE_VK_FUNCTION
 #undef DEVICE_VK_FUNCTION
+#endif
 #endif
 
 #undef VK_FUNC

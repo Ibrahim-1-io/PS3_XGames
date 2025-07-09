@@ -9,11 +9,9 @@
 #include "rpcs3/3rdparty/libadrenotools/include/adrenotools/priv.h"
 #include "rpcs3/3rdparty/libadrenotools/include/adrenotools/driver.h"
 
-#if 0
-#define VKFN(func) PFN_##func _##func
+#define VKFN(func) PFN_##func func##_
 #include "vksym.h"
 #undef VKFN
-#endif
 namespace {
     void* lib_handle = nullptr;
 }
@@ -33,7 +31,7 @@ void vk_load(const char* lib_path,bool is_adreno_custom){
                 ,custom_lib_name.c_str()
                 ,nullptr,nullptr);
     }
-#define VKFN(func) _##func=reinterpret_cast<PFN_##func>(dlsym(lib_handle, #func))
+#define VKFN(func) func##_=reinterpret_cast<PFN_##func>(dlsym(lib_handle, #func))
 #include "vksym.h"
 #undef VKFN
 }
@@ -41,7 +39,7 @@ void vk_unload(){
     if (!lib_handle) return;
     dlclose(lib_handle);
     lib_handle = nullptr;
-#define VKFN(func) _##func=nullptr
+#define VKFN(func) func##_=nullptr
 #include "vksym.h"
 #undef VKFN
 }

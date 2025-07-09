@@ -60,6 +60,20 @@ public class Application extends android.app.Application
         }
     }
 
+    public  static byte[] load_assets_file(Context ctx,String asset_file_path) {
+        try {
+            InputStream in = ctx.getAssets().open(asset_file_path);
+            int size = in.available();
+            byte[] buffer = new byte[size];
+            in.read(buffer);
+            in.close();
+            return buffer;
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
     public  static File get_app_data_dir() {
         return ctx.getExternalFilesDir("aps3e");
     }
@@ -101,13 +115,38 @@ public class Application extends android.app.Application
         return new File(Application.get_app_data_dir(),"config/config.yml");
     }
 
+    public static File get_default_config_file(){
+        return new File(Application.get_app_data_dir(),"config/default_config.yml");
+    }
+
+    static void copy_file(File src,File dst) {
+        try {
+            FileInputStream in=new FileInputStream(src);
+            FileOutputStream out=new FileOutputStream(dst);
+            byte buf[]=new byte[16384];
+            int n;
+            while((n=in.read(buf))!=-1)
+                out.write(buf,0,n);
+            in.close();
+            out.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     public  static Context ctx;
     @Override
     public void onCreate()
     {
         super.onCreate();
+
         Application.ctx=this;
-        Emulator.get.setup_env(this);
+        try {
+            Emulator.get.setup_env(this);
+        }finally {
+            System.loadLibrary("e");
+        }
+
 
         //get_app_data_dir().mkdirs();
         get_app_log_dir().mkdirs();

@@ -133,8 +133,11 @@ void GLGSRender::on_init_thread()
 	gl::set_primary_context_thread();
 
 	zcull_ctrl.reset(static_cast<::rsx::reports::ZCULL_control*>(this));
+#ifdef USE_GLES
+    m_occlusion_type = GL_ANY_SAMPLES_PASSED;
+#else
 	m_occlusion_type = g_cfg.video.precise_zpass_count ? GL_SAMPLES_PASSED : GL_ANY_SAMPLES_PASSED;
-
+#endif
 	gl::init();
 	gl::set_command_context(gl_state);
 
@@ -197,7 +200,7 @@ void GLGSRender::on_init_thread()
 		// NVIDIA's attribute interpolation requires some workarounds
 		backend_config.supports_normalized_barycentrics = false;
 	}
-
+	#ifndef USE_GLES
 	if (gl_caps.AMD_pinned_memory_supported && g_cfg.video.host_label_synchronization)
 	{
 		backend_config.supports_host_gpu_labels = true;
@@ -211,13 +214,15 @@ void GLGSRender::on_init_thread()
 		m_enqueued_host_write_buffer = std::make_unique<gl::scratch_ring_buffer>();
 		m_enqueued_host_write_buffer->create(gl::buffer::target::array, 64 * 0x100000, gl::buffer::usage::dynamic_update);
 	}
+	#endif
 
 	// Use industry standard resource alignment values as defaults
 	m_uniform_buffer_offset_align = 256;
 	m_min_texbuffer_alignment = 256;
 	m_max_texbuffer_size = 0;
-
+#ifndef USE_GLES
 	glEnable(GL_VERTEX_PROGRAM_POINT_SIZE);
+#endif
 	glGetIntegerv(GL_UNIFORM_BUFFER_OFFSET_ALIGNMENT, &m_uniform_buffer_offset_align);
 	glGetIntegerv(GL_TEXTURE_BUFFER_OFFSET_ALIGNMENT, &m_min_texbuffer_alignment);
 	glGetIntegerv(GL_MAX_TEXTURE_BUFFER_SIZE, &m_max_texbuffer_size);
@@ -250,6 +255,23 @@ void GLGSRender::on_init_thread()
 	{
 		std::array<u32, 8> pixeldata = { 0, 0, 0, 0, 0, 0, 0, 0 };
 
+		#ifdef USE_GLES
+		// 1D
+		auto tex1D = std::make_unique<gl::texture>(GL_TEXTURE_2D, 1, 1, 1, 1, 1, GL_RGBA8, RSX_FORMAT_CLASS_COLOR);
+		tex1D->copy_from(pixeldata.data(), gl::texture::format::rgba, gl::texture::type::ubyte, {});
+
+		// 2D
+		auto tex2D = std::make_unique<gl::texture>(GL_TEXTURE_2D, 1, 1, 1, 1, 1, GL_RGBA8, RSX_FORMAT_CLASS_COLOR);
+		tex2D->copy_from(pixeldata.data(), gl::texture::format::rgba, gl::texture::type::ubyte, {});
+
+		// 3D
+		auto tex3D = std::make_unique<gl::texture>(GL_TEXTURE_3D, 1, 1, 1, 1, 1, GL_RGBA8, RSX_FORMAT_CLASS_COLOR);
+		tex3D->copy_from(pixeldata.data(), gl::texture::format::rgba, gl::texture::type::ubyte, {});
+
+		// CUBE
+		auto texCUBE = std::make_unique<gl::texture>(GL_TEXTURE_CUBE_MAP, 1, 1, 1, 1, 1, GL_RGBA8, RSX_FORMAT_CLASS_COLOR);
+		texCUBE->copy_from(pixeldata.data(), gl::texture::format::rgba, gl::texture::type::ubyte, {});
+		#else
 		// 1D
 		auto tex1D = std::make_unique<gl::texture>(GL_TEXTURE_1D, 1, 1, 1, 1, 1, GL_RGBA8, RSX_FORMAT_CLASS_COLOR);
 		tex1D->copy_from(pixeldata.data(), gl::texture::format::rgba, gl::texture::type::uint_8_8_8_8, {});
@@ -265,7 +287,7 @@ void GLGSRender::on_init_thread()
 		// CUBE
 		auto texCUBE = std::make_unique<gl::texture>(GL_TEXTURE_CUBE_MAP, 1, 1, 1, 1, 1, GL_RGBA8, RSX_FORMAT_CLASS_COLOR);
 		texCUBE->copy_from(pixeldata.data(), gl::texture::format::rgba, gl::texture::type::uint_8_8_8_8, {});
-
+		#endif
 		m_null_textures[GL_TEXTURE_1D] = std::move(tex1D);
 		m_null_textures[GL_TEXTURE_2D] = std::move(tex2D);
 		m_null_textures[GL_TEXTURE_3D] = std::move(tex3D);
@@ -278,8 +300,9 @@ void GLGSRender::on_init_thread()
 		// TODO: do not modify config options
 		g_cfg.video.renderdoc_compatiblity.from_string("true");
 	}
-
+#ifndef USE_GLES
 	if (g_cfg.video.renderdoc_compatiblity)
+#endif
 	{
 		rsx_log.warning("Using legacy openGL buffers.");
 		manually_flush_ring_buffers = true;
@@ -298,6 +321,7 @@ void GLGSRender::on_init_thread()
 		m_scratch_ring_buffer = std::make_unique<gl::legacy_ring_buffer>();
 		m_instancing_ring_buffer = std::make_unique<gl::legacy_ring_buffer>();
 	}
+#ifndef USE_GLES
 	else
 	{
 		m_attrib_ring_buffer = std::make_unique<gl::ring_buffer>();
@@ -314,7 +338,7 @@ void GLGSRender::on_init_thread()
 		m_scratch_ring_buffer = std::make_unique<gl::ring_buffer>();
 		m_instancing_ring_buffer = std::make_unique<gl::ring_buffer>();
 	}
-
+	#endif
 	m_attrib_ring_buffer->create(gl::buffer::target::texture, 256 * 0x100000);
 	m_index_ring_buffer->create(gl::buffer::target::element_array, 16 * 0x100000);
 	m_transform_constants_buffer->create(gl::buffer::target::uniform, 64 * 0x100000);

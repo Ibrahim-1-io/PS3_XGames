@@ -392,7 +392,6 @@
 
     <string-array name="miscellaneous_font_file_selection_values">
         <item>From Firmware</item>
-        <item>From OS</item>
         <item>Custom</item>
     </string-array>
 

@@ -24,7 +24,20 @@ typedef BOOL (WINAPI* PFNWGLSWAPINTERVALEXTPROC) (int interval);
 #include <OpenGL/glu.h>
 #elif defined(__ANDROID__)
 #include <GLES3/gl32.h>
+#define GL_GLEXT_PROTOTYPES
+#include <GLES2/gl2ext.h>
 #define USE_GLES
+
+#else
+#include <GL/gl.h>
+#ifdef HAVE_X11
+#include <GL/glxew.h>
+#include <GL/glx.h>
+#include <GL/glxext.h>
+#endif
+#endif
+
+#ifdef USE_GLES
 
 #define _GL_DOUBLE 0x140A
 #define _GL_UNSIGNED_BYTE_3_3_2 0x8032
@@ -42,20 +55,13 @@ typedef BOOL (WINAPI* PFNWGLSWAPINTERVALEXTPROC) (int interval);
 #define _GL_R16 0x822A
 #define _GL_RG16 0x822C
 #define _GL_MIRROR_CLAMP_EXT 0x8742
-//#define _GL_MIRROR_CLAMP_TO_EDGE 0x8743
+// #define _GL_MIRROR_CLAMP_TO_EDGE 0x8743
 #define _GL_MIRROR_CLAMP_TO_BORDER_EXT 0x8912
 #define _GL_BGR 0x80E0
 #define _GL_BGRA 0x80E1
 #define _GL_TEXTURE_1D 0x0DE0
+#endif
 
-#else
-#include <GL/gl.h>
-#ifdef HAVE_X11
-#include <GL/glxew.h>
-#include <GL/glx.h>
-#include <GL/glxext.h>
-#endif
-#endif
 
 #ifndef GL_TEXTURE_BUFFER_BINDING
 //During spec release, this enum was removed during upgrade from ARB equivalent

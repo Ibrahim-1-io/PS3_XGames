@@ -8,7 +8,37 @@ namespace gl
 	{
 		m_memory_type = type;
 
-#ifndef USE_GLES
+#ifdef USE_GLES
+		if (type != memory_type::userptr)
+		{
+			GLenum flags = 0;
+			if (usage_flags & usage::host_write)
+			{
+				flags |= GL_MAP_WRITE_BIT;
+			}
+			if (usage_flags & usage::host_read)
+			{
+				flags |= GL_MAP_READ_BIT;
+			}
+			if (usage_flags & usage::persistent_map)
+			{
+				flags |= GL_MAP_PERSISTENT_BIT_EXT;
+			}
+			if (usage_flags & usage::dynamic_update)
+			{
+				flags |= GL_DYNAMIC_STORAGE_BIT_EXT;
+			}
+
+			ensure((flags & (GL_MAP_PERSISTENT_BIT_EXT | GL_DYNAMIC_STORAGE_BIT_EXT)) != (GL_MAP_PERSISTENT_BIT_EXT | GL_DYNAMIC_STORAGE_BIT_EXT),
+				"Mutually exclusive usage flags set!");
+
+			ensure(type == memory_type::local || flags != 0, "Host-visible memory must have usage flags set!");
+
+			glBindBuffer(GL_ARRAY_BUFFER, m_id);
+            glBufferStorageEXT(GL_ARRAY_BUFFER, size, data_, flags);
+			m_size = size;
+		}
+		#else
 		if (const auto& caps = get_driver_caps();
 			type != memory_type::userptr && caps.ARB_buffer_storage_supported)
 		{
@@ -48,8 +78,8 @@ namespace gl
 			DSA_CALL2(NamedBufferStorage, m_id, size, data_, flags);
 			m_size = size;
 		}
-		else
 #endif
+		else
 		{
 			data(size, data_, GL_STREAM_COPY);
 		}

@@ -74,14 +74,12 @@ import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity {
 
-	private static final int REQUEST_INSTALL_FIRMWARE=6001;
+	public static final int REQUEST_INSTALL_FIRMWARE=6001;
 	private static final int REQUEST_INSTALL_GAME=6002;
 	//private static final int REQUEST_INSTALL_GAME_PKG=6003;
-	private static final int REQUEST_SELECT_ISO_DIR=6004;
+	public static final int REQUEST_SELECT_ISO_DIR=6004;
 
 	private static final String PREF_KEY_ISO_DIR="iso_dir";
-
-	static{System.loadLibrary("e");}
 
 	public static File get_hdd0_game_dir(){
 		return new File(Application.get_app_data_dir(),"config/dev_hdd0/game");
@@ -95,12 +93,16 @@ public class MainActivity extends AppCompatActivity {
 		return new File(Application.get_app_data_dir(),"config/dev_hdd0/home/00000001/trophy");
 	}
 
-	public static File get_shader_cache_dir(String serial){
+	public static File[] get_shader_cache_dirs(String serial){
 		File cache_dir=new File(Application.get_app_data_dir(),"cache/cache/"+serial);
 		if(!cache_dir.exists()) return null;
 		File[] cache_sub_dir=cache_dir.listFiles();
-		if( cache_sub_dir==null||cache_sub_dir.length!=1) return null;
-		return new File(cache_sub_dir[0],"shaders_cache");
+		if( cache_sub_dir==null||cache_sub_dir.length==0) return null;
+		File[] shader_cache_dirs=new File[cache_sub_dir.length];
+		for(int i=0;i<cache_sub_dir.length;i++){
+			shader_cache_dirs[i]=new File(cache_sub_dir[i],"shaders_cache");
+		}
+		return shader_cache_dirs;
 	}
 
 	public static File get_disc_game_dir(){
@@ -185,24 +187,24 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 	
-	void request_file_select(int request_code){
+	static void request_file_select(Activity activity,int request_code){
 
 		Intent intent=new Intent(Intent.ACTION_OPEN_DOCUMENT);
 		intent.addCategory(Intent.CATEGORY_OPENABLE);
 		intent.setType("*/*");
-		startActivityForResult(intent, request_code);
+		activity.startActivityForResult(intent, request_code);
 	}
 
-	void request_iso_dir_select(){
+	static void request_iso_dir_select(Activity activity){
 		Intent intent=new Intent(Intent.ACTION_OPEN_DOCUMENT_TREE);
 		intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION|Intent.FLAG_GRANT_PERSISTABLE_URI_PERMISSION);
-		startActivityForResult(intent, REQUEST_SELECT_ISO_DIR);
+		activity.startActivityForResult(intent, REQUEST_SELECT_ISO_DIR);
 	}
 
-	void save_pref_iso_dir(Uri uri){
+	static void save_pref_iso_dir(Context ctx,Uri uri){
 		try{
-			getContentResolver().takePersistableUriPermission(uri,Intent.FLAG_GRANT_READ_URI_PERMISSION);
-			SharedPreferences.Editor editor=PreferenceManager.getDefaultSharedPreferences(this).edit();
+			ctx.getContentResolver().takePersistableUriPermission(uri,Intent.FLAG_GRANT_READ_URI_PERMISSION);
+			SharedPreferences.Editor editor=PreferenceManager.getDefaultSharedPreferences(ctx).edit();
 			editor.putString(PREF_KEY_ISO_DIR,uri.toString());
 			editor.apply();
 		}
@@ -211,13 +213,13 @@ public class MainActivity extends AppCompatActivity {
 		}
 	}
 
-	Uri load_pref_iso_dir(){
+	static Uri load_pref_iso_dir(Context ctx){
 		try{
-			String uri_str=PreferenceManager.getDefaultSharedPreferences(this).getString(PREF_KEY_ISO_DIR,null);
+			String uri_str=PreferenceManager.getDefaultSharedPreferences(ctx).getString(PREF_KEY_ISO_DIR,null);
 			if(uri_str==null)
 				return null;
 			Uri uri= Uri.parse(uri_str);
-			getContentResolver().takePersistableUriPermission(uri,Intent.FLAG_GRANT_READ_URI_PERMISSION);
+			ctx.getContentResolver().takePersistableUriPermission(uri,Intent.FLAG_GRANT_READ_URI_PERMISSION);
 			return uri;
 		}
 		catch(Exception e){
@@ -231,11 +233,11 @@ public class MainActivity extends AppCompatActivity {
 
 		int item_id=item.getItemId();
 		if(item_id==R.id.menu_install_firmware){
-			request_file_select(REQUEST_INSTALL_FIRMWARE);
+			request_file_select(this,REQUEST_INSTALL_FIRMWARE);
 			return true;
 		}
 		else if(item_id==R.id.menu_install_game){
-			request_file_select(REQUEST_INSTALL_GAME);
+			request_file_select(this,REQUEST_INSTALL_GAME);
 			return true;
 		}
 		else if(item_id==R.id.menu_refresh_list){
@@ -274,7 +276,13 @@ public class MainActivity extends AppCompatActivity {
 			return true;
 		}
 		else if(item_id==R.id.menu_set_iso_dir){
-			request_iso_dir_select();
+			request_iso_dir_select(this);
+			return true;
+		}
+		else if(item_id==R.id.menu_quick_start_page){
+			Intent it=new Intent(this,QuickStartActivity.class);
+			it.setAction(QuickStartActivity.ACTION_REENTRY);
+			startActivity(it);
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
@@ -348,7 +356,7 @@ public class MainActivity extends AppCompatActivity {
 		Uri uri = data.getData();
 
 		if(requestCode == REQUEST_SELECT_ISO_DIR){
-			save_pref_iso_dir(uri);
+			save_pref_iso_dir(this,uri);
 			refresh_game_list();
 			return;
 		}
@@ -593,26 +601,24 @@ public class MainActivity extends AppCompatActivity {
 				.create().show();
 	}
 
-	private void initialize(){
-		//private final File APP_DIR=new File(Environment.getExternalStorageDirectory(),"aps3e");
 
+	static void mk_dirs(){
 		String[] sub_dir_paths={
-			"aps3e",
-			"aps3e/config",
-			"aps3e/config/dev_flash",
-			"aps3e/config/dev_flash2",
-			"aps3e/config/dev_flash3",
-			"aps3e/config/dev_bdvd",
-			"aps3e/config/dev_hdd0",
-			"aps3e/config/dev_hdd1",
-			"aps3e/config/dev_hdd0/game",
-			"aps3e/config/Icons",
+				"aps3e",
+				"aps3e/config",
+				"aps3e/config/dev_flash",
+				"aps3e/config/dev_flash2",
+				"aps3e/config/dev_flash3",
+				"aps3e/config/dev_bdvd",
+				"aps3e/config/dev_hdd0",
+				"aps3e/config/dev_hdd1",
+				"aps3e/config/dev_hdd0/game",
+				"aps3e/config/Icons",
 				"aps3e/config/games",
-			"aps3e/config/Icons/ui",
+				"aps3e/config/Icons/ui",
 				"aps3e/config/custom_cfg",
-			"aps3e/logs",
+				"aps3e/logs",
 				"aps3e/font",
-
 		};
 
 		for(String sp:sub_dir_paths){
@@ -621,7 +627,12 @@ public class MainActivity extends AppCompatActivity {
 				dir.mkdir();
 			}
 		}
-		
+	}
+	private void initialize(){
+		//private final File APP_DIR=new File(Environment.getExternalStorageDirectory(),"aps3e");
+
+		mk_dirs();
+
 		File icons_ui_output_dir=new File(Application.get_app_data_dir().getParent(),"aps3e/config/Icons/ui");
 		Application.extractAssetsDir(this,"Icons/ui",icons_ui_output_dir);
 
@@ -650,7 +661,8 @@ public class MainActivity extends AppCompatActivity {
 
 		File config_yml_output_dir=new File(Application.get_app_data_dir().getParent(),"aps3e/config");
 		if(!new File(config_yml_output_dir,"config.yml").exists()) {
-			Application.extractAssetsDir(this, "config", config_yml_output_dir);
+			//Application.extractAssetsDir(this, "config", config_yml_output_dir);
+			Application.copy_file(Application.get_default_config_file(),new File(config_yml_output_dir,"config.yml"));
 		}
 		
 		/*File nomedia=new File(Environment.getExternalStorageDirectory(),"aps3e/.nomedia");
@@ -750,7 +762,7 @@ public class MainActivity extends AppCompatActivity {
 			}
 		}
 		
-		static void deleteDirectory(File directory) {
+		/*static void deleteDirectory(File directory) {
 			if (directory.isDirectory()) {
 				File[] files = directory.listFiles();
 				if (files!= null) {
@@ -764,7 +776,20 @@ public class MainActivity extends AppCompatActivity {
 				}
 			}
 			directory.delete();
+		}*/
+
+		static void recursive_delete_sub_files(File dir) {
+			File[] files = dir.listFiles();
+			if(files == null)
+				return;
+			for(File file : files){
+				if(file.isDirectory()) {
+					recursive_delete_sub_files(file);
+				}
+				file.delete();
+			}
 		}
+
 		ArrayList<Emulator.MetaInfo> metas;
 		private final MainActivity context_;
 		private GameMetaInfoAdapter(MainActivity context,ArrayList<Emulator.MetaInfo> metas){
@@ -835,7 +860,7 @@ public class MainActivity extends AppCompatActivity {
 
 		private static ArrayList<DocumentFile> get_game_iso_list(MainActivity context_){
 			ArrayList<DocumentFile> iso_list=new ArrayList<DocumentFile>();
-			Uri uri=context_.load_pref_iso_dir();
+			Uri uri=context_.load_pref_iso_dir(context_);
 			if(uri==null)
 				return iso_list;
 			DocumentFile iso_dir=DocumentFile.fromTreeUri(context_, uri);
@@ -894,7 +919,9 @@ public class MainActivity extends AppCompatActivity {
 			if(trophy_dirs!=null){
 				for(File f:trophy_dirs){
 					if(f.getName().startsWith(serial)){
-						deleteDirectory(f);
+						if(f.isDirectory())
+							recursive_delete_sub_files(f);
+						f.delete();
 					}
 				}
 			}
@@ -904,7 +931,9 @@ public class MainActivity extends AppCompatActivity {
 			if(data_dirs!=null){
 				for(File f:data_dirs){
 					if(f.getName().startsWith(serial)){
-						deleteDirectory(f);
+						if(f.isDirectory())
+							recursive_delete_sub_files(f);
+						f.delete();
 					}
 				}
 			}
@@ -915,7 +944,9 @@ public class MainActivity extends AppCompatActivity {
 			if(game_dirs!=null){
 				for(File f:game_dirs){
 					if(f.getName().startsWith(serial)){
-						deleteDirectory(f);
+						if(f.isDirectory())
+							recursive_delete_sub_files(f);
+						f.delete();
 					}
 				}
 			}
@@ -926,8 +957,10 @@ public class MainActivity extends AppCompatActivity {
 			_del_game_data(info.serial);
 
 			File game_dir=new File(get_hdd0_game_dir(),info.serial);
-			if(game_dir.exists())
-				deleteDirectory(game_dir);
+			if(game_dir.exists()){
+				recursive_delete_sub_files(game_dir);
+				game_dir.delete();
+			}
 		}
 
 		public void del_hdd0_install_data(int pos){
@@ -943,9 +976,12 @@ public class MainActivity extends AppCompatActivity {
 
 		public  void del_shaders_cache(int pos){
 			Emulator.MetaInfo info=metas.get(pos);
-			File shader_cache_dir=get_shader_cache_dir(info.serial);
-			if(shader_cache_dir!=null&& shader_cache_dir.exists())
-				deleteDirectory(shader_cache_dir);
+			File[] shader_cache_dirs=get_shader_cache_dirs(info.serial);
+			if(shader_cache_dirs!=null)
+				for(File dir:shader_cache_dirs){
+					recursive_delete_sub_files( dir);
+					dir.delete();
+				}
 		}
 
         @Override

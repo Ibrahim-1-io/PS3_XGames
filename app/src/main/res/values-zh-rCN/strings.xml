@@ -1,10 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="quick_start_page">快速开始页</string>
+    <string name="prev_step">上一步</string>
+    <string name="next_step">下一步</string>
+    <string name="finish">完成</string>
+    <string name="welcome">欢迎</string>
+    <string name="welcome_content">欢迎使用 %s !</string>
+    <string name="welcome_content2">只需几步简单的步骤，就可以开始畅玩游戏了，点击" %s "即可开始。</string>
+
+    <string name="install_ps3_firmware_hiht_content">想要进行游戏，您必须安装PS3固件（PS3UPDAT.PUP），请选择固件文件。</string>
+    <string name="ps3_firmware_installed">固件安装完毕</string>
+    <string name="select_ps3_firmware">选择固件(PS3UPDAT.PUP)</string>
+    <string name="firmware_not_install">固件未安装</string>
+
+    <string name="select_ps3_iso_dir_hiht_content">请指定PS3 ISO目录，APP会自动扫描以检索有效的游戏，您也可以跳过此步骤，直接安装.pkg文件 。</string>
+    <string name="ps3_iso_dir_is_set">PS3 ISO目录以设置</string>
+
+    <string name="font_select_hiht_content">请选择一个字体文件（*.ttf、*.ttc、*.otf）进行安装，您也可以使用来自PS3固件中的字体（可能会缺字）。</string>
+    <string name="custom_font_path_prefix">字体路径: </string>
+
+    <string name="select_gpu_driver_hiht_content">请选择一个GPU驱动，您也可以跳过此步骤（游戏运行可能会出错）。</string>
+    <string name="custom_gpu_driver_path_prefix">GPU驱动路径: </string>
+
+    <string name="modify_config_hiht_content">模拟器会自动选择最合适的配置，但部分配置在您的设备可能会发生异常，稍后您可以在设置中自行修改。</string>
+
     <string name="msg_processing">处理中...</string>
     <string name="msg_failed">失败!</string>
 
     <string name="emulator_settings_video_vulkan_debug">调试</string>
+    <string name="emulator_settings_miscellaneous_memory_debug_overlay">内存调试覆盖层</string>
 
     <string name="vibrator_duration">震动时长</string>
     <string name="enable_vibrator">启用震动</string>
@@ -44,9 +69,6 @@
 	<string name="about">关于</string>
 	<string name="quit">退出</string>
 	<string name="update_log">更新日志</string>
-	<string name="firmware_not_install">固件未安装</string>
-	<string name="request_title_INSTALL_FIRMWARE">选择固件(PS3UPDAT.PUP)</string>
-	<string name="request_title_INSTALL_GAME">选择一个PS3 RAP,ISO或PKG文件</string>
 	<string name="empty_game_list">游戏列表为空</string>
 	<string name="delete">删除</string>
 	<string name="settings">设置</string>
@@ -666,7 +688,6 @@
     <string name="emulator_settings_miscellaneous_font_file_selection">字体文件选择</string>
     <string-array name="miscellaneous_font_file_selection_entries">
         <item>来自固件</item>
-        <item>来自系统</item>
         <item>自定义</item>
     </string-array>
     <string name="emulator_settings_miscellaneous_custom_font_file_path">自定义字体文件路径</string>

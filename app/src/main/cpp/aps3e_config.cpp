@@ -5,6 +5,25 @@
 
 static_assert(sizeof(YAML::Node*)==8,"");
 
+static YAML::Node* open_config_str(JNIEnv* env,jobject self,jstring jconfig_str){
+    jboolean is_copy=false;
+    const char* config_str=env->GetStringUTFChars(jconfig_str,&is_copy);
+    std::istringstream config_stream(config_str);
+    YAML::Node* config_node = new YAML::Node(YAML::Load(config_stream));
+    env->ReleaseStringUTFChars(jconfig_str,config_str);
+    return config_node;
+}
+
+static jstring close_config_str(JNIEnv* env,jobject self,YAML::Node* config_node){
+    YAML::Emitter out;
+    out << *config_node;
+    jboolean is_copy=false;
+
+    jstring result=env->NewStringUTF(out.c_str());
+    delete config_node;
+    return result;
+}
+
 static YAML::Node* open_config_file(JNIEnv* env,jobject self,jstring config_path){
     jboolean is_copy=false;
     const char* path=env->GetStringUTFChars(config_path,&is_copy);
@@ -248,6 +267,11 @@ static bool gen_is_parent(const std::string& parent_name){
         return true;
     return false;
 }
+
+#define SEEKBAR_PREF_TAG "aenu.preference.SeekBarPreference"
+#define CHECKBOX_PREF_TAG "aenu.preference.CheckBoxPreference"
+#define LIST_PREF_TAG "aenu.preference.ListPreference"
+
 static jstring generate_config_xml(JNIEnv* env,jobject self){
 
     auto gen_one_preference=[&](const std::string parent_name,cfg::_base* node)->std::string{
@@ -260,12 +284,12 @@ static jstring generate_config_xml(JNIEnv* env,jobject self){
 
         switch (node->get_type()) {
             case cfg::type::_bool:
-                out<<"<CheckBoxPreference app:title=\"@string/emulator_settings_"<<parent_name_l<<"_"<<key<<"\" \n";
+                out<<"<" CHECKBOX_PREF_TAG " app:title=\"@string/emulator_settings_"<<parent_name_l<<"_"<<key<<"\" \n";
                 out<<"app:key=\""<<parent_name<<"|"<<name<<"\" />\n";
                 break;
             case cfg::type::_int:
             case cfg::type::uint:
-                out<<"<aenu.preference.SeekbarPreference app:title=\"@string/emulator_settings_"<<parent_name_l<<"_"<<key<<"\" \n";
+                out<<"<" SEEKBAR_PREF_TAG " app:title=\"@string/emulator_settings_"<<parent_name_l<<"_"<<key<<"\" \n";
                 out<<"app:min=\""<<node->get_min()<<"\"\n";
                 if(node->get_max()!=-1)
                     out<<"android:max=\""<<node->get_max()<<"\"\n";
@@ -276,7 +300,7 @@ static jstring generate_config_xml(JNIEnv* env,jobject self){
                 break;
 
             case cfg::type::_enum:
-                out<<"<ListPreference app:title=\"@string/emulator_settings_"<<parent_name_l<<"_"<<key<<"\" \n";
+                out<<"<" LIST_PREF_TAG " app:title=\"@string/emulator_settings_"<<parent_name_l<<"_"<<key<<"\" \n";
                 out<<"app:entries=\""<<"@array/"<<parent_name_l<<"_"<<key<<"_entries\"\n";
                 out<<"app:entryValues=\""<<"@array/"<<parent_name_l<<"_"<<key<<"_values\"\n";
                 out<<"app:key=\""<<parent_name<<"|"<<name<<"\" />\n";
@@ -306,7 +330,7 @@ static jstring generate_config_xml(JNIEnv* env,jobject self){
                     LOGE("unexpected type");
                     continue;
                 }
-                out<<"<CheckBoxPreference app:title=\""<<n3->get_name()<<"\" \n";
+                out<<"<" CHECKBOX_PREF_TAG " app:title=\""<<n3->get_name()<<"\" \n";
                 out<<"app:key=\""<<node_key<<"|"<<n3->get_name()<<"\" />\n";
             }
             out<<"</PreferenceScreen>\n";
@@ -363,6 +387,9 @@ static jstring generate_config_xml(JNIEnv* env,jobject self){
 
     return env->NewStringUTF(out.str().c_str());
 }
+#undef SEEKBAR_PREF_TAG
+#undef CHECKBOX_PREF_TAG
+#undef LIST_PREF_TAG
 
 //public native String generate_strings_xml();
 static jstring generate_strings_xml(JNIEnv* env,jobject self){
@@ -551,14 +578,43 @@ static jstring generate_java_string_arr(JNIEnv* env,jobject self){
     return env->NewStringUTF(out.str().c_str());
 }
 
-//public native String[] get_support_llvm_cpu_list();
+static jobjectArray j_get_native_llvm_cpu_list(JNIEnv* env,jobject self){
 
-static jobjectArray j_get_support_llvm_cpu_list(JNIEnv* env,jobject self){
-    std::set<std::string> cpu_list=get_processor_name_set();
-    int count=cpu_list.size();
+    const std::vector<core_info_t> core_info_list = cpu_get_core_info();
+    const std::set<std::string,std::greater<>> llvm_cpu_list=get_processor_name_set(core_info_list);
+
+    int count=llvm_cpu_list.size();
+
     jobjectArray ret=env->NewObjectArray(count,env->FindClass("java/lang/String"),nullptr);
     int n=0;
-    for(const std::string& cpu_name:cpu_list){
+    for(const std::string& cpu_name:llvm_cpu_list){
+        env->SetObjectArrayElement(ret,n++,env->NewStringUTF(cpu_name.c_str()));
+    }
+    return ret;
+}
+
+static jobjectArray j_get_support_llvm_cpu_list(JNIEnv* env,jobject self){
+
+    const std::vector<core_info_t> core_info_list = cpu_get_core_info();
+    const std::set<std::string,std::greater<>> llvm_cpu_list=get_processor_name_set(core_info_list);
+    const std::string isa=cpu_get_processor_isa(core_info_list[0]);
+    std::vector<std::string> append_llvm_cpu_list;
+    int count=llvm_cpu_list.size();
+    if(isa=="armv9-a"||isa=="armv9.2-a"){
+        count+=4;
+        append_llvm_cpu_list={"cortex-x1","cortex-a55","cortex-a73","cortex-a53"};
+    }
+    else if(isa=="armv8.2-a"){
+        count+=2;
+        append_llvm_cpu_list={"cortex-a73","cortex-a53"};
+    }
+
+    jobjectArray ret=env->NewObjectArray(count,env->FindClass("java/lang/String"),nullptr);
+    int n=0;
+    for(const std::string& cpu_name:llvm_cpu_list){
+        env->SetObjectArrayElement(ret,n++,env->NewStringUTF(cpu_name.c_str()));
+    }
+    for(const std::string& cpu_name:append_llvm_cpu_list){
         env->SetObjectArrayElement(ret,n++,env->NewStringUTF(cpu_name.c_str()));
     }
     return ret;

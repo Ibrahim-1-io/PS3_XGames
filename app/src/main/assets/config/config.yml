@@ -123,7 +123,7 @@ Video:
   Disable Asynchronous Memory Manager: false
   Output Scaling Mode: Bilinear
   Vertex Buffer Upload Mode: Auto
-  Texture Upload Mode: CPU
+  Texture Upload Mode: GPU
   Use BGRA Format: true
   Force Convert Texture: false
   Vulkan:
@@ -265,7 +265,7 @@ Miscellaneous:
   Silence All Logs: false
   Window Title Format: "FPS: %F | %R | %V | %T [%t]"
   Pause Emulation During Home Menu: false
-  Font File Selection: From Firmware
+  Font File Selection: Custom
   Custom Font File Path: ""
   Font Size: 22
   Memory Debug overlay: false

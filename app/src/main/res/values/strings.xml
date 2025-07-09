@@ -3,10 +3,36 @@
     <!--string name="app_name">aPS3e Premium</string-->
 	<string name="app_name">aPS3e</string>
 
+	<string name="quick_start_page">Quick Start Page</string>
+	<string name="prev_step">Prev Step</string>
+	<string name="next_step">Next Step</string>
+	<string name="finish">Finish</string>
+
+	<string name="welcome">Welcome</string>
+	<string name="welcome_content">Welcome to %s!</string>
+	<string name="welcome_content2">With just a few simple steps, you re ready to start playing, click on " %s " to get started.</string>
+
+	<string name="install_ps3_firmware_hiht_content">To play the game, you must install the PS3 firmware (PS3UPDAT.PUP). Please select the firmware file.</string>
+	<string name="ps3_firmware_installed">Firmware Installed</string>
+	<string name="select_ps3_firmware">Select Firmware(PS3UPDAT.PUP)</string>
+	<string name="firmware_not_install">firmware not install</string>
+
+
+	<string name="select_ps3_iso_dir_hiht_content">Please specify the PS3 ISO directory, the APP will automatically scan to retrieve valid games, you can also skip this step and install the .pkg file directly.</string>
+	<string name="ps3_iso_dir_is_set">PS3 ISO directory to set</string>
+
+	<string name="font_select_hiht_content">Please select a font file (*.ttf, *.ttc, *.otf) to install, or you can use a font from the PS3 firmware (words may be missing).</string>
+	<string name="custom_font_path_prefix">Font Path: </string>
+	<string name="select_gpu_driver_hiht_content">Please select a GPU driver, you can also skip this step (the game may run with errors).</string>
+	<string name="custom_gpu_driver_path_prefix">GPU Driver Path: </string>
+
+	<string name="modify_config_hiht_content">The emulator will automatically select the most suitable configuration, but some configurations may cause issues on your device. You can modify them later in the settings.</string>
+
 	<string name="msg_processing">Processing...</string>
 	<string name="msg_failed">Failed!</string>
 
 	<string name="emulator_settings_video_vulkan_debug">Debug</string>
+	<string name="emulator_settings_miscellaneous_memory_debug_overlay">Memory Debug overlay</string>
 
 	<string name="vibrator_duration">Virbrator Duration</string>
 	<string name="enable_vibrator">Enable Vibrator</string>
@@ -46,9 +72,6 @@
 	<string name="about">About</string>
 	<string name="quit">Quit</string>
 	<string name="update_log">Update Log</string>
-	<string name="firmware_not_install">firmware not install</string>
-	<string name="request_title_INSTALL_FIRMWARE">Select Firmware(PS3UPDAT.PUP)</string>
-	<string name="request_title_INSTALL_GAME">Select a PS3 ISO,RAP or PKG</string>
 	<string name="empty_game_list">The game list is empty</string>
 	<string name="delete">Delete</string>
 	<string name="settings">Settings</string>
@@ -663,7 +686,6 @@
 	<string name="emulator_settings_miscellaneous_font_file_selection">Font File Selection</string>
 	<string-array name="miscellaneous_font_file_selection_entries">
 		<item>From Firmware</item>
-		<item>From OS</item>
 		<item>Custom</item>
 	</string-array>
 	<string name="emulator_settings_miscellaneous_custom_font_file_path">Custom Font File Path</string>

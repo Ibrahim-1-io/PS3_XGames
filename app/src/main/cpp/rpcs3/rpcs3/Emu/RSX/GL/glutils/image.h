@@ -85,6 +85,22 @@ namespace gl
 			uint_10_10_10_2 = GL_UNSIGNED_INT_10_10_10_2,
 
 			f64 = GL_DOUBLE,
+
+			#else
+			/* ubyte_3_3_2 = _GL_UNSIGNED_BYTE_3_3_2,
+			ubyte_2_3_3_rev = _GL_UNSIGNED_BYTE_2_3_3_REV,
+
+			ushort_5_6_5_rev = _GL_UNSIGNED_SHORT_5_6_5_REV,
+
+			ushort_4_4_4_4_rev = _GL_UNSIGNED_SHORT_4_4_4_4_REV,
+
+			ushort_1_5_5_5_rev = _GL_UNSIGNED_SHORT_1_5_5_5_REV,
+
+			uint_8_8_8_8 = _GL_UNSIGNED_INT_8_8_8_8,
+			uint_8_8_8_8_rev = _GL_UNSIGNED_INT_8_8_8_8_REV,
+			uint_10_10_10_2 = _GL_UNSIGNED_INT_10_10_10_2,
+
+			f64 = _GL_DOUBLE,*/
 #endif
 			ushort_5_6_5 = GL_UNSIGNED_SHORT_5_6_5,
 			ushort_4_4_4_4 = GL_UNSIGNED_SHORT_4_4_4_4,
@@ -135,12 +151,11 @@ namespace gl
 			depth24_stencil8 = GL_DEPTH24_STENCIL8,
 			depth32f_stencil8 = GL_DEPTH32F_STENCIL8,
 
-#ifndef USE_GLES
 			compressed_rgb_s3tc_dxt1 = GL_COMPRESSED_RGB_S3TC_DXT1_EXT,
 			compressed_rgba_s3tc_dxt1 = GL_COMPRESSED_RGBA_S3TC_DXT1_EXT,
 			compressed_rgba_s3tc_dxt3 = GL_COMPRESSED_RGBA_S3TC_DXT3_EXT,
 			compressed_rgba_s3tc_dxt5 = GL_COMPRESSED_RGBA_S3TC_DXT5_EXT,
-#endif
+
 			//Sized internal formats, see opengl spec document on glTexImage2D, table 3
 			rgba8 = GL_RGBA8,
 			bgra8 = GL_BGRA8,
@@ -150,13 +165,17 @@ namespace gl
 			rgba4 = GL_RGBA4,
 			r8 = GL_R8,
 
-#ifndef USE_GLES
+#ifdef USE_GLES
+            r16 = GL_R16_EXT,
+#else
 			r16 = GL_R16,
 #endif
 			r32f = GL_R32F,
 			rg8 = GL_RG8,
 
-#ifndef USE_GLES
+#ifdef USE_GLES
+            rg16 = GL_RG16_EXT,
+#else
 			rg16 = GL_RG16,
 #endif
 			rg16f = GL_RG16F,
@@ -189,7 +208,9 @@ namespace gl
 		enum class target
 		{
 
-#ifndef USE_GLES
+#ifdef USE_GLES
+			texture1D = _GL_TEXTURE_1D,
+			#else
 			texture1D = GL_TEXTURE_1D,
 #endif
 			texture2D = GL_TEXTURE_2D,
@@ -238,7 +259,7 @@ namespace gl
 			return m_target;
 		}
 
-#ifndef USE_GLES
+#if 1//ndef USE_GLES
 		static bool compressed_format(internal_format format_) noexcept
 		{
 			switch (format_)

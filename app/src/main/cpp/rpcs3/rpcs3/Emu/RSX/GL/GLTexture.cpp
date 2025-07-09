@@ -84,8 +84,13 @@ namespace gl
 		case CELL_GCM_TEXTURE_DEPTH24_D8_FLOAT: return GL_DEPTH32F_STENCIL8;
 		case CELL_GCM_TEXTURE_DEPTH16: return GL_DEPTH_COMPONENT16;
 		case CELL_GCM_TEXTURE_DEPTH16_FLOAT: return GL_DEPTH_COMPONENT32F;
+#ifdef USE_GLES
+        case CELL_GCM_TEXTURE_X16: return GL_R16_EXT;
+		case CELL_GCM_TEXTURE_Y16_X16: return GL_RG16_EXT;
+#else
 		case CELL_GCM_TEXTURE_X16: return GL_R16;
 		case CELL_GCM_TEXTURE_Y16_X16: return GL_RG16;
+#endif
 		case CELL_GCM_TEXTURE_R5G5B5A1: return GL_RGB5_A1;
 		case CELL_GCM_TEXTURE_W16_Z16_Y16_X16_FLOAT: return GL_RGBA16F;
 		case CELL_GCM_TEXTURE_W32_Z32_Y32_X32_FLOAT: return GL_RGBA32F;
@@ -110,10 +115,20 @@ namespace gl
 		switch (texture_format)
 		{
 		case CELL_GCM_TEXTURE_B8: return std::make_tuple(GL_RED, GL_UNSIGNED_BYTE);
+#ifdef USE_GLES
+        case CELL_GCM_TEXTURE_A1R5G5B5: return std::make_tuple(GL_RGBA, GL_UNSIGNED_BYTE);
+		case CELL_GCM_TEXTURE_A4R4G4B4: return std::make_tuple(GL_RGBA, GL_UNSIGNED_SHORT_4_4_4_4);
+#else
 		case CELL_GCM_TEXTURE_A1R5G5B5: return std::make_tuple(GL_BGRA, GL_UNSIGNED_SHORT_1_5_5_5_REV);
 		case CELL_GCM_TEXTURE_A4R4G4B4: return std::make_tuple(GL_BGRA, GL_UNSIGNED_SHORT_4_4_4_4);
+#endif
 		case CELL_GCM_TEXTURE_R5G6B5: return std::make_tuple(GL_RGB, GL_UNSIGNED_SHORT_5_6_5);
+
+#ifdef USE_GLES
+        case CELL_GCM_TEXTURE_A8R8G8B8: return std::make_tuple(GL_RGBA, GL_UNSIGNED_BYTE);
+#else
 		case CELL_GCM_TEXTURE_A8R8G8B8: return std::make_tuple(GL_BGRA, GL_UNSIGNED_INT_8_8_8_8_REV);
+#endif
 		case CELL_GCM_TEXTURE_G8B8: return std::make_tuple(GL_RG, GL_UNSIGNED_BYTE);
 		case CELL_GCM_TEXTURE_R6G5B5: return std::make_tuple(GL_RGB, GL_UNSIGNED_SHORT_5_6_5);
 		case CELL_GCM_TEXTURE_DEPTH24_D8: return std::make_tuple(GL_DEPTH_STENCIL, GL_UNSIGNED_INT_24_8);
@@ -126,16 +141,32 @@ namespace gl
 		case CELL_GCM_TEXTURE_W16_Z16_Y16_X16_FLOAT: return std::make_tuple(GL_RGBA, GL_HALF_FLOAT);
 		case CELL_GCM_TEXTURE_W32_Z32_Y32_X32_FLOAT: return std::make_tuple(GL_RGBA, GL_FLOAT);
 		case CELL_GCM_TEXTURE_X32_FLOAT: return std::make_tuple(GL_RED, GL_FLOAT);
+
+#ifdef USE_GLES
+        case CELL_GCM_TEXTURE_D1R5G5B5: return std::make_tuple(GL_RGBA, GL_UNSIGNED_BYTE);
+		case CELL_GCM_TEXTURE_D8R8G8B8: return std::make_tuple(GL_RGBA, GL_UNSIGNED_BYTE);
+
+		case CELL_GCM_TEXTURE_COMPRESSED_DXT1: return std::make_tuple(supports_dxt ? GL_COMPRESSED_RGBA_S3TC_DXT1_EXT : GL_RGBA, GL_UNSIGNED_BYTE);
+		case CELL_GCM_TEXTURE_COMPRESSED_DXT23: return std::make_tuple(supports_dxt ? GL_COMPRESSED_RGBA_S3TC_DXT3_EXT : GL_RGBA, GL_UNSIGNED_BYTE);
+		case CELL_GCM_TEXTURE_COMPRESSED_DXT45: return std::make_tuple(supports_dxt ? GL_COMPRESSED_RGBA_S3TC_DXT5_EXT : GL_RGBA, GL_UNSIGNED_BYTE);
+#else
 		case CELL_GCM_TEXTURE_D1R5G5B5: return std::make_tuple(GL_BGRA, GL_UNSIGNED_SHORT_1_5_5_5_REV);
 		case CELL_GCM_TEXTURE_D8R8G8B8: return std::make_tuple(GL_BGRA, GL_UNSIGNED_INT_8_8_8_8_REV);
+            case CELL_GCM_TEXTURE_COMPRESSED_DXT1: return std::make_tuple(supports_dxt ? GL_COMPRESSED_RGBA_S3TC_DXT1_EXT : GL_BGRA, GL_UNSIGNED_BYTE);
+            case CELL_GCM_TEXTURE_COMPRESSED_DXT23: return std::make_tuple(supports_dxt ? GL_COMPRESSED_RGBA_S3TC_DXT3_EXT : GL_BGRA, GL_UNSIGNED_BYTE);
+            case CELL_GCM_TEXTURE_COMPRESSED_DXT45: return std::make_tuple(supports_dxt ? GL_COMPRESSED_RGBA_S3TC_DXT5_EXT : GL_BGRA, GL_UNSIGNED_BYTE);
+#endif
 		case CELL_GCM_TEXTURE_Y16_X16_FLOAT: return std::make_tuple(GL_RG, GL_HALF_FLOAT);
-		case CELL_GCM_TEXTURE_COMPRESSED_DXT1: return std::make_tuple(supports_dxt ? GL_COMPRESSED_RGBA_S3TC_DXT1_EXT : GL_BGRA, GL_UNSIGNED_BYTE);
-		case CELL_GCM_TEXTURE_COMPRESSED_DXT23: return std::make_tuple(supports_dxt ? GL_COMPRESSED_RGBA_S3TC_DXT3_EXT : GL_BGRA, GL_UNSIGNED_BYTE);
-		case CELL_GCM_TEXTURE_COMPRESSED_DXT45: return std::make_tuple(supports_dxt ? GL_COMPRESSED_RGBA_S3TC_DXT5_EXT : GL_BGRA, GL_UNSIGNED_BYTE);
 		case CELL_GCM_TEXTURE_COMPRESSED_HILO8: return std::make_tuple(GL_RG, GL_UNSIGNED_BYTE);
 		case CELL_GCM_TEXTURE_COMPRESSED_HILO_S8: return std::make_tuple(GL_RG, GL_BYTE);
+
+#ifdef USE_GLES
+        case CELL_GCM_TEXTURE_COMPRESSED_B8R8_G8R8: return std::make_tuple(GL_RGBA, GL_UNSIGNED_BYTE);
+		case CELL_GCM_TEXTURE_COMPRESSED_R8B8_R8G8: return std::make_tuple(GL_RGBA, GL_UNSIGNED_BYTE);
+#else
 		case CELL_GCM_TEXTURE_COMPRESSED_B8R8_G8R8: return std::make_tuple(GL_BGRA, GL_UNSIGNED_BYTE);
 		case CELL_GCM_TEXTURE_COMPRESSED_R8B8_R8G8: return std::make_tuple(GL_BGRA, GL_UNSIGNED_BYTE);
+#endif
 		}
 		fmt::throw_exception("Compressed or unknown texture format 0x%x", texture_format);
 	}
@@ -164,6 +195,17 @@ namespace gl
 			return { GL_RGB, GL_UNSIGNED_SHORT_5_6_5, 2, true };
 		case texture::internal_format::rgb5a1:
 			return { GL_RGB, GL_UNSIGNED_SHORT_5_5_5_1, 2, true };
+
+#ifdef USE_GLES
+        case texture::internal_format::bgr5a1:
+			return { GL_RGB, GL_UNSIGNED_SHORT_5_5_5_1, 2, true };
+		case texture::internal_format::rgba4:
+			return { GL_RGBA, GL_UNSIGNED_SHORT_4_4_4_4, 2, false };
+		case texture::internal_format::rgba8:
+			return { GL_RGBA, GL_UNSIGNED_BYTE, 4, true };
+		case texture::internal_format::bgra8:
+			return { GL_RGBA, GL_UNSIGNED_BYTE, 4, true };
+#else
 		case texture::internal_format::bgr5a1:
 			return { GL_RGB, GL_UNSIGNED_SHORT_1_5_5_5_REV, 2, true };
 		case texture::internal_format::rgba4:
@@ -172,6 +214,7 @@ namespace gl
 			return { GL_RGBA, GL_UNSIGNED_INT_8_8_8_8_REV, 4, true };
 		case texture::internal_format::bgra8:
 			return { GL_BGRA, GL_UNSIGNED_INT_8_8_8_8_REV, 4, true };
+#endif
 		case texture::internal_format::rgba16f:
 			return { GL_RGBA, GL_HALF_FLOAT, 2, true };
 		case texture::internal_format::rgba32f:

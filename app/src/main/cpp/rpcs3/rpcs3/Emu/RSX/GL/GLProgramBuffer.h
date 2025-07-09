@@ -54,12 +54,23 @@ struct GLTraits
 				const_cast<gl::glsl::shader*>(fp)->compile();
 			}
 
+			#ifdef USE_GLES
+
+			program->attach(*vp)
+				.attach(*fp);
+			#else
+
 			program->attach(*vp)
 				.attach(*fp)
 				.bind_fragment_data_location("ocol0", 0)
 				.bind_fragment_data_location("ocol1", 1)
 				.bind_fragment_data_location("ocol2", 2)
 				.bind_fragment_data_location("ocol3", 3);
+#endif // USE_GLES
+
+			
+
+
 
 			if (g_cfg.video.log_programs)
 			{

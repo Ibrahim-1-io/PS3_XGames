@@ -1638,6 +1638,7 @@ int register_Emulator(JNIEnv* env){
 
 
                     {"simple_device_info", "()Ljava/lang/String;",(void *)j_simple_device_info},
+                    {"get_native_llvm_cpu_list", "()[Ljava/lang/String;",(void *)j_get_native_llvm_cpu_list},
             {"get_support_llvm_cpu_list", "()[Ljava/lang/String;",(void *)j_get_support_llvm_cpu_list},
             {"get_vulkan_physical_dev_list", "()[Ljava/lang/String;",(void *)j_get_vulkan_physical_dev_list},
 
@@ -1682,6 +1683,8 @@ int register_Emulator_cfg(JNIEnv* env){
 
     static const JNINativeMethod methods[] = {
 
+            { "native_open_config", "(Ljava/lang/String;)J", (void *) open_config_str },
+            { "native_close_config", "(J)Ljava/lang/String;", (void *) close_config_str },
             { "native_open_config_file", "(Ljava/lang/String;)J", (void *) open_config_file },
             { "native_load_config_entry", "(JLjava/lang/String;)Ljava/lang/String;", (void *) load_config_entry },
             { "native_load_config_entry_ty_arr", "(JLjava/lang/String;)[Ljava/lang/String;", (void *) load_config_entry_ty_arr },

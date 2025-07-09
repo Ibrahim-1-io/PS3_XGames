@@ -10,7 +10,8 @@
 #define DEF_VK_FUNCTION
 #include "VKPFNTable.h"
 #undef DEF_VK_FUNCTION
-#if 0
+
+#ifdef DBG_ADRENO_GPU_MEM
 #define VK_FUNC(func) PFN_##func _##func
 #define INSTANCE_VK_FUNCTION
 #define DEVICE_VK_FUNCTION
@@ -18,6 +19,16 @@
 #undef INSTANCE_VK_FUNCTION
 #undef DEVICE_VK_FUNCTION
 #undef VK_FUNC
+#endif
+
+
+#ifdef DBG_ADRENO_GPU_MEM
+#include <fstream>
+void save_msg(const std::string& path,const std::string& tag,int64_t v){
+    std::ofstream f(path,std::ios::app);
+    f<<tag<<"|"<<v<<std::endl;
+    f.close();
+}
 #endif
 
 namespace vk
@@ -65,23 +76,19 @@ namespace vk
 
 
     void init_instance_pfn(VkInstance instance){
-#if 1
         #define INSTANCE_VK_FUNCTION
         #define VK_FUNC(func) _##func = reinterpret_cast<PFN_##func>(_vkGetInstanceProcAddr(instance, #func))
 		#include "VKPFNTableEXT.h"
 
 #undef INSTANCE_VK_FUNCTION
 #undef VK_FUNC
-#endif
     }
 	void init_device_pfn(VkDevice device){
-#if 1
         #define DEVICE_VK_FUNCTION
         #define VK_FUNC(func) _##func = reinterpret_cast<PFN_##func>(_vkGetDeviceProcAddr(device, #func))
 		#include "VKPFNTableEXT.h"
 
 #undef DEVICE_VK_FUNCTION
 #undef VK_FUNC
-#endif
     }
 }

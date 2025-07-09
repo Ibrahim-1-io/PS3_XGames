@@ -675,7 +675,16 @@ namespace gl
 				{
 				case CELL_GCM_TEXTURE_A8R8G8B8:
 				{
+#ifdef USE_GLES
+
+					cached.set_format(gl::texture::format::rgba, gl::texture::type::ubyte, true);
+#else
+
 					cached.set_format(gl::texture::format::bgra, gl::texture::type::uint_8_8_8_8_rev, true);
+#endif // USE_GLES
+
+
+
 					break;
 				}
 				case CELL_GCM_TEXTURE_R5G6B5:
@@ -751,17 +760,19 @@ namespace gl
 
 			section.set_view_flags(flags);
 		}
-
 		void insert_texture_barrier(gl::command_context&, gl::texture*, bool) override
 		{
+
+#ifndef USE_GLES
 			auto &caps = gl::get_driver_caps();
 
 			if (caps.ARB_texture_barrier_supported)
 				glTextureBarrier();
 			else if (caps.NV_texture_barrier_supported)
 				glTextureBarrierNV();
-		}
 
+#endif
+		}
 		bool render_target_format_is_compatible(gl::texture* tex, u32 gcm_format) override
 		{
 			auto ifmt = tex->get_internal_format();

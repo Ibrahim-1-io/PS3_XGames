@@ -132,7 +132,12 @@ gl::texture* GLGSRender::get_present_source(gl::present_surface_info* info, cons
 		const auto range = utils::address_range::start_length(info->address, info->pitch * info->height);
 		m_gl_texture_cache.invalidate_range(cmd, range, rsx::invalidation_cause::read);
 
+		#ifdef USE_GLES
+
+		flip_image->copy_from(vm::base(info->address), static_cast<gl::texture::format>(expected_format), gl::texture::type::ubyte, unpack_settings);
+		#else
 		flip_image->copy_from(vm::base(info->address), static_cast<gl::texture::format>(expected_format), gl::texture::type::uint_8_8_8_8, unpack_settings);
+		#endif
 		image = flip_image.get();
 	}
 	else if (image->get_internal_format() != static_cast<gl::texture::internal_format>(expected_format))

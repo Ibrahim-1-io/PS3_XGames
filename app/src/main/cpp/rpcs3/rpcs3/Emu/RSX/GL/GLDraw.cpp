@@ -84,7 +84,7 @@ namespace gl
 		}
 		fmt::throw_exception("Unsupported blend factor 0x%X", static_cast<u32>(op));
 	}
-
+#ifndef USE_GLES
 	GLenum logic_op(rsx::logic_op op)
 	{
 		switch (op)
@@ -108,7 +108,7 @@ namespace gl
 		}
 		fmt::throw_exception("Unsupported logic op 0x%X", static_cast<u32>(op));
 	}
-
+#endif
 	GLenum front_face(rsx::front_face op)
 	{
 		//NOTE: RSX face winding is always based off of upper-left corner like vulkan, but GL is bottom left
@@ -147,19 +147,19 @@ void GLGSRender::update_draw_state()
 		// Z-buffer is active.
 		gl_state.depth_mask(rsx::method_registers.depth_write_enabled());
 		gl_state.stencil_mask(rsx::method_registers.stencil_mask());
-
+#ifndef USE_GLES
 		gl_state.enable(rsx::method_registers.depth_clamp_enabled() || !rsx::method_registers.depth_clip_enabled(), GL_DEPTH_CLAMP);
-
+#endif
 		if (gl_state.enable(rsx::method_registers.depth_test_enabled(), GL_DEPTH_TEST))
 		{
 			gl_state.depth_func(gl::comparison_op(rsx::method_registers.depth_func()));
 		}
-
+#ifndef USE_GLES
 		if (gl::get_driver_caps().EXT_depth_bounds_test_supported && (gl_state.enable(rsx::method_registers.depth_bounds_test_enabled(), GL_DEPTH_BOUNDS_TEST_EXT)))
 		{
 			gl_state.depth_bounds(rsx::method_registers.depth_bounds_min(), rsx::method_registers.depth_bounds_max());
 		}
-
+#endif
 		if (gl::get_driver_caps().NV_depth_buffer_float_supported)
 		{
 			gl_state.depth_range(rsx::method_registers.clip_min(), rsx::method_registers.clip_max());
@@ -220,16 +220,17 @@ void GLGSRender::update_draw_state()
 
 		// LogicOp and Blend are mutually exclusive. If both are enabled, LogicOp takes precedence.
 		// In OpenGL, this behavior is enforced in spec, but let's enforce it at renderer level as well.
+#ifndef USE_GLES
 		if (gl_state.enable(rsx::method_registers.logic_op_enabled(), GL_COLOR_LOGIC_OP))
 		{
 			gl_state.logic_op(gl::logic_op(rsx::method_registers.logic_operation()));
-
 			gl_state.enablei(GL_FALSE, GL_BLEND, 0);
 			gl_state.enablei(GL_FALSE, GL_BLEND, 1);
 			gl_state.enablei(GL_FALSE, GL_BLEND, 2);
 			gl_state.enablei(GL_FALSE, GL_BLEND, 3);
 		}
 		else
+#endif
 		{
 			bool mrt_blend_enabled[] =
 			{
@@ -262,8 +263,9 @@ void GLGSRender::update_draw_state()
 		// Antialias control
 		if (backend_config.supports_hw_msaa)
 		{
+#ifndef USE_GLES
 			gl_state.enable(/*REGS(m_ctx)->msaa_enabled()*/GL_MULTISAMPLE);
-
+#endif
 			gl_state.enable(GL_SAMPLE_MASK);
 			gl_state.sample_mask(REGS(m_ctx)->msaa_sample_mask());
 
@@ -280,10 +282,12 @@ void GLGSRender::update_draw_state()
 			gl_state.enable(hw_enable && REGS(m_ctx)->msaa_alpha_to_coverage_enabled(), GL_SAMPLE_ALPHA_TO_COVERAGE);
 		}
 
+#ifndef USE_GLES
 		if (backend_config.supports_hw_a2one)
 		{
 			gl_state.enable(REGS(m_ctx)->msaa_alpha_to_one_enabled(), GL_SAMPLE_ALPHA_TO_ONE);
 		}
+#endif
 	}
 
 	switch (rsx::method_registers.current_draw_clause.primitive)
@@ -292,11 +296,17 @@ void GLGSRender::update_draw_state()
 	case rsx::primitive_type::line_loop:
 	case rsx::primitive_type::line_strip:
 		gl_state.line_width(rsx::method_registers.line_width() * rsx::get_resolution_scale());
+
+#ifndef USE_GLES
 		gl_state.enable(rsx::method_registers.line_smooth_enabled(), GL_LINE_SMOOTH);
+#endif
 		break;
 	default:
+
+#ifndef USE_GLES
 		gl_state.enable(rsx::method_registers.poly_offset_point_enabled(), GL_POLYGON_OFFSET_POINT);
 		gl_state.enable(rsx::method_registers.poly_offset_line_enabled(), GL_POLYGON_OFFSET_LINE);
+#endif
 		gl_state.enable(rsx::method_registers.poly_offset_fill_enabled(), GL_POLYGON_OFFSET_FILL);
 
 		// offset_bias is the constant factor, multiplied by the implementation factor R
@@ -647,6 +657,12 @@ void GLGSRender::emit_geometry(u32 sub_index)
 				first += range.count;
 			}
 
+#ifdef USE_GLES
+            for (u32 n = 0; n < draw_count; ++n)
+				{
+					glDrawArrays(draw_mode, firsts[n], counts[n]);
+				}
+#else
 			if (use_draw_arrays_fallback)
 			{
 				// MultiDrawArrays is broken on some primitive types using AMD. One known type is GL_TRIANGLE_STRIP but there could be more
@@ -666,6 +682,7 @@ void GLGSRender::emit_geometry(u32 sub_index)
 				// Normal render
 				glMultiDrawArrays(draw_mode, firsts, counts, static_cast<GLsizei>(draw_count));
 			}
+#endif
 		}
 	}
 	else

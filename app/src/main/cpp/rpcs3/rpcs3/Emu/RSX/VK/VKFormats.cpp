@@ -135,6 +135,7 @@ namespace vk
 		case CELL_GCM_TEXTURE_COMPRESSED_DXT1:
 		case CELL_GCM_TEXTURE_COMPRESSED_DXT23:
 		case CELL_GCM_TEXTURE_COMPRESSED_DXT45:
+            case CELL_GCM_TEXTURE_A4R4G4B4:
 			mapping = { VK_COMPONENT_SWIZZLE_A, VK_COMPONENT_SWIZZLE_R, VK_COMPONENT_SWIZZLE_G, VK_COMPONENT_SWIZZLE_B }; break;
 
 		case CELL_GCM_TEXTURE_DEPTH24_D8:
@@ -143,8 +144,8 @@ namespace vk
 		case CELL_GCM_TEXTURE_DEPTH16_FLOAT:
 			mapping = { VK_COMPONENT_SWIZZLE_R, VK_COMPONENT_SWIZZLE_R, VK_COMPONENT_SWIZZLE_R, VK_COMPONENT_SWIZZLE_R }; break;
 
-		case CELL_GCM_TEXTURE_A4R4G4B4:
-			mapping = { VK_COMPONENT_SWIZZLE_R, VK_COMPONENT_SWIZZLE_G, VK_COMPONENT_SWIZZLE_B, VK_COMPONENT_SWIZZLE_A }; break;
+		//case CELL_GCM_TEXTURE_A4R4G4B4:
+		//	mapping = { VK_COMPONENT_SWIZZLE_R, VK_COMPONENT_SWIZZLE_G, VK_COMPONENT_SWIZZLE_B, VK_COMPONENT_SWIZZLE_A }; break;
 
 		case CELL_GCM_TEXTURE_G8B8:
 			mapping = { VK_COMPONENT_SWIZZLE_G, VK_COMPONENT_SWIZZLE_R, VK_COMPONENT_SWIZZLE_G, VK_COMPONENT_SWIZZLE_R }; break;
@@ -197,24 +198,15 @@ namespace vk
 		static const bool supports_dxt = vk::get_current_renderer()->get_texture_compression_bc_support();
         static const VkFormat default_sampler_format=g_cfg.video.bgra_format.get()?VK_FORMAT_B8G8R8A8_UNORM:VK_FORMAT_R8G8B8A8_UNORM;
 
+        static const bool convert_texture=g_cfg.video.force_convert_texture.get();
 		switch (format)
 		{
-#ifndef __APPLE__
-            case CELL_GCM_TEXTURE_R5G6B5: return VK_FORMAT_R5G6B5_UNORM_PACK16;
-            case CELL_GCM_TEXTURE_R6G5B5: return VK_FORMAT_R5G6B5_UNORM_PACK16; // Expand, discard high bit?
-            case CELL_GCM_TEXTURE_R5G5B5A1: return VK_FORMAT_R5G5B5A1_UNORM_PACK16;
-            case CELL_GCM_TEXTURE_D1R5G5B5: return VK_FORMAT_A1R5G5B5_UNORM_PACK16;
-            case CELL_GCM_TEXTURE_A1R5G5B5: return VK_FORMAT_A1R5G5B5_UNORM_PACK16;
-            case CELL_GCM_TEXTURE_A4R4G4B4: return VK_FORMAT_R4G4B4A4_UNORM_PACK16;
-#else
-                // assign B8G8R8A8_UNORM to formats that are not supported by Metal
-		case CELL_GCM_TEXTURE_R6G5B5: return VK_FORMAT_B8G8R8A8_UNORM;
-		case CELL_GCM_TEXTURE_R5G6B5: return VK_FORMAT_B8G8R8A8_UNORM;
-		case CELL_GCM_TEXTURE_R5G5B5A1: return VK_FORMAT_B8G8R8A8_UNORM;
-		case CELL_GCM_TEXTURE_D1R5G5B5: return VK_FORMAT_B8G8R8A8_UNORM;
-		case CELL_GCM_TEXTURE_A1R5G5B5: return VK_FORMAT_B8G8R8A8_UNORM;
-		case CELL_GCM_TEXTURE_A4R4G4B4: return VK_FORMAT_B8G8R8A8_UNORM;
-#endif
+            case CELL_GCM_TEXTURE_R5G6B5: return convert_texture?default_sampler_format:VK_FORMAT_R5G6B5_UNORM_PACK16;
+            case CELL_GCM_TEXTURE_R6G5B5: return convert_texture?default_sampler_format:VK_FORMAT_R5G6B5_UNORM_PACK16; // Expand, discard high bit?
+            case CELL_GCM_TEXTURE_R5G5B5A1: return convert_texture?default_sampler_format:VK_FORMAT_R5G5B5A1_UNORM_PACK16;
+            case CELL_GCM_TEXTURE_D1R5G5B5: return convert_texture?default_sampler_format:VK_FORMAT_A1R5G5B5_UNORM_PACK16;
+            case CELL_GCM_TEXTURE_A1R5G5B5: return convert_texture?default_sampler_format:VK_FORMAT_A1R5G5B5_UNORM_PACK16;
+            case CELL_GCM_TEXTURE_A4R4G4B4: return convert_texture?default_sampler_format:VK_FORMAT_R4G4B4A4_UNORM_PACK16;
 
 		case CELL_GCM_TEXTURE_B8: return VK_FORMAT_R8_UNORM;
         case CELL_GCM_TEXTURE_A8R8G8B8: return default_sampler_format;

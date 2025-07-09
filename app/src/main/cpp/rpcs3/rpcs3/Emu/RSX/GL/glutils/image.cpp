@@ -48,7 +48,11 @@ namespace gl
 		default:
 			fmt::throw_exception("Invalid image target 0x%X", target);
 		case GL_TEXTURE_1D:
+#ifdef USE_GLES
+                glTexStorage2D(GL_TEXTURE_2D, mipmaps, storage_fmt, width, 1);
+#else
 			glTexStorage1D(target, mipmaps, storage_fmt, width);
+#endif
 			height = depth = 1;
 			break;
 		case GL_TEXTURE_2D:
@@ -185,7 +189,12 @@ namespace gl
 		{
 		case GL_TEXTURE_1D:
 		{
+#ifdef USE_GLES
+            glBindTexture(GL_TEXTURE_2D,m_id);
+            glTexSubImage2D(GL_TEXTURE_2D, level, region.x, 0, region.width, 1, static_cast<GLenum>(format), static_cast<GLenum>(type), src);
+#else
 			DSA_CALL(TextureSubImage1D, m_id, GL_TEXTURE_1D, level, region.x, region.width, static_cast<GLenum>(format), static_cast<GLenum>(type), src);
+#endif
 			break;
 		}
 		case GL_TEXTURE_2D:
@@ -213,6 +222,11 @@ namespace gl
 		}
 		case GL_TEXTURE_CUBE_MAP:
 		{
+
+#ifdef USE_GLES
+            glBindTexture(target_,m_id);
+            glTexSubImage3D( target_, level, region.x, region.y, region.z, region.width, region.height, region.depth, static_cast<GLenum>(format), static_cast<GLenum>(type), src);
+#else
 			if (get_driver_caps().ARB_direct_state_access_supported)
 			{
 				glTextureSubImage3D(m_id, level, region.x, region.y, region.z, region.width, region.height, region.depth, static_cast<GLenum>(format), static_cast<GLenum>(type), src);
@@ -228,6 +242,7 @@ namespace gl
 					ptr += (region.width * region.height * 4); //TODO
 				}
 			}
+#endif
 			break;
 		}
 		}
@@ -239,8 +254,12 @@ namespace gl
 
 		if (get_target() != target::textureBuffer)
 			fmt::throw_exception("OpenGL error: texture cannot copy from buffer");
-
+#ifdef USE_GLES
+            glBindTexture(GL_TEXTURE_BUFFER, m_id);
+            glTexBufferRange(GL_TEXTURE_BUFFER, gl_format_type, buf.id(), offset, length);
+#else
 		DSA_CALL(TextureBufferRange, m_id, GL_TEXTURE_BUFFER, gl_format_type, buf.id(), offset, length);
+#endif
 	}
 
 	void texture::copy_from(buffer_view& view)
@@ -301,7 +320,9 @@ namespace gl
 			component_swizzle[2] = argb_swizzle[3];
 			component_swizzle[3] = argb_swizzle[0];
 
+#ifndef USE_GLES
 			DSA_CALL(TextureParameteriv, m_id, m_target, GL_TEXTURE_SWIZZLE_RGBA, reinterpret_cast<GLint*>(component_swizzle));
+#endif
 		}
 		else
 		{
@@ -316,7 +337,12 @@ namespace gl
 			constexpr u32 depth_stencil_mask = (image_aspect::depth | image_aspect::stencil);
 			ensure((range.aspect_mask & depth_stencil_mask) != depth_stencil_mask); // "Invalid aspect mask combination"
 
-			DSA_CALL(TextureParameteri, m_id, m_target, GL_DEPTH_STENCIL_TEXTURE_MODE, GL_STENCIL_INDEX);
+#ifndef USE_GLES
+glBindTexture(m_id, m_target);
+glTexParameteri(m_target, GL_DEPTH_STENCIL_TEXTURE_MODE, GL_STENCIL_INDEX);
+#else
+		DSA_CALL(TextureParameteri, m_id, m_target, GL_DEPTH_STENCIL_TEXTURE_MODE, GL_STENCIL_INDEX);
+#endif
 		}
 	}
 

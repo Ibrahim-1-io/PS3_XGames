@@ -657,8 +657,7 @@ namespace vk
 
 			dst->change_layout(cmd, VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL);
 			_vkCmdCopyBufferToImage(cmd, m_spilled_mem->value, dst->value, dst->current_layout, ::size32(regions), regions.data());
-
-			if (samples() > 1)
+            if (samples() > 1)
 			{
 				msaa_flags &= ~rsx::surface_state_flags::require_resolve;
 				msaa_flags |= rsx::surface_state_flags::require_unresolve;

@@ -410,7 +410,24 @@ namespace vk
 				if (src_convert.first == dst_convert.first &&
 					src_convert.second == dst_convert.second)
 				{
-					// NOP, the two operations will cancel out
+                    if(!g_cfg.video.bgra_format){
+                        if(src->info.format==dst->info.format){
+                            //nop
+                        }
+                        else if(src->info.format==VK_FORMAT_R8G8B8A8_UNORM||dst->info.format==VK_FORMAT_R8G8B8A8_UNORM){
+                            insert_buffer_memory_barrier(cmd, scratch_buf->value, 0, src_length,
+                                                         VK_PIPELINE_STAGE_TRANSFER_BIT, VK_PIPELINE_STAGE_COMPUTE_SHADER_BIT,
+                                                         VK_ACCESS_TRANSFER_WRITE_BIT, VK_ACCESS_SHADER_READ_BIT);
+
+                            vk::cs_shuffle_base *shuffle_kernel = vk::get_compute_task<vk::cs_shuffle_swap_rb>();
+                            shuffle_kernel->run(cmd, scratch_buf, src_length);
+                            insert_buffer_memory_barrier(cmd, scratch_buf->value, 0, src_length,
+                                                         VK_PIPELINE_STAGE_COMPUTE_SHADER_BIT, VK_PIPELINE_STAGE_TRANSFER_BIT,
+                                                         VK_ACCESS_SHADER_WRITE_BIT, VK_ACCESS_TRANSFER_READ_BIT);
+
+                            require_rw_barrier = false;
+                        }
+                    }
 				}
 				else
 				{

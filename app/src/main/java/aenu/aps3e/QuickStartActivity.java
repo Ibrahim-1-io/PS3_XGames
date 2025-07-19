@@ -1,6 +1,8 @@
+// SPDX-License-Identifier: WTFPL
 package aenu.aps3e;
 
 import android.app.ComponentCaller;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
@@ -60,7 +62,7 @@ public class QuickStartActivity extends AppCompatActivity {
         getSupportActionBar().setTitle(R.string.welcome);
         setContentView(R.layout.activity_quick_start);
         MainActivity.mk_dirs();
-        try{config=Emulator.Config.open_config_from_string(load_default_config_str());}catch (Exception e){}
+        try{config=Emulator.Config.open_config_from_string(load_default_config_str(this));}catch (Exception e){}
         init_layout_list();
         select_layout(0);
     }
@@ -369,7 +371,9 @@ public class QuickStartActivity extends AppCompatActivity {
         }
         else if(layout.getId()==R.id.quick_start_page_config_modify){
             if(!Boolean.valueOf(config.load_config_entry(EmulatorSettings.Video$Vulkan$Use_Custom_Driver))){
-                if(Emulator.get.get_vulkan_physical_dev_list()[0].contains("Adreno")){
+
+                String gpu_driver_name=Emulator.get.get_vulkan_physical_dev_list()[0];
+                if(gpu_driver_name.contains("Adreno") &&!gpu_driver_name.contains("Turnip")){
                     config.save_config_entry(EmulatorSettings.Video$Texture_Upload_Mode,"CPU");
                     config.save_config_entry(EmulatorSettings.Video$Use_BGRA_Format,"false");
                     config.save_config_entry(EmulatorSettings.Video$Force_Convert_Texture,"true");
@@ -402,9 +406,9 @@ public class QuickStartActivity extends AppCompatActivity {
         }
     }
 
-    String load_default_config_str(){
+    static String load_default_config_str(Context ctx){
         return new String(Application.load_assets_file(
-                this,"config/config.yml"));
+                ctx,"config/config.yml"));
     }
 
     void goto_main_activity(){

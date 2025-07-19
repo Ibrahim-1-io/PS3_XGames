@@ -116,6 +116,42 @@ public class MainActivity extends AppCompatActivity {
 	public static File firmware_installed_file(){
 		return new File(Application.get_app_data_dir(),"config/dev_flash/.installed");
 	}
+
+	static String get_config_resolution(String serial){
+		Emulator.Config cfg=null;
+		File cfg_file=Application.get_custom_cfg_file(serial);
+		if(!cfg_file.exists())
+			cfg_file=Application.get_global_config_file();
+		if(!cfg_file.exists())
+			return null;
+		try{
+			cfg=Emulator.Config.open_config_file(cfg_file.getAbsolutePath());
+			String resolution=cfg.load_config_entry(EmulatorSettings.Video$Resolution);
+			String aspect_ratio=cfg.load_config_entry(EmulatorSettings.Video$Aspect_ratio);
+			cfg.close_config_file();
+
+			switch (resolution){
+				case "1920x1080":
+				case "1920x1080i":
+					return String.format("1920x1080 [%s]",aspect_ratio);
+				case "1280x720":
+				case "1440x1080":
+				case "1280x1080":
+					return String.format("1280x720 [%s]",aspect_ratio);
+				case "960x1080":
+				case "720x480":
+				case "720x480i":
+					return String.format("720x480 [%s]",aspect_ratio);
+				case "720x576":
+				case "720x576i":
+					return String.format("720x576 [%s]",aspect_ratio);
+				default:
+					return null;
+			}
+		}catch(Exception e){
+			return null;
+		}
+	}
 	
 	private final AdapterView.OnItemClickListener item_click_l=new AdapterView.OnItemClickListener(){
 		@Override
@@ -129,9 +165,23 @@ public class MainActivity extends AppCompatActivity {
 			Emulator.MetaInfo meta_info=((GameMetaInfoAdapter)l.getAdapter()).getMetaInfo(position);
 
 			if(!meta_info.decrypt) {
-				Toast.makeText(MainActivity.this,R.string.undecrypted_game,Toast.LENGTH_LONG).show();
+				show_hint_dialog(getString(R.string.undecrypted_game));
 				return;
 			}
+
+			/*if(meta_info.resolution==0) {
+				refresh_game_list();
+				return;
+			}
+
+			if(!meta_info.get_support_resolution().contains(get_config_resolution(meta_info.serial))){
+				String msg_fmt=getString(R.string.resolution_not_support);
+				String support_resolution=meta_info.print_resolution();
+				String setting_1=getString(R.string.emulator_settings_video)+"->"+getString(R.string.emulator_settings_video_resolution);
+				String setting_2=getString(R.string.emulator_settings_video)+"->"+getString(R.string.emulator_settings_video_aspect_ratio);
+				show_hint_dialog(String.format(msg_fmt,support_resolution,setting_1,setting_2));
+				return;
+			}*/
 
 			Intent intent = new Intent("aenu.intent.action.APS3E");
 			intent.setPackage(getPackageName());
@@ -474,16 +524,11 @@ public class MainActivity extends AppCompatActivity {
 		super.onCreateContextMenu(menu, v, menuInfo);
 		AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) menuInfo;
 		if(adapter.is_disc_game(info.position)){
-			menu.add(0, R.string.delete_hdd0_install_data, 0, getString(R.string.delete_hdd0_install_data));
+			getMenuInflater().inflate(R.menu.iso_game_options, menu);
 		}
 		else{
-			menu.add(0, R.string.delete_game_and_data, 0, getString(R.string.delete_game_and_data));
+			getMenuInflater().inflate(R.menu.hdd0_game_options, menu);
 		}
-
-		menu.add(0, R.string.delete_game_data, 0, getString(R.string.delete_game_data));
-		menu.add(0, R.string.delete_shaders_cache, 0, getString(R.string.delete_shaders_cache));
-		menu.add(0, R.string.edit_custom_config, 0, getString(R.string.edit_custom_config));
-
 	}
 	
 	@Override
@@ -492,7 +537,7 @@ public class MainActivity extends AppCompatActivity {
 		
 		int position = info.position;
 		int item_id = item.getItemId();
-		if(item_id==R.string.delete_hdd0_install_data){
+		if(item_id==R.id.delete_hdd0_install_data){
 			show_verify_dialog(R.string.delete_hdd0_install_data, new DialogInterface.OnClickListener() {
 				@Override
 				public void onClick(DialogInterface dialog, int which) {
@@ -508,7 +553,7 @@ public class MainActivity extends AppCompatActivity {
 			});
 			return true;
 		}
-		else if(item_id==R.string.delete_game_data){
+		else if(item_id==R.id.delete_game_data){
 			show_verify_dialog(R.string.delete_game_data, new DialogInterface.OnClickListener() {
 				@Override
 				public void onClick(DialogInterface dialog, int which) {
@@ -523,7 +568,7 @@ public class MainActivity extends AppCompatActivity {
 				}
 			});
 		}
-		else if(item_id==R.string.delete_game_and_data){
+		else if(item_id==R.id.delete_game_and_data){
 			show_verify_dialog(R.string.delete_game_and_data, new DialogInterface.OnClickListener() {
 				@Override
 				public void onClick(DialogInterface dialog, int which) {
@@ -545,7 +590,7 @@ public class MainActivity extends AppCompatActivity {
 				}
 			});
 		}
-		else if(item_id==R.string.delete_shaders_cache){
+		else if(item_id==R.id.delete_shaders_cache){
 			(progress_task=new ProgressTask(MainActivity.this)).call(new ProgressTask.Task() {
 				@Override
 				public void run(ProgressTask task) {
@@ -555,7 +600,7 @@ public class MainActivity extends AppCompatActivity {
 				}
 			});
 		}
-		else if(item_id==R.string.edit_custom_config){
+		else if(item_id==R.id.edit_custom_config){
 			Intent intent=new Intent(this,EmulatorSettings.class);
 			File cfg_file=Application.get_custom_cfg_file(adapter.getMetaInfo(position).serial);
 			if(!cfg_file.exists()){
@@ -563,6 +608,9 @@ public class MainActivity extends AppCompatActivity {
 			}
 			intent.putExtra(EmulatorSettings.EXTRA_CONFIG_PATH, cfg_file.getAbsolutePath());
 			startActivity(intent);
+		}
+		else if(item_id==R.id.show_game_info){
+			show_hint_dialog(adapter.getMetaInfo(position).toString());
 		}
 		return super.onContextItemSelected(item);
 	}
@@ -597,6 +645,13 @@ public class MainActivity extends AppCompatActivity {
 		new AlertDialog.Builder(this)
 				.setMessage(getString(res_id)+"?")
 				.setPositiveButton(android.R.string.ok, listener)
+				.setNegativeButton(android.R.string.cancel, null)
+				.create().show();
+	}
+
+	void show_hint_dialog(String hint){
+		new AlertDialog.Builder(this)
+				.setMessage(hint)
 				.setNegativeButton(android.R.string.cancel, null)
 				.create().show();
 	}
@@ -1037,15 +1092,6 @@ public class MainActivity extends AppCompatActivity {
 			
 			TextView name=(TextView)curView.findViewById(R.id.game_name);
 			name.setText(mi.name);
-			
-            TextView version=(TextView)curView.findViewById(R.id.game_version);
-			version.setText(mi.version);
-			
-			TextView serial=(TextView)curView.findViewById(R.id.game_serial);
-			serial.setText(mi.serial);
-			
-			TextView category=(TextView)curView.findViewById(R.id.game_category);
-			category.setText(mi.category);
 
             return curView;
         } 

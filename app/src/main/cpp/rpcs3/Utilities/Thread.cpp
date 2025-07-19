@@ -2920,8 +2920,25 @@ void thread_ctrl::detect_cpu_layout()
 
 u64 thread_ctrl::get_affinity_mask(thread_class group)
 {
+#ifndef __ANDROID__
 	detect_cpu_layout();
+#endif
+#if 1
+    const u64 all_cores_mask = process_affinity_mask;
 
+    switch (group)
+    {
+        default:
+        case thread_class::general:
+            return all_cores_mask;
+        case thread_class::rsx:
+            return g_cfg.core.thread_affinity_mask.rsx_threads;
+        case thread_class::ppu:
+            return g_cfg.core.thread_affinity_mask.ppu_threads;
+        case thread_class::spu:
+            return g_cfg.core.thread_affinity_mask.spu_threads;
+    }
+#else
 	if (const auto thread_count = utils::get_thread_count())
 	{
 		const u64 all_cores_mask = process_affinity_mask;
@@ -3125,6 +3142,7 @@ u64 thread_ctrl::get_affinity_mask(thread_class group)
 	}
 
 	return -1;
+#endif
 }
 
 void thread_ctrl::set_native_priority(int priority)

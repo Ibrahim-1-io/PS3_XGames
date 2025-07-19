@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/delete_hdd0_install_data"
+        android:title="@string/delete_hdd0_install_data"/>
+    <item
+        android:id="@+id/delete_game_data"
+        android:title="@string/delete_game_data"/>
+    <item
+        android:id="@+id/delete_shaders_cache"
+        android:title="@string/delete_shaders_cache"/>
+    <item
+        android:id="@+id/edit_custom_config"
+        android:title="@string/edit_custom_config"/>
+    <item
+        android:id="@+id/show_game_info"
+        android:title="@string/show_game_info"/>
+</menu>

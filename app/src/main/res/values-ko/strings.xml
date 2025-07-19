@@ -1,0 +1,996 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<string name="resolution_not_support">해상도 또는 화면 비율이 지원되지 않음\n현재 게임에서 지원하는 항목:\n%s\n\n다음 설정을 통해 수정하십시오:\n%s\n%s\n</string>
+<string name="show_game_info">게임 정보 표시</string>
+<string name="quick_start_page">빠른 시작 페이지</string>
+<string name="prev_step">이전 단계</string>
+<string name="next_step">다음 단계</string>
+<string name="finish">완료</string>
+
+<string name="welcome">환영합니다</string>
+<string name="welcome_content">%s에 오신 것을 환영합니다!</string>
+<string name="welcome_content2">몇 가지 간단한 단계만 거치면 게임을 시작할 수 있습니다. 시작하려면 \"%s\"를 클릭하십시오.</string>
+
+<string name="install_ps3_firmware_hiht_content">게임을 실행하려면 PS3 펌웨어(PS3UPDAT.PUP)를 설치해야 합니다. 펌웨어 파일을 선택하십시오.</string>
+<string name="ps3_firmware_installed">펌웨어 설치됨</string>
+<string name="select_ps3_firmware">펌웨어 선택(PS3UPDAT.PUP)</string>
+<string name="firmware_not_install">펌웨어가 설치되지 않음</string>
+
+<string name="select_ps3_iso_dir_hiht_content">PS3 ISO 디렉토리를 지정하십시오. 앱이 자동으로 스캔하여 유효한 게임을 검색합니다. .pkg 파일을 직접 설치할 수도 있습니다.</string>
+<string name="ps3_iso_dir_is_set">설정된 PS3 ISO 디렉토리</string>
+
+<string name="font_select_hiht_content">설치할 글꼴 파일(*.ttf, *.ttc, *.otf)을 선택하거나 PS3 펌웨어의 글꼴을 사용할 수 있습니다(문자 누락 가능).</string>
+<string name="custom_font_path_prefix">글꼴 경로: </string>
+<string name="select_gpu_driver_hiht_content">GPU 드라이버를 선택하십시오. 이 단계를 건너뛸 수도 있습니다(게임 실행 시 오류 발생 가능).</string>
+<string name="custom_gpu_driver_path_prefix">GPU 드라이버 경로: </string>
+
+<string name="modify_config_hiht_content">에뮬레이터가 가장 적합한 설정을 자동으로 선택하지만 장치에서 문제가 발생할 수 있습니다. 이후 설정에서 수정할 수 있습니다.</string>
+
+<string name="msg_processing">처리 중...</string>
+<string name="msg_failed">실패!</string>
+
+<string name="emulator_settings_video_vulkan_debug">디버그</string>
+<string name="emulator_settings_miscellaneous_memory_debug_overlay">메모리 디버그 오버레이</string>
+
+<string name="vibrator_duration">진동기 지속 시간</string>
+<string name="enable_vibrator">진동기 활성화</string>
+<string name="dynamic_joystick">동적 조이스틱</string>
+<string name="disable">비활성화</string>
+
+	<string name="disable_virtual_keyboard">가상 키보드 비활성화</string>
+<string name="joystick">조이스틱</string>
+<string name="dpad">D패드</string>
+<string name="button">버튼</string>
+<string name="lr">LR</string>
+<string name="start_select">시작/선택</string>
+
+<string name="enable_log">로그 활성화</string>
+<string name="use_global_config">전역 설정 사용</string>
+<string name="edit_custom_config">사용자 정의 설정 편집</string>
+<string name="clear">지우기</string>
+<string name="press_a_key">계속하려면 아무 키나 누르십시오...</string>
+<string name="game_list_loading">게임 목록을 불러오는 중...</string>
+<string name="undecrypted_game">복호화되지 않은 게임 실행은 현재 지원되지 않습니다</string>
+<string name="delete_game_data">게임 데이터 삭제</string>
+<string name="delete_hdd0_install_data">hdd0 설치 데이터 삭제</string>
+<string name="delete_game_and_data">게임 및 데이터 삭제</string>
+<string name="delete_shaders_cache">셰이더 캐시 삭제</string>
+
+<string name="set_iso_dir">*.iso 디렉토리 설정</string>
+<string name="device_info">장치 정보</string>
+<string name="reset_as_default">기본값으로 재설정</string>
+<string name="save_and_quit">저장 및 종료</string>
+<string name="scale_rate">확대 비율</string>
+<string name="open_file_manager">파일 관리자 열기</string>
+<string name="installing_firmware">펌웨어 설치 중...</string>
+<string name="refresh_list">목록 새로 고침</string>
+<string name="select_game">게임 선택</string>
+<string name="install_firmware">펌웨어 설치</string>
+<string name="install_game">RAP/PKG 설치</string>
+<string name="installing_game">게임 설치 중...</string>
+<string name="about">정보</string>
+<string name="quit">종료</string>
+<string name="update_log">업데이트 로그</string>
+<string name="empty_game_list">게임 목록이 비어 있습니다. pkg를 설치하거나 *.iso 디렉토리를 설정하여 게임을 추가하십시오</string>
+<string name="delete">삭제</string>
+<string name="settings">설정</string>
+<string name="gratitude">감사의 말</string>
+<string name="gratitude_content">아이콘 제공 Ruban 감사합니다\n\n
+Sting(SRC267) 감사합니다 - reddit/discord 관리\n\n
+테스트 지원妖妖 감사합니다\n\n
+GPD XP 기부再见某人 감사합니다 - 테스트 과정에 큰 도움이 되었습니다\n\n
+개발 장비 기부再见某人 감사합니다 - 프로젝트 발전에 기여되었습니다\n\n
+다음 분들께 재정적 지원에 감사드립니다 (초기 단계, 날짜 순):
+</string>
+<string name="gratitude_content2">
+RPCS3 포팅 최적화 기반 제작되었습니다. RPCS3 프로젝트 참여자 모두 감사합니다\n\n
+번역 qwen3
+</string>
+<string name="key_mappers">키 매핑</string>
+<string name="virtual_pad_edit">가상 패드 편집</string>
+
+<string name="left">왼쪽</string>
+<string name="up">위</string>
+<string name="right">오른쪽</string>
+<string name="down">아래</string>
+
+<string name="square">사각형</string>
+<string name="cross">십자</string>
+<string name="circle">원</string>
+<string name="triangle">삼각형</string>
+
+<string name="l1">L1</string>
+<string name="l2">L2</string>
+<string name="l3">L3</string>
+
+<string name="r1">R1</string>
+<string name="r2">R2</string>
+<string name="r3">R3</string>
+
+<string name="start">시작</string>
+<string name="select">선택</string>
+<string name="ps">PS</string>
+
+<string name="emulator_settings_video_vulkan_custom_driver_library_path_dialog_title">사용자 정의 드라이버 선택</string>
+<string name="emulator_settings_video_vulkan_custom_driver_library_path_dialog_add_hint">사용자 정의 드라이버 추가(*.zip, *.so)</string>
+
+<string name="emulator_settings_miscellaneous_custom_font_file_path_dialog_title">사용자 정의 글꼴 선택</string>
+<string name="emulator_settings_miscellaneous_custom_font_file_path_dialog_add_hint">사용자 정의 글꼴 추가(*.ttf, *.ttc, *.otf)</string>
+
+<string name="emulator_settings_core">코어</string>
+<string name="emulator_settings_core_ppu_decoder">PPU 디코더</string>
+<string-array name="core_ppu_decoder_entries">
+<item>인터프리터(정적)</item>
+<item>재컴파일(LLVM)</item>
+</string-array>
+<string name="emulator_settings_core_ppu_threads">PPU 스레드</string>
+<string name="emulator_settings_core_ppu_debug">PPU 디버그</string>
+<string name="emulator_settings_core_ppu_calling_history">PPU 호출 기록</string>
+<string name="emulator_settings_core_save_llvm_logs">LLVM 로그 저장</string>
+<string name="emulator_settings_core_use_llvm_cpu">LLVM CPU 사용</string>
+<string name="emulator_settings_core_max_llvm_compile_threads">최대 LLVM 컴파일 스레드</string>
+<string name="emulator_settings_core_ppu_llvm_greedy_mode">PPU LLVM 탐욕 모드</string>
+<string name="emulator_settings_core_llvm_precompilation">LLVM 사전 컴파일</string>
+<string name="emulator_settings_core_thread_scheduler_mode">스레드 스케줄러 모드</string>
+<string-array name="core_thread_scheduler_mode_entries">
+<item>운영 체제</item>
+<item>선호도</item>
+</string-array>
+<string name="emulator_settings_core_set_daz_and_ftz">DAZ 및 FTZ 설정</string>
+<string name="emulator_settings_core_spu_decoder">SPU 디코더</string>
+<string-array name="core_spu_decoder_entries">
+<item>인터프리터(정적)</item>
+<item>인터프리터(동적)</item>
+<item>재컴파일(ASMJIT)</item>
+<item>재컴파일(LLVM)</item>
+</string-array>
+<string name="emulator_settings_core_spu_reservation_busy_waiting_percentage">SPU 예약 대기 백분율</string>
+<string name="emulator_settings_core_spu_getllar_busy_waiting_percentage">SPU GETLLAR 대기 백분율</string>
+<string name="emulator_settings_core_disable_spu_getllar_spin_optimization">SPU GETLLAR 스핀 최적화 비활성화</string>
+<string name="emulator_settings_core_spu_debug">SPU 디버그</string>
+<string name="emulator_settings_core_mfc_debug">MFC 디버그</string>
+<string name="emulator_settings_core_preferred_spu_threads">선호 SPU 스레드</string>
+<string name="emulator_settings_core_spu_delay_penalty">SPU 지연 패널티</string>
+<string name="emulator_settings_core_spu_loop_detection">SPU 루프 감지</string>
+<string name="emulator_settings_core_max_spurs_threads">최대 SPURS 스레드</string>
+<string name="emulator_settings_core_spu_block_size">SPU 블록 크기</string>
+<string-array name="core_spu_block_size_entries">
+<item>안전</item>
+<item>메가</item>
+<item>기가</item>
+</string-array>
+<string name="emulator_settings_core_accurate_spu_dma">정확한 SPU DMA</string>
+<string name="emulator_settings_core_accurate_spu_reservations">정확한 SPU 예약</string>
+<string name="emulator_settings_core_accurate_cache_line_stores">정확한 캐시 라인 저장</string>
+<string name="emulator_settings_core_accurate_rsx_reservation_access">정확한 RSX 예약 접근</string>
+<string name="emulator_settings_core_rsx_fifo_accuracy">RSX FIFO 정확도</string>
+<string-array name="core_rsx_fifo_accuracy_entries">
+<item>빠름</item>
+<item>원자적</item>
+<item>순차적 및 원자적</item>
+<item>PS3</item>
+</string-array>
+<string name="emulator_settings_core_spu_verification">SPU 검증</string>
+<string name="emulator_settings_core_spu_cache">SPU 캐시</string>
+<string name="emulator_settings_core_spu_profiler">SPU 프로파일러</string>
+<string name="emulator_settings_core_mfc_commands_shuffling_limit">MFC 명령 셔플 한계</string>
+<string name="emulator_settings_core_mfc_commands_timeout">MFC 명령 시간 초과</string>
+<string name="emulator_settings_core_mfc_commands_shuffling_in_steps">단계별 MFC 명령 셔플</string>
+<string name="emulator_settings_core_enable_tsx">TSX 활성화</string>
+<string-array name="core_enable_tsx_entries">
+<item>비활성화</item>
+<item>활성화</item>
+<item>강제</item>
+</string-array>
+<string name="emulator_settings_core_xfloat_accuracy">XFloat 정확도</string>
+<string-array name="core_xfloat_accuracy_entries">
+<item>정확함</item>
+<item>근사치</item>
+<item>완화됨</item>
+<item>부정확함</item>
+</string-array>
+<string name="emulator_settings_core_accurate_ppu_128byte_reservation_op_max_length">PPU 128바이트 예약 연산 최대 길이</string>
+<string name="emulator_settings_core_stub_ppu_traps">PPU 트랩 더미</string>
+<string name="emulator_settings_core_precise_spu_verification">정밀 SPU 검증</string>
+<string name="emulator_settings_core_ppu_llvm_java_mode_handling">PPU LLVM 자바 모드 처리</string>
+<string name="emulator_settings_core_use_accurate_dfma">정확한 DFMA 사용</string>
+<string name="emulator_settings_core_ppu_set_saturation_bit">PPU 포화 비트 설정</string>
+<string name="emulator_settings_core_ppu_accurate_nonjava_mode">PPU 정확한 비자바 모드</string>
+<string name="emulator_settings_core_ppu_fixup_vector_nan_values">PPU 벡터 NaN 값 수정</string>
+<string name="emulator_settings_core_ppu_accurate_vector_nan_values">PPU 정확한 벡터 NaN 값</string>
+<string name="emulator_settings_core_ppu_set_fpcc_bits">PPU FPCC 비트 설정</string>
+<string name="emulator_settings_core_debug_console_mode">디버그 콘솔 모드</string>
+<string name="emulator_settings_core_hook_static_functions">정적 함수 후킹</string>
+<string name="emulator_settings_core_libraries_control">라이브러리 제어</string>
+<string name="emulator_settings_core_hle_lwmutex">HLE lwmutex</string>
+<string name="emulator_settings_core_spu_llvm_lower_bound">SPU LLVM 하한</string>
+<string name="emulator_settings_core_spu_llvm_upper_bound">SPU LLVM 상한</string>
+<string name="emulator_settings_core_tsx_transaction_first_limit">TSX 트랜잭션 첫 번째 한계</string>
+<string name="emulator_settings_core_tsx_transaction_second_limit">TSX 트랜잭션 두 번째 한계</string>
+<string name="emulator_settings_core_clocks_scale">클럭 배율</string>
+<string name="emulator_settings_core_spu_wakeup_delay">SPU 웨이크업 지연</string>
+<string name="emulator_settings_core_spu_wakeup_delay_thread_mask">SPU 웨이크업 지연 스레드 마스크</string>
+<string name="emulator_settings_core_max_cpu_preempt_count">최대 CPU 선점 카운트</string>
+<string name="emulator_settings_core_allow_rsx_cpu_preemptions">RSX CPU 선점 허용</string>
+<string name="emulator_settings_core_sleep_timers_accuracy">슬립 타이머 정확도</string>
+<string-array name="core_sleep_timers_accuracy_entries">
+<item>호스트와 동일</item>
+<item>Usleep만</item>
+<item>모든 타이머</item>
+</string-array>
+<string name="emulator_settings_core_usleep_time_addend">Usleep 시간 추가</string>
+<string name="emulator_settings_core_performance_report_threshold">성능 보고 임계값</string>
+<string name="emulator_settings_core_enable_performance_report">성능 보고 활성화</string>
+<string name="emulator_settings_core_assume_external_debugger">외부 디버거 가정</string>
+<string name="emulator_settings_video">비디오</string>
+<string name="emulator_settings_video_vertex_buffer_upload_mode">버텍스 버퍼 업로드 모드</string>
+<string-array name="video_vertex_buffer_upload_mode_entries">
+<item>자동</item>
+<item>버퍼 뷰</item>
+<item>버퍼</item>
+</string-array>
+<string name="emulator_settings_video_texture_upload_mode">텍스처 업로드 모드</string>
+<string-array name="video_texture_upload_mode_entries">
+<item>CPU</item>
+<item>GPU</item>
+</string-array>
+<string name="emulator_settings_video_renderer">렌더러</string>
+<string-array name="video_renderer_entries">
+<item>없음</item>
+<item>Vulkan</item>
+</string-array>
+<string name="emulator_settings_video_resolution">해상도</string>
+<string-array name="video_resolution_entries">
+<item>1920x1080</item>
+<item>1920x1080i</item>
+<item>1280x720</item>
+<item>720x480</item>
+<item>720x480i</item>
+<item>720x576</item>
+<item>720x576i</item>
+<item>1600x1080</item>
+<item>1440x1080</item>
+<item>1280x1080</item>
+<item>960x1080</item>
+</string-array>
+<string name="emulator_settings_video_aspect_ratio">화면 비율</string>
+<string-array name="video_aspect_ratio_entries">
+<item>4:3</item>
+<item>16:9</item>
+</string-array>
+<string name="emulator_settings_video_frame_limit">프레임 한계</string>
+<string-array name="video_frame_limit_entries">
+<item>꺼짐</item>
+<item>30</item>
+<item>50</item>
+<item>60</item>
+<item>120</item>
+<item>디스플레이</item>
+<item>자동</item>
+<item>PS3 네이티브</item>
+<item>무한</item>
+</string-array>
+<string name="emulator_settings_video_second_frame_limit">두 번째 프레임 한계</string>
+<string name="emulator_settings_video_msaa">MSAA</string>
+<string-array name="video_msaa_entries">
+<item>비활성화</item>
+<item>자동</item>
+</string-array>
+<string name="emulator_settings_video_shader_mode">셰이더 모드</string>
+<string-array name="video_shader_mode_entries">
+<item>셰이더 재컴파일</item>
+<item>비동기 셰이더 재컴파일</item>
+<item>비동기 셰이더 인터프리터</item>
+<item>셰이더 인터프리터만</item>
+</string-array>
+<string name="emulator_settings_video_shader_precision">셰이더 정밀도</string>
+<string-array name="video_shader_precision_entries">
+<item>극한</item>
+<item>높음</item>
+<item>낮음</item>
+<item>자동</item>
+</string-array>
+<string name="emulator_settings_video_write_color_buffers">컬러 버퍼 쓰기</string>
+<string name="emulator_settings_video_write_depth_buffer">깊이 버퍼 쓰기</string>
+<string name="emulator_settings_video_read_color_buffers">컬러 버퍼 읽기</string>
+<string name="emulator_settings_video_read_depth_buffer">깊이 버퍼 읽기</string>
+<string name="emulator_settings_video_handle_rsx_memory_tiling">RSX 메모리 타일링 처리</string>
+<string name="emulator_settings_video_log_shader_programs">셰이더 프로그램 로그</string>
+<string name="emulator_settings_video_vsync">VSync</string>
+<string name="emulator_settings_video_debug_output">디버그 출력</string>
+<string name="emulator_settings_video_debug_overlay">디버그 오버레이</string>
+<string name="emulator_settings_video_renderdoc_compatibility_mode">Renderdoc 호환 모드</string>
+<string name="emulator_settings_video_use_gpu_texture_scaling">GPU 텍스처 스케일링 사용</string>
+<string name="emulator_settings_video_stretch_to_display_area">디스플레이 영역으로 확장</string>
+<string name="emulator_settings_video_force_high_precision_z_buffer">고정밀 Z 버퍼 강제</string>
+<string name="emulator_settings_video_strict_rendering_mode">엄격한 렌더링 모드</string>
+<string name="emulator_settings_video_disable_zcull_occlusion_queries">ZCull 가림 쿼리 비활성화</string>
+<string name="emulator_settings_video_disable_video_output">비디오 출력 비활성화</string>
+<string name="emulator_settings_video_disable_vertex_cache">버텍스 캐시 비활성화</string>
+<string name="emulator_settings_video_disable_fifo_reordering">FIFO 재정렬 비활성화</string>
+<string name="emulator_settings_video_enable_frame_skip">프레임 건너뛰기 활성화</string>
+<string name="emulator_settings_video_force_cpu_blit">CPU 블리트 강제</string>
+<string name="emulator_settings_video_disable_ondisk_shader_cache">디스크 셰이더 캐시 비활성화</string>
+<string name="emulator_settings_video_disable_vulkan_memory_allocator">Vulkan 메모리 할당자 비활성화</string>
+<string name="emulator_settings_video_use_full_rgb_output_range">전체 RGB 출력 범위 사용</string>
+<string name="emulator_settings_video_strict_texture_flushing">엄격한 텍스처 플러시</string>
+<string name="emulator_settings_video_multithreaded_rsx">멀티스레드 RSX</string>
+<string name="emulator_settings_video_relaxed_zcull_sync">완화된 ZCULL 동기화</string>
+<string name="emulator_settings_video_force_hardware_msaa_resolve">하드웨어 MSAA 해결 강제</string>
+<string name="emulator_settings_video_3d_display_mode">3D 디스플레이 모드</string>
+<string-array name="video_3d_display_mode_entries">
+<item>비활성화</item>
+<item>사이드바이사이드</item>
+<item>오버언더</item>
+<item>인터리이스드</item>
+<item>아나글리프 레드-그린</item>
+<item>아나글리프 레드-블루</item>
+<item>아나글리프 레드-시안</item>
+<item>아나글리프 마젠타-시안</item>
+<item>아나글리프 트리오스코픽</item>
+<item>아나글리프 앰버-블루</item>
+</string-array>
+<string name="emulator_settings_video_debug_program_analyser">디버그 프로그램 분석기</string>
+<string name="emulator_settings_video_accurate_zcull_stats">정확한 ZCULL 통계</string>
+<string name="emulator_settings_video_consecutive_frames_to_draw">연속 프레임 그리기</string>
+<string name="emulator_settings_video_consecutive_frames_to_skip">연속 프레임 건너뛰기</string>
+<string name="emulator_settings_video_resolution_scale">해상도 배율</string>
+<string name="emulator_settings_video_anisotropic_filter_override">이방성 필터 오버라이드</string>
+<string name="emulator_settings_video_texture_lod_bias_addend">텍스처 LOD 바이어스 추가</string>
+<string name="emulator_settings_video_minimum_scalable_dimension">최소 스케일링 차원</string>
+<string name="emulator_settings_video_shader_compiler_threads">셰이더 컴파일 스레드</string>
+<string name="emulator_settings_video_driver_recovery_timeout">드라이버 복구 시간 초과</string>
+<string name="emulator_settings_video_driver_wakeup_delay">드라이버 웨이크업 지연</string>
+<string name="emulator_settings_video_vblank_rate">Vblank 주파수</string>
+<string name="emulator_settings_video_vblank_ntsc_fixup">Vblank NTSC 수정</string>
+<string name="emulator_settings_video_decr_memory_layout">DECR 메모리 레이아웃</string>
+<string name="emulator_settings_video_allow_host_gpu_labels">호스트 GPU 라벨 허용</string>
+<string name="emulator_settings_video_disable_msl_fast_math">MSL 고속 수학 비활성화</string>
+<string name="emulator_settings_video_disable_asynchronous_memory_manager">비동기 메모리 관리자 비활성화</string>
+<string name="emulator_settings_video_output_scaling_mode">출력 스케일링 모드</string>
+<string-array name="video_output_scaling_mode_entries">
+<item>최근접</item>
+<item>쌍선형</item>
+<item>FidelityFX 슈퍼 해상도</item>
+</string-array>
+<string name="emulator_settings_video_use_bgra_format">BGRA 포맷 사용</string>
+<string name="emulator_settings_video_force_convert_texture">텍스처 강제 변환</string>
+<string name="emulator_settings_video_vulkan">Vulkan</string>
+<string name="emulator_settings_video_vulkan_adapter">어댑터</string>
+<string name="emulator_settings_video_vulkan_force_fifo_present_mode">FIFO 프레젠테이션 모드 강제</string>
+<string name="emulator_settings_video_vulkan_force_primitive_restart_flag">프리미티브 재시작 플래그 강제</string>
+<string name="emulator_settings_video_vulkan_exclusive_fullscreen_mode">전용 풀스크린 모드</string>
+<string-array name="video_vulkan_exclusive_fullscreen_mode_entries">
+<item>자동</item>
+<item>비활성화</item>
+<item>활성화</item>
+</string-array>
+<string name="emulator_settings_video_vulkan_asynchronous_texture_streaming_2">비동기 텍스처 스트리밍 2</string>
+<string name="emulator_settings_video_vulkan_fidelityfx_cas_sharpening_intensity">FidelityFX CAS 샤프닝 강도</string>
+<string name="emulator_settings_video_vulkan_asynchronous_queue_scheduler">비동기 큐 스케줄러</string>
+<string-array name="video_vulkan_asynchronous_queue_scheduler_entries">
+<item>안전</item>
+<item>빠름</item>
+</string-array>
+<string name="emulator_settings_video_vulkan_vram_allocation_limit">VRAM 할당 한계(MB)</string>
+
+<string name="emulator_settings_video_vulkan_use_custom_driver">사용자 정의 드라이버 사용</string>
+
+<string name="emulator_settings_video_vulkan_custom_driver_library_path">사용자 정의 드라이버 라이브러리 경로</string>
+
+<string name="emulator_settings_video_vulkan_custom_driver_force_max_clocks">최대 클록 강제</string>
+
+<string name="emulator_settings_video_performance_overlay">성능 오버레이</string>
+<string name="emulator_settings_video_performance_overlay_enabled">활성화됨</string>
+<string name="emulator_settings_video_performance_overlay_enable_framerate_graph">프레임률 그래프 활성화</string>
+<string name="emulator_settings_video_performance_overlay_enable_frametime_graph">프레임타임 그래프 활성화</string>
+<string name="emulator_settings_video_performance_overlay_framerate_datapoints">프레임률 데이터 포인트</string>
+<string name="emulator_settings_video_performance_overlay_frametime_datapoints">프레임타임 데이터 포인트</string>
+<string name="emulator_settings_video_performance_overlay_detail_level">세부 수준</string>
+<string-array name="video_performance_overlay_detail_level_entries">
+<item>없음</item>
+<item>최소</item>
+<item>낮음</item>
+<item>중간</item>
+<item>높음</item>
+</string-array>
+<string name="emulator_settings_video_performance_overlay_framerate_graph_detail_level">프레임률 그래프 세부 수준</string>
+<string-array name="video_performance_overlay_framerate_graph_detail_level_entries">
+<item>최소</item>
+<item>최소/최대 표시</item>
+<item>1% 및 평균 표시</item>
+<item>전체</item>
+</string-array>
+<string name="emulator_settings_video_performance_overlay_frametime_graph_detail_level">프레임타임 그래프 세부 수준</string>
+<string-array name="video_performance_overlay_frametime_graph_detail_level_entries">
+<item>최소</item>
+<item>최소/최대 표시</item>
+<item>1% 및 평균 표시</item>
+<item>전체</item>
+</string-array>
+<string name="emulator_settings_video_performance_overlay_metrics_update_interval">메트릭 업데이트 간격(ms)</string>
+<string name="emulator_settings_video_performance_overlay_font_size">폰트 크기(px)</string>
+<string name="emulator_settings_video_performance_overlay_position">위치</string>
+<string-array name="video_performance_overlay_position_entries">
+<item>좌상단</item>
+<item>우상단</item>
+<item>좌하단</item>
+<item>우하단</item>
+</string-array>
+<string name="emulator_settings_video_performance_overlay_font">폰트</string>
+<string name="emulator_settings_video_performance_overlay_horizontal_margin">수평 마진(px)</string>
+<string name="emulator_settings_video_performance_overlay_vertical_margin">수직 마진(px)</string>
+<string name="emulator_settings_video_performance_overlay_center_horizontally">수평 중앙</string>
+<string name="emulator_settings_video_performance_overlay_center_vertically">수직 중앙</string>
+<string name="emulator_settings_video_performance_overlay_opacity">불투명도(%)</string>
+<string name="emulator_settings_video_performance_overlay_body_color">본문 색상(헥스)</string>
+<string name="emulator_settings_video_performance_overlay_body_background">본문 배경(헥스)</string>
+<string name="emulator_settings_video_performance_overlay_title_color">제목 색상(헥스)</string>
+<string name="emulator_settings_video_performance_overlay_title_background">제목 배경(헥스)</string>
+<string name="emulator_settings_video_shader_loading_dialog">셰이더 로딩 대화상자</string>
+<string name="emulator_settings_video_shader_loading_dialog_allow_custom_background">사용자 정의 배경 허용</string>
+<string name="emulator_settings_video_shader_loading_dialog_darkening_effect_strength">어두운 효과 강도</string>
+<string name="emulator_settings_video_shader_loading_dialog_blur_effect_strength">흐림 효과 강도</string>
+
+<string name="emulator_settings_audio">오디오</string>
+    <string name="emulator_settings_audio_renderer">렌더러</string>
+	<string-array name="audio_renderer_entries">
+		<item>없음</item>
+		<item>Cubeb</item>
+	</string-array>
+	<string name="emulator_settings_audio_audio_provider">오디오 공급자</string>
+	<string-array name="audio_audio_provider_entries">
+		<item>없음</item>
+		<item>CellAudio</item>
+		<item>RSXAudio</item>
+	</string-array>
+	<string name="emulator_settings_audio_rsxaudio_avport">RSXAudio AV 포트</string>
+	<string-array name="audio_rsxaudio_avport_entries">
+		<item>HDMI 0</item>
+		<item>HDMI 1</item>
+		<item>AV 멀티아웃</item>
+		<item>SPDIF 0</item>
+		<item>SPDIF 1</item>
+	</string-array>
+	<string name="emulator_settings_audio_dump_to_file">파일로 덤프</string>
+	<string name="emulator_settings_audio_convert_to_16_bit">16비트로 변환</string>
+	<string name="emulator_settings_audio_audio_format">오디오 형식</string>
+	<string-array name="audio_audio_format_entries">
+		<item>스테레오</item>
+		<item>서라운드 5.1</item>
+		<item>서라운드 7.1</item>
+		<item>자동</item>
+		<item>수동</item>
+	</string-array>
+	<string name="emulator_settings_audio_audio_formats">오디오 형식</string>
+	<string name="emulator_settings_audio_audio_channel_layout">오디오 채널 레이아웃</string>
+	<string-array name="audio_audio_channel_layout_entries">
+		<item>자동</item>
+		<item>모노</item>
+		<item>스테레오</item>
+		<item>스테레오 LFE</item>
+		<item>4채널</item>
+		<item>4채널 LFE</item>
+		<item>서라운드 5.1</item>
+		<item>서라운드 7.1</item>
+	</string-array>
+	<string name="emulator_settings_audio_audio_device">오디오 장치</string>
+	<string name="emulator_settings_audio_master_volume">마스터 볼륨</string>
+	<string name="emulator_settings_audio_enable_buffering">버퍼링 활성화</string>
+	<string name="emulator_settings_audio_desired_audio_buffer_duration">원하는 오디오 버퍼 지속시간</string>
+	<string name="emulator_settings_audio_enable_time_stretching">타임 스트레칭 활성화</string>
+	<string name="emulator_settings_audio_disable_sampling_skip">샘플링 건너뛰기 비활성화</string>
+	<string name="emulator_settings_audio_time_stretching_threshold">타임 스트레칭 임계값</string>
+	<string name="emulator_settings_audio_microphone_type">마이크 유형</string>
+	<string-array name="audio_microphone_type_entries">
+		<item>없음</item>
+		<item>표준</item>
+		<item>SingStar</item>
+		<item>Real SingStar</item>
+		<item>Rocksmith</item>
+	</string-array>
+	<string name="emulator_settings_audio_microphone_devices">마이크 장치</string>
+	<string name="emulator_settings_audio_music_handler">음악 핸들러</string>
+	<string-array name="audio_music_handler_entries">
+		<item>없음</item>
+		<item>Qt</item>
+	</string-array>
+	<string name="emulator_settings_input_output">입력/출력</string>
+	<string name="emulator_settings_input_output_keyboard">키보드</string>
+	<string-array name="input_output_keyboard_entries">
+		<item>없음</item>
+		<item>기본</item>
+	</string-array>
+	<string name="emulator_settings_input_output_mouse">마우스</string>
+	<string-array name="input_output_mouse_entries">
+		<item>없음</item>
+		<item>기본</item>
+		<item>원시</item>
+	</string-array>
+	<string name="emulator_settings_input_output_camera">카메라</string>
+	<string-array name="input_output_camera_entries">
+		<item>없음</item>
+		<item>가상</item>
+		<item>Qt</item>
+	</string-array>
+	<string name="emulator_settings_input_output_camera_type">카메라 유형</string>
+	<string-array name="input_output_camera_type_entries">
+		<item>알 수 없음</item>
+		<item>EyeToy</item>
+		<item>PS Eye</item>
+		<item>UVC 1.1</item>
+	</string-array>
+	<string name="emulator_settings_input_output_camera_flip">카메라 뒤집기</string>
+	<string-array name="input_output_camera_flip_entries">
+		<item>없음</item>
+		<item>수평</item>
+		<item>수직</item>
+		<item>양방향</item>
+	</string-array>
+	<string name="emulator_settings_input_output_camera_id">카메라 ID</string>
+	<string name="emulator_settings_input_output_move">무브</string>
+	<string-array name="input_output_move_entries">
+		<item>없음</item>
+		<item>가상</item>
+		<item>마우스</item>
+		<item>원시 마우스</item>
+	</string-array>
+	<string name="emulator_settings_input_output_buzz_emulated_controller">버즈 에뮬레이터 컨트롤러</string>
+	<string-array name="input_output_buzz_emulated_controller_entries">
+		<item>없음</item>
+		<item>1개 컨트롤러</item>
+		<item>2개 컨트롤러</item>
+	</string-array>
+	<string name="emulator_settings_input_output_turntable_emulated_controller">턴테이블 에뮬레이터 컨트롤러</string>
+	<string-array name="input_output_turntable_emulated_controller_entries">
+		<item>없음</item>
+		<item>1개 컨트롤러</item>
+		<item>2개 컨트롤러</item>
+	</string-array>
+	<string name="emulator_settings_input_output_ghltar_emulated_controller">GHLtar 에뮬레이터 컨트롤러</string>
+	<string-array name="input_output_ghltar_emulated_controller_entries">
+		<item>없음</item>
+		<item>1개 컨트롤러</item>
+		<item>2개 컨트롤러</item>
+	</string-array>
+	<string name="emulator_settings_input_output_pad_handler_mode">패드 핸들러 모드</string>
+	<string-array name="input_output_pad_handler_mode_entries">
+		<item>싱글스레드</item>
+		<item>멀티스레드</item>
+	</string-array>
+	<string name="emulator_settings_input_output_keep_pads_connected">패드 연결 유지</string>
+	<string name="emulator_settings_input_output_pad_handler_sleep">패드 핸들러 대기(마이크로초)</string>
+	<string name="emulator_settings_input_output_background_input_enabled">백그라운드 입력 활성화</string>
+	<string name="emulator_settings_input_output_show_move_cursor">무브 커서 표시</string>
+	<string name="emulator_settings_input_output_lock_overlay_input_to_player_one">오버레이 입력을 플레이어 1에 고정</string>
+	<string name="emulator_settings_input_output_emulated_midi_devices">에뮬레이션 MIDI 장치</string>
+	<string name="emulator_settings_input_output_load_sdl_gamecontroller_mappings">SDL 게임컨트롤러 매핑 불러오기</string>
+	<string name="emulator_settings_input_output_io_debug_overlay">입력/출력 디버그 오버레이</string>
+	<string name="emulator_settings_system">시스템</string>
+	<string name="emulator_settings_system_license_area">라이선스 지역</string>
+	<string-array name="system_license_area_entries">
+		<item>SCEJ</item>
+		<item>SCEA</item>
+		<item>SCEE</item>
+		<item>SCEH</item>
+		<item>SCEK</item>
+		<item>SCH</item>
+	</string-array>
+	<string name="emulator_settings_system_language">언어</string>
+	<string-array name="system_language_entries">
+		<item>일본어</item>
+		<item>영어(US)</item>
+		<item>프랑스어</item>
+		<item>스페인어</item>
+		<item>독일어</item>
+		<item>이탈리아어</item>
+		<item>네덜란드어</item>
+		<item>포르투갈어(포르투갈)</item>
+		<item>러시아어</item>
+		<item>한국어</item>
+		<item>중국어(번체)</item>
+		<item>중국어(간체)</item>
+		<item>핀란드어</item>
+		<item>스웨덴어</item>
+		<item>덴마크어</item>
+		<item>노르웨이어</item>
+		<item>폴란드어</item>
+		<item>포르투갈어(브라질)</item>
+		<item>영어(UK)</item>
+		<item>터키어</item>
+	</string-array>
+	<string name="emulator_settings_system_keyboard_type">키보드 유형</string>
+	<string-array name="system_keyboard_type_entries">
+		<item>영어 키보드(US 표준)</item>
+		<item>일본어 키보드</item>
+		<item>일본어 키보드(가나 상태)</item>
+		<item>독일어 키보드</item>
+		<item>스페인어 키보드</item>
+		<item>프랑스어 키보드</item>
+		<item>이탈리아 키보드</item>
+		<item>네덜란드어 키보드</item>
+		<item>포르투갈어 키보드(포르투갈)</item>
+		<item>러시아어 키보드</item>
+		<item>영어 키보드(UK 표준)</item>
+		<item>한국어 키보드</item>
+		<item>노르웨이 키보드</item>
+		<item>핀란드 키보드</item>
+		<item>덴마크 키보드</item>
+		<item>스웨덴 키보드</item>
+		<item>중국어 키보드(번체)</item>
+		<item>중국어 키보드(간체)</item>
+		<item>프랑스어 키보드(스위스)</item>
+		<item>독일어 키보드(스위스)</item>
+		<item>프랑스어 키보드(캐나다)</item>
+		<item>프랑스어 키보드(벨기에움)</item>
+		<item>폴란드어 키보드</item>
+		<item>포르투갈어 키보드(브라질)</item>
+		<item>터키어 키보드</item>
+	</string-array>
+	<string name="emulator_settings_system_enter_button_assignment">엔터 버튼 할당</string>
+	<string-array name="system_enter_button_assignment_entries">
+		<item>원으로 엔터</item>
+		<item>십자로 엔터</item>
+	</string-array>
+	<string name="emulator_settings_system_console_time_offset">콘솔 시간 오프셋(초)</string>
+	<string name="emulator_settings_system_system_name">시스템 이름</string>
+	<string name="emulator_settings_system_psid_high">PSID 상위</string>
+	<string name="emulator_settings_system_psid_low">PSID 하위</string>
+	<string name="emulator_settings_system_hdd_model_name">HDD 모델명</string>
+	<string name="emulator_settings_system_hdd_serial_number">HDD 시리얼 번호</string>
+	<string name="emulator_settings_net">네트워크</string>
+	<string name="emulator_settings_net_internet_enabled">인터넷 연결</string>
+	<string-array name="net_internet_enabled_entries">
+		<item>연결 안 됨</item>
+		<item>연결됨</item>
+	</string-array>
+	<string name="emulator_settings_net_ip_address">IP 주소</string>
+	<string name="emulator_settings_net_bind_address">바인드 주소</string>
+	<string name="emulator_settings_net_dns_address">DNS 주소</string>
+	<string name="emulator_settings_net_ip_swap_list">IP 교환 목록</string>
+	<string name="emulator_settings_net_upnp_enabled">UPNP 사용</string>
+	<string name="emulator_settings_net_psn_status">PSN 상태</string>
+	<string-array name="net_psn_status_entries">
+		<item>연결 안 됨</item>
+		<item>시뮬레이션</item>
+		<item>RPCN</item>
+	</string-array>
+	<string name="emulator_settings_net_psn_country">PSN 국가</string>
+	<string name="emulator_settings_savestate">세이브 상태</string>
+	<string name="emulator_settings_savestate_start_paused">일시정지 상태로 시작</string>
+	<string name="emulator_settings_savestate_suspend_emulation_savestate_mode">에뮬레이션 일시중지 세이브 상태 모드</string>
+	<string name="emulator_settings_savestate_compatible_savestate_mode">호환 가능한 세이브 상태 모드</string>
+	<string name="emulator_settings_savestate_inspection_mode_savestates">검사 모드 세이브 상태</string>
+	<string name="emulator_settings_savestate_save_disc_game_data">디스크 게임 데이터 저장</string>
+	<string name="emulator_settings_miscellaneous">기타</string>
+	<string name="emulator_settings_miscellaneous_automatically_start_games_after_boot">부팅 후 자동 시작</string>
+	<string name="emulator_settings_miscellaneous_exit_rpcs3_when_process_finishes">프로세스 종료 시 RPCS3 종료</string>
+	<string name="emulator_settings_miscellaneous_pause_emulation_on_rpcs3_focus_loss">RPCS3 포커스 손실 시 일시정지</string>
+	<string name="emulator_settings_miscellaneous_start_games_in_fullscreen_mode">전체 화면 모드에서 시작</string>
+	<string name="emulator_settings_miscellaneous_prevent_display_sleep_while_running_games">게임 실행 중 화면 절전 방지</string>
+	<string name="emulator_settings_miscellaneous_show_trophy_popups">트로피 팝업 표시</string>
+	<string name="emulator_settings_miscellaneous_show_rpcn_popups">RPCN 팝업 표시</string>
+	<string name="emulator_settings_miscellaneous_show_shader_compilation_hint">셰이더 컴파일 힌트 표시</string>
+	<string name="emulator_settings_miscellaneous_show_ppu_compilation_hint">PPU 컴파일 힌트 표시</string>
+	<string name="emulator_settings_miscellaneous_show_pressure_intensity_toggle_hint">압력 강도 전환 힌트 표시</string>
+	<string name="emulator_settings_miscellaneous_show_analog_limiter_toggle_hint">아날로그 리미터 전환 힌트 표시</string>
+	<string name="emulator_settings_miscellaneous_show_mouse_and_keyboard_toggle_hint">마우스/키보드 전환 힌트 표시</string>
+	<string name="emulator_settings_miscellaneous_show_autosave_autoload_hint">자동저장/자동로드 힌트 표시</string>
+	<string name="emulator_settings_miscellaneous_use_native_user_interface">네이티브 사용자 인터페이스 사용</string>
+	<string name="emulator_settings_miscellaneous_gdb_server">GDB 서버</string>
+	<string name="emulator_settings_miscellaneous_silence_all_logs">모든 로그 무음</string>
+	<string name="emulator_settings_miscellaneous_window_title_format">창 제목 형식</string>
+	<string name="emulator_settings_miscellaneous_pause_emulation_during_home_menu">홈 메뉴 중 에뮬레이션 일시정지</string>
+
+	<string name="emulator_settings_miscellaneous_font_file_selection">글꼴 파일 선택</string>
+	<string-array name="miscellaneous_font_file_selection_entries">
+		<item>펌웨어에서</item>
+		<item>사용자 정의</item>
+	</string-array>
+	<string name="emulator_settings_miscellaneous_custom_font_file_path">사용자 정의 글꼴 파일 경로</string>
+	<string name="emulator_settings_miscellaneous_font_size">글꼴 크기</string>
+
+	<string name="INVALID">잘못됨</string>
+	<string name="RSX_OVERLAYS_TROPHY_BRONZE">브론즈 트로피를 획득했습니다.\n%0</string>
+	<string name="RSX_OVERLAYS_TROPHY_SILVER">실버 트로피를 획득했습니다.\n%0</string>
+	<string name="RSX_OVERLAYS_TROPHY_GOLD">골드 트로피를 획득했습니다.\n%0</string>
+	<string name="RSX_OVERLAYS_TROPHY_PLATINUM">플래티넘 트로피를 획득했습니다.\n%0</string>
+	<string name="RSX_OVERLAYS_COMPILING_SHADERS">셰이더 컴파일 중</string>
+	<string name="RSX_OVERLAYS_COMPILING_PPU_MODULES">PPU 모듈 컴파일 중</string>
+	<string name="RSX_OVERLAYS_MSG_DIALOG_YES">예</string>
+	<string name="RSX_OVERLAYS_MSG_DIALOG_NO">아니오</string>
+	<string name="RSX_OVERLAYS_MSG_DIALOG_CANCEL">뒤로</string>
+	<string name="RSX_OVERLAYS_MSG_DIALOG_OK">확인</string>
+	<string name="RSX_OVERLAYS_SAVE_DIALOG_TITLE">저장 다이얼로그</string>
+	<string name="RSX_OVERLAYS_SAVE_DIALOG_DELETE">저장 삭제</string>
+	<string name="RSX_OVERLAYS_SAVE_DIALOG_LOAD">저장 불러오기</string>
+	<string name="RSX_OVERLAYS_SAVE_DIALOG_SAVE">저장</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_ACCEPT">입력</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_CANCEL">취소</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_SPACE">공백</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_BACKSPACE">백스페이스</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_SHIFT">시프트</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_ENTER_TEXT">[텍스트 입력]</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_ENTER_PASSWORD">[비밀번호 입력]</string>
+	<string name="RSX_OVERLAYS_MEDIA_DIALOG_TITLE">미디어 선택</string>
+	<string name="RSX_OVERLAYS_MEDIA_DIALOG_TITLE_PHOTO_IMPORT">가져올 사진 선택</string>
+	<string name="RSX_OVERLAYS_MEDIA_DIALOG_EMPTY">미디어를 찾을 수 없습니다.</string>
+	<string name="RSX_OVERLAYS_LIST_SELECT">선택</string>
+	<string name="RSX_OVERLAYS_LIST_CANCEL">취소</string>
+	<string name="RSX_OVERLAYS_LIST_DENY">거부</string>
+	<string name="RSX_OVERLAYS_PRESSURE_INTENSITY_TOGGLED_OFF">%0번 플레이어 압력 강도 모드 비활성화됨</string>
+	<string name="RSX_OVERLAYS_PRESSURE_INTENSITY_TOGGLED_ON">%0번 플레이어 압력 강도 모드 활성화됨</string>
+	<string name="RSX_OVERLAYS_ANALOG_LIMITER_TOGGLED_OFF">%0번 플레이어 아날로그 리미터 비활성화됨</string>
+	<string name="RSX_OVERLAYS_ANALOG_LIMITER_TOGGLED_ON">%0번 플레이어 아날로그 리미터 활성화됨</string>
+	<string name="RSX_OVERLAYS_MOUSE_AND_KEYBOARD_EMULATED">마우스와 키보드가 에뮬레이션 장치로 사용됩니다.</string>
+	<string name="RSX_OVERLAYS_MOUSE_AND_KEYBOARD_PAD">마우스와 키보드가 패드로 사용됩니다.</string>
+	<string name="CELL_GAME_ERROR_BROKEN_GAMEDATA">오류: 게임 데이터가 손상되었습니다. 애플리케이션은 계속 실행됩니다.</string>
+	<string name="CELL_GAME_ERROR_BROKEN_HDDGAME">오류: HDD 부팅 게임이 손상되었습니다. 애플리케이션은 계속 실행됩니다.</string>
+	<string name="CELL_GAME_ERROR_BROKEN_EXIT_GAMEDATA">오류: 게임 데이터가 손상되었습니다. 애플리케이션은 종료됩니다.</string>
+	<string name="CELL_GAME_ERROR_BROKEN_EXIT_HDDGAME">오류: HDD 부팅 게임이 손상되었습니다. 애플리케이션은 종료됩니다.</string>
+	<string name="CELL_GAME_ERROR_NOSPACE">오류: 사용 가능한 공간이 부족합니다. 애플리케이션은 계속 실행됩니다.\n필요 공간: %0 KB</string>
+	<string name="CELL_GAME_ERROR_NOSPACE_EXIT">오류: 사용 가능한 공간이 부족합니다. 애플리케이션은 종료됩니다.\n필요 공간: %0 KB</string>
+	<string name="CELL_GAME_ERROR_DIR_NAME">디렉토리 이름: %0</string>
+	<string name="CELL_GAME_DATA_EXIT_BROKEN">오류가 발생했습니다!\n\n이 게임의 게임 데이터를 삭제하십시오.</string>
+	<string name="CELL_HDD_GAME_EXIT_BROKEN">오류가 발생했습니다!\n\nHDD 부팅 게임을 다시 설치하십시오.</string>
+	<string name="CELL_HDD_GAME_CHECK_NOSPACE">HDD 부팅 게임 생성 공간 부족\n필요 공간: %0 KB</string>
+	<string name="CELL_HDD_GAME_CHECK_BROKEN">%0 HDD 부팅 게임이 손상됨!</string>
+	<string name="CELL_HDD_GAME_CHECK_NODATA">%0 HDD 부팅 게임을 찾을 수 없음!</string>
+	<string name="CELL_HDD_GAME_CHECK_INVALID">오류: %0</string>
+	<string name="CELL_GAMEDATA_CHECK_NOSPACE">게임 데이터 생성 공간 부족\n필요 공간: %0 KB</string>
+	<string name="CELL_GAMEDATA_CHECK_BROKEN">%0 게임 데이터가 손상됨!</string>
+	<string name="CELL_GAMEDATA_CHECK_NODATA">%0 게임 데이터를 찾을 수 없음!</string>
+	<string name="CELL_GAMEDATA_CHECK_INVALID">오류: %0</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010001">리소스가 일시적으로 사용할 수 없습니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010002">잘못된 인수 또는 플래그입니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010003">기능이 아직 구현되지 않았습니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010004">메모리 할당 실패.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010005">지정된 식별자로 리소스를 찾을 수 없습니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010006">파일을 찾을 수 없습니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010007">파일 형식을 인식할 수 없거나 ELF 파일이 아닙니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010008">리소스 데드락이 방지되었습니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010009">작업이 허용되지 않았습니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000A">장치 또는 리소스가 사용 중입니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000B">작업이 시간 초과되었습니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000C">작업이 중단되었습니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000D">잘못된 메모리 액세스입니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000F">대상 스레드 상태가 잘못되었습니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010010">정렬이 잘못되었습니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010011">커널 리소스 부족\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010012">파일이 디렉토리입니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010013">작업이 취소되었습니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010014">항목이 이미 존재합니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010015">포트가 이미 연결되어 있습니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010016">포트가 연결되어 있지 않습니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010017">SELF 인증 실패. 프로그램 인증 실패.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010018">파일이 MSELF가 아닙니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010019">시스템 버전 오류.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001A">SELF 인증 실패. 시스템 오류 발생.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001B">수학 도메인 위반.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001C">수학 범위 위반.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001D">입력에 잘못된 멀티바이트 시퀀스가 있습니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001E">파일 포지션이 잘못되었습니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001F">시스템 콜이 인터럽트되었습니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010020">파일이 너무 큽니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010021">링크가 너무 많습니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010022">파일 테이블 오버플로우.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010023">장치에 공간이 부족합니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010024">TTY가 아닙니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010025">파이프가 끊어졌습니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010026">읽기 전용 파일 시스템입니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010027">잘못된 시크입니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010028">인자 목록이 너무 깁니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010029">액세스 거부됨\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002A">잘못된 파일 디스크립터입니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002B">파일 시스템 마운트 실패\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002C">열린 파일이 너무 많습니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002D">장치가 없습니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002E">디렉토리가 아닙니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002F">장치/IO가 없습니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010030">장치 간 링크 오류\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010031">잘못된 메시지입니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010032">진행 중입니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010033">메시지 크기 오류\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010034">이름이 너무 깁니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010035">잠금이 없습니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010036">비어 있지 않습니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010037">지원되지 않습니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010038">파일 시스템 특수 오류\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010039">오버플로우 발생\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003A">파일 시스템이 마운트되지 않았습니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003B">SData가 아닙니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003C">sys_load_param 버전이 잘못되었습니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003D">포인터가 널 포인터입니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003E">포인터가 널 포인터입니다.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_DEFAULT">오류가 발생했습니다.\n(%0)</string>
+	<string name="CELL_OSK_DIALOG_TITLE">온스크린 키보드</string>
+	<string name="CELL_OSK_DIALOG_BUSY">온스크린 키보드 사용 중에는 홈 메뉴를 열 수 없습니다!</string>
+
+	<string name="CELL_SAVEDATA_CB_BROKEN">오류 - 저장 데이터 손상</string>
+	<string name="CELL_SAVEDATA_CB_FAILURE">오류 - 저장/불러오기 실패</string>
+	<string name="CELL_SAVEDATA_CB_NO_DATA">오류 - 저장 데이터 없음</string>
+	<string name="CELL_SAVEDATA_CB_NO_SPACE">오류 - 공간 부족\n\n필요 공간: %0 KB</string>
+	<string name="CELL_SAVEDATA_NO_DATA">저장된 데이터가 없습니다.</string>
+	<string name="CELL_SAVEDATA_NEW_SAVED_DATA_TITLE">새 저장 데이터</string>
+	<string name="CELL_SAVEDATA_NEW_SAVED_DATA_SUB_TITLE">새 항목을 생성하려면 선택하세요</string>
+	<string name="CELL_SAVEDATA_SAVE_CONFIRMATION">이 데이터를 저장하시겠습니까?</string>
+	<string name="CELL_SAVEDATA_DELETE_CONFIRMATION">정말 이 데이터를 삭제하시겠습니까?\n\n%0</string>
+	<string name="CELL_SAVEDATA_DELETE_SUCCESS">데이터가 성공적으로 삭제되었습니다!\n\n%0</string>
+	<string name="CELL_SAVEDATA_DELETE">이 데이터를 삭제하시겠습니까?\n\n%0</string>
+	<string name="CELL_SAVEDATA_LOAD">이 데이터를 불러오시겠습니까?\n\n%0</string>
+	<string name="CELL_SAVEDATA_SAVE">이 데이터를 저장하시겠습니까?\n\n%0</string>
+	<string name="CELL_SAVEDATA_OVERWRITE">저장된 데이터를 덮어쓰시겠습니까?\n\n%0</string>
+	<string name="CELL_SAVEDATA_AUTOSAVE">저장 중...</string>
+	<string name="CELL_SAVEDATA_AUTOLOAD">불러오기 중...</string>
+	<string name="CELL_CROSS_CONTROLLER_MSG">PS Vita 시스템에서 시작하십시오.\n설치하지 않은 경우 PS Vita 시스템의 [리모트 플레이]에서 [크로스 컨트롤러]를 시작하십시오.</string>
+	<string name="CELL_CROSS_CONTROLLER_FW_MSG">PS Vita 시스템 소프트웨어 버전이 1.80 미만인 경우 최신 버전으로 업데이트해야 합니다.</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_TITLE">메시지 선택</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_TITLE_INVITE">초대 선택</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_TITLE_ADD_FRIEND">친구 추가</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_FROM">보낸이:</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_SUBJECT">제목:</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_TITLE">보낼 메시지 선택</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_TITLE_INVITE">초대 보내기</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_TITLE_ADD_FRIEND">친구 요청 보내기</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_CONFIRMATION">%0에게 메시지를 보낼까요?\n\n제목:</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_CONFIRMATION_INVITE">%0에게 초대를 보낼까요?\n\n제목:</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_CONFIRMATION_ADD_FRIEND">%0에게 친구 요청을 보낼까요?\n\n제목:</string>
+	<string name="RECORDING_ABORTED">녹화가 중단되었습니다!</string>
+	<string name="RPCN_NO_ERROR">RPCN: 오류 없음</string>
+	<string name="RPCN_ERROR_INVALID_INPUT">RPCN: 잘못된 입력(호스트/포트 오류)</string>
+	<string name="RPCN_ERROR_WOLFSSL">RPCN 연결 오류: WolfSSL 오류</string>
+	<string name="RPCN_ERROR_RESOLVE">RPCN 연결 오류: 해결 오류</string>
+	<string name="RPCN_ERROR_CONNECT">RPCN 연결 오류</string>
+	<string name="RPCN_ERROR_LOGIN_ERROR">RPCN 로그인 오류: 인증 오류</string>
+	<string name="RPCN_ERROR_ALREADY_LOGGED">RPCN 로그인 오류: 이미 로그인한 사용자</string>
+	<string name="RPCN_ERROR_INVALID_LOGIN">RPCN 로그인 오류: 잘못된 사용자명</string>
+	<string name="RPCN_ERROR_INVALID_PASSWORD">RPCN 로그인 오류: 잘못된 비밀번호</string>
+	<string name="RPCN_ERROR_INVALID_TOKEN">RPCN 로그인 오류: 잘못된 토큰</string>
+	<string name="RPCN_ERROR_INVALID_PROTOCOL_VERSION">RPCN 기타 오류: 프로토콜 버전 오류(RPCS3가 오래됨?)</string>
+	<string name="RPCN_ERROR_UNKNOWN">RPCN: 알 수 없는 오류</string>
+	<string name="RPCN_SUCCESS_LOGGED_ON">RPCN에 성공적으로 로그인했습니다!</string>
+	<string name="RPCN_FRIEND_REQUEST_RECEIVED">RPCN: 친구 요청 수신됨: %0</string>
+	<string name="RPCN_FRIEND_ADDED">RPCN: 친구 추가됨: %0</string>
+	<string name="RPCN_FRIEND_LOST">RPCN: 친구 삭제됨: %0</string>
+	<string name="RPCN_FRIEND_LOGGED_IN">RPCN: %0님이 로그인함</string>
+	<string name="RPCN_FRIEND_LOGGED_OUT">RPCN: %0님이 로그아웃함</string>
+
+    <string name="HOME_MENU_TITLE">홈 메뉴</string>
+    <string name="HOME_MENU_EXIT_GAME">게임 종료</string>
+    <string name="HOME_MENU_RESUME">게임 재개</string>
+    <string name="HOME_MENU_FRIENDS">친구</string>
+    <string name="HOME_MENU_FRIENDS_REQUESTS">대기 중인 친구 요청</string>
+    <string name="HOME_MENU_FRIENDS_BLOCKED">차단된 사용자</string>
+    <string name="HOME_MENU_FRIENDS_STATUS_ONLINE">온라인</string>
+    <string name="HOME_MENU_FRIENDS_STATUS_OFFLINE">오프라인</string>
+    <string name="HOME_MENU_FRIENDS_STATUS_BLOCKED">차단됨</string>
+    <string name="HOME_MENU_FRIENDS_REQUEST_SENT">친구 요청을 보냈습니다</string>
+    <string name="HOME_MENU_FRIENDS_REQUEST_RECEIVED">친구 요청을 보냄</string>
+    <string name="HOME_MENU_FRIENDS_BLOCK_USER_MSG">이 사용자를 차단하시겠습니까?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_UNBLOCK_USER_MSG">이 사용자의 차단을 해제하시겠습니까?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_REMOVE_USER_MSG">이 사용자를 삭제하시겠습니까?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_ACCEPT_REQUEST_MSG">요청을 수락하시겠습니까?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_CANCEL_REQUEST_MSG">요청을 취소하시겠습니까?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_REJECT_REQUEST_MSG">요청을 거부하시겠습니까?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_REJECT_REQUEST">요청 거부</string>
+    <string name="HOME_MENU_FRIENDS_NEXT_LIST">다음 목록</string>
+    <string name="HOME_MENU_RESTART">게임 재시작</string>
+    <string name="HOME_MENU_SETTINGS">설정</string>
+    <string name="HOME_MENU_SETTINGS_SAVE">사용자 정의 설정을 저장하시겠습니까?</string>
+    <string name="HOME_MENU_SETTINGS_SAVE_BUTTON">저장</string>
+    <string name="HOME_MENU_SETTINGS_DISCARD">현재 설정 변경사항을 폐기하시겠습니까?</string>
+    <string name="HOME_MENU_SETTINGS_DISCARD_BUTTON">폐기</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO">오디오</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_MASTER_VOLUME">마스터 볼륨</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_BACKEND">오디오 백엔드</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_BUFFERING">버퍼링 활성화</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_BUFFER_DURATION">오디오 버퍼 지속시간</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_TIME_STRETCHING">타임 스트레칭 활성화</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_TIME_STRETCHING_THRESHOLD">타임 스트레칭 임계값</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO">비디오</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_FRAME_LIMIT">프레임 제한</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_ANISOTROPIC_OVERRIDE">이방성 필터 강제 적용</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_OUTPUT_SCALING">출력 스케일링</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_RCAS_SHARPENING">FidelityFX CAS 샤페닝 강도</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_STRETCH_TO_DISPLAY">화면 영역에 맞춰 늘이기</string>
+    <string name="HOME_MENU_SETTINGS_INPUT">입력</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_BACKGROUND_INPUT">백그라운드 입력 활성화</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_KEEP_PADS_CONNECTED">패드 연결 유지</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_SHOW_PS_MOVE_CURSOR">PS 무브 커서 표시</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_CAMERA_FLIP">카메라 뒤집기</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_PAD_MODE">패드 핸들러 모드</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_PAD_SLEEP">패드 핸들러 대기</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_FAKE_MOVE_ROTATION_CONE_H">가상 PS 무브 회전 원뿔(가로)</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_FAKE_MOVE_ROTATION_CONE_V">가상 PS 무브 회전 원뿔(세로)</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED">고급</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_PREFERRED_SPU_THREADS">선호하는 SPU 스레드</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_MAX_CPU_PREEMPTIONS">최대 전원 절약 CPU-프리엠프션</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_ACCURATE_RSX_RESERVATION_ACCESS">정확한 RSX 예약 접근</string>
+
+    <string name="HOME_MENU_SETTINGS_ADVANCED_SLEEP_TIMERS_ACCURACY">스리프 타이머 정확도</string>
+<string name="HOME_MENU_SETTINGS_ADVANCED_MAX_SPURS_THREADS">최대 SPURS 스레드</string>
+<string name="HOME_MENU_SETTINGS_ADVANCED_DRIVER_WAKE_UP_DELAY">드라이버 웨이크업 지연</string>
+<string name="HOME_MENU_SETTINGS_ADVANCED_VBLANK_FREQUENCY">VBlank 주파수</string>
+<string name="HOME_MENU_SETTINGS_ADVANCED_VBLANK_NTSC">VBlank NTSC 보정</string>
+<string name="HOME_MENU_SETTINGS_OVERLAYS">오버레이</string>
+<string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_TROPHY_POPUPS">트로피 팝업 표시</string>
+<string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_RPCN_POPUPS">RPCN 팝업 표시</string>
+<string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_SHADER_COMPILATION_HINT">셰이더 컴파일 힌트 표시</string>
+<string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_PPU_COMPILATION_HINT">PPU 컴파일 힌트 표시</string>
+<string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_AUTO_SAVE_LOAD_HINT">자동저장/자동로드 힌트 표시</string>
+<string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_PRESSURE_INTENSITY_TOGGLE_HINT">압력 강도 토글 힌트 표시</string>
+<string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_ANALOG_LIMITER_TOGGLE_HINT">아날로그 리미터 토글 힌트 표시</string>
+<string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_MOUSE_AND_KB_TOGGLE_HINT">마우스/키보드 토글 힌트 표시</string>
+<string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY">성능 오버레이</string>
+<string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_ENABLE">성능 오버레이 활성화</string>
+<string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_ENABLE_FRAMERATE_GRAPH">프레임률 그래프 활성화</string>
+<string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_ENABLE_FRAMETIME_GRAPH">프레임타임 그래프 활성화</string>
+<string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_DETAIL_LEVEL">상세 레벨</string>
+<string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMERATE_DETAIL_LEVEL">프레임률 그래프 상세 레벨</string>
+<string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMETIME_DETAIL_LEVEL">프레임타임 그래프 상세 레벨</string>
+<string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMERATE_DATAPOINT_COUNT">프레임률 데이터 포인트 수</string>
+<string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMETIME_DATAPOINT_COUNT">프레임타임 데이터 포인트 수</string>
+<string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_UPDATE_INTERVAL">메트릭 업데이트 간격</string>
+<string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_POSITION">위치</string>
+<string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_CENTER_X">가로 중앙 정렬</string>
+<string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_CENTER_Y">세로 중앙 정렬</string>
+<string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_MARGIN_X">가로 여백</string>
+<string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_MARGIN_Y">세로 여백</string>
+<string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FONT_SIZE">글꼴 크기</string>
+<string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_OPACITY">불투명도</string>
+<string name="HOME_MENU_SETTINGS_DEBUG">디버그</string>
+<string name="HOME_MENU_SETTINGS_DEBUG_OVERLAY">디버그 오버레이</string>
+<string name="HOME_MENU_SETTINGS_DEBUG_INPUT_OVERLAY">입력 디버그 오버레이</string>
+<string name="HOME_MENU_SETTINGS_DEBUG_DISABLE_VIDEO_OUTPUT">비디오 출력 비활성화</string>
+<string name="HOME_MENU_SETTINGS_DEBUG_TEXTURE_LOD_BIAS">텍스처 LOD 바이어스</string>
+<string name="HOME_MENU_SCREENSHOT">스크린샷 캡처</string>
+<string name="HOME_MENU_SAVESTATE">세이브 상태</string>
+<string name="HOME_MENU_SAVESTATE_SAVE">에뮬레이션 상태 저장</string>
+<string name="HOME_MENU_SAVESTATE_AND_EXIT">에뮬레이션 상태 저장 후 종료</string>
+<string name="HOME_MENU_RELOAD_SAVESTATE">마지막 세이브 상태 다시 불러오기</string>
+<string name="HOME_MENU_RECORDING">녹화 시작/종료</string>
+<string name="HOME_MENU_TROPHIES">트로피</string>
+<string name="HOME_MENU_TROPHY_LIST_TITLE">트로피 진행률: %0</string>
+<string name="HOME_MENU_TROPHY_LOCKED_TITLE">잠긴 트로피: %0</string>
+<string name="HOME_MENU_TROPHY_HIDDEN_TITLE">숨겨진 트로피</string>
+<string name="HOME_MENU_TROPHY_HIDDEN_DESCRIPTION">이 트로피는 숨겨져 있습니다</string>
+<string name="HOME_MENU_TROPHY_SHOW_HIDDEN_TROPHIES">숨겨진 트로피 표시</string>
+<string name="HOME_MENU_TROPHY_HIDE_HIDDEN_TROPHIES">숨겨진 트로피 숨기기</string>
+<string name="HOME_MENU_TROPHY_PLATINUM_RELEVANT">플래티넘 관련</string>
+<string name="HOME_MENU_TROPHY_GRADE_BRONZE">브론즈</string>
+<string name="HOME_MENU_TROPHY_GRADE_SILVER">실버</string>
+<string name="HOME_MENU_TROPHY_GRADE_GOLD">골드</string>
+<string name="HOME_MENU_TROPHY_GRADE_PLATINUM">플래티넘</string>
+
+<string name="AUDIO_MUTED">오디오 음소거</string>
+<string name="AUDIO_UNMUTED">오디오 음소거 해제</string>
+<string name="AUDIO_CHANGED">%0으로 볼륨 변경됨</string>
+<string name="PROGRESS_DIALOG_PROGRESS">진행률:</string>
+<string name="PROGRESS_DIALOG_PROGRESS_ANALYZING">분석 중...</string>
+<string name="PROGRESS_DIALOG_REMAINING">남음</string>
+<string name="PROGRESS_DIALOG_DONE">완료됨</string>
+<string name="PROGRESS_DIALOG_FILE">파일</string>
+<string name="PROGRESS_DIALOG_MODULE">모듈</string>
+<string name="PROGRESS_DIALOG_OF">중</string>
+<string name="PROGRESS_DIALOG_PLEASE_WAIT">잠시 기다려 주세요</string>
+<string name="PROGRESS_DIALOG_STOPPING_PLEASE_WAIT">중지 중. 잠시 기다려 주세요...</string>
+<string name="PROGRESS_DIALOG_SAVESTATE_PLEASE_WAIT">세이브 상태 생성 중. 잠시 기다려 주세요...</string>
+<string name="PROGRESS_DIALOG_SCANNING_PPU_EXECUTABLE">PPU 실행 파일 검색 중...</string>
+<string name="PROGRESS_DIALOG_ANALYZING_PPU_EXECUTABLE">PPU 실행 파일 분석 중...</string>
+<string name="PROGRESS_DIALOG_SCANNING_PPU_MODULES">PPU 모듈 검색 중...</string>
+<string name="PROGRESS_DIALOG_LOADING_PPU_MODULES">PPU 모듈 로딩 중...</string>
+<string name="PROGRESS_DIALOG_COMPILING_PPU_MODULES">PPU 모듈 컴파일 중...</string>
+<string name="PROGRESS_DIALOG_LINKING_PPU_MODULES">PPU 모듈 연결 중...</string>
+<string name="PROGRESS_DIALOG_APPLYING_PPU_CODE">PPU 코드 적용 중...</string>
+<string name="PROGRESS_DIALOG_BUILDING_SPU_CACHE">SPU 캐시 구축 중...</string>
+<string name="EMULATION_PAUSED_RESUME_WITH_START">START 버튼을 길게 눌러 재개</string>
+<string name="EMULATION_RESUMING">재개 중...!</string>
+<string name="EMULATION_FROZEN">PS3 애플리케이션이 충돌했을 수 있습니다. 닫을 수 있습니다.</string>
+<string name="SAVESTATE_FAILED_DUE_TO_SAVEDATA">세이브 실패: 게임 저장 진행 중입니다. 완료 후 다시 시도하세요.</string>
+<string name="SAVESTATE_FAILED_DUE_TO_VDEC">세이브 실패: VDEC 기반 영상/컷신이 진행 중입니다. 종료하거나 libvdec.sprx를 활성화하세요.</string>
+<string name="SAVESTATE_FAILED_DUE_TO_MISSING_SPU_SETTING">세이브 실패: SPU 상태 잠금 실패. SPU 호환 모드 활성화로 해결 가능</string>
+<string name="SAVESTATE_FAILED_DUE_TO_SPU">세이브 실패: SPU 상태 잠금 실패. SPU ASMJIT 사용 시 해결</string>
+<string name="PROGRESS_DIALOG_PRELOADING_SHADER_CACHE">디스크에서 셰이더 캐시 사전 로딩 중...</string>
+
+</resources>

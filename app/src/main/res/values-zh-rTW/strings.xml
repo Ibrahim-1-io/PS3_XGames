@@ -1,0 +1,997 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="resolution_not_support">解析度或長寬比不受支援\n目前遊戲僅支援:\n%s\n\n請使用以下設定修改:\n%s\n%s\n</string>
+	<string name="show_game_info">顯示遊戲資訊</string>
+	<string name="quick_start_page">快速啟動頁面</string>
+	<string name="prev_step">上一步</string>
+	<string name="next_step">下一步</string>
+	<string name="finish">完成</string>
+
+	<string name="welcome">歡迎</string>
+	<string name="welcome_content">歡迎使用 %s！</string>
+	<string name="welcome_content2">只需幾個簡單步驟，您就可以開始遊戲，點擊「%s」開始。</string>
+
+	<string name="install_ps3_firmware_hiht_content">要運行遊戲，您必須安裝PS3固件(PS3UPDAT.PUP)。請選擇固件文件。</string>
+	<string name="ps3_firmware_installed">固件已安裝</string>
+	<string name="select_ps3_firmware">選擇固件(PS3UPDAT.PUP)</string>
+	<string name="firmware_not_install">未安裝固件</string>
+
+
+	<string name="select_ps3_iso_dir_hiht_content">請指定PS3 ISO目錄，APP會自動掃描獲取有效遊戲，您也可以跳過此步驟直接安裝.pkg文件。</string>
+	<string name="ps3_iso_dir_is_set">PS3 ISO目錄已設置</string>
+
+	<string name="font_select_hiht_content">請選擇字體文件(*.ttf, *.ttc, *.otf)進行安裝，或者您可以使用PS3固件中的字體(可能會缺少文字)。</string>
+	<string name="custom_font_path_prefix">字體路徑: </string>
+	<string name="select_gpu_driver_hiht_content">請選擇GPU驅動程序，您也可以跳過此步驟(遊戲可能會出錯)。</string>
+	<string name="custom_gpu_driver_path_prefix">GPU驅動路徑: </string>
+
+	<string name="modify_config_hiht_content">模擬器會自動選擇最合適的配置，但某些配置可能會導致您的設備出現問題。您可以在設置中隨時修改。</string>
+
+	<string name="msg_processing">處理中...</string>
+	<string name="msg_failed">失敗！</string>
+
+	<string name="emulator_settings_video_vulkan_debug">調試</string>
+	<string name="emulator_settings_miscellaneous_memory_debug_overlay">內存調試覆蓋層</string>
+
+	<string name="vibrator_duration">震動持續時間</string>
+	<string name="enable_vibrator">啟用震動</string>
+	<string name="dynamic_joystick">動態搖桿</string>
+	<string name="disable">禁用</string>
+
+	<string name="disable_virtual_keyboard">禁用虛擬鍵盤</string>
+	<string name="joystick">搖桿</string>
+	<string name="dpad">方向鍵</string>
+	<string name="button">按鈕</string>
+	<string name="lr">LR</string>
+	<string name="start_select">開始/選擇</string>
+
+	<string name="enable_log">啟用日誌</string>
+	<string name="use_global_config">使用全局配置</string>
+	<string name="edit_custom_config">編輯自定義配置</string>
+	<string name="clear">清除</string>
+	<string name="press_a_key">按任意鍵繼續...</string>
+	<string name="game_list_loading">遊戲列表加載中...</string>
+	<string name="undecrypted_game">目前不支持運行未解密遊戲</string>
+	<string name="delete_game_data">刪除遊戲數據</string>
+	<string name="delete_hdd0_install_data">刪除hdd0安裝數據</string>
+	<string name="delete_game_and_data">刪除遊戲和數據</string>
+	<string name="delete_shaders_cache">刪除著色器緩存</string>
+
+	<string name="set_iso_dir">設置(*.iso)目錄</string>
+	<string name="device_info">設備信息</string>
+	<string name="reset_as_default">重置為默認</string>
+	<string name="save_and_quit">保存並退出</string>
+	<string name="scale_rate">縮放比例</string>
+	<string name="open_file_manager">打開文件管理器</string>
+	<string name="installing_firmware">安裝固件中...</string>
+	<string name="refresh_list">刷新列表</string>
+	<string name="select_game">選擇遊戲</string>
+	<string name="install_firmware">安裝固件</string>
+	<string name="install_game">安裝RAP/PKG</string>
+	<string name="installing_game">安裝遊戲中...</string>
+	<string name="about">關於</string>
+	<string name="quit">退出</string>
+	<string name="update_log">更新日誌</string>
+	<string name="empty_game_list">遊戲列表為空，請通過安裝pkg或設置*.iso目錄添加遊戲</string>
+	<string name="delete">刪除</string>
+	<string name="settings">設置</string>
+	<string name="gratitude">致謝</string>
+	<string name="gratitude_content">感謝Ruban提供的所有圖標\n\n
+		感謝SRC267(Sting)管理reddit/discord\n\n
+		感謝妖妖進行測試\n\n
+		感謝再見某人捐贈GPD XP，這對測試過程有很大幫助。\n\n
+		感謝再見某人捐贈開發設備，這對項目推進至關重要。\n\n
+		感謝以下為本項目提供財政支持的人士(初始階段，按日期排序):\n\n</string>
+	<string name="gratitude_content2">
+		基於RPCS3移植優化，感謝所有參與RPCS3項目的人員\n\n
+Translation qwen3
+	</string>
+	<string name="key_mappers">按鍵映射器</string>
+	<string name="virtual_pad_edit">虛擬手柄編輯</string>
+
+	<string name="left">左</string>
+	<string name="up">上</string>
+	<string name="right">右</string>
+	<string name="down">下</string>
+
+	<string name="square">方塊</string>
+	<string name="cross">叉</string>
+	<string name="circle">圓圈</string>
+	<string name="triangle">三角</string>
+
+	<string name="l1">L1</string>
+	<string name="l2">L2</string>
+	<string name="l3">L3</string>
+
+	<string name="r1">R1</string>
+	<string name="r2">R2</string>
+	<string name="r3">R3</string>
+
+	<string name="start">開始</string>
+	<string name="select">選擇</string>
+	<string name="ps">PS</string>
+
+
+	<string name="emulator_settings_video_vulkan_custom_driver_library_path_dialog_title">選擇自定義驅動</string>
+	<string name="emulator_settings_video_vulkan_custom_driver_library_path_dialog_add_hint">添加自定義驅動(*.zip, *.so)</string>
+
+	<string name="emulator_settings_miscellaneous_custom_font_file_path_dialog_title">選擇自定義字體</string>
+	<string name="emulator_settings_miscellaneous_custom_font_file_path_dialog_add_hint">添加自定義字體(*.ttf, *.ttc, *.otf)</string>
+
+	<string name="emulator_settings_core">核心</string>
+	<string name="emulator_settings_core_ppu_decoder">PPU解碼器</string>
+	<string-array name="core_ppu_decoder_entries">
+		<item>解釋器(靜態)</item>
+		<item>重編譯(LLVM)</item>
+	</string-array>
+	<string name="emulator_settings_core_ppu_threads">PPU線程數</string>
+	<string name="emulator_settings_core_ppu_debug">PPU調試</string>
+	<string name="emulator_settings_core_ppu_calling_history">PPU調用歷史</string>
+	<string name="emulator_settings_core_save_llvm_logs">保存LLVM日誌</string>
+	<string name="emulator_settings_core_use_llvm_cpu">使用LLVM CPU</string>
+	<string name="emulator_settings_core_max_llvm_compile_threads">最大LLVM編譯線程數</string>
+	<string name="emulator_settings_core_ppu_llvm_greedy_mode">PPU LLVM貪婪模式</string>
+	<string name="emulator_settings_core_llvm_precompilation">LLVM預編譯</string>
+	<string name="emulator_settings_core_thread_scheduler_mode">線程調度模式</string>
+	<string-array name="core_thread_scheduler_mode_entries">
+		<item>操作系統</item>
+		<item>親和性</item>
+	</string-array>
+	<string name="emulator_settings_core_set_daz_and_ftz">設置DAZ和FTZ</string>
+	<string name="emulator_settings_core_spu_decoder">SPU解碼器</string>
+	<string-array name="core_spu_decoder_entries">
+		<item>解釋器(靜態)</item>
+		<item>解釋器(動態)</item>
+		<item>重編譯(ASMJIT)</item>
+		<item>重編譯(LLVM)</item>
+	</string-array>
+	<string name="emulator_settings_core_spu_reservation_busy_waiting_percentage">SPU預留忙等待百分比</string>
+	<string name="emulator_settings_core_spu_getllar_busy_waiting_percentage">SPU GETLLAR忙等待百分比</string>
+	<string name="emulator_settings_core_disable_spu_getllar_spin_optimization">禁用SPU GETLLAR自旋優化</string>
+	<string name="emulator_settings_core_spu_debug">SPU調試</string>
+	<string name="emulator_settings_core_mfc_debug">MFC調試</string>
+	<string name="emulator_settings_core_preferred_spu_threads">首選SPU線程數</string>
+	<string name="emulator_settings_core_spu_delay_penalty">SPU延遲懲罰</string>
+	<string name="emulator_settings_core_spu_loop_detection">SPU循環檢測</string>
+	<string name="emulator_settings_core_max_spurs_threads">最大SPURS線程數</string>
+	<string name="emulator_settings_core_spu_block_size">SPU塊大小</string>
+	<string-array name="core_spu_block_size_entries">
+		<item>安全</item>
+		<item>超大</item>
+		<item>極大</item>
+	</string-array>
+	<string name="emulator_settings_core_accurate_spu_dma">精確SPU DMA</string>
+	<string name="emulator_settings_core_accurate_spu_reservations">精確SPU預留</string>
+	<string name="emulator_settings_core_accurate_cache_line_stores">精確緩存行存儲</string>
+	<string name="emulator_settings_core_accurate_rsx_reservation_access">精確RSX預留訪問</string>
+	<string name="emulator_settings_core_rsx_fifo_accuracy">RSX FIFO準確度</string>
+	<string-array name="core_rsx_fifo_accuracy_entries">
+		<item>快速</item>
+		<item>原子</item>
+		<item>有序+原子</item>
+		<item>PS3</item>
+	</string-array>
+	<string name="emulator_settings_core_spu_verification">SPU驗證</string>
+	<string name="emulator_settings_core_spu_cache">SPU緩存</string>
+	<string name="emulator_settings_core_spu_profiler">SPU分析器</string>
+	<string name="emulator_settings_core_mfc_commands_shuffling_limit">MFC命令混洗限制</string>
+	<string name="emulator_settings_core_mfc_commands_timeout">MFC命令超時</string>
+	<string name="emulator_settings_core_mfc_commands_shuffling_in_steps">MFC命令分步混洗</string>
+	<string name="emulator_settings_core_enable_tsx">啟用TSX</string>
+	<string-array name="core_enable_tsx_entries">
+		<item>禁用</item>
+		<item>啟用</item>
+		<item>強制</item>
+	</string-array>
+	<string name="emulator_settings_core_xfloat_accuracy">XFloat準確度</string>
+	<string-array name="core_xfloat_accuracy_entries">
+		<item>精確</item>
+		<item>近似</item>
+		<item>寬鬆</item>
+		<item>不精確</item>
+	</string-array>
+	<string name="emulator_settings_core_accurate_ppu_128byte_reservation_op_max_length">精確PPU 128字節預留操作最大長度</string>
+	<string name="emulator_settings_core_stub_ppu_traps">存根PPU陷阱</string>
+	<string name="emulator_settings_core_precise_spu_verification">精確SPU驗證</string>
+	<string name="emulator_settings_core_ppu_llvm_java_mode_handling">PPU LLVM Java模式處理</string>
+	<string name="emulator_settings_core_use_accurate_dfma">使用精確DFMA</string>
+	<string name="emulator_settings_core_ppu_set_saturation_bit">PPU設置飽和位</string>
+	<string name="emulator_settings_core_ppu_accurate_nonjava_mode">PPU精確非Java模式</string>
+	<string name="emulator_settings_core_ppu_fixup_vector_nan_values">PPU修復向量NaN值</string>
+	<string name="emulator_settings_core_ppu_accurate_vector_nan_values">PPU精確向量NaN值</string>
+	<string name="emulator_settings_core_ppu_set_fpcc_bits">PPU設置FPCC位</string>
+	<string name="emulator_settings_core_debug_console_mode">調試控制台模式</string>
+	<string name="emulator_settings_core_hook_static_functions">掛鉤靜態函數</string>
+	<string name="emulator_settings_core_libraries_control">庫控制</string>
+	<string name="emulator_settings_core_hle_lwmutex">HLE lwmutex</string>
+	<string name="emulator_settings_core_spu_llvm_lower_bound">SPU LLVM下限</string>
+	<string name="emulator_settings_core_spu_llvm_upper_bound">SPU LLVM上限</string>
+	<string name="emulator_settings_core_tsx_transaction_first_limit">TSX事務第一限制</string>
+	<string name="emulator_settings_core_tsx_transaction_second_limit">TSX事務第二限制</string>
+	<string name="emulator_settings_core_clocks_scale">時鐘比例</string>
+	<string name="emulator_settings_core_spu_wakeup_delay">SPU喚醒延遲</string>
+	<string name="emulator_settings_core_spu_wakeup_delay_thread_mask">SPU喚醒延遲線程掩碼</string>
+	<string name="emulator_settings_core_max_cpu_preempt_count">最大CPU搶佔計數</string>
+	<string name="emulator_settings_core_allow_rsx_cpu_preemptions">允許RSX CPU搶佔</string>
+	<string name="emulator_settings_core_sleep_timers_accuracy">睡眠計時器準確度</string>
+	<string-array name="core_sleep_timers_accuracy_entries">
+		<item>與主機相同</item>
+		<item>僅Usleep</item>
+		<item>所有計時器</item>
+	</string-array>
+	<string name="emulator_settings_core_usleep_time_addend">Usleep時間附加值</string>
+	<string name="emulator_settings_core_performance_report_threshold">性能報告閾值</string>
+	<string name="emulator_settings_core_enable_performance_report">啟用性能報告</string>
+	<string name="emulator_settings_core_assume_external_debugger">假設外部調試器</string>
+	<string name="emulator_settings_video">視頻</string>
+	<string name="emulator_settings_video_vertex_buffer_upload_mode">頂點緩衝區上傳模式</string>
+	<string-array name="video_vertex_buffer_upload_mode_entries">
+		<item>自動</item>
+		<item>緩衝區視圖</item>
+		<item>緩衝區</item>
+	</string-array>
+	<string name="emulator_settings_video_texture_upload_mode">紋理上傳模式</string>
+	<string-array name="video_texture_upload_mode_entries">
+		<item>CPU</item>
+		<item>GPU</item>
+	</string-array>
+	<string name="emulator_settings_video_renderer">渲染器</string>
+	<string-array name="video_renderer_entries">
+		<item>空</item>
+		<item>Vulkan</item>
+	</string-array>
+	<string name="emulator_settings_video_resolution">解析度</string>
+	<string-array name="video_resolution_entries">
+		<item>1920x1080</item>
+		<item>1920x1080i</item>
+		<item>1280x720</item>
+		<item>720x480</item>
+		<item>720x480i</item>
+		<item>720x576</item>
+		<item>720x576i</item>
+		<item>1600x1080</item>
+		<item>1440x1080</item>
+		<item>1280x1080</item>
+		<item>960x1080</item>
+	</string-array>
+	<string name="emulator_settings_video_aspect_ratio">長寬比</string>
+	<string-array name="video_aspect_ratio_entries">
+		<item>4:3</item>
+		<item>16:9</item>
+	</string-array>
+	<string name="emulator_settings_video_frame_limit">幀率限制</string>
+	<string-array name="video_frame_limit_entries">
+		<item>關</item>
+		<item>30</item>
+		<item>50</item>
+		<item>60</item>
+		<item>120</item>
+		<item>顯示</item>
+		<item>自動</item>
+		<item>PS3原生</item>
+		<item>無限</item>
+	</string-array>
+	<string name="emulator_settings_video_second_frame_limit">第二幀率限制</string>
+	<string name="emulator_settings_video_msaa">MSAA</string>
+	<string-array name="video_msaa_entries">
+		<item>禁用</item>
+		<item>自動</item>
+	</string-array>
+	<string name="emulator_settings_video_shader_mode">著色器模式</string>
+	<string-array name="video_shader_mode_entries">
+		<item>著色器反編譯器</item>
+		<item>異步著色器反編譯器</item>
+		<item>異步與著色器解釋器</item>
+		<item>僅著色器解釋器</item>
+	</string-array>
+	<string name="emulator_settings_video_shader_precision">著色器精度</string>
+	<string-array name="video_shader_precision_entries">
+		<item>超高</item>
+		<item>高</item>
+		<item>低</item>
+		<item>自動</item>
+	</string-array>
+	<string name="emulator_settings_video_write_color_buffers">寫入顏色緩衝區</string>
+	<string name="emulator_settings_video_write_depth_buffer">寫入深度緩衝區</string>
+	<string name="emulator_settings_video_read_color_buffers">讀取顏色緩衝區</string>
+	<string name="emulator_settings_video_read_depth_buffer">讀取深度緩衝區</string>
+	<string name="emulator_settings_video_handle_rsx_memory_tiling">處理RSX內存平鋪</string>
+	<string name="emulator_settings_video_log_shader_programs">記錄著色器程序</string>
+	<string name="emulator_settings_video_vsync">垂直同步</string>
+	<string name="emulator_settings_video_debug_output">調試輸出</string>
+	<string name="emulator_settings_video_debug_overlay">調試覆蓋層</string>
+	<string name="emulator_settings_video_renderdoc_compatibility_mode">Renderdoc兼容模式</string>
+	<string name="emulator_settings_video_use_gpu_texture_scaling">使用GPU紋理縮放</string>
+	<string name="emulator_settings_video_stretch_to_display_area">拉伸至顯示區域</string>
+	<string name="emulator_settings_video_force_high_precision_z_buffer">強制高精度Z緩衝區</string>
+	<string name="emulator_settings_video_strict_rendering_mode">嚴格渲染模式</string>
+	<string name="emulator_settings_video_disable_zcull_occlusion_queries">禁用ZCull遮擋查詢</string>
+	<string name="emulator_settings_video_disable_video_output">禁用視頻輸出</string>
+	<string name="emulator_settings_video_disable_vertex_cache">禁用頂點緩存</string>
+	<string name="emulator_settings_video_disable_fifo_reordering">禁用FIFO重排序</string>
+	<string name="emulator_settings_video_enable_frame_skip">啟用幀跳過</string>
+	<string name="emulator_settings_video_force_cpu_blit">強制CPU位塊傳輸</string>
+	<string name="emulator_settings_video_disable_ondisk_shader_cache">禁用磁盤著色器緩存</string>
+	<string name="emulator_settings_video_disable_vulkan_memory_allocator">禁用Vulkan內存分配器</string>
+	<string name="emulator_settings_video_use_full_rgb_output_range">使用完整RGB輸出範圍</string>
+	<string name="emulator_settings_video_strict_texture_flushing">嚴格紋理刷新</string>
+	<string name="emulator_settings_video_multithreaded_rsx">多線程RSX</string>
+	<string name="emulator_settings_video_relaxed_zcull_sync">放寬ZCULL同步</string>
+	<string name="emulator_settings_video_force_hardware_msaa_resolve">強制硬件MSAA解析</string>
+	<string name="emulator_settings_video_3d_display_mode">3D顯示模式</string>
+	<string-array name="video_3d_display_mode_entries">
+		<item>禁用</item>
+		<item>並排</item>
+		<item>上下</item>
+		<item>交錯</item>
+		<item>紅綠立體</item>
+		<item>紅藍立體</item>
+		<item>紅青立體</item>
+		<item>洋紅青立體</item>
+		<item>三維立體</item>
+		<item>琥珀藍立體</item>
+	</string-array>
+	<string name="emulator_settings_video_debug_program_analyser">調試程序分析器</string>
+	<string name="emulator_settings_video_accurate_zcull_stats">精確ZCULL統計</string>
+	<string name="emulator_settings_video_consecutive_frames_to_draw">連續渲染幀數</string>
+	<string name="emulator_settings_video_consecutive_frames_to_skip">連續跳過幀數</string>
+	<string name="emulator_settings_video_resolution_scale">解析度縮放</string>
+	<string name="emulator_settings_video_anisotropic_filter_override">各向異性過濾覆蓋</string>
+	<string name="emulator_settings_video_texture_lod_bias_addend">紋理LOD偏差附加值</string>
+	<string name="emulator_settings_video_minimum_scalable_dimension">最小可縮放維度</string>
+	<string name="emulator_settings_video_shader_compiler_threads">著色器編譯器線程數</string>
+	<string name="emulator_settings_video_driver_recovery_timeout">驅動恢復超時</string>
+	<string name="emulator_settings_video_driver_wakeup_delay">驅動喚醒延遲</string>
+	<string name="emulator_settings_video_vblank_rate">垂直空白率</string>
+	<string name="emulator_settings_video_vblank_ntsc_fixup">垂直空白NTSC修正</string>
+	<string name="emulator_settings_video_decr_memory_layout">DECR內存布局</string>
+	<string name="emulator_settings_video_allow_host_gpu_labels">允許主機GPU標籤</string>
+	<string name="emulator_settings_video_disable_msl_fast_math">禁用MSL快速數學</string>
+	<string name="emulator_settings_video_disable_asynchronous_memory_manager">禁用異步內存管理器</string>
+	<string name="emulator_settings_video_output_scaling_mode">輸出縮放模式</string>
+	<string-array name="video_output_scaling_mode_entries">
+		<item>最近鄰</item>
+		<item>雙線性</item>
+		<item>FidelityFX超分辨率</item>
+	</string-array>
+	<string name="emulator_settings_video_use_bgra_format">使用BGRA格式</string>
+	<string name="emulator_settings_video_force_convert_texture">強制轉換紋理</string>
+	<string name="emulator_settings_video_vulkan">Vulkan</string>
+	<string name="emulator_settings_video_vulkan_adapter">適配器</string>
+	<string name="emulator_settings_video_vulkan_force_fifo_present_mode">強制FIFO顯示模式</string>
+	<string name="emulator_settings_video_vulkan_force_primitive_restart_flag">強制圖元重啟標誌</string>
+	<string name="emulator_settings_video_vulkan_exclusive_fullscreen_mode">獨佔全屏模式</string>
+	<string-array name="video_vulkan_exclusive_fullscreen_mode_entries">
+		<item>自動</item>
+		<item>禁用</item>
+		<item>啟用</item>
+	</string-array>
+	<string name="emulator_settings_video_vulkan_asynchronous_texture_streaming_2">異步紋理流2</string>
+	<string name="emulator_settings_video_vulkan_fidelityfx_cas_sharpening_intensity">FidelityFX CAS銳化強度</string>
+	<string name="emulator_settings_video_vulkan_asynchronous_queue_scheduler">異步隊列調度器</string>
+	<string-array name="video_vulkan_asynchronous_queue_scheduler_entries">
+		<item>安全</item>
+		<item>快速</item>
+	</string-array>
+	<string name="emulator_settings_video_vulkan_vram_allocation_limit">VRAM分配限制(MB)</string>
+
+	<string name="emulator_settings_video_vulkan_use_custom_driver">使用自定義驅動</string>
+
+	<string name="emulator_settings_video_vulkan_custom_driver_library_path">自定義驅動庫路徑</string>
+
+	<string name="emulator_settings_video_vulkan_custom_driver_force_max_clocks">自定義驅動強制最大時鐘</string>
+
+
+	<string name="emulator_settings_video_performance_overlay">性能覆蓋層</string>
+	<string name="emulator_settings_video_performance_overlay_enabled">已啟用</string>
+	<string name="emulator_settings_video_performance_overlay_enable_framerate_graph">啟用幀率圖</string>
+	<string name="emulator_settings_video_performance_overlay_enable_frametime_graph">啟用幀時間圖</string>
+	<string name="emulator_settings_video_performance_overlay_framerate_datapoints">幀率數據點</string>
+	<string name="emulator_settings_video_performance_overlay_frametime_datapoints">幀時間數據點</string>
+	<string name="emulator_settings_video_performance_overlay_detail_level">細節等級</string>
+	<string-array name="video_performance_overlay_detail_level_entries">
+		<item>無</item>
+		<item>最小</item>
+		<item>低</item>
+		<item>中</item>
+		<item>高</item>
+	</string-array>
+	<string name="emulator_settings_video_performance_overlay_framerate_graph_detail_level">幀率圖細節等級</string>
+	<string-array name="video_performance_overlay_framerate_graph_detail_level_entries">
+		<item>最小</item>
+		<item>顯示最小和最大</item>
+		<item>顯示1%和平均</item>
+		<item>全部</item>
+	</string-array>
+	<string name="emulator_settings_video_performance_overlay_frametime_graph_detail_level">幀時間圖細節等級</string>
+	<string-array name="video_performance_overlay_frametime_graph_detail_level_entries">
+		<item>最小</item>
+		<item>顯示最小和最大</item>
+		<item>顯示1%和平均</item>
+		<item>全部</item>
+	</string-array>
+	<string name="emulator_settings_video_performance_overlay_metrics_update_interval">指標更新間隔(ms)</string>
+	<string name="emulator_settings_video_performance_overlay_font_size">字體大小(px)</string>
+	<string name="emulator_settings_video_performance_overlay_position">位置</string>
+	<string-array name="video_performance_overlay_position_entries">
+		<item>左上</item>
+		<item>右上</item>
+		<item>左下</item>
+		<item>右下</item>
+	</string-array>
+	<string name="emulator_settings_video_performance_overlay_font">字體</string>
+	<string name="emulator_settings_video_performance_overlay_horizontal_margin">水平邊距(px)</string>
+	<string name="emulator_settings_video_performance_overlay_vertical_margin">垂直邊距(px)</string>
+	<string name="emulator_settings_video_performance_overlay_center_horizontally">水平居中</string>
+	<string name="emulator_settings_video_performance_overlay_center_vertically">垂直居中</string>
+	<string name="emulator_settings_video_performance_overlay_opacity">不透明度(%)</string>
+	<string name="emulator_settings_video_performance_overlay_body_color">主體顏色(十六進製)</string>
+	<string name="emulator_settings_video_performance_overlay_body_background">主體背景(十六進製)</string>
+	<string name="emulator_settings_video_performance_overlay_title_color">標題顏色(十六進製)</string>
+	<string name="emulator_settings_video_performance_overlay_title_background">標題背景(十六進製)</string>
+	<string name="emulator_settings_video_shader_loading_dialog">著色器加載對話框</string>
+	<string name="emulator_settings_video_shader_loading_dialog_allow_custom_background">允許自定義背景</string>
+	<string name="emulator_settings_video_shader_loading_dialog_darkening_effect_strength">變暗效果強度</string>
+	<string name="emulator_settings_video_shader_loading_dialog_blur_effect_strength">模糊效果強度</string>
+	<string name="emulator_settings_audio">音頻</string>
+	<string name="emulator_settings_audio_renderer">渲染器</string>
+	<string-array name="audio_renderer_entries">
+		<item>空</item>
+		<item>Cubeb</item>
+	</string-array>
+	<string name="emulator_settings_audio_audio_provider">音頻提供者</string>
+	<string-array name="audio_audio_provider_entries">
+		<item>無</item>
+		<item>CellAudio</item>
+		<item>RSXAudio</item>
+	</string-array>
+	<string name="emulator_settings_audio_rsxaudio_avport">RSXAudio AV端口</string>
+	<string-array name="audio_rsxaudio_avport_entries">
+		<item>HDMI 0</item>
+		<item>HDMI 1</item>
+		<item>AV多路輸出</item>
+		<item>SPDIF 0</item>
+		<item>SPDIF 1</item>
+	</string-array>
+	<string name="emulator_settings_audio_dump_to_file">導出到文件</string>
+	<string name="emulator_settings_audio_convert_to_16_bit">轉換為16位</string>
+	<string name="emulator_settings_audio_audio_format">音頻格式</string>
+	<string-array name="audio_audio_format_entries">
+		<item>立體聲</item>
+		<item>5.1環繞聲</item>
+		<item>7.1環繞聲</item>
+		<item>自動</item>
+		<item>手動</item>
+	</string-array>
+	<string name="emulator_settings_audio_audio_formats">音頻格式</string>
+	<string name="emulator_settings_audio_audio_channel_layout">音頻通道布局</string>
+	<string-array name="audio_audio_channel_layout_entries">
+		<item>自動</item>
+		<item>單聲道</item>
+		<item>立體聲</item>
+		<item>立體聲LFE</item>
+		<item>四聲道</item>
+		<item>四聲道LFE</item>
+		<item>5.1環繞聲</item>
+		<item>7.1環繞聲</item>
+	</string-array>
+	<string name="emulator_settings_audio_audio_device">音頻設備</string>
+	<string name="emulator_settings_audio_master_volume">主音量</string>
+	<string name="emulator_settings_audio_enable_buffering">啟用緩衝</string>
+	<string name="emulator_settings_audio_desired_audio_buffer_duration">期望的音頻緩衝持續時間</string>
+	<string name="emulator_settings_audio_enable_time_stretching">啟用時間拉伸</string>
+	<string name="emulator_settings_audio_disable_sampling_skip">禁用採樣跳過</string>
+	<string name="emulator_settings_audio_time_stretching_threshold">時間拉伸閾值</string>
+	<string name="emulator_settings_audio_microphone_type">麥克風類型</string>
+	<string-array name="audio_microphone_type_entries">
+		<item>空</item>
+		<item>標準</item>
+		<item>歡唱吧</item>
+		<item>真實歡唱吧</item>
+		<item>搖滾史密斯</item>
+	</string-array>
+	<string name="emulator_settings_audio_microphone_devices">麥克風設備</string>
+	<string name="emulator_settings_audio_music_handler">音樂處理器</string>
+	<string-array name="audio_music_handler_entries">
+		<item>空</item>
+		<item>Qt</item>
+	</string-array>
+	<string name="emulator_settings_input_output">輸入/輸出</string>
+	<string name="emulator_settings_input_output_keyboard">鍵盤</string>
+	<string-array name="input_output_keyboard_entries">
+		<item>空</item>
+		<item>基本</item>
+	</string-array>
+	<string name="emulator_settings_input_output_mouse">鼠標</string>
+	<string-array name="input_output_mouse_entries">
+		<item>空</item>
+		<item>基本</item>
+		<item>原始</item>
+	</string-array>
+	<string name="emulator_settings_input_output_camera">攝像頭</string>
+	<string-array name="input_output_camera_entries">
+		<item>空</item>
+		<item>虛擬</item>
+		<item>Qt</item>
+	</string-array>
+	<string name="emulator_settings_input_output_camera_type">攝像頭類型</string>
+	<string-array name="input_output_camera_type_entries">
+		<item>未知</item>
+		<item>EyeToy</item>
+		<item>PS Eye</item>
+		<item>UVC 1.1</item>
+	</string-array>
+	<string name="emulator_settings_input_output_camera_flip">攝像頭翻轉</string>
+	<string-array name="input_output_camera_flip_entries">
+		<item>無</item>
+		<item>水平</item>
+		<item>垂直</item>
+		<item>全部</item>
+	</string-array>
+	<string name="emulator_settings_input_output_camera_id">攝像頭ID</string>
+	<string name="emulator_settings_input_output_move">移動</string>
+	<string-array name="input_output_move_entries">
+		<item>空</item>
+		<item>虛擬</item>
+		<item>鼠標</item>
+		<item>原始鼠標</item>
+	</string-array>
+	<string name="emulator_settings_input_output_buzz_emulated_controller">Buzz模擬控制器</string>
+	<string-array name="input_output_buzz_emulated_controller_entries">
+		<item>空</item>
+		<item>1個控制器</item>
+		<item>2個控制器</item>
+	</string-array>
+	<string name="emulator_settings_input_output_turntable_emulated_controller">轉盤模擬控制器</string>
+	<string-array name="input_output_turntable_emulated_controller_entries">
+		<item>空</item>
+		<item>1個控制器</item>
+		<item>2個控制器</item>
+	</string-array>
+	<string name="emulator_settings_input_output_ghltar_emulated_controller">GHLtar模擬控制器</string>
+	<string-array name="input_output_ghltar_emulated_controller_entries">
+		<item>空</item>
+		<item>1個控制器</item>
+		<item>2個控制器</item>
+	</string-array>
+	<string name="emulator_settings_input_output_pad_handler_mode">手柄處理模式</string>
+	<string-array name="input_output_pad_handler_mode_entries">
+		<item>單線程</item>
+		<item>多線程</item>
+	</string-array>
+	<string name="emulator_settings_input_output_keep_pads_connected">保持手柄連接</string>
+	<string name="emulator_settings_input_output_pad_handler_sleep">手柄處理睡眠(微秒)</string>
+	<string name="emulator_settings_input_output_background_input_enabled">背景輸入已啟用</string>
+	<string name="emulator_settings_input_output_show_move_cursor">顯示移動游標</string>
+	<string name="emulator_settings_input_output_lock_overlay_input_to_player_one">鎖定覆蓋層輸入到玩家一</string>
+	<string name="emulator_settings_input_output_emulated_midi_devices">模擬MIDI設備</string>
+	<string name="emulator_settings_input_output_load_sdl_gamecontroller_mappings">加載SDL控制器映射</string>
+	<string name="emulator_settings_input_output_io_debug_overlay">IO調試覆蓋層</string>
+	<string name="emulator_settings_system">系統</string>
+	<string name="emulator_settings_system_license_area">授權區域</string>
+	<string-array name="system_license_area_entries">
+		<item>SCEJ</item>
+		<item>SCEA</item>
+		<item>SCEE</item>
+		<item>SCEH</item>
+		<item>SCEK</item>
+		<item>SCH</item>
+	</string-array>
+	<string name="emulator_settings_system_language">語言</string>
+	<string-array name="system_language_entries">
+		<item>日語</item>
+		<item>英語(美國)</item>
+		<item>法語</item>
+		<item>西班牙語</item>
+		<item>德語</item>
+		<item>義大利語</item>
+		<item>荷蘭語</item>
+		<item>葡萄牙語(葡萄牙)</item>
+		<item>俄語</item>
+		<item>韓語</item>
+		<item>中文(繁體)</item>
+		<item>中文(簡體)</item>
+		<item>芬蘭語</item>
+		<item>瑞典語</item>
+		<item>丹麥語</item>
+		<item>挪威語</item>
+		<item>波蘭語</item>
+		<item>葡萄牙語(巴西)</item>
+		<item>英語(英國)</item>
+		<item>土耳其語</item>
+	</string-array>
+	<string name="emulator_settings_system_keyboard_type">鍵盤類型</string>
+	<string-array name="system_keyboard_type_entries">
+		<item>英語鍵盤(美國標準)</item>
+		<item>日語鍵盤</item>
+		<item>日語鍵盤(假名狀態)</item>
+		<item>德語鍵盤</item>
+		<item>西班牙語鍵盤</item>
+		<item>法語鍵盤</item>
+		<item>義大利語鍵盤</item>
+		<item>荷蘭語鍵盤</item>
+		<item>葡萄牙語鍵盤(葡萄牙)</item>
+		<item>俄語鍵盤</item>
+		<item>英語鍵盤(英國標準)</item>
+		<item>韓語鍵盤</item>
+		<item>挪威語鍵盤</item>
+		<item>芬蘭語鍵盤</item>
+		<item>丹麥語鍵盤</item>
+		<item>瑞典語鍵盤</item>
+		<item>中文鍵盤(繁體)</item>
+		<item>中文鍵盤(簡體)</item>
+		<item>法語鍵盤(瑞士)</item>
+		<item>德語鍵盤(瑞士)</item>
+		<item>法語鍵盤(加拿大)</item>
+		<item>法語鍵盤(比利時)</item>
+		<item>波蘭語鍵盤</item>
+		<item>葡萄牙語鍵盤(巴西)</item>
+		<item>土耳其語鍵盤</item>
+	</string-array>
+	<string name="emulator_settings_system_enter_button_assignment">Enter按鈕分配</string>
+	<string-array name="system_enter_button_assignment_entries">
+		<item>圓圈鍵確認</item>
+		<item>叉鍵確認</item>
+	</string-array>
+	<string name="emulator_settings_system_console_time_offset">控制台時間偏移(s)</string>
+	<string name="emulator_settings_system_system_name">系統名稱</string>
+	<string name="emulator_settings_system_psid_high">PSID高位</string>
+	<string name="emulator_settings_system_psid_low">PSID低位</string>
+	<string name="emulator_settings_system_hdd_model_name">HDD型號</string>
+	<string name="emulator_settings_system_hdd_serial_number">HDD序列號</string>
+	<string name="emulator_settings_net">網絡</string>
+	<string name="emulator_settings_net_internet_enabled">互聯網已連接</string>
+	<string-array name="net_internet_enabled_entries">
+		<item>斷開</item>
+		<item>連接</item>
+	</string-array>
+	<string name="emulator_settings_net_ip_address">IP地址</string>
+	<string name="emulator_settings_net_bind_address">綁定地址</string>
+	<string name="emulator_settings_net_dns_address">DNS地址</string>
+	<string name="emulator_settings_net_ip_swap_list">IP交換列表</string>
+	<string name="emulator_settings_net_upnp_enabled">UPNP已啟用</string>
+	<string name="emulator_settings_net_psn_status">PSN狀態</string>
+	<string-array name="net_psn_status_entries">
+		<item>斷開</item>
+		<item>模擬</item>
+		<item>RPCN</item>
+	</string-array>
+	<string name="emulator_settings_net_psn_country">PSN國家</string>
+	<string name="emulator_settings_savestate">保存狀態</string>
+	<string name="emulator_settings_savestate_start_paused">開始時暫停</string>
+	<string name="emulator_settings_savestate_suspend_emulation_savestate_mode">掛起模擬保存模式</string>
+	<string name="emulator_settings_savestate_compatible_savestate_mode">兼容保存模式</string>
+	<string name="emulator_settings_savestate_inspection_mode_savestates">檢查模式保存</string>
+	<string name="emulator_settings_savestate_save_disc_game_data">保存光盤遊戲數據</string>
+	<string name="emulator_settings_miscellaneous">其他</string>
+	<string name="emulator_settings_miscellaneous_automatically_start_games_after_boot">啟動後自動開始遊戲</string>
+	<string name="emulator_settings_miscellaneous_exit_rpcs3_when_process_finishes">進程結束後退出RPCS3</string>
+
+	<string name="emulator_settings_miscellaneous_pause_emulation_on_rpcs3_focus_loss">RPCS3失去焦點時暫停模擬</string>
+	<string name="emulator_settings_miscellaneous_start_games_in_fullscreen_mode">遊戲以全螢幕模式啟動</string>
+	<string name="emulator_settings_miscellaneous_prevent_display_sleep_while_running_games">執行遊戲時防止顯示休眠</string>
+	<string name="emulator_settings_miscellaneous_show_trophy_popups">顯示獎盃彈窗</string>
+	<string name="emulator_settings_miscellaneous_show_rpcn_popups">顯示RPCN彈窗</string>
+	<string name="emulator_settings_miscellaneous_show_shader_compilation_hint">顯示著色器編譯提示</string>
+	<string name="emulator_settings_miscellaneous_show_ppu_compilation_hint">顯示PPU模組編譯提示</string>
+	<string name="emulator_settings_miscellaneous_show_pressure_intensity_toggle_hint">顯示壓力強度切換提示</string>
+	<string name="emulator_settings_miscellaneous_show_analog_limiter_toggle_hint">顯示類比搖桿限制切換提示</string>
+	<string name="emulator_settings_miscellaneous_show_mouse_and_keyboard_toggle_hint">顯示滑鼠鍵盤切換提示</string>
+	<string name="emulator_settings_miscellaneous_show_autosave_autoload_hint">顯示自動存取提示</string>
+	<string name="emulator_settings_miscellaneous_use_native_user_interface">使用原生使用者介面</string>
+	<string name="emulator_settings_miscellaneous_gdb_server">GDB伺服器</string>
+	<string name="emulator_settings_miscellaneous_silence_all_logs">關閉所有日誌</string>
+	<string name="emulator_settings_miscellaneous_window_title_format">視窗標題格式</string>
+	<string name="emulator_settings_miscellaneous_pause_emulation_during_home_menu">主選單期間暫停模擬</string>
+
+	<string name="emulator_settings_miscellaneous_font_file_selection">字型檔案選擇</string>
+	<string-array name="miscellaneous_font_file_selection_entries">
+		<item>來自固件</item>
+		<item>自定義</item>
+	</string-array>
+	<string name="emulator_settings_miscellaneous_custom_font_file_path">自定義字型檔案路徑</string>
+	<string name="emulator_settings_miscellaneous_font_size">字型大小</string>
+
+	<string name="INVALID">無效</string>
+	<string name="RSX_OVERLAYS_TROPHY_BRONZE">您獲得了銅牌獎盃。\n%0</string>
+	<string name="RSX_OVERLAYS_TROPHY_SILVER">您獲得了銀牌獎盃。\n%0</string>
+	<string name="RSX_OVERLAYS_TROPHY_GOLD">您獲得了金牌獎盃。\n%0</string>
+	<string name="RSX_OVERLAYS_TROPHY_PLATINUM">您獲得了白金獎盃。\n%0</string>
+	<string name="RSX_OVERLAYS_COMPILING_SHADERS">著色器編譯中</string>
+	<string name="RSX_OVERLAYS_COMPILING_PPU_MODULES">PPU模組編譯中</string>
+	<string name="RSX_OVERLAYS_MSG_DIALOG_YES">是</string>
+	<string name="RSX_OVERLAYS_MSG_DIALOG_NO">否</string>
+	<string name="RSX_OVERLAYS_MSG_DIALOG_CANCEL">返回</string>
+	<string name="RSX_OVERLAYS_MSG_DIALOG_OK">確定</string>
+	<string name="RSX_OVERLAYS_SAVE_DIALOG_TITLE">存檔對話框</string>
+	<string name="RSX_OVERLAYS_SAVE_DIALOG_DELETE">刪除存檔</string>
+	<string name="RSX_OVERLAYS_SAVE_DIALOG_LOAD">載入存檔</string>
+	<string name="RSX_OVERLAYS_SAVE_DIALOG_SAVE">儲存</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_ACCEPT">輸入</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_CANCEL">返回</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_SPACE">空白</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_BACKSPACE">退位</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_SHIFT">切換</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_ENTER_TEXT">[輸入文字]</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_ENTER_PASSWORD">[輸入密碼]</string>
+	<string name="RSX_OVERLAYS_MEDIA_DIALOG_TITLE">選擇媒體</string>
+	<string name="RSX_OVERLAYS_MEDIA_DIALOG_TITLE_PHOTO_IMPORT">選擇要導入的照片</string>
+	<string name="RSX_OVERLAYS_MEDIA_DIALOG_EMPTY">未找到媒體。</string>
+	<string name="RSX_OVERLAYS_LIST_SELECT">確認</string>
+	<string name="RSX_OVERLAYS_LIST_CANCEL">返回</string>
+	<string name="RSX_OVERLAYS_LIST_DENY">拒絕</string>
+	<string name="RSX_OVERLAYS_PRESSURE_INTENSITY_TOGGLED_OFF">玩家%0的壓力強度模式已關閉</string>
+	<string name="RSX_OVERLAYS_PRESSURE_INTENSITY_TOGGLED_ON">玩家%0的壓力強度模式已啟用</string>
+	<string name="RSX_OVERLAYS_ANALOG_LIMITER_TOGGLED_OFF">玩家%0的類比限制器已關閉</string>
+	<string name="RSX_OVERLAYS_ANALOG_LIMITER_TOGGLED_ON">玩家%0的類比限制器已啟用</string>
+	<string name="RSX_OVERLAYS_MOUSE_AND_KEYBOARD_EMULATED">滑鼠與鍵盤已設定為模擬控制器。</string>
+	<string name="RSX_OVERLAYS_MOUSE_AND_KEYBOARD_PAD">滑鼠與鍵盤已設定為搖桿模式。</string>
+	<string name="CELL_GAME_ERROR_BROKEN_GAMEDATA">錯誤：遊戲資料已損毀。程式將繼續執行。</string>
+	<string name="CELL_GAME_ERROR_BROKEN_HDDGAME">錯誤：HDD開機遊戲已損毀。程式將繼續執行。</string>
+	<string name="CELL_GAME_ERROR_BROKEN_EXIT_GAMEDATA">錯誤：遊戲資料已損毀。程式將終止。</string>
+	<string name="CELL_GAME_ERROR_BROKEN_EXIT_HDDGAME">錯誤：HDD開機遊戲已損毀。程式將終止。</string>
+	<string name="CELL_GAME_ERROR_NOSPACE">錯誤：可用空間不足。程式將繼續。\n所需空間：%0 KB</string>
+	<string name="CELL_GAME_ERROR_NOSPACE_EXIT">錯誤：可用空間不足。程式將終止。\n所需空間：%0 KB</string>
+	<string name="CELL_GAME_ERROR_DIR_NAME">目錄名稱：%0</string>
+	<string name="CELL_GAME_DATA_EXIT_BROKEN">發生錯誤！\n\n請移除此遊戲的資料。</string>
+	<string name="CELL_HDD_GAME_EXIT_BROKEN">發生錯誤！\n\n請重新安裝HDD開機遊戲。</string>
+	<string name="CELL_HDD_GAME_CHECK_NOSPACE">空間不足無法建立HDD開機遊戲。\n所需空間：%0 KB</string>
+	<string name="CELL_HDD_GAME_CHECK_BROKEN">HDD開機遊戲%0已損毀！</string>
+	<string name="CELL_HDD_GAME_CHECK_NODATA">找不到HDD開機遊戲%0！</string>
+	<string name="CELL_HDD_GAME_CHECK_INVALID">錯誤：%0</string>
+	<string name="CELL_GAMEDATA_CHECK_NOSPACE">空間不足無法建立遊戲資料。\n所需空間：%0 KB</string>
+	<string name="CELL_GAMEDATA_CHECK_BROKEN">資料夾%0中的遊戲資料已損毀！</string>
+	<string name="CELL_GAMEDATA_CHECK_NODATA">資料夾%0找不到遊戲資料！</string>
+	<string name="CELL_GAMEDATA_CHECK_INVALID">錯誤：%0</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010001">資源暫時不可用。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010002">無效的參數或旗標。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010003">此功能尚未實作。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010004">記憶體分配失敗。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010005">指定的資源識別碼不存在。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010006">檔案不存在。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010007">檔案格式無法識別/檔案不是有效的ELF檔。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010008">避免了資源死結。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010009">操作不允許。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000A">裝置或資源忙碌中。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000B">操作逾時。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000C">操作已中止。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000D">無效的記憶體存取。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000F">目標執行緒狀態無效。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010010">對齊方式無效。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010011">核心資源不足。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010012">檔案是目錄。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010013">操作已取消。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010014">項目已存在。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010015">連接埠已連接。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010016">連接埠未連接。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010017">SELF授權失敗。程式驗證失敗。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010018">檔案不是MSELF。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010019">系統版本錯誤。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001A">SELF授權時發生嚴重系統錯誤。SELF驗證失敗。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001B">數學領域違規。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001C">數學範圍違規。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001D">輸入包含非法多字節序列。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001E">檔案位置錯誤。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001F">系統呼叫被中斷。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010020">檔案過大。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010021">連結數過多。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010022">檔案描述符表溢位。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010023">裝置空間已滿。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010024">不是終端機。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010025">管線破裂。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010026">唯讀檔案系統。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010027">非法尋址。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010028">參數列表過長。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010029">存取違規。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002A">無效的檔案描述符。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002B">檔案系統掛載失敗。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002C">開啟檔案數過多。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002D">無此裝置。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002E">不是目錄。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002F">無此裝置或IO錯誤。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010030">跨裝置連結錯誤。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010031">訊息錯誤。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010032">進行中。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010033">訊息大小錯誤。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010034">名稱過長。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010035">無鎖定。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010036">目錄非空。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010037">不支援。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010038">檔案系統特定錯誤。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010039">溢位發生。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003A">檔案系統未掛載。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003B">不是SData。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003C">sys_load_param中的版本錯誤。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003D">指標為空。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003E">指標為空。\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_DEFAULT">發生錯誤。\n(%0)</string>
+	<string name="CELL_OSK_DIALOG_TITLE">螢幕鍵盤</string>
+	<string name="CELL_OSK_DIALOG_BUSY">螢幕鍵盤忙碌時無法打開主選單！</string>
+
+	<string name="CELL_SAVEDATA_CB_BROKEN">錯誤 - 存檔資料損毀</string>
+	<string name="CELL_SAVEDATA_CB_FAILURE">錯誤 - 儲存或載入失敗</string>
+	<string name="CELL_SAVEDATA_CB_NO_DATA">錯誤 - 找不到存檔資料</string>
+	<string name="CELL_SAVEDATA_CB_NO_SPACE">錯誤 - 可用空間不足\n\n所需空間：%0 KB</string>
+	<string name="CELL_SAVEDATA_NO_DATA">沒有存檔資料。</string>
+	<string name="CELL_SAVEDATA_NEW_SAVED_DATA_TITLE">新存檔資料</string>
+	<string name="CELL_SAVEDATA_NEW_SAVED_DATA_SUB_TITLE">選擇建立新資料</string>
+	<string name="CELL_SAVEDATA_SAVE_CONFIRMATION">是否儲存此資料？</string>
+	<string name="CELL_SAVEDATA_DELETE_CONFIRMATION">真的要刪除此資料嗎？\n\n%0</string>
+	<string name="CELL_SAVEDATA_DELETE_SUCCESS">資料已成功移除！\n\n%0</string>
+	<string name="CELL_SAVEDATA_DELETE">刪除此資料？\n\n%0</string>
+	<string name="CELL_SAVEDATA_LOAD">載入此資料？\n\n%0</string>
+	<string name="CELL_SAVEDATA_SAVE">儲存此資料？\n\n%0</string>
+	<string name="CELL_SAVEDATA_OVERWRITE">是否覆蓋現有存檔？\n\n%0</string>
+	<string name="CELL_SAVEDATA_AUTOSAVE">正在儲存...</string>
+	<string name="CELL_SAVEDATA_AUTOLOAD">正在載入...</string>
+	<string name="CELL_CROSS_CONTROLLER_MSG">在PS Vita系統上啟動。\n若尚未安裝，請前往PS Vita的[遠端串流]功能並在LiveArea™畫面中啟動[跨控制器]。</string>
+	<string name="CELL_CROSS_CONTROLLER_FW_MSG">若您PS Vita的系統軟體版本低於1.80，請更新至最新版本。</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_TITLE">選擇訊息</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_TITLE_INVITE">選擇邀請</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_TITLE_ADD_FRIEND">新增好友</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_FROM">來自：</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_SUBJECT">主旨：</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_TITLE">選擇要傳送的訊息</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_TITLE_INVITE">傳送邀請</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_TITLE_ADD_FRIEND">新增好友</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_CONFIRMATION">傳送訊息給%0？\n\n主旨：</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_CONFIRMATION_INVITE">傳送邀請給%0？\n\n主旨：</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_CONFIRMATION_ADD_FRIEND">傳送好友請求給%0？\n\n主旨：</string>
+	<string name="RECORDING_ABORTED">錄製已中止！</string>
+	<string name="RPCN_NO_ERROR">RPCN：無錯誤</string>
+	<string name="RPCN_ERROR_INVALID_INPUT">RPCN：無效輸入（主機/埠號錯誤）</string>
+	<string name="RPCN_ERROR_WOLFSSL">RPCN連接錯誤：WolfSSL錯誤</string>
+	<string name="RPCN_ERROR_RESOLVE">RPCN連接錯誤：解析錯誤</string>
+	<string name="RPCN_ERROR_CONNECT">RPCN連接錯誤</string>
+	<string name="RPCN_ERROR_LOGIN_ERROR">RPCN登入錯誤：驗證錯誤</string>
+	<string name="RPCN_ERROR_ALREADY_LOGGED">RPCN登入錯誤：使用者已登入</string>
+	<string name="RPCN_ERROR_INVALID_LOGIN">RPCN登入錯誤：無效帳號</string>
+	<string name="RPCN_ERROR_INVALID_PASSWORD">RPCN登入錯誤：無效密碼</string>
+	<string name="RPCN_ERROR_INVALID_TOKEN">RPCN登入錯誤：無效憑證</string>
+	<string name="RPCN_ERROR_INVALID_PROTOCOL_VERSION">RPCN其他錯誤：協定版本錯誤（RPCS3版本過舊？）</string>
+	<string name="RPCN_ERROR_UNKNOWN">RPCN：未知錯誤</string>
+	<string name="RPCN_SUCCESS_LOGGED_ON">成功登入RPCN！</string>
+	<string name="RPCN_FRIEND_REQUEST_RECEIVED">RPCN：收到好友請求：%0</string>
+	<string name="RPCN_FRIEND_ADDED">RPCN：新增好友：%0</string>
+	<string name="RPCN_FRIEND_LOST">RPCN：移除好友：%0</string>
+	<string name="RPCN_FRIEND_LOGGED_IN">RPCN：%0已登入</string>
+	<string name="RPCN_FRIEND_LOGGED_OUT">RPCN：%0已登出</string>
+
+    <string name="HOME_MENU_TITLE">主選單</string>
+    <string name="HOME_MENU_EXIT_GAME">離開遊戲</string>
+    <string name="HOME_MENU_RESUME">繼續遊戲</string>
+    <string name="HOME_MENU_FRIENDS">好友</string>
+    <string name="HOME_MENU_FRIENDS_REQUESTS">待處理的好友請求</string>
+    <string name="HOME_MENU_FRIENDS_BLOCKED">封鎖的使用者</string>
+    <string name="HOME_MENU_FRIENDS_STATUS_ONLINE">線上</string>
+    <string name="HOME_MENU_FRIENDS_STATUS_OFFLINE">離線</string>
+    <string name="HOME_MENU_FRIENDS_STATUS_BLOCKED">已封鎖</string>
+    <string name="HOME_MENU_FRIENDS_REQUEST_SENT">您已送出好友請求</string>
+    <string name="HOME_MENU_FRIENDS_REQUEST_RECEIVED">收到好友請求</string>
+    <string name="HOME_MENU_FRIENDS_BLOCK_USER_MSG">封鎖此使用者？\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_UNBLOCK_USER_MSG">解除封鎖？\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_REMOVE_USER_MSG">移除此使用者？\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_ACCEPT_REQUEST_MSG">接受請求？\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_CANCEL_REQUEST_MSG">取消請求？\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_REJECT_REQUEST_MSG">拒絕請求？\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_REJECT_REQUEST">拒絕請求</string>
+    <string name="HOME_MENU_FRIENDS_NEXT_LIST">下一個列表</string>
+    <string name="HOME_MENU_RESTART">重新啟動</string>
+    <string name="HOME_MENU_SETTINGS">設定</string>
+    <string name="HOME_MENU_SETTINGS_SAVE">儲存自定義配置？</string>
+    <string name="HOME_MENU_SETTINGS_SAVE_BUTTON">儲存</string>
+    <string name="HOME_MENU_SETTINGS_DISCARD">捨棄變更？</string>
+    <string name="HOME_MENU_SETTINGS_DISCARD_BUTTON">放棄</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO">音效</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_MASTER_VOLUME">主音量</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_BACKEND">音效後端</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_BUFFERING">啟用緩衝</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_BUFFER_DURATION">音效緩衝持續時間</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_TIME_STRETCHING">啟用時間拉伸</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_TIME_STRETCHING_THRESHOLD">時間拉伸臨界值</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO">視訊</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_FRAME_LIMIT">畫面限制</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_ANISOTROPIC_OVERRIDE">各向異性過濾覆蓋</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_OUTPUT_SCALING">輸出縮放比例</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_RCAS_SHARPENING">FidelityFX CAS銳利度強度</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_STRETCH_TO_DISPLAY">延伸至顯示區域</string>
+    <string name="HOME_MENU_SETTINGS_INPUT">輸入</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_BACKGROUND_INPUT">背景輸入啟用</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_KEEP_PADS_CONNECTED">保持控制器連接</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_SHOW_PS_MOVE_CURSOR">顯示PS Move游標</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_CAMERA_FLIP">鏡頭翻轉</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_PAD_MODE">控制器處理模式</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_PAD_SLEEP">控制器睡眠設定</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_FAKE_MOVE_ROTATION_CONE_H">模擬PS Move旋轉錐度(水平)</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_FAKE_MOVE_ROTATION_CONE_V">模擬PS Move旋轉錐度(垂直)</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED">進階</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_PREFERRED_SPU_THREADS">建議SPU執行緒數</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_MAX_CPU_PREEMPTIONS">最大省電CPU搶佔次數</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_ACCURATE_RSX_RESERVATION_ACCESS">精確RSX保留記憶體存取</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_SLEEP_TIMERS_ACCURACY">睡眠計時器精度</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_MAX_SPURS_THREADS">最大SPURS執行緒數</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_DRIVER_WAKE_UP_DELAY">驅動程式喚醒延遲</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_VBLANK_FREQUENCY">垂直同步頻率</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_VBLANK_NTSC">NTSC垂直同步修正</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS">覆蓋顯示</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_TROPHY_POPUPS">顯示獎盃彈窗</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_RPCN_POPUPS">顯示RPCN彈窗</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_SHADER_COMPILATION_HINT">顯示著色器編譯提示</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_PPU_COMPILATION_HINT">顯示PPU模組編譯提示</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_AUTO_SAVE_LOAD_HINT">顯示自動存取提示</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_PRESSURE_INTENSITY_TOGGLE_HINT">顯示壓力強度切換提示</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_ANALOG_LIMITER_TOGGLE_HINT">顯示類比搖桿限制切換提示</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_MOUSE_AND_KB_TOGGLE_HINT">顯示滑鼠鍵盤切換提示</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY">效能覆蓋顯示</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_ENABLE">啟用效能顯示</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_ENABLE_FRAMERATE_GRAPH">啟用幀率圖表</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_ENABLE_FRAMETIME_GRAPH">啟用幀時間圖表</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_DETAIL_LEVEL">細節層級</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMERATE_DETAIL_LEVEL">幀率圖表細節層級</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMETIME_DETAIL_LEVEL">幀時間圖表細節層級</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMERATE_DATAPOINT_COUNT">幀率數據點數量</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMETIME_DATAPOINT_COUNT">幀時間數據點數量</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_UPDATE_INTERVAL">指標更新間隔</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_POSITION">位置</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_CENTER_X">水平居中</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_CENTER_Y">垂直居中</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_MARGIN_X">水平邊界</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_MARGIN_Y">垂直邊界</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FONT_SIZE">字型大小</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_OPACITY">透明度</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG">除錯</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_OVERLAY">除錯覆蓋顯示</string>
+<string name="HOME_MENU_SETTINGS_DEBUG_INPUT_OVERLAY">輸入除錯覆蓋層</string>
+<string name="HOME_MENU_SETTINGS_DEBUG_DISABLE_VIDEO_OUTPUT">停用視訊輸出</string>
+<string name="HOME_MENU_SETTINGS_DEBUG_TEXTURE_LOD_BIAS">材質細節層級偏移值</string>
+<string name="HOME_MENU_SCREENSHOT">截取螢幕畫面</string>
+<string name="HOME_MENU_SAVESTATE">儲存狀態</string>
+<string name="HOME_MENU_SAVESTATE_SAVE">儲存模擬狀態</string>
+<string name="HOME_MENU_SAVESTATE_AND_EXIT">儲存模擬狀態並離開</string>
+<string name="HOME_MENU_RELOAD_SAVESTATE">重新載入最後儲存狀態</string>
+<string name="HOME_MENU_RECORDING">開始/停止錄製</string>
+<string name="HOME_MENU_TROPHIES">獎盃</string>
+<string name="HOME_MENU_TROPHY_LIST_TITLE">獎盃進度：%0</string>
+<string name="HOME_MENU_TROPHY_LOCKED_TITLE">已鎖定獎盃：%0</string>
+<string name="HOME_MENU_TROPHY_HIDDEN_TITLE">隱藏獎盃</string>
+<string name="HOME_MENU_TROPHY_HIDDEN_DESCRIPTION">此獎盃已隱藏</string>
+<string name="HOME_MENU_TROPHY_SHOW_HIDDEN_TROPHIES">顯示隱藏獎盃</string>
+<string name="HOME_MENU_TROPHY_HIDE_HIDDEN_TROPHIES">隱藏獎盃</string>
+<string name="HOME_MENU_TROPHY_PLATINUM_RELEVANT">白金相關</string>
+<string name="HOME_MENU_TROPHY_GRADE_BRONZE">青銅</string>
+<string name="HOME_MENU_TROPHY_GRADE_SILVER">白銀</string>
+<string name="HOME_MENU_TROPHY_GRADE_GOLD">黃金</string>
+<string name="HOME_MENU_TROPHY_GRADE_PLATINUM">白金</string>
+
+<string name="AUDIO_MUTED">音訊已靜音</string>
+<string name="AUDIO_UNMUTED">音訊已取消靜音</string>
+<string name="AUDIO_CHANGED">音量已調整為 %0</string>
+<string name="PROGRESS_DIALOG_PROGRESS">進度：</string>
+<string name="PROGRESS_DIALOG_PROGRESS_ANALYZING">進度：分析中...</string>
+<string name="PROGRESS_DIALOG_REMAINING">剩餘</string>
+<string name="PROGRESS_DIALOG_DONE">完成</string>
+<string name="PROGRESS_DIALOG_FILE">檔案</string>
+<string name="PROGRESS_DIALOG_MODULE">模組</string>
+<string name="PROGRESS_DIALOG_OF">中的</string>
+<string name="PROGRESS_DIALOG_PLEASE_WAIT">請稍候</string>
+<string name="PROGRESS_DIALOG_STOPPING_PLEASE_WAIT">正在停止。請稍候...</string>
+<string name="PROGRESS_DIALOG_SAVESTATE_PLEASE_WAIT">正在建立儲存狀態。請稍候...</string>
+<string name="PROGRESS_DIALOG_SCANNING_PPU_EXECUTABLE">掃描 PPU 可執行檔中...</string>
+<string name="PROGRESS_DIALOG_ANALYZING_PPU_EXECUTABLE">分析 PPU 可執行檔中...</string>
+<string name="PROGRESS_DIALOG_SCANNING_PPU_MODULES">掃描 PPU 模組中...</string>
+<string name="PROGRESS_DIALOG_LOADING_PPU_MODULES">載入 PPU 模組中...</string>
+<string name="PROGRESS_DIALOG_COMPILING_PPU_MODULES">編譯 PPU 模組中...</string>
+<string name="PROGRESS_DIALOG_LINKING_PPU_MODULES">連結 PPU 模組中...</string>
+<string name="PROGRESS_DIALOG_APPLYING_PPU_CODE">套用 PPU 程式碼中...</string>
+<string name="PROGRESS_DIALOG_BUILDING_SPU_CACHE">建立 SPU 快取中...</string>
+<string name="EMULATION_PAUSED_RESUME_WITH_START">長按 START 按鈕以恢復</string>
+<string name="EMULATION_RESUMING">正在恢復...!</string>
+<string name="EMULATION_FROZEN">PS3 應用程式可能已當機，您可以關閉它。</string>
+<string name="SAVESTATE_FAILED_DUE_TO_SAVEDATA">儲存狀態失敗：遊戲正在儲存中，請等待完成。</string>
+<string name="SAVESTATE_FAILED_DUE_TO_VDEC">儲存狀態失敗：VDEC 基底視訊/過場動畫正在進行中，請等待結束或啟用 libvdec.sprx。</string>
+<string name="SAVESTATE_FAILED_DUE_TO_MISSING_SPU_SETTING">儲存狀態失敗：無法鎖定 SPU 狀態，啟用 SPU 相容模式可能可修復。</string>
+<string name="SAVESTATE_FAILED_DUE_TO_SPU">儲存狀態失敗：無法鎖定 SPU 狀態，使用 SPU ASMJIT 將可修復。</string>
+<string name="PROGRESS_DIALOG_PRELOADING_SHADER_CACHE">從磁碟預先載入著色器快取中...</string>
+
+
+</resources>

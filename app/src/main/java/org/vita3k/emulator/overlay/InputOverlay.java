@@ -857,6 +857,38 @@ public final class InputOverlay extends SurfaceView implements OnTouchListener
     throw new IllegalArgumentException("Invalid scale type");
   }
 
+  public boolean get_all_input_enabled(){
+    return m_left_joystick_enabled && m_right_joystick_enabled
+            && m_dpad_enabled
+            && m_square_enabled && m_circle_enabled && m_triangle_enabled && m_cross_enabled
+            && m_start_enabled && m_select_enabled
+            && m_l1_enabled && m_r1_enabled && m_l2_enabled && m_r2_enabled && m_l3_enabled && m_r3_enabled
+            && m_ps_enabled;
+  }
+
+  public void set_all_input_enabled(boolean enabled){
+
+    SharedPreferences.Editor sPrefsEditor = mPreferences.edit();
+    sPrefsEditor.putBoolean("m_left_joystick_enabled",enabled);
+    sPrefsEditor.putBoolean("m_right_joystick_enabled",enabled);
+    sPrefsEditor.putBoolean("m_dpad_enabled",enabled);
+    sPrefsEditor.putBoolean("m_square_enabled",enabled);
+    sPrefsEditor.putBoolean("m_circle_enabled",enabled);
+    sPrefsEditor.putBoolean("m_triangle_enabled",enabled);
+    sPrefsEditor.putBoolean("m_cross_enabled",enabled);
+    sPrefsEditor.putBoolean("m_start_enabled",enabled);
+    sPrefsEditor.putBoolean("m_select_enabled",enabled);
+    sPrefsEditor.putBoolean("m_l1_enabled",enabled);
+    sPrefsEditor.putBoolean("m_r1_enabled",enabled);
+    sPrefsEditor.putBoolean("m_l2_enabled",enabled);
+    sPrefsEditor.putBoolean("m_r2_enabled",enabled);
+    sPrefsEditor.putBoolean("m_l3_enabled",enabled);
+    sPrefsEditor.putBoolean("m_r3_enabled",enabled);
+    sPrefsEditor.putBoolean("m_ps_enabled",enabled);
+    sPrefsEditor.commit();
+    refreshControls();
+  }
+
   public void setScale(int scale_type,float scale){
     switch (scale_type){
       case ScaleType.JOYSTICK:

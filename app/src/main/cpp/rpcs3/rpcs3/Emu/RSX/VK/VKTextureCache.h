@@ -41,7 +41,7 @@ namespace vk
 		std::unique_ptr<vk::event> dma_fence;
 		vk::render_device* m_device = nullptr;
 		vk::viewable_image* vram_texture = nullptr;
-        bool replace_swap_as_ror8=false;
+        bool replace_swap_as_rol8=false;
 
 	public:
 		using baseclass::cached_texture_section;
@@ -73,9 +73,6 @@ namespace vk
 
 			this->gcm_format = gcm_format;
 			this->pack_unpack_swap_bytes = pack_swap_bytes;
-
-            this->replace_swap_as_ror8=!g_cfg.video.bgra_format
-                    &&(gcm_format==CELL_GCM_TEXTURE_A8R8G8B8||gcm_format==CELL_GCM_TEXTURE_D8R8G8B8);
 
 			if (managed)
 			{
@@ -360,6 +357,11 @@ namespace vk
 		void set_unpack_swap_bytes(bool swap_bytes)
 		{
 			pack_unpack_swap_bytes = swap_bytes;
+		}
+
+        void set_replace_swap_as_rol8(bool replace_swap_as_rol8)
+		{
+            this->replace_swap_as_rol8 = replace_swap_as_rol8;
 		}
 
 		void set_rsx_pitch(u32 pitch)

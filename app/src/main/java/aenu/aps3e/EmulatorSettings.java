@@ -11,9 +11,11 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.ParcelFileDescriptor;
+import android.preference.SwitchPreference;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.ForegroundColorSpan;
+import android.util.AttributeSet;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -75,13 +77,25 @@ public class EmulatorSettings extends AppCompatActivity {
     static final String Video$Force_Convert_Texture="Video|Force Convert Texture";
     static final String Video$Texture_Upload_Mode ="Video|Texture Upload Mode";
     static final String Core$Use_LLVM_CPU="Core|Use LLVM CPU";
+    static final String Video$Write_Color_Buffers="Video|Write Color Buffers";
+    static final String Video$Read_Color_Buffers="Video|Read Color Buffers";
+    static final String Video$Strict_Rendering_Mode="Video|Strict Rendering Mode";
+    static final String Video$Resolution_Scale="Video|Resolution Scale";
+    static final String Video$Vulkan$Asynchronous_Texture_Streaming_2="Video|Vulkan|Asynchronous Texture Streaming 2";
+    //"Video|Vulkan|Asynchronous Queue Scheduler"
+    static final String Video$Vulkan$Asynchronous_Queue_Scheduler="Video|Vulkan|Asynchronous Queue Scheduler";
+    //"Video|Resolution"
+    static final String Video$Resolution="Video|Resolution";
+    //"Video|Aspect ratio"
+    static final String Video$Aspect_ratio="Video|Aspect ratio";
 
     @SuppressLint("ValidFragment")
     public static class SettingsFragment extends PreferenceFragmentCompat implements
-            Preference.OnPreferenceClickListener{
+            Preference.OnPreferenceClickListener,Preference.OnPreferenceChangeListener{
 
         boolean is_global;
         String config_path;
+        Emulator.Config original_config;
         Emulator.Config config;
         PreferenceScreen root_pref;
 
@@ -176,8 +190,10 @@ public class EmulatorSettings extends AppCompatActivity {
                                         config.close_config_file();
                                         config=null;
                                     }
-                                    //Application.get_global_config_file().delete();
-                                    //Application.extractAssetsDir(requireContext(),"config",Application.get_global_config_file().getParentFile());
+                                    if(original_config!=null){
+                                        original_config.close_config();
+                                        original_config=null;
+                                    }
                                     Application.copy_file(Application.get_default_config_file(),_config_file);
                                     requireActivity().finish();
                                 }
@@ -203,6 +219,10 @@ public class EmulatorSettings extends AppCompatActivity {
                                     if (config!=null) {
                                         config.close_config_file();
                                         config=null;
+                                    }
+                                    if(original_config!=null){
+                                        original_config.close_config();
+                                        original_config=null;
                                     }
 
                                     new File(config_path).delete();
@@ -250,6 +270,7 @@ public class EmulatorSettings extends AppCompatActivity {
 
             try{
                 config=Emulator.Config.open_config_file(config_path);
+                original_config=Emulator.Config.open_config_from_string(QuickStartActivity.load_default_config_str(getContext()));
             }catch(Exception e){
                 Log.e("EmulatorSettings",e.toString());
                 root_pref.setEnabled(false);
@@ -313,9 +334,9 @@ public class EmulatorSettings extends AppCompatActivity {
                     "Core|Allow RSX CPU Preemptions",
                     "Core|Enable Performance Report",
                     "Core|Assume External Debugger",
-                    "Video|Write Color Buffers",
+                    Video$Write_Color_Buffers,
                     "Video|Write Depth Buffer",
-                    "Video|Read Color Buffers",
+                    Video$Read_Color_Buffers,
                     "Video|Read Depth Buffer",
                     "Video|Handle RSX Memory Tiling",
                     "Video|Log shader programs",
@@ -326,7 +347,7 @@ public class EmulatorSettings extends AppCompatActivity {
                     "Video|Use GPU texture scaling",
                     "Video|Stretch To Display Area",
                     "Video|Force High Precision Z buffer",
-                    "Video|Strict Rendering Mode",
+                    Video$Strict_Rendering_Mode,
                     "Video|Disable ZCull Occlusion Queries",
                     "Video|Disable Video Output",
                     "Video|Disable Vertex Cache",
@@ -349,7 +370,7 @@ public class EmulatorSettings extends AppCompatActivity {
                     Video$Use_BGRA_Format,
                     Video$Force_Convert_Texture,
                     "Video|Vulkan|Force FIFO present mode",
-                    "Video|Vulkan|Asynchronous Texture Streaming 2",
+                    Video$Vulkan$Asynchronous_Texture_Streaming_2,
                     Video$Vulkan$Use_Custom_Driver,
                     "Video|Vulkan|Custom Driver Force Max Clocks",
                     "Video|Performance Overlay|Enabled",
@@ -403,7 +424,7 @@ public class EmulatorSettings extends AppCompatActivity {
                     "Video|Second Frame Limit",
                     "Video|Consecutive Frames To Draw",
                     "Video|Consecutive Frames To Skip",
-                    "Video|Resolution Scale",
+                    Video$Resolution_Scale,
                     "Video|Texture LOD Bias Addend",
                     "Video|Minimum Scalable Dimension",
                     "Video|Shader Compiler Threads",
@@ -449,8 +470,8 @@ public class EmulatorSettings extends AppCompatActivity {
                     "Core|XFloat Accuracy",
                     "Core|Sleep Timers Accuracy",
                     "Video|Renderer",
-                    "Video|Resolution",
-                    "Video|Aspect ratio",
+                    Video$Resolution,
+                    Video$Aspect_ratio,
                     "Video|Frame limit",
                     "Video|MSAA",
                     "Video|Shader Mode",
@@ -460,7 +481,7 @@ public class EmulatorSettings extends AppCompatActivity {
                     "Video|Vertex Buffer Upload Mode",
                     Video$Texture_Upload_Mode,
                     "Video|Vulkan|Exclusive Fullscreen Mode",
-                    "Video|Vulkan|Asynchronous Queue Scheduler",
+                    Video$Vulkan$Asynchronous_Queue_Scheduler,
                     "Video|Performance Overlay|Detail level",
                     "Video|Performance Overlay|Framerate graph detail level",
                     "Video|Performance Overlay|Frametime graph detail level",
@@ -509,9 +530,10 @@ public class EmulatorSettings extends AppCompatActivity {
                 if (val_str!=null) {
                     boolean val=Boolean.parseBoolean(val_str);
                     pref.setChecked(val);
+                    setup_pref_title_color(pref,val_str);
+                    setup_config_dependency(pref,val_str);
                 }
-                //pref.setOnPreferenceChangeListener(this);
-                //pref.set_title_color(WARNING_COLOR);
+                pref.setOnPreferenceChangeListener(this);
                 pref.setPreferenceDataStore(data_store);
             }
 
@@ -523,16 +545,18 @@ public class EmulatorSettings extends AppCompatActivity {
                     try {
                         int val = Integer.parseInt(val_str);
                         pref.setValue(val);
+                        setup_pref_title_color(pref,val_str);
+                        setup_config_dependency(pref,val_str);
                     } catch (NumberFormatException e) {
                         pref.setEnabled(false);
                     }
                 }
 
-                //pref.setOnPreferenceChangeListener(this);
+                pref.setOnPreferenceChangeListener(this);
                 pref.setPreferenceDataStore(data_store);
             }
 
-            final Preference.OnPreferenceChangeListener list_pref_change_listener=new Preference.OnPreferenceChangeListener() {
+            /* Preference.OnPreferenceChangeListener list_pref_change_listener=new Preference.OnPreferenceChangeListener() {
                 @Override
                 public boolean onPreferenceChange(@NonNull Preference preference, Object newValue) {
                     ListPreference pref=(ListPreference) preference;
@@ -547,15 +571,17 @@ public class EmulatorSettings extends AppCompatActivity {
                     }
                     return true;
                 }
-            };
+            };*/
             for (String key:STRING_ARR_KEYS){
                 ListPreference pref=findPreference(key);
                 String val_str=config.load_config_entry(key);
                 if (val_str!=null) {
                     pref.setValue(val_str);
                     pref.setSummary(pref.getEntry());
+                    setup_pref_title_color(pref,val_str);
+                    setup_config_dependency(pref,val_str);
                 }
-                pref.setOnPreferenceChangeListener(list_pref_change_listener);
+                pref.setOnPreferenceChangeListener(this);
                 pref.setPreferenceDataStore(data_store);
             }
 
@@ -848,6 +874,112 @@ public class EmulatorSettings extends AppCompatActivity {
             builder.create().show();
         }
 
+        void setup_pref_title_color(Preference preference,String cur_val){
+            if(preference instanceof CheckBoxPreference){
+                CheckBoxPreference pref=(CheckBoxPreference) preference;
+                boolean modify=!original_config.load_config_entry(pref.getKey()).equals((cur_val));
+                pref.set_is_modify_color(modify);
+            }
+            else if(preference instanceof SeekBarPreference){
+                SeekBarPreference pref=(SeekBarPreference) preference;
+                boolean modify=!original_config.load_config_entry(pref.getKey()).equals((cur_val));
+                pref.set_is_modify_color(modify);
+            }
+            else if(preference instanceof ListPreference){
+                ListPreference pref=(ListPreference) preference;
+                boolean modify=!original_config.load_config_entry(pref.getKey()).equals((cur_val));
+                pref.set_is_modify_color(modify);
+            }
+        }
+
+        void setup_config_dependency(Preference preference,String cur_val){
+            String key=preference.getKey();
+            switch (key){
+                case Video$Strict_Rendering_Mode:
+                    if(cur_val.equals("true")){
+                        ((SeekBarPreference)findPreference(Video$Resolution_Scale)).setValue(100);
+                        ((SeekBarPreference)findPreference(Video$Resolution_Scale)).setEnabled(false);
+                        config.save_config_entry(Video$Resolution_Scale,"100");
+                    }
+                    else{
+                        ((SeekBarPreference)findPreference(Video$Resolution_Scale)).setEnabled(true);
+                    }
+                    break;
+                case Video$Use_BGRA_Format:
+                    if(cur_val.equals("true")){
+                        ((CheckBoxPreference)findPreference(Video$Read_Color_Buffers)).setEnabled(true);
+                        ((CheckBoxPreference)findPreference(Video$Write_Color_Buffers)).setEnabled(true);
+                    }
+                    else{
+                        ((CheckBoxPreference)findPreference(Video$Read_Color_Buffers)).setChecked(false);
+                        ((CheckBoxPreference)findPreference(Video$Read_Color_Buffers)).setEnabled(false);
+                        ((CheckBoxPreference)findPreference(Video$Write_Color_Buffers)).setChecked(false);
+                        ((CheckBoxPreference)findPreference(Video$Write_Color_Buffers)).setEnabled(false);
+                        config.save_config_entry(Video$Read_Color_Buffers,"false");
+                        config.save_config_entry(Video$Write_Color_Buffers,"false");
+                    }
+                    break;
+                case Video$Vulkan$Asynchronous_Texture_Streaming_2:
+                    if(cur_val.equals("true")){
+                        findPreference(Video$Vulkan$Asynchronous_Queue_Scheduler).setEnabled( true);
+                    }
+                    else{
+                        findPreference(Video$Vulkan$Asynchronous_Queue_Scheduler).setEnabled(false);
+                    }
+                    break;
+                case Video$Vulkan$Use_Custom_Driver:
+                    if(cur_val.equals("true")){
+                        findPreference(Video$Vulkan$Custom_Driver_Library_Path).setEnabled( true);
+                    }
+                    else{
+                        findPreference(Video$Vulkan$Custom_Driver_Library_Path).setEnabled(false);
+                    }
+                    break;
+                case Miscellaneous$Font_File_Selection:
+                    if(cur_val.equals("Custom")){
+                        findPreference(Miscellaneous$Custom_Font_File_Path).setEnabled(true);
+                    }
+                    else{
+                        findPreference(Miscellaneous$Custom_Font_File_Path).setEnabled(false);
+                    }
+                    break;
+            }
+        }
+
+        @Override
+        public boolean onPreferenceChange(@NonNull Preference preference, Object newValue) {
+            if(preference instanceof CheckBoxPreference){
+                CheckBoxPreference pref=(CheckBoxPreference) preference;
+                String value=Boolean.toString((boolean)newValue);
+                setup_pref_title_color(pref,value);
+                setup_config_dependency(pref,value);
+                return true;
+            }
+            else if(preference instanceof SeekBarPreference){
+                SeekBarPreference pref=(SeekBarPreference) preference;
+                String value=Integer.toString((int)newValue);
+                setup_pref_title_color(pref,value);
+                setup_config_dependency(pref,value);
+                return true;
+            }
+            else if(preference instanceof ListPreference){
+                ListPreference pref=(ListPreference) preference;
+                CharSequence value=(CharSequence) newValue;
+                CharSequence[] values=pref.getEntryValues();
+                CharSequence[] entries=pref.getEntries();
+                for (int i=0;i<values.length;i++){
+                    if (values[i].equals(value)){
+                        pref.setSummary(entries[i]);
+                        break;
+                    }
+                }
+                setup_pref_title_color(pref,value.toString());
+                setup_config_dependency(pref,value.toString());
+                return true;
+            }
+
+            return false;
+        }
     }
 
     SettingsFragment fragment;
@@ -1202,11 +1334,21 @@ libs.put("libwmadec.sprx", 0);
             CharSequence text=type==LIB_TYPE_LLE?"lle":"hle";
             SpannableString span=new SpannableString(text);
 
+            ForegroundColorSpan[] lle_hle_span_color=new ForegroundColorSpan[2];
+            if(theme_is_night(context)){
+                lle_hle_span_color[0]=new ForegroundColorSpan(Color.YELLOW);
+                lle_hle_span_color[1]=new ForegroundColorSpan(Color.rgb(32,255,255));
+            }else{
+
+                lle_hle_span_color[0]=new ForegroundColorSpan(Color.rgb(255,127,63));
+                lle_hle_span_color[1]=new ForegroundColorSpan(Color.BLUE);
+            }
+
             if(type==LIB_TYPE_LLE){
-                span.setSpan(new ForegroundColorSpan(Color.YELLOW),0,text.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+                span.setSpan(lle_hle_span_color[0],0,text.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
             }
             else{//HLE
-                span.setSpan(new ForegroundColorSpan(Color.BLUE),0,text.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+                span.setSpan(lle_hle_span_color[1],0,text.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
             }
             v.setText(span);
         }
@@ -1227,4 +1369,29 @@ libs.put("libwmadec.sprx", 0);
         }
     }
 
+    static boolean theme_is_night(Context ctx){
+        int current_mode=ctx.getResources().getConfiguration().uiMode & android.content.res.Configuration.UI_MODE_NIGHT_MASK;
+        return current_mode==android.content.res.Configuration.UI_MODE_NIGHT_YES;
+    }
+
+    static class AffinityMaskPreference extends Preference{
+
+        public AffinityMaskPreference(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+            super(context, attrs, defStyleAttr, defStyleRes);
+        }
+
+        public AffinityMaskPreference(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+            this(context, attrs, defStyleAttr, 0);
+        }
+
+        public AffinityMaskPreference(@NonNull Context context, @Nullable AttributeSet attrs) {
+            this(context, attrs, androidx.preference.R.attr.preferenceStyle);
+        }
+
+        public AffinityMaskPreference(@NonNull Context context) {
+            this(context, null);
+        }
+
+        
+    }
 }

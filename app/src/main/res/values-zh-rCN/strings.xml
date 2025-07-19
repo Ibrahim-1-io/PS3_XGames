@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="resolution_not_support">分辨率或宽高比不支持\n当前游戏仅支持:\n%s\n\n请通过以下设置修改:\n%s\n%s\n</string>
+    <string name="show_game_info">显示游戏信息</string>
     <string name="quick_start_page">快速开始页</string>
     <string name="prev_step">上一步</string>
     <string name="next_step">下一步</string>
@@ -36,6 +38,7 @@
     <string name="dynamic_joystick">动态摇杆</string>
     <string name="disable">禁用</string>
 
+    <string name="disable_virtual_keyboard">禁用虚拟键盘</string>
     <string name="joystick">摇杆</string>
     <string name="dpad">方向键</string>
     <string name="button">按钮</string>
@@ -69,7 +72,7 @@
 	<string name="about">关于</string>
 	<string name="quit">退出</string>
 	<string name="update_log">更新日志</string>
-	<string name="empty_game_list">游戏列表为空</string>
+	<string name="empty_game_list">游戏列表为空，请通过安装pkg或者设置*.iso目录来添加游戏</string>
 	<string name="delete">删除</string>
 	<string name="settings">设置</string>
 	<string name="gratitude">鸣谢</string>

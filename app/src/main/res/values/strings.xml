@@ -3,6 +3,8 @@
     <!--string name="app_name">aPS3e Premium</string-->
 	<string name="app_name">aPS3e</string>
 
+	<string name="resolution_not_support">Resolution or aspect ratio is not supported\nThe current game only supports:\n%s\n\nPlease modify with the following settings:\n%s\n%s\n</string>
+	<string name="show_game_info">Show Game Info</string>
 	<string name="quick_start_page">Quick Start Page</string>
 	<string name="prev_step">Prev Step</string>
 	<string name="next_step">Next Step</string>
@@ -39,6 +41,7 @@
 	<string name="dynamic_joystick">Dynamic Joystick</string>
 	<string name="disable">Disable</string>
 
+	<string name="disable_virtual_keyboard">Disable the virtual keyboard</string>
 	<string name="joystick">Joystick</string>
 	<string name="dpad">Dpad</string>
 	<string name="button">Button</string>
@@ -72,7 +75,7 @@
 	<string name="about">About</string>
 	<string name="quit">Quit</string>
 	<string name="update_log">Update Log</string>
-	<string name="empty_game_list">The game list is empty</string>
+	<string name="empty_game_list">The list of games is empty, please add games by installing pkg or setting the *.iso directory</string>
 	<string name="delete">Delete</string>
 	<string name="settings">Settings</string>
 	<string name="gratitude">Gratitude</string>
@@ -84,7 +87,7 @@
 		Thanks to the following people who provided financial support for this project (Initial stage,sort by date):\n\n</string>
 	<string name="gratitude_content2">
 		Based on the RPCS3 transplantation optimization, thanks to all the participants of the RPCS3 project\n\n
-
+Translation qwen3
 	</string>
 	<string name="key_mappers">Key Mappers</string>
 	<string name="virtual_pad_edit">VirtualPadEdit</string>

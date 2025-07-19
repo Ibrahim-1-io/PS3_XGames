@@ -32,6 +32,13 @@ struct cfg_root : cfg::node
 #endif
 		cfg::_bool llvm_precompilation{ this, "LLVM Precompilation", true };
 		cfg::_enum<thread_scheduler_mode> thread_scheduler{this, "Thread Scheduler Mode", thread_scheduler_mode::os};
+        struct node_thread_affinity_mask : cfg::node
+        {
+            node_thread_affinity_mask(cfg::node* _this) : cfg::node(_this, "Thread Affinity Mask") {}
+            cfg::uint64 ppu_threads{ this, "PPU Threads", 1 };
+            cfg::uint64 spu_threads{ this, "SPU Threads", 1};
+            cfg::uint64 rsx_threads{ this, "RSX Threads", 1};
+        }thread_affinity_mask{ this };
 		cfg::_bool set_daz_and_ftz{ this, "Set DAZ and FTZ", false };
 		cfg::_enum<spu_decoder_type> spu_decoder{ this, "SPU Decoder", spu_decoder_type::llvm };
 		cfg::uint<0, 100> spu_reservation_busy_waiting_percentage{ this, "SPU Reservation Busy Waiting Percentage", 0, true };
@@ -201,7 +208,6 @@ struct cfg_root : cfg::node
 
 			cfg::string adapter{ this, "Adapter" };
 			cfg::_bool force_fifo{ this, "Force FIFO present mode",true };
-            cfg::_bool disable_component_swizzle{ this, "Disable Component Swizzle" };
 #ifdef _WIN32
 			cfg::_bool force_primitive_restart{ this, "Force primitive restart flag" };
 #endif

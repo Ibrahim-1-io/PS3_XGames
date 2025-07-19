@@ -6,6 +6,7 @@ import android.os.*;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.CheckBox;
 import android.widget.RadioGroup;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -61,6 +62,13 @@ public class VirtualPadEdit extends Activity
 				.create();
 
 		d.show();
+
+		((CheckBox)d.findViewById(R.id.virtual_pad_disable)).setChecked(!iv.get_all_input_enabled());
+		((CheckBox)d.findViewById(R.id.virtual_pad_disable)).setOnCheckedChangeListener((buttonView, isChecked)->{
+					boolean enabled=!isChecked;
+					iv.set_all_input_enabled(enabled);
+				}
+		);
 
 		d.findViewById(R.id.virtual_pad_reset).setOnClickListener(v->{
 			iv.resetButtonPlacement();

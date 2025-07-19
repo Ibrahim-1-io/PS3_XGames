@@ -2,6 +2,11 @@
 // Created by aenu on 2025/5/11.
 //
 #include "iso.h"
+#ifdef __ANDROID__
+#include <android/log.h>
+#define LOG_TAG "iso_fs"
+#define LOGW(...) __android_log_print(ANDROID_LOG_WARN, LOG_TAG, __VA_ARGS__)
+#endif
 
 std::unique_ptr<iso_fs> iso_fs::from_fd(int fd) {
     std::unique_ptr<iso_fs> _iso_fs=std::make_unique<iso_fs>();
@@ -169,8 +174,9 @@ void iso_fs::read_dir(RootDirectoryRecord& dir_record, std::optional<std::string
             file_identifier=read_file_identifier_unicode();
         }
 
-        //LOGE("%s", file_identifier.c_str());
-
+#ifdef __ANDROID__
+        //LOGW("%s", file_identifier.c_str());
+#endif
         //if(path)
         //    file_identifier=path.value()+"/"+file_identifier;
 
@@ -180,8 +186,11 @@ void iso_fs::read_dir(RootDirectoryRecord& dir_record, std::optional<std::string
         else
             file_identifier = path.value() + "/" + file_identifier;
 
-        if(!(record.file_flags&0x2))
-            file_identifier=file_identifier.substr(0,file_identifier.size()-2); //;1
+
+
+        if(!(record.file_flags&0x2)) {
+            file_identifier = file_identifier.substr(0, file_identifier.find(';'));
+        }
 
 #if 0
         if(auto it=files.find(file_identifier);it!=files.end()){

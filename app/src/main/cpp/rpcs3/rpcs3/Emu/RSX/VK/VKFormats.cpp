@@ -192,7 +192,6 @@ namespace vk
 
 		return mapping;
 	}
-
 	VkFormat get_compatible_sampler_format(const gpu_formats_support& support, u32 format)
 	{
 		static const bool supports_dxt = vk::get_current_renderer()->get_texture_compression_bc_support();

@@ -109,6 +109,22 @@ namespace vk
         }
     };
 
+    struct cs_shuffle_rol8 : cs_shuffle_base
+    {
+        cs_shuffle_rol8()
+        {
+            cs_shuffle_base::build("rol8_u32");
+        }
+    };
+
+    struct cs_shuffle_swap_rb : cs_shuffle_base
+    {
+        cs_shuffle_swap_rb()
+        {
+            cs_shuffle_base::build("swap_rb");
+        }
+    };
+
 	struct cs_shuffle_d24x8_f32 : cs_shuffle_base
 	{
 		// convert d24x8 to f32

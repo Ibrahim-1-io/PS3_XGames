@@ -30,7 +30,7 @@ namespace
 		case CELL_VIDEO_OUT_BUFFER_COLOR_FORMAT_X8R8G8B8:
             return use_bgra_fmt?VK_FORMAT_B8G8R8A8_UNORM:VK_FORMAT_R8G8B8A8_UNORM;
             case CELL_VIDEO_OUT_BUFFER_COLOR_FORMAT_X8B8G8R8:
-                return use_bgra_fmt?VK_FORMAT_R8G8B8A8_UNORM:VK_FORMAT_B8G8R8A8_UNORM;
+                return VK_FORMAT_R8G8B8A8_UNORM;
             case CELL_VIDEO_OUT_BUFFER_COLOR_FORMAT_R16G16B16X16_FLOAT:
 			return VK_FORMAT_R16G16B16A16_SFLOAT;
 		}
@@ -132,7 +132,8 @@ void VKGSRender::present(vk::frame_context_t *ctx)
 			break;
 		case VK_SUBOPTIMAL_KHR:
             //FIXME
-			//should_reinitialize_swapchain = true;
+            //if(!g_cfg.video.bgra_format)
+            //    should_reinitialize_swapchain = true;
             //rsx_log.warning("#### Swapchain is out of date. Please resize the window.");
 			break;
 		case VK_ERROR_OUT_OF_DATE_KHR:

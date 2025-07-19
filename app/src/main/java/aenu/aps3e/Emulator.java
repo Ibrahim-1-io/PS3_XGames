@@ -2,13 +2,17 @@
 
 package aenu.aps3e;
 import java.io.*;
+import java.util.ArrayList;
 import java.util.Base64;
 import java.util.HashMap;
+import java.util.List;
 
 import android.content.Context;
 import android.os.Build;
 import android.os.ParcelFileDescriptor;
 import android.view.*;
+
+import androidx.annotation.NonNull;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -29,6 +33,9 @@ public class Emulator
 		String category;
 		String version;
 		boolean decrypt;
+		int resolution=0;
+		int sound_format=0;
+
 
 		static JSONObject to_json(MetaInfo  info) throws JSONException {
 			JSONObject jo=new JSONObject();
@@ -43,6 +50,8 @@ public class Emulator
 			jo.put("category",info.category);
 			jo.put("version",info.version);
 			jo.put("decrypt",info.decrypt);
+			jo.put("resolution",info.resolution);
+			jo.put("sound_format",info.sound_format);
 			return jo;
 		}
 
@@ -59,7 +68,87 @@ public class Emulator
 			meta.category=jo.getString("category");
 			meta.version=jo.getString("version");
 			meta.decrypt=jo.getBoolean("decrypt");
+			if(jo.has("resolution"))
+				meta.resolution=jo.getInt("resolution");
+			if(jo.has("sound_format"))
+				meta.sound_format=jo.getInt("sound_format");
 			return meta;
+		}
+
+		String _space(int n){
+			StringBuilder sb=new StringBuilder();
+			while(n-->0){
+				sb.append(' ');
+			}
+			return sb.toString();
+		}
+
+		List<String> get_support_resolution(){
+			String[] resolution_table={
+					"720x480 [4:3]",
+					"720x576 [4:3]",
+					"1280x720 [4:3]",
+					"1920x1080 [4:3]",
+					"720x480 [16:9]",
+					"720x576 [16:9]"
+			};
+			List<String> result=new ArrayList<>();
+			for(int i=0;i<=5;i++){
+				if((resolution&(1<<i))!=0)
+					result.add(resolution_table[i]);
+			}
+			return result;
+		}
+		String print_resolution()
+		{
+
+			StringBuilder sb=new StringBuilder();
+			List<String> resolutions=get_support_resolution();
+			for(int i=0;i<resolutions.size();i++){
+				sb.append(_space(2)).append(resolutions.get(i));
+				if(i!=resolutions.size()-1) sb.append("\n");
+			}
+			String r=sb.toString();
+			if(r.isEmpty())
+				return "  N/A";
+			return r;
+		}
+
+		String _parse_sound_format() {
+			String[] sound_format_names=new String[]{
+					"lpcm_2",
+					null,
+					"lpcm_5_1",
+					null,
+					"lpcm_7_1",
+					null,
+					null,
+					null,
+					"ac3",
+					"dts"};
+			StringBuilder sb=new StringBuilder();
+			for(int i=0;i<=9;i++) {
+				if(sound_format_names[i]==null) continue;
+				if((sound_format & (1<<i))!=0)
+					sb.append(_space(2)).append(sound_format_names[i]).append("\n");
+			}
+			String r=sb.toString();
+			if(r.isEmpty())
+				return "  N/A";
+			return r.substring(0,r.length()-1);
+		}
+
+		@NonNull
+		@Override
+		public String toString() {
+			StringBuilder sb=new StringBuilder();
+			sb.append("Name:\n").append(_space(2)).append(name).append("\n\n")
+					.append("Version:\n").append(_space(2)).append(version).append("\n\n")
+					.append("Serial:\n").append(_space(2)).append(serial).append("\n\n")
+					.append("Category:\n").append(_space(2)).append(category).append("\n\n")
+					.append("Resolution:\n").append(print_resolution()).append("\n\n")
+					.append("Sound Format:\n").append(_parse_sound_format()).append("\n\n");
+			return sb.toString();
 		}
 	}
 

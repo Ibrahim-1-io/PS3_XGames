@@ -214,7 +214,7 @@ u16 convert_rgb655_to_rgb565(const u16 bits)
                 for (int row = 0; row < row_count; ++row) {
                     for (u32 x = 0; x < width_in_words; ++x) {
                         const u32 src_v = src[src_offset + x];
-                        dst[dst_offset + x] =( src_v>>8)|(src_v<<24);
+                        dst[dst_offset + x] = __builtin_rotateleft32(src_v,32-8);
                     }
 
                     src_offset += src_pitch_in_words;

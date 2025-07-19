@@ -70,7 +70,7 @@ VFS:
   Empty /dev_hdd0/tmp/: true
 Video:
   Renderer: Vulkan
-  Resolution: 1280x720
+  Resolution: 720x480
   Aspect ratio: 16:9
   Frame limit: Auto
   Second Frame Limit: 0

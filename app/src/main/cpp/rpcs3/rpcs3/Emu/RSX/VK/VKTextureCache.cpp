@@ -158,9 +158,9 @@ namespace vk
 				}
 				else if (elem_size == 4)
 				{
-                    /*if(replace_swap_as_ror8)
-                        shuffle_kernel = vk::get_compute_task<vk::cs_shuffle_ror8>();
-                        else*/
+                    if(replace_swap_as_rol8)
+                        shuffle_kernel = vk::get_compute_task<vk::cs_shuffle_rol8>();
+                        else
 					shuffle_kernel = vk::get_compute_task<vk::cs_shuffle_32>();
 				}
 				else
@@ -1095,7 +1095,10 @@ namespace vk
 		region.reset(rsx_range);
 		region.create_dma_only(attrs.width, attrs.height, attrs.pitch);
 		region.set_dirty(false);
+
 		region.set_unpack_swap_bytes(true);
+        if(!g_cfg.video.bgra_format)
+        region.set_replace_swap_as_rol8(true);
 
 		if (memory_load && !tile) // Memory load on DMA tiles will always happen during the actual copy command
 		{

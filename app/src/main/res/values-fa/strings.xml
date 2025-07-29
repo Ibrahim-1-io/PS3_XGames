@@ -1,0 +1,999 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="use_cores_ppu">استفاده از هسته‌ها (PPU)</string>
+    <string name="use_cores_spu">استفاده از هسته‌ها (SPU)</string>
+    <string name="use_cores_rsx">استفاده از هسته‌ها (RSX)</string>
+    <string name="emulator_settings_core_thread_affinity_mask">ماسک تعلق نخ</string>
+    <string name="create_shortcut">ایجاد میانبر</string>
+    <string name="loading">در حال بارگذاری...</string>
+    <string name="resolution_not_support">وضوح یا نسبت تصویر پشتیبانی نمی‌شود\nاین بازی فقط از موارد زیر پشتیبانی می‌کند:\n%s\n\nلطفاً با تنظیمات زیر آن را تغییر دهید:\n%s\n%s\n</string>
+    <string name="show_game_info">نمایش اطلاعات بازی</string>
+    <string name="quick_start_page">صفحه شروع سریع</string>
+    <string name="prev_step">قدم قبلی</string>
+    <string name="next_step">قدم بعدی</string>
+    <string name="finish">پایان</string>
+
+    <string name="welcome">خوش آمدید</string>
+    <string name="welcome_content">خوش آمدید %s!</string>
+    <string name="welcome_content2">با چند مرحله ساده آماده بازی شوید، روی "%s" کلیک کنید تا شروع کنید.</string>
+
+    <string name="install_ps3_firmware_hiht_content">برای اجرای بازی، باید فایل فیلم‌وار (PS3UPDAT.PUP) را نصب کنید. لطفاً فایل فیلم‌وار را انتخاب کنید.</string>
+    <string name="ps3_firmware_installed">فیلم‌وار نصب شد</string>
+    <string name="select_ps3_firmware">انتخاب فیلم‌وار (PS3UPDAT.PUP)</string>
+    <string name="firmware_not_install">فیلم‌وار نصب نشده است</string>
+
+    <string name="select_ps3_iso_dir_hiht_content">لطفاً دایرکتوری ISOهای PS3 را مشخص کنید، برنامه به صورت خودکار بازی‌های معتبر را اسکن می‌کند، همچنین می‌توانید این مرحله را رد کنید و مستقیماً فایل .pkg را نصب کنید.</string>
+    <string name="ps3_iso_dir_is_set">دایرکتوری ISOهای PS3 تنظیم شد</string>
+
+    <string name="font_select_hiht_content">لطفاً یک فایل فونت (*.ttf, *.ttc, *.otf) برای نصب انتخاب کنید، یا می‌توانید از فونت موجود در فیلم‌وار PS3 استفاده کنید (ممکن است برخی کاراکترها وجود نداشته باشند).</string>
+    <string name="custom_font_path_prefix">مسیر فونت: </string>
+    <string name="select_gpu_driver_hiht_content">لطفاً یک درایور GPU انتخاب کنید، همچنین می‌توانید این مرحله را رد کنید (ممکن است بازی با خطا اجرا شود).</string>
+    <string name="custom_gpu_driver_path_prefix">مسیر درایور GPU: </string>
+
+    <string name="modify_config_hiht_content">این شبیه‌ساز به طور خودکار مناسب‌ترین تنظیمات را انتخاب می‌کند، اما ممکن است برخی تنظیمات باعث مشکل در دستگاه شما شوند. شما می‌توانید بعداً آنها را در تنظیمات تغییر دهید.</string>
+
+    <string name="msg_processing">در حال پردازش...</string>
+    <string name="msg_failed">ناموفق!</string>
+
+    <string name="emulator_settings_video_vulkan_debug">اشکال‌زدایی</string>
+    <string name="emulator_settings_miscellaneous_memory_debug_overlay">لایه اشکال‌زدایی حافظه</string>
+
+    <string name="vibrator_duration">مدت ارتعاش</string>
+    <string name="enable_vibrator">فعال کردن ارتعاش</string>
+    <string name="dynamic_joystick">دسته بازی پویا</string>
+    <string name="disable">غیرفعال</string>
+
+    <string name="disable_virtual_keyboard">غیرفعال کردن صفحه‌کلید مجازی</string>
+    <string name="joystick">دسته بازی</string>
+    <string name="dpad">دی-پد</string>
+    <string name="button">دکمه</string>
+    <string name="lr">LR</string>
+    <string name="start_select">Start/Select</string>
+
+    <string name="enable_log">فعال کردن لاگ</string>
+    <string name="use_global_config">استفاده از تنظیمات جهانی</string>
+    <string name="edit_custom_config">ویرایش تنظیمات شخصی</string>
+    <string name="clear">پاک کردن</string>
+    <string name="press_a_key">برای ادامه هر دکمه‌ای را فشار دهید...</string>
+    <string name="game_list_loading">در حال بارگذاری لیست بازی...</string>
+    <string name="undecrypted_game">اجرای بازی‌های رمزگشایی نشده در حال حاضر پشتیبانی نمی‌شود</string>
+    <string name="delete_game_data">حذف داده‌های بازی</string>
+    <string name="delete_hdd0_install_data">حذف داده‌های نصب hdd0</string>
+    <string name="delete_game_and_data">حذف بازی و داده‌ها</string>
+    <string name="delete_shaders_cache">حذف کش شیدرها</string>
+
+    <string name="set_iso_dir">تنظیم دایرکتوری (*.iso)</string>
+    <string name="device_info">اطلاعات دستگاه</string>
+    <string name="reset_as_default">بازنشانی به پیش‌فرض</string>
+    <string name="save_and_quit">ذخیره و خروج</string>
+    <string name="scale_rate">نرخ مقیاس</string>
+    <string name="open_file_manager">باز کردن مدیریت فایل</string>
+    <string name="installing_firmware">در حال نصب فیلم‌وار...</string>
+    <string name="refresh_list">به‌روز رسانی لیست</string>
+    <string name="select_game">انتخاب بازی</string>
+    <string name="install_firmware">نصب فیلم‌وار</string>
+    <string name="install_game">نصب RAP/PKG</string>
+    <string name="installing_game">در حال نصب بازی...</string>
+    <string name="about">درباره</string>
+    <string name="quit">خروج</string>
+    <string name="update_log">لاگ به‌روز رسانی</string>
+    <string name="empty_game_list">لیست بازی‌ها خالی است، لطفاً با نصب pkg یا تنظیم دایرکتوری *.iso بازی‌ها را اضافه کنید</string>
+    <string name="delete">حذف</string>
+    <string name="settings">تنظیمات</string>
+    <string name="gratitude">تشکرها</string>
+    <string name="gratitude_content">از Ruban برای تمام آیکون‌ها متشکریم\n\n
+    از SRC267 (Sting) برای مدیریت reddit/discord متشکریم\n\n
+    از 妖妖 برای تست متشکریم\n\n
+    از 再见某人 برای کمک به خرید GPD XP که به مراحل تست کمک کرد متشکریم\n\n
+    از 再见某人 برای کمک به خرید تجهیزات توسعه که به پیشرفت پروژه کمک کرد متشکریم\n\n
+    از افراد زیر که به پروژه کمک مالی کردند (مرحله اولیه، مرتب‌سازی بر اساس تاریخ):
+    </string>
+    <string name="gratitude_content2">
+    مبتنی بر بهینه‌سازی RPCS3، از تمام شرکت‌کنندگان RPCS3 متشکریم\n\n
+    ترجمه توسط qwen3
+    </string>
+    <string name="key_mappers">نگاشت کلیدها</string>
+    <string name="virtual_pad_edit">ویرایش دسته مجازی</string>
+
+    <string name="left">چپ</string>
+    <string name="up">بالا</string>
+    <string name="right">راست</string>
+    <string name="down">پایین</string>
+
+    <string name="square">مربع</string>
+    <string name="cross">کراس</string>
+    <string name="circle">دایره</string>
+    <string name="triangle">مثلث</string>
+
+    <string name="l1">L1</string>
+    <string name="l2">L2</string>
+    <string name="l3">L3</string>
+
+    <string name="r1">R1</string>
+    <string name="r2">R2</string>
+    <string name="r3">R3</string>
+
+    <string name="start">استارت</string>
+    <string name="select">انتخاب</string>
+    <string name="ps">PS</string>
+
+    <string name="emulator_settings_video_vulkan_custom_driver_library_path_dialog_title">انتخاب درایور سفارشی</string>
+    <string name="emulator_settings_video_vulkan_custom_driver_library_path_dialog_add_hint">افزودن درایور سفارشی (*.zip, *.so)</string>
+
+    <string name="emulator_settings_miscellaneous_custom_font_file_path_dialog_title">انتخاب فونت سفارشی</string>
+    <string name="emulator_settings_miscellaneous_custom_font_file_path_dialog_add_hint">افزودن فونت (*.ttf, *.ttc, *.otf)</string>
+
+    <string name="emulator_settings_core">هسته</string>
+    <string name="emulator_settings_core_ppu_decoder">دیکدر PPU</string>
+    <string-array name="core_ppu_decoder_entries">
+        <item>مفسر (ثابت)</item>
+        <item>کامپایل مجدد (LLVM)</item>
+    </string-array>
+    <string name="emulator_settings_core_ppu_threads">نخ‌های PPU</string>
+    <string name="emulator_settings_core_ppu_debug">اشکال‌زدایی PPU</string>
+    <string name="emulator_settings_core_ppu_calling_history">تاریخچه فراخوانی PPU</string>
+    <string name="emulator_settings_core_save_llvm_logs">ذخیره لاگ‌های LLVM</string>
+    <string name="emulator_settings_core_use_llvm_cpu">استفاده از CPU LLVM</string>
+    <string name="emulator_settings_core_max_llvm_compile_threads">حداکثر نخ‌های کامپایل LLVM</string>
+    <string name="emulator_settings_core_ppu_llvm_greedy_mode">حالت طمع PPU LLVM</string>
+    <string name="emulator_settings_core_llvm_precompilation">کامپایل مجدد پیش‌ساز</string>
+    <string name="emulator_settings_core_thread_scheduler_mode">حالت زمان‌بندی نخ</string>
+    <string-array name="core_thread_scheduler_mode_entries">
+        <item>سیستم عامل</item>
+        <item>تعلق</item>
+    </string-array>
+    <string name="emulator_settings_core_set_daz_and_ftz">تنظیم DAZ و FTZ</string>
+    <string name="emulator_settings_core_spu_decoder">دیکدر SPU</string>
+    <string-array name="core_spu_decoder_entries">
+        <item>مفسر (ثابت)</item>
+        <item>مفسر (پویا)</item>
+        <item>کامپایل مجدد (ASMJIT)</item>
+        <item>کامپایل مجدد (LLVM)</item>
+    </string-array>
+    <string name="emulator_settings_core_spu_reservation_busy_waiting_percentage">درصد انتظار فعال SPU Reservation</string>
+    <string name="emulator_settings_core_spu_getllar_busy_waiting_percentage">درصد انتظار فعال SPU GETLLAR</string>
+    <string name="emulator_settings_core_disable_spu_getllar_spin_optimization">غیرفعال کردن بهینه‌سازی انتظار SPU GETLLAR</string>
+    <string name="emulator_settings_core_spu_debug">اشکال‌زدایی SPU</string>
+    <string name="emulator_settings_core_mfc_debug">اشکال‌زدایی MFC</string>
+    <string name="emulator_settings_core_preferred_spu_threads">نخ‌های SPU ترجیحی</string>
+    <string name="emulator_settings_core_spu_delay_penalty">جریمه تاخیر SPU</string>
+    <string name="emulator_settings_core_spu_loop_detection">تشخیص حلقه SPU</string>
+    <string name="emulator_settings_core_max_spurs_threads">حداکثر نخ‌های SPURS</string>
+    <string name="emulator_settings_core_spu_block_size">اندازه بلوک SPU</string>
+    <string-array name="core_spu_block_size_entries">
+        <item>ایمن</item>
+        <item>مگا</item>
+        <item>گیگا</item>
+    </string-array>
+    <string name="emulator_settings_core_accurate_spu_dma">DMA دقیق SPU</string>
+    <string name="emulator_settings_core_accurate_spu_reservations">رزرو دقیق SPU</string>
+    <string name="emulator_settings_core_accurate_cache_line_stores">ذخیره دقیق خط کش</string>
+    <string name="emulator_settings_core_accurate_rsx_reservation_access">دسترسی دقیق به رزرو RSX</string>
+    <string name="emulator_settings_core_rsx_fifo_accuracy">دقت FIFO RSX</string>
+    <string-array name="core_rsx_fifo_accuracy_entries">
+        <item>سریع</item>
+        <item>اتمی</item>
+        <item>مرتبط و اتمی</item>
+        <item>PS3</item>
+    </string-array>
+    <string name="emulator_settings_core_spu_verification">تایید SPU</string>
+    <string name="emulator_settings_core_spu_cache">کش SPU</string>
+    <string name="emulator_settings_core_spu_profiler">پروفایلر SPU</string>
+    <string name="emulator_settings_core_mfc_commands_shuffling_limit">محدودیت تغییر ترتیب دستورات MFC</string>
+    <string name="emulator_settings_core_mfc_commands_timeout">مهلت دستورات MFC</string>
+    <string name="emulator_settings_core_mfc_commands_shuffling_in_steps">تغییر ترتیب دستورات MFC به صورت مراحل</string>
+    <string name="emulator_settings_core_enable_tsx">فعال کردن TSX</string>
+    <string-array name="core_enable_tsx_entries">
+        <item>غیرفعال</item>
+        <item>فعال</item>
+        <item>اجباری</item>
+    </string-array>
+    <string name="emulator_settings_core_xfloat_accuracy">دقت XFloat</string>
+    <string-array name="core_xfloat_accuracy_entries">
+        <item>دقیق</item>
+        <item>تقریبی</item>
+        <item>راحت</item>
+        <item>نادقیق</item>
+    </string-array>
+    <string name="emulator_settings_core_accurate_ppu_128byte_reservation_op_max_length">حداکثر طول عملیات رزرو 128 بایتی PPU دقیق</string>
+    <string name="emulator_settings_core_stub_ppu_traps">دستگیر کننده PPU</string>
+    <string name="emulator_settings_core_precise_spu_verification">تایید دقیق SPU</string>
+    <string name="emulator_settings_core_ppu_llvm_java_mode_handling">مدیریت حالت جاوا PPU LLVM</string>
+    <string name="emulator_settings_core_use_accurate_dfma">استفاده از DFMA دقیق</string>
+    <string name="emulator_settings_core_ppu_set_saturation_bit">تنظیم بیت اشباع PPU</string>
+    <string name="emulator_settings_core_ppu_accurate_nonjava_mode">حالت غیرجاوا دقیق PPU</string>
+    <string name="emulator_settings_core_ppu_fixup_vector_nan_values">اصلاح مقادیر NaN بردار PPU</string>
+    <string name="emulator_settings_core_ppu_accurate_vector_nan_values">مقادیر NaN بردار دقیق PPU</string>
+    <string name="emulator_settings_core_ppu_set_fpcc_bits">تنظیم بیت‌های FPCC PPU</string>
+    <string name="emulator_settings_core_debug_console_mode">حالت کنسول اشکال‌زدایی</string>
+    <string name="emulator_settings_core_hook_static_functions">هُک توابع ثابت</string>
+    <string name="emulator_settings_core_libraries_control">کنترل کتابخانه‌ها</string>
+    <string name="emulator_settings_core_hle_lwmutex">HLE lwmutex</string>
+    <string name="emulator_settings_core_spu_llvm_lower_bound">حد پایین SPU LLVM</string>
+    <string name="emulator_settings_core_spu_llvm_upper_bound">حد بالای SPU LLVM</string>
+    <string name="emulator_settings_core_tsx_transaction_first_limit">محدودیت اولیه تراکنش TSX</string>
+    <string name="emulator_settings_core_tsx_transaction_second_limit">محدودیت دوم تراکنش TSX</string>
+    <string name="emulator_settings_core_clocks_scale">مقیاس ساعت</string>
+    <string name="emulator_settings_core_spu_wakeup_delay">تاخیر بیدار شدن SPU</string>
+    <string name="emulator_settings_core_spu_wakeup_delay_thread_mask">ماسک نخ تاخیر بیدار شدن SPU</string>
+    <string name="emulator_settings_core_max_cpu_preempt_count">حداکثر تعداد پیش‌گیری CPU</string>
+    <string name="emulator_settings_core_allow_rsx_cpu_preemptions">اجازه پیش‌گیری CPU RSX</string>
+    <string name="emulator_settings_core_sleep_timers_accuracy">دقت تایمرهای خواب</string>
+    <string-array name="core_sleep_timers_accuracy_entries">
+        <item>مانند میزبان</item>
+        <item>فقط Usleep</item>
+        <item>تمام تایمرها</item>
+    </string-array>
+    <string name="emulator_settings_core_usleep_time_addend">افزودن زمان Usleep</string>
+    <string name="emulator_settings_core_performance_report_threshold">آستانه گزارش عملکرد</string>
+    <string name="emulator_settings_core_enable_performance_report">فعال کردن گزارش عملکرد</string>
+    <string name="emulator_settings_core_assume_external_debugger">فرض وجود اشکال‌زدا خارجی</string>
+    <string name="emulator_settings_video">ویدئو</string>
+    <string name="emulator_settings_video_vertex_buffer_upload_mode">حالت آپلود بافر راس</string>
+    <string-array name="video_vertex_buffer_upload_mode_entries">
+        <item>خودکار</item>
+        <item>بازدید بافر</item>
+        <item>بازر</item>
+    </string-array>
+    <string name="emulator_settings_video_texture_upload_mode">حالت آپلود بافت</string>
+    <string-array name="video_texture_upload_mode_entries">
+        <item>CPU</item>
+        <item>GPU</item>
+    </string-array>
+    <string name="emulator_settings_video_renderer">رندرر</string>
+    <string-array name="video_renderer_entries">
+        <item>ناموجود</item>
+        <item>Vulkan</item>
+    </string-array>
+    <string name="emulator_settings_video_resolution">وضوح</string>
+    <string-array name="video_resolution_entries">
+        <item>1920x1080</item>
+        <item>1920x1080i</item>
+        <item>1280x720</item>
+        <item>720x480</item>
+        <item>720x480i</item>
+        <item>720x576</item>
+        <item>720x576i</item>
+        <item>1600x1080</item>
+        <item>1440x1080</item>
+        <item>1280x1080</item>
+        <item>960x1080</item>
+    </string-array>
+    <string name="emulator_settings_video_aspect_ratio">نسبت تصویر</string>
+    <string-array name="video_aspect_ratio_entries">
+        <item>4:3</item>
+        <item>16:9</item>
+    </string-array>
+    <string name="emulator_settings_video_frame_limit">محدودکننده فریم</string>
+    <string-array name="video_frame_limit_entries">
+        <item>خاموش</item>
+        <item>30</item>
+        <item>50</item>
+        <item>60</item>
+        <item>120</item>
+        <item>نمایشگر</item>
+        <item>خودکار</item>
+        <item>PS3 طبیعی</item>
+        <item>بی‌نهایت</item>
+    </string-array>
+    <string name="emulator_settings_video_second_frame_limit">محدودکننده فریم دوم</string>
+    <string name="emulator_settings_video_msaa">MSAA</string>
+    <string-array name="video_msaa_entries">
+        <item>غیرفعال</item>
+        <item>خودکار</item>
+    </string-array>
+    <string name="emulator_settings_video_shader_mode">حالت شیدر</string>
+    <string-array name="video_shader_mode_entries">
+        <item>کامپایل مجدد شیدر</item>
+        <item>کامپایل مجدد شیدر غیرهمزمان</item>
+        <item>غیرهمزمان با مفسر شیدر</item>
+        <item>فقط مفسر شیدر</item>
+    </string-array>
+    <string name="emulator_settings_video_shader_precision">دقت شیدر</string>
+    <string-array name="video_shader_precision_entries">
+        <item>فوق‌العاده</item>
+        <item>بالا</item>
+        <item>پایین</item>
+        <item>خودکار</item>
+    </string-array>
+    <string name="emulator_settings_video_write_color_buffers">نوشتن بافرهای رنگ</string>
+    <string name="emulator_settings_video_write_depth_buffer">نوشتن بافر عمق</string>
+    <string name="emulator_settings_video_read_color_buffers">خواندن بافرهای رنگ</string>
+    <string name="emulator_settings_video_read_depth_buffer">خواندن بافر عمق</string>
+    <string name="emulator_settings_video_handle_rsx_memory_tiling">مدیریت کاشت حافظه RSX</string>
+    <string name="emulator_settings_video_log_shader_programs">برنامه‌های شیدر را ثبت کنید</string>
+    <string name="emulator_settings_video_vsync">VSync</string>
+    <string name="emulator_settings_video_debug_output">خروجی اشکال‌زدایی</string>
+    <string name="emulator_settings_video_debug_overlay">لایه اشکال‌زدایی</string>
+    <string name="emulator_settings_video_renderdoc_compatibility_mode">حالت سازگاری Renderdoc</string>
+    <string name="emulator_settings_video_use_gpu_texture_scaling">استفاده از مقیاس‌بندی بافت GPU</string>
+    <string name="emulator_settings_video_stretch_to_display_area">کشیدن به منطقه نمایش</string>
+    <string name="emulator_settings_video_force_high_precision_z_buffer">نیروی بافر Z با دقت بالا</string>
+    <string name="emulator_settings_video_strict_rendering_mode">حالت رندرینگ سفت</string>
+    <string name="emulator_settings_video_disable_zcull_occlusion_queries">غیرفعال کردن پرسش‌های انسداد ZCull</string>
+    <string name="emulator_settings_video_disable_video_output">غیرفعال کردن خروجی ویدئو</string>
+    <string name="emulator_settings_video_disable_vertex_cache">غیرفعال کردن کش راس</string>
+    <string name="emulator_settings_video_disable_fifo_reordering">غیرفعال کردن ترتیب مجدد FIFO</string>
+    <string name="emulator_settings_video_enable_frame_skip">فعال کردن اسکیپ فریم</string>
+    <string name="emulator_settings_video_force_cpu_blit">نیروی CPU Blit</string>
+    <string name="emulator_settings_video_disable_ondisk_shader_cache">غیرفعال کردن کش شیدر روی دیسک</string>
+    <string name="emulator_settings_video_disable_vulkan_memory_allocator">غیرفعال کردن اختصاص دهنده حافظه Vulkan</string>
+    <string name="emulator_settings_video_use_full_rgb_output_range">استفاده از دامنه RGB کامل</string>
+    <string name="emulator_settings_video_strict_texture_flushing">پاک کردن سفت بافت</string>
+    <string name="emulator_settings_video_multithreaded_rsx">RSX چند نخی</string>
+    <string name="emulator_settings_video_relaxed_zcull_sync">همگام‌سازی ZCULL آزاد</string>
+    <string name="emulator_settings_video_force_hardware_msaa_resolve">نیروی حل سخت‌افزاری MSAA</string>
+    <string name="emulator_settings_video_3d_display_mode">حالت نمایش 3D</string>
+    <string-array name="video_3d_display_mode_entries">
+        <item>غیرفعال</item>
+        <item>کنار هم</item>
+        <item>بالا و پایین</item>
+        <item>درون‌هم‌گرد</item>
+        <item>آنالوگ قرمز-سبز</item>
+        <item>آنالوگ قرمز-آبی</item>
+        <item>آنالوگ قرمز-سیان</item>
+        <item>آنالوگ ماژنتا-سیان</item>
+        <item>آنالوگ تریوسکوپیک</item>
+        <item>آنالوگ زرد-آبی</item>
+    </string-array>
+    <string name="emulator_settings_video_debug_program_analyser">تحلیل‌گر برنامه اشکال‌زدایی</string>
+    <string name="emulator_settings_video_accurate_zcull_stats">آمار دقیق ZCULL</string>
+    <string name="emulator_settings_video_consecutive_frames_to_draw">فریم‌های متوالی برای رسم</string>
+    <string name="emulator_settings_video_consecutive_frames_to_skip">فریم‌های متوالی برای اسکیپ</string>
+    <string name="emulator_settings_video_resolution_scale">مقیاس وضوح</string>
+    <string name="emulator_settings_video_anisotropic_filter_override">فیلتر آنیزوتروپیک سفارشی</string>
+    <string name="emulator_settings_video_texture_lod_bias_addend">افزودن بایاس LOD بافت</string>
+    <string name="emulator_settings_video_minimum_scalable_dimension">حداقل بعد قابل مقیاس</string>
+    <string name="emulator_settings_video_shader_compiler_threads">نخ‌های کامپایلر شیدر</string>
+    <string name="emulator_settings_video_driver_recovery_timeout">مهلت بازیابی درایور</string>
+    <string name="emulator_settings_video_driver_wakeup_delay">تاخیر بیدار شدن درایور</string>
+    <string name="emulator_settings_video_vblank_rate">نرخ Vblank</string>
+    <string name="emulator_settings_video_vblank_ntsc_fixup">اصلاح NTSC Vblank</string>
+    <string name="emulator_settings_video_decr_memory_layout">چیدمان حافظه DECR</string>
+    <string name="emulator_settings_video_allow_host_gpu_labels">اجازه برچسب‌های GPU میزبان</string>
+    <string name="emulator_settings_video_disable_msl_fast_math">غیرفعال کردن محاسبات سریع MSL</string>
+    <string name="emulator_settings_video_disable_asynchronous_memory_manager">غیرفعال کردن مدیر حافظه غیرهمزمان</string>
+    <string name="emulator_settings_video_output_scaling_mode">حالت مقیاس‌بندی خروجی</string>
+    <string-array name="video_output_scaling_mode_entries">
+        <item>نزدیک‌ترین</item>
+        <item>دو خطی</item>
+        <item>FidelityFX Super Resolution</item>
+    </string-array>
+    <string name="emulator_settings_video_use_bgra_format">استفاده از فرمت BGRA</string>
+    <string name="emulator_settings_video_force_convert_texture">نیروی تبدیل بافت</string>
+    <string name="emulator_settings_video_vulkan">Vulkan</string>
+    <string name="emulator_settings_video_vulkan_adapter">کارت گرافیک</string>
+    <string name="emulator_settings_video_vulkan_force_fifo_present_mode">حالت FIFO اجباری</string>
+    <string name="emulator_settings_video_vulkan_force_primitive_restart_flag">	flag restart اولیه اجباری</string>
+    <string name="emulator_settings_video_vulkan_exclusive_fullscreen_mode">حالت تمام‌صفحه انحصاری</string>
+    <string-array name="video_vulkan_exclusive_fullscreen_mode_entries">
+        <item>خودکار</item>
+        <item>غیرفعال</item>
+        <item>فعال</item>
+    </string-array>
+    <string name="emulator_settings_video_vulkan_asynchronous_texture_streaming_2">استریم بافت غیرهمزمان 2</string>
+    <string name="emulator_settings_video_vulkan_fidelityfx_cas_sharpening_intensity">شدت تیزکننده FidelityFX CAS</string>
+    <string name="emulator_settings_video_vulkan_asynchronous_queue_scheduler">زمان‌بند صف غیرهمزمان</string>
+    <string-array name="video_vulkan_asynchronous_queue_scheduler_entries">
+        <item>ایمن</item>
+        <item>سریع</item>
+    </string-array>
+    <string name="emulator_settings_video_vulkan_vram_allocation_limit">محدودیت تخصیص VRAM (MB)</string>
+
+    <string name="emulator_settings_video_vulkan_use_custom_driver">استفاده از درایور سفارشی</string>
+
+    <string name="emulator_settings_video_vulkan_custom_driver_library_path">مسیر کتابخانه درایور سفارشی</string>
+
+    <string name="emulator_settings_video_vulkan_custom_driver_force_max_clocks">نیروی حداکثر کلاک‌ها</string>
+
+    <string name="emulator_settings_video_performance_overlay">لایه عملکرد</string>
+    <string name="emulator_settings_video_performance_overlay_enabled">فعال</string>
+    <string name="emulator_settings_video_performance_overlay_enable_framerate_graph">نمودار فریم‌ریت</string>
+    <string name="emulator_settings_video_performance_overlay_enable_frametime_graph">نمودار زمان فریم</string>
+    <string name="emulator_settings_video_performance_overlay_framerate_datapoints">نقطه داده فریم‌ریت</string>
+    <string name="emulator_settings_video_performance_overlay_frametime_datapoints">نقطه داده زمان فریم</string>
+    <string name="emulator_settings_video_performance_overlay_detail_level">سطح جزئیات</string>
+    <string-array name="video_performance_overlay_detail_level_entries">
+        <item>هیچ</item>
+        <item>حداقل</item>
+        <item>کم</item>
+        <item>متوسط</item>
+        <item>زیاد</item>
+    </string-array>
+    <string name="emulator_settings_video_performance_overlay_framerate_graph_detail_level">سطح جزئیات نمودار فریم‌ریت</string>
+    <string-array name="video_performance_overlay_framerate_graph_detail_level_entries">
+        <item>حداقل</item>
+        <item>نمایش min و max</item>
+        <item>نمایش 1% و میانگین</item>
+        <item>همه</item>
+    </string-array>
+    <string name="emulator_settings_video_performance_overlay_frametime_graph_detail_level">سطح جزئیات نمودار زمان فریم</string>
+    <string-array name="video_performance_overlay_frametime_graph_detail_level_entries">
+        <item>حداقل</item>
+        <item>نمایش min و max</item>
+        <item>نمایش 1% و میانگین</item>
+        <item>همه</item>
+    </string-array>
+    <string name="emulator_settings_video_performance_overlay_metrics_update_interval">فاصله به‌روز رسانی متریک (ms)</string>
+    <string name="emulator_settings_video_performance_overlay_font_size">اندازه فونت (px)</string>
+    <string name="emulator_settings_video_performance_overlay_position">موقعیت</string>
+    <string-array name="video_performance_overlay_position_entries">
+        <item>بالا-چپ</item>
+        <item>بالا-راست</item>
+        <item>پایین-چپ</item>
+        <item>پایین-راست</item>
+    </string-array>
+    <string name="emulator_settings_video_performance_overlay_font">فونت</string>
+    <string name="emulator_settings_video_performance_overlay_horizontal_margin">حاشیه افقی (px)</string>
+    <string name="emulator_settings_video_performance_overlay_vertical_margin">حاشیه عمودی (px)</string>
+    <string name="emulator_settings_video_performance_overlay_center_horizontally">مرکز افقی</string>
+    <string name="emulator_settings_video_performance_overlay_center_vertically">مرکز عمودی</string>
+    <string name="emulator_settings_video_performance_overlay_opacity">شفافیت (%)</string>
+    <string name="emulator_settings_video_performance_overlay_body_color">رنگ بدنه (hex)</string>
+    <string name="emulator_settings_video_performance_overlay_body_background">پس‌زمینه بدنه (hex)</string>
+    <string name="emulator_settings_video_performance_overlay_title_color">رنگ عنوان (hex)</string>
+    <string name="emulator_settings_video_performance_overlay_title_background">پس‌زمینه عنوان (hex)</string>
+    <string name="emulator_settings_video_shader_loading_dialog">پنجره بارگذاری شیدر</string>
+    <string name="emulator_settings_video_shader_loading_dialog_allow_custom_background">اجازه پس‌زمینه سفارشی</string>
+    <string name="emulator_settings_video_shader_loading_dialog_darkening_effect_strength">شدت اثر تاریک‌کننده</string>
+    <string name="emulator_settings_video_shader_loading_dialog_blur_effect_strength">شدت اثر تاری</string>
+    <string name="emulator_settings_audio">صدا</string>
+    <string name="emulator_settings_audio_renderer">رندرر</string>
+    <string-array name="audio_renderer_entries">
+        <item>ناموجود</item>
+        <item>Cubeb</item>
+    </string-array>
+    <string name="emulator_settings_audio_audio_provider">ارائه‌دهنده صدا</string>
+    <string-array name="audio_audio_provider_entries">
+        <item>هیچ</item>
+        <item>CellAudio</item>
+        <item>RSXAudio</item>
+    </string-array>
+    <string name="emulator_settings_audio_rsxaudio_avport">ورودی AV RSXAudio</string>
+    <string-array name="audio_rsxaudio_avport_entries">
+        <item>HDMI 0</item>
+        <item>HDMI 1</item>
+        <item>خروجی AV چندگانه</item>
+        <item>SPDIF 0</item>
+        <item>SPDIF 1</item>
+    </string-array>
+    <string name="emulator_settings_audio_dump_to_file">ذخیره در فایل</string>
+    <string name="emulator_settings_audio_convert_to_16_bit">تبدیل به 16 بیت</string>
+    <string name="emulator_settings_audio_audio_format">فرمت صدا</string>
+    <string-array name="audio_audio_format_entries">
+        <item>دوکانال</item>
+        <item>5.1 Surround</item>
+        <item>7.1 Surround</item>
+        <item>خودکار</item>
+        <item>دستی</item>
+    </string-array>
+    <string name="emulator_settings_audio_audio_formats">فرمت‌های صدا</string>
+    <string name="emulator_settings_audio_audio_channel_layout">چیدمان کانال صدا</string>
+    <string-array name="audio_audio_channel_layout_entries">
+        <item>خودکار</item>
+        <item>تک‌کانال</item>
+        <item>دوکانال</item>
+        <item>دوکانال با ساب</item>
+        <item>چهارکانال</item>
+        <item>چهارکانال با ساب</item>
+        <item>5.1 Surround</item>
+        <item>7.1 Surround</item>
+    </string-array>
+    <string name="emulator_settings_audio_audio_device">دستگاه صدا</string>
+    <string name="emulator_settings_audio_master_volume">ولوم اصلی</string>
+    <string name="emulator_settings_audio_enable_buffering">فعال کردن بافرینگ</string>
+    <string name="emulator_settings_audio_desired_audio_buffer_duration">مدت بافر صدا</string>
+    <string name="emulator_settings_audio_enable_time_stretching">فعال کردن گسترش زمانی</string>
+    <string name="emulator_settings_audio_disable_sampling_skip">غیرفعال کردن اسکیپ نمونه</string>
+    <string name="emulator_settings_audio_time_stretching_threshold">آستانه گسترش زمانی</string>
+    <string name="emulator_settings_audio_microphone_type">نوع میکروفون</string>
+    <string-array name="audio_microphone_type_entries">
+        <item>ناموجود</item>
+        <item>استاندارد</item>
+        <item>SingStar</item>
+        <item>SingStar واقعی</item>
+        <item>Rocksmith</item>
+    </string-array>
+    <string name="emulator_settings_audio_microphone_devices">دستگاه‌های میکروفون</string>
+    <string name="emulator_settings_audio_music_handler">مدیر موسیقی</string>
+    <string-array name="audio_music_handler_entries">
+        <item>ناموجود</item>
+        <item>Qt</item>
+    </string-array>
+    <string name="emulator_settings_input_output">ورودی/خروجی</string>
+    <string name="emulator_settings_input_output_keyboard">صفحه‌کلید</string>
+    <string-array name="input_output_keyboard_entries">
+        <item>ناموجود</item>
+        <item>پایه</item>
+    </string-array>
+    <string name="emulator_settings_input_output_mouse">موشواره</string>
+    <string-array name="input_output_mouse_entries">
+        <item>ناموجود</item>
+        <item>پایه</item>
+        <item>خام</item>
+    </string-array>
+    <string name="emulator_settings_input_output_camera">دوربین</string>
+    <string-array name="input_output_camera_entries">
+        <item>ناموجود</item>
+        <item>ساختگی</item>
+        <item>Qt</item>
+    </string-array>
+    <string name="emulator_settings_input_output_camera_type">نوع دوربین</string>
+    <string-array name="input_output_camera_type_entries">
+        <item>نامشخص</item>
+        <item>EyeToy</item>
+        <item>PS Eye</item>
+        <item>UVC 1.1</item>
+    </string-array>
+    <string name="emulator_settings_input_output_camera_flip">چرخاندن دوربین</string>
+    <string-array name="input_output_camera_flip_entries">
+        <item>هیچ</item>
+        <item>افقی</item>
+        <item>عمودی</item>
+        <item>هر دو</item>
+    </string-array>
+    <string name="emulator_settings_input_output_camera_id">شناسه دوربین</string>
+    <string name="emulator_settings_input_output_move">حرکت</string>
+    <string-array name="input_output_move_entries">
+        <item>ناموجود</item>
+        <item>ساختگی</item>
+        <item>موشواره</item>
+        <item>موشواره خام</item>
+    </string-array>
+    <string name="emulator_settings_input_output_buzz_emulated_controller">کنترلر Buzz شبیه‌سازی‌شده</string>
+    <string-array name="input_output_buzz_emulated_controller_entries">
+        <item>ناموجود</item>
+        <item>یک کنترلر</item>
+        <item>دو کنترلر</item>
+    </string-array>
+    <string name="emulator_settings_input_output_turntable_emulated_controller">کنترلر Turntable شبیه‌سازی‌شده</string>
+    <string-array name="input_output_turntable_emulated_controller_entries">
+        <item>ناموجود</item>
+        <item>یک کنترلر</item>
+        <item>دو کنترلر</item>
+    </string-array>
+    <string name="emulator_settings_input_output_ghltar_emulated_controller">کنترلر GHLtar شبیه‌سازی‌شده</string>
+    <string-array name="input_output_ghltar_emulated_controller_entries">
+        <item>ناموجود</item>
+        <item>یک کنترلر</item>
+        <item>دو کنترلر</item>
+    </string-array>
+    <string name="emulator_settings_input_output_pad_handler_mode">حالت مدیر دسته</string>
+    <string-array name="input_output_pad_handler_mode_entries">
+        <item>تک‌نخی</item>
+        <item>چندنخی</item>
+    </string-array>
+    <string name="emulator_settings_input_output_keep_pads_connected">نگه داشتن دسته‌ها متصل</string>
+    <string name="emulator_settings_input_output_pad_handler_sleep">خواب مدیر دسته (میکروثانیه)</string>
+    <string name="emulator_settings_input_output_background_input_enabled">ورودی زمینه فعال</string>
+    <string name="emulator_settings_input_output_show_move_cursor">نمایش موس حرکتی</string>
+    <string name="emulator_settings_input_output_lock_overlay_input_to_player_one">قفل ورودی لایه به بازیکن یک</string>
+    <string name="emulator_settings_input_output_emulated_midi_devices">دستگاه‌های MIDI شبیه‌سازی‌شده</string>
+    <string name="emulator_settings_input_output_load_sdl_gamecontroller_mappings">بارگذاری نقشه‌بندی کنترلر SDL</string>
+    <string name="emulator_settings_input_output_io_debug_overlay">لایه اشکال‌زدایی IO</string>
+    <string name="emulator_settings_system">سیستم</string>
+    <string name="emulator_settings_system_license_area">منطقه لیسانس</string>
+    <string-array name="system_license_area_entries">
+        <item>SCEJ</item>
+        <item>SCEA</item>
+        <item>SCEE</item>
+        <item>SCEH</item>
+        <item>SCEK</item>
+        <item>SCH</item>
+    </string-array>
+    <string name="emulator_settings_system_language">زبان</string>
+    <string-array name="system_language_entries">
+        <item>ژاپنی</item>
+        <item>انگلیسی (US)</item>
+        <item>فرانسویی</item>
+        <item>اسپانیولی</item>
+        <item>آلمانی</item>
+        <item>ایتالیایی</item>
+        <item>هلندی</item>
+        <item>پرتغالی (پرتغال)</item>
+        <item>روسی</item>
+        <item>کره‌ای</item>
+        <item>چینی (سنتی)</item>
+        <item>چینی (ساده)</item>
+        <item>فنلاندی</item>
+        <item>سوئدی</item>
+        <item>دانمارکی</item>
+        <item>نروژی</item>
+        <item>له‌ای</item>
+        <item>پرتغالی (برزیل)</item>
+        <item>انگلیسی (UK)</item>
+        <item>ترکی</item>
+    </string-array>
+    <string name="emulator_settings_system_keyboard_type">نوع صفحه‌کلید</string>
+    <string-array name="system_keyboard_type_entries">
+        <item>صفحه‌کلید انگلیسی (استاندارد US)</item>
+        <item>صفحه‌کلید ژاپنی</item>
+        <item>صفحه‌کلید ژاپنی (حالت کانا)</item>
+        <item>صفحه‌کلید آلمانی</item>
+        <item>صفحه‌کلید اسپانیولی</item>
+        <item>صفحه‌کلید فرانسویی</item>
+        <item>صفحه‌کلید ایتالیایی</item>
+        <item>صفحه‌کلید هلندی</item>
+        <item>صفحه‌کلید پرتغالی (پرتغال)</item>
+        <item>صفحه‌کلید روسی</item>
+        <item>صفحه‌کلید انگلیسی (استاندارد UK)</item>
+        <item>صفحه‌کلید کره‌ای</item>
+        <item>صفحه‌کلید نروژی</item>
+        <item>صفحه‌کلید فنلاندی</item>
+        <item>صفحه‌کلید دانمارکی</item>
+        <item>صفحه‌کلید سوئدی</item>
+        <item>صفحه‌کلید چینی (سنتی)</item>
+        <item>صفحه‌کلید چینی (ساده)</item>
+        <item>صفحه‌کلید فرانسویی (سوئیس)</item>
+        <item>صفحه‌کلید آلمانی (سوئیس)</item>
+        <item>صفحه‌کلید فرانسویی (کانادا)</item>
+        <item>صفحه‌کلید فرانسویی (بلژیک)</item>
+        <item>صفحه‌کلید له‌ای</item>
+        <item>صفحه‌کلید پرتغالی (برزیل)</item>
+        <item>صفحه‌کلید ترکی</item>
+    </string-array>
+    <string name="emulator_settings_system_enter_button_assignment">دکمه ورود</string>
+    <string-array name="system_enter_button_assignment_entries">
+        <item>ورود با دایره</item>
+        <item>ورود با کراس</item>
+    </string-array>
+    <string name="emulator_settings_system_console_time_offset">جبران زمان کنسول (s)</string>
+    <string name="emulator_settings_system_system_name">نام سیستم</string>
+    <string name="emulator_settings_system_psid_high">PSID بالا</string>
+    <string name="emulator_settings_system_psid_low">PSID پایین</string>
+    <string name="emulator_settings_system_hdd_model_name">نام مدل HDD</string>
+    <string name="emulator_settings_system_hdd_serial_number">شماره سریال HDD</string>
+    <string name="emulator_settings_net">شبکه</string>
+    <string name="emulator_settings_net_internet_enabled">اتصال اینترنت</string>
+    <string-array name="net_internet_enabled_entries">
+        <item>قطع شده</item>
+        <item>متصل</item>
+    </string-array>
+    <string name="emulator_settings_net_ip_address">آدرس IP</string>
+    <string name="emulator_settings_net_bind_address">آدرس بایند</string>
+    <string name="emulator_settings_net_dns_address">آدرس DNS</string>
+    <string name="emulator_settings_net_ip_swap_list">لیست جابجایی IP</string>
+    <string name="emulator_settings_net_upnp_enabled">UPNP فعال</string>
+    <string name="emulator_settings_net_psn_status">وضعیت PSN</string>
+    <string-array name="net_psn_status_entries">
+        <item>قطع شده</item>
+        <item>شبیه‌سازی شده</item>
+        <item>RPCN</item>
+    </string-array>
+    <string name="emulator_settings_net_psn_country">کشور PSN</string>
+    <string name="emulator_settings_savestate">ذخیره وضعیت</string>
+    <string name="emulator_settings_savestate_start_paused">شروع متوقف‌شده</string>
+    <string name="emulator_settings_savestate_suspend_emulation_savestate_mode">حالت تعلیق شبیه‌سازی</string>
+    <string name="emulator_settings_savestate_compatible_savestate_mode">حالت سازگار ذخیره وضعیت</string>
+    <string name="emulator_settings_savestate_inspection_mode_savestates">حالت بازرسی ذخیره وضعیت</string>
+    <string name="emulator_settings_savestate_save_disc_game_data">ذخیره داده بازی دیسکی</string>
+    <string name="emulator_settings_miscellaneous">متفرقه</string>
+    <string name="emulator_settings_miscellaneous_automatically_start_games_after_boot">شروع خودکار بازی پس از راه‌اندازی</string>
+    <string name="emulator_settings_miscellaneous_exit_rpcs3_when_process_finishes">خروج از RPCS3 وقتی فرایند تمام شد</string>
+    <string name="emulator_settings_miscellaneous_pause_emulation_on_rpcs3_focus_loss">مکث شبیه‌سازی در هنگام تمرکز نکردن</string>
+    <string name="emulator_settings_miscellaneous_start_games_in_fullscreen_mode">شروع بازی در حالت تمام‌صفحه</string>
+    <string name="emulator_settings_miscellaneous_prevent_display_sleep_while_running_games">جلوگیری از خاموش شدن صفحه هنگام اجرای بازی</string>
+    <string name="emulator_settings_miscellaneous_show_trophy_popups">نمایش پاپ‌آپ تروفی</string>
+    <string name="emulator_settings_miscellaneous_show_rpcn_popups">نمایش پاپ‌آپ RPCN</string>
+    <string name="emulator_settings_miscellaneous_show_shader_compilation_hint">نمایش راهنمایی کامپایل شیدر</string>
+    <string name="emulator_settings_miscellaneous_show_ppu_compilation_hint">نمایش راهنمایی کامپایل PPU</string>
+    <string name="emulator_settings_miscellaneous_show_pressure_intensity_toggle_hint">نمایش راهنمایی شدت فشار</string>
+    <string name="emulator_settings_miscellaneous_show_analog_limiter_toggle_hint">نمایش راهنمایی محدودکننده آنالوگ</string>
+    <string name="emulator_settings_miscellaneous_show_mouse_and_keyboard_toggle_hint">نمایش راهنمایی موس و صفحه‌کلید</string>
+    <string name="emulator_settings_miscellaneous_show_autosave_autoload_hint">نمایش راهنمایی خودکار ذخیره/بارگذاری</string>
+    <string name="emulator_settings_miscellaneous_use_native_user_interface">استفاده از رابط کاربری اصلی</string>
+    <string name="emulator_settings_miscellaneous_gdb_server">سرور GDB</string>
+    <string name="emulator_settings_miscellaneous_silence_all_logs">بی‌صدا کردن تمام لاگ‌ها</string>
+    <string name="emulator_settings_miscellaneous_window_title_format">فرمت عنوان پنجره</string>
+    <string name="emulator_settings_miscellaneous_pause_emulation_during_home_menu">مکث شبیه‌سازی در منوی خانه</string>
+    <string name="emulator_settings_miscellaneous_font_file_selection">انتخاب فایل فونت</string>
+    <string-array name="miscellaneous_font_file_selection_entries">
+        <item>از فیلم‌وار</item>
+        <item>شخصی</item>
+    </string-array>
+    <string name="emulator_settings_miscellaneous_custom_font_file_path">مسیر فونت شخصی</string>
+    <string name="emulator_settings_miscellaneous_font_size">اندازه فونت</string>
+
+    <string name="INVALID">نامعتبر</string>
+    <string name="RSX_OVERLAYS_TROPHY_BRONZE">شما یک تروفی برنزی کسب کرده‌اید.\n%0</string>
+    <string name="RSX_OVERLAYS_TROPHY_SILVER">شما یک تروفی نقره‌ای کسب کرده‌اید.\n%0</string>
+    <string name="RSX_OVERLAYS_TROPHY_GOLD">شما یک تروفی طلایی کسب کرده‌اید.\n%0</string>
+    <string name="RSX_OVERLAYS_TROPHY_PLATINUM">شما یک تروفی پلاتینومی کسب کرده‌اید.\n%0</string>
+    <string name="RSX_OVERLAYS_COMPILING_SHADERS">در حال کامپایل شیدرها</string>
+    <string name="RSX_OVERLAYS_COMPILING_PPU_MODULES">در حال کامپایل ماژول‌های PPU</string>
+    <string name="RSX_OVERLAYS_MSG_DIALOG_YES">بله</string>
+    <string name="RSX_OVERLAYS_MSG_DIALOG_NO">خیر</string>
+    <string name="RSX_OVERLAYS_MSG_DIALOG_CANCEL">بازگشت</string>
+    <string name="RSX_OVERLAYS_MSG_DIALOG_OK">تایید</string>
+    <string name="RSX_OVERLAYS_SAVE_DIALOG_TITLE">پنجره ذخیره</string>
+    <string name="RSX_OVERLAYS_SAVE_DIALOG_DELETE">حذف ذخیره</string>
+    <string name="RSX_OVERLAYS_SAVE_DIALOG_LOAD">بارگذاری ذخیره</string>
+    <string name="RSX_OVERLAYS_SAVE_DIALOG_SAVE">ذخیره</string>
+    <string name="RSX_OVERLAYS_OSK_DIALOG_ACCEPT">ورود</string>
+    <string name="RSX_OVERLAYS_OSK_DIALOG_CANCEL">بازگشت</string>
+    <string name="RSX_OVERLAYS_OSK_DIALOG_SPACE">فضا</string>
+    <string name="RSX_OVERLAYS_OSK_DIALOG_BACKSPACE">حذف</string>
+    <string name="RSX_OVERLAYS_OSK_DIALOG_SHIFT">Shift</string>
+    <string name="RSX_OVERLAYS_OSK_DIALOG_ENTER_TEXT">[ورود متن]</string>
+    <string name="RSX_OVERLAYS_OSK_DIALOG_ENTER_PASSWORD">[ورود رمز]</string>
+    <string name="RSX_OVERLAYS_MEDIA_DIALOG_TITLE">انتخاب رسانه</string>
+    <string name="RSX_OVERLAYS_MEDIA_DIALOG_TITLE_PHOTO_IMPORT">انتخاب عکس برای وارد کردن</string>
+    <string name="RSX_OVERLAYS_MEDIA_DIALOG_EMPTY">هیچ رسانه‌ای یافت نشد.</string>
+    <string name="RSX_OVERLAYS_LIST_SELECT">ورود</string>
+    <string name="RSX_OVERLAYS_LIST_CANCEL">بازگشت</string>
+    <string name="RSX_OVERLAYS_LIST_DENY">رد کردن</string>
+    <string name="RSX_OVERLAYS_PRESSURE_INTENSITY_TOGGLED_OFF">حالت شدت فشار بازیکن %0 غیرفعال شد</string>
+    <string name="RSX_OVERLAYS_PRESSURE_INTENSITY_TOGGLED_ON">حالت شدت فشار بازیکن %0 فعال شد</string>
+    <string name="RSX_OVERLAYS_ANALOG_LIMITER_TOGGLED_OFF">محدودکننده آنالوگ بازیکن %0 غیرفعال شد</string>
+    <string name="RSX_OVERLAYS_ANALOG_LIMITER_TOGGLED_ON">محدودکننده آنالوگ بازیکن %0 فعال شد</string>
+    <string name="RSX_OVERLAYS_MOUSE_AND_KEYBOARD_EMULATED">صفحه‌کلید و موس به عنوان دستگاه شبیه‌سازی‌شده استفاده شدند</string>
+    <string name="RSX_OVERLAYS_MOUSE_AND_KEYBOARD_PAD">صفحه‌کلید و موس به عنوان دسته استفاده شدند</string>
+    <string name="CELL_GAME_ERROR_BROKEN_GAMEDATA">خطا: داده بازی خراب است. برنامه ادامه پیدا می‌کند.</string>
+    <string name="CELL_GAME_ERROR_BROKEN_HDDGAME">خطا: بازی HDD خراب است. برنامه ادامه پیدا می‌کند.</string>
+    <string name="CELL_GAME_ERROR_BROKEN_EXIT_GAMEDATA">خطا: داده بازی خراب است. برنامه خاتمه می‌یابد.</string>
+    <string name="CELL_GAME_ERROR_BROKEN_EXIT_HDDGAME">خطا: بازی HDD خراب است. برنامه خاتمه می‌یابد.</string>
+    <string name="CELL_GAME_ERROR_NOSPACE">خطا: فضای کافی وجود ندارد. برنامه ادامه پیدا می‌کند.\nفضای مورد نیاز: %0 KB</string>
+    <string name="CELL_GAME_ERROR_NOSPACE_EXIT">خطا: فضای کافی وجود ندارد. برنامه خاتمه می‌یابد.\nفضای مورد نیاز: %0 KB</string>
+    <string name="CELL_GAME_ERROR_DIR_NAME">نام دایرکتوری: %0</string>
+    <string name="CELL_GAME_DATA_EXIT_BROKEN">یک خطا رخ داد!\n\nلطفاً داده‌های این عنوان را حذف کنید.</string>
+    <string name="CELL_HDD_GAME_EXIT_BROKEN">یک خطا رخ داد!\n\nلطفاً بازی HDD را مجدداً نصب کنید.</string>
+    <string name="CELL_HDD_GAME_CHECK_NOSPACE">فضای کافی برای ایجاد بازی HDD وجود ندارد.\nفضای مورد نیاز: %0 KB</string>
+    <string name="CELL_HDD_GAME_CHECK_BROKEN">بازی HDD %0 خراب است!</string>
+    <string name="CELL_HDD_GAME_CHECK_NODATA">بازی HDD %0 یافت نشد!</string>
+    <string name="CELL_HDD_GAME_CHECK_INVALID">خطا: %0</string>
+    <string name="CELL_GAMEDATA_CHECK_NOSPACE">فضای کافی برای ایجاد داده بازی وجود ندارد.\nفضای مورد نیاز: %0 KB</string>
+    <string name="CELL_GAMEDATA_CHECK_BROKEN">داده بازی در %0 خراب است!</string>
+    <string name="CELL_GAMEDATA_CHECK_NODATA">داده بازی در %0 یافت نشد!</string>
+    <string name="CELL_GAMEDATA_CHECK_INVALID">خطا: %0</string>
+    <string name="CELL_MSG_DIALOG_ERROR_80010001">منبع موقتاً در دسترس نیست.\n(%0)</string>
+    <string name="CELL_MSG_DIALOG_ERROR_80010002">آرگومان یا پرچم نامعتبر.\n(%0)</string>
+    <string name="CELL_MSG_DIALOG_ERROR_80010003">ویژگی هنوز پیاده‌سازی نشده است.\n(%0)</string>
+    <string name="CELL_MSG_DIALOG_ERROR_80010004">تخصیص حافظه شکست خورد.\n(%0)</string>
+    <string name="CELL_MSG_DIALOG_ERROR_80010005">منبع با شناسه مشخص یافت نشد.\n(%0)</string>
+    <string name="CELL_MSG_DIALOG_ERROR_80010006">فایل یافت نشد.\n(%0)</string>
+    <string name="CELL_MSG_DIALOG_ERROR_80010007">فایل در فرمت ناشناخته است / فایل ELF معتبر نیست.\n(%0)</string>
+    <string name="CELL_MSG_DIALOG_ERROR_80010008">جلوگیری از قفل را دستگیر کنید.\n(%0)</string>
+    <string name="CELL_MSG_DIALOG_ERROR_80010009">عملیات مجاز نیست.\n(%0)</string>
+    <string name="CELL_MSG_DIALOG_ERROR_8001000A">منبع یا دستگاه مشغول است.\n(%0)</string>
+    <string name="CELL_MSG_DIALOG_ERROR_8001000B">عملیات منقضی شد.\n(%0)</string>
+    <string name="CELL_MSG_DIALOG_ERROR_8001000C">عملیات لغو شد.\n(%0)</string>
+    <string name="CELL_MSG_DIALOG_ERROR_8001000D">دسترسی نامعتبر به حافظه.\n(%0)</string>
+    <string name="CELL_MSG_DIALOG_ERROR_8001000F">وضعیت نخ هدف نامعتبر است.\n(%0)</string>
+    <string name="CELL_MSG_DIALOG_ERROR_80010010">تراز ترازبندی نامعتبر.\n(%0)</string>
+    <string name="CELL_MSG_DIALOG_ERROR_80010011">کمبود منابع هسته.\n(%0)</string>
+    <string name="CELL_MSG_DIALOG_ERROR_80010012">فایل یک دایرکتوری است.\n(%0)</string>
+    <string name="CELL_MSG_DIALOG_ERROR_80010013">عملیات لغو شد.\n(%0)</string>
+    <string name="CELL_MSG_DIALOG_ERROR_80010014">ورودی قبلاً وجود دارد.\n(%0)</string>
+    <string name="CELL_MSG_DIALOG_ERROR_80010015">پورت قبلاً متصل است.\n(%0)</string>
+
+<string name="CELL_MSG_DIALOG_ERROR_80010016">پورت متصل نیست.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010017">خطای مجوز SELF. شناسایی برنامه ناموفق بود.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010018">فایل MSELF نیست.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010019">خطای نسخه سیستم.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001A">خطای جدی سیستم در حین مجوز SELF. شکست مجوز SELF.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001B">خطای دامنه ریاضی.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001C">خطای محدوده ریاضی.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001D">دنباله چند بایتی نامعتبر در ورودی.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001E">خطای موقعیت فایل.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001F">فراخوانی سیستمی قطع شد.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010020">فایل خیلی بزرگ است.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010021">تعداد لینک‌های زیادی است.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010022">جدول فایل پر شد.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010023">فضای دستگاه تمام شده است.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010024">ورودی/خروجی مجاز نیست.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010025">لوله ارتباطی شکسته است.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010026">سیستم فایل فقط خواندنی است.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010027">جستجوی نامعتبر.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010028">لیست آرگومان‌ها خیلی طولانی است.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010029">دسترسی غیرمجاز.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002A">دسریپتور فایل نامعتبر.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002B">نامونت شدن سیستم فایل.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002C">تعداد فایل‌های باز خیلی زیاد است.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002D">دستگاه وجود ندارد.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002E">مسیر یک دایرکتوری نیست.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002F">چنین دستگاهی یا IOای وجود ندارد.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010030">خطای لینک بین دستگاه‌ها.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010031">پیام بد.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010032">در حال انجام.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010033">خطای اندازه پیام.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010034">نام خیلی طولانی است.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010035">قفل وجود ندارد.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010036">خالی نیست.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010037">پشتیبانی نمی‌شود.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010038">خطای خاص سیستم فایل.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010039">سرریز رخ داده است.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003A">سیستم فایل نامونت است.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003B">SData نیست.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003C">نسخه نادرست در sys_load_param.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003D">اشاره‌گر خالی است.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003E">اشاره‌گر خالی است.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_DEFAULT">خطایی رخ داده است.\n(%0)</string>
+	<string name="CELL_OSK_DIALOG_TITLE">صفحه‌کلید روی صفحه</string>
+	<string name="CELL_OSK_DIALOG_BUSY">نمی‌توان منوی خانه را باز کرد در حالی که صفحه‌کلید روی صفحه فعال است!</string>
+
+	<string name="CELL_SAVEDATA_CB_BROKEN">خطا - داده‌های ذخیره شده خراب شده‌اند</string>
+	<string name="CELL_SAVEDATA_CB_FAILURE">خطا - ذخیره یا بارگیری ناموفق</string>
+	<string name="CELL_SAVEDATA_CB_NO_DATA">خطا - داده‌های ذخیره شده یافت نشد</string>
+	<string name="CELL_SAVEDATA_CB_NO_SPACE">خطا - فضای آزاد کافی نیست\n\nفضای مورد نیاز: %0 کیلوبایت</string>
+	<string name="CELL_SAVEDATA_NO_DATA">داده‌های ذخیره شده‌ای وجود ندارد.</string>
+	<string name="CELL_SAVEDATA_NEW_SAVED_DATA_TITLE">داده‌های ذخیره جدید</string>
+	<string name="CELL_SAVEDATA_NEW_SAVED_DATA_SUB_TITLE">برای ایجاد ورودی جدید انتخاب کنید</string>
+	<string name="CELL_SAVEDATA_SAVE_CONFIRMATION">آیا می‌خواهید این داده‌ها را ذخیره کنید؟</string>
+	<string name="CELL_SAVEDATA_DELETE_CONFIRMATION">آیا مطمئن هستید که می‌خواهید این داده‌ها را حذف کنید؟\n\n%0</string>
+	<string name="CELL_SAVEDATA_DELETE_SUCCESS">داده‌ها با موفقیت حذف شدند!\n\n%0</string>
+	<string name="CELL_SAVEDATA_DELETE">این داده‌ها را حذف کنیم؟\n\n%0</string>
+	<string name="CELL_SAVEDATA_LOAD">این داده‌ها را بارگیری کنیم؟\n\n%0</string>
+	<string name="CELL_SAVEDATA_SAVE">این داده‌ها را ذخیره کنیم؟\n\n%0</string>
+	<string name="CELL_SAVEDATA_OVERWRITE">آیا می‌خواهید داده‌های ذخیره شده را بازنویسی کنید؟\n\n%0</string>
+	<string name="CELL_SAVEDATA_AUTOSAVE">در حال ذخیره...</string>
+	<string name="CELL_SAVEDATA_AUTOLOAD">در حال بارگیری...</string>
+	<string name="CELL_CROSS_CONTROLLER_MSG">در سیستم PS Vita شروع کنید.\nاگر نصب نکرده‌اید، به [پخش از راه دور] در سیستم PS Vita بروید و [کنترل‌کننده متقابل] را از صفحه LiveArea™ شروع کنید.</string>
+	<string name="CELL_CROSS_CONTROLLER_FW_MSG">اگر نسخه نرم‌افزار سیستم شما در PS Vita قدیمی‌تر از 1.80 است، باید نرم‌افزار سیستم را به آخرین نسخه به‌روز کنید.</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_TITLE">انتخاب پیام</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_TITLE_INVITE">درخواست ارسال</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_TITLE_ADD_FRIEND">افزودن دوست</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_FROM">از:</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_SUBJECT">موضوع:</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_TITLE">انتخاب پیام برای ارسال</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_TITLE_INVITE">ارسال دعوت</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_TITLE_ADD_FRIEND">ارسال درخواست دوستی</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_CONFIRMATION">آیا پیام را به %0 بفرستم؟\n\nموضوع:</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_CONFIRMATION_INVITE">آیا دعوت را به %0 بفرستم؟\n\nموضوع:</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_CONFIRMATION_ADD_FRIEND">آیا درخواست دوستی را به %0 بفرستم؟\n\nموضوع:</string>
+	<string name="RECORDING_ABORTED">ضبط متوقف شد!</string>
+	<string name="RPCN_NO_ERROR">RPCN: خطایی وجود ندارد</string>
+	<string name="RPCN_ERROR_INVALID_INPUT">RPCN: ورودی نامعتبر (هاست/پورت اشتباه)</string>
+	<string name="RPCN_ERROR_WOLFSSL">RPCN خطای ارتباط: خطای WolfSSL</string>
+	<string name="RPCN_ERROR_RESOLVE">RPCN خطای ارتباط: خطای رزولوشن</string>
+	<string name="RPCN_ERROR_CONNECT">RPCN خطای ارتباط</string>
+	<string name="RPCN_ERROR_LOGIN_ERROR">RPCN خطای ورود: خطای شناسایی</string>
+	<string name="RPCN_ERROR_ALREADY_LOGGED">RPCN خطای ورود: کاربر قبلا وارد شده است</string>
+	<string name="RPCN_ERROR_INVALID_LOGIN">RPCN خطای ورود: نام کاربری نامعتبر</string>
+	<string name="RPCN_ERROR_INVALID_PASSWORD">RPCN خطای ورود: رمز عبور نامعتبر</string>
+	<string name="RPCN_ERROR_INVALID_TOKEN">RPCN خطای ورود: توکن نامعتبر</string>
+	<string name="RPCN_ERROR_INVALID_PROTOCOL_VERSION">RPCN خطای عمومی: نسخه پروتکل اشتباه (RPCS3 قدیمی؟)</string>
+	<string name="RPCN_ERROR_UNKNOWN">RPCN: خطای ناشناخته</string>
+	<string name="RPCN_SUCCESS_LOGGED_ON">با موفقیت وارد RPCN شدید!</string>
+	<string name="RPCN_FRIEND_REQUEST_RECEIVED">RPCN: درخواست دوستی دریافت شد: %0</string>
+	<string name="RPCN_FRIEND_ADDED">RPCN: دوست اضافه شد: %0</string>
+	<string name="RPCN_FRIEND_LOST">RPCN: دوست حذف شد: %0</string>
+	<string name="RPCN_FRIEND_LOGGED_IN">RPCN: %0 وارد شد</string>
+	<string name="RPCN_FRIEND_LOGGED_OUT">RPCN: %0 خارج شد</string>
+
+    <string name="HOME_MENU_TITLE">منوی خانه</string>
+    <string name="HOME_MENU_EXIT_GAME">خروج از بازی</string>
+    <string name="HOME_MENU_RESUME">ادامه بازی</string>
+    <string name="HOME_MENU_FRIENDS">دوستان</string>
+    <string name="HOME_MENU_FRIENDS_REQUESTS">درخواست‌های دوستی در انتظار</string>
+    <string name="HOME_MENU_FRIENDS_BLOCKED">کاربران مسدود شده</string>
+    <string name="HOME_MENU_FRIENDS_STATUS_ONLINE">آنلاین</string>
+    <string name="HOME_MENU_FRIENDS_STATUS_OFFLINE">آفلاین</string>
+    <string name="HOME_MENU_FRIENDS_STATUS_BLOCKED">مسدود شده</string>
+    <string name="HOME_MENU_FRIENDS_REQUEST_SENT">شما یک درخواست دوستی فرستادید</string>
+    <string name="HOME_MENU_FRIENDS_REQUEST_RECEIVED">شما یک درخواست دوستی دریافت کرده‌اید</string>
+    <string name="HOME_MENU_FRIENDS_BLOCK_USER_MSG">این کاربر را مسدود کنیم؟\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_UNBLOCK_USER_MSG">این کاربر را رها کنیم؟\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_REMOVE_USER_MSG">این کاربر را حذف کنیم؟\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_ACCEPT_REQUEST_MSG">درخواست را قبول می‌کنید؟\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_CANCEL_REQUEST_MSG">درخواست را لغو کنیم؟\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_REJECT_REQUEST_MSG">درخواست را رد کنیم؟\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_REJECT_REQUEST">درخواست را رد کنید</string>
+    <string name="HOME_MENU_FRIENDS_NEXT_LIST">لیست بعدی</string>
+    <string name="HOME_MENU_RESTART">راه‌اندازی مجدد بازی</string>
+    <string name="HOME_MENU_SETTINGS">تنظیمات</string>
+    <string name="HOME_MENU_SETTINGS_SAVE">ذخیره پیکربندی سفارشی؟</string>
+    <string name="HOME_MENU_SETTINGS_SAVE_BUTTON">ذخیره</string>
+    <string name="HOME_MENU_SETTINGS_DISCARD">تغییرات فعلی را دور بریز؟</string>
+    <string name="HOME_MENU_SETTINGS_DISCARD_BUTTON">رد کردن</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO">صدا</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_MASTER_VOLUME">ولوم اصلی</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_BACKEND">موتور صدا</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_BUFFERING">فعال کردن بافرگذاری</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_BUFFER_DURATION">مدت بافر صدا</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_TIME_STRETCHING">فعال کردن گسترش زمان</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_TIME_STRETCHING_THRESHOLD">حد گسترش زمان</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO">ویدیو</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_FRAME_LIMIT">محدودیت فریم</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_ANISOTROPIC_OVERRIDE">فیلتر آنیزوتروپیک</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_OUTPUT_SCALING">مقیاس‌بندی خروجی</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_RCAS_SHARPENING">شدت تیزکننده FidelityFX CAS</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_STRETCH_TO_DISPLAY">کشیدن به منطقه نمایش</string>
+    <string name="HOME_MENU_SETTINGS_INPUT">ورودی</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_BACKGROUND_INPUT">ورودی در حالت پس‌زمینه</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_KEEP_PADS_CONNECTED">نگه داشتن کنترل‌ها متصل</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_SHOW_PS_MOVE_CURSOR">نمایش موس PS Move</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_CAMERA_FLIP">باز کردن دوربین</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_PAD_MODE">حالت کنترل</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_PAD_SLEEP">زمان خواب کنترل</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_FAKE_MOVE_ROTATION_CONE_H">دایره چرخش PS Move مجازی (افقی)</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_FAKE_MOVE_ROTATION_CONE_V">دایره چرخش PS Move مجازی (عمودی)</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED">پیشرفته</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_PREFERRED_SPU_THREADS">تعداد SPUهای ترجیحی</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_MAX_CPU_PREEMPTIONS">حداکثر پیش‌گیری CPU برای صرفه‌جویی در انرژی</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_ACCURATE_RSX_RESERVATION_ACCESS">دسترسی دقیق به رزرو RSX</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_SLEEP_TIMERS_ACCURACY">دقت تایمر خواب</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_MAX_SPURS_THREADS">حداکثر ترد SPURS</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_DRIVER_WAKE_UP_DELAY">تاخیر بیداری درایور</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_VBLANK_FREQUENCY">فرکانس VBlank</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_VBLANK_NTSC">تعمیرات NTSC VBlank</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS">لایه‌های اضافی</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_TROPHY_POPUPS">نمایش هشدار مدال‌ها</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_RPCN_POPUPS">نمایش هشدار RPCN</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_SHADER_COMPILATION_HINT">نمایش راهنمایی کامپایل شیدر</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_PPU_COMPILATION_HINT">نمایش راهنمایی کامپایل PPU</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_AUTO_SAVE_LOAD_HINT">نمایش راهنمایی خودکار</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_PRESSURE_INTENSITY_TOGGLE_HINT">راهنمایی شدت فشار دکمه‌ها</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_ANALOG_LIMITER_TOGGLE_HINT">راهنمایی محدودکننده آنالوگ</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_MOUSE_AND_KB_TOGGLE_HINT">راهنمایی موس و صفحه‌کلید</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY">لایه عملکرد</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_ENABLE">فعال کردن لایه عملکرد</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_ENABLE_FRAMERATE_GRAPH">نمودار فریم‌ریت</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_ENABLE_FRAMETIME_GRAPH">نمودار زمان فریم</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_DETAIL_LEVEL">سطح جزئیات</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMERATE_DETAIL_LEVEL">جزئیات نمودار فریم‌ریت</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMETIME_DETAIL_LEVEL">جزئیات نمودار زمان فریم</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMERATE_DATAPOINT_COUNT">تعداد داده فریم</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMETIME_DATAPOINT_COUNT">تعداد داده زمان فریم</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_UPDATE_INTERVAL">فاصله بروزرسانی</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_POSITION">موقعیت</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_CENTER_X">مرکز افقی</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_CENTER_Y">مرکز عمودی</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_MARGIN_X">حاشیه افقی</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_MARGIN_Y">حاشیه عمودی</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FONT_SIZE">اندازه فونت</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_OPACITY">شفافیت</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG">خطاگیری</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_OVERLAY">لایه خطاگیری</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_INPUT_OVERLAY">لایه ورودی خطاگیری</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_DISABLE_VIDEO_OUTPUT">غیرفعال کردن خروجی ویدیو</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_TEXTURE_LOD_BIAS">افزودن بایاس LOD بافت</string>
+    <string name="HOME_MENU_SCREENSHOT">گرفتن اسکرین‌شات</string>
+    <string name="HOME_MENU_SAVESTATE">ذخیره وضعیت</string>
+    <string name="HOME_MENU_SAVESTATE_SAVE">ذخیره وضعیت اجرایی</string>
+    <string name="HOME_MENU_SAVESTATE_AND_EXIT">ذخیره وضعیت و خروج</string>
+    <string name="HOME_MENU_RELOAD_SAVESTATE">بارگیری مجدد آخرین وضعیت</string>
+    <string name="HOME_MENU_RECORDING">شروع/پایان ضبط</string>
+    <string name="HOME_MENU_TROPHIES">مدال‌ها</string>
+    <string name="HOME_MENU_TROPHY_LIST_TITLE">پیشرفت مدال: %0</string>
+    <string name="HOME_MENU_TROPHY_LOCKED_TITLE">مدال قفل شده: %0</string>
+    <string name="HOME_MENU_TROPHY_HIDDEN_TITLE">مدال پنهان</string>
+    <string name="HOME_MENU_TROPHY_HIDDEN_DESCRIPTION">این مدال پنهان است</string>
+    <string name="HOME_MENU_TROPHY_SHOW_HIDDEN_TROPHIES">نمایش مدال‌های پنهان</string>
+    <string name="HOME_MENU_TROPHY_HIDE_HIDDEN_TROPHIES">پنهان کردن مدال‌های پنهان</string>
+    <string name="HOME_MENU_TROPHY_PLATINUM_RELEVANT">مربوط به پلاتینیوم</string>
+    <string name="HOME_MENU_TROPHY_GRADE_BRONZE">برنز</string>
+    <string name="HOME_MENU_TROPHY_GRADE_SILVER">نقره‌ای</string>
+    <string name="HOME_MENU_TROPHY_GRADE_GOLD">طلایی</string>
+    <string name="HOME_MENU_TROPHY_GRADE_PLATINUM">پلاتینیوم</string>
+
+	<string name="AUDIO_MUTED">صدا خاموش</string>
+	<string name="AUDIO_UNMUTED">صدا روشن</string>
+	<string name="AUDIO_CHANGED">ولوم به %0 تغییر کرد</string>
+	<string name="PROGRESS_DIALOG_PROGRESS">پیشرفت:</string>
+	<string name="PROGRESS_DIALOG_PROGRESS_ANALYZING">در حال تحلیل...</string>
+	<string name="PROGRESS_DIALOG_REMAINING">باقی‌مانده</string>
+	<string name="PROGRESS_DIALOG_DONE">انجام شد</string>
+	<string name="PROGRESS_DIALOG_FILE">فایل</string>
+	<string name="PROGRESS_DIALOG_MODULE">ماژول</string>
+	<string name="PROGRESS_DIALOG_OF">از</string>
+	<string name="PROGRESS_DIALOG_PLEASE_WAIT">لطفا صبر کنید</string>
+	<string name="PROGRESS_DIALOG_STOPPING_PLEASE_WAIT">در حال متوقف کردن. لطفا صبر کنید...</string>
+	<string name="PROGRESS_DIALOG_SAVESTATE_PLEASE_WAIT">در حال ایجاد وضعیت ذخیره. لطفا صبر کنید...</string>
+	<string name="PROGRESS_DIALOG_SCANNING_PPU_EXECUTABLE">در حال اسکن کردن PPU اجرایی...</string>
+	<string name="PROGRESS_DIALOG_ANALYZING_PPU_EXECUTABLE">در حال تحلیل PPU اجرایی...</string>
+	<string name="PROGRESS_DIALOG_SCANNING_PPU_MODULES">اسکن ماژول‌های PPU...</string>
+	<string name="PROGRESS_DIALOG_LOADING_PPU_MODULES">بارگیری ماژول‌های PPU...</string>
+	<string name="PROGRESS_DIALOG_COMPILING_PPU_MODULES">کامپایل ماژول‌های PPU...</string>
+	<string name="PROGRESS_DIALOG_LINKING_PPU_MODULES">لینک کردن ماژول‌های PPU...</string>
+	<string name="PROGRESS_DIALOG_APPLYING_PPU_CODE">در حال اعمال کد PPU...</string>
+	<string name="PROGRESS_DIALOG_BUILDING_SPU_CACHE">در حال ساخت کش SPU...</string>
+	<string name="EMULATION_PAUSED_RESUME_WITH_START">برای ادامه دکمه START را نگه دارید</string>
+	<string name="EMULATION_RESUMING">در حال ادامه...!</string>
+	<string name="EMULATION_FROZEN">اپلیکیشن PS3 احتمالا کرش کرده است، می‌توانید آن را ببندید.</string>
+	<string name="SAVESTATE_FAILED_DUE_TO_SAVEDATA">ذخیره وضعیت ناموفق بود: در حال ذخیره بازی است، تا پایان صبر کنید.</string>
+	<string name="SAVESTATE_FAILED_DUE_TO_VDEC">ذخیره وضعیت ناموفق بود: ویدیو/کات‌سین‌های VDEC در صف، تا پایان صبر کنید یا libvdec.sprx را فعال کنید.</string>
+	<string name="SAVESTATE_FAILED_DUE_TO_MISSING_SPU_SETTING">ذخیره وضعیت ناموفق بود: قفل SPU ناموفق، فعال کردن حالت SPU-Compatible ممکن است رفعش کند.</string>
+	<string name="SAVESTATE_FAILED_DUE_TO_SPU">ذخیره وضعیت ناموفق بود: قفل SPU ناموفق، استفاده از SPU ASMJIT رفعش می‌کند.</string>
+	<string name="PROGRESS_DIALOG_PRELOADING_SHADER_CACHE">در حال پیش‌بارگیری شیدرها از دیسک...</string>
+
+</resources>

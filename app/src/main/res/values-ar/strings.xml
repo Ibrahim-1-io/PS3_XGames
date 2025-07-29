@@ -1,0 +1,999 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Fallback-->
+    <string name="emulator_settings_video_performance_overlay_font">Font</string>
+    <string name="emulator_settings_audio_disable_sampling_skip">Disable Sampling Skip</string>
+
+    <string name="use_cores_ppu">استخدام النوى (PPU)</string>
+    <string name="use_cores_spu">استخدام النوى (SPU)</string>
+    <string name="use_cores_rsx">استخدام النوى (RSX)</string>
+    <string name="emulator_settings_core_thread_affinity_mask">قناع الانتساب للخيوط</string>
+    <string name="create_shortcut">إنشاء اختصار</string>
+    <string name="loading">جارٍ التحميل...</string>
+    <string name="resolution_not_support">الدقة أو نسبة العرض غير مدعومة\nاللعبة الحالية تدعم فقط:\n%s\n\nيرجى التعديل باستخدام الإعدادات التالية:\n%s\n%s\n</string>
+    <string name="show_game_info">عرض معلومات اللعبة</string>
+    <string name="quick_start_page">الصفحة البدء السريع</string>
+    <string name="prev_step">الخطوة السابقة</string>
+    <string name="next_step">الخطوة التالية</string>
+    <string name="finish">إنهاء</string>
+
+    <string name="welcome">مرحباً</string>
+    <string name="welcome_content">مرحباً بك في %s!</string>
+    <string name="welcome_content2">بضع خطوات بسيطة، وأنت جاهز للعب، انقر على "%s" للبدء.</string>
+
+    <string name="install_ps3_firmware_hiht_content">لتشغيل اللعبة، يجب تثبيت برنامج النظام PS3 (PS3UPDAT.PUP). يرجى تحديد ملف البرنامج.</string>
+    <string name="ps3_firmware_installed">تم تثبيت البرنامج</string>
+    <string name="select_ps3_firmware">حدد برنامج PS3 (PS3UPDAT.PUP)</string>
+    <string name="firmware_not_install">البرنامج غير مثبت</string>
+
+    <string name="select_ps3_iso_dir_hiht_content">يرجى تحديد دليل ملفات PS3 ISO، سيقوم التطبيق بمسح تلقائي لاسترجاع الألعاب الصالحة، يمكنك أيضاً تخطي هذه الخطوة وتثبيت ملف .pkg مباشرة.</string>
+    <string name="ps3_iso_dir_is_set">تم تحديد دليل PS3 ISO</string>
+
+    <string name="font_select_hiht_content">يرجى اختيار ملف خط (*.ttf, *.ttc, *.otf) للتثبيت، أو يمكنك استخدام خط من برنامج نظام PS3 (قد تفوت بعض الحروف).</string>
+    <string name="custom_font_path_prefix">مسار الخط: </string>
+    <string name="select_gpu_driver_hiht_content">يرجى اختيار برنامج تشغيل GPU، يمكنك أيضاً تخطي هذه الخطوة (قد تحدث أخطاء في تشغيل اللعبة).</string>
+    <string name="custom_gpu_driver_path_prefix">مسار برنامج التشغيل GPU: </string>
+
+    <string name="modify_config_hiht_content">سيختار المحاكي إعدادات مناسبة تلقائياً، ولكن قد تسبب بعض الإعدادات مشاكل على جهازك. يمكنك تعديلها لاحقاً في الإعدادات.</string>
+
+    <string name="msg_processing">جارٍ المعالجة...</string>
+    <string name="msg_failed">فشل!</string>
+
+    <string name="emulator_settings_video_vulkan_debug">تصحيح الأخطاء</string>
+    <string name="emulator_settings_miscellaneous_memory_debug_overlay">طبقة تصحيح الذاكرة</string>
+
+    <string name="vibrator_duration">مدة الاهتزاز</string>
+    <string name="enable_vibrator">تفعيل الاهتزاز</string>
+    <string name="dynamic_joystick">ذراع التحكم الديناميكي</string>
+    <string name="disable">تعطيل</string>
+
+    <string name="disable_virtual_keyboard">تعطيل لوحة المفاتيح الافتراضية</string>
+    <string name="joystick">ذراع التحكم</string>
+    <string name="dpad">D-pad</string>
+    <string name="button">زر</string>
+    <string name="lr">LR</string>
+    <string name="start_select">ابدأ/حدد</string>
+
+    <string name="enable_log">تفعيل السجل</string>
+    <string name="use_global_config">استخدام الإعدادات العامة</string>
+    <string name="edit_custom_config">تعديل الإعدادات المخصصة</string>
+    <string name="clear">مسح</string>
+    <string name="press_a_key">اضغط أي مفتاح للمتابعة...</string>
+    <string name="game_list_loading">قائمة الألعاب قيد التحميل...</string>
+    <string name="undecrypted_game">لا يدعم تشغيل الألعاب غير المشفرة حالياً</string>
+    <string name="delete_game_data">حذف بيانات اللعبة</string>
+    <string name="delete_hdd0_install_data">حذف بيانات التثبيت hdd0</string>
+    <string name="delete_game_and_data">حذف اللعبة والبيانات</string>
+    <string name="delete_shaders_cache">حذف ذاكرة التخزين المؤقتة للـ Shaders</string>
+
+    <string name="set_iso_dir">تحديد دليل (*.iso)</string>
+    <string name="device_info">معلومات الجهاز</string>
+    <string name="reset_as_default">إعادة التعيين كافتراضي</string>
+    <string name="save_and_quit">حفظ &amp; إنهاء</string>
+    <string name="scale_rate">معدل القياس</string>
+    <string name="open_file_manager">فتح مدير الملفات</string>
+    <string name="installing_firmware">جارٍ تثبيت البرنامج...</string>
+    <string name="refresh_list">تحديث القائمة</string>
+    <string name="select_game">تحديد لعبة</string>
+    <string name="install_firmware">تثبيت البرنامج</string>
+    <string name="install_game">تثبيت RAP/PKG</string>
+    <string name="installing_game">جارٍ تثبيت اللعبة...</string>
+    <string name="about">حول</string>
+    <string name="quit">إنهاء</string>
+    <string name="update_log">سجل التحديثات</string>
+    <string name="empty_game_list">قائمة الألعاب فارغة، يرجى إضافة ألعاب عن طريق تثبيت ملف pkg أو تحديد دليل *.iso</string>
+    <string name="delete">حذف</string>
+    <string name="settings">الإعدادات</string>
+    <string name="gratitude">الامتنان</string>
+    <string name="gratitude_content">شكراً لـ Ruban على جميع الأيقونات\n\n
+        شكراً لـ SRC267 (Sting) لإدارة reddit/discord\n\n
+        شكراً لـ妖妖 على الاختبار\n\n
+        شكراً لـ再见某人 على تبرعه بجهاز GPD XP، مما ساعد بشكل كبير في عملية الاختبار.\n\n
+        شكراً لـ再见某人 على تبرعه بمعدات التطوير، والتي كانت حاسمة في تقدم المشروع.\n\n
+        شكراً للأشخاص التاليين الذين دعموا هذا المشروع مالياً (في المرحلة الأولية، مرتبة حسب التاريخ):\n\n</string>
+    <string name="gratitude_content2">
+        مبني على تحسين نقل RPCS3، شكراً لجميع مشاركين مشروع RPCS3\n\n
+        ترجمة qwen3
+    </string>
+    <string name="key_mappers">مُخطّطات المفاتيح</string>
+    <string name="virtual_pad_edit">تحرير الـ VirtualPad</string>
+
+    <string name="left">يسار</string>
+    <string name="up">أعلى</string>
+    <string name="right">يمين</string>
+    <string name="down">أسفل</string>
+
+    <string name="square">مربع</string>
+    <string name="cross">صليب</string>
+    <string name="circle">دائرة</string>
+    <string name="triangle">مثلث</string>
+
+    <string name="l1">L1</string>
+    <string name="l2">L2</string>
+    <string name="l3">L3</string>
+
+    <string name="r1">R1</string>
+    <string name="r2">R2</string>
+    <string name="r3">R3</string>
+
+    <string name="start">ابدأ</string>
+    <string name="select">حدد</string>
+    <string name="ps">PS</string>
+
+    <string name="emulator_settings_video_vulkan_custom_driver_library_path_dialog_title">حدد برنامج تشغيل مخصص</string>
+    <string name="emulator_settings_video_vulkan_custom_driver_library_path_dialog_add_hint">إضافة برنامج تشغيل مخصص (*.zip, *.so)</string>
+
+    <string name="emulator_settings_miscellaneous_custom_font_file_path_dialog_title">حدد خط مخصص</string>
+    <string name="emulator_settings_miscellaneous_custom_font_file_path_dialog_add_hint">إضافة خط مخصص (*.ttf, *.ttc, *.otf)</string>
+
+    <string name="emulator_settings_core">النواة</string>
+    <string name="emulator_settings_core_ppu_decoder">فوكه PPU</string>
+    <string-array name="core_ppu_decoder_entries">
+        <item>مفسر (ثابت)</item>
+        <item>مُجمّع (LLVM)</item>
+    </string-array>
+    <string name="emulator_settings_core_ppu_threads">خيوط PPU</string>
+    <string name="emulator_settings_core_ppu_debug">تصحيح PPU</string>
+    <string name="emulator_settings_core_ppu_calling_history">تاريخ الاستدعاءات PPU</string>
+    <string name="emulator_settings_core_save_llvm_logs">حفظ سجلات LLVM</string>
+    <string name="emulator_settings_core_use_llvm_cpu">استخدام CPU LLVM</string>
+    <string name="emulator_settings_core_max_llvm_compile_threads">الحد الأقصى لخيوط التحويل LLVM</string>
+    <string name="emulator_settings_core_ppu_llvm_greedy_mode">وضعية الجشع PPU LLVM</string>
+    <string name="emulator_settings_core_llvm_precompilation">التحويل المسبق LLVM</string>
+    <string name="emulator_settings_core_thread_scheduler_mode">وضعية جدولة الخيوط</string>
+    <string-array name="core_thread_scheduler_mode_entries">
+        <item>نظام التشغيل</item>
+        <item>الانتساب</item>
+    </string-array>
+    <string name="emulator_settings_core_set_daz_and_ftz">تعيين DAZ و FTZ</string>
+    <string name="emulator_settings_core_spu_decoder">فوكه SPU</string>
+    <string-array name="core_spu_decoder_entries">
+        <item>مفسر (ثابت)</item>
+        <item>مفسر (ديناميكي)</item>
+        <item>مُجمّع (ASMJIT)</item>
+        <item>مُجمّع (LLVM)</item>
+    </string-array>
+    <string name="emulator_settings_core_spu_reservation_busy_waiting_percentage">نسبة الانتظار SPU</string>
+    <string name="emulator_settings_core_spu_getllar_busy_waiting_percentage">نسبة الانتظار SPU GETLLAR</string>
+    <string name="emulator_settings_core_disable_spu_getllar_spin_optimization">تعطيل تحسين الدوران SPU GETLLAR</string>
+    <string name="emulator_settings_core_spu_debug">تصحيح SPU</string>
+    <string name="emulator_settings_core_mfc_debug">تصحيح MFC</string>
+    <string name="emulator_settings_core_preferred_spu_threads">الخيوط SPU المفضلة</string>
+    <string name="emulator_settings_core_spu_delay_penalty">عقوبة التأخير SPU</string>
+    <string name="emulator_settings_core_spu_loop_detection">كشف الحلقات SPU</string>
+    <string name="emulator_settings_core_max_spurs_threads">الحد الأقصى لخيوط SPURS</string>
+    <string name="emulator_settings_core_spu_block_size">حجم الكتلة SPU</string>
+    <string-array name="core_spu_block_size_entries">
+        <item>آمن</item>
+        <item>ميجا</item>
+        <item>جيجا</item>
+    </string-array>
+    <string name="emulator_settings_core_accurate_spu_dma">DMA SPU الدقيق</string>
+    <string name="emulator_settings_core_accurate_spu_reservations">الحجوزات SPU الدقيقة</string>
+    <string name="emulator_settings_core_accurate_cache_line_stores">محلات الكاش الدقيقة</string>
+    <string name="emulator_settings_core_accurate_rsx_reservation_access">وصول RSX الدقيق</string>
+    <string name="emulator_settings_core_rsx_fifo_accuracy">دقة FIFO RSX</string>
+    <string-array name="core_rsx_fifo_accuracy_entries">
+        <item>سريع</item>
+        <item>ذري</item>
+        <item>مرتب وذري</item>
+        <item>PS3</item>
+    </string-array>
+    <string name="emulator_settings_core_spu_verification">التحقق من SPU</string>
+    <string name="emulator_settings_core_spu_cache">كاش SPU</string>
+    <string name="emulator_settings_core_spu_profiler">محلل SPU</string>
+    <string name="emulator_settings_core_mfc_commands_shuffling_limit">حد خلط الأوامر MFC</string>
+    <string name="emulator_settings_core_mfc_commands_timeout">مهلة الأوامر MFC</string>
+    <string name="emulator_settings_core_mfc_commands_shuffling_in_steps">خلط الأوامر MFC خطوة بخطوة</string>
+    <string name="emulator_settings_core_enable_tsx">تفعيل TSX</string>
+    <string-array name="core_enable_tsx_entries">
+        <item>معطل</item>
+        <item>مفعل</item>
+        <item>مضبوط</item>
+    </string-array>
+    <string name="emulator_settings_core_xfloat_accuracy">دقة XFloat</string>
+    <string-array name="core_xfloat_accuracy_entries">
+        <item>دقيق</item>
+        <item>تقريبي</item>
+        <item>مرن</item>
+        <item>غير دقيق</item>
+    </string-array>
+    <string name="emulator_settings_core_accurate_ppu_128byte_reservation_op_max_length">طول العملية PPU 128 بايت</string>
+    <string name="emulator_settings_core_stub_ppu_traps">فخاخ PPU المُحاكاة</string>
+    <string name="emulator_settings_core_precise_spu_verification">التحقق الدقيق من SPU</string>
+    <string name="emulator_settings_core_ppu_llvm_java_mode_handling">معالجة وضع Java PPU LLVM</string>
+    <string name="emulator_settings_core_use_accurate_dfma">استخدام DFMA الدقيق</string>
+    <string name="emulator_settings_core_ppu_set_saturation_bit">تعيين بت التشبع PPU</string>
+    <string name="emulator_settings_core_ppu_accurate_nonjava_mode">وضع غير Java PPU الدقيق</string>
+    <string name="emulator_settings_core_ppu_fixup_vector_nan_values">تصحيح قيم Vector NaN PPU</string>
+    <string name="emulator_settings_core_ppu_accurate_vector_nan_values">قيم Vector NaN PPU الدقيقة</string>
+    <string name="emulator_settings_core_ppu_set_fpcc_bits">تعيين بتات FPCC PPU</string>
+    <string name="emulator_settings_core_debug_console_mode">وضعية وحدة التحكم التصحيحية</string>
+    <string name="emulator_settings_core_hook_static_functions">ربط الوظائف الثابتة</string>
+    <string name="emulator_settings_core_libraries_control">التحكم بالمكتبات</string>
+    <string name="emulator_settings_core_hle_lwmutex">HLE lwmutex</string>
+    <string name="emulator_settings_core_spu_llvm_lower_bound">حد SPU LLVM السفلي</string>
+    <string name="emulator_settings_core_spu_llvm_upper_bound">حد SPU LLVM العلوي</string>
+    <string name="emulator_settings_core_tsx_transaction_first_limit">الحد الأول لمعاملات TSX</string>
+    <string name="emulator_settings_core_tsx_transaction_second_limit">الحد الثاني لمعاملات TSX</string>
+    <string name="emulator_settings_core_clocks_scale">مقياس الساعات</string>
+    <string name="emulator_settings_core_spu_wakeup_delay">مدة استيقاظ SPU</string>
+    <string name="emulator_settings_core_spu_wakeup_delay_thread_mask">قناع استيقاظ SPU</string>
+    <string name="emulator_settings_core_max_cpu_preempt_count">الحد الأقصى للاستيلاء CPU</string>
+    <string name="emulator_settings_core_allow_rsx_cpu_preemptions">السماح باستيلاء RSX CPU</string>
+    <string name="emulator_settings_core_sleep_timers_accuracy">دقة مؤقتات النوم</string>
+    <string-array name="core_sleep_timers_accuracy_entries">
+        <item>كالمضيف</item>
+        <item>Usleep فقط</item>
+        <item>جميع المؤقتات</item>
+    </string-array>
+    <string name="emulator_settings_core_usleep_time_addend">إضافة Usleep</string>
+    <string name="emulator_settings_core_performance_report_threshold">عتبة تقرير الأداء</string>
+    <string name="emulator_settings_core_enable_performance_report">تفعيل تقرير الأداء</string>
+    <string name="emulator_settings_core_assume_external_debugger">افتراض وجود مُصحح خارجي</string>
+    <string name="emulator_settings_video">الفيديو</string>
+    <string name="emulator_settings_video_vertex_buffer_upload_mode">وضعية رفع المخزن المؤقت</string>
+    <string-array name="video_vertex_buffer_upload_mode_entries">
+        <item>تلقائي</item>
+        <item>عرض المخزن</item>
+        <item>المخزن</item>
+    </string-array>
+    <string name="emulator_settings_video_texture_upload_mode">وضعية رفع الملمس</string>
+    <string-array name="video_texture_upload_mode_entries">
+        <item>CPU</item>
+        <item>GPU</item>
+    </string-array>
+    <string name="emulator_settings_video_renderer">المحرّك</string>
+    <string-array name="video_renderer_entries">
+        <item>لا شيء</item>
+        <item>Vulkan</item>
+    </string-array>
+    <string name="emulator_settings_video_resolution">الدقة</string>
+    <string-array name="video_resolution_entries">
+        <item>1920x1080</item>
+        <item>1920x1080i</item>
+        <item>1280x720</item>
+        <item>720x480</item>
+        <item>720x480i</item>
+        <item>720x576</item>
+        <item>720x576i</item>
+        <item>1600x1080</item>
+        <item>1440x1080</item>
+        <item>1280x1080</item>
+        <item>960x1080</item>
+    </string-array>
+    <string name="emulator_settings_video_aspect_ratio">نسبة العرض</string>
+    <string-array name="video_aspect_ratio_entries">
+        <item>4:3</item>
+        <item>16:9</item>
+    </string-array>
+    <string name="emulator_settings_video_frame_limit">حد الإطارات</string>
+    <string-array name="video_frame_limit_entries">
+        <item>معطل</item>
+        <item>30</item>
+        <item>50</item>
+        <item>60</item>
+        <item>120</item>
+        <item>الشاشة</item>
+        <item>تلقائي</item>
+        <item>PS3 الأصلية</item>
+        <item>غير محدود</item>
+    </string-array>
+    <string name="emulator_settings_video_second_frame_limit">الحد الثاني للإطارات</string>
+
+<string name="emulator_settings_video_msaa">وضعية مضاعفة تسوية الحواف (MSAA)</string>
+<string-array name="video_msaa_entries">
+		<item>معطل</item>
+		<item>تلقائي</item>
+	</string-array>
+<string name="emulator_settings_video_shader_mode">وضعية الظل</string>
+<string-array name="video_shader_mode_entries">
+		<item>مُجمّع الظلال</item>
+		<item>مُجمّع الظلال غير المتزامن</item>
+		<item>غير المتزامن مع مفسر الظلال</item>
+		<item>مفسر الظلال فقط</item>
+	</string-array>
+<string name="emulator_settings_video_shader_precision">دقة الظل</string>
+<string-array name="video_shader_precision_entries">
+		<item>عالي جداً</item>
+		<item>عالي</item>
+		<item>منخفض</item>
+		<item>تلقائي</item>
+	</string-array>
+<string name="emulator_settings_video_write_color_buffers">كتابة أجهزة تخزين الألوان</string>
+<string name="emulator_settings_video_write_depth_buffer">كتابة جهاز تخزين العمق</string>
+<string name="emulator_settings_video_read_color_buffers">قراءة أجهزة تخزين الألوان</string>
+<string name="emulator_settings_video_read_depth_buffer">قراءة جهاز تخزين العمق</string>
+<string name="emulator_settings_video_handle_rsx_memory_tiling">معالجة تبليط الذاكرة (RSX)</string>
+<string name="emulator_settings_video_log_shader_programs">تسجيل برامج الظلال</string>
+<string name="emulator_settings_video_vsync">مُزامنة العمودي (VSync)</string>
+<string name="emulator_settings_video_debug_output">إخراج التصحيح</string>
+<string name="emulator_settings_video_debug_overlay">طبقة التصحيح</string>
+<string name="emulator_settings_video_renderdoc_compatibility_mode">وضعية توافق Renderdoc</string>
+<string name="emulator_settings_video_use_gpu_texture_scaling">استخدام توسيع نصوص GPU</string>
+<string name="emulator_settings_video_stretch_to_display_area">تمديد إلى مساحة العرض</string>
+<string name="emulator_settings_video_force_high_precision_z_buffer">فرض دقة عالية لجهاز تخزين Z</string>
+<string name="emulator_settings_video_strict_rendering_mode">وضعية العرض الصارمة</string>
+<string name="emulator_settings_video_disable_zcull_occlusion_queries">تعطيل استفسارات ZCull التعتيمية</string>
+<string name="emulator_settings_video_disable_video_output">تعطيل إخراج الفيديو</string>
+<string name="emulator_settings_video_disable_vertex_cache">تعطيل ذاكرة التخزين المؤقتة للرأس</string>
+<string name="emulator_settings_video_disable_fifo_reordering">تعطيل إعادة ترتيب FIFO</string>
+<string name="emulator_settings_video_enable_frame_skip">تفعيل تخطي الإطارات</string>
+<string name="emulator_settings_video_force_cpu_blit">فرض نقل CPU</string>
+<string name="emulator_settings_video_disable_ondisk_shader_cache">تعطيل ذاكرة التخزين المؤقتة للظلال على القرص</string>
+<string name="emulator_settings_video_disable_vulkan_memory_allocator">تعطيل مُخصّص الذاكرة Vulkan</string>
+<string name="emulator_settings_video_use_full_rgb_output_range">استخدام نطاق إخراج RGB الكامل</string>
+<string name="emulator_settings_video_strict_texture_flushing">تفريغ النسيج الصارم</string>
+<string name="emulator_settings_video_multithreaded_rsx">RSX متعدد الخيوط</string>
+<string name="emulator_settings_video_relaxed_zcull_sync">تخفيف تزامن ZCULL</string>
+<string name="emulator_settings_video_force_hardware_msaa_resolve">فرض حل الأجهزة MSAA</string>
+<string name="emulator_settings_video_3d_display_mode">وضعية عرض 3D</string>
+<string-array name="video_3d_display_mode_entries">
+		<item>معطل</item>
+		<item>جانبًا إلى جانب</item>
+		<item>فوق-تحت</item>
+		<item>مُتشابك</item>
+		<item>أناغلايف أحمر-أخضر</item>
+		<item>أناغلايف أحمر-أزرق</item>
+		<item>أناغلايف أحمر-سماوي</item>
+		<item>أناغلايف ماجنتا-سماوي</item>
+		<item>أناغلايف ثلاثي الأبعاد</item>
+		<item>أناغلايف أمبر-أزرق</item>
+	</string-array>
+<string name="emulator_settings_video_debug_program_analyser">محلل البرامج للتصحيح</string>
+<string name="emulator_settings_video_accurate_zcull_stats">إحصائيات ZCULL الدقيقة</string>
+<string name="emulator_settings_video_consecutive_frames_to_draw">الإطارات المتتالية للرسم</string>
+<string name="emulator_settings_video_consecutive_frames_to_skip">الإطارات المتتالية للتخطي</string>
+<string name="emulator_settings_video_resolution_scale">مقياس الدقة</string>
+<string name="emulator_settings_video_anisotropic_filter_override">تجاوز مرشح أنيسوتروبي</string>
+<string name="emulator_settings_video_texture_lod_bias_addend">إضافة تحيز LOD للنسيج</string>
+<string name="emulator_settings_video_minimum_scalable_dimension">الحد الأدنى لأبعاد القابلية للتحجيم</string>
+<string name="emulator_settings_video_shader_compiler_threads">خيوط مُجمّع الظلال</string>
+<string name="emulator_settings_video_driver_recovery_timeout">مهلة استرداد المُشغّل</string>
+<string name="emulator_settings_video_driver_wakeup_delay">مدة تأخير إيقاظ المُشغّل</string>
+<string name="emulator_settings_video_vblank_rate">معدل VBlank</string>
+<string name="emulator_settings_video_vblank_ntsc_fixup">إصلاح NTSC لـ VBlank</string>
+<string name="emulator_settings_video_decr_memory_layout">تخطيط الذاكرة DECR</string>
+<string name="emulator_settings_video_allow_host_gpu_labels">السماح بعلامات GPU المضيف</string>
+<string name="emulator_settings_video_disable_msl_fast_math">تعطيل الرياضيات السريعة MSL</string>
+<string name="emulator_settings_video_disable_asynchronous_memory_manager">تعطيل مدير الذاكرة غير المتزامن</string>
+<string name="emulator_settings_video_output_scaling_mode">وضعية توسيع الإخراج</string>
+<string-array name="video_output_scaling_mode_entries">
+		<item>الأقرب</item>
+		<item>ثنائي الخطية</item>
+		<item>الدقة الفائقة FidelityFX</item>
+	</string-array>
+<string name="emulator_settings_video_use_bgra_format">استخدام صيغة BGRA</string>
+<string name="emulator_settings_video_force_convert_texture">فرض تحويل النسيج</string>
+<string name="emulator_settings_video_vulkan">Vulkan</string>
+<string name="emulator_settings_video_vulkan_adapter">المحول</string>
+<string name="emulator_settings_video_vulkan_force_fifo_present_mode">فرض وضعية FIFO</string>
+<string name="emulator_settings_video_vulkan_force_primitive_restart_flag">فرض علم إعادة تشغيل البدائيات</string>
+<string name="emulator_settings_video_vulkan_exclusive_fullscreen_mode">وضعية ملء الشاشة الحصرية</string>
+<string-array name="video_vulkan_exclusive_fullscreen_mode_entries">
+		<item>تلقائي</item>
+		<item>عطل</item>
+		<item>فعل</item>
+	</string-array>
+<string name="emulator_settings_video_vulkan_asynchronous_texture_streaming_2">تدفق النسيج غير المتزامن 2</string>
+<string name="emulator_settings_video_vulkan_fidelityfx_cas_sharpening_intensity">شدة حدة FidelityFX CAS</string>
+<string name="emulator_settings_video_vulkan_asynchronous_queue_scheduler">جدولة الطابور غير المتزامن</string>
+<string-array name="video_vulkan_asynchronous_queue_scheduler_entries">
+		<item>آمن</item>
+		<item>سريع</item>
+	</string-array>
+<string name="emulator_settings_video_vulkan_vram_allocation_limit">حد تخصيص VRAM (ميغابايت)</string>
+<string name="emulator_settings_video_vulkan_use_custom_driver">استخدام مُشغّل مخصص</string>
+<string name="emulator_settings_video_vulkan_custom_driver_library_path">مسار مكتبة المُشغّل المخصص</string>
+<string name="emulator_settings_video_vulkan_custom_driver_force_max_clocks">فرض الساعات القصوى للمُشغّل المخصص</string>
+<string name="emulator_settings_video_performance_overlay">طبقة الأداء</string>
+<string name="emulator_settings_video_performance_overlay_enabled">مفعل</string>
+<string name="emulator_settings_video_performance_overlay_enable_framerate_graph">تفعيل رسم معدل الإطارات</string>
+<string name="emulator_settings_video_performance_overlay_enable_frametime_graph">تفعيل رسم وقت الإطارات</string>
+<string name="emulator_settings_video_performance_overlay_framerate_datapoints">نقاط بيانات معدل الإطارات</string>
+<string name="emulator_settings_video_performance_overlay_frametime_datapoints">نقاط بيانات وقت الإطارات</string>
+<string name="emulator_settings_video_performance_overlay_detail_level">مستوى التفاصيل</string>
+<string-array name="video_performance_overlay_detail_level_entries">
+		<item>بدون</item>
+		<item>حد أدنى</item>
+		<item>منخفض</item>
+		<item>متوسط</item>
+		<item>عالي</item>
+	</string-array>
+<string name="emulator_settings_video_performance_overlay_framerate_graph_detail_level">مستوى تفاصيل رسم معدل الإطارات</string>
+<string-array name="video_performance_overlay_framerate_graph_detail_level_entries">
+		<item>حد أدنى</item>
+		<item>عرض الحد الأدنى والأعلى</item>
+		<item>عرض 1% والمتوسط</item>
+		<item>الكل</item>
+	</string-array>
+<string name="emulator_settings_video_performance_overlay_frametime_graph_detail_level">مستوى تفاصيل رسم وقت الإطارات</string>
+<string-array name="video_performance_overlay_frametime_graph_detail_level_entries">
+		<item>حد أدنى</item>
+		<item>عرض الحد الأدنى والأعلى</item>
+		<item>عرض 1% والمتوسط</item>
+		<item>الكل</item>
+	</string-array>
+<string name="emulator_settings_video_performance_overlay_metrics_update_interval">فترة تحديث المقاييس</string>
+<string name="emulator_settings_video_performance_overlay_font_size">حجم الخط (بكسل)</string>
+<string name="emulator_settings_video_performance_overlay_position">الموضع</string>
+<string-array name="video_performance_overlay_position_entries">
+		<item>الزاوية العلوية اليسرى</item>
+		<item>الزاوية العلوية اليمنى</item>
+		<item>الزاوية السفلية اليسرى</item>
+		<item>الزاوية السفلية اليمنى</item>
+	</string-array>
+<string name="emulator_settings_video_performance_overlay_center_horizontally">توسيط أفقي</string>
+<string name="emulator_settings_video_performance_overlay_center_vertically">توسيط رأسي</string>
+<string name="emulator_settings_video_performance_overlay_horizontal_margin">هوامش أفقية (بكسل)</string>
+<string name="emulator_settings_video_performance_overlay_vertical_margin">هوامش رأسية (بكسل)</string>
+<string name="emulator_settings_video_performance_overlay_opacity">الشفافية (%)</string>
+<string name="emulator_settings_video_performance_overlay_body_color">لون الجسم (قيمة سداسية عشرية)</string>
+<string name="emulator_settings_video_performance_overlay_body_background">خلفية الجسم (قيمة سداسية عشرية)</string>
+<string name="emulator_settings_video_performance_overlay_title_color">لون العنوان (قيمة سداسية عشرية)</string>
+<string name="emulator_settings_video_performance_overlay_title_background">خلفية العنوان (قيمة سداسية عشرية)</string>
+<string name="emulator_settings_video_shader_loading_dialog">حوار تحميل الظلال</string>
+<string name="emulator_settings_video_shader_loading_dialog_allow_custom_background">السماح بالخلفية المخصصة</string>
+<string name="emulator_settings_video_shader_loading_dialog_darkening_effect_strength">شدة تأثير التعتيم</string>
+<string name="emulator_settings_video_shader_loading_dialog_blur_effect_strength">شدة تأثير التمويه</string>
+<string name="emulator_settings_audio">الصوت</string>
+<string name="emulator_settings_audio_renderer">المحرر</string>
+<string-array name="audio_renderer_entries">
+		<item>بلا</item>
+		<item>Cubeb</item>
+	</string-array>
+<string name="emulator_settings_audio_audio_provider">مزود الصوت</string>
+<string-array name="audio_audio_provider_entries">
+		<item>بلا</item>
+		<item>CellAudio</item>
+		<item>RSXAudio</item>
+	</string-array>
+<string name="emulator_settings_audio_rsxaudio_avport">منفذ AV لـ RSXAudio</string>
+<string-array name="audio_rsxaudio_avport_entries">
+		<item>HDMI 0</item>
+		<item>HDMI 1</item>
+		<item>AV متعدد الإخراج</item>
+		<item>SPDIF 0</item>
+		<item>SPDIF 1</item>
+	</string-array>
+<string name="emulator_settings_audio_dump_to_file">تصدير إلى ملف</string>
+<string name="emulator_settings_audio_convert_to_16_bit">تحويل إلى 16 بت</string>
+<string name="emulator_settings_audio_audio_format">صيغة الصوت</string>
+<string-array name="audio_audio_format_entries">
+		<item>استريو</item>
+		<item>5.1 صوت محيطي</item>
+		<item>7.1 صوت محيطي</item>
+		<item>تلقائي</item>
+		<item>يدوي</item>
+	</string-array>
+<string name="emulator_settings_audio_audio_formats">صيغ الصوت</string>
+<string name="emulator_settings_audio_audio_channel_layout">مخطط قناة الصوت</string>
+<string-array name="audio_audio_channel_layout_entries">
+		<item>تلقائي</item>
+		<item>أحادي</item>
+		<item>استريو</item>
+		<item>استريو مع LFE</item>
+		<item>رباعي</item>
+		<item>رباعي مع LFE</item>
+		<item>5.1 صوت محيطي</item>
+		<item>7.1 صوت محيطي</item>
+	</string-array>
+<string name="emulator_settings_audio_audio_device">جهاز الصوت</string>
+<string name="emulator_settings_audio_master_volume">الصوت الرئيسي</string>
+<string name="emulator_settings_audio_enable_buffering">تفعيل التخزين المؤقت</string>
+<string name="emulator_settings_audio_desired_audio_buffer_duration">مدة التخزين المؤقت المطلوبة</string>
+<string name="emulator_settings_audio_enable_time_stretching">تفعيل تمديد الزمن</string>
+<string name="emulator_settings_audio_time_stretching_threshold">حد تمديد الزمن</string>
+<string name="emulator_settings_audio_microphone_type">نوع المايكروفون</string>
+<string-array name="audio_microphone_type_entries">
+		<item>بلا</item>
+		<item>قياسي</item>
+		<item>SingStar</item>
+		<item>SingStar حقيقي</item>
+		<item>Rocksmith</item>
+	</string-array>
+<string name="emulator_settings_audio_microphone_devices">أجهزة المايكروفون</string>
+<string name="emulator_settings_audio_music_handler">مُعالج الموسيقى</string>
+<string-array name="audio_music_handler_entries">
+		<item>بلا</item>
+		<item>Qt</item>
+	</string-array>
+<string name="emulator_settings_input_output">الإدخال/الإخراج</string>
+<string name="emulator_settings_input_output_keyboard">لوحة المفاتيح</string>
+<string-array name="input_output_keyboard_entries">
+		<item>بلا</item>
+		<item>أساسي</item>
+	</string-array>
+<string name="emulator_settings_input_output_mouse">الفأرة</string>
+<string-array name="input_output_mouse_entries">
+		<item>بلا</item>
+		<item>أساسي</item>
+		<item>خام</item>
+	</string-array>
+<string name="emulator_settings_input_output_camera">الكاميرا</string>
+<string-array name="input_output_camera_entries">
+		<item>بلا</item>
+		<item>وهمي</item>
+		<item>Qt</item>
+	</string-array>
+<string name="emulator_settings_input_output_camera_type">نوع الكاميرا</string>
+<string-array name="input_output_camera_type_entries">
+		<item>غير معروف</item>
+		<item>EyeToy</item>
+		<item>PS Eye</item>
+		<item>UVC 1.1</item>
+	</string-array>
+<string name="emulator_settings_input_output_camera_flip">عكس الكاميرا</string>
+<string-array name="input_output_camera_flip_entries">
+		<item>بلا</item>
+		<item>أفقي</item>
+		<item>رأسي</item>
+		<item>كلاهما</item>
+	</string-array>
+<string name="emulator_settings_input_output_camera_id">مُعرّف الكاميرا</string>
+<string name="emulator_settings_input_output_move">التحريك</string>
+<string-array name="input_output_move_entries">
+		<item>بلا</item>
+		<item>وهمي</item>
+		<item>فأرة</item>
+		<item>فأرة خام</item>
+	</string-array>
+<string name="emulator_settings_input_output_buzz_emulated_controller">وحدة تحكم Buzz الافتراضية</string>
+<string-array name="input_output_buzz_emulated_controller_entries">
+		<item>بلا</item>
+		<item>وحدة تحكم واحدة</item>
+		<item>وحدتا تحكم</item>
+	</string-array>
+<string name="emulator_settings_input_output_turntable_emulated_controller">وحدة تحكم Turntable الافتراضية</string>
+<string-array name="input_output_turntable_emulated_controller_entries">
+		<item>بلا</item>
+		<item>وحدة تحكم واحدة</item>
+		<item>وحدتا تحكم</item>
+	</string-array>
+<string name="emulator_settings_input_output_ghltar_emulated_controller">وحدة تحكم GHLtar الافتراضية</string>
+<string-array name="input_output_ghltar_emulated_controller_entries">
+		<item>بلا</item>
+		<item>وحدة تحكم واحدة</item>
+		<item>وحدتا تحكم</item>
+	</string-array>
+<string name="emulator_settings_input_output_pad_handler_mode">وضعية معالج البداد</string>
+<string-array name="input_output_pad_handler_mode_entries">
+		<item>خيط واحد</item>
+		<item>خيوط متعددة</item>
+	</string-array>
+<string name="emulator_settings_input_output_keep_pads_connected">الحفاظ على وحدات التحكم متصلة</string>
+<string name="emulator_settings_input_output_pad_handler_sleep">مدة تأخير معالج البداد (مايكروثانية)</string>
+<string name="emulator_settings_input_output_background_input_enabled">تفعيل إدخال الخلفية</string>
+<string name="emulator_settings_input_output_show_move_cursor">عرض مؤشر التحريك</string>
+<string name="emulator_settings_input_output_lock_overlay_input_to_player_one">قفل إدخال الطبقة إلى اللاعب الأول</string>
+<string name="emulator_settings_input_output_emulated_midi_devices">أجهزة MIDI الافتراضية</string>
+<string name="emulator_settings_input_output_load_sdl_gamecontroller_mappings">تحميل خرائط وحدة التحكم</string>
+<string name="emulator_settings_input_output_io_debug_overlay">طبقة تصحيح الإدخال/الإخراج</string>
+<string name="emulator_settings_system">النظام</string>
+<string name="emulator_settings_system_license_area">منطقة الترخيص</string>
+<string-array name="system_license_area_entries">
+		<item>SCEJ</item>
+		<item>SCEA</item>
+		<item>SCEE</item>
+		<item>SCEH</item>
+		<item>SCEK</item>
+		<item>SCH</item>
+	</string-array>
+<string name="emulator_settings_system_language">اللغة</string>
+<string-array name="system_language_entries">
+		<item>اليابانية</item>
+		<item>الإنجليزية (الولايات المتحدة)</item>
+		<item>الفرنسية</item>
+		<item>الإسبانية</item>
+		<item>الألمانية</item>
+		<item>الإيطالية</item>
+		<item>الهولندية</item>
+		<item>البرتغالية (البرتغال)</item>
+		<item>الروسية</item>
+		<item>الكورية</item>
+		<item>الصينية (الكلاسيكية)</item>
+		<item>الصينية (المبسطة)</item>
+		<item>الفنلندية</item>
+		<item>السويدية</item>
+		<item>الدنماركية</item>
+		<item>النرويجية</item>
+		<item>البولندية</item>
+		<item>البرتغالية (البرازيل)</item>
+		<item>الإنجليزية (المملكة المتحدة)</item>
+		<item>التركية</item>
+	</string-array>
+<string name="emulator_settings_system_keyboard_type">نوع لوحة المفاتيح</string>
+<string-array name="system_keyboard_type_entries">
+		<item>لوحة مفاتيح إنجليزية (قياسي أمريكي)</item>
+		<item>لوحة مفاتيح يابانية</item>
+		<item>لوحة مفاتيح يابانية (حالة Kana)</item>
+		<item>لوحة مفاتيح ألمانية</item>
+		<item>لوحة مفاتيح إسبانية</item>
+		<item>لوحة مفاتيح فرنسية</item>
+		<item>لوحة مفاتيح إيطالية</item>
+		<item>لوحة مفاتيح هولندية</item>
+		<item>لوحة مفاتيح برتغالية (البرتغال)</item>
+		<item>لوحة مفاتيح روسية</item>
+		<item>لوحة مفاتيح إنجليزية (قياسي بريطاني)</item>
+		<item>لوحة مفاتيح كورية</item>
+		<item>لوحة مفاتيح نرويجية</item>
+		<item>لوحة مفاتيح فنلندية</item>
+		<item>لوحة مفاتيح دنماركية</item>
+		<item>لوحة مفاتيح سويدية</item>
+		<item>لوحة مفاتيح صينية (كلاسيكية)</item>
+		<item>لوحة مفاتيح صينية (مبسطة)</item>
+		<item>لوحة مفاتيح فرنسية (سويسرا)</item>
+		<item>لوحة مفاتيح ألمانية (سويسرا)</item>
+		<item>لوحة مفاتيح فرنسية (كندا)</item>
+		<item>لوحة مفاتيح فرنسية (بلجيكا)</item>
+		<item>لوحة مفاتيح بولندية</item>
+		<item>لوحة مفاتيح برتغالية (البرازيل)</item>
+		<item>لوحة مفاتيح تركية</item>
+	</string-array>
+<string name="emulator_settings_system_enter_button_assignment">تعيين زر الإدخال</string>
+<string-array name="system_enter_button_assignment_entries">
+		<item>إدخال مع دائري</item>
+		<item>إدخال مع علامة اختيار</item>
+	</string-array>
+<string name="emulator_settings_system_console_time_offset">تعويض توقيت وحدة التحكم (ثواني)</string>
+<string name="emulator_settings_system_system_name">اسم النظام</string>
+<string name="emulator_settings_system_psid_high">PSID عالي</string>
+<string name="emulator_settings_system_psid_low">PSID منخفض</string>
+<string name="emulator_settings_system_hdd_model_name">اسم نموذج HDD</string>
+<string name="emulator_settings_system_hdd_serial_number">رقم سلسلة HDD</string>
+<string name="emulator_settings_net">الشبكة</string>
+<string name="emulator_settings_net_internet_enabled">تفعيل الإنترنت</string>
+<string-array name="net_internet_enabled_entries">
+		<item>غير متصل</item>
+		<item>متصل</item>
+	</string-array>
+<string name="emulator_settings_net_ip_address">عنوان IP</string>
+<string name="emulator_settings_net_bind_address">عنوان الربط</string>
+<string name="emulator_settings_net_dns_address">عنوان DNS</string>
+<string name="emulator_settings_net_ip_swap_list">قائمة تبديل IP</string>
+<string name="emulator_settings_net_upnp_enabled">تفعيل UPNP</string>
+<string name="emulator_settings_net_psn_status">حالة PSN</string>
+<string-array name="net_psn_status_entries">
+		<item>غير متصل</item>
+		<item>محاكي</item>
+		<item>RPCN</item>
+	</string-array>
+<string name="emulator_settings_net_psn_country">بلد PSN</string>
+<string name="emulator_settings_savestate">حالة الحفظ</string>
+<string name="emulator_settings_savestate_start_paused">البدء متوقفًا مؤقتًا</string>
+<string name="emulator_settings_savestate_suspend_emulation_savestate_mode">وضعية تعليق المحاكاة</string>
+<string name="emulator_settings_savestate_compatible_savestate_mode">وضعية الحالة المُحْفوظة المتوافقة</string>
+<string name="emulator_settings_savestate_inspection_mode_savestates">حالة الفحص</string>
+<string name="emulator_settings_savestate_save_disc_game_data">حفظ بيانات الأقراص</string>
+<string name="emulator_settings_miscellaneous">متنوع</string>
+<string name="emulator_settings_miscellaneous_automatically_start_games_after_boot">البدء التلقائي بعد التشغيل</string>
+<string name="emulator_settings_miscellaneous_exit_rpcs3_when_process_finishes">الخروج من RPCS3 عند انتهاء العملية</string>
+<string name="emulator_settings_miscellaneous_pause_emulation_on_rpcs3_focus_loss">الإيقاف المؤقت عند فقدان التركيز</string>
+<string name="emulator_settings_miscellaneous_start_games_in_fullscreen_mode">البدء في وضع ملء الشاشة</string>
+<string name="emulator_settings_miscellaneous_prevent_display_sleep_while_running_games">منع وضع السكون أثناء التشغيل</string>
+<string name="emulator_settings_miscellaneous_show_trophy_popups">عرض إشعارات الإنجازات</string>
+<string name="emulator_settings_miscellaneous_show_rpcn_popups">عرض إشعارات RPCN</string>
+<string name="emulator_settings_miscellaneous_show_shader_compilation_hint">عرض تلميح تجميع الظلال</string>
+<string name="emulator_settings_miscellaneous_show_ppu_compilation_hint">عرض تلميح تجميع PPU</string>
+<string name="emulator_settings_miscellaneous_show_pressure_intensity_toggle_hint">عرض تلميح شدة الضغط</string>
+<string name="emulator_settings_miscellaneous_show_analog_limiter_toggle_hint">عرض تلميح حد التناظر</string>
+<string name="emulator_settings_miscellaneous_show_mouse_and_keyboard_toggle_hint">عرض تلميح الفأرة ولوحة المفاتيح</string>
+<string name="emulator_settings_miscellaneous_show_autosave_autoload_hint">عرض تلميح الحفظ/التحميل التلقائي</string>
+<string name="emulator_settings_miscellaneous_use_native_user_interface">استخدام واجهة المستخدم الأصلية</string>
+<string name="emulator_settings_miscellaneous_gdb_server">خادم GDB</string>
+<string name="emulator_settings_miscellaneous_silence_all_logs">إسكات جميع السجلات</string>
+<string name="emulator_settings_miscellaneous_window_title_format">تنسيق عنوان النافذة</string>
+<string name="emulator_settings_miscellaneous_pause_emulation_during_home_menu">إيقاف المؤقت أثناء القائمة</string>
+<string name="emulator_settings_miscellaneous_font_file_selection">اختيار ملف الخط</string>
+	<string-array name="miscellaneous_font_file_selection_entries">
+		<item>من برنامج النظام</item>
+		<item>مخصص</item>
+	</string-array>
+	<string name="emulator_settings_miscellaneous_custom_font_file_path">مسار ملف الخط المخصص</string>
+	<string name="emulator_settings_miscellaneous_font_size">حجم الخط</string>
+
+	<string name="INVALID">غير صالح</string>
+	<string name="RSX_OVERLAYS_TROPHY_BRONZE">لقد حصلت على إنجاز برونزي.\n%0</string>
+	<string name="RSX_OVERLAYS_TROPHY_SILVER">لقد حصلت على إنجاز فضي.\n%0</string>
+	<string name="RSX_OVERLAYS_TROPHY_GOLD">لقد حصلت على إنجاز ذهبي.\n%0</string>
+	<string name="RSX_OVERLAYS_TROPHY_PLATINUM">لقد حصلت على إنجاز بلاتيني.\n%0</string>
+	<string name="RSX_OVERLAYS_COMPILING_SHADERS">جاري تجميع الظلال</string>
+	<string name="RSX_OVERLAYS_COMPILING_PPU_MODULES">جاري تجميع وحدات PPU</string>
+	<string name="RSX_OVERLAYS_MSG_DIALOG_YES">نعم</string>
+	<string name="RSX_OVERLAYS_MSG_DIALOG_NO">لا</string>
+	<string name="RSX_OVERLAYS_MSG_DIALOG_CANCEL">عودة</string>
+	<string name="RSX_OVERLAYS_MSG_DIALOG_OK">حسناً</string>
+	<string name="RSX_OVERLAYS_SAVE_DIALOG_TITLE">نافذة الحفظ</string>
+	<string name="RSX_OVERLAYS_SAVE_DIALOG_DELETE">حذف الحفظ</string>
+	<string name="RSX_OVERLAYS_SAVE_DIALOG_LOAD">تحميل الحفظ</string>
+	<string name="RSX_OVERLAYS_SAVE_DIALOG_SAVE">حفظ</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_ACCEPT">إدخال</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_CANCEL">عودة</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_SPACE">مسافة</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_BACKSPACE">حذف الخلفي</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_SHIFT">SHIFT</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_ENTER_TEXT">[أدخل النص]</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_ENTER_PASSWORD">[أدخل كلمة المرور]</string>
+	<string name="RSX_OVERLAYS_MEDIA_DIALOG_TITLE">اختر الوسائط</string>
+	<string name="RSX_OVERLAYS_MEDIA_DIALOG_TITLE_PHOTO_IMPORT">اختر الصورة للإدخال</string>
+	<string name="RSX_OVERLAYS_MEDIA_DIALOG_EMPTY">لم يتم العثور على وسائط.</string>
+	<string name="RSX_OVERLAYS_LIST_SELECT">إدخال</string>
+	<string name="RSX_OVERLAYS_LIST_CANCEL">عودة</string>
+	<string name="RSX_OVERLAYS_LIST_DENY">رفض</string>
+	<string name="RSX_OVERLAYS_PRESSURE_INTENSITY_TOGGLED_OFF">تم تعطيل وضعية شدة الضغط للاعب %0</string>
+	<string name="RSX_OVERLAYS_PRESSURE_INTENSITY_TOGGLED_ON">تم تفعيل وضعية شدة الضغط للاعب %0</string>
+	<string name="RSX_OVERLAYS_ANALOG_LIMITER_TOGGLED_OFF">تم تعطيل محدد التناظر للاعب %0</string>
+	<string name="RSX_OVERLAYS_ANALOG_LIMITER_TOGGLED_ON">تم تفعيل محدد التناظر للاعب %0</string>
+	<string name="RSX_OVERLAYS_MOUSE_AND_KEYBOARD_EMULATED">الفأرة ولوحة المفاتيح تُستخدم الآن كأجهزة افتراضية.</string>
+	<string name="RSX_OVERLAYS_MOUSE_AND_KEYBOARD_PAD">الفأرة ولوحة المفاتيح تُستخدم الآن كبداد.</string>
+	<string name="CELL_GAME_ERROR_BROKEN_GAMEDATA">خطأ: بيانات اللعبة تالفة. سيستمر التطبيق.</string>
+	<string name="CELL_GAME_ERROR_BROKEN_HDDGAME">خطأ: لعبة الاقراص الصلبة تالفة. سيستمر التطبيق.</string>
+	<string name="CELL_GAME_ERROR_BROKEN_EXIT_GAMEDATA">خطأ: بيانات اللعبة تالفة. سيتم إنهاء التطبيق.</string>
+	<string name="CELL_GAME_ERROR_BROKEN_EXIT_HDDGAME">خطأ: لعبة الاقراص الصلبة تالفة. سيتم إنهاء التطبيق.</string>
+	<string name="CELL_GAME_ERROR_NOSPACE">خطأ: لا يوجد مساحة كافية. سيستمر التطبيق.\nالمساحة المطلوبة: %0 كيلوبايت</string>
+	<string name="CELL_GAME_ERROR_NOSPACE_EXIT">خطأ: لا يوجد مساحة كافية. سيتم إنهاء التطبيق.\nالمساحة المطلوبة: %0 كيلوبايت</string>
+	<string name="CELL_GAME_ERROR_DIR_NAME">اسم الدليل: %0</string>
+	<string name="CELL_GAME_DATA_EXIT_BROKEN">حدث خطأ!\n\nيرجى إزالة بيانات اللعبة لهذه اللعبة.</string>
+	<string name="CELL_HDD_GAME_EXIT_BROKEN">حدث خطأ!\n\nيرجى إعادة تثبيت لعبة الاقراص الصلبة.</string>
+	<string name="CELL_HDD_GAME_CHECK_NOSPACE">لا توجد مساحة كافية لإنشاء لعبة الاقراص الصلبة.\nالمساحة المطلوبة: %0 كيلوبايت</string>
+	<string name="CELL_HDD_GAME_CHECK_BROKEN">لعبة الاقراص الصلبة %0 تالفة!</string>
+	<string name="CELL_HDD_GAME_CHECK_NODATA">تعذر العثور على لعبة الاقراص الصلبة %0!</string>
+	<string name="CELL_HDD_GAME_CHECK_INVALID">خطأ: %0</string>
+	<string name="CELL_GAMEDATA_CHECK_NOSPACE">لا توجد مساحة كافية لإنشاء بيانات اللعبة.\nالمساحة المطلوبة: %0 كيلوبايت</string>
+	<string name="CELL_GAMEDATA_CHECK_BROKEN">بيانات اللعبة في %0 تالفة!</string>
+	<string name="CELL_GAMEDATA_CHECK_NODATA">تعذر العثور على بيانات اللعبة في %0!</string>
+	<string name="CELL_GAMEDATA_CHECK_INVALID">خطأ: %0</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010001">الموارد غير متوفرة مؤقتًا.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010002">وسيط أو علم غير صالح.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010003">الميزة لم تُنفّذ بعد.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010004">فشل تخصيص الذاكرة.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010005">الموارد المحددة بالمعرف غير موجودة.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010006">الملف غير موجود.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010007">الملف بتنسيق غير معروف / الملف ليس ملف ELF صالحًا.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010008">تم تجنب توقف الموارد.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010009">العملية غير مسموح بها.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000A">الجهاز أو الموارد مشغولة.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000B">انتهت مهلة العملية.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000C">العملية تم إلغاؤها.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000D">وصول ذاكرة غير صالح.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000F">حالة الخيط المستهدف غير صالحة.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010010">المحاذاة غير صالحة.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010011">نقص الموارد الداخلية.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010012">الملف هو دليل.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010013">العملية تم إلغاؤها.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010014">الإدخال موجود مسبقًا.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010015">المنفذ متصل مسبقًا.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010016">المنفذ غير متصل.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010017">فشل في المصادقة على SELF. فشل مصادقة البرنامج.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010018">الملف ليس MSELF.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010019">خطأ في إصدار النظام.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001A">حدث خطأ نظامي فادح أثناء مصادقة SELF. فشل مصادقة SELF.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001B">انتهاك نطاق الرياضيات.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001C">انتهاك نطاق القيم.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001D">متوالية بايت متعددة غير صالحة في الإدخال.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001E">خطأ في موقع الملف.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001F">تم مقاطعة الاستدعاء النظامي.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010020">الملف كبير جدًا.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010021">عدد الروابط كبير جدًا.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010022">فيض جدول الملفات.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010023">لا توجد مساحة على الجهاز.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010024">ليس TTY.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010025">أنبوب معطوب.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010026">نظام الملفات للقراءة فقط.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010027">بحث غير صالح.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010028">طول قائمة الوسيطات كبير جدًا.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010029">انتهاك الوصول.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002A">مُقبض ملف غير صالح.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002B">فشل في تحميل نظام الملفات.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002C">عدد الملفات المفتوحة كبير جدًا.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002D">لا يوجد جهاز.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002E">ليس دليلًا.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002F">لا يوجد جهاز أو إدخال/إخراج.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010030">خطأ ربط عبر الأجهزة.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010031">رسالة سيئة.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010032">جارٍ التنفيذ.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010033">خطأ في حجم الرسالة.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010034">الاسم طويل جدًا.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010035">لا يوجد قفل.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010036">غير فارغ.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010037">غير مدعوم.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010038">خطأ خاص بنظام الملفات.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010039">حدث فيض.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003A">نظام الملفات غير مُحمّل.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003B">ليس SData.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003C">إصدار غير صحيح في sys_load_param.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003D">المؤشر فارغ.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003E">المؤشر فارغ.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_DEFAULT">حدث خطأ.\n(%0)</string>
+	<string name="CELL_OSK_DIALOG_TITLE">لوحة مفاتيح الشاشة</string>
+	<string name="CELL_OSK_DIALOG_BUSY">لا يمكن فتح القائمة الرئيسية أثناء انشغال لوحة مفاتيح الشاشة!</string>
+
+	<string name="CELL_SAVEDATA_CB_BROKEN">خطأ - بيانات الحفظ تالفة</string>
+	<string name="CELL_SAVEDATA_CB_FAILURE">خطأ - فشل في الحفظ أو التحميل</string>
+	<string name="CELL_SAVEDATA_CB_NO_DATA">خطأ - تعذر العثور على بيانات الحفظ</string>
+	<string name="CELL_SAVEDATA_CB_NO_SPACE">خطأ - المساحة الحرة غير كافية\n\nالمساحة المطلوبة: %0 كيلوبايت</string>
+	<string name="CELL_SAVEDATA_NO_DATA">لا توجد بيانات محفوظة.</string>
+	<string name="CELL_SAVEDATA_NEW_SAVED_DATA_TITLE">بيانات حفظ جديدة</string>
+	<string name="CELL_SAVEDATA_NEW_SAVED_DATA_SUB_TITLE">اختر لإنشاء إدخال جديد</string>
+	<string name="CELL_SAVEDATA_SAVE_CONFIRMATION">هل تريد حفظ هذه البيانات؟</string>
+	<string name="CELL_SAVEDATA_DELETE_CONFIRMATION">هل أنت متأكد من رغبتك في حذف هذه البيانات؟\n\n%0</string>
+	<string name="CELL_SAVEDATA_DELETE_SUCCESS">تم إزالة البيانات بنجاح!\n\n%0</string>
+	<string name="CELL_SAVEDATA_DELETE">حذف هذه البيانات؟\n\n%0</string>
+	<string name="CELL_SAVEDATA_LOAD">تحميل هذه البيانات؟\n\n%0</string>
+	<string name="CELL_SAVEDATA_SAVE">حفظ هذه البيانات؟\n\n%0</string>
+	<string name="CELL_SAVEDATA_OVERWRITE">هل تريد الكتابة فوق بيانات الحفظ؟\n\n%0</string>
+	<string name="CELL_SAVEDATA_AUTOSAVE">جاري الحفظ...</string>
+	<string name="CELL_SAVEDATA_AUTOLOAD">جاري التحميل...</string>
+	<string name="CELL_CROSS_CONTROLLER_MSG">ابدأ على نظام PS Vita.\nإذا لم تكن قد قمت بالتنصيب، انتقل إلى [التشغيل عن بُعد] على نظام PS Vita وابدأ [Cross-Controller] من شاشة LiveArea™.</string>
+	<string name="CELL_CROSS_CONTROLLER_FW_MSG">إذا كانت إصدار البرنامج النظامي على نظام PS Vita أقدم من 1.80، يجب تحديث البرنامج النظامي إلى الإصدار الأحدث.</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_TITLE">اختر الرسالة</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_TITLE_INVITE">اختر الدعوة</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_TITLE_ADD_FRIEND">إضافة صديق</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_FROM">من:</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_SUBJECT">الموضوع:</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_TITLE">اختر الرسالة لإرسالها</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_TITLE_INVITE">إرسال دعوة</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_TITLE_ADD_FRIEND">إضافة صديق</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_CONFIRMATION">هل تريد إرسال الرسالة إلى %0 ؟\n\nالموضوع:</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_CONFIRMATION_INVITE">هل تريد إرسال الدعوة إلى %0 ؟\n\nالموضوع:</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_CONFIRMATION_ADD_FRIEND">هل تريد إرسال طلب الصداقة إلى %0 ؟\n\nالموضوع:</string>
+	<string name="RECORDING_ABORTED">تم إلغاء التسجيل!</string>
+	<string name="RPCN_NO_ERROR">RPCN: لا يوجد خطأ</string>
+	<string name="RPCN_ERROR_INVALID_INPUT">RPCN خطأ في الإدخال (مُضيف/منفذ خاطئ)</string>
+	<string name="RPCN_ERROR_WOLFSSL">RPCN خطأ في الاتصال: خطأ WolfSSL</string>
+	<string name="RPCN_ERROR_RESOLVE">RPCN خطأ في الاتصال: خطأ في الحل</string>
+	<string name="RPCN_ERROR_CONNECT">RPCN خطأ في الاتصال</string>
+	<string name="RPCN_ERROR_LOGIN_ERROR">RPCN خطأ في تسجيل الدخول: خطأ في الهوية</string>
+	<string name="RPCN_ERROR_ALREADY_LOGGED">RPCN خطأ في تسجيل الدخول: المستخدم مسجل دخوله مسبقًا</string>
+	<string name="RPCN_ERROR_INVALID_LOGIN">RPCN خطأ في تسجيل الدخول: اسم مستخدم غير صالح</string>
+	<string name="RPCN_ERROR_INVALID_PASSWORD">RPCN خطأ في تسجيل الدخول: كلمة مرور غير صالحة</string>
+	<string name="RPCN_ERROR_INVALID_TOKEN">RPCN خطأ في تسجيل الدخول: رمز غير صالح</string>
+	<string name="RPCN_ERROR_INVALID_PROTOCOL_VERSION">RPCN خطأ متنوع: خطأ في إصدار البروتوكول (RPCS3 قديم؟)</string>
+	<string name="RPCN_ERROR_UNKNOWN">RPCN: خطأ غير معروف</string>
+	<string name="RPCN_SUCCESS_LOGGED_ON">تم تسجيل الدخول إلى RPCN بنجاح!</string>
+	<string name="RPCN_FRIEND_REQUEST_RECEIVED">RPCN: استلمت طلب صداقة: %0</string>
+	<string name="RPCN_FRIEND_ADDED">RPCN: تمت إضافة صديق: %0</string>
+	<string name="RPCN_FRIEND_LOST">RPCN: تمت إزالة صديق: %0</string>
+	<string name="RPCN_FRIEND_LOGGED_IN">RPCN: %0 قام بتسجيل الدخول</string>
+	<string name="RPCN_FRIEND_LOGGED_OUT">RPCN: %0 قام بتسجيل الخروج</string>
+
+    <string name="HOME_MENU_TITLE">القائمة الرئيسية</string>
+    <string name="HOME_MENU_EXIT_GAME">إنهاء اللعبة</string>
+    <string name="HOME_MENU_RESUME">استئناف اللعبة</string>
+    <string name="HOME_MENU_FRIENDS">الأصدقاء</string>
+    <string name="HOME_MENU_FRIENDS_REQUESTS">طلبات الصداقة المعلقة</string>
+    <string name="HOME_MENU_FRIENDS_BLOCKED">المستخدمين المحظورين</string>
+    <string name="HOME_MENU_FRIENDS_STATUS_ONLINE">متصل</string>
+    <string name="HOME_MENU_FRIENDS_STATUS_OFFLINE">غير متصل</string>
+    <string name="HOME_MENU_FRIENDS_STATUS_BLOCKED">محظور</string>
+    <string name="HOME_MENU_FRIENDS_REQUEST_SENT">لقد أرسلت طلب صداقة</string>
+    <string name="HOME_MENU_FRIENDS_REQUEST_RECEIVED">أرسل لك طلب صداقة</string>
+    <string name="HOME_MENU_FRIENDS_BLOCK_USER_MSG">هل تريد حظر هذا المستخدم؟\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_UNBLOCK_USER_MSG">هل تريد إلغاء حظر هذا المستخدم؟\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_REMOVE_USER_MSG">هل تريد إزالة هذا المستخدم؟\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_ACCEPT_REQUEST_MSG">هل تقبل الطلب؟\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_CANCEL_REQUEST_MSG">هل تلغي الطلب؟\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_REJECT_REQUEST_MSG">هل ترفض الطلب؟\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_REJECT_REQUEST">رفض الطلب</string>
+    <string name="HOME_MENU_FRIENDS_NEXT_LIST">القائمة التالية</string>
+    <string name="HOME_MENU_RESTART">إعادة تشغيل اللعبة</string>
+    <string name="HOME_MENU_SETTINGS">الإعدادات</string>
+    <string name="HOME_MENU_SETTINGS_SAVE">حفظ التكوين المخصص؟</string>
+    <string name="HOME_MENU_SETTINGS_SAVE_BUTTON">حفظ</string>
+    <string name="HOME_MENU_SETTINGS_DISCARD">هل تريد تجاهل التغييرات في الإعدادات؟</string>
+    <string name="HOME_MENU_SETTINGS_DISCARD_BUTTON">تجاهل</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO">الصوت</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_MASTER_VOLUME">الصوت الرئيسي</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_BACKEND">محرر الصوت</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_BUFFERING">تفعيل التخزين المؤقت</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_BUFFER_DURATION">مدة التخزين المؤقت المطلوبة</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_TIME_STRETCHING">تفعيل تمديد الزمن</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_TIME_STRETCHING_THRESHOLD">حد تمديد الزمن</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO">الفيديو</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_FRAME_LIMIT">حد الإطارات</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_ANISOTROPIC_OVERRIDE">تجاوز مرشح أنيسوتروبي</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_OUTPUT_SCALING">توسيع الإخراج</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_RCAS_SHARPENING">شدة حدة FidelityFX CAS</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_STRETCH_TO_DISPLAY">تمديد إلى مساحة العرض</string>
+    <string name="HOME_MENU_SETTINGS_INPUT">الإدخال</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_BACKGROUND_INPUT">تفعيل إدخال الخلفية</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_KEEP_PADS_CONNECTED">الحفاظ على وحدات التحكم متصلة</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_SHOW_PS_MOVE_CURSOR">عرض مؤشر PS Move</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_CAMERA_FLIP">عكس الكاميرا</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_PAD_MODE">وضعية معالج البداد</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_PAD_SLEEP">مدة تأخير معالج البداد</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_FAKE_MOVE_ROTATION_CONE_H">مقلد PS Move مخروط الدوران (أفقي)</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_FAKE_MOVE_ROTATION_CONE_V">مقلد PS Move مخروط الدوران (رأسي)</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED">متقدم</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_PREFERRED_SPU_THREADS">الخيوط المفضلة لـ SPU</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_MAX_CPU_PREEMPTIONS">أقصى خيوط لـ CPU-Preemptions</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_ACCURATE_RSX_RESERVATION_ACCESS">الوصول الدقيق إلى RSX</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_SLEEP_TIMERS_ACCURACY">دقة مؤقتات النوم</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_MAX_SPURS_THREADS">أقصى خيوط لـ SPURS</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_DRIVER_WAKE_UP_DELAY">مدة تأخير إيقاظ المُشغّل</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_VBLANK_FREQUENCY">تردد VBlank</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_VBLANK_NTSC">تصحيح NTSC لـ VBlank</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS">الطبقات</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_TROPHY_POPUPS">عرض إشعارات الإنجازات</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_RPCN_POPUPS">عرض إشعارات RPCN</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_SHADER_COMPILATION_HINT">عرض تلميح تجميع الظلال</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_PPU_COMPILATION_HINT">عرض تلميح تجميع PPU</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_AUTO_SAVE_LOAD_HINT">عرض تلميح الحفظ/التحميل التلقائي</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_PRESSURE_INTENSITY_TOGGLE_HINT">عرض تلميح شدة الضغط</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_ANALOG_LIMITER_TOGGLE_HINT">عرض تلميح حد التناظر</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_MOUSE_AND_KB_TOGGLE_HINT">عرض تلميح الفأرة ولوحة المفاتيح</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY">طبقة الأداء</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_ENABLE">تفعيل طبقة الأداء</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_ENABLE_FRAMERATE_GRAPH">تفعيل رسم معدل الإطارات</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_ENABLE_FRAMETIME_GRAPH">تفعيل رسم وقت الإطارات</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_DETAIL_LEVEL">مستوى التفاصيل</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMERATE_DETAIL_LEVEL">مستوى تفاصيل رسم معدل الإطارات</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMETIME_DETAIL_LEVEL">مستوى تفاصيل رسم وقت الإطارات</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMERATE_DATAPOINT_COUNT">نقاط بيانات معدل الإطارات</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMETIME_DATAPOINT_COUNT">نقاط بيانات وقت الإطارات</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_UPDATE_INTERVAL">فترة تحديث المقاييس</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_POSITION">الموضع</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_CENTER_X">توسيط أفقي</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_CENTER_Y">توسيط رأسي</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_MARGIN_X">هوامش أفقية</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_MARGIN_Y">هوامش رأسية</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FONT_SIZE">حجم الخط</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_OPACITY">الشفافية</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG">التصحيح</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_OVERLAY">طبقة التصحيح</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_INPUT_OVERLAY">طبقة إدخال التصحيح</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_DISABLE_VIDEO_OUTPUT">تعطيل إخراج الفيديو</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_TEXTURE_LOD_BIAS">إضافة تحيز LOD للنسيج</string>
+    <string name="HOME_MENU_SCREENSHOT">أخذ لقطة شاشة</string>
+    <string name="HOME_MENU_SAVESTATE">حالة الحفظ</string>
+    <string name="HOME_MENU_SAVESTATE_SAVE">حفظ حالة المحاكاة</string>
+    <string name="HOME_MENU_SAVESTATE_AND_EXIT">حفظ حالة المحاكاة والخروج</string>
+    <string name="HOME_MENU_RELOAD_SAVESTATE">إعادة تحميل حالة المحاكاة الأخيرة</string>
+    <string name="HOME_MENU_RECORDING">بدء/إيقاف التسجيل</string>
+    <string name="HOME_MENU_TROPHIES">الإنجازات</string>
+    <string name="HOME_MENU_TROPHY_LIST_TITLE">تقدم الإنجازات: %0</string>
+    <string name="HOME_MENU_TROPHY_LOCKED_TITLE">إنجاز مقفَل: %0</string>
+    <string name="HOME_MENU_TROPHY_HIDDEN_TITLE">إنجاز مخفي</string>
+    <string name="HOME_MENU_TROPHY_HIDDEN_DESCRIPTION">هذا الإنجاز مخفي</string>
+    <string name="HOME_MENU_TROPHY_SHOW_HIDDEN_TROPHIES">عرض الإنجازات المخفية</string>
+    <string name="HOME_MENU_TROPHY_HIDE_HIDDEN_TROPHIES">إخفاء الإنجازات المخفية</string>
+    <string name="HOME_MENU_TROPHY_PLATINUM_RELEVANT">بلاتيني ذا صلة</string>
+    <string name="HOME_MENU_TROPHY_GRADE_BRONZE">برونزي</string>
+    <string name="HOME_MENU_TROPHY_GRADE_SILVER">فضي</string>
+    <string name="HOME_MENU_TROPHY_GRADE_GOLD">ذهبي</string>
+    <string name="HOME_MENU_TROPHY_GRADE_PLATINUM">بلاتيني</string>
+
+	<string name="AUDIO_MUTED">الصوت معطّل</string>
+	<string name="AUDIO_UNMUTED">الصوت مفعّل</string>
+	<string name="AUDIO_CHANGED">تم تغيير الصوت إلى %0</string>
+	<string name="PROGRESS_DIALOG_PROGRESS">التقدم:</string>
+	<string name="PROGRESS_DIALOG_PROGRESS_ANALYZING">التقدم: جاري التحليل...</string>
+	<string name="PROGRESS_DIALOG_REMAINING">المتبقية</string>
+	<string name="PROGRESS_DIALOG_DONE">تم</string>
+	<string name="PROGRESS_DIALOG_FILE">ملف</string>
+	<string name="PROGRESS_DIALOG_MODULE">وحدة</string>
+	<string name="PROGRESS_DIALOG_OF">من</string>
+	<string name="PROGRESS_DIALOG_PLEASE_WAIT">يرجى الانتظار</string>
+	<string name="PROGRESS_DIALOG_STOPPING_PLEASE_WAIT">جارٍ الإيقاف. يرجى الانتظار...</string>
+	<string name="PROGRESS_DIALOG_SAVESTATE_PLEASE_WAIT">جارٍ إنشاء حالة الحفظ. يرجى الانتظار...</string>
+	<string name="PROGRESS_DIALOG_SCANNING_PPU_EXECUTABLE">جارٍ مسح الملف القابل للتنفيذ PPU...</string>
+	<string name="PROGRESS_DIALOG_ANALYZING_PPU_EXECUTABLE">جارٍ تحليل الملف القابل للتنفيذ PPU...</string>
+	<string name="PROGRESS_DIALOG_SCANNING_PPU_MODULES">جارٍ مسح وحدات PPU...</string>
+	<string name="PROGRESS_DIALOG_LOADING_PPU_MODULES">جارٍ تحميل وحدات PPU...</string>
+	<string name="PROGRESS_DIALOG_COMPILING_PPU_MODULES">جارٍ تجميع وحدات PPU...</string>
+	<string name="PROGRESS_DIALOG_LINKING_PPU_MODULES">جارٍ ربط وحدات PPU...</string>
+	<string name="PROGRESS_DIALOG_APPLYING_PPU_CODE">جارٍ تطبيق كود PPU...</string>
+	<string name="PROGRESS_DIALOG_BUILDING_SPU_CACHE">جارٍ بناء ذاكرة التخزين المؤقتة لـ SPU...</string>
+	<string name="EMULATION_PAUSED_RESUME_WITH_START">اضغط باستمرار على زر START للاستئناف</string>
+	<string name="EMULATION_RESUMING">جارٍ الاستئناف...!</string>
+	<string name="EMULATION_FROZEN">من المحتمل أن تكون تطبيقات PS3 قد توقفت، يمكنك إغلاقها.</string>
+	<string name="SAVESTATE_FAILED_DUE_TO_SAVEDATA">فشل في الحفظ: جاري حفظ اللعبة، انتظر حتى تنتهي.</string>
+	<string name="SAVESTATE_FAILED_DUE_TO_VDEC">فشل في الحفظ: الفيديو/المشاهد القائمة على VDEC متسلسلة، انتظر حتى تنتهي أو قم بتفعيل libvdec.sprx.</string>
+	<string name="SAVESTATE_FAILED_DUE_TO_MISSING_SPU_SETTING">فشل في الحفظ: فشل في قفل حالة SPU، قد يحل المشكلة تفعيل وضعية SPU المتوافقة.</string>
+	<string name="SAVESTATE_FAILED_DUE_TO_SPU">فشل في الحفظ: فشل في قفل حالة SPU، سيحل المشكلة استخدام SPU ASMJIT.</string>
+	<string name="PROGRESS_DIALOG_PRELOADING_SHADER_CACHE">جارٍ تحميل الظلال المُخزنة مسبقًا من القرص...</string>
+
+
+
+</resources>

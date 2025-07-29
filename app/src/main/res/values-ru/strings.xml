@@ -1,0 +1,992 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="use_cores_ppu">Использовать ядра (PPU)</string>
+	<string name="use_cores_spu">Использовать ядра (SPU)</string>
+	<string name="use_cores_rsx">Использовать ядра (RSX)</string>
+	<string name="emulator_settings_core_thread_affinity_mask">Маска привязки потоков</string>
+	<string name="create_shortcut">Создать ярлык</string>
+	<string name="loading">Загрузка...</string>
+	<string name="resolution_not_support">Разрешение или соотношение сторон не поддерживается\nТекущая игра поддерживает:\n%s\n\nИзмените настройки:\n%s\n%s\n</string>
+	<string name="show_game_info">Показать информацию об игре</string>
+	<string name="quick_start_page">Быстрый старт</string>
+	<string name="prev_step">Предыдущий шаг</string>
+	<string name="next_step">Следующий шаг</string>
+	<string name="finish">Завершить</string>
+
+	<string name="welcome">Добро пожаловать</string>
+	<string name="welcome_content">Добро пожаловать в %s!</string>
+	<string name="welcome_content2">Всего несколько простых шагов, и вы готовы начать играть. Нажмите "%s", чтобы начать.</string>
+
+	<string name="install_ps3_firmware_hiht_content">Для запуска игр необходимо установить прошивку PS3 (PS3UPDAT.PUP). Выберите файл прошивки.</string>
+	<string name="ps3_firmware_installed">Прошивка установлена</string>
+	<string name="select_ps3_firmware">Выберите прошивку PS3 (PS3UPDAT.PUP)</string>
+	<string name="firmware_not_install">Прошивка не установлена</string>
+
+	<string name="select_ps3_iso_dir_hiht_content">Укажите каталог ISO-файлов PS3. Приложение автоматически просканирует его для поиска игр. Можно также пропустить этот шаг и установить .pkg файл.</string>
+	<string name="ps3_iso_dir_is_set">Каталог ISO-файлов PS3 задан</string>
+
+	<string name="font_select_hiht_content">Выберите шрифт (*.ttf, *.ttc, *.otf) для установки. Также можно использовать шрифт из PS3-прошивки (возможно отсутствие некоторых символов).</string>
+	<string name="custom_font_path_prefix">Путь к шрифту: </string>
+	<string name="select_gpu_driver_hiht_content">Выберите драйвер GPU. Можно пропустить этот шаг (возможны ошибки в игре).</string>
+	<string name="custom_gpu_driver_path_prefix">Путь к драйверу GPU: </string>
+
+	<string name="modify_config_hiht_content">Эмулятор автоматически выберет оптимальные настройки, но некоторые конфигурации могут вызывать проблемы на вашем устройстве. Их можно изменить позже в настройках.</string>
+
+	<string name="msg_processing">Обработка...</string>
+	<string name="msg_failed">Ошибка!</string>
+
+	<string name="emulator_settings_video_vulkan_debug">Отладка</string>
+	<string name="emulator_settings_miscellaneous_memory_debug_overlay">Отладка памяти</string>
+
+	<string name="vibrator_duration">Длительность вибрации</string>
+	<string name="enable_vibrator">Включить вибрацию</string>
+	<string name="dynamic_joystick">Динамический джойстик</string>
+	<string name="disable">Отключить</string>
+
+	<string name="disable_virtual_keyboard">Отключить виртуальную клавиатуру</string>
+	<string name="joystick">Джойстик</string>
+	<string name="dpad">Крестовина</string>
+	<string name="button">Кнопка</string>
+	<string name="lr">LR</string>
+	<string name="start_select">Start/Select</string>
+
+	<string name="enable_log">Включить логи</string>
+	<string name="use_global_config">Использовать глобальную конфигурацию</string>
+	<string name="edit_custom_config">Редактировать конфигурацию</string>
+	<string name="clear">Очистить</string>
+	<string name="press_a_key">Нажмите любую клавишу для продолжения...</string>
+	<string name="game_list_loading">Список игр загружается...</string>
+	<string name="undecrypted_game">Запуск не зашифрованных игр не поддерживается</string>
+	<string name="delete_game_data">Удалить данные игры</string>
+	<string name="delete_hdd0_install_data">Удалить данные hdd0</string>
+	<string name="delete_game_and_data">Удалить игру и данные</string>
+	<string name="delete_shaders_cache">Удалить кэш шейдеров</string>
+
+	<string name="set_iso_dir">Задать каталог (*.iso)</string>
+	<string name="device_info">Информация об устройстве</string>
+	<string name="reset_as_default">Сбросить к стандартным</string>
+	<string name="save_and_quit">Сохранить и выйти</string>
+	<string name="scale_rate">Масштаб</string>
+	<string name="open_file_manager">Открыть файловый менеджер</string>
+	<string name="installing_firmware">Установка прошивки...</string>
+	<string name="refresh_list">Обновить список</string>
+	<string name="select_game">Выбрать игру</string>
+	<string name="install_firmware">Установить прошивку</string>
+	<string name="install_game">Установить RAP/PKG</string>
+	<string name="installing_game">Установка игры...</string>
+	<string name="about">О программе</string>
+	<string name="quit">Выход</string>
+	<string name="update_log">Журнал обновлений</string>
+	<string name="empty_game_list">Список игр пуст. Добавьте игры через установку pkg или задайте каталог *.iso</string>
+	<string name="delete">Удалить</string>
+	<string name="settings">Настройки</string>
+	<string name="gratitude">Благодарности</string>
+	<string name="gratitude_content">Спасибо Ruban за все иконки\n\n
+	Спасибо SRC267 (Sting) за модерацию reddit/discord\n\n
+	Спасибо Yaoyao за тестирование\n\n
+	Спасибо再见某人 за пожертвование GPD XP, что очень помогло тестированию\n\n
+	Спасибо再见某人 за пожертвование оборудования для разработки\n\n
+	Спасибо следующим людям за финансовую поддержку (начальный этап, по дате):\n\n</string>
+	<string name="gratitude_content2">
+	На основе оптимизации RPCS3. Спасибо всем участникам проекта RPCS3\n\n
+Перевод qwen3
+	</string>
+	<string name="key_mappers">Назначение клавиш</string>
+	<string name="virtual_pad_edit">Редактирование виртуального джойстика</string>
+
+	<string name="left">влево</string>
+	<string name="up">вверх</string>
+	<string name="right">вправо</string>
+	<string name="down">вниз</string>
+
+	<string name="square">Квадрат</string>
+	<string name="cross">Крест</string>
+	<string name="circle">Круг</string>
+	<string name="triangle">Треугольник</string>
+
+	<string name="l1">L1</string>
+	<string name="l2">L2</string>
+	<string name="l3">L3</string>
+
+	<string name="r1">R1</string>
+	<string name="r2">R2</string>
+	<string name="r3">R3</string>
+
+	<string name="start">Start</string>
+	<string name="select">Select</string>
+	<string name="ps">PS</string>
+
+	<string name="emulator_settings_video_vulkan_custom_driver_library_path_dialog_title">Выберите драйвер</string>
+	<string name="emulator_settings_video_vulkan_custom_driver_library_path_dialog_add_hint">Добавить драйвер (*.zip, *.so)</string>
+
+	<string name="emulator_settings_miscellaneous_custom_font_file_path_dialog_title">Выберите шрифт</string>
+	<string name="emulator_settings_miscellaneous_custom_font_file_path_dialog_add_hint">Добавить шрифт (*.ttf, *.ttc, *.otf)</string>
+
+	<string name="emulator_settings_core">Ядро</string>
+	<string name="emulator_settings_core_ppu_decoder">Декодер PPU</string>
+	<string-array name="core_ppu_decoder_entries">
+		<item>Интерпретатор (статический)</item>
+		<item>Рекомпилятор (LLVM)</item>
+	</string-array>
+	<string name="emulator_settings_core_ppu_threads">Потоки PPU</string>
+	<string name="emulator_settings_core_ppu_debug">Отладка PPU</string>
+	<string name="emulator_settings_core_ppu_calling_history">История вызовов PPU</string>
+	<string name="emulator_settings_core_save_llvm_logs">Сохранять логи LLVM</string>
+	<string name="emulator_settings_core_use_llvm_cpu">Использовать LLVM CPU</string>
+	<string name="emulator_settings_core_max_llvm_compile_threads">Максимум потоков LLVM</string>
+	<string name="emulator_settings_core_ppu_llvm_greedy_mode">Режим LLVM PPU</string>
+	<string name="emulator_settings_core_llvm_precompilation">Предварительная компиляция LLVM</string>
+	<string name="emulator_settings_core_thread_scheduler_mode">Режим планировщика</string>
+	<string-array name="core_thread_scheduler_mode_entries">
+		<item>ОС</item>
+		<item>Привязка</item>
+	</string-array>
+	<string name="emulator_settings_core_set_daz_and_ftz">Установить DAZ и FTZ</string>
+	<string name="emulator_settings_core_spu_decoder">Декодер SPU</string>
+	<string-array name="core_spu_decoder_entries">
+		<item>Интерпретатор (статический)</item>
+		<item>Интерпретатор (динамический)</item>
+		<item>Рекомпилятор (ASMJIT)</item>
+		<item>Рекомпилятор (LLVM)</item>
+	</string-array>
+	<string name="emulator_settings_core_spu_reservation_busy_waiting_percentage">Процент ожидания SPU</string>
+	<string name="emulator_settings_core_spu_getllar_busy_waiting_percentage">Процент ожидания GETLLAR</string>
+	<string name="emulator_settings_core_disable_spu_getllar_spin_optimization">Отключить оптимизацию GETLLAR</string>
+	<string name="emulator_settings_core_spu_debug">Отладка SPU</string>
+	<string name="emulator_settings_core_mfc_debug">Отладка MFC</string>
+	<string name="emulator_settings_core_preferred_spu_threads">Предпочтительные потоки SPU</string>
+	<string name="emulator_settings_core_spu_delay_penalty">Задержка SPU</string>
+	<string name="emulator_settings_core_spu_loop_detection">Обнаружение циклов SPU</string>
+	<string name="emulator_settings_core_max_spurs_threads">Максимум потоков SPURS</string>
+	<string name="emulator_settings_core_spu_block_size">Размер блока SPU</string>
+	<string-array name="core_spu_block_size_entries">
+		<item>Безопасный</item>
+		<item>Mega</item>
+		<item>Giga</item>
+	</string-array>
+	<string name="emulator_settings_core_accurate_spu_dma">Точный SPU DMA</string>
+	<string name="emulator_settings_core_accurate_spu_reservations">Точные резервы SPU</string>
+	<string name="emulator_settings_core_accurate_cache_line_stores">Точные записи в кэше</string>
+	<string name="emulator_settings_core_accurate_rsx_reservation_access">Точный доступ RSX</string>
+	<string name="emulator_settings_core_rsx_fifo_accuracy">Точность RSX FIFO</string>
+	<string-array name="core_rsx_fifo_accuracy_entries">
+		<item>Быстро</item>
+		<item>Атомарно</item>
+		<item>Порядковый</item>
+		<item>PS3</item>
+	</string-array>
+	<string name="emulator_settings_core_spu_verification">Проверка SPU</string>
+	<string name="emulator_settings_core_spu_cache">Кэш SPU</string>
+	<string name="emulator_settings_core_spu_profiler">Профайлер SPU</string>
+	<string name="emulator_settings_core_mfc_commands_shuffling_limit">Лимит перемешивания</string>
+	<string name="emulator_settings_core_mfc_commands_timeout">Таймаут команд</string>
+	<string name="emulator_settings_core_mfc_commands_shuffling_in_steps">Шаги перемешивания</string>
+	<string name="emulator_settings_core_enable_tsx">Включить TSX</string>
+	<string-array name="core_enable_tsx_entries">
+		<item>Отключено</item>
+		<item>Включено</item>
+		<item>Принудительно</item>
+	</string-array>
+	<string name="emulator_settings_core_xfloat_accuracy">Точность XFloat</string>
+	<string-array name="core_xfloat_accuracy_entries">
+		<item>Точная</item>
+		<item>Приблизительная</item>
+		<item>Оптимизированная</item>
+		<item>Неточная</item>
+	</string-array>
+	<string name="emulator_settings_core_accurate_ppu_128byte_reservation_op_max_length">Макс длина резервирования</string>
+	<string name="emulator_settings_core_stub_ppu_traps">Заглушки PPU</string>
+	<string name="emulator_settings_core_precise_spu_verification">Точная проверка SPU</string>
+	<string name="emulator_settings_core_ppu_llvm_java_mode_handling">Обработка Java-режима</string>
+	<string name="emulator_settings_core_use_accurate_dfma">Точный DFMA</string>
+	<string name="emulator_settings_core_ppu_set_saturation_bit">Бит насыщения PPU</string>
+	<string name="emulator_settings_core_ppu_accurate_nonjava_mode">Точный не-Java режим</string>
+	<string name="emulator_settings_core_ppu_fixup_vector_nan_values">Исправление NaN</string>
+	<string name="emulator_settings_core_ppu_accurate_vector_nan_values">Точные NaN значения</string>
+	<string name="emulator_settings_core_ppu_set_fpcc_bits">Биты FPCC</string>
+	<string name="emulator_settings_core_debug_console_mode">Режим отладки</string>
+	<string name="emulator_settings_core_hook_static_functions">Хуки статических функций</string>
+	<string name="emulator_settings_core_libraries_control">Контроль библиотек</string>
+	<string name="emulator_settings_core_hle_lwmutex">HLE lwmutex</string>
+	<string name="emulator_settings_core_spu_llvm_lower_bound">LLVM SPU минимум</string>
+	<string name="emulator_settings_core_spu_llvm_upper_bound">LLVM SPU максимум</string>
+	<string name="emulator_settings_core_tsx_transaction_first_limit">Первый лимит TSX</string>
+	<string name="emulator_settings_core_tsx_transaction_second_limit">Второй лимит TSX</string>
+	<string name="emulator_settings_core_clocks_scale">Масштаб часов</string>
+	<string name="emulator_settings_core_spu_wakeup_delay">Задержка SPU</string>
+	<string name="emulator_settings_core_spu_wakeup_delay_thread_mask">Маска потоков SPU</string>
+	<string name="emulator_settings_core_max_cpu_preempt_count">Макс прерываний CPU</string>
+	<string name="emulator_settings_core_allow_rsx_cpu_preemptions">Разрешить прерывания RSX</string>
+	<string name="emulator_settings_core_sleep_timers_accuracy">Точность таймеров</string>
+	<string-array name="core_sleep_timers_accuracy_entries">
+		<item>Как на хосте</item>
+		<item>Только usleep</item>
+		<item>Все таймеры</item>
+	</string-array>
+	<string name="emulator_settings_core_usleep_time_addend">Дополнение usleep</string>
+	<string name="emulator_settings_core_performance_report_threshold">Порог производительности</string>
+	<string name="emulator_settings_core_enable_performance_report">Включить отчет</string>
+	<string name="emulator_settings_core_assume_external_debugger">Внешний отладчик</string>
+	<string name="emulator_settings_video">Видео</string>
+	<string name="emulator_settings_video_vertex_buffer_upload_mode">Режим загрузки вершин</string>
+	<string-array name="video_vertex_buffer_upload_mode_entries">
+		<item>Авто</item>
+		<item>Просмотр</item>
+		<item>Буфер</item>
+	</string-array>
+	<string name="emulator_settings_video_texture_upload_mode">Режим загрузки текстур</string>
+	<string-array name="video_texture_upload_mode_entries">
+		<item>CPU</item>
+		<item>GPU</item>
+	</string-array>
+	<string name="emulator_settings_video_renderer">Рендерер</string>
+	<string-array name="video_renderer_entries">
+		<item>Нет</item>
+		<item>Vulkan</item>
+	</string-array>
+	<string name="emulator_settings_video_resolution">Разрешение</string>
+	<string-array name="video_resolution_entries">
+		<item>1920x1080</item>
+		<item>1920x1080i</item>
+		<item>1280x720</item>
+		<item>720x480</item>
+		<item>720x480i</item>
+		<item>720x576</item>
+		<item>720x576i</item>
+		<item>1600x1080</item>
+		<item>1440x1080</item>
+		<item>1280x1080</item>
+		<item>960x1080</item>
+	</string-array>
+	<string name="emulator_settings_video_aspect_ratio">Соотношение сторон</string>
+	<string-array name="video_aspect_ratio_entries">
+		<item>4:3</item>
+		<item>16:9</item>
+	</string-array>
+	<string name="emulator_settings_video_frame_limit">Ограничение кадров</string>
+	<string-array name="video_frame_limit_entries">
+		<item>Выкл</item>
+		<item>30</item>
+		<item>50</item>
+		<item>60</item>
+		<item>120</item>
+		<item>Дисплей</item>
+		<item>Авто</item>
+		<item>PS3 Native</item>
+		<item>Бесконечность</item>
+	</string-array>
+	<string name="emulator_settings_video_second_frame_limit">Второе ограничение</string>
+	<string name="emulator_settings_video_msaa">MSAA</string>
+	<string-array name="video_msaa_entries">
+		<item>Отключено</item>
+		<item>Авто</item>
+	</string-array>
+	<string name="emulator_settings_video_shader_mode">Режим шейдеров</string>
+	<string-array name="video_shader_mode_entries">
+		<item>Рекомпилятор</item>
+		<item>Асинхронный</item>
+		<item>Асинхронный с интерпретатором</item>
+		<item>Интерпретатор</item>
+	</string-array>
+	<string name="emulator_settings_video_shader_precision">Точность шейдеров</string>
+	<string-array name="video_shader_precision_entries">
+		<item>Ультра</item>
+		<item>Высокая</item>
+		<item>Низкая</item>
+		<item>Авто</item>
+	</string-array>
+	<string name="emulator_settings_video_write_color_buffers">Запись цветовых буферов</string>
+	<string name="emulator_settings_video_write_depth_buffer">Запись Z-буфера</string>
+	<string name="emulator_settings_video_read_color_buffers">Чтение цветовых буферов</string>
+	<string name="emulator_settings_video_read_depth_buffer">Чтение Z-буфера</string>
+	<string name="emulator_settings_video_handle_rsx_memory_tiling">Управление памятью RSX</string>
+	<string name="emulator_settings_video_log_shader_programs">Лог шейдеров</string>
+	<string name="emulator_settings_video_vsync">VSync</string>
+	<string name="emulator_settings_video_debug_output">Отладка</string>
+	<string name="emulator_settings_video_debug_overlay">Отладочный вывод</string>
+	<string name="emulator_settings_video_renderdoc_compatibility_mode">Режим Renderdoc</string>
+	<string name="emulator_settings_video_use_gpu_texture_scaling">Масштабирование GPU</string>
+	<string name="emulator_settings_video_stretch_to_display_area">Растяжение</string>
+	<string name="emulator_settings_video_force_high_precision_z_buffer">Высокая точность Z</string>
+	<string name="emulator_settings_video_strict_rendering_mode">Строгий режим</string>
+	<string name="emulator_settings_video_disable_zcull_occlusion_queries">Отключить ZCull</string>
+	<string name="emulator_settings_video_disable_video_output">Отключить видео</string>
+	<string name="emulator_settings_video_disable_vertex_cache">Отключить кэш вершин</string>
+	<string name="emulator_settings_video_disable_fifo_reordering">Отключить переупорядочение</string>
+	<string name="emulator_settings_video_enable_frame_skip">Включить пропуск кадров</string>
+	<string name="emulator_settings_video_force_cpu_blit">Принудительный CPU</string>
+	<string name="emulator_settings_video_disable_ondisk_shader_cache">Отключить кэш шейдеров</string>
+	<string name="emulator_settings_video_disable_vulkan_memory_allocator">Отключить VMA</string>
+	<string name="emulator_settings_video_use_full_rgb_output_range">Полный RGB диапазон</string>
+	<string name="emulator_settings_video_strict_texture_flushing">Строгая очистка</string>
+	<string name="emulator_settings_video_multithreaded_rsx">Многопоточный RSX</string>
+	<string name="emulator_settings_video_relaxed_zcull_sync">Слабая синхронизация ZCull</string>
+	<string name="emulator_settings_video_force_hardware_msaa_resolve">Аппаратное MSAA</string>
+	<string name="emulator_settings_video_3d_display_mode">3D режим</string>
+	<string-array name="video_3d_display_mode_entries">
+		<item>Отключено</item>
+		<item>Побочное</item>
+		<item>Верх-низ</item>
+		<item>Чересстрочное</item>
+		<item>Анаглиф RG</item>
+		<item>Анаглиф RB</item>
+		<item>Анаглиф RC</item>
+		<item>Анаглиф MC</item>
+		<item>Анаглиф AB</item>
+	</string-array>
+	<string name="emulator_settings_video_debug_program_analyser">Анализ программы</string>
+	<string name="emulator_settings_video_accurate_zcull_stats">Точные статистики ZCull</string>
+	<string name="emulator_settings_video_consecutive_frames_to_draw">Кадры для отрисовки</string>
+	<string name="emulator_settings_video_consecutive_frames_to_skip">Кадры для пропуска</string>
+	<string name="emulator_settings_video_resolution_scale">Масштабирование</string>
+	<string name="emulator_settings_video_anisotropic_filter_override">Анизотропная фильтрация</string>
+	<string name="emulator_settings_video_texture_lod_bias_addend">Смещение LOD</string>
+	<string name="emulator_settings_video_minimum_scalable_dimension">Минимальный размер</string>
+	<string name="emulator_settings_video_shader_compiler_threads">Потоки компиляции</string>
+	<string name="emulator_settings_video_driver_recovery_timeout">Таймаут восстановления</string>
+	<string name="emulator_settings_video_driver_wakeup_delay">Задержка драйвера</string>
+	<string name="emulator_settings_video_vblank_rate">Частота VBlank</string>
+	<string name="emulator_settings_video_vblank_ntsc_fixup">Фикс NTSC</string>
+	<string name="emulator_settings_video_decr_memory_layout">Макет DEC</string>
+	<string name="emulator_settings_video_allow_host_gpu_labels">Метки GPU</string>
+	<string name="emulator_settings_video_disable_msl_fast_math">Отключить MSL Fast Math</string>
+	<string name="emulator_settings_video_disable_asynchronous_memory_manager">Отключить AMM</string>
+	<string name="emulator_settings_video_output_scaling_mode">Масштабирование</string>
+	<string-array name="video_output_scaling_mode_entries">
+		<item>Ближайший</item>
+		<item>Билинейный</item>
+		<item>FidelityFX</item>
+	</string-array>
+	<string name="emulator_settings_video_use_bgra_format">Формат BGRA</string>
+	<string name="emulator_settings_video_force_convert_texture">Принудительное преобразование</string>
+	<string name="emulator_settings_video_vulkan">Vulkan</string>
+	<string name="emulator_settings_video_vulkan_adapter">Адаптер</string>
+	<string name="emulator_settings_video_vulkan_force_fifo_present_mode">Режим FIFO</string>
+	<string name="emulator_settings_video_vulkan_force_primitive_restart_flag">Флаг перезапуска</string>
+	<string name="emulator_settings_video_vulkan_exclusive_fullscreen_mode">Полноэкранный режим</string>
+	<string-array name="video_vulkan_exclusive_fullscreen_mode_entries">
+		<item>Авто</item>
+		<item>Отключить</item>
+		<item>Включить</item>
+	</string-array>
+	<string name="emulator_settings_video_vulkan_asynchronous_texture_streaming_2">Потоковая передача</string>
+	<string name="emulator_settings_video_vulkan_fidelityfx_cas_sharpening_intensity">Интенсивность</string>
+	<string name="emulator_settings_video_vulkan_asynchronous_queue_scheduler">Планировщик очередей</string>
+	<string-array name="video_vulkan_asynchronous_queue_scheduler_entries">
+		<item>Безопасный</item>
+		<item>Быстрый</item>
+	</string-array>
+	<string name="emulator_settings_video_vulkan_vram_allocation_limit">Лимит VRAM (МБ)</string>
+
+	<string name="emulator_settings_video_vulkan_use_custom_driver">Пользовательский драйвер</string>
+
+	<string name="emulator_settings_video_vulkan_custom_driver_library_path">Путь к драйверу</string>
+
+	<string name="emulator_settings_video_vulkan_custom_driver_force_max_clocks">Максимальные такты</string>
+
+	<string name="emulator_settings_video_performance_overlay">Производительность</string>
+	<string name="emulator_settings_video_performance_overlay_enabled">Включено</string>
+	<string name="emulator_settings_video_performance_overlay_enable_framerate_graph">График FPS</string>
+	<string name="emulator_settings_video_performance_overlay_enable_frametime_graph">График времени кадра</string>
+	<string name="emulator_settings_video_performance_overlay_framerate_datapoints">Точки FPS</string>
+	<string name="emulator_settings_video_performance_overlay_frametime_datapoints">Точки времени</string>
+	<string name="emulator_settings_video_performance_overlay_detail_level">Детализация</string>
+	<string-array name="video_performance_overlay_detail_level_entries">
+		<item>Нет</item>
+		<item>Минимальная</item>
+		<item>Низкая</item>
+		<item>Средняя</item>
+		<item>Высокая</item>
+	</string-array>
+	<string name="emulator_settings_video_performance_overlay_framerate_graph_detail_level">Детализация графика FPS</string>
+	<string-array name="video_performance_overlay_framerate_graph_detail_level_entries">
+		<item>Минимальная</item>
+		<item>Показывать min/max</item>
+		<item>1% и среднее</item>
+		<item>Все</item>
+	</string-array>
+	<string name="emulator_settings_video_performance_overlay_frametime_graph_detail_level">Детализация графика времени</string>
+	<string-array name="video_performance_overlay_frametime_graph_detail_level_entries">
+		<item>Минимальная</item>
+		<item>Показывать min/max</item>
+		<item>1% и среднее</item>
+		<item>Все</item>
+	</string-array>
+	<string name="emulator_settings_video_performance_overlay_metrics_update_interval">Интервал обновления</string>
+	<string name="emulator_settings_video_performance_overlay_font_size">Размер шрифта</string>
+	<string name="emulator_settings_video_performance_overlay_position">Позиция</string>
+	<string-array name="video_performance_overlay_position_entries">
+		<item>Верх слева</item>
+		<item>Верх справа</item>
+		<item>Низ слева</item>
+		<item>Низ справа</item>
+	</string-array>
+	<string name="emulator_settings_video_performance_overlay_font">Шрифт</string>
+	<string name="emulator_settings_video_performance_overlay_horizontal_margin">Горизонтальное поле</string>
+	<string name="emulator_settings_video_performance_overlay_vertical_margin">Вертикальное поле</string>
+	<string name="emulator_settings_video_performance_overlay_center_horizontally">По центру горизонтально</string>
+	<string name="emulator_settings_video_performance_overlay_center_vertically">По центру вертикально</string>
+	<string name="emulator_settings_video_performance_overlay_opacity">Непрозрачность</string>
+	<string name="emulator_settings_video_performance_overlay_body_color">Цвет тела (HEX)</string>
+	<string name="emulator_settings_video_performance_overlay_body_background">Фон тела (HEX)</string>
+	<string name="emulator_settings_video_performance_overlay_title_color">Цвет заголовка (HEX)</string>
+	<string name="emulator_settings_video_performance_overlay_title_background">Фон заголовка (HEX)</string>
+	<string name="emulator_settings_video_shader_loading_dialog">Загрузка шейдеров</string>
+	<string name="emulator_settings_video_shader_loading_dialog_allow_custom_background">Пользовательский фон</string>
+	<string name="emulator_settings_video_shader_loading_dialog_darkening_effect_strength">Сила затемнения</string>
+	<string name="emulator_settings_video_shader_loading_dialog_blur_effect_strength">Сила размытия</string>
+	<string name="emulator_settings_audio">Аудио</string>
+	<string name="emulator_settings_audio_renderer">Рендерер</string>
+	<string-array name="audio_renderer_entries">
+		<item>Нет</item>
+		<item>Cubeb</item>
+	</string-array>
+	<string name="emulator_settings_audio_audio_provider">Провайдер</string>
+	<string-array name="audio_audio_provider_entries">
+		<item>Нет</item>
+		<item>CellAudio</item>
+		<item>RSXAudio</item>
+	</string-array>
+	<string name="emulator_settings_audio_rsxaudio_avport">AV порт</string>
+	<string-array name="audio_rsxaudio_avport_entries">
+		<item>HDMI 0</item>
+		<item>HDMI 1</item>
+		<item>AV выход</item>
+		<item>SPDIF 0</item>
+		<item>SPDIF 1</item>
+	</string-array>
+	<string name="emulator_settings_audio_dump_to_file">Сохранить в файл</string>
+	<string name="emulator_settings_audio_convert_to_16_bit">16 бит</string>
+	<string name="emulator_settings_audio_audio_format">Формат</string>
+	<string-array name="audio_audio_format_entries">
+		<item>Стерео</item>
+		<item>5.1</item>
+		<item>7.1</item>
+		<item>Авто</item>
+		<item>Ручной</item>
+	</string-array>
+	<string name="emulator_settings_audio_audio_formats">Форматы</string>
+	<string name="emulator_settings_audio_audio_channel_layout">Каналы</string>
+	<string-array name="audio_audio_channel_layout_entries">
+		<item>Авто</item>
+		<item>Моно</item>
+		<item>Стерео</item>
+		<item>Стерео LFE</item>
+		<item>Квадро</item>
+		<item>Квадро LFE</item>
+		<item>5.1</item>
+		<item>7.1</item>
+	</string-array>
+	<string name="emulator_settings_audio_audio_device">Устройство</string>
+	<string name="emulator_settings_audio_master_volume">Громкость</string>
+	<string name="emulator_settings_audio_enable_buffering">Включить буферизацию</string>
+	<string name="emulator_settings_audio_desired_audio_buffer_duration">Размер буфера</string>
+	<string name="emulator_settings_audio_enable_time_stretching">Время растяжения</string>
+	<string name="emulator_settings_audio_disable_sampling_skip">Отключить пропуск</string>
+	<string name="emulator_settings_audio_time_stretching_threshold">Порог растяжения</string>
+	<string name="emulator_settings_audio_microphone_type">Тип микрофона</string>
+	<string-array name="audio_microphone_type_entries">
+		<item>Нет</item>
+		<item>Стандартный</item>
+		<item>SingStar</item>
+		<item>Real SingStar</item>
+		<item>Rocksmith</item>
+	</string-array>
+	<string name="emulator_settings_audio_microphone_devices">Устройства</string>
+	<string name="emulator_settings_audio_music_handler">Обработчик музыки</string>
+	<string-array name="audio_music_handler_entries">
+		<item>Нет</item>
+		<item>Qt</item>
+	</string-array>
+	<string name="emulator_settings_input_output">Ввод/вывод</string>
+	<string name="emulator_settings_input_output_keyboard">Клавиатура</string>
+	<string-array name="input_output_keyboard_entries">
+		<item>Нет</item>
+		<item>Базовая</item>
+	</string-array>
+	<string name="emulator_settings_input_output_mouse">Мышь</string>
+	<string-array name="input_output_mouse_entries">
+		<item>Нет</item>
+		<item>Базовая</item>
+		<item>Сырая</item>
+	</string-array>
+	<string name="emulator_settings_input_output_camera">Камера</string>
+	<string-array name="input_output_camera_entries">
+		<item>Нет</item>
+		<item>Фейк</item>
+		<item>Qt</item>
+	</string-array>
+	<string name="emulator_settings_input_output_camera_type">Тип камеры</string>
+	<string-array name="input_output_camera_type_entries">
+		<item>Неизвестно</item>
+		<item>EyeToy</item>
+		<item>PS Eye</item>
+		<item>UVC 1.1</item>
+	</string-array>
+	<string name="emulator_settings_input_output_camera_flip">Поворот камеры</string>
+	<string-array name="input_output_camera_flip_entries">
+		<item>Нет</item>
+		<item>Горизонтально</item>
+		<item>Вертикально</item>
+		<item>Оба</item>
+	</string-array>
+	<string name="emulator_settings_input_output_camera_id">ID камеры</string>
+	<string name="emulator_settings_input_output_move">Move</string>
+	<string-array name="input_output_move_entries">
+		<item>Нет</item>
+		<item>Фейк</item>
+		<item>Мышь</item>
+		<item>Сырая мышь</item>
+	</string-array>
+	<string name="emulator_settings_input_output_buzz_emulated_controller">Buzz контроллер</string>
+	<string-array name="input_output_buzz_emulated_controller_entries">
+		<item>Нет</item>
+		<item>1 контроллер</item>
+		<item>2 контроллера</item>
+	</string-array>
+	<string name="emulator_settings_input_output_turntable_emulated_controller">Платформа</string>
+	<string-array name="input_output_turntable_emulated_controller_entries">
+		<item>Нет</item>
+		<item>1 контроллер</item>
+		<item>2 контроллера</item>
+	</string-array>
+    <string name="emulator_settings_input_output_ghltar_emulated_controller">Гитара</string>
+    <string-array name="input_output_ghltar_emulated_controller_entries">
+		<item>Отсутствует</item>
+		<item>1 контроллер</item>
+		<item>2 контроллера</item>
+	</string-array>
+	<string name="emulator_settings_input_output_pad_handler_mode">Режим обработчика джойстика</string>
+	<string-array name="input_output_pad_handler_mode_entries">
+		<item>Однопоточный</item>
+		<item>Многопоточный</item>
+	</string-array>
+	<string name="emulator_settings_input_output_keep_pads_connected">Сохранять подключенные джойстики</string>
+	<string name="emulator_settings_input_output_pad_handler_sleep">Задержка обработчика джойстика (микросекунды)</string>
+	<string name="emulator_settings_input_output_background_input_enabled">Ввод в фоновом режиме</string>
+	<string name="emulator_settings_input_output_show_move_cursor">Показывать курсор движения</string>
+	<string name="emulator_settings_input_output_lock_overlay_input_to_player_one">Блокировать ввод на первом игроке</string>
+	<string name="emulator_settings_input_output_emulated_midi_devices">Эмулируемые MIDI-устройства</string>
+	<string name="emulator_settings_input_output_load_sdl_gamecontroller_mappings">Загрузить отображения SDL GameController</string>
+	<string name="emulator_settings_input_output_io_debug_overlay">Отладка ввода/вывода</string>
+	<string name="emulator_settings_system">Система</string>
+	<string name="emulator_settings_system_license_area">Регион лицензии</string>
+	<string-array name="system_license_area_entries">
+		<item>SCEJ</item>
+		<item>SCEA</item>
+		<item>SCEE</item>
+		<item>SCEH</item>
+		<item>SCEK</item>
+		<item>SCH</item>
+	</string-array>
+	<string name="emulator_settings_system_language">Язык</string>
+	<string-array name="system_language_entries">
+		<item>Японский</item>
+		<item>Английский (США)</item>
+		<item>Французский</item>
+		<item>Испанский</item>
+		<item>Немецкий</item>
+		<item>Итальянский</item>
+		<item>Голландский</item>
+		<item>Португальский (Португалия)</item>
+		<item>Русский</item>
+		<item>Корейский</item>
+		<item>Китайский (традиционный)</item>
+		<item>Китайский (упрощенный)</item>
+		<item>Финский</item>
+		<item>Шведский</item>
+		<item>Датский</item>
+		<item>Норвежский</item>
+		<item>Польский</item>
+		<item>Португальский (Бразилия)</item>
+		<item>Английский (Великобритания)</item>
+		<item>Турецкий</item>
+	</string-array>
+	<string name="emulator_settings_system_keyboard_type">Тип клавиатуры</string>
+	<string-array name="system_keyboard_type_entries">
+		<item>Английская клавиатура (стандарт США)</item>
+		<item>Японская клавиатура</item>
+		<item>Японская клавиатура (режим Кана)</item>
+		<item>Немецкая клавиатура</item>
+		<item>Испанская клавиатура</item>
+		<item>Французская клавиатура</item>
+		<item>Итальянская клавиатура</item>
+		<item>Голландская клавиатура</item>
+		<item>Португальская клавиатура (Португалия)</item>
+		<item>Клавиатура для русского</item>
+		<item>Английская клавиатура (стандарт Великобритании)</item>
+		<item>Корейская клавиатура</item>
+		<item>Норвежская клавиатура</item>
+		<item>Финская клавиатура</item>
+		<item>Датская клавиатура</item>
+		<item>Шведская клавиатура</item>
+		<item>Китайская клавиатура (традиционный)</item>
+		<item>Китайская клавиатура (упрощенный)</item>
+		<item>Французская клавиатура (Швейцария)</item>
+		<item>Немецкая клавиатура (Швейцария)</item>
+		<item>Французская клавиатура (Канада)</item>
+		<item>Французская клавиатура (Бельгия)</item>
+		<item>Польская клавиатура</item>
+		<item>Португальская клавиатура (Бразилия)</item>
+		<item>Турецкая клавиатура</item>
+	</string-array>
+	<string name="emulator_settings_system_enter_button_assignment">Кнопка Enter</string>
+	<string-array name="system_enter_button_assignment_entries">
+		<item>Enter с кружком</item>
+		<item>Enter с крестиком</item>
+	</string-array>
+	<string name="emulator_settings_system_console_time_offset">Смещение времени консоли (сек)</string>
+	<string name="emulator_settings_system_system_name">Имя системы</string>
+	<string name="emulator_settings_system_psid_high">PSID (старшая часть)</string>
+	<string name="emulator_settings_system_psid_low">PSID (младшая часть)</string>
+	<string name="emulator_settings_system_hdd_model_name">Модель HDD</string>
+	<string name="emulator_settings_system_hdd_serial_number">Серийный номер HDD</string>
+	<string name="emulator_settings_net">Сеть</string>
+	<string name="emulator_settings_net_internet_enabled">Интернет включен</string>
+	<string-array name="net_internet_enabled_entries">
+		<item>Отключено</item>
+		<item>Подключено</item>
+	</string-array>
+	<string name="emulator_settings_net_ip_address">IP-адрес</string>
+	<string name="emulator_settings_net_bind_address">IP-адрес привязки</string>
+	<string name="emulator_settings_net_dns_address">DNS-адрес</string>
+	<string name="emulator_settings_net_ip_swap_list">Список IP-замен</string>
+	<string name="emulator_settings_net_upnp_enabled">UPNP включен</string>
+	<string name="emulator_settings_net_psn_status">Статус PSN</string>
+	<string-array name="net_psn_status_entries">
+		<item>Отключен</item>
+		<item>Симулированный</item>
+		<item>RPCN</item>
+	</string-array>
+	<string name="emulator_settings_net_psn_country">Страна PSN</string>
+	<string name="emulator_settings_savestate">Сохранение состояния</string>
+	<string name="emulator_settings_savestate_start_paused">Запуск в приостановленном режиме</string>
+	<string name="emulator_settings_savestate_suspend_emulation_savestate_mode">Режим сохранения приостановки эмуляции</string>
+	<string name="emulator_settings_savestate_compatible_savestate_mode">Совместимый режим сохранения</string>
+	<string name="emulator_settings_savestate_inspection_mode_savestates">Сохранения в режиме инспекции</string>
+	<string name="emulator_settings_savestate_save_disc_game_data">Сохранять данные дисковых игр</string>
+	<string name="emulator_settings_miscellaneous">Разное</string>
+	<string name="emulator_settings_miscellaneous_automatically_start_games_after_boot">Автозапуск игр после загрузки</string>
+	<string name="emulator_settings_miscellaneous_exit_rpcs3_when_process_finishes">Выход из RPCS3 после завершения</string>
+	<string name="emulator_settings_miscellaneous_pause_emulation_on_rpcs3_focus_loss">Пауза при потере фокуса</string>
+	<string name="emulator_settings_miscellaneous_start_games_in_fullscreen_mode">Запуск игр в полноэкранном режиме</string>
+	<string name="emulator_settings_miscellaneous_prevent_display_sleep_while_running_games">Запрет на переход в спящий режим</string>
+	<string name="emulator_settings_miscellaneous_show_trophy_popups">Показывать трофеи</string>
+	<string name="emulator_settings_miscellaneous_show_rpcn_popups">Показывать уведомления RPCN</string>
+	<string name="emulator_settings_miscellaneous_show_shader_compilation_hint">Сообщение о компиляции шейдеров</string>
+	<string name="emulator_settings_miscellaneous_show_ppu_compilation_hint">Сообщение о компиляции PPU</string>
+	<string name="emulator_settings_miscellaneous_show_pressure_intensity_toggle_hint">Сообщение об интенсивности нажатий</string>
+	<string name="emulator_settings_miscellaneous_show_analog_limiter_toggle_hint">Сообщение об аналоговом лимитере</string>
+	<string name="emulator_settings_miscellaneous_show_mouse_and_keyboard_toggle_hint">Сообщение о мыши и клавиатуре</string>
+	<string name="emulator_settings_miscellaneous_show_autosave_autoload_hint">Сообщение об автосохранении</string>
+	<string name="emulator_settings_miscellaneous_use_native_user_interface">Использовать нативный интерфейс</string>
+	<string name="emulator_settings_miscellaneous_gdb_server">Сервер GDB</string>
+	<string name="emulator_settings_miscellaneous_silence_all_logs">Отключить все логи</string>
+	<string name="emulator_settings_miscellaneous_window_title_format">Формат заголовка окна</string>
+	<string name="emulator_settings_miscellaneous_pause_emulation_during_home_menu">Пауза в меню Home</string>
+	<string name="emulator_settings_miscellaneous_font_file_selection">Выбор шрифта</string>
+	<string-array name="miscellaneous_font_file_selection_entries">
+		<item>Из прошивки</item>
+		<item>Пользовательский</item>
+	</string-array>
+	<string name="emulator_settings_miscellaneous_custom_font_file_path">Путь к шрифту</string>
+	<string name="emulator_settings_miscellaneous_font_size">Размер шрифта</string>
+	<string name="INVALID">Недопустимо</string>
+	<string name="RSX_OVERLAYS_TROPHY_BRONZE">Вы получили бронзовый трофей\n%0</string>
+	<string name="RSX_OVERLAYS_TROPHY_SILVER">Вы получили серебряный трофей\n%0</string>
+	<string name="RSX_OVERLAYS_TROPHY_GOLD">Вы получили золотой трофей\n%0</string>
+	<string name="RSX_OVERLAYS_TROPHY_PLATINUM">Вы получили платиновый трофей\n%0</string>
+	<string name="RSX_OVERLAYS_COMPILING_SHADERS">Компиляция шейдеров</string>
+	<string name="RSX_OVERLAYS_COMPILING_PPU_MODULES">Компиляция модулей PPU</string>
+	<string name="RSX_OVERLAYS_MSG_DIALOG_YES">Да</string>
+	<string name="RSX_OVERLAYS_MSG_DIALOG_NO">Нет</string>
+	<string name="RSX_OVERLAYS_MSG_DIALOG_CANCEL">Назад</string>
+	<string name="RSX_OVERLAYS_MSG_DIALOG_OK">ОК</string>
+	<string name="RSX_OVERLAYS_SAVE_DIALOG_TITLE">Диалог сохранения</string>
+	<string name="RSX_OVERLAYS_SAVE_DIALOG_DELETE">Удалить сохранение</string>
+	<string name="RSX_OVERLAYS_SAVE_DIALOG_LOAD">Загрузить</string>
+	<string name="RSX_OVERLAYS_SAVE_DIALOG_SAVE">Сохранить</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_ACCEPT">Ввод</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_CANCEL">Отмена</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_SPACE">Пробел</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_BACKSPACE">Удалить</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_SHIFT">Shift</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_ENTER_TEXT">[Введите текст]</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_ENTER_PASSWORD">[Введите пароль]</string>
+	<string name="RSX_OVERLAYS_MEDIA_DIALOG_TITLE">Выбор медиа</string>
+	<string name="RSX_OVERLAYS_MEDIA_DIALOG_TITLE_PHOTO_IMPORT">Выберите фото для импорта</string>
+	<string name="RSX_OVERLAYS_MEDIA_DIALOG_EMPTY">Медиа не найдены</string>
+	<string name="RSX_OVERLAYS_LIST_SELECT">Выбрать</string>
+	<string name="RSX_OVERLAYS_LIST_CANCEL">Отмена</string>
+	<string name="RSX_OVERLAYS_LIST_DENY">Запретить</string>
+	<string name="RSX_OVERLAYS_PRESSURE_INTENSITY_TOGGLED_OFF">Интенсивность нажатий игрока %0 отключена</string>
+	<string name="RSX_OVERLAYS_PRESSURE_INTENSITY_TOGGLED_ON">Интенсивность нажатий игрока %0 включена</string>
+	<string name="RSX_OVERLAYS_ANALOG_LIMITER_TOGGLED_OFF">Аналоговый лимитер игрока %0 отключен</string>
+	<string name="RSX_OVERLAYS_ANALOG_LIMITER_TOGGLED_ON">Аналоговый лимитер игрока %0 включен</string>
+	<string name="RSX_OVERLAYS_MOUSE_AND_KEYBOARD_EMULATED">Мышь и клавиатура используются как эмулятор</string>
+	<string name="RSX_OVERLAYS_MOUSE_AND_KEYBOARD_PAD">Мышь и клавиатура используются как джойстик</string>
+	<string name="CELL_GAME_ERROR_BROKEN_GAMEDATA">ОШИБКА: Повреждены данные игры. Приложение продолжит работу.</string>
+	<string name="CELL_GAME_ERROR_BROKEN_HDDGAME">ОШИБКА: Повреждена игра HDD. Приложение продолжит работу.</string>
+	<string name="CELL_GAME_ERROR_BROKEN_EXIT_GAMEDATA">ОШИБКА: Повреждены данные игры. Приложение будет закрыто.</string>
+	<string name="CELL_GAME_ERROR_BROKEN_EXIT_HDDGAME">ОШИБКА: Повреждена игра HDD. Приложение будет закрыто.</string>
+	<string name="CELL_GAME_ERROR_NOSPACE">ОШИБКА: Недостаточно места. Приложение продолжит работу.\nНеобходимо %0 КБ</string>
+	<string name="CELL_GAME_ERROR_NOSPACE_EXIT">ОШИБКА: Недостаточно места. Приложение будет закрыто.\nНеобходимо %0 КБ</string>
+	<string name="CELL_GAME_ERROR_DIR_NAME">Имя директории: %0</string>
+	<string name="CELL_GAME_DATA_EXIT_BROKEN">Произошла ошибка!\n\nУдалите данные этой игры.</string>
+	<string name="CELL_HDD_GAME_EXIT_BROKEN">Произошла ошибка!\n\nПереустановите игру HDD.</string>
+	<string name="CELL_HDD_GAME_CHECK_NOSPACE">Недостаточно места для создания HDD игры.\nНеобходимо %0 КБ</string>
+	<string name="CELL_HDD_GAME_CHECK_BROKEN">Игра HDD %0 повреждена!</string>
+	<string name="CELL_HDD_GAME_CHECK_NODATA">Игра HDD %0 не найдена!</string>
+	<string name="CELL_HDD_GAME_CHECK_INVALID">Ошибка: %0</string>
+	<string name="CELL_GAMEDATA_CHECK_NOSPACE">Недостаточно места для данных игры.\nНеобходимо %0 КБ</string>
+	<string name="CELL_GAMEDATA_CHECK_BROKEN">Данные игры в %0 повреждены!</string>
+	<string name="CELL_GAMEDATA_CHECK_NODATA">Данные игры в %0 не найдены!</string>
+	<string name="CELL_GAMEDATA_CHECK_INVALID">Ошибка: %0</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010001">Ресурс временно недоступен\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010002">Неверный аргумент или флаг\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010003">Функция не реализована\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010004">Ошибка выделения памяти\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010005">Ресурс с ID не существует\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010006">Файл не существует\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010007">Неверный формат файла / Не ELF-файл\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010008">Избежан deadlock\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010009">Операция запрещена\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000A">Устройство занято\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000B">Время ожидания истекло\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000C">Операция отменена\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000D">Неверный доступ к памяти\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000F">Неверное состояние потока\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010010">Неверное выравнивание\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010011">Нехватка ресурсов ядра\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010012">Файл - директория\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010013">Операция отменена\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010014">Запись уже существует\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010015">Порт уже подключен\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010016">Порт не подключен\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010017">Ошибка аутентификации SELF\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010018">Файл не MSELF\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010019">Ошибка версии системы\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001A">Критическая ошибка аутентификации SELF\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001B">Ошибка области математики\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001C">Ошибка диапазона математики\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001D">Неверная многобайтовая последовательность\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001E">Ошибка позиции файла\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001F">Системный вызов прерван\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010020">Файл слишком большой\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010021">Слишком много ссылок\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010022">Переполнение таблицы файлов\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010023">Нет места на диске\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010024">Не TTY\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010025">Разорванное соединение\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010026">Файловая система доступна только для чтения\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010027">Неверный seek\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010028">Слишком длинный список аргументов\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010029">Нарушение доступа\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002A">Неверный дескриптор файла\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002B">Ошибка монтирования ФС\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002C">Слишком много открытых файлов\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002D">Нет устройства\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002E">Не директория\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002F">Нет устройства/ввода-вывода\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010030">Ошибка междисковой ссылки\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010031">Плохое сообщение\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010032">Выполняется\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010033">Ошибка размера сообщения\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010034">Имя слишком длинное\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010035">Нет блокировки\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010036">Папка не пуста\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010037">Не поддерживается\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010038">Ошибка ФС\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010039">Переполнение\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003A">ФС не смонтирована\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003B">Не SData\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003C">Неверная версия sys_load_param\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003D">Указатель null\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003E">Указатель null\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_DEFAULT">Произошла ошибка\n(%0)</string>
+	<string name="CELL_OSK_DIALOG_TITLE">Экранная клавиатура</string>
+	<string name="CELL_OSK_DIALOG_BUSY">Невозможно открыть меню Home пока клавиатура занята!</string>
+	<string name="CELL_SAVEDATA_CB_BROKEN">Ошибка - Повреждены данные сохранения</string>
+	<string name="CELL_SAVEDATA_CB_FAILURE">Ошибка - Не удалось сохранить/загрузить</string>
+	<string name="CELL_SAVEDATA_CB_NO_DATA">Ошибка - Данные сохранения не найдены</string>
+	<string name="CELL_SAVEDATA_CB_NO_SPACE">Ошибка - Недостаточно места\n\nНеобходимо %0 КБ</string>
+	<string name="CELL_SAVEDATA_NO_DATA">Сохраненные данные отсутствуют</string>
+	<string name="CELL_SAVEDATA_NEW_SAVED_DATA_TITLE">Новые данные сохранения</string>
+	<string name="CELL_SAVEDATA_NEW_SAVED_DATA_SUB_TITLE">Выберите для создания новой записи</string>
+	<string name="CELL_SAVEDATA_SAVE_CONFIRMATION">Сохранить эти данные?</string>
+	<string name="CELL_SAVEDATA_DELETE_CONFIRMATION">Удалить эти данные?\n\n%0</string>
+	<string name="CELL_SAVEDATA_DELETE_SUCCESS">Данные успешно удалены!\n\n%0</string>
+	<string name="CELL_SAVEDATA_DELETE">Удалить данные?\n\n%0</string>
+	<string name="CELL_SAVEDATA_LOAD">Загрузить данные?\n\n%0</string>
+	<string name="CELL_SAVEDATA_SAVE">Сохранить данные?\n\n%0</string>
+	<string name="CELL_SAVEDATA_OVERWRITE">Перезаписать данные?\n\n%0</string>
+	<string name="CELL_SAVEDATA_AUTOSAVE">Сохраняю...</string>
+	<string name="CELL_SAVEDATA_AUTOLOAD">Загружаю...</string>
+	<string name="CELL_CROSS_CONTROLLER_MSG">Запустите на PS Vita\nЕсли не установлено, откройте [Remote Play] и запустите [Cross-Controller]</string>
+	<string name="CELL_CROSS_CONTROLLER_FW_MSG">Для PS Vita требуется обновление прошивки до версии 1.80+</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_TITLE">Выберите сообщение</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_TITLE_INVITE">Выберите приглашение</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_TITLE_ADD_FRIEND">Добавить друга</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_FROM">От:</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_SUBJECT">Тема:</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_TITLE">Выберите сообщение для отправки</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_TITLE_INVITE">Отправить приглашение</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_TITLE_ADD_FRIEND">Отправить запрос в друзья</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_CONFIRMATION">Отправить %0 ?\n\nТема:</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_CONFIRMATION_INVITE">Отправить приглашение %0 ?\n\nТема:</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_CONFIRMATION_ADD_FRIEND">Отправить запрос %0 ?\n\nТема:</string>
+	<string name="RECORDING_ABORTED">Запись прервана!</string>
+	<string name="RPCN_NO_ERROR">RPCN: Ошибок нет</string>
+	<string name="RPCN_ERROR_INVALID_INPUT">RPCN: Неверный ввод (Неверный хост/порт)</string>
+	<string name="RPCN_ERROR_WOLFSSL">RPCN: Ошибка WolfSSL</string>
+	<string name="RPCN_ERROR_RESOLVE">RPCN: Ошибка разрешения имени</string>
+	<string name="RPCN_ERROR_CONNECT">RPCN: Ошибка подключения</string>
+	<string name="RPCN_ERROR_LOGIN_ERROR">RPCN: Ошибка авторизации</string>
+	<string name="RPCN_ERROR_ALREADY_LOGGED">RPCN: Пользователь уже вошел</string>
+	<string name="RPCN_ERROR_INVALID_LOGIN">RPCN: Неверный логин</string>
+	<string name="RPCN_ERROR_INVALID_PASSWORD">RPCN: Неверный пароль</string>
+	<string name="RPCN_ERROR_INVALID_TOKEN">RPCN: Неверный токен</string>
+	<string name="RPCN_ERROR_INVALID_PROTOCOL_VERSION">RPCN: Неверная версия протокола (устаревший RPCS3?)</string>
+	<string name="RPCN_ERROR_UNKNOWN">RPCN: Неизвестная ошибка</string>
+	<string name="RPCN_SUCCESS_LOGGED_ON">Успешно авторизован в RPCN!</string>
+	<string name="RPCN_FRIEND_REQUEST_RECEIVED">RPCN: Получен запрос дружбы: %0</string>
+	<string name="RPCN_FRIEND_ADDED">RPCN: Друг добавлен: %0</string>
+	<string name="RPCN_FRIEND_LOST">RPCN: Друг удален: %0</string>
+	<string name="RPCN_FRIEND_LOGGED_IN">RPCN: %0 вошел</string>
+	<string name="RPCN_FRIEND_LOGGED_OUT">RPCN: %0 вышел</string>
+    <string name="HOME_MENU_TITLE">Меню Home</string>
+    <string name="HOME_MENU_EXIT_GAME">Выход из игры</string>
+    <string name="HOME_MENU_RESUME">Продолжить</string>
+    <string name="HOME_MENU_FRIENDS">Друзья</string>
+    <string name="HOME_MENU_FRIENDS_REQUESTS">Ожидание запросов</string>
+    <string name="HOME_MENU_FRIENDS_BLOCKED">Заблокированные</string>
+    <string name="HOME_MENU_FRIENDS_STATUS_ONLINE">В сети</string>
+    <string name="HOME_MENU_FRIENDS_STATUS_OFFLINE">Не в сети</string>
+    <string name="HOME_MENU_FRIENDS_STATUS_BLOCKED">Заблокирован</string>
+    <string name="HOME_MENU_FRIENDS_REQUEST_SENT">Вы отправили запрос дружбы</string>
+    <string name="HOME_MENU_FRIENDS_REQUEST_RECEIVED">Получен запрос дружбы</string>
+    <string name="HOME_MENU_FRIENDS_BLOCK_USER_MSG">Заблокировать пользователя?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_UNBLOCK_USER_MSG">Разблокировать пользователя?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_REMOVE_USER_MSG">Удалить пользователя?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_ACCEPT_REQUEST_MSG">Принять запрос?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_CANCEL_REQUEST_MSG">Отменить запрос?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_REJECT_REQUEST_MSG">Отклонить запрос?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_REJECT_REQUEST">Отклонить запрос</string>
+    <string name="HOME_MENU_FRIENDS_NEXT_LIST">Следующий список</string>
+    <string name="HOME_MENU_RESTART">Перезапустить игру</string>
+    <string name="HOME_MENU_SETTINGS">Настройки</string>
+    <string name="HOME_MENU_SETTINGS_SAVE">Сохранить настройки?</string>
+    <string name="HOME_MENU_SETTINGS_SAVE_BUTTON">Сохранить</string>
+    <string name="HOME_MENU_SETTINGS_DISCARD">Отменить изменения?</string>
+    <string name="HOME_MENU_SETTINGS_DISCARD_BUTTON">Отменить</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO">Аудио</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_MASTER_VOLUME">Общий уровень</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_BACKEND">Аудио бэкенд</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_BUFFERING">Включить буферизацию</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_BUFFER_DURATION">Размер буфера</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_TIME_STRETCHING">Включить временной растяжение</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_TIME_STRETCHING_THRESHOLD">Порог растяжения</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO">Видео</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_FRAME_LIMIT">Ограничение кадров</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_ANISOTROPIC_OVERRIDE">Анизотропная фильтрация</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_OUTPUT_SCALING">Масштабирование</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_RCAS_SHARPENING">Интенсивность FidelityFX CAS</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_STRETCH_TO_DISPLAY">Растянуть на экран</string>
+    <string name="HOME_MENU_SETTINGS_INPUT">Ввод</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_BACKGROUND_INPUT">Ввод в фоновом режиме</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_KEEP_PADS_CONNECTED">Сохранить подключенные джойстики</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_SHOW_PS_MOVE_CURSOR">Показывать курсор PS Move</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_CAMERA_FLIP">Отражение камеры</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_PAD_MODE">Режим обработки джойстика</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_PAD_SLEEP">Задержка джойстика</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_FAKE_MOVE_ROTATION_CONE_H">Псевдо-поворот PS Move (горизонтальный)</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_FAKE_MOVE_ROTATION_CONE_V">Псевдо-поворот PS Move (вертикальный)</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED">Расширенные</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_PREFERRED_SPU_THREADS">Предпочтительные потоки SPU</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_MAX_CPU_PREEMPTIONS">Макс. предемпции CPU</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_ACCURATE_RSX_RESERVATION_ACCESS">Точный доступ к RSX-резервам</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_SLEEP_TIMERS_ACCURACY">Точность таймеров</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_MAX_SPURS_THREADS">Макс. потоков SPURS</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_DRIVER_WAKE_UP_DELAY">Задержка пробуждения драйвера</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_VBLANK_FREQUENCY">Частота VBlank</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_VBLANK_NTSC">Исправление VBlank NTSC</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS">Наложения</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_TROPHY_POPUPS">Показывать трофеи</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_RPCN_POPUPS">Показывать уведомления RPCN</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_SHADER_COMPILATION_HINT">Подсказка о компиляции шейдеров</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_PPU_COMPILATION_HINT">Подсказка о компиляции PPU</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_AUTO_SAVE_LOAD_HINT">Подсказка об автосохранении</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_PRESSURE_INTENSITY_TOGGLE_HINT">Подсказка об интенсивности</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_ANALOG_LIMITER_TOGGLE_HINT">Подсказка об аналоговом лимитере</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_MOUSE_AND_KB_TOGGLE_HINT">Подсказка о мыши и клавиатуре</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY">Отладка производительности</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_ENABLE">Включить отладку</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_ENABLE_FRAMERATE_GRAPH">График частоты кадров</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_ENABLE_FRAMETIME_GRAPH">График времени кадра</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_DETAIL_LEVEL">Детализация</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMERATE_DETAIL_LEVEL">Детализация графика кадров</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMETIME_DETAIL_LEVEL">Детализация графика времени</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMERATE_DATAPOINT_COUNT">Точек кадров</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMETIME_DATAPOINT_COUNT">Точек времени</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_UPDATE_INTERVAL">Интервал обновления</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_POSITION">Позиция</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_CENTER_X">Центрировать по горизонтали</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_CENTER_Y">Центрировать по вертикали</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_MARGIN_X">Горизонтальное поле</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_MARGIN_Y">Вертикальное поле</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FONT_SIZE">Размер шрифта</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_OPACITY">Прозрачность</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG">Отладка</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_OVERLAY">Отладочное наложение</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_INPUT_OVERLAY">Отладка ввода</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_DISABLE_VIDEO_OUTPUT">Отключить видео</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_TEXTURE_LOD_BIAS">Смещение LOD текстуры</string>
+    <string name="HOME_MENU_SCREENSHOT">Сделать скриншот</string>
+    <string name="HOME_MENU_SAVESTATE">Сохранить состояние</string>
+    <string name="HOME_MENU_SAVESTATE_SAVE">Сохранить состояние эмуляции</string>
+    <string name="HOME_MENU_SAVESTATE_AND_EXIT">Сохранить и выйти</string>
+    <string name="HOME_MENU_RELOAD_SAVESTATE">Перезагрузить состояние</string>
+    <string name="HOME_MENU_RECORDING">Начать/остановить запись</string>
+    <string name="HOME_MENU_TROPHIES">Трофеи</string>
+    <string name="HOME_MENU_TROPHY_LIST_TITLE">Прогресс трофеев: %0</string>
+    <string name="HOME_MENU_TROPHY_LOCKED_TITLE">Заблокированный трофей: %0</string>
+    <string name="HOME_MENU_TROPHY_HIDDEN_TITLE">Скрытый трофей</string>
+    <string name="HOME_MENU_TROPHY_HIDDEN_DESCRIPTION">Этот трофей скрыт</string>
+    <string name="HOME_MENU_TROPHY_SHOW_HIDDEN_TROPHIES">Показать скрытые трофеи</string>
+    <string name="HOME_MENU_TROPHY_HIDE_HIDDEN_TROPHIES">Скрыть скрытые трофеи</string>
+    <string name="HOME_MENU_TROPHY_PLATINUM_RELEVANT">Платиновый релевантен</string>
+    <string name="HOME_MENU_TROPHY_GRADE_BRONZE">Бронзовый</string>
+    <string name="HOME_MENU_TROPHY_GRADE_SILVER">Серебряный</string>
+    <string name="HOME_MENU_TROPHY_GRADE_GOLD">Золотой</string>
+    <string name="HOME_MENU_TROPHY_GRADE_PLATINUM">Платиновый</string>
+	<string name="AUDIO_MUTED">Звук отключен</string>
+	<string name="AUDIO_UNMUTED">Звук включен</string>
+	<string name="AUDIO_CHANGED">Громкость изменена на %0</string>
+	<string name="PROGRESS_DIALOG_PROGRESS">Прогресс:</string>
+	<string name="PROGRESS_DIALOG_PROGRESS_ANALYZING">Анализ...</string>
+	<string name="PROGRESS_DIALOG_REMAINING">осталось</string>
+	<string name="PROGRESS_DIALOG_DONE">завершено</string>
+	<string name="PROGRESS_DIALOG_FILE">файл</string>
+	<string name="PROGRESS_DIALOG_MODULE">модуль</string>
+	<string name="PROGRESS_DIALOG_OF">из</string>
+	<string name="PROGRESS_DIALOG_PLEASE_WAIT">Пожалуйста, подождите</string>
+	<string name="PROGRESS_DIALOG_STOPPING_PLEASE_WAIT">Остановка. Подождите...</string>
+	<string name="PROGRESS_DIALOG_SAVESTATE_PLEASE_WAIT">Создание состояния. Подождите...</string>
+	<string name="PROGRESS_DIALOG_SCANNING_PPU_EXECUTABLE">Сканирование PPU-исполняемого файла...</string>
+	<string name="PROGRESS_DIALOG_ANALYZING_PPU_EXECUTABLE">Анализ PPU-исполняемого файла...</string>
+	<string name="PROGRESS_DIALOG_SCANNING_PPU_MODULES">Сканирование модулей PPU...</string>
+	<string name="PROGRESS_DIALOG_LOADING_PPU_MODULES">Загрузка модулей PPU...</string>
+	<string name="PROGRESS_DIALOG_COMPILING_PPU_MODULES">Компиляция модулей PPU...</string>
+	<string name="PROGRESS_DIALOG_LINKING_PPU_MODULES">Линковка модулей PPU...</string>
+	<string name="PROGRESS_DIALOG_APPLYING_PPU_CODE">Применение кода PPU...</string>
+	<string name="PROGRESS_DIALOG_BUILDING_SPU_CACHE">Построение кэша SPU...</string>
+	<string name="EMULATION_PAUSED_RESUME_WITH_START">Нажмите START для продолжения</string>
+	<string name="EMULATION_RESUMING">Возобновление...</string>
+	<string name="EMULATION_FROZEN">Приложение PS3 зависло, можно закрыть</string>
+	<string name="SAVESTATE_FAILED_DUE_TO_SAVEDATA">Сохранение невозможно: идет сохранение игры, подождите</string>
+	<string name="SAVESTATE_FAILED_DUE_TO_VDEC">Сохранение невозможно: активны видео-декодеры, включите libvdec.sprx</string>
+	<string name="SAVESTATE_FAILED_DUE_TO_MISSING_SPU_SETTING">Сохранение невозможно: не удалось заблокировать SPU, включите SPU-совместимость</string>
+	<string name="SAVESTATE_FAILED_DUE_TO_SPU">Сохранение невозможно: не удалось заблокировать SPU, используйте SPU ASMJIT</string>
+	<string name="PROGRESS_DIALOG_PRELOADING_SHADER_CACHE">Предзагрузка шейдеров с диска...</string>
+
+</resources>

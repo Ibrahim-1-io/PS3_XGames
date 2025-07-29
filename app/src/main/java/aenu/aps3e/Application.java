@@ -144,7 +144,7 @@ public class Application extends android.app.Application
         try {
             Emulator.get.setup_env(this);
         }finally {
-            System.loadLibrary("e");
+            //System.loadLibrary("e");
         }
 
 

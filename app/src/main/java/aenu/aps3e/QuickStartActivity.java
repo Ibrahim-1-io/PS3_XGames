@@ -2,11 +2,14 @@
 package aenu.aps3e;
 
 import android.app.ComponentCaller;
+import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.os.ParcelFileDescriptor;
 import android.util.Log;
 import android.view.View;
@@ -38,11 +41,13 @@ import java.util.zip.ZipInputStream;
 
 import static aenu.aps3e.MainActivity.getFileNameFromUri;
 
+import aenu.hardware.ProcessorInfo;
 import kotlin.contracts.Returns;
 
 public class QuickStartActivity extends AppCompatActivity {
 
     static final String ACTION_REENTRY="aenu.intent.action.REENTRY_QUISK_START";
+    static final int DELAY_ON_CREATE=0xaa00;
 
     List<LinearLayout> layout_list;
     ProgressBar progress;
@@ -50,21 +55,51 @@ public class QuickStartActivity extends AppCompatActivity {
 
     //ProgressTask progress_task;
     Emulator.Config config;
+     Dialog delay_dialog=null;
+    final Handler delay_on_create=new Handler(new Handler.Callback() {
+        @Override
+        public boolean handleMessage(@NonNull Message msg) {
+            if(msg.what!=DELAY_ON_CREATE) return false;
+            if(delay_dialog!=null){
+                delay_dialog.dismiss();
+                delay_dialog=null;
+            }
+            System.loadLibrary("e");
+            if(!ACTION_REENTRY.equals(getIntent().getAction())&&Application.get_default_config_file().exists()){
+                goto_main_activity();
+                return true;
+            }
+
+            getSupportActionBar().setTitle(R.string.welcome);
+            setContentView(R.layout.activity_quick_start);
+            MainActivity.mk_dirs();
+            try{config=Emulator.Config.open_config_from_string(load_default_config_str(QuickStartActivity.this));}catch (Exception e){}
+            init_layout_list();
+            select_layout(0);
+            return true;
+        }
+    });
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        if(!ACTION_REENTRY.equals(getIntent().getAction())&&Application.get_default_config_file().exists()){
-            goto_main_activity();
+        if(ProcessorInfo.gpu_get_physical_device_name_vk().contains("Adreno (TM) 5")
+        || ProcessorInfo.gpu_get_physical_device_name_vk().contains("Adreno (TM) 6")){
+            delay_dialog=ProgressTask.create_progress_dialog( this,getString(R.string.loading));
+            delay_dialog.show();
+            new Thread(){
+                @Override
+                public void run() {
+                    try {
+                        Thread.sleep(500);
+                        delay_on_create.sendEmptyMessage(DELAY_ON_CREATE);
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
+                }
+            }.start();
             return;
         }
-
-        getSupportActionBar().setTitle(R.string.welcome);
-        setContentView(R.layout.activity_quick_start);
-        MainActivity.mk_dirs();
-        try{config=Emulator.Config.open_config_from_string(load_default_config_str(this));}catch (Exception e){}
-        init_layout_list();
-        select_layout(0);
+        delay_on_create.sendEmptyMessage(DELAY_ON_CREATE);
     }
 
     @Override
@@ -73,12 +108,13 @@ public class QuickStartActivity extends AppCompatActivity {
             config.close_config();
             config = null;
         }
-        /*if(progress_task!=null){
-            progress_task.force_close();
-            progress_task=null;
-        }*/
 
         super.onDestroy();
+
+        if(delay_dialog!=null){
+            delay_dialog.dismiss();
+            delay_dialog=null;
+        }
     }
 
     @Override
@@ -373,10 +409,13 @@ public class QuickStartActivity extends AppCompatActivity {
             if(!Boolean.valueOf(config.load_config_entry(EmulatorSettings.Video$Vulkan$Use_Custom_Driver))){
 
                 String gpu_driver_name=Emulator.get.get_vulkan_physical_dev_list()[0];
-                if(gpu_driver_name.contains("Adreno") &&!gpu_driver_name.contains("Turnip")){
-                    config.save_config_entry(EmulatorSettings.Video$Texture_Upload_Mode,"CPU");
+                if(gpu_driver_name.contains("Adreno (TM) 7")||gpu_driver_name.contains("Adreno (TM) 8")){
                     config.save_config_entry(EmulatorSettings.Video$Use_BGRA_Format,"false");
                     config.save_config_entry(EmulatorSettings.Video$Force_Convert_Texture,"true");
+                }
+
+                if(gpu_driver_name.contains("Adreno (TM) 7")){
+                    config.save_config_entry(EmulatorSettings.Video$Texture_Upload_Mode,"CPU");
                 }
             }
 

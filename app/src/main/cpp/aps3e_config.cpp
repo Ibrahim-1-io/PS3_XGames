@@ -358,10 +358,13 @@ static jstring generate_config_xml(JNIEnv* env,jobject self){
                 if(std::find(std::begin(gen_skips),std::end(gen_skips),name+"|"+n2->get_name())!=std::end(gen_skips))
                     continue;
 
-                //Video下的3个子项
                 if(n2->get_type()==cfg::type::node){
                     out<<"<PreferenceScreen app:title=\"@string/emulator_settings_"<<gen_key(name)<<"_"<<gen_key(n2->get_name())<<"\" \n";
                     out<<"app:key=\""<<name+"|"+n2->get_name()<<"\" >\n";
+                    if((name+"|"+n2->get_name())=="Core|Thread Affinity Mask"){
+                        out<<"</PreferenceScreen>\n";
+                        continue;
+                    }
                     for(auto n3:reinterpret_cast<cfg::node*>(n2)->get_nodes()) {
                         if(std::find(std::begin(gen_skips),std::end(gen_skips),name+"|"+n2->get_name()+"|"+n3->get_name())!=std::end(gen_skips))
                             continue;

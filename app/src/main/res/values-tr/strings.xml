@@ -1,0 +1,1001 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="use_cores_ppu">Çekirdekleri Kullan(PPU)</string>
+	<string name="use_cores_spu">Çekirdekleri Kullan(SPU)</string>
+	<string name="use_cores_rsx">Çekirdekleri Kullan(RSX)</string>
+	<string name="emulator_settings_core_thread_affinity_mask">İş Parçacığı İlişki Maskesi</string>
+	<string name="create_shortcut">Kısayol Oluştur</string>
+	<string name="loading">Yükleniyor...</string>
+	<string name="resolution_not_support">Çözünürlük veya en-boy oranı desteklenmiyor\nGeçerli oyun yalnızca şunları destekler:\n%s\n\nAyarları şu şekilde değiştirin:\n%s\n%s\n</string>
+	<string name="show_game_info">Oyun Bilgilerini Göster</string>
+	<string name="quick_start_page">Hızlı Başlatma Sayfası</string>
+	<string name="prev_step">Önceki Adım</string>
+	<string name="next_step">Sonraki Adım</string>
+	<string name="finish">Bitir</string>
+
+	<string name="welcome">Hoş Geldiniz</string>
+	<string name="welcome_content">%s‘a hoş geldiniz!</string>
+	<string name="welcome_content2">Sadece birkaç basit adımla oynamaya hazır olacaksınız, başlamak için "%s"e tıklayın.</string>
+
+	<string name="install_ps3_firmware_hiht_content">Oyun oynamak için PS3 firmware (PS3UPDAT.PUP) kurmalısınız. Lütfen firmware dosyasını seçin.</string>
+	<string name="ps3_firmware_installed">Firmware Kuruldu</string>
+	<string name="select_ps3_firmware">Firmware Seç(PS3UPDAT.PUP)</string>
+	<string name="firmware_not_install">firmware kurulmadı</string>
+
+	<string name="select_ps3_iso_dir_hiht_content">Lütfen PS3 ISO dizinini belirtin, uygulama otomatik olarak geçerli oyunları tarayacaktır. Bu adımı atlayarak doğrudan .pkg dosyasını da yükleyebilirsiniz.</string>
+	<string name="ps3_iso_dir_is_set">PS3 ISO dizini ayarlandı</string>
+
+	<string name="font_select_hiht_content">Lütfen kurmak için bir yazı tipi dosyası (*.ttf, *.ttc, *.otf) seçin veya PS3 firmware’dan bir yazı tipi kullanabilirsiniz (kelimeler eksik olabilir).</string>
+	<string name="custom_font_path_prefix">Yazı Tipi Yolu: </string>
+	<string name="select_gpu_driver_hiht_content">Lütfen bir GPU sürücüsü seçin, bu adımı da atlayabilirsiniz (oyun hata yapabilir).</string>
+	<string name="custom_gpu_driver_path_prefix">GPU Sürücü Yolu: </string>
+
+	<string name="modify_config_hiht_content">Emülatör en uygun yapılandırmayı otomatik olarak seçecektir, ancak bazı yapılandırmalar cihazınızda sorunlara neden olabilir. Daha sonra ayarlardan değiştirebilirsiniz.</string>
+
+	<string name="msg_processing">İşleniyor...</string>
+	<string name="msg_failed">Başarısız!</string>
+
+	<string name="emulator_settings_video_vulkan_debug">Hata Ayıklama</string>
+	<string name="emulator_settings_miscellaneous_memory_debug_overlay">Bellek Hata Ayıklama Katmanı</string>
+
+	<string name="vibrator_duration">Titreşim Süresi</string>
+	<string name="enable_vibrator">Titreşimi Etkinleştir</string>
+	<string name="dynamic_joystick">Dinamik Joystick</string>
+	<string name="disable">Devre Dışı</string>
+
+	<string name="disable_virtual_keyboard">Sanal Klavyeyi Devre Dışı Bırak</string>
+	<string name="joystick">Joystick</string>
+	<string name="dpad">Dpad</string>
+	<string name="button">Buton</string>
+	<string name="lr">LR</string>
+	<string name="start_select">Başlat/Seç</string>
+
+	<string name="enable_log">Günlüge Etkinleştir</string>
+	<string name="use_global_config">Genel Yapılandırmayı Kullan</string>
+	<string name="edit_custom_config">Özel Yapılandırmayı Düzenle</string>
+	<string name="clear">Temizle</string>
+	<string name="press_a_key">Devam etmek için herhangi bir tuşa basın...</string>
+	<string name="game_list_loading">Oyun listesi yükleniyor...</string>
+	<string name="undecrypted_game">Şu anda şifrelenmemiş oyunlar desteklenmiyor</string>
+	<string name="delete_game_data">Oyun Verilerini Sil</string>
+	<string name="delete_hdd0_install_data">hdd0 Kurulum Verilerini Sil</string>
+	<string name="delete_game_and_data">Oyunu ve Verileri Sil</string>
+	<string name="delete_shaders_cache">Shader Önbelleğini Sil</string>
+
+	<string name="set_iso_dir">(*.iso) Dizinini Ayarla</string>
+	<string name="device_info">Cihaz Bilgisi</string>
+	<string name="reset_as_default">Varsayılana Sıfırla</string>
+	<string name="save_and_quit">Kaydet &amp; Çık</string>
+	<string name="scale_rate">Ölçek Oranı</string>
+	<string name="open_file_manager">Dosya Yöneticisini Aç</string>
+	<string name="installing_firmware">Firmware Kuruluyor...</string>
+	<string name="refresh_list">Listeyi Yenile</string>
+	<string name="select_game">Oyunu Seç</string>
+	<string name="install_firmware">Firmware Kur</string>
+	<string name="install_game">RAP/PKG Kur</string>
+	<string name="installing_game">Oyun Kuruluyor...</string>
+	<string name="about">Hakkında</string>
+	<string name="quit">Çık</string>
+	<string name="update_log">Güncelleme Günlüğü</string>
+	<string name="empty_game_list">Oyun listesi boş, lütfen pkg kurarak veya *.iso dizinini ayarlayarak oyun ekleyin</string>
+	<string name="delete">Sil</string>
+	<string name="settings">Ayarlar</string>
+	<string name="gratitude">Teşekkür</string>
+	<string name="gratitude_content">Tüm ICONLAR için Ruban‘a teşekkürler\n\n
+		SRC267 (Sting) reddit/discord yönetimi için teşekkürler\n\n
+		妖妖 test için teşekkürler\n\n
+		再见某人 GPD XP bağışladığı için test sürecinde büyük yardım sundu.\n\n
+		再见某人 geliştirme ekipmanını bağışladığı için proje ilerlemesinde önemli rol oynadı.\n\n
+		Aşağıdaki kişiler finansal destek sağladı (başlangıç aşaması, tarihe göre sıralı):\n\n</string>
+	<string name="gratitude_content2">
+		RPCS3 taşıma ve optimizasyonuna dayanarak, RPCS3 projesine katılan herkese teşekkürler\n\n
+	Çeviri qwen3
+	</string>
+	<string name="key_mappers">Tuş Atayıcılar</string>
+	<string name="virtual_pad_edit">SanalPadDüzenle</string>
+
+	<string name="left">sol</string>
+	<string name="up">yukarı</string>
+	<string name="right">sağ</string>
+	<string name="down">aşağı</string>
+
+	<string name="square">kare</string>
+	<string name="cross">çarpı</string>
+	<string name="circle">daire</string>
+	<string name="triangle">üçgen</string>
+
+	<string name="l1">L1</string>
+	<string name="l2">L2</string>
+	<string name="l3">L3</string>
+
+	<string name="r1">R1</string>
+	<string name="r2">R2</string>
+	<string name="r3">R3</string>
+
+	<string name="start">başlat</string>
+	<string name="select">seç</string>
+	<string name="ps">PS</string>
+
+	<string name="emulator_settings_video_vulkan_custom_driver_library_path_dialog_title">Özel Sürücü Seç</string>
+	<string name="emulator_settings_video_vulkan_custom_driver_library_path_dialog_add_hint">Özel Sürücü Ekle(*.zip, *.so)</string>
+
+	<string name="emulator_settings_miscellaneous_custom_font_file_path_dialog_title">Özel Yazı Tipi Seç</string>
+	<string name="emulator_settings_miscellaneous_custom_font_file_path_dialog_add_hint">Özel Yazı Tipi Ekle(*.ttf, *.ttc, *.otf)</string>
+
+	<string name="emulator_settings_core">Çekirdek</string>
+	<string name="emulator_settings_core_ppu_decoder">PPU Çözücü</string>
+	<string-array name="core_ppu_decoder_entries">
+		<item>Yorumlayıcı (statik)</item>
+		<item>Yeniden Derleyici (LLVM)</item>
+	</string-array>
+	<string name="emulator_settings_core_ppu_threads">PPU İş Parçacıkları</string>
+	<string name="emulator_settings_core_ppu_debug">PPU Hata Ayıklama</string>
+	<string name="emulator_settings_core_ppu_calling_history">PPU Çağrı Geçmişi</string>
+	<string name="emulator_settings_core_save_llvm_logs">LLVM Günlüklerini Kaydet</string>
+	<string name="emulator_settings_core_use_llvm_cpu">LLVM CPU Kullan</string>
+	<string name="emulator_settings_core_max_llvm_compile_threads">Maksimum LLVM Derleme İş Parçacıkları</string>
+	<string name="emulator_settings_core_ppu_llvm_greedy_mode">PPU LLVM Açgözlü Mod</string>
+	<string name="emulator_settings_core_llvm_precompilation">LLVM Önceden Derleme</string>
+	<string name="emulator_settings_core_thread_scheduler_mode">İş Parçacığı Zamanlayıcı Modu</string>
+	<string-array name="core_thread_scheduler_mode_entries">
+		<item>İşletim Sistemi</item>
+		<item>İlişki</item>
+	</string-array>
+	<string name="emulator_settings_core_set_daz_and_ftz">DAZ ve FTZ Ayarla</string>
+	<string name="emulator_settings_core_spu_decoder">SPU Çözücü</string>
+	<string-array name="core_spu_decoder_entries">
+		<item>Yorumlayıcı (statik)</item>
+		<item>Yorumlayıcı (dinamik)</item>
+		<item>Yeniden Derleyici (ASMJIT)</item>
+		<item>Yeniden Derleyici (LLVM)</item>
+	</string-array>
+	<string name="emulator_settings_core_spu_reservation_busy_waiting_percentage">SPU Rezervasyon Bekleme Yüzdesi</string>
+	<string name="emulator_settings_core_spu_getllar_busy_waiting_percentage">SPU GETLLAR Bekleme Yüzdesi</string>
+	<string name="emulator_settings_core_disable_spu_getllar_spin_optimization">SPU GETLLAR Dönme Optimizasyonunu Devre Dışı Bırak</string>
+	<string name="emulator_settings_core_spu_debug">SPU Hata Ayıklama</string>
+	<string name="emulator_settings_core_mfc_debug">MFC Hata Ayıklama</string>
+	<string name="emulator_settings_core_preferred_spu_threads">Tercih Edilen SPU İş Parçacıkları</string>
+	<string name="emulator_settings_core_spu_delay_penalty">SPU Gecikme Cezası</string>
+	<string name="emulator_settings_core_spu_loop_detection">SPU Döngü Tespiti</string>
+	<string name="emulator_settings_core_max_spurs_threads">Maksimum SPURS İş Parçacıkları</string>
+	<string name="emulator_settings_core_spu_block_size">SPU Blok Boyutu</string>
+	<string-array name="core_spu_block_size_entries">
+		<item>Güvenli</item>
+		<item>Mega</item>
+		<item>Giga</item>
+	</string-array>
+	<string name="emulator_settings_core_accurate_spu_dma">Doğru SPU DMA</string>
+	<string name="emulator_settings_core_accurate_spu_reservations">Doğru SPU Rezervasyonları</string>
+	<string name="emulator_settings_core_accurate_cache_line_stores">Doğru Önbellek Satırı Depolamaları</string>
+	<string name="emulator_settings_core_accurate_rsx_reservation_access">Doğru RSX Rezervasyon Erişimi</string>
+	<string name="emulator_settings_core_rsx_fifo_accuracy">RSX FIFO Doğruluğu</string>
+	<string-array name="core_rsx_fifo_accuracy_entries">
+		<item>Hızlı</item>
+		<item>Atomik</item>
+		<item>Sıralı &amp; Atomik</item>
+		<item>PS3</item>
+	</string-array>
+	<string name="emulator_settings_core_spu_verification">SPU Doğrulama</string>
+	<string name="emulator_settings_core_spu_cache">SPU Önbelleği</string>
+	<string name="emulator_settings_core_spu_profiler">SPU Profili</string>
+	<string name="emulator_settings_core_mfc_commands_shuffling_limit">MFC Komutları Karıştırma Sınırı</string>
+	<string name="emulator_settings_core_mfc_commands_timeout">MFC Komutları Zaman Aşımı</string>
+	<string name="emulator_settings_core_mfc_commands_shuffling_in_steps">MFC Komutları Adımlar Halinde Karıştır</string>
+	<string name="emulator_settings_core_enable_tsx">TSX Etkinleştir</string>
+	<string-array name="core_enable_tsx_entries">
+		<item>Devre Dışı</item>
+		<item>Etkin</item>
+		<item>Zorla</item>
+	</string-array>
+	<string name="emulator_settings_core_xfloat_accuracy">XFloat Doğruluğu</string>
+	<string-array name="core_xfloat_accuracy_entries">
+		<item>Doğru</item>
+		<item>Yaklaşık</item>
+		<item>Rahat</item>
+		<item>Yanlış</item>
+	</string-array>
+	<string name="emulator_settings_core_accurate_ppu_128byte_reservation_op_max_length">Doğru PPU 128-byte Rezervasyon Op Maksimum Uzunluğu</string>
+	<string name="emulator_settings_core_stub_ppu_traps">PPU Tuzağı Yerleştir</string>
+	<string name="emulator_settings_core_precise_spu_verification">Hassas SPU Doğrulama</string>
+	<string name="emulator_settings_core_ppu_llvm_java_mode_handling">PPU LLVM Java Modu Yönetimi</string>
+	<string name="emulator_settings_core_use_accurate_dfma">Doğru DFMA Kullan</string>
+	<string name="emulator_settings_core_ppu_set_saturation_bit">PPU Saturasyon Bitini Ayarla</string>
+	<string name="emulator_settings_core_ppu_accurate_nonjava_mode">PPU Doğru Java Dışı Mod</string>
+	<string name="emulator_settings_core_ppu_fixup_vector_nan_values">PPU Vektör NaN Değerlerini Onar</string>
+	<string name="emulator_settings_core_ppu_accurate_vector_nan_values">PPU Doğru Vektör NaN Değerleri</string>
+	<string name="emulator_settings_core_ppu_set_fpcc_bits">PPU FPCC Bitlerini Ayarla</string>
+	<string name="emulator_settings_core_debug_console_mode">Hata Ayıklama Konsol Modu</string>
+	<string name="emulator_settings_core_hook_static_functions">Statik Fonksiyonları Tuttur</string>
+	<string name="emulator_settings_core_libraries_control">Kütüphane Kontrolü</string>
+	<string name="emulator_settings_core_hle_lwmutex">HLE lwmutex</string>
+	<string name="emulator_settings_core_spu_llvm_lower_bound">SPU LLVM Alt Sınır</string>
+	<string name="emulator_settings_core_spu_llvm_upper_bound">SPU LLVM Üst Sınır</string>
+	<string name="emulator_settings_core_tsx_transaction_first_limit">TSX İşlemi İlk Sınır</string>
+	<string name="emulator_settings_core_tsx_transaction_second_limit">TSX İşlemi İkinci Sınır</string>
+	<string name="emulator_settings_core_clocks_scale">Saatler Ölçeklendirme</string>
+	<string name="emulator_settings_core_spu_wakeup_delay">SPU Uyanma Gecikmesi</string>
+	<string name="emulator_settings_core_spu_wakeup_delay_thread_mask">SPU Uyanma Gecikme İş Parçacığı Maskesi</string>
+	<string name="emulator_settings_core_max_cpu_preempt_count">Maksimum CPU Önleme Sayısı</string>
+	<string name="emulator_settings_core_allow_rsx_cpu_preemptions">RSX CPU Önlemelerine İzin Ver</string>
+	<string name="emulator_settings_core_sleep_timers_accuracy">Uyku Zamanlayıcıları Doğruluğu</string>
+	<string-array name="core_sleep_timers_accuracy_entries">
+		<item>Ana Bilgisayara Göre</item>
+		<item>Yalnızca Usleep</item>
+		<item>Tüm Zamanlayıcılar</item>
+	</string-array>
+	<string name="emulator_settings_core_usleep_time_addend">Usleep Zaman Eklentisi</string>
+	<string name="emulator_settings_core_performance_report_threshold">Performans Raporu Eşiği</string>
+	<string name="emulator_settings_core_enable_performance_report">Performans Raporunu Etkinleştir</string>
+	<string name="emulator_settings_core_assume_external_debugger">Harici Hata Ayıklayıcı Varsay</string>
+	<string name="emulator_settings_video">Video</string>
+	<string name="emulator_settings_video_vertex_buffer_upload_mode">Köşe Arabelleği Yükleme Modu</string>
+	<string-array name="video_vertex_buffer_upload_mode_entries">
+		<item>Otomatik</item>
+		<item>Arabellek Görünümü</item>
+		<item>Arabellek</item>
+	</string-array>
+	<string name="emulator_settings_video_texture_upload_mode">Doku Yükleme Modu</string>
+	<string-array name="video_texture_upload_mode_entries">
+		<item>CPU</item>
+		<item>GPU</item>
+	</string-array>
+	<string name="emulator_settings_video_renderer">Renderer</string>
+	<string-array name="video_renderer_entries">
+		<item>Hiçbiri</item>
+		<item>Vulkan</item>
+	</string-array>
+	<string name="emulator_settings_video_resolution">Çözünürlük</string>
+	<string-array name="video_resolution_entries">
+		<item>1920x1080</item>
+		<item>1920x1080i</item>
+		<item>1280x720</item>
+		<item>720x480</item>
+		<item>720x480i</item>
+		<item>720x576</item>
+		<item>720x576i</item>
+		<item>1600x1080</item>
+		<item>1440x1080</item>
+		<item>1280x1080</item>
+		<item>960x1080</item>
+	</string-array>
+	<string name="emulator_settings_video_aspect_ratio">En-Boy Oranı</string>
+	<string-array name="video_aspect_ratio_entries">
+		<item>4:3</item>
+		<item>16:9</item>
+	</string-array>
+	<string name="emulator_settings_video_frame_limit">Kare Sınırı</string>
+	<string-array name="video_frame_limit_entries">
+		<item>Kapalı</item>
+		<item>30</item>
+		<item>50</item>
+		<item>60</item>
+		<item>120</item>
+		<item>Ekran</item>
+		<item>Otomatik</item>
+		<item>PS3 Yerel</item>
+		<item>Sonsuz</item>
+	</string-array>
+	<string name="emulator_settings_video_second_frame_limit">İkinci Kare Sınırı</string>
+	<string name="emulator_settings_video_msaa">MSAA</string>
+	<string-array name="video_msaa_entries">
+		<item>Etkisiz</item>
+		<item>Otomatik</item>
+	</string-array>
+	<string name="emulator_settings_video_shader_mode">Shader Modu</string>
+	<string-array name="video_shader_mode_entries">
+		<item>Shader Yeniden Derleyici</item>
+		<item>Eşzamanlı Shader Yeniden Derleyici</item>
+		<item>Eşzamanlı ve Shader Yorumlayıcı</item>
+		<item>Yalnızca Shader Yorumlayıcı</item>
+	</string-array>
+	<string name="emulator_settings_video_shader_precision">Shader Hassasiyeti</string>
+	<string-array name="video_shader_precision_entries">
+		<item>Ultra</item>
+		<item>Yüksek</item>
+		<item>Düşük</item>
+		<item>Otomatik</item>
+	</string-array>
+	<string name="emulator_settings_video_write_color_buffers">Renk Arabelleği Yaz</string>
+	<string name="emulator_settings_video_write_depth_buffer">Derinlik Arabelleği Yaz</string>
+	<string name="emulator_settings_video_read_color_buffers">Renk Arabelleği Oku</string>
+	<string name="emulator_settings_video_read_depth_buffer">Derinlik Arabelleği Oku</string>
+	<string name="emulator_settings_video_handle_rsx_memory_tiling">RSX Bellek Döşeme Yönetimi</string>
+	<string name="emulator_settings_video_log_shader_programs">Shader Programlarını Günlükle</string>
+	<string name="emulator_settings_video_vsync">Dikey Senkronizasyon</string>
+	<string name="emulator_settings_video_debug_output">Hata Ayıklama Çıktısı</string>
+	<string name="emulator_settings_video_debug_overlay">Hata Ayıklama Katmanı</string>
+	<string name="emulator_settings_video_renderdoc_compatibility_mode">Renderdoc Uyumluluk Modu</string>
+	<string name="emulator_settings_video_use_gpu_texture_scaling">GPU Doku Ölçeklendirmesini Kullan</string>
+	<string name="emulator_settings_video_stretch_to_display_area">Gösterim Alanına Uzat</string>
+	<string name="emulator_settings_video_force_high_precision_z_buffer">Yüksek Hassasiyetli Z Arabelleği Zorla</string>
+	<string name="emulator_settings_video_strict_rendering_mode">Kesin Render Modu</string>
+	<string name="emulator_settings_video_disable_zcull_occlusion_queries">ZCull Görünmezlik Sorgularını Devre Dışı Bırak</string>
+	<string name="emulator_settings_video_disable_video_output">Video Çıktısını Devre Dışı Bırak</string>
+	<string name="emulator_settings_video_disable_vertex_cache">Köşe Önbelleğini Devre Dışı Bırak</string>
+	<string name="emulator_settings_video_disable_fifo_reordering">FIFO Yeniden Sıralamayı Devre Dışı Bırak</string>
+	<string name="emulator_settings_video_enable_frame_skip">Kare Atlamayı Etkinleştir</string>
+	<string name="emulator_settings_video_force_cpu_blit">CPU Blit Zorla</string>
+	<string name="emulator_settings_video_disable_ondisk_shader_cache">Disk Üzerindeki Shader Önbelleğini Devre Dışı Bırak</string>
+	<string name="emulator_settings_video_disable_vulkan_memory_allocator">Vulkan Bellek Ayırıcısını Devre Dışı Bırak</string>
+	<string name="emulator_settings_video_use_full_rgb_output_range">Tam RGB Çıktı Aralığını Kullan</string>
+	<string name="emulator_settings_video_strict_texture_flushing">Kesin Doku Temizleme</string>
+	<string name="emulator_settings_video_multithreaded_rsx">Çok İş Parçacıklı RSX</string>
+	<string name="emulator_settings_video_relaxed_zcull_sync">Rahat ZCULL Senkronizasyonu</string>
+	<string name="emulator_settings_video_force_hardware_msaa_resolve">Donanım MSAA Çözünürlüğü Zorla</string>
+	<string name="emulator_settings_video_3d_display_mode">3D Gösterim Modu</string>
+	<string-array name="video_3d_display_mode_entries">
+		<item>Devre Dışı</item>
+		<item>Yan Yana</item>
+		<item>Üst Üste</item>
+		<item>Çift Katlı</item>
+		<item>Anaglyf Kırmızı-Yeşil</item>
+		<item>Anaglyf Kırmızı-Mavi</item>
+		<item>Anaglyf Kırmızı-Siyan</item>
+		<item>Anaglyf Magenta-Siyan</item>
+		<item>Anaglyf Üçgöz</item>
+		<item>Anaglyf Amber-Mavi</item>
+	</string-array>
+	<string name="emulator_settings_video_debug_program_analyser">Hata Ayıklama Programı Analizörü</string>
+	<string name="emulator_settings_video_accurate_zcull_stats">Doğru ZCULL İstatistikleri</string>
+	<string name="emulator_settings_video_consecutive_frames_to_draw">Çizmek İçin Ardışık Kareler</string>
+	<string name="emulator_settings_video_consecutive_frames_to_skip">Atlamak İçin Ardışık Kareler</string>
+	<string name="emulator_settings_video_resolution_scale">Çözünürlük Ölçekleme</string>
+	<string name="emulator_settings_video_anisotropic_filter_override">Anizotropik Filtre Geçici Ayar</string>
+	<string name="emulator_settings_video_texture_lod_bias_addend">Doku LOD Sapma Eklentisi</string>
+	<string name="emulator_settings_video_minimum_scalable_dimension">Minimum Ölçeklenebilir Boyut</string>
+	<string name="emulator_settings_video_shader_compiler_threads">Shader Derleyici İş Parçacıkları</string>
+	<string name="emulator_settings_video_driver_recovery_timeout">Sürücü Kurtarma Zaman Aşımı</string>
+	<string name="emulator_settings_video_driver_wakeup_delay">Sürücü Uyanma Gecikmesi</string>
+	<string name="emulator_settings_video_vblank_rate">Dikey Boşluk Hızı</string>
+	<string name="emulator_settings_video_vblank_ntsc_fixup">NTSC Dikey Boşluk Onarımı</string>
+	<string name="emulator_settings_video_decr_memory_layout">DECR Bellek Düzeni</string>
+	<string name="emulator_settings_video_allow_host_gpu_labels">Ana Bilgisayar GPU Etiketlerine İzin Ver</string>
+	<string name="emulator_settings_video_disable_msl_fast_math">MSL Hızlı Matematiği Devre Dışı Bırak</string>
+	<string name="emulator_settings_video_disable_asynchronous_memory_manager">Zaman Uyumsuz Bellek Yöneticisini Devre Dışı Bırak</string>
+	<string name="emulator_settings_video_output_scaling_mode">Çıktı Ölçekleme Modu</string>
+	<string-array name="video_output_scaling_mode_entries">
+		<item>En Yakın</item>
+		<item>Çift Doğrusal</item>
+		<item>FidelityFX Süper Çözünürlük</item>
+	</string-array>
+	<string name="emulator_settings_video_use_bgra_format">BGRA Formatını Kullan</string>
+	<string name="emulator_settings_video_force_convert_texture">Dokuyu Zorla Dönüştür</string>
+	<string name="emulator_settings_video_vulkan">Vulkan</string>
+	<string name="emulator_settings_video_vulkan_adapter">Adaptör</string>
+	<string name="emulator_settings_video_vulkan_force_fifo_present_mode">FIFO Sunum Modunu Zorla</string>
+	<string name="emulator_settings_video_vulkan_force_primitive_restart_flag">Temel Yeniden Başlatma Bayrağını Zorla</string>
+	<string name="emulator_settings_video_vulkan_exclusive_fullscreen_mode">Özel Tam Ekran Modu</string>
+	<string-array name="video_vulkan_exclusive_fullscreen_mode_entries">
+		<item>Otomatik</item>
+		<item>Devre Dışı</item>
+		<item>Etkin</item>
+	</string-array>
+	<string name="emulator_settings_video_vulkan_asynchronous_texture_streaming_2">Zaman Uyumsuz Doku Akış 2</string>
+	<string name="emulator_settings_video_vulkan_fidelityfx_cas_sharpening_intensity">FidelityFX CAS Keskinleştirme Yoğunluğu</string>
+	<string name="emulator_settings_video_vulkan_asynchronous_queue_scheduler">Zaman Uyumsuz Kuyruk Zamanlayıcısı</string>
+	<string-array name="video_vulkan_asynchronous_queue_scheduler_entries">
+		<item>Güvenli</item>
+		<item>Hızlı</item>
+	</string-array>
+	<string name="emulator_settings_video_vulkan_vram_allocation_limit">VRAM Tahsis Sınırı (MB)</string>
+
+	<string name="emulator_settings_video_vulkan_use_custom_driver">Özel Sürücü Kullan</string>
+
+	<string name="emulator_settings_video_vulkan_custom_driver_library_path">Özel Sürücü Kütüphane Yolu</string>
+
+	<string name="emulator_settings_video_vulkan_custom_driver_force_max_clocks">Özel Sürücü Maksimum Saatleri Zorla</string>
+
+	<string name="emulator_settings_video_performance_overlay">Performans Katmanı</string>
+	<string name="emulator_settings_video_performance_overlay_enabled">Etkin</string>
+	<string name="emulator_settings_video_performance_overlay_enable_framerate_graph">Kare Hızı Grafiğini Etkinleştir</string>
+	<string name="emulator_settings_video_performance_overlay_enable_frametime_graph">Kare Süresi Grafiğini Etkinleştir</string>
+	<string name="emulator_settings_video_performance_overlay_framerate_datapoints">Kare Hızı Veri Noktaları</string>
+	<string name="emulator_settings_video_performance_overlay_frametime_datapoints">Kare Süresi Veri Noktaları</string>
+	<string name="emulator_settings_video_performance_overlay_detail_level">Ayrıntı Seviyesi</string>
+	<string-array name="video_performance_overlay_detail_level_entries">
+		<item>Hiçbiri</item>
+		<item>En Az</item>
+		<item>Düşük</item>
+		<item>Orta</item>
+		<item>Yüksek</item>
+	</string-array>
+	<string name="emulator_settings_video_performance_overlay_framerate_graph_detail_level">Kare Hızı Grafiği Ayrıntı Seviyesi</string>
+	<string-array name="video_performance_overlay_framerate_graph_detail_level_entries">
+		<item>En Az</item>
+		<item>En Düşük ve En Yüksek Göster</item>
+		<item>%1 ve Ortalama Göster</item>
+		<item>Tümünü Göster</item>
+	</string-array>
+	<string name="emulator_settings_video_performance_overlay_frametime_graph_detail_level">Kare Süresi Grafiği Ayrıntı Seviyesi</string>
+	<string-array name="video_performance_overlay_frametime_graph_detail_level_entries">
+		<item>En Az</item>
+		<item>En Düşük ve En Yüksek Göster</item>
+		<item>%1 ve Ortalama Göster</item>
+		<item>Tümünü Göster</item>
+	</string-array>
+	<string name="emulator_settings_video_performance_overlay_metrics_update_interval">Ölçüm Güncellemesi Aralığı (ms)</string>
+	<string name="emulator_settings_video_performance_overlay_font_size">Yazı Tipi Boyutu (px)</string>
+	<string name="emulator_settings_video_performance_overlay_position">Konum</string>
+	<string-array name="video_performance_overlay_position_entries">
+		<item>Sol Üst</item>
+		<item>Sağ Üst</item>
+		<item>Sol Alt</item>
+		<item>Sağ Alt</item>
+	</string-array>
+	<string name="emulator_settings_video_performance_overlay_font">Yazı Tipi</string>
+	<string name="emulator_settings_video_performance_overlay_horizontal_margin">Yatay Kenar Boşluğu (px)</string>
+	<string name="emulator_settings_video_performance_overlay_vertical_margin">Dikey Kenar Boşluğu (px)</string>
+	<string name="emulator_settings_video_performance_overlay_center_horizontally">Yatayda Ortala</string>
+	<string name="emulator_settings_video_performance_overlay_center_vertically">Dikeyde Ortala</string>
+	<string name="emulator_settings_video_performance_overlay_opacity">Opaklık (%)</string>
+	<string name="emulator_settings_video_performance_overlay_body_color">Gövde Rengi (hex)</string>
+	<string name="emulator_settings_video_performance_overlay_body_background">Gövde Arka Planı (hex)</string>
+	<string name="emulator_settings_video_performance_overlay_title_color">Başlık Rengi (hex)</string>
+	<string name="emulator_settings_video_performance_overlay_title_background">Başlık Arka Planı (hex)</string>
+	<string name="emulator_settings_video_shader_loading_dialog">Shader Yükleme Diyaloğu</string>
+	<string name="emulator_settings_video_shader_loading_dialog_allow_custom_background">Özel Arka Planı Etkinleştir</string>
+	<string name="emulator_settings_video_shader_loading_dialog_darkening_effect_strength">Karanlıklaştırma etkisi şiddeti</string>
+	<string name="emulator_settings_video_shader_loading_dialog_blur_effect_strength">Bulanıklaştırma etkisi şiddeti</string>
+	<string name="emulator_settings_audio">Ses</string>
+	<string name="emulator_settings_audio_renderer">Ses Çıktı Aracı</string>
+	<string-array name="audio_renderer_entries">
+		<item>Yok</item>
+		<item>Cubeb</item>
+	</string-array>
+	<string name="emulator_settings_audio_audio_provider">Ses Sağlayıcısı</string>
+	<string-array name="audio_audio_provider_entries">
+		<item>Yok</item>
+		<item>CellAudio</item>
+		<item>RSXAudio</item>
+	</string-array>
+	<string name="emulator_settings_audio_rsxaudio_avport">RSXAudio Avport</string>
+	<string-array name="audio_rsxaudio_avport_entries">
+		<item>HDMI 0</item>
+		<item>HDMI 1</item>
+		<item>AV çoklu çıkış</item>
+		<item>SPDIF 0</item>
+		<item>SPDIF 1</item>
+	</string-array>
+	<string name="emulator_settings_audio_dump_to_file">Dosyaya aktar</string>
+	<string name="emulator_settings_audio_convert_to_16_bit">16 bit’e dönüştür</string>
+	<string name="emulator_settings_audio_audio_format">Ses Formatı</string>
+	<string-array name="audio_audio_format_entries">
+		<item>Stereo</item>
+		<item>Surround 5.1</item>
+		<item>Surround 7.1</item>
+		<item>Otomatik</item>
+		<item>Manuel</item>
+	</string-array>
+	<string name="emulator_settings_audio_audio_formats">Ses Formatları</string>
+	<string name="emulator_settings_audio_audio_channel_layout">Ses Kanal Düzeni</string>
+	<string-array name="audio_audio_channel_layout_entries">
+		<item>Otomatik</item>
+		<item>Monofonik</item>
+		<item>Stereo</item>
+		<item>Stereo LFE</item>
+		<item>Dört Kanallı</item>
+		<item>Dört Kanallı LFE</item>
+		<item>Surround 5.1</item>
+		<item>Surround 7.1</item>
+	</string-array>
+	<string name="emulator_settings_audio_audio_device">Ses Cihazı</string>
+	<string name="emulator_settings_audio_master_volume">Ana Ses Seviyesi</string>
+	<string name="emulator_settings_audio_enable_buffering">Tamponlamayı Etkinleştir</string>
+	<string name="emulator_settings_audio_desired_audio_buffer_duration">İstenen Ses Tampon Süresi</string>
+	<string name="emulator_settings_audio_enable_time_stretching">Zaman Esnetmeyi Etkinleştir</string>
+	<string name="emulator_settings_audio_disable_sampling_skip">Örnekleme Atlamayı Devre Dışı Bırak</string>
+	<string name="emulator_settings_audio_time_stretching_threshold">Zaman Esnetme Eşiği</string>
+	<string name="emulator_settings_audio_microphone_type">Mikrofon Türü</string>
+	<string-array name="audio_microphone_type_entries">
+		<item>Yok</item>
+		<item>Standart</item>
+		<item>SingStar</item>
+		<item>Gerçek SingStar</item>
+		<item>Rocksmith</item>
+	</string-array>
+	<string name="emulator_settings_audio_microphone_devices">Mikrofon Cihazları</string>
+	<string name="emulator_settings_audio_music_handler">Müzik İşleyici</string>
+	<string-array name="audio_music_handler_entries">
+		<item>Yok</item>
+		<item>Qt</item>
+	</string-array>
+	<string name="emulator_settings_input_output">Giriş/Çıkış</string>
+	<string name="emulator_settings_input_output_keyboard">Klavye</string>
+	<string-array name="input_output_keyboard_entries">
+		<item>Yok</item>
+		<item>Temel</item>
+	</string-array>
+	<string name="emulator_settings_input_output_mouse">Fare</string>
+	<string-array name="input_output_mouse_entries">
+		<item>Yok</item>
+		<item>Temel</item>
+		<item>Ham</item>
+	</string-array>
+	<string name="emulator_settings_input_output_camera">Kamera</string>
+	<string-array name="input_output_camera_entries">
+		<item>Yok</item>
+		<item>Sahte</item>
+		<item>Qt</item>
+	</string-array>
+	<string name="emulator_settings_input_output_camera_type">Kamera Türü</string>
+	<string-array name="input_output_camera_type_entries">
+		<item>Bilinmeyen</item>
+		<item>EyeToy</item>
+		<item>PS Eye</item>
+		<item>UVC 1.1</item>
+	</string-array>
+	<string name="emulator_settings_input_output_camera_flip">Kamera Yansıtma</string>
+	<string-array name="input_output_camera_flip_entries">
+		<item>Yok</item>
+		<item>Yatay</item>
+		<item>Dikey</item>
+		<item>Her ikisi</item>
+	</string-array>
+	<string name="emulator_settings_input_output_camera_id">Kamera Kimliği</string>
+	<string name="emulator_settings_input_output_move">Move</string>
+	<string-array name="input_output_move_entries">
+		<item>Yok</item>
+		<item>Sahte</item>
+		<item>Fare</item>
+		<item>Ham Fare</item>
+	</string-array>
+	<string name="emulator_settings_input_output_buzz_emulated_controller">Buzz Simüle Edilen Kontrol</string>
+	<string-array name="input_output_buzz_emulated_controller_entries">
+		<item>Yok</item>
+		<item>1 kontrol</item>
+		<item>2 kontrol</item>
+	</string-array>
+	<string name="emulator_settings_input_output_turntable_emulated_controller">Turntable Simüle Edilen Kontrol</string>
+	<string-array name="input_output_turntable_emulated_controller_entries">
+		<item>Yok</item>
+		<item>1 kontrol</item>
+		<item>2 kontrol</item>
+	</string-array>
+	<string name="emulator_settings_input_output_ghltar_emulated_controller">GHLtar Simüle Edilen Kontrol</string>
+	<string-array name="input_output_ghltar_emulated_controller_entries">
+		<item>Yok</item>
+		<item>1 kontrol</item>
+		<item>2 kontrol</item>
+	</string-array>
+	<string name="emulator_settings_input_output_pad_handler_mode">Pad İşleyici Modu</string>
+	<string-array name="input_output_pad_handler_mode_entries">
+		<item>Tek Parçacıklı</item>
+		<item>Çok Parçacıklı</item>
+	</string-array>
+	<string name="emulator_settings_input_output_keep_pads_connected">Pad‘leri Bağlı Tut</string>
+	<string name="emulator_settings_input_output_pad_handler_sleep">Pad İşleyici Uyku Süresi (mikrosaniye)</string>
+	<string name="emulator_settings_input_output_background_input_enabled">Arkaplan Girdisini Etkinleştir</string>
+	<string name="emulator_settings_input_output_show_move_cursor">PS Move İmlecini Göster</string>
+	<string name="emulator_settings_input_output_lock_overlay_input_to_player_one">Oynatıcı 1’e Girişleri Kilitle</string>
+	<string name="emulator_settings_input_output_emulated_midi_devices">Simüle Edilen MIDI Cihazları</string>
+	<string name="emulator_settings_input_output_load_sdl_gamecontroller_mappings">SDL GameController Haritalamalarını Yükle</string>
+	<string name="emulator_settings_input_output_io_debug_overlay">Giriş/Çıkış Hata Ayıklama Üstü</string>
+	<string name="emulator_settings_system">Sistem</string>
+	<string name="emulator_settings_system_license_area">Lisans Alanı</string>
+	<string-array name="system_license_area_entries">
+		<item>SCEJ</item>
+		<item>SCEA</item>
+		<item>SCEE</item>
+		<item>SCEH</item>
+		<item>SCEK</item>
+		<item>SCH</item>
+	</string-array>
+	<string name="emulator_settings_system_language">Dil</string>
+	<string-array name="system_language_entries">
+		<item>Japonca</item>
+		<item>İngilizce (ABD)</item>
+		<item>Fransızca</item>
+		<item>İspanyolca</item>
+		<item>Almanca</item>
+		<item>İtalyanca</item>
+		<item>Felemenkçe</item>
+		<item>Portekizce (Portekiz)</item>
+		<item>Rusça</item>
+		<item>Korece</item>
+		<item>Çince (Geleneksel)</item>
+		<item>Çince (Basitleştirilmiş)</item>
+		<item>Fince</item>
+		<item>İsveççe</item>
+		<item>Danca</item>
+		<item>Norveççe</item>
+		<item>Lehçe</item>
+		<item>Portekizce (Brezilya)</item>
+		<item>İngilizce (UK)</item>
+		<item>Türkçe</item>
+	</string-array>
+	<string name="emulator_settings_system_keyboard_type">Klavye Türü</string>
+	<string-array name="system_keyboard_type_entries">
+		<item>İngilizce klavye (ABD standardı)</item>
+		<item>Japonca klavye</item>
+		<item>Japonca klavye (Kana durumu)</item>
+		<item>Almanca klavye</item>
+		<item>İspanyolca klavye</item>
+		<item>Fransızca klavye</item>
+		<item>İtalyanca klavye</item>
+		<item>Felemenkçe klavye</item>
+		<item>Portekizce klavye (Portekiz)</item>
+		<item>Rusça klavye</item>
+		<item>İngilizce klavye (UK standardı)</item>
+		<item>Korece klavye</item>
+		<item>Norveççe klavye</item>
+		<item>Fince klavye</item>
+		<item>Danca klavye</item>
+		<item>İsveççe klavye</item>
+		<item>Çince klavye (Geleneksel)</item>
+		<item>Çince klavye (Basitleştirilmiş)</item>
+		<item>Fransızca klavye (İsviçre)</item>
+		<item>Almanca klavye (İsviçre)</item>
+		<item>Fransızca klavye (Kanada)</item>
+		<item>Fransızca klavye (Belçika)</item>
+		<item>Lehçe klavye</item>
+		<item>Portekizce klavye (Brezilya)</item>
+		<item>Türkçe klavye</item>
+	</string-array>
+	<string name="emulator_settings_system_enter_button_assignment">Enter Tuş Ataması</string>
+	<string-array name="system_enter_button_assignment_entries">
+		<item>Çember ile Enter</item>
+		<item>Çapraz ile Enter</item>
+	</string-array>
+	<string name="emulator_settings_system_console_time_offset">Konsol Zamanı Ofseti (saniye)</string>
+	<string name="emulator_settings_system_system_name">Sistem Adı</string>
+	<string name="emulator_settings_system_psid_high">PSID yüksek</string>
+	<string name="emulator_settings_system_psid_low">PSID düşük</string>
+	<string name="emulator_settings_system_hdd_model_name">HDD Model Adı</string>
+	<string name="emulator_settings_system_hdd_serial_number">HDD Seri Numarası</string>
+	<string name="emulator_settings_net">Ağ</string>
+	<string name="emulator_settings_net_internet_enabled">İnternet Etkin</string>
+	<string-array name="net_internet_enabled_entries">
+		<item>Bağlı Değil</item>
+		<item>Bağlı</item>
+	</string-array>
+	<string name="emulator_settings_net_ip_address">IP Adresi</string>
+	<string name="emulator_settings_net_bind_address">Bağlantı Adresi</string>
+	<string name="emulator_settings_net_dns_address">DNS Adresi</string>
+	<string name="emulator_settings_net_ip_swap_list">IP Değişim Listesi</string>
+	<string name="emulator_settings_net_upnp_enabled">UPNP Etkin</string>
+	<string name="emulator_settings_net_psn_status">PSN Durumu</string>
+	<string-array name="net_psn_status_entries">
+		<item>Bağlı Değil</item>
+		<item>Simüle Edilmiş</item>
+		<item>RPCN</item>
+	</string-array>
+	<string name="emulator_settings_net_psn_country">PSN Ülkesi</string>
+	<string name="emulator_settings_savestate">Savestate</string>
+	<string name="emulator_settings_savestate_start_paused">Duraklatılmış Başlat</string>
+	<string name="emulator_settings_savestate_suspend_emulation_savestate_mode">Emülasyonu Askıya Alan Savestate Modu</string>
+	<string name="emulator_settings_savestate_compatible_savestate_mode">Uyumlu Savestate Modu</string>
+	<string name="emulator_settings_savestate_inspection_mode_savestates">İnceleme Modu Savestates</string>
+	<string name="emulator_settings_savestate_save_disc_game_data">Disk Oyun Verilerini Kaydet</string>
+	<string name="emulator_settings_miscellaneous">Çeşitli</string>
+	<string name="emulator_settings_miscellaneous_automatically_start_games_after_boot">Başlatıldığında Otomatik Başlat</string>
+	<string name="emulator_settings_miscellaneous_exit_rpcs3_when_process_finishes">İşlem Bittiğinde RPCS3‘ten Çık</string>
+	<string name="emulator_settings_miscellaneous_pause_emulation_on_rpcs3_focus_loss">RPCS3’ten Çıkışta Emülasyonu Duraklat</string>
+	<string name="emulator_settings_miscellaneous_start_games_in_fullscreen_mode">Tam Ekran Modunda Başlat</string>
+	<string name="emulator_settings_miscellaneous_prevent_display_sleep_while_running_games">Oynatırken Ekranı Uyutma</string>
+	<string name="emulator_settings_miscellaneous_show_trophy_popups">Trophy Bildirimleri Göster</string>
+	<string name="emulator_settings_miscellaneous_show_rpcn_popups">RPCN Bildirimleri Göster</string>
+	<string name="emulator_settings_miscellaneous_show_shader_compilation_hint">Shader Derleme İpucunu Göster</string>
+	<string name="emulator_settings_miscellaneous_show_ppu_compilation_hint">PPU Derleme İpucunu Göster</string>
+	<string name="emulator_settings_miscellaneous_show_pressure_intensity_toggle_hint">Basınç Şiddeti Aç/Kapa İpucunu Göster</string>
+	<string name="emulator_settings_miscellaneous_show_analog_limiter_toggle_hint">Analog Sınırlandırıcı Aç/Kapa İpucunu Göster</string>
+	<string name="emulator_settings_miscellaneous_show_mouse_and_keyboard_toggle_hint">Fare ve Klavye Aç/Kapa İpucunu Göster</string>
+	<string name="emulator_settings_miscellaneous_show_autosave_autoload_hint">Otomatik Kaydet/Yükle İpucunu Göster</string>
+	<string name="emulator_settings_miscellaneous_use_native_user_interface">Yerel Kullanıcı Arayüzünü Kullan</string>
+	<string name="emulator_settings_miscellaneous_gdb_server">GDB Sunucusu</string>
+	<string name="emulator_settings_miscellaneous_silence_all_logs">Tüm Günlükleri Sustur</string>
+	<string name="emulator_settings_miscellaneous_window_title_format">Pencere Başlık Biçimi</string>
+	<string name="emulator_settings_miscellaneous_pause_emulation_during_home_menu">Ana Menüde Emülasyonu Duraklat</string>
+	<string name="emulator_settings_miscellaneous_font_file_selection">Yazı Tipi Dosyası Seçimi</string>
+	<string-array name="miscellaneous_font_file_selection_entries">
+		<item>Firmware‘den</item>
+		<item>Özel</item>
+	</string-array>
+	<string name="emulator_settings_miscellaneous_custom_font_file_path">Özel Yazı Tipi Dosya Yolu</string>
+	<string name="emulator_settings_miscellaneous_font_size">Yazı Tipi Boyutu</string>
+	<string name="INVALID">Geçersiz</string>
+	<string name="RSX_OVERLAYS_TROPHY_BRONZE">Bir bronz kupa kazandınız.\n%0</string>
+	<string name="RSX_OVERLAYS_TROPHY_SILVER">Bir gümüş kupa kazandınız.\n%0</string>
+	<string name="RSX_OVERLAYS_TROPHY_GOLD">Bir altın kupa kazandınız.\n%0</string>
+	<string name="RSX_OVERLAYS_TROPHY_PLATINUM">Bir platin kupa kazandınız.\n%0</string>
+	<string name="RSX_OVERLAYS_COMPILING_SHADERS">Shader‘lar derleniyor</string>
+	<string name="RSX_OVERLAYS_COMPILING_PPU_MODULES">PPU Modülleri Derleniyor</string>
+	<string name="RSX_OVERLAYS_MSG_DIALOG_YES">Evet</string>
+	<string name="RSX_OVERLAYS_MSG_DIALOG_NO">Hayır</string>
+	<string name="RSX_OVERLAYS_MSG_DIALOG_CANCEL">Geri</string>
+	<string name="RSX_OVERLAYS_MSG_DIALOG_OK">Tamam</string>
+	<string name="RSX_OVERLAYS_SAVE_DIALOG_TITLE">Kayıt Menüsü</string>
+	<string name="RSX_OVERLAYS_SAVE_DIALOG_DELETE">Kaydı Sil</string>
+	<string name="RSX_OVERLAYS_SAVE_DIALOG_LOAD">Kaydı Yükle</string>
+	<string name="RSX_OVERLAYS_SAVE_DIALOG_SAVE">Kaydet</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_ACCEPT">Enter</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_CANCEL">Geri</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_SPACE">Boşluk</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_BACKSPACE">Sil</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_SHIFT">Shift</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_ENTER_TEXT">[Metin Girin]</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_ENTER_PASSWORD">[Parola Girin]</string>
+	<string name="RSX_OVERLAYS_MEDIA_DIALOG_TITLE">Medya Seçimi</string>
+	<string name="RSX_OVERLAYS_MEDIA_DIALOG_TITLE_PHOTO_IMPORT">Aktarılacak Fotoğraf Seçin</string>
+	<string name="RSX_OVERLAYS_MEDIA_DIALOG_EMPTY">Medya bulunamadı.</string>
+	<string name="RSX_OVERLAYS_LIST_SELECT">Enter</string>
+	<string name="RSX_OVERLAYS_LIST_CANCEL">Geri</string>
+	<string name="RSX_OVERLAYS_LIST_DENY">Reddet</string>
+	<string name="RSX_OVERLAYS_PRESSURE_INTENSITY_TOGGLED_OFF">%0 oyuncunun basınç şiddeti modu devre dışı</string>
+	<string name="RSX_OVERLAYS_PRESSURE_INTENSITY_TOGGLED_ON">%0 oyuncunun basınç şiddeti modu etkin</string>
+	<string name="RSX_OVERLAYS_ANALOG_LIMITER_TOGGLED_OFF">%0 oyuncunun analog sınırlayıcısı devre dışı</string>
+	<string name="RSX_OVERLAYS_ANALOG_LIMITER_TOGGLED_ON">%0 oyuncunun analog sınırlayıcısı etkin</string>
+	<string name="RSX_OVERLAYS_MOUSE_AND_KEYBOARD_EMULATED">Fare ve klavye simüle edilen cihazlar olarak kullanılıyor.</string>
+	<string name="RSX_OVERLAYS_MOUSE_AND_KEYBOARD_PAD">Fare ve klavye pad olarak kullanılıyor.</string>
+	<string name="CELL_GAME_ERROR_BROKEN_GAMEDATA">HATA: Oyun verileri bozuk. Uygulama çalışmaya devam edecek.</string>
+	<string name="CELL_GAME_ERROR_BROKEN_HDDGAME">HATA: HDD oyunu bozuk. Uygulama çalışmaya devam edecek.</string>
+	<string name="CELL_GAME_ERROR_BROKEN_EXIT_GAMEDATA">HATA: Oyun verileri bozuk. Uygulama sonlandırılacak.</string>
+	<string name="CELL_GAME_ERROR_BROKEN_EXIT_HDDGAME">HATA: HDD oyunu bozuk. Uygulama sonlandırılacak.</string>
+	<string name="CELL_GAME_ERROR_NOSPACE">Yetersiz alan. Uygulama çalışmaya devam edecek.\nBoş alan gereksinimi: %0 KB</string>
+	<string name="CELL_GAME_ERROR_NOSPACE_EXIT">Yetersiz alan. Uygulama sonlandırılacak.\nBoş alan gereksinimi: %0 KB</string>
+	<string name="CELL_GAME_ERROR_DIR_NAME">Dizin adı: %0</string>
+	<string name="CELL_GAME_DATA_EXIT_BROKEN">Bir hata oluştu!\n\nBu oyunun verilerini silin.</string>
+	<string name="CELL_HDD_GAME_EXIT_BROKEN">Bir hata oluştu!\n\nHDD oyununu yeniden yükleyin.</string>
+	<string name="CELL_HDD_GAME_CHECK_NOSPACE">HDD oyunu oluşturulamıyor.\nGerekli alan: %0 KB</string>
+	<string name="CELL_HDD_GAME_CHECK_BROKEN">%0 HDD oyunu bozuk!</string>
+	<string name="CELL_HDD_GAME_CHECK_NODATA">%0 HDD oyunu bulunamadı!</string>
+	<string name="CELL_HDD_GAME_CHECK_INVALID">HATA: %0</string>
+	<string name="CELL_GAMEDATA_CHECK_NOSPACE">Oyun verisi oluşturulamıyor.\nGerekli alan: %0 KB</string>
+	<string name="CELL_GAMEDATA_CHECK_BROKEN">%0 oyun verisi bozuk!</string>
+	<string name="CELL_GAMEDATA_CHECK_NODATA">%0 oyun verisi bulunamadı!</string>
+	<string name="CELL_GAMEDATA_CHECK_INVALID">HATA: %0</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010001">Kaynak geçici olarak kullanılamıyor.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010002">Geçersiz bağımsız değişken veya bayrak.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010003">Bu özellik henüz uygulanmadı.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010004">Bellek tahsisi başarısız.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010005">Belirtilen kimliğe sahip kaynak yok.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010006">Dosya yok.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010007">Dosya tanınmayan formatta / Dosya geçerli ELF değil.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010008">Kilitlenme engellendi.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010009">İzin yok.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000A">Cihaz veya kaynak meşgul.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000B">İşlem zaman aşımına uğradı.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000C">İşlem iptal edildi.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000D">Geçersiz bellek erişimi.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000F">Hedef iş parçacığının durumu geçersiz.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010010">Hizalama geçersiz.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010011">Çekirdek kaynakları yetersiz.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010012">Dosya bir dizin.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010013">İşlem iptal edildi.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010014">Giriş zaten var.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010015">Port zaten bağlı.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010016">Port bağlı değil.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010017">SELF imzalama hatası. Program doğrulama başarısız.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010018">Dosya MSELF değil.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010019">Sistem sürümü hatası.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001A">SELF imzalama hatası. Sistem hatası oluştu.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001B">Matematiksel alan ihlali.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001C">Matematiksel aralık ihlali.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001D">Geçersiz çok bayt dizisi.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001E">Dosya konumu hatası.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001F">Sistem çağrısı kesildi.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010020">Dosya çok büyük.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010021">Çok fazla bağlantı.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010022">Dosya tablosu taştı.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010023">Cihazda boş alan kalmadı.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010024">Bu bir TTY değil.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010025">Kırık boru.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010026">Salt okunur dosya sistemi.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010027">Geçersiz arama.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010028">Argüman listesi çok uzun.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010029">Erişim ihlali.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002A">Geçersiz dosya tanımlayıcısı.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002B">Dosya sistemi bağlama başarısız.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002C">Çok fazla dosya açık.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002D">Cihaz yok.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002E">Dizin değil.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002F">Cihaz veya G/Ç yok.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010030">Cihazlar arası bağlantı hatası.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010031">Geçersiz mesaj.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010032">Devam ediyor.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010033">Mesaj boyutu hatası.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010034">Ad çok uzun.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010035">Kilit yok.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010036">Boş değil.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010037">Desteklenmiyor.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010038">Dosya sistemi özel hatası.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010039">Taşma oluştu.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003A">Dosya sistemi bağlı değil.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003B">SData değil.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003C">sys_load_param sürüm hatası.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003D">İşaretçi null.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003E">İşaretçi null.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_DEFAULT">Bir hata oluştu.\n(%0)</string>
+	<string name="CELL_OSK_DIALOG_TITLE">Ekrandaki Klavye</string>
+	<string name="CELL_OSK_DIALOG_BUSY">Ekrandaki Klavye aktifken Ana Menü açılamaz!</string>
+	<string name="CELL_SAVEDATA_CB_BROKEN">HATA - Kayıt bozuk</string>
+	<string name="CELL_SAVEDATA_CB_FAILURE">HATA - Kayıt/Yükleme başarısız</string>
+	<string name="CELL_SAVEDATA_CB_NO_DATA">HATA - Kayıt bulunamadı</string>
+	<string name="CELL_SAVEDATA_CB_NO_SPACE">HATA - Yetersiz boş alan\n\nGerekli alan: %0 KB</string>
+	<string name="CELL_SAVEDATA_NO_DATA">Kayıt verisi yok.</string>
+	<string name="CELL_SAVEDATA_NEW_SAVED_DATA_TITLE">Yeni Kayıt Verisi</string>
+	<string name="CELL_SAVEDATA_NEW_SAVED_DATA_SUB_TITLE">Yeni kayıt oluşturmak için seçin</string>
+	<string name="CELL_SAVEDATA_SAVE_CONFIRMATION">Bu veriyi kaydetmek istiyor musunuz?</string>
+	<string name="CELL_SAVEDATA_DELETE_CONFIRMATION">Bu veriyi silmek istediğinizden emin misiniz?\n\n%0</string>
+	<string name="CELL_SAVEDATA_DELETE_SUCCESS">Veri başarıyla silindi!\n\n%0</string>
+	<string name="CELL_SAVEDATA_DELETE">Bu veriyi silmek istediğinizden emin misiniz?\n\n%0</string>
+	<string name="CELL_SAVEDATA_LOAD">Bu veriyi yüklemek istediğinizden emin misiniz?\n\n%0</string>
+	<string name="CELL_SAVEDATA_SAVE">Bu veriyi kaydetmek istediğinizden emin misiniz?\n\n%0</string>
+	<string name="CELL_SAVEDATA_OVERWRITE">Bu kaydı üzerine yazmak istediğinizden emin misiniz?\n\n%0</string>
+	<string name="CELL_SAVEDATA_AUTOSAVE">Kayıt yapılıyor...</string>
+	<string name="CELL_SAVEDATA_AUTOLOAD">Yükleme yapılıyor...</string>
+	<string name="CELL_CROSS_CONTROLLER_MSG">PS Vita sisteminde başlatın.\nYüklenmemişse PS Vita sistemindeki [Uzaktan Oynatma] menüsünden [Cross-Controller] uygulamasını başlatın.</string>
+	<string name="CELL_CROSS_CONTROLLER_FW_MSG">PS Vita sisteminizdeki sistem yazılımı 1.80‘den eskiyse en son sürüme güncelleyin.</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_TITLE">Mesaj Seçimi</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_TITLE_INVITE">Davet Seçimi</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_TITLE_ADD_FRIEND">Arkadaş Ekle</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_FROM">Kimden:</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_SUBJECT">Konu:</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_TITLE">Gönderilecek Mesaj</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_TITLE_INVITE">Davet Gönder</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_TITLE_ADD_FRIEND">Arkadaşlık İsteği Gönder</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_CONFIRMATION">%0’a mesaj göndermek istediğinizden emin misiniz?\n\nKonu:</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_CONFIRMATION_INVITE">%0‘a davet göndermek istediğinizden emin misiniz?\n\nKonu:</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_CONFIRMATION_ADD_FRIEND">%0’a arkadaşlık isteği göndermek istediğinizden emin misiniz?\n\nKonu:</string>
+	<string name="RECORDING_ABORTED">Kayıt iptal edildi!</string>
+	<string name="RPCN_NO_ERROR">RPCN: Hata Yok</string>
+	<string name="RPCN_ERROR_INVALID_INPUT">RPCN: Geçersiz Giriş (Yanlış Sunucu/Port)</string>
+	<string name="RPCN_ERROR_WOLFSSL">RPCN Bağlantı Hatası: WolfSSL Hatası</string>
+	<string name="RPCN_ERROR_RESOLVE">RPCN Bağlantı Hatası: Çözümleme Hatası</string>
+	<string name="RPCN_ERROR_CONNECT">RPCN Bağlantı Hatası</string>
+	<string name="RPCN_ERROR_LOGIN_ERROR">RPCN Giriş Hatası: Kimlik Hatası</string>
+    <string name="RPCN_ERROR_ALREADY_LOGGED">RPCN Giriş Hatası: Kullanıcı Zaten Giriş Yapmış</string>
+    <string name="RPCN_ERROR_INVALID_LOGIN">RPCN Giriş Hatası: Geçersiz Kullanıcı Adı</string>
+    <string name="RPCN_ERROR_INVALID_PASSWORD">RPCN Giriş Hatası: Geçersiz Şifre</string>
+    <string name="RPCN_ERROR_INVALID_TOKEN">RPCN Giriş Hatası: Geçersiz Token</string>
+    <string name="RPCN_ERROR_INVALID_PROTOCOL_VERSION">RPCN Diğer Hata: Protokol Sürüm Hatası (eski RPCS3?)</string>
+    <string name="RPCN_ERROR_UNKNOWN">RPCN: Bilinmeyen Hata</string>
+    <string name="RPCN_SUCCESS_LOGGED_ON">RPCN’e başarıyla giriş yapıldı!</string>
+    <string name="RPCN_FRIEND_REQUEST_RECEIVED">RPCN: Arkadaşlık isteği alındı: %0</string>
+    <string name="RPCN_FRIEND_ADDED">RPCN: Arkadaş eklendi: %0</string>
+    <string name="RPCN_FRIEND_LOST">RPCN: Arkadaş kaldırıldı: %0</string>
+    <string name="RPCN_FRIEND_LOGGED_IN">RPCN: %0 giriş yaptı</string>
+    <string name="RPCN_FRIEND_LOGGED_OUT">RPCN: %0 çıkış yaptı</string>
+
+    <!-- Ana Menü -->
+    <string name="HOME_MENU_TITLE">Ana Menü</string>
+    <string name="HOME_MENU_EXIT_GAME">Oyundan Çık</string>
+    <string name="HOME_MENU_RESUME">Oyuna Devam Et</string>
+    <string name="HOME_MENU_FRIENDS">Arkadaşlar</string>
+    <string name="HOME_MENU_FRIENDS_REQUESTS">Bekleyen Arkadaşlık İstekleri</string>
+    <string name="HOME_MENU_FRIENDS_BLOCKED">Engellenen Kullanıcılar</string>
+    <string name="HOME_MENU_FRIENDS_STATUS_ONLINE">Çevrimiçi</string>
+    <string name="HOME_MENU_FRIENDS_STATUS_OFFLINE">Çevrimdışı</string>
+    <string name="HOME_MENU_FRIENDS_STATUS_BLOCKED">Engellenmiş</string>
+    <string name="HOME_MENU_FRIENDS_REQUEST_SENT">Arkadaşlık isteği gönderdiniz</string>
+    <string name="HOME_MENU_FRIENDS_REQUEST_RECEIVED">0 size arkadaşlık isteği gönderdi</string>
+    <string name="HOME_MENU_FRIENDS_BLOCK_USER_MSG">Bu kullanıcıyı engellemek istiyor musunuz?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_UNBLOCK_USER_MSG">Bu kullanıcıyı engelini kaldırmak istiyor musunuz?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_REMOVE_USER_MSG">Bu kullanıcıyı kaldırmak istiyor musunuz?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_ACCEPT_REQUEST_MSG">İsteği kabul etmek istiyor musunuz?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_CANCEL_REQUEST_MSG">İsteği iptal etmek istiyor musunuz?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_REJECT_REQUEST_MSG">İsteği reddetmek istiyor musunuz?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_REJECT_REQUEST">İsteği Reddet</string>
+    <string name="HOME_MENU_FRIENDS_NEXT_LIST">Sonraki liste</string>
+    <string name="HOME_MENU_RESTART">Oyunu Yeniden Başlat</string>
+
+    <!-- Ayarlar -->
+    <string name="HOME_MENU_SETTINGS">Ayarlar</string>
+    <string name="HOME_MENU_SETTINGS_SAVE">Özel yapılandırmayı kaydetmek istiyor musunuz?</string>
+    <string name="HOME_MENU_SETTINGS_SAVE_BUTTON">Kaydet</string>
+    <string name="HOME_MENU_SETTINGS_DISCARD">Geçerli ayar değişikliklerini iptal etmek istiyor musunuz?</string>
+    <string name="HOME_MENU_SETTINGS_DISCARD_BUTTON">İptal Et</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO">Ses</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_MASTER_VOLUME">Ana Ses Seviyesi</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_BACKEND">Ses Arka Ucu</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_BUFFERING">Tamponlamayı Etkinleştir</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_BUFFER_DURATION">İstenen Ses Tampon Süresi</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_TIME_STRETCHING">Zaman Esnetmeyi Etkinleştir</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_TIME_STRETCHING_THRESHOLD">Zaman Esnetme Eşiği</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO">Görüntü</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_FRAME_LIMIT">Kare Sınırı</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_ANISOTROPIC_OVERRIDE">Anizotropik Filtre Geçidi</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_OUTPUT_SCALING">Çıktı Ölçeklendirme</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_RCAS_SHARPENING">FidelityFX CAS Keskinleştirme Şiddeti</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_STRETCH_TO_DISPLAY">Görüntüyü Görüntü Alanına Uzat</string>
+    <string name="HOME_MENU_SETTINGS_INPUT">Giriş</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_BACKGROUND_INPUT">Arka Planda Giriş Etkin</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_KEEP_PADS_CONNECTED">Padleri Bağlı Tutmak</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_SHOW_PS_MOVE_CURSOR">PS Move İmlecini Göster</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_CAMERA_FLIP">Kamera Yansıtmayı Uygula</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_PAD_MODE">Pad Kontrol Modu</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_PAD_SLEEP">Pad Kontrol Uyku Süresi</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_FAKE_MOVE_ROTATION_CONE_H">Yalnızca PS Move Dönme Konisi (Yatay)</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_FAKE_MOVE_ROTATION_CONE_V">Yalnızca PS Move Dönme Konisi (Dikey)</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED">Gelişmiş</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_PREFERRED_SPU_THREADS">Tercih Edilen SPU Threadleri</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_MAX_CPU_PREEMPTIONS">Maksimum CPU Önceliği</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_ACCURATE_RSX_RESERVATION_ACCESS">RSX Rezervasyon Erişimi</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_SLEEP_TIMERS_ACCURACY">Uyku Zamanlayıcı Doğruluğu</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_MAX_SPURS_THREADS">Maksimum SPURS Threadleri</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_DRIVER_WAKE_UP_DELAY">Sürücü Uyanma Gecikmesi</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_VBLANK_FREQUENCY">VBlank Frekansı</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_VBLANK_NTSC">VBlank NTSC Ayarı</string>
+
+    <!-- Kullanıcı Arayüzü -->
+    <string name="HOME_MENU_SETTINGS_OVERLAYS">Kaplama Katmanları</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_TROPHY_POPUPS">Madalya Açılır Pencerelerini Göster</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_RPCN_POPUPS">RPCN Açılır Pencerelerini Göster</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_SHADER_COMPILATION_HINT">Shader Derleme İpucunu Göster</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_PPU_COMPILATION_HINT">PPU Derleme İpucunu Göster</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_AUTO_SAVE_LOAD_HINT">Otomatik Kaydet/Yükle İpucunu Göster</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_PRESSURE_INTENSITY_TOGGLE_HINT">Basınç Şiddeti Aç/Kapat İpucunu Göster</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_ANALOG_LIMITER_TOGGLE_HINT">Analog Sınırlandırıcı Aç/Kapat İpucunu Göster</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_MOUSE_AND_KB_TOGGLE_HINT">Fare ve Klavye Aç/Kapat İpucunu Göster</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY">Performans Katmanı</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_ENABLE">Performans Katmanını Etkinleştir</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_ENABLE_FRAMERATE_GRAPH">Kare Hızı Grafiğini Etkinleştir</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_ENABLE_FRAMETIME_GRAPH">Kare Zamanı Grafiğini Etkinleştir</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_DETAIL_LEVEL">Ayrıntı Seviyesi</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMERATE_DETAIL_LEVEL">Kare Hızı Grafiği Ayrıntı Seviyesi</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMETIME_DETAIL_LEVEL">Kare Zamanı Grafiği Ayrıntı Seviyesi</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMERATE_DATAPOINT_COUNT">Kare Hızı Veri Noktaları</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMETIME_DATAPOINT_COUNT">Kare Zamanı Veri Noktaları</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_UPDATE_INTERVAL">Metriklerin Güncellenme Aralığı</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_POSITION">Konum</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_CENTER_X">Yatayda Ortala</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_CENTER_Y">Dikeyde Ortala</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_MARGIN_X">Yatay Kenar Payı</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_MARGIN_Y">Dikey Kenar Payı</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FONT_SIZE">Yazı Boyutu</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_OPACITY">Saydamlık</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG">Hata Ayıklama</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_OVERLAY">Hata Ayıklama Katmanı</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_INPUT_OVERLAY">Giriş Hata Ayıklama Katmanı</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_DISABLE_VIDEO_OUTPUT">Görüntü Çıktısını Devre Dışı Bırak</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_TEXTURE_LOD_BIAS">Doku Seviye Farklılıkları Eklentisi</string>
+    <string name="HOME_MENU_SCREENSHOT">Ekran Görüntüsü Al</string>
+    <string name="HOME_MENU_SAVESTATE">Oyun Durumu</string>
+    <string name="HOME_MENU_SAVESTATE_SAVE">Oyun Durumunu Kaydet</string>
+    <string name="HOME_MENU_SAVESTATE_AND_EXIT">Oyun Durumunu Kaydet ve Çık</string>
+    <string name="HOME_MENU_RELOAD_SAVESTATE">Son Oyun Durumunu Yükle</string>
+    <string name="HOME_MENU_RECORDING">Kayıt Başlat/Durdur</string>
+    <string name="HOME_MENU_TROPHIES">Madalyalar</string>
+    <string name="HOME_MENU_TROPHY_LIST_TITLE">Madalya İlerlemesi: %0</string>
+    <string name="HOME_MENU_TROPHY_LOCKED_TITLE">Kilitli Madalya: %0</string>
+    <string name="HOME_MENU_TROPHY_HIDDEN_TITLE">Gizli Madalya</string>
+    <string name="HOME_MENU_TROPHY_HIDDEN_DESCRIPTION">Bu madalya gizli</string>
+    <string name="HOME_MENU_TROPHY_SHOW_HIDDEN_TROPHIES">Gizli Madalyaları Göster</string>
+    <string name="HOME_MENU_TROPHY_HIDE_HIDDEN_TROPHIES">Gizli Madalyaları Gizle</string>
+    <string name="HOME_MENU_TROPHY_PLATINUM_RELEVANT">Platin madalya</string>
+    <string name="HOME_MENU_TROPHY_GRADE_BRONZE">Bronz</string>
+    <string name="HOME_MENU_TROPHY_GRADE_SILVER">Gümüş</string>
+    <string name="HOME_MENU_TROPHY_GRADE_GOLD">Altın</string>
+    <string name="HOME_MENU_TROPHY_GRADE_PLATINUM">Platin</string>
+
+    <!-- Ses ve İlerleme -->
+    <string name="AUDIO_MUTED">Ses kapatıldı</string>
+    <string name="AUDIO_UNMUTED">Ses açıldı</string>
+    <string name="AUDIO_CHANGED">Ses seviyesi %0 olarak değiştirildi</string>
+    <string name="PROGRESS_DIALOG_PROGRESS">İlerleme:</string>
+    <string name="PROGRESS_DIALOG_PROGRESS_ANALYZING">İlerleme: analiz ediliyor...</string>
+    <string name="PROGRESS_DIALOG_REMAINING">kaldı</string>
+    <string name="PROGRESS_DIALOG_DONE">tamamlandı</string>
+    <string name="PROGRESS_DIALOG_FILE">dosya</string>
+    <string name="PROGRESS_DIALOG_MODULE">modül</string>
+    <string name="PROGRESS_DIALOG_OF">/</string>
+    <string name="PROGRESS_DIALOG_PLEASE_WAIT">Lütfen bekleyin</string>
+    <string name="PROGRESS_DIALOG_STOPPING_PLEASE_WAIT">Durduruluyor. Lütfen bekleyin...</string>
+    <string name="PROGRESS_DIALOG_SAVESTATE_PLEASE_WAIT">Oyun durumu oluşturuluyor. Lütfen bekleyin...</string>
+    <string name="PROGRESS_DIALOG_SCANNING_PPU_EXECUTABLE">PPU Executable taraması yapılıyor...</string>
+    <string name="PROGRESS_DIALOG_ANALYZING_PPU_EXECUTABLE">PPU Executable analiz ediliyor...</string>
+    <string name="PROGRESS_DIALOG_SCANNING_PPU_MODULES">PPU Modülleri taraması yapılıyor...</string>
+    <string name="PROGRESS_DIALOG_LOADING_PPU_MODULES">PPU Modülleri yükleniyor...</string>
+    <string name="PROGRESS_DIALOG_COMPILING_PPU_MODULES">PPU Modülleri derleniyor...</string>
+    <string name="PROGRESS_DIALOG_LINKING_PPU_MODULES">PPU Modülleri bağlanıyor...</string>
+    <string name="PROGRESS_DIALOG_APPLYING_PPU_CODE">PPU Kodu uygulanıyor...</string>
+    <string name="PROGRESS_DIALOG_BUILDING_SPU_CACHE">SPU Önbelleği oluşturuluyor...</string>
+    <string name="EMULATION_PAUSED_RESUME_WITH_START">Devam etmek için START tuşuna basılı tutun</string>
+    <string name="EMULATION_RESUMING">Devam ediyor...!</string>
+    <string name="EMULATION_FROZEN">PS3 uygulaması muhtemelen çöktü, kapatabilirsiniz.</string>
+    <string name="SAVESTATE_FAILED_DUE_TO_SAVEDATA">Oyun kaydı başarısız: Oyun kaydı devam ediyor, bitene kadar bekleyin.</string>
+    <string name="SAVESTATE_FAILED_DUE_TO_VDEC">Oyun kaydı başarısız: VDEC tabanlı video/sahne kayıtları devam ediyor, bitmesini bekleyin veya libvdec.sprx‘i etkinleştirin.</string>
+    <string name="SAVESTATE_FAILED_DUE_TO_MISSING_SPU_SETTING">Oyun kaydı başarısız: SPU durumu kilitlenemedi, SPU Uyumlu modunu etkinleştirmek çözebilir.</string>
+    <string name="SAVESTATE_FAILED_DUE_TO_SPU">Oyun kaydı başarısız: SPU durumu kilitlenemedi, SPU ASMJIT kullanmak çözebilir.</string>
+    <string name="PROGRESS_DIALOG_PRELOADING_SHADER_CACHE">Diskten önbelleğe alınmış shader’lar yükleniyor...</string>
+</resources>

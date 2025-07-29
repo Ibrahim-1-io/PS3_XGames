@@ -50,6 +50,9 @@
             app:entryValues="@array/core_thread_scheduler_mode_values"
             app:key="Core|Thread Scheduler Mode" />
 
+        <PreferenceScreen app:title="@string/emulator_settings_core_thread_affinity_mask"
+            app:key="Core|Thread Affinity Mask" >
+        </PreferenceScreen>
 
         <aenu.preference.CheckBoxPreference app:title="@string/emulator_settings_core_set_daz_and_ftz"
             app:key="Core|Set DAZ and FTZ" />
@@ -612,6 +615,7 @@
 
             <aenu.preference.CheckBoxPreference app:title="@string/emulator_settings_video_vulkan_force_fifo_present_mode"
                 app:key="Video|Vulkan|Force FIFO present mode" />
+
 
             <aenu.preference.ListPreference app:title="@string/emulator_settings_video_vulkan_exclusive_fullscreen_mode"
                 app:entries="@array/video_vulkan_exclusive_fullscreen_mode_entries"

@@ -13,12 +13,15 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.content.pm.ShortcutInfo;
+import android.content.pm.ShortcutManager;
 import android.database.Cursor;
 import android.graphics.Canvas;
 import android.graphics.ColorMatrix;
 import android.graphics.ColorMatrixColorFilter;
 import android.graphics.Paint;
 import android.graphics.drawable.Drawable;
+import android.graphics.drawable.Icon;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -186,7 +189,7 @@ public class MainActivity extends AppCompatActivity {
 			Intent intent = new Intent("aenu.intent.action.APS3E");
 			intent.setPackage(getPackageName());
 			
-			intent.putExtra("meta_info",meta_info);
+			intent.putExtra(EmulatorActivity.EXTRA_META_INFO,meta_info);
 			startActivity(intent);
 		}
 	};
@@ -608,6 +611,33 @@ public class MainActivity extends AppCompatActivity {
 			}
 			intent.putExtra(EmulatorSettings.EXTRA_CONFIG_PATH, cfg_file.getAbsolutePath());
 			startActivity(intent);
+		}
+		else if(item_id==R.id.create_shortcut){
+			ShortcutManager shortcutManager=getSystemService(ShortcutManager.class);
+			Emulator.MetaInfo meta_info=adapter.getMetaInfo(position);
+
+			Bitmap icon=BitmapFactory.decodeByteArray(meta_info.icon,0,meta_info.icon.length);
+			meta_info.icon=null;
+
+			Intent intent=new Intent(this,EmulatorActivity.class);
+			{
+				intent.setAction(Intent.ACTION_VIEW);
+				if(meta_info.iso_uri!=null) {
+					intent.putExtra(EmulatorActivity.EXTRA_ISO_URI, meta_info.iso_uri);
+				}
+				else if(!adapter.is_disc_game(position)){
+					intent.putExtra(EmulatorActivity.EXTRA_GAME_DIR
+							,new File(MainActivity.get_hdd0_game_dir(),meta_info.serial).getAbsolutePath());
+				}
+				else{
+					return false;
+				}
+			}
+			shortcutManager.requestPinShortcut(new ShortcutInfo.Builder(this, meta_info.serial)
+					.setShortLabel(meta_info.name)
+					.setIcon(Icon.createWithBitmap( icon))
+					.setIntent(intent)
+					.build(), null);
 		}
 		else if(item_id==R.id.show_game_info){
 			show_hint_dialog(adapter.getMetaInfo(position).toString());

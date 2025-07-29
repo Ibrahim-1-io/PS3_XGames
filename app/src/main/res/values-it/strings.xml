@@ -1,0 +1,1009 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Fallback-->
+    <string name="gratitude_content">Thanks Ruban for all the ICONS\n\n
+		Thanks to SRC267 (Sting) for managing reddit/discord\n\n
+		Thanks to 妖妖 for test\n\n
+		Thanks to 再见某人 for donating GPD XP, which has been a great help in the testing process.\n\n
+		Thanks to 再见某人 for donating the development equipment, which has been instrumental in advancing the project.\n\n
+		Thanks to the following people who provided financial support for this project (Initial stage,sort by date):\n\n</string>
+
+
+    <string name="use_cores_ppu">Utilizza Core(PPU)</string>
+    <string name="use_cores_spu">Utilizza Core(SPU)</string>
+    <string name="use_cores_rsx">Utilizza Core(RSX)</string>
+    <string name="emulator_settings_core_thread_affinity_mask">Maschera di Affinità dei Thread</string>
+    <string name="create_shortcut">Crea Scorciatoia</string>
+    <string name="loading">Caricamento...</string>
+    <string name="resolution_not_support">Risoluzione o rapporto d’aspetto non supportato\nIl gioco attuale supporta solo:\n%s\n\nModificare con le seguenti impostazioni:\n%s\n%s\n</string>
+    <string name="show_game_info">Mostra Informazioni Gioco</string>
+    <string name="quick_start_page">Pagina di Avvio Rapido</string>
+    <string name="prev_step">Passo Precedente</string>
+    <string name="next_step">Passo Successivo</string>
+    <string name="finish">Fine</string>
+
+    <string name="welcome">Benvenuto</string>
+    <string name="welcome_content">Benvenuto in %s!</string>
+    <string name="welcome_content2">Con pochi semplici passaggi, sei pronto per iniziare a giocare, clicca su " %s " per iniziare.</string>
+
+    <string name="install_ps3_firmware_hiht_content">Per giocare, devi installare il firmware PS3 (PS3UPDAT.PUP). Seleziona il file firmware.</string>
+    <string name="ps3_firmware_installed">Firmware Installato</string>
+    <string name="select_ps3_firmware">Seleziona Firmware(PS3UPDAT.PUP)</string>
+    <string name="firmware_not_install">firmware non installato</string>
+
+    <string name="select_ps3_iso_dir_hiht_content">Specifica la directory PS3 ISO, l‘app scansionerà automaticamente per recuperare giochi validi, puoi anche saltare questo passo e installare direttamente il file .pkg.</string>
+    <string name="ps3_iso_dir_is_set">Directory PS3 ISO impostata</string>
+
+    <string name="font_select_hiht_content">Seleziona un file font (*.ttf, *.ttc, *.otf) da installare, oppure puoi utilizzare un font dal firmware PS3 (alcuni caratteri potrebbero mancare).</string>
+    <string name="custom_font_path_prefix">Percorso Font: </string>
+    <string name="select_gpu_driver_hiht_content">Seleziona un driver GPU, puoi anche saltare questo passo (il gioco potrebbe funzionare con errori).</string>
+    <string name="custom_gpu_driver_path_prefix">Percorso Driver GPU: </string>
+
+    <string name="modify_config_hiht_content">L’emulatore selezionerà automaticamente la configurazione più adatta, ma alcune configurazioni potrebbero causare problemi sul tuo dispositivo. Puoi modificarle in seguito nelle impostazioni.</string>
+
+    <string name="msg_processing">Elaborazione...</string>
+    <string name="msg_failed">Fallito!</string>
+
+    <string name="emulator_settings_video_vulkan_debug">Debug</string>
+    <string name="emulator_settings_miscellaneous_memory_debug_overlay">Overlay Debug Memoria</string>
+
+    <string name="vibrator_duration">Durata Vibrazione</string>
+    <string name="enable_vibrator">Abilita Vibrazione</string>
+    <string name="dynamic_joystick">Joystick Dinamico</string>
+    <string name="disable">Disabilita</string>
+
+    <string name="disable_virtual_keyboard">Disabilita Tastiera Virtuale</string>
+    <string name="joystick">Joystick</string>
+    <string name="dpad">Dpad</string>
+    <string name="button">Bottone</string>
+    <string name="lr">LR</string>
+    <string name="start_select">Start/Select</string>
+
+    <string name="enable_log">Abilita Log</string>
+    <string name="use_global_config">Usa Configurazione Globale</string>
+    <string name="edit_custom_config">Modifica Configurazione Personalizzata</string>
+    <string name="clear">Pulisci</string>
+    <string name="press_a_key">Premi un tasto per continuare...</string>
+    <string name="game_list_loading">La lista dei giochi si sta caricando...</string>
+    <string name="undecrypted_game">Eseguire giochi non criptati non è attualmente supportato</string>
+    <string name="delete_game_data">Elimina Dati Gioco</string>
+    <string name="delete_hdd0_install_data">Elimina Dati Installazione HDD0</string>
+    <string name="delete_game_and_data">Elimina Gioco e Dati</string>
+    <string name="delete_shaders_cache">Elimina Cache Shaders</string>
+
+    <string name="set_iso_dir">Imposta Directory (*.iso)</string>
+    <string name="device_info">Informazioni Dispositivo</string>
+    <string name="reset_as_default">Reimposta Predefinito</string>
+    <string name="save_and_quit">Salva &amp; Esci</string>
+    <string name="scale_rate">Fattore di Scala</string>
+    <string name="open_file_manager">Apri Gestore File</string>
+    <string name="installing_firmware">Installazione Firmware...</string>
+    <string name="refresh_list">Aggiorna Lista</string>
+    <string name="select_game">Seleziona Gioco</string>
+    <string name="install_firmware">Installa Firmware</string>
+    <string name="install_game">Installa RAP/PKG</string>
+    <string name="installing_game">Installazione Gioco...</string>
+    <string name="about">Informazioni</string>
+    <string name="quit">Esci</string>
+    <string name="update_log">Registro Aggiornamenti</string>
+    <string name="empty_game_list">La lista dei giochi è vuota, aggiungi giochi installando pkg o impostando la directory *.iso</string>
+    <string name="delete">Elimina</string>
+    <string name="settings">Impostazioni</string>
+    <string name="gratitude">Ringraziamenti</string>
+    <!--string name="gratitude_content">Grazie a Ruban per tutte le ICONS\n\n
+        Grazie a SRC267 (Sting) per la gestione di reddit/discord\n\n
+        Grazie a 妖妖 per i test\n\n
+        Grazie a 再见某人 per aver donato GPD XP, che è stato molto utile durante il processo di test.\n\n
+        Grazie a 再见某人 per aver donato l'equipaggiamento per lo sviluppo, che è stato fondamentale per avanzare nel progetto.\n\n
+        Grazie alle seguenti persone che hanno fornito supporto finanziario a questo progetto (fase iniziale, ordinate per data):\n\n</string-->
+
+    <string name="gratitude_content2">
+        Basato sull‘ottimizzazione della portabilità RPCS3, grazie a tutti i partecipanti al progetto RPCS3\n\n
+        Traduzione qwen3
+    </string>
+    <string name="key_mappers">Mapper Tasti</string>
+    <string name="virtual_pad_edit">Modifica VirtualPad</string>
+
+    <string name="left">sinistra</string>
+    <string name="up">su</string>
+    <string name="right">destra</string>
+    <string name="down">giù</string>
+
+    <string name="square">quadrato</string>
+    <string name="cross">croce</string>
+    <string name="circle">cerchio</string>
+    <string name="triangle">triangolo</string>
+
+    <string name="l1">L1</string>
+    <string name="l2">L2</string>
+    <string name="l3">L3</string>
+
+    <string name="r1">R1</string>
+    <string name="r2">R2</string>
+    <string name="r3">R3</string>
+
+    <string name="start">start</string>
+    <string name="select">select</string>
+    <string name="ps">PS</string>
+
+    <string name="emulator_settings_video_vulkan_custom_driver_library_path_dialog_title">Seleziona Driver Personalizzato</string>
+    <string name="emulator_settings_video_vulkan_custom_driver_library_path_dialog_add_hint">Aggiungi Driver Personalizzato(*.zip, *.so)</string>
+
+    <string name="emulator_settings_miscellaneous_custom_font_file_path_dialog_title">Seleziona Font Personalizzato</string>
+    <string name="emulator_settings_miscellaneous_custom_font_file_path_dialog_add_hint">Aggiungi Font Personalizzato(*.ttf, *.ttc, *.otf)</string>
+
+    <string name="emulator_settings_core">Core</string>
+    <string name="emulator_settings_core_ppu_decoder">Decodificatore PPU</string>
+    <string-array name="core_ppu_decoder_entries">
+        <item>Interprete (statico)</item>
+        <item>Ricompilatore (LLVM)</item>
+    </string-array>
+    <string name="emulator_settings_core_ppu_threads">Thread PPU</string>
+    <string name="emulator_settings_core_ppu_debug">Debug PPU</string>
+    <string name="emulator_settings_core_ppu_calling_history">Cronologia Chiamate PPU</string>
+    <string name="emulator_settings_core_save_llvm_logs">Salva Log LLVM</string>
+    <string name="emulator_settings_core_use_llvm_cpu">Usa CPU LLVM</string>
+    <string name="emulator_settings_core_max_llvm_compile_threads">Thread Massimi di Compilazione LLVM</string>
+    <string name="emulator_settings_core_ppu_llvm_greedy_mode">Modalità Greedy PPU LLVM</string>
+    <string name="emulator_settings_core_llvm_precompilation">Precompilazione LLVM</string>
+    <string name="emulator_settings_core_thread_scheduler_mode">Modalità Scheduler Thread</string>
+    <string-array name="core_thread_scheduler_mode_entries">
+        <item>Sistema Operativo</item>
+        <item>Affinità</item>
+    </string-array>
+    <string name="emulator_settings_core_set_daz_and_ftz">Imposta DAZ e FTZ</string>
+    <string name="emulator_settings_core_spu_decoder">Decodificatore SPU</string>
+    <string-array name="core_spu_decoder_entries">
+        <item>Interprete (statico)</item>
+        <item>Interprete (dinamico)</item>
+        <item>Ricompilatore (ASMJIT)</item>
+        <item>Ricompilatore (LLVM)</item>
+    </string-array>
+    <string name="emulator_settings_core_spu_reservation_busy_waiting_percentage">Percentuale di Attesa SPU Reservation</string>
+    <string name="emulator_settings_core_spu_getllar_busy_waiting_percentage">Percentuale di Attesa SPU GETLLAR</string>
+    <string name="emulator_settings_core_disable_spu_getllar_spin_optimization">Disabilita Ottimizzazione SPU GETLLAR Spin</string>
+    <string name="emulator_settings_core_spu_debug">Debug SPU</string>
+    <string name="emulator_settings_core_mfc_debug">Debug MFC</string>
+    <string name="emulator_settings_core_preferred_spu_threads">Thread SPU Preferiti</string>
+    <string name="emulator_settings_core_spu_delay_penalty">Penalità Ritardo SPU</string>
+    <string name="emulator_settings_core_spu_loop_detection">Rilevamento Loop SPU</string>
+    <string name="emulator_settings_core_max_spurs_threads">Thread SPURS Massimi</string>
+    <string name="emulator_settings_core_spu_block_size">Dimensione Blocco SPU</string>
+    <string-array name="core_spu_block_size_entries">
+        <item>Sicuro</item>
+        <item>Mega</item>
+        <item>Giga</item>
+    </string-array>
+    <string name="emulator_settings_core_accurate_spu_dma">DMA SPU Accurato</string>
+    <string name="emulator_settings_core_accurate_spu_reservations">Prenotazioni SPU Accurate</string>
+    <string name="emulator_settings_core_accurate_cache_line_stores">Scrittura Cache Line Accurata</string>
+    <string name="emulator_settings_core_accurate_rsx_reservation_access">Accesso Prenotazione RSX Accurato</string>
+    <string name="emulator_settings_core_rsx_fifo_accuracy">Accuratezza FIFO RSX</string>
+    <string-array name="core_rsx_fifo_accuracy_entries">
+        <item>Veloce</item>
+        <item>Atomica</item>
+        <item>Ordinata &amp; Atomica</item>
+        <item>PS3</item>
+    </string-array>
+    <string name="emulator_settings_core_spu_verification">Verifica SPU</string>
+    <string name="emulator_settings_core_spu_cache">Cache SPU</string>
+    <string name="emulator_settings_core_spu_profiler">Profiler SPU</string>
+    <string name="emulator_settings_core_mfc_commands_shuffling_limit">Limite Mescolamento Comandi MFC</string>
+    <string name="emulator_settings_core_mfc_commands_timeout">Timeout Comandi MFC</string>
+    <string name="emulator_settings_core_mfc_commands_shuffling_in_steps">Mescolamento Comandi MFC a Passi</string>
+    <string name="emulator_settings_core_enable_tsx">Abilita TSX</string>
+    <string-array name="core_enable_tsx_entries">
+        <item>Disabilitato</item>
+        <item>Abilitato</item>
+        <item>Forzato</item>
+    </string-array>
+    <string name="emulator_settings_core_xfloat_accuracy">Accuratezza XFloat</string>
+    <string-array name="core_xfloat_accuracy_entries">
+        <item>Accurato</item>
+        <item>Approssimato</item>
+        <item>Relassato</item>
+        <item>Inaccurato</item>
+    </string-array>
+    <string name="emulator_settings_core_accurate_ppu_128byte_reservation_op_max_length">Lunghezza Massima Operazioni Prenotazione 128-byte PPU Accurata</string>
+    <string name="emulator_settings_core_stub_ppu_traps">Trappole PPU Stub</string>
+    <string name="emulator_settings_core_precise_spu_verification">Verifica Precisa SPU</string>
+    <string name="emulator_settings_core_ppu_llvm_java_mode_handling">Gestione Modalità Java PPU LLVM</string>
+    <string name="emulator_settings_core_use_accurate_dfma">Usa DFMA Accurato</string>
+    <string name="emulator_settings_core_ppu_set_saturation_bit">Imposta Bit di Saturazione PPU</string>
+    <string name="emulator_settings_core_ppu_accurate_nonjava_mode">Modalità Non-Java PPU Accurata</string>
+    <string name="emulator_settings_core_ppu_fixup_vector_nan_values">Correzione Valori NaN Vettore PPU</string>
+    <string name="emulator_settings_core_ppu_accurate_vector_nan_values">Valori NaN Vettore PPU Accurati</string>
+    <string name="emulator_settings_core_ppu_set_fpcc_bits">Imposta Bit FPCC PPU</string>
+    <string name="emulator_settings_core_debug_console_mode">Modalità Console Debug</string>
+    <string name="emulator_settings_core_hook_static_functions">Hook Funzioni Statiche</string>
+    <string name="emulator_settings_core_libraries_control">Controllo Librerie</string>
+    <string name="emulator_settings_core_hle_lwmutex">HLE lwmutex</string>
+    <string name="emulator_settings_core_spu_llvm_lower_bound">Limite Inferiore SPU LLVM</string>
+    <string name="emulator_settings_core_spu_llvm_upper_bound">Limite Superiore SPU LLVM</string>
+    <string name="emulator_settings_core_tsx_transaction_first_limit">Limite Prima Transazione TSX</string>
+    <string name="emulator_settings_core_tsx_transaction_second_limit">Limite Seconda Transazione TSX</string>
+    <string name="emulator_settings_core_clocks_scale">Scala Orologi</string>
+    <string name="emulator_settings_core_spu_wakeup_delay">Ritardo Sveglia SPU</string>
+    <string name="emulator_settings_core_spu_wakeup_delay_thread_mask">Maschera Thread Sveglia SPU</string>
+    <string name="emulator_settings_core_max_cpu_preempt_count">Conteggio Massimo Preemption CPU</string>
+    <string name="emulator_settings_core_allow_rsx_cpu_preemptions">Consenti Preemption RSX CPU</string>
+    <string name="emulator_settings_core_sleep_timers_accuracy">Accuratezza Timer Sospensione</string>
+    <string-array name="core_sleep_timers_accuracy_entries">
+        <item>Come Host</item>
+        <item>Solo Usleep</item>
+        <item>Tutti i Timer</item>
+    </string-array>
+    <string name="emulator_settings_core_usleep_time_addend">Aggiunta Tempo Usleep</string>
+    <string name="emulator_settings_core_performance_report_threshold">Soglia Report Prestazioni</string>
+    <string name="emulator_settings_core_enable_performance_report">Abilita Report Prestazioni</string>
+    <string name="emulator_settings_core_assume_external_debugger">Presume Debugger Esterno</string>
+    <string name="emulator_settings_video">Video</string>
+    <string name="emulator_settings_video_vertex_buffer_upload_mode">Modalità Caricamento Buffer Vertice</string>
+    <string-array name="video_vertex_buffer_upload_mode_entries">
+        <item>Auto</item>
+        <item>Visualizzazione Buffer</item>
+        <item>Buffer</item>
+    </string-array>
+    <string name="emulator_settings_video_texture_upload_mode">Modalità Caricamento Texture</string>
+    <string-array name="video_texture_upload_mode_entries">
+        <item>CPU</item>
+        <item>GPU</item>
+    </string-array>
+    <string name="emulator_settings_video_renderer">Renderizzatore</string>
+    <string-array name="video_renderer_entries">
+        <item>Null</item>
+        <item>Vulkan</item>
+    </string-array>
+    <string name="emulator_settings_video_resolution">Risoluzione</string>
+    <string-array name="video_resolution_entries">
+        <item>1920x1080</item>
+        <item>1920x1080i</item>
+        <item>1280x720</item>
+        <item>720x480</item>
+        <item>720x480i</item>
+        <item>720x576</item>
+        <item>720x576i</item>
+        <item>1600x1080</item>
+        <item>1440x1080</item>
+        <item>1280x1080</item>
+        <item>960x1080</item>
+    </string-array>
+    <string name="emulator_settings_video_aspect_ratio">Rapporto d’Aspetto</string>
+    <string-array name="video_aspect_ratio_entries">
+        <item>4:3</item>
+        <item>16:9</item>
+    </string-array>
+    <string name="emulator_settings_video_frame_limit">Limite Fotogrammi</string>
+    <string-array name="video_frame_limit_entries">
+        <item>Spento</item>
+        <item>30</item>
+        <item>50</item>
+        <item>60</item>
+        <item>120</item>
+        <item>Schermo</item>
+        <item>Auto</item>
+        <item>Nativo PS3</item>
+        <item>Illimitato</item>
+    </string-array>
+    <string name="emulator_settings_video_second_frame_limit">Secondo Limite Fotogrammi</string>
+    <string name="emulator_settings_video_msaa">MSAA</string>
+    <string-array name="video_msaa_entries">
+        <item>Disabilitato</item>
+        <item>Auto</item>
+    </string-array>
+    <string name="emulator_settings_video_shader_mode">Modalità Shader</string>
+    <string-array name="video_shader_mode_entries">
+        <item>Ricompilatore Shader</item>
+        <item>Ricompilatore Shader Asincrono</item>
+        <item>Asincrono con Interprete Shader</item>
+        <item>Solo Interprete Shader</item>
+    </string-array>
+    <string name="emulator_settings_video_shader_precision">Precisione Shader</string>
+    <string-array name="video_shader_precision_entries">
+        <item>Ultra</item>
+        <item>Alta</item>
+        <item>Bassa</item>
+        <item>Auto</item>
+    </string-array>
+    <string name="emulator_settings_video_write_color_buffers">Scrittura Buffer Colori</string>
+    <string name="emulator_settings_video_write_depth_buffer">Scrittura Buffer Profondità</string>
+    <string name="emulator_settings_video_read_color_buffers">Lettura Buffer Colori</string>
+    <string name="emulator_settings_video_read_depth_buffer">Lettura Buffer Profondità</string>
+    <string name="emulator_settings_video_handle_rsx_memory_tiling">Gestione Tiling Memoria RSX</string>
+    <string name="emulator_settings_video_log_shader_programs">Registra Programmi Shader</string>
+    <string name="emulator_settings_video_vsync">VSync</string>
+    <string name="emulator_settings_video_debug_output">Output Debug</string>
+    <string name="emulator_settings_video_debug_overlay">Overlay Debug</string>
+    <string name="emulator_settings_video_renderdoc_compatibility_mode">Modalità Compatibilità Renderdoc</string>
+    <string name="emulator_settings_video_use_gpu_texture_scaling">Usa Scalatura Texture GPU</string>
+    <string name="emulator_settings_video_stretch_to_display_area">Espandi sull‘Area di Visualizzazione</string>
+    <string name="emulator_settings_video_force_high_precision_z_buffer">Forza Buffer Z Alta Precisione</string>
+    <string name="emulator_settings_video_strict_rendering_mode">Modalità Rendering Rigida</string>
+    <string name="emulator_settings_video_disable_zcull_occlusion_queries">Disabilita Query Occlusione ZCull</string>
+    <string name="emulator_settings_video_disable_video_output">Disabilita Output Video</string>
+    <string name="emulator_settings_video_disable_vertex_cache">Disabilita Cache Vertici</string>
+    <string name="emulator_settings_video_disable_fifo_reordering">Disabilita Riordino FIFO</string>
+    <string name="emulator_settings_video_enable_frame_skip">Abilita Salto Fotogrammi</string>
+    <string name="emulator_settings_video_force_cpu_blit">Forza CPU Blit</string>
+    <string name="emulator_settings_video_disable_ondisk_shader_cache">Disabilita Cache Shader su Disco</string>
+    <string name="emulator_settings_video_disable_vulkan_memory_allocator">Disabilita Allocatore Memoria Vulkan</string>
+    <string name="emulator_settings_video_use_full_rgb_output_range">Usa Gamma RGB Completa</string>
+    <string name="emulator_settings_video_strict_texture_flushing">Svuotamento Rigido Texture</string>
+    <string name="emulator_settings_video_multithreaded_rsx">RSX Multithread</string>
+    <string name="emulator_settings_video_relaxed_zcull_sync">Sincronizzazione ZCULL Relassata</string>
+    <string name="emulator_settings_video_force_hardware_msaa_resolve">Forza Risoluzione MSAA Hardware</string>
+    <string name="emulator_settings_video_3d_display_mode">Modalità Visualizzazione 3D</string>
+    <string-array name="video_3d_display_mode_entries">
+        <item>Disabilitata</item>
+        <item>Laterale a Laterale</item>
+        <item>Sopra-Sotto</item>
+        <item>Interlacciata</item>
+        <item>Anaglifo Rosso-Verde</item>
+        <item>Anaglifo Rosso-Blu</item>
+        <item>Anaglifo Rosso-Ciano</item>
+        <item>Anaglifo Magenta-Ciano</item>
+        <item>Anaglifo Trioscopico</item>
+        <item>Anaglifo Ambra-Blu</item>
+    </string-array>
+    <string name="emulator_settings_video_debug_program_analyser">Analizzatore Programma Debug</string>
+    <string name="emulator_settings_video_accurate_zcull_stats">Statistiche ZCULL Accurate</string>
+    <string name="emulator_settings_video_consecutive_frames_to_draw">Fotogrammi Consecutivi da Disegnare</string>
+    <string name="emulator_settings_video_consecutive_frames_to_skip">Fotogrammi Consecutivi da Saltare</string>
+    <string name="emulator_settings_video_resolution_scale">Scala Risoluzione</string>
+    <string name="emulator_settings_video_anisotropic_filter_override">Override Filtro Anisotropico</string>
+    <string name="emulator_settings_video_texture_lod_bias_addend">Aggiunta Bias LOD Texture</string>
+    <string name="emulator_settings_video_minimum_scalable_dimension">Dimensione Minima Scalabile</string>
+    <string name="emulator_settings_video_shader_compiler_threads">Thread Compilatore Shader</string>
+    <string name="emulator_settings_video_driver_recovery_timeout">Timeout Recupero Driver</string>
+    <string name="emulator_settings_video_driver_wakeup_delay">Ritardo Sveglia Driver</string>
+    <string name="emulator_settings_video_vblank_rate">Frequenza Vblank</string>
+    <string name="emulator_settings_video_vblank_ntsc_fixup">Correzione Vblank NTSC</string>
+    <string name="emulator_settings_video_decr_memory_layout">Layout Memoria DECR</string>
+    <string name="emulator_settings_video_allow_host_gpu_labels">Consenti Etichette GPU Host</string>
+    <string name="emulator_settings_video_disable_msl_fast_math">Disabilita MSL Fast Math</string>
+    <string name="emulator_settings_video_disable_asynchronous_memory_manager">Disabilita Gestore Memoria Asincrono</string>
+    <string name="emulator_settings_video_output_scaling_mode">Modalità Scalatura Output</string>
+    <string-array name="video_output_scaling_mode_entries">
+        <item>Nearest</item>
+        <item>Bilineare</item>
+        <item>FidelityFX Super Resolution</item>
+    </string-array>
+    <string name="emulator_settings_video_use_bgra_format">Usa Formato BGRA</string>
+    <string name="emulator_settings_video_force_convert_texture">Forza Conversione Texture</string>
+    <string name="emulator_settings_video_vulkan">Vulkan</string>
+    <string name="emulator_settings_video_vulkan_adapter">Adattatore</string>
+    <string name="emulator_settings_video_vulkan_force_fifo_present_mode">Forza Modalità Presentazione FIFO</string>
+    <string name="emulator_settings_video_vulkan_force_primitive_restart_flag">Forza Flag Restart Primitive</string>
+    <string name="emulator_settings_video_vulkan_exclusive_fullscreen_mode">Modalità Schermo Intero Esclusiva</string>
+    <string-array name="video_vulkan_exclusive_fullscreen_mode_entries">
+        <item>Automatico</item>
+        <item>Disabilita</item>
+        <item>Abilita</item>
+    </string-array>
+    <string name="emulator_settings_video_vulkan_asynchronous_texture_streaming_2">Streaming Asincrono Texture 2</string>
+    <string name="emulator_settings_video_vulkan_fidelityfx_cas_sharpening_intensity">Intensità Sharpening FidelityFX CAS</string>
+    <string name="emulator_settings_video_vulkan_asynchronous_queue_scheduler">Scheduler Coda Asincrona</string>
+    <string-array name="video_vulkan_asynchronous_queue_scheduler_entries">
+        <item>Sicuro</item>
+        <item>Veloce</item>
+    </string-array>
+    <string name="emulator_settings_video_vulkan_vram_allocation_limit">Limite Allocazione VRAM (MB)</string>
+
+    <string name="emulator_settings_video_vulkan_use_custom_driver">Usa Driver Personalizzato</string>
+
+    <string name="emulator_settings_video_vulkan_custom_driver_library_path">Percorso Libreria Driver Personalizzato</string>
+
+    <string name="emulator_settings_video_vulkan_custom_driver_force_max_clocks">Forza Frequenza Massima Driver Personalizzato</string>
+
+    <string name="emulator_settings_video_performance_overlay">Overlay Prestazioni</string>
+    <string name="emulator_settings_video_performance_overlay_enabled">Abilitato</string>
+    <string name="emulator_settings_video_performance_overlay_enable_framerate_graph">Abilita Grafico FPS</string>
+    <string name="emulator_settings_video_performance_overlay_enable_frametime_graph">Abilita Grafico Tempo Fotogramma</string>
+    <string name="emulator_settings_video_performance_overlay_framerate_datapoints">Punti Dati FPS</string>
+    <string name="emulator_settings_video_performance_overlay_frametime_datapoints">Punti Dati Tempo Fotogramma</string>
+    <string name="emulator_settings_video_performance_overlay_detail_level">Livello Dettaglio</string>
+    <string-array name="video_performance_overlay_detail_level_entries">
+        <item>Nessuno</item>
+        <item>Minimo</item>
+        <item>Basso</item>
+        <item>Medio</item>
+        <item>Alto</item>
+    </string-array>
+    <string name="emulator_settings_video_performance_overlay_framerate_graph_detail_level">Livello Dettaglio Grafico FPS</string>
+    <string-array name="video_performance_overlay_framerate_graph_detail_level_entries">
+        <item>Minimo</item>
+        <item>Mostra min e max</item>
+        <item>Mostra 1% e media</item>
+        <item>Tutti</item>
+    </string-array>
+    <string name="emulator_settings_video_performance_overlay_frametime_graph_detail_level">Livello Dettaglio Grafico Tempo Fotogramma</string>
+    <string-array name="video_performance_overlay_frametime_graph_detail_level_entries">
+        <item>Minimo</item>
+        <item>Mostra min e max</item>
+        <item>Mostra 1% e media</item>
+        <item>Tutti</item>
+    </string-array>
+    <string name="emulator_settings_video_performance_overlay_metrics_update_interval">Intervallo Aggiornamento Metriche (ms)</string>
+    <string name="emulator_settings_video_performance_overlay_font_size">Dimensione Font (px)</string>
+    <string name="emulator_settings_video_performance_overlay_position">Posizione</string>
+    <string-array name="video_performance_overlay_position_entries">
+        <item>In Alto a Sinistra</item>
+        <item>In Alto a Destra</item>
+        <item>In Basso a Sinistra</item>
+        <item>In Basso a Destra</item>
+    </string-array>
+    <string name="emulator_settings_video_performance_overlay_font">Font</string>
+    <string name="emulator_settings_video_performance_overlay_horizontal_margin">Margine Orizzontale (px)</string>
+    <string name="emulator_settings_video_performance_overlay_vertical_margin">Margine Verticale (px)</string>
+    <string name="emulator_settings_video_performance_overlay_center_horizontally">Centra Orizzontalmente</string>
+    <string name="emulator_settings_video_performance_overlay_center_vertically">Centra Verticalmente</string>
+    <string name="emulator_settings_video_performance_overlay_opacity">Opacità (%)</string>
+    <string name="emulator_settings_video_performance_overlay_body_color">Colore Contenuto (esadecimale)</string>
+    <string name="emulator_settings_video_performance_overlay_body_background">Sfondo Contenuto (esadecimale)</string>
+    <string name="emulator_settings_video_performance_overlay_title_color">Colore Titolo (esadecimale)</string>
+    <string name="emulator_settings_video_performance_overlay_title_background">Sfondo Titolo (esadecimale)</string>
+    <string name="emulator_settings_video_shader_loading_dialog">Finestra Caricamento Shader</string>
+    <string name="emulator_settings_video_shader_loading_dialog_allow_custom_background">Consenti Sfondo Personalizzato</string>
+    <string name="emulator_settings_video_shader_loading_dialog_darkening_effect_strength">Intensità Effetto Oscuramento</string>
+    <string name="emulator_settings_video_shader_loading_dialog_blur_effect_strength">Intensità Effetto Sfocatura</string>
+    <string name="emulator_settings_audio">Audio</string>
+    <string name="emulator_settings_audio_renderer">Renderizzatore</string>
+    <string-array name="audio_renderer_entries">
+        <item>Null</item>
+        <item>Cubeb</item>
+    </string-array>
+    <string name="emulator_settings_audio_audio_provider">Provider Audio</string>
+    <string-array name="audio_audio_provider_entries">
+        <item>Nessuno</item>
+        <item>CellAudio</item>
+        <item>RSXAudio</item>
+    </string-array>
+    <string name="emulator_settings_audio_rsxaudio_avport">Porta AV RSXAudio</string>
+    <string-array name="audio_rsxaudio_avport_entries">
+        <item>HDMI 0</item>
+        <item>HDMI 1</item>
+        <item>Uscita AV Multi</item>
+        <item>SPDIF 0</item>
+        <item>SPDIF 1</item>
+    </string-array>
+    <string name="emulator_settings_audio_dump_to_file">Salva su File</string>
+    <string name="emulator_settings_audio_convert_to_16_bit">Converti in 16 Bit</string>
+    <string name="emulator_settings_audio_audio_format">Formato Audio</string>
+    <string-array name="audio_audio_format_entries">
+        <item>Stereo</item>
+        <item>5.1 Surround</item>
+        <item>7.1 Surround</item>
+        <item>Automatico</item>
+        <item>Manuale</item>
+    </string-array>
+    <string name="emulator_settings_audio_audio_formats">Formati Audio</string>
+    <string name="emulator_settings_audio_audio_channel_layout">Schema Canali Audio</string>
+    <string-array name="audio_audio_channel_layout_entries">
+        <item>Automatico</item>
+        <item>Mono</item>
+        <item>Stereo</item>
+        <item>Stereo LFE</item>
+        <item>Quadrofonico</item>
+        <item>Quadrofonico LFE</item>
+        <item>5.1 Surround</item>
+        <item>7.1 Surround</item>
+    </string-array>
+    <string name="emulator_settings_audio_audio_device">Dispositivo Audio</string>
+    <string name="emulator_settings_audio_master_volume">Volume Principale</string>
+    <string name="emulator_settings_audio_enable_buffering">Abilita Buffering</string>
+    <string name="emulator_settings_audio_desired_audio_buffer_duration">Durata Buffer Audio Desiderata</string>
+    <string name="emulator_settings_audio_enable_time_stretching">Abilita Time Stretching</string>
+    <string name="emulator_settings_audio_disable_sampling_skip">Disabilita Salto Campionamento</string>
+    <string name="emulator_settings_audio_time_stretching_threshold">Soglia Time Stretching</string>
+    <string name="emulator_settings_audio_microphone_type">Tipo Microfono</string>
+    <string-array name="audio_microphone_type_entries">
+        <item>Null</item>
+        <item>Standard</item>
+        <item>SingStar</item>
+        <item>Real SingStar</item>
+        <item>Rocksmith</item>
+    </string-array>
+    <string name="emulator_settings_audio_microphone_devices">Dispositivi Microfono</string>
+    <string name="emulator_settings_audio_music_handler">Gestore Musica</string>
+    <string-array name="audio_music_handler_entries">
+        <item>Null</item>
+        <item>Qt</item>
+    </string-array>
+    <string name="emulator_settings_input_output">Input/Output</string>
+    <string name="emulator_settings_input_output_keyboard">Tastiera</string>
+    <string-array name="input_output_keyboard_entries">
+        <item>Null</item>
+        <item>Base</item>
+    </string-array>
+    <string name="emulator_settings_input_output_mouse">Mouse</string>
+    <string-array name="input_output_mouse_entries">
+        <item>Null</item>
+        <item>Base</item>
+        <item>Raw</item>
+    </string-array>
+    <string name="emulator_settings_input_output_camera">Telecamera</string>
+    <string-array name="input_output_camera_entries">
+        <item>Null</item>
+        <item>Finta</item>
+        <item>Qt</item>
+    </string-array>
+    <string name="emulator_settings_input_output_camera_type">Tipo Telecamera</string>
+    <string-array name="input_output_camera_type_entries">
+        <item>Sconosciuto</item>
+        <item>EyeToy</item>
+        <item>PS Eye</item>
+        <item>UVC 1.1</item>
+    </string-array>
+    <string name="emulator_settings_input_output_camera_flip">Riflesso Telecamera</string>
+    <string-array name="input_output_camera_flip_entries">
+        <item>Nessuno</item>
+        <item>Orizzontale</item>
+        <item>Verticale</item>
+        <item>Entrambi</item>
+    </string-array>
+    <string name="emulator_settings_input_output_camera_id">ID Telecamera</string>
+    <string name="emulator_settings_input_output_move">Movimento</string>
+    <string-array name="input_output_move_entries">
+        <item>Null</item>
+        <item>Finto</item>
+        <item>Mouse</item>
+        <item>Mouse Raw</item>
+    </string-array>
+    <string name="emulator_settings_input_output_buzz_emulated_controller">Controller Buzz Emulato</string>
+    <string-array name="input_output_buzz_emulated_controller_entries">
+        <item>Null</item>
+        <item>1 controller</item>
+        <item>2 controller</item>
+    </string-array>
+    <string name="emulator_settings_input_output_turntable_emulated_controller">Controller Giradischi Emulato</string>
+    <string-array name="input_output_turntable_emulated_controller_entries">
+        <item>Null</item>
+        <item>1 controller</item>
+        <item>2 controller</item>
+    </string-array>
+    <string name="emulator_settings_input_output_ghltar_emulated_controller">Controller GHLtar Emulato</string>
+    <string-array name="input_output_ghltar_emulated_controller_entries">
+        <item>Null</item>
+        <item>1 controller</item>
+        <item>2 controller</item>
+    </string-array>
+    <string name="emulator_settings_input_output_pad_handler_mode">Modalità Gestore Pad</string>
+    <string-array name="input_output_pad_handler_mode_entries">
+        <item>Single-threaded</item>
+        <item>Multi-threaded</item>
+    </string-array>
+    <string name="emulator_settings_input_output_keep_pads_connected">Mantieni Pad Connessi</string>
+    <string name="emulator_settings_input_output_pad_handler_sleep">Sospensione Gestore Pad (microsecondi)</string>
+    <string name="emulator_settings_input_output_background_input_enabled">Input in Background Abilitato</string>
+    <string name="emulator_settings_input_output_show_move_cursor">Mostra Cursore Move</string>
+    <string name="emulator_settings_input_output_lock_overlay_input_to_player_one">Blocca Input Overlay al Giocatore 1</string>
+    <string name="emulator_settings_input_output_emulated_midi_devices">Dispositivi MIDI Emulati</string>
+    <string name="emulator_settings_input_output_load_sdl_gamecontroller_mappings">Carica Mappature SDL GameController</string>
+    <string name="emulator_settings_input_output_io_debug_overlay">Overlay Debug IO</string>
+    <string name="emulator_settings_system">Sistema</string>
+    <string name="emulator_settings_system_license_area">Area Licenza</string>
+    <string-array name="system_license_area_entries">
+        <item>SCEJ</item>
+        <item>SCEA</item>
+        <item>SCEE</item>
+        <item>SCEH</item>
+        <item>SCEK</item>
+        <item>SCH</item>
+    </string-array>
+    <string name="emulator_settings_system_language">Lingua</string>
+    <string-array name="system_language_entries">
+        <item>Giapponese</item>
+        <item>Inglese (USA)</item>
+        <item>Francese</item>
+        <item>Spagnolo</item>
+        <item>Tedesco</item>
+        <item>Italiano</item>
+        <item>Olandese</item>
+        <item>Portoghese (Portogallo)</item>
+        <item>Russo</item>
+        <item>Coreano</item>
+        <item>Cinese (Tradizionale)</item>
+        <item>Cinese (Semplificato)</item>
+        <item>Finlandese</item>
+        <item>Svedese</item>
+        <item>Danese</item>
+        <item>Norvegese</item>
+        <item>Polacco</item>
+        <item>Portoghese (Brasile)</item>
+        <item>Inglese (Regno Unito)</item>
+        <item>Turco</item>
+    </string-array>
+    <string name="emulator_settings_system_keyboard_type">Tipo Tastiera</string>
+    <string-array name="system_keyboard_type_entries">
+        <item>Tastiera Inglese (standard USA)</item>
+        <item>Tastiera Giapponese</item>
+        <item>Tastiera Giapponese (stato Kana)</item>
+        <item>Tastiera Tedesca</item>
+        <item>Tastiera Spagnola</item>
+        <item>Tastiera Francese</item>
+        <item>Tastiera Italiana</item>
+        <item>Tastiera Olandese</item>
+        <item>Tastiera Portoghese (Portogallo)</item>
+        <item>Tastiera Russa</item>
+        <item>Tastiera Inglese (standard Regno Unito)</item>
+        <item>Tastiera Coreana</item>
+        <item>Tastiera Norvegese</item>
+        <item>Tastiera Finlandese</item>
+        <item>Tastiera Danese</item>
+        <item>Tastiera Svedese</item>
+        <item>Tastiera Cinese (Tradizionale)</item>
+        <item>Tastiera Cinese (Semplificato)</item>
+        <item>Tastiera Francese (Svizzera)</item>
+        <item>Tastiera Tedesca (Svizzera)</item>
+        <item>Tastiera Francese (Canada)</item>
+        <item>Tastiera Francese (Belgio)</item>
+        <item>Tastiera Polacca</item>
+        <item>Tastiera Portoghese (Brasile)</item>
+        <item>Tastiera Turca</item>
+    </string-array>
+    <string name="emulator_settings_system_enter_button_assignment">Assegnazione Tasto Invio</string>
+    <string-array name="system_enter_button_assignment_entries">
+        <item>Invio con Cerchio</item>
+        <item>Invio con Croce</item>
+    </string-array>
+    <string name="emulator_settings_system_console_time_offset">Offset Tempo Console (s)</string>
+    <string name="emulator_settings_system_system_name">Nome Sistema</string>
+    <string name="emulator_settings_system_psid_high">PSID Alto</string>
+    <string name="emulator_settings_system_psid_low">PSID Basso</string>
+    <string name="emulator_settings_system_hdd_model_name">Nome Modello HDD</string>
+    <string name="emulator_settings_system_hdd_serial_number">Numero Seriale HDD</string>
+    <string name="emulator_settings_net">Rete</string>
+    <string name="emulator_settings_net_internet_enabled">Internet Abilitato</string>
+    <string-array name="net_internet_enabled_entries">
+        <item>Disconnesso</item>
+        <item>Connesso</item>
+    </string-array>
+    <string name="emulator_settings_net_ip_address">Indirizzo IP</string>
+    <string name="emulator_settings_net_bind_address">Indirizzo Bind</string>
+    <string name="emulator_settings_net_dns_address">Indirizzo DNS</string>
+    <string name="emulator_settings_net_ip_swap_list">Lista Scambio IP</string>
+    <string name="emulator_settings_net_upnp_enabled">UPNP Abilitato</string>
+    <string name="emulator_settings_net_psn_status">Stato PSN</string>
+    <string-array name="net_psn_status_entries">
+        <item>Disconnesso</item>
+        <item>Simulato</item>
+        <item>RPCN</item>
+    </string-array>
+    <string name="emulator_settings_net_psn_country">Paese PSN</string>
+    <string name="emulator_settings_savestate">Salva Stato</string>
+    <string name="emulator_settings_savestate_start_paused">Avvia in Pausa</string>
+    <string name="emulator_settings_savestate_suspend_emulation_savestate_mode">Modalità Sospendi Emulazione Salva Stato</string>
+    <string name="emulator_settings_savestate_compatible_savestate_mode">Modalità Salva Stato Compatibile</string>
+    <string name="emulator_settings_savestate_inspection_mode_savestates">Salva Stato Modalità Ispezione</string>
+    <string name="emulator_settings_savestate_save_disc_game_data">Salva Dati Gioco Disco</string>
+    <string name="emulator_settings_miscellaneous">Vari</string>
+    <string name="emulator_settings_miscellaneous_automatically_start_games_after_boot">Avvia Automaticamente i Giochi dopo l’Avvio</string>
+    <string name="emulator_settings_miscellaneous_exit_rpcs3_when_process_finishes">Esci da RPCS3 alla Fine del Processo</string>
+    <string name="emulator_settings_miscellaneous_pause_emulation_on_rpcs3_focus_loss">Metti in Pausa l‘Emulazione alla Perdita di Foco di RPCS3</string>
+    <string name="emulator_settings_miscellaneous_start_games_in_fullscreen_mode">Avvia i Giochi in Modalità Schermo Intero</string>
+    <string name="emulator_settings_miscellaneous_prevent_display_sleep_while_running_games">Impedisci Sospensione Schermo durante i Giochi</string>
+    <string name="emulator_settings_miscellaneous_show_trophy_popups">Mostra Popup Trofei</string>
+    <string name="emulator_settings_miscellaneous_show_rpcn_popups">Mostra Popup RPCN</string>
+    <string name="emulator_settings_miscellaneous_show_shader_compilation_hint">Mostra Indicazione Compilazione Shader</string>
+    <string name="emulator_settings_miscellaneous_show_ppu_compilation_hint">Mostra Indicazione Compilazione PPU</string>
+    <string name="emulator_settings_miscellaneous_show_pressure_intensity_toggle_hint">Mostra Indicazione Intensità Pressione</string>
+    <string name="emulator_settings_miscellaneous_show_analog_limiter_toggle_hint">Mostra Indicazione Limite Analogico</string>
+    <string name="emulator_settings_miscellaneous_show_mouse_and_keyboard_toggle_hint">Mostra Indicazione Tastiera e Mouse</string>
+    <string name="emulator_settings_miscellaneous_show_autosave_autoload_hint">Mostra Indicazione Auto-Salva/Caricamento</string>
+    <string name="emulator_settings_miscellaneous_use_native_user_interface">Usa Interfaccia Utente Nativa</string>
+    <string name="emulator_settings_miscellaneous_gdb_server">Server GDB</string>
+    <string name="emulator_settings_miscellaneous_silence_all_logs">Disattiva Tutti i Log</string>
+    <string name="emulator_settings_miscellaneous_window_title_format">Formato Titolo Finestra</string>
+    <string name="emulator_settings_miscellaneous_pause_emulation_during_home_menu">Metti in Pausa l’Emulazione durante il Menu Home</string>
+
+    <string name="emulator_settings_miscellaneous_font_file_selection">Selezione File Font</string>
+    <string-array name="miscellaneous_font_file_selection_entries">
+        <item>Dal Firmware</item>
+        <item>Personalizzato</item>
+    </string-array>
+    <string name="emulator_settings_miscellaneous_custom_font_file_path">Percorso File Font Personalizzato</string>
+    <string name="emulator_settings_miscellaneous_font_size">Dimensione Font</string>
+
+    <string name="INVALID">Non Valido</string>
+    <string name="RSX_OVERLAYS_TROPHY_BRONZE">Hai guadagnato un trofeo di bronzo.\n%0</string>
+    <string name="RSX_OVERLAYS_TROPHY_SILVER">Hai guadagnato un trofeo d‘argento.\n%0</string>
+    <string name="RSX_OVERLAYS_TROPHY_GOLD">Hai guadagnato un trofeo d’oro.\n%0</string>
+    <string name="RSX_OVERLAYS_TROPHY_PLATINUM">Hai guadagnato un trofeo di platino.\n%0</string>
+    <string name="RSX_OVERLAYS_COMPILING_SHADERS">Compilazione shaders</string>
+    <string name="RSX_OVERLAYS_COMPILING_PPU_MODULES">Compilazione moduli PPU</string>
+    <string name="RSX_OVERLAYS_MSG_DIALOG_YES">Sì</string>
+    <string name="RSX_OVERLAYS_MSG_DIALOG_NO">No</string>
+    <string name="RSX_OVERLAYS_MSG_DIALOG_CANCEL">Indietro</string>
+    <string name="RSX_OVERLAYS_MSG_DIALOG_OK">OK</string>
+    <string name="RSX_OVERLAYS_SAVE_DIALOG_TITLE">Finestra Salva</string>
+    <string name="RSX_OVERLAYS_SAVE_DIALOG_DELETE">Elimina Salva</string>
+    <string name="RSX_OVERLAYS_SAVE_DIALOG_LOAD">Carica Salva</string>
+    <string name="RSX_OVERLAYS_SAVE_DIALOG_SAVE">Salva</string>
+    <string name="RSX_OVERLAYS_OSK_DIALOG_ACCEPT">Invio</string>
+    <string name="RSX_OVERLAYS_OSK_DIALOG_CANCEL">Indietro</string>
+    <string name="RSX_OVERLAYS_OSK_DIALOG_SPACE">Spazio</string>
+    <string name="RSX_OVERLAYS_OSK_DIALOG_BACKSPACE">Canc</string>
+    <string name="RSX_OVERLAYS_OSK_DIALOG_SHIFT">Shift</string>
+    <string name="RSX_OVERLAYS_OSK_DIALOG_ENTER_TEXT">[Immetti Testo]</string>
+    <string name="RSX_OVERLAYS_OSK_DIALOG_ENTER_PASSWORD">[Immetti Password]</string>
+    <string name="RSX_OVERLAYS_MEDIA_DIALOG_TITLE">Seleziona media</string>
+    <string name="RSX_OVERLAYS_MEDIA_DIALOG_TITLE_PHOTO_IMPORT">Seleziona foto da importare</string>
+    <string name="RSX_OVERLAYS_MEDIA_DIALOG_EMPTY">Nessun media trovato.</string>
+    <string name="RSX_OVERLAYS_LIST_SELECT">Invio</string>
+<string name="RSX_OVERLAYS_LIST_CANCEL">Indietro</string>
+	<string name="RSX_OVERLAYS_LIST_DENY">Rifiuta</string>
+	<string name="RSX_OVERLAYS_PRESSURE_INTENSITY_TOGGLED_OFF">Modalità intensità pressione del giocatore %0 disabilitata</string>
+	<string name="RSX_OVERLAYS_PRESSURE_INTENSITY_TOGGLED_ON">Modalità intensità pressione del giocatore %0 abilitata</string>
+	<string name="RSX_OVERLAYS_ANALOG_LIMITER_TOGGLED_OFF">Limiter analogico del giocatore %0 disabilitato</string>
+	<string name="RSX_OVERLAYS_ANALOG_LIMITER_TOGGLED_ON">Limiter analogico del giocatore %0 abilitato</string>
+	<string name="RSX_OVERLAYS_MOUSE_AND_KEYBOARD_EMULATED">Mouse e tastiera sono ora utilizzati come dispositivi emulati.</string>
+	<string name="RSX_OVERLAYS_MOUSE_AND_KEYBOARD_PAD">Mouse e tastiera sono ora utilizzati come pad.</string>
+	<string name="CELL_GAME_ERROR_BROKEN_GAMEDATA">ERRORE: Dati di gioco corrotti. L’applicazione continuerà.</string>
+	<string name="CELL_GAME_ERROR_BROKEN_HDDGAME">ERRORE: Gioco di boot HDD corrotto. L‘applicazione continuerà.</string>
+	<string name="CELL_GAME_ERROR_BROKEN_EXIT_GAMEDATA">ERRORE: Dati di gioco corrotti. L’applicazione verrà terminata.</string>
+	<string name="CELL_GAME_ERROR_BROKEN_EXIT_HDDGAME">ERRORE: Gioco di boot HDD corrotto. L‘applicazione verrà terminata.</string>
+	<string name="CELL_GAME_ERROR_NOSPACE">ERRORE: Spazio insufficiente disponibile. L’applicazione continuerà.\nSpazio richiesto: %0 KB</string>
+	<string name="CELL_GAME_ERROR_NOSPACE_EXIT">ERRORE: Spazio insufficiente disponibile. L‘applicazione verrà terminata.\nSpazio richiesto: %0 KB</string>
+	<string name="CELL_GAME_ERROR_DIR_NAME">Nome directory: %0</string>
+	<string name="CELL_GAME_DATA_EXIT_BROKEN">C’è stato un errore!\n\nRimuovere i dati di gioco per questo titolo.</string>
+	<string name="CELL_HDD_GAME_EXIT_BROKEN">C‘è stato un errore!\n\nRiinstallare il gioco di boot HDD.</string>
+	<string name="CELL_HDD_GAME_CHECK_NOSPACE">Spazio insufficiente per creare il gioco di boot HDD.\nSpazio richiesto: %0 KB</string>
+	<string name="CELL_HDD_GAME_CHECK_BROKEN">Gioco HDD %0 è corrotto!</string>
+	<string name="CELL_HDD_GAME_CHECK_NODATA">Gioco HDD %0 non trovato!</string>
+	<string name="CELL_HDD_GAME_CHECK_INVALID">Errore: %0</string>
+	<string name="CELL_GAMEDATA_CHECK_NOSPACE">Spazio insufficiente per creare i dati di gioco.\nSpazio richiesto: %0 KB</string>
+	<string name="CELL_GAMEDATA_CHECK_BROKEN">Dati di gioco in %0 sono corrotti!</string>
+	<string name="CELL_GAMEDATA_CHECK_NODATA">Dati di gioco in %0 non trovati!</string>
+	<string name="CELL_GAMEDATA_CHECK_INVALID">Errore: %0</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010001">La risorsa non è temporaneamente disponibile.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010002">Argomento o flag non valido.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010003">La funzione non è ancora implementata.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010004">Allocazione della memoria fallita.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010005">La risorsa con l’identificatore specificato non esiste.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010006">Il file non esiste.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010007">Il file ha un formato non riconosciuto / Il file non è un file ELF valido.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010008">Evitato deadlock di risorse.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010009">Operazione non consentita.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000A">Il dispositivo o la risorsa è occupata.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000B">Operazione scaduta.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000C">Operazione annullata.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000D">Accesso alla memoria non valido.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000F">Lo stato del thread di destinazione è invalido.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010010">Allineamento non valido.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010011">Scarsità di risorse del kernel.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010012">Il file è una directory.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010013">Operazione annullata.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010014">Voce già esistente.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010015">La porta è già connessa.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010016">La porta non è connessa.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010017">Errore di autorizzazione SELF. Autenticazione programma fallita.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010018">Il file non è MSELF.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010019">Errore di versione del sistema.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001A">Errore fatale del sistema durante l‘autorizzazione SELF. Fallimento autenticazione SELF.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001B">Violazione del dominio matematico.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001C">Violazione del range matematico.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001D">Sequenza multi-byte illegale nell’input.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001E">Errore di posizione del file.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001F">La syscall è stata interrotta.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010020">File troppo grande.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010021">Troppi collegamenti.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010022">Sovraffollamento della tabella dei file.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010023">Nessuno spazio disponibile sul dispositivo.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010024">Non è un TTY.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010025">Pipe rotta.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010026">Filesystem in sola lettura.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010027">Seek illegale.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010028">Lista argomenti troppo lunga.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010029">Violazione di accesso.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002A">Descrittore di file non valido.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002B">Montaggio del filesystem fallito.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002C">Troppi file aperti.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002D">Nessun dispositivo.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002E">Non è una directory.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002F">Nessun dispositivo o IO esistente.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010030">Errore di link cross-device.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010031">Messaggio errato.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010032">In corso.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010033">Errore dimensione messaggio.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010034">Nome troppo lungo.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010035">Nessun blocco.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010036">Non vuoto.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010037">Non supportato.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010038">Errore specifico del filesystem.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010039">Overflow avvenuto.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003A">Filesystem non montato.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003B">Non è SData.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003C">Versione errata in sys_load_param.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003D">Il puntatore è nullo.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003E">Il puntatore è nullo.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_DEFAULT">Si è verificato un errore.\n(%0)</string>
+	<string name="CELL_OSK_DIALOG_TITLE">Tastiera su schermo</string>
+	<string name="CELL_OSK_DIALOG_BUSY">Il menu principale non può essere aperto mentre la tastiera su schermo è occupata!</string>
+
+	<string name="CELL_SAVEDATA_CB_BROKEN">Errore - Dati di salvataggio corrotti</string>
+	<string name="CELL_SAVEDATA_CB_FAILURE">Errore - Impossibile salvare o caricare</string>
+	<string name="CELL_SAVEDATA_CB_NO_DATA">Errore - Dati di salvataggio non trovati</string>
+	<string name="CELL_SAVEDATA_CB_NO_SPACE">Errore - Spazio libero insufficiente\n\nSpazio richiesto: %0 KB</string>
+	<string name="CELL_SAVEDATA_NO_DATA">Non ci sono dati salvati.</string>
+	<string name="CELL_SAVEDATA_NEW_SAVED_DATA_TITLE">Nuovo Dato Salvato</string>
+	<string name="CELL_SAVEDATA_NEW_SAVED_DATA_SUB_TITLE">Seleziona per creare una nuova voce</string>
+	<string name="CELL_SAVEDATA_SAVE_CONFIRMATION">Vuoi salvare questi dati?</string>
+	<string name="CELL_SAVEDATA_DELETE_CONFIRMATION">Vuoi davvero eliminare questi dati?\n\n%0</string>
+	<string name="CELL_SAVEDATA_DELETE_SUCCESS">Dati eliminati con successo!\n\n%0</string>
+	<string name="CELL_SAVEDATA_DELETE">Eliminare questi dati?\n\n%0</string>
+	<string name="CELL_SAVEDATA_LOAD">Caricare questi dati?\n\n%0</string>
+	<string name="CELL_SAVEDATA_SAVE">Salvare questi dati?\n\n%0</string>
+	<string name="CELL_SAVEDATA_OVERWRITE">Vuoi sovrascrivere i dati salvati?\n\n%0</string>
+	<string name="CELL_SAVEDATA_AUTOSAVE">Salvataggio in corso...</string>
+	<string name="CELL_SAVEDATA_AUTOLOAD">Caricamento in corso...</string>
+	<string name="CELL_CROSS_CONTROLLER_MSG">Avvia sul sistema PS Vita.\nSe non lo hai installato, vai su [Remote Play] sul sistema PS Vita e avvia [Cross-Controller] dalla schermata LiveArea™.</string>
+	<string name="CELL_CROSS_CONTROLLER_FW_MSG">Se la versione del software di sistema sul sistema PS Vita è precedente alla 1.80, devi aggiornare il software di sistema all’ultima versione.</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_TITLE">Seleziona Messaggio</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_TITLE_INVITE">Seleziona Invito</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_TITLE_ADD_FRIEND">Aggiungi Amico</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_FROM">Da:</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_SUBJECT">Oggetto:</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_TITLE">Seleziona Messaggio da Inviare</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_TITLE_INVITE">Invia Invito</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_TITLE_ADD_FRIEND">Aggiungi Amico</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_CONFIRMATION">Inviare il messaggio a %0 ?\n\nOggetto:</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_CONFIRMATION_INVITE">Inviare l‘invito a %0 ?\n\nOggetto:</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_CONFIRMATION_ADD_FRIEND">Inviare la richiesta di amicizia a %0 ?\n\nOggetto:</string>
+	<string name="RECORDING_ABORTED">Registrazione interrotta!</string>
+	<string name="RPCN_NO_ERROR">RPCN: Nessun Errore</string>
+	<string name="RPCN_ERROR_INVALID_INPUT">RPCN: Input non valido (Host/Porta errati)</string>
+	<string name="RPCN_ERROR_WOLFSSL">RPCN Errore Connessione: Errore WolfSSL</string>
+	<string name="RPCN_ERROR_RESOLVE">RPCN Errore Connessione: Errore di Risoluzione</string>
+	<string name="RPCN_ERROR_CONNECT">RPCN Errore Connessione</string>
+	<string name="RPCN_ERROR_LOGIN_ERROR">RPCN Errore Accesso: Errore di Identificazione</string>
+	<string name="RPCN_ERROR_ALREADY_LOGGED">RPCN Errore Accesso: Utente Già Connesso</string>
+	<string name="RPCN_ERROR_INVALID_LOGIN">RPCN Errore Accesso: Nome Utente non valido</string>
+	<string name="RPCN_ERROR_INVALID_PASSWORD">RPCN Errore Accesso: Password non valida</string>
+	<string name="RPCN_ERROR_INVALID_TOKEN">RPCN Errore Accesso: Token non valido</string>
+	<string name="RPCN_ERROR_INVALID_PROTOCOL_VERSION">RPCN Errore Vari: Versione Protocollo Errata (RPCS3 obsoleto?)</string>
+	<string name="RPCN_ERROR_UNKNOWN">RPCN: Errore Sconosciuto</string>
+	<string name="RPCN_SUCCESS_LOGGED_ON">Accesso effettuato con successo su RPCN!</string>
+	<string name="RPCN_FRIEND_REQUEST_RECEIVED">RPCN: Ricevuta richiesta di amicizia: %0</string>
+	<string name="RPCN_FRIEND_ADDED">RPCN: Amico aggiunto: %0</string>
+	<string name="RPCN_FRIEND_LOST">RPCN: Amico rimosso: %0</string>
+	<string name="RPCN_FRIEND_LOGGED_IN">RPCN: %0 è connesso</string>
+	<string name="RPCN_FRIEND_LOGGED_OUT">RPCN: %0 è disconnesso</string>
+
+    <string name="HOME_MENU_TITLE">Menu Principale</string>
+    <string name="HOME_MENU_EXIT_GAME">Esci dal Gioco</string>
+    <string name="HOME_MENU_RESUME">Riprendi Gioco</string>
+    <string name="HOME_MENU_FRIENDS">Amici</string>
+    <string name="HOME_MENU_FRIENDS_REQUESTS">Richieste di Amicizia Pendenti</string>
+    <string name="HOME_MENU_FRIENDS_BLOCKED">Utenti Bloccati</string>
+    <string name="HOME_MENU_FRIENDS_STATUS_ONLINE">Online</string>
+    <string name="HOME_MENU_FRIENDS_STATUS_OFFLINE">Offline</string>
+    <string name="HOME_MENU_FRIENDS_STATUS_BLOCKED">Bloccato</string>
+    <string name="HOME_MENU_FRIENDS_REQUEST_SENT">Hai inviato una richiesta di amicizia</string>
+    <string name="HOME_MENU_FRIENDS_REQUEST_RECEIVED">Ti ha inviato una richiesta di amicizia</string>
+    <string name="HOME_MENU_FRIENDS_BLOCK_USER_MSG">Bloccare questo utente?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_UNBLOCK_USER_MSG">Sbloccare questo utente?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_REMOVE_USER_MSG">Rimuovere questo utente?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_ACCEPT_REQUEST_MSG">Accettare la richiesta?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_CANCEL_REQUEST_MSG">Annullare la richiesta?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_REJECT_REQUEST_MSG">Rifiutare la richiesta?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_REJECT_REQUEST">Rifiuta Richiesta</string>
+    <string name="HOME_MENU_FRIENDS_NEXT_LIST">Prossima lista</string>
+    <string name="HOME_MENU_RESTART">Riavvia Gioco</string>
+    <string name="HOME_MENU_SETTINGS">Impostazioni</string>
+    <string name="HOME_MENU_SETTINGS_SAVE">Salvare la configurazione personalizzata?</string>
+    <string name="HOME_MENU_SETTINGS_SAVE_BUTTON">Salva</string>
+    <string name="HOME_MENU_SETTINGS_DISCARD">Scartare le modifiche alle impostazioni correnti?</string>
+    <string name="HOME_MENU_SETTINGS_DISCARD_BUTTON">Scarta</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO">Audio</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_MASTER_VOLUME">Volume Master</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_BACKEND">Backend Audio</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_BUFFERING">Abilita Buffering</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_BUFFER_DURATION">Durata Buffer Audio Desiderata</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_TIME_STRETCHING">Abilita Time Stretching</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_TIME_STRETCHING_THRESHOLD">Soglia Time Stretching</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO">Video</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_FRAME_LIMIT">Limite Fotogrammi</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_ANISOTROPIC_OVERRIDE">Override Filtro Anisotropico</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_OUTPUT_SCALING">Ridimensionamento Output</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_RCAS_SHARPENING">Intensità Affilatura FidelityFX CAS</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_STRETCH_TO_DISPLAY">Espansione su Area Visualizzazione</string>
+    <string name="HOME_MENU_SETTINGS_INPUT">Input</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_BACKGROUND_INPUT">Input in Background Abilitato</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_KEEP_PADS_CONNECTED">Mantieni Pad Connessi</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_SHOW_PS_MOVE_CURSOR">Mostra Cursore PS Move</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_CAMERA_FLIP">Riflesso Telecamera</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_PAD_MODE">Modalità Gestore Pad</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_PAD_SLEEP">Sospensione Gestore Pad</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_FAKE_MOVE_ROTATION_CONE_H">Cono Rotazione Finto PS Move (Orizzontale)</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_FAKE_MOVE_ROTATION_CONE_V">Cono Rotazione Finto PS Move (Verticale)</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED">Avanzate</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_PREFERRED_SPU_THREADS">Thread SPU Preferiti</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_MAX_CPU_PREEMPTIONS">Massimo CPU-Preemptions Risparmio Energetico</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_ACCURATE_RSX_RESERVATION_ACCESS">Accesso Accurato Riserva RSX</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_SLEEP_TIMERS_ACCURACY">Accuratezza Timer Sospensione</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_MAX_SPURS_THREADS">Massimo Thread SPURS</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_DRIVER_WAKE_UP_DELAY">Ritardo Risveglio Driver</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_VBLANK_FREQUENCY">Frequenza VBlank</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_VBLANK_NTSC">Correzione NTSC VBlank</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS">Overlay</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_TROPHY_POPUPS">Mostra Popup Trofei</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_RPCN_POPUPS">Mostra Popup RPCN</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_SHADER_COMPILATION_HINT">Mostra Indicazione Compilazione Shader</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_PPU_COMPILATION_HINT">Mostra Indicazione Compilazione PPU</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_AUTO_SAVE_LOAD_HINT">Mostra Indicazione Salvataggio/Caricamento Automatico</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_PRESSURE_INTENSITY_TOGGLE_HINT">Mostra Indicazione Intensità Pressione</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_ANALOG_LIMITER_TOGGLE_HINT">Mostra Indicazione Limiter Analogico</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_MOUSE_AND_KB_TOGGLE_HINT">Mostra Indicazione Tastiera e Mouse</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY">Overlay Prestazioni</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_ENABLE">Abilita Overlay Prestazioni</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_ENABLE_FRAMERATE_GRAPH">Abilita Grafico Frequenza Fotogrammi</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_ENABLE_FRAMETIME_GRAPH">Abilita Grafico Tempo Fotogrammi</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_DETAIL_LEVEL">Livello Dettaglio</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMERATE_DETAIL_LEVEL">Livello Dettaglio Grafico Frequenza</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMETIME_DETAIL_LEVEL">Livello Dettaglio Grafico Tempo</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMERATE_DATAPOINT_COUNT">Punti Dati Frequenza</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMETIME_DATAPOINT_COUNT">Punti Dati Tempo</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_UPDATE_INTERVAL">Intervallo Aggiornamento</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_POSITION">Posizione</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_CENTER_X">Centrato Orizzontalmente</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_CENTER_Y">Centrato Verticalmente</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_MARGIN_X">Margine Orizzontale</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_MARGIN_Y">Margine Verticale</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FONT_SIZE">Dimensione Carattere</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_OPACITY">Opacità</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG">Debug</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_OVERLAY">Overlay Debug</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_INPUT_OVERLAY">Overlay Debug Input</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_DISABLE_VIDEO_OUTPUT">Disabilita Output Video</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_TEXTURE_LOD_BIAS">Sfasamento LOD Texture</string>
+    <string name="HOME_MENU_SCREENSHOT">Cattura Schermata</string>
+    <string name="HOME_MENU_SAVESTATE">Stato Salvataggio</string>
+    <string name="HOME_MENU_SAVESTATE_SAVE">Salva Stato Emulazione</string>
+    <string name="HOME_MENU_SAVESTATE_AND_EXIT">Salva Stato Emulazione ed Esci</string>
+    <string name="HOME_MENU_RELOAD_SAVESTATE">Ricarica Ultimo Stato Emulazione</string>
+    <string name="HOME_MENU_RECORDING">Avvia/Ferma Registrazione</string>
+    <string name="HOME_MENU_TROPHIES">Trofei</string>
+    <string name="HOME_MENU_TROPHY_LIST_TITLE">Progresso Trofeo: %0</string>
+    <string name="HOME_MENU_TROPHY_LOCKED_TITLE">Trofeo Bloccato: %0</string>
+    <string name="HOME_MENU_TROPHY_HIDDEN_TITLE">Trofeo Nascosto</string>
+    <string name="HOME_MENU_TROPHY_HIDDEN_DESCRIPTION">Questo trofeo è nascosto</string>
+    <string name="HOME_MENU_TROPHY_SHOW_HIDDEN_TROPHIES">Mostra Trofei Nascosti</string>
+    <string name="HOME_MENU_TROPHY_HIDE_HIDDEN_TROPHIES">Nascondi Trofei Nascosti</string>
+    <string name="HOME_MENU_TROPHY_PLATINUM_RELEVANT">Rilevante per Platino</string>
+    <string name="HOME_MENU_TROPHY_GRADE_BRONZE">Bronzo</string>
+    <string name="HOME_MENU_TROPHY_GRADE_SILVER">Argento</string>
+    <string name="HOME_MENU_TROPHY_GRADE_GOLD">Oro</string>
+    <string name="HOME_MENU_TROPHY_GRADE_PLATINUM">Platino</string>
+
+	<string name="AUDIO_MUTED">Audio disattivato</string>
+	<string name="AUDIO_UNMUTED">Audio attivato</string>
+	<string name="AUDIO_CHANGED">Volume modificato a %0</string>
+	<string name="PROGRESS_DIALOG_PROGRESS">Progresso:</string>
+	<string name="PROGRESS_DIALOG_PROGRESS_ANALYZING">Progresso: analisi in corso...</string>
+	<string name="PROGRESS_DIALOG_REMAINING">rimanente</string>
+	<string name="PROGRESS_DIALOG_DONE">completato</string>
+	<string name="PROGRESS_DIALOG_FILE">file</string>
+	<string name="PROGRESS_DIALOG_MODULE">modulo</string>
+	<string name="PROGRESS_DIALOG_OF">di</string>
+	<string name="PROGRESS_DIALOG_PLEASE_WAIT">Attendere prego</string>
+	<string name="PROGRESS_DIALOG_STOPPING_PLEASE_WAIT">Arresto in corso. Attendere prego...</string>
+	<string name="PROGRESS_DIALOG_SAVESTATE_PLEASE_WAIT">Creazione stato di salvataggio. Attendere prego...</string>
+	<string name="PROGRESS_DIALOG_SCANNING_PPU_EXECUTABLE">Scansione eseguibile PPU...</string>
+	<string name="PROGRESS_DIALOG_ANALYZING_PPU_EXECUTABLE">Analisi eseguibile PPU...</string>
+	<string name="PROGRESS_DIALOG_SCANNING_PPU_MODULES">Scansione moduli PPU...</string>
+	<string name="PROGRESS_DIALOG_LOADING_PPU_MODULES">Caricamento moduli PPU...</string>
+	<string name="PROGRESS_DIALOG_COMPILING_PPU_MODULES">Compilazione moduli PPU...</string>
+	<string name="PROGRESS_DIALOG_LINKING_PPU_MODULES">Collegamento moduli PPU...</string>
+	<string name="PROGRESS_DIALOG_APPLYING_PPU_CODE">Applicazione codice PPU...</string>
+	<string name="PROGRESS_DIALOG_BUILDING_SPU_CACHE">Creazione cache SPU...</string>
+	<string name="EMULATION_PAUSED_RESUME_WITH_START">Premere e tenere premuto il tasto START per riprendere</string>
+	<string name="EMULATION_RESUMING">Ripresa in corso...!</string>
+	<string name="EMULATION_FROZEN">L‘applicazione PS3 è probabilmente bloccata, è possibile chiuderla.</string>
+	<string name="SAVESTATE_FAILED_DUE_TO_SAVEDATA">Salvataggio fallito: Salvataggio in corso, attendere completamento.</string>
+	<string name="SAVESTATE_FAILED_DUE_TO_VDEC">Salvataggio fallito: Video/cutscene basati su VDEC in corso, attendere la fine o abilitare libvdec.sprx.</string>
+	<string name="SAVESTATE_FAILED_DUE_TO_MISSING_SPU_SETTING">Salvataggio fallito: Impossibile bloccare lo stato SPU, abilitare la modalità SPU-Compatibile potrebbe risolvere il problema.</string>
+	<string name="SAVESTATE_FAILED_DUE_TO_SPU">Salvataggio fallito: Impossibile bloccare lo stato SPU, utilizzare SPU ASMJIT risolverà il problema.</string>
+	<string name="PROGRESS_DIALOG_PRELOADING_SHADER_CACHE">Pre-caricamento shader dalla cache su disco...</string>
+
+</resources>

@@ -104,7 +104,7 @@ namespace rsx
 			});
 
 			add_page(std::make_shared<home_menu_savestate>(x, y, width, height, use_separators, this));
-
+#endif
 			std::unique_ptr<overlay_element> restart = std::make_unique<home_menu_entry>(get_localized_string(localized_string_id::HOME_MENU_RESTART));
 			add_item(restart, [](pad_button btn) -> page_navigation
 			{
@@ -118,7 +118,7 @@ namespace rsx
 				});
 				return page_navigation::exit;
 			});
-
+#if 0
 			std::unique_ptr<overlay_element> exit_game = std::make_unique<home_menu_entry>(get_localized_string(localized_string_id::HOME_MENU_EXIT_GAME));
 			add_item(exit_game, [](pad_button btn) -> page_navigation
 			{

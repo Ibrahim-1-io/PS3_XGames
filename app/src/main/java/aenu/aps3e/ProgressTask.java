@@ -59,7 +59,7 @@ public class ProgressTask {
             }
         }
     };
-        private final Dialog create_progress_dialog(Context context){
+        static final Dialog create_progress_dialog(Context context, String progress_message){
             ProgressDialog d=new ProgressDialog(context);
             d.setMessage(progress_message);
             d.setCanceledOnTouchOutside(false);
@@ -104,7 +104,7 @@ public class ProgressTask {
         }
 
         void call(Task task){
-            progress_dialog=create_progress_dialog(context);
+            progress_dialog=create_progress_dialog(context, progress_message);
             progress_dialog.show();
             task_thread=new Thread(new Runnable() {
                 @Override

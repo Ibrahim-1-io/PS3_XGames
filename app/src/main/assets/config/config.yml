@@ -24,7 +24,7 @@ Core:
   Accurate SPU Reservations: true
   Accurate Cache Line Stores: false
   Accurate RSX reservation access: false
-  RSX FIFO Accuracy: Fast
+  RSX FIFO Accuracy: "Ordered & Atomic"
   SPU Verification: true
   SPU Cache: true
   SPU Profiler: false
@@ -70,7 +70,7 @@ VFS:
   Empty /dev_hdd0/tmp/: true
 Video:
   Renderer: Vulkan
-  Resolution: 720x480
+  Resolution: 1280x720
   Aspect ratio: 16:9
   Frame limit: Auto
   Second Frame Limit: 0

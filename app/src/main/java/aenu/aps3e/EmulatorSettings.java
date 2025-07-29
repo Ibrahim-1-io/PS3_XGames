@@ -11,12 +11,11 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.ParcelFileDescriptor;
-import android.preference.SwitchPreference;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.ForegroundColorSpan;
-import android.util.AttributeSet;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -46,9 +45,6 @@ import aenu.preference.SeekBarPreference;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -82,12 +78,14 @@ public class EmulatorSettings extends AppCompatActivity {
     static final String Video$Strict_Rendering_Mode="Video|Strict Rendering Mode";
     static final String Video$Resolution_Scale="Video|Resolution Scale";
     static final String Video$Vulkan$Asynchronous_Texture_Streaming_2="Video|Vulkan|Asynchronous Texture Streaming 2";
-    //"Video|Vulkan|Asynchronous Queue Scheduler"
     static final String Video$Vulkan$Asynchronous_Queue_Scheduler="Video|Vulkan|Asynchronous Queue Scheduler";
-    //"Video|Resolution"
     static final String Video$Resolution="Video|Resolution";
     //"Video|Aspect ratio"
     static final String Video$Aspect_ratio="Video|Aspect ratio";
+    //"Core|Thread Affinity Mask"
+    static final String Core$Thread_Affinity_Mask="Core|Thread Affinity Mask";
+    //"Core|Thread Scheduler Mode"
+    static final String Core$Thread_Scheduler_Mode="Core|Thread Scheduler Mode";
 
     @SuppressLint("ValidFragment")
     public static class SettingsFragment extends PreferenceFragmentCompat implements
@@ -462,7 +460,7 @@ public class EmulatorSettings extends AppCompatActivity {
             };
             final String[] STRING_ARR_KEYS={
                     "Core|PPU Decoder",
-                    "Core|Thread Scheduler Mode",
+                    Core$Thread_Scheduler_Mode,
                     "Core|SPU Decoder",
                     "Core|SPU Block Size",
                     "Core|RSX FIFO Accuracy",
@@ -601,6 +599,7 @@ public class EmulatorSettings extends AppCompatActivity {
 
             findPreference(Video$Vulkan$Custom_Driver_Library_Path).setOnPreferenceClickListener(this);
             findPreference(Miscellaneous$Custom_Font_File_Path).setOnPreferenceClickListener(this);
+            findPreference(Core$Thread_Affinity_Mask).setOnPreferenceClickListener(this);
 
             setup_costom_driver_library_path(null);
             setup_costom_font_path(null);
@@ -743,6 +742,11 @@ public class EmulatorSettings extends AppCompatActivity {
                 show_select_font_file_list();
                 return false;
             }
+
+            if(preference.getKey().equals(Core$Thread_Affinity_Mask)){
+                show_affinity_mask_view();
+                return false;
+            }
             if (preference.getKey().equals("Core|Libraries Control")){
                 show_library_control_view();
                 return false;
@@ -852,6 +856,29 @@ public class EmulatorSettings extends AppCompatActivity {
             });
         }
 
+        void show_affinity_mask_view(){
+            final View layout=LayoutInflater.from(getContext()).inflate(R.layout.setting_affinity_mask,null);
+            load_affinity_mask(layout,config);
+            AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+            builder.setView(layout);
+            builder.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    save_affinity_mask(layout,config);
+                }
+            });
+            builder.setCancelable( false);
+            builder.setOnKeyListener(new DialogInterface.OnKeyListener() {
+                @Override
+                public boolean onKey(DialogInterface dialog, int keyCode, KeyEvent event) {
+                    if(keyCode==KeyEvent.KEYCODE_BACK)
+                        return true;
+                    return false;
+                }
+            });
+            builder.create().show();
+        }
+
         void show_library_control_view(){
             LibraryControlAdapter adapter=new LibraryControlAdapter(getContext());
             adapter.set_modify_libs(config.load_config_entry_ty_arr("Core|Libraries Control"));
@@ -941,6 +968,14 @@ public class EmulatorSettings extends AppCompatActivity {
                     }
                     else{
                         findPreference(Miscellaneous$Custom_Font_File_Path).setEnabled(false);
+                    }
+                    break;
+                case Core$Thread_Scheduler_Mode:
+                    if(cur_val.equals("Affinity")){
+                        findPreference(Core$Thread_Affinity_Mask).setEnabled(true);
+                    }
+                    else{
+                        findPreference(Core$Thread_Affinity_Mask).setEnabled(false);
                     }
                     break;
             }
@@ -1356,13 +1391,13 @@ libs.put("libwmadec.sprx", 0);
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             if(convertView==null){
-                convertView=get_inflater().inflate(R.layout.library_entry,null);
+                convertView=get_inflater().inflate(R.layout.two_state_entry,null);
             }
-            TextView  name_v=(TextView) convertView.findViewById(R.id.lib_name);
+            TextView  name_v=(TextView) convertView.findViewById(R.id.text);
             String name=libs_name[position];
             name_v.setText(name);
             int ty=modify.containsKey(name)?modify.get(name):libs.get(name);
-            TextView  type_v=(TextView) convertView.findViewById(R.id.lib_type);
+            TextView  type_v=(TextView) convertView.findViewById(R.id.state);
             setup_type_view(type_v,ty);
 
             return convertView;
@@ -1374,24 +1409,117 @@ libs.put("libwmadec.sprx", 0);
         return current_mode==android.content.res.Configuration.UI_MODE_NIGHT_YES;
     }
 
-    static class AffinityMaskPreference extends Preference{
+    static class CoreMaskAdapter extends BaseAdapter implements ListView.OnItemClickListener{
 
-        public AffinityMaskPreference(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-            super(context, attrs, defStyleAttr, defStyleRes);
+        static class CoreInfo{
+            int id;
+            int max_mhz;
+            String arch;
+        }
+        CoreInfo[] cores;
+        Context ctx;
+        int mask;
+        CoreMaskAdapter(Context ctx,int mask){
+            this.ctx=ctx;
+            this.mask=mask;
+            final int core_count=Emulator.get.get_cpu_core_count();
+            cores=new CoreInfo[core_count];
+            for(int i=0;i<core_count;i++){
+                cores[i]=new CoreInfo();
+                cores[i].id=i;
+                cores[i].max_mhz=Emulator.get.get_cpu_max_mhz(i);
+                cores[i].arch=Emulator.get.get_cpu_name(i);
+            }
         }
 
-        public AffinityMaskPreference(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
-            this(context, attrs, defStyleAttr, 0);
+        void switch_state(int core_id){
+            mask^=(1<<core_id);
         }
 
-        public AffinityMaskPreference(@NonNull Context context, @Nullable AttributeSet attrs) {
-            this(context, attrs, androidx.preference.R.attr.preferenceStyle);
+        int get_mask(){
+            return mask;
+        }
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            switch_state(position);
+            notifyDataSetChanged();
         }
 
-        public AffinityMaskPreference(@NonNull Context context) {
-            this(context, null);
+        @Override
+        public int getCount() {
+            return cores.length;
         }
 
-        
+        @Override
+        public Object getItem(int position) {
+            return null;
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return 0;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            if(convertView==null){
+                convertView=LayoutInflater.from(ctx).inflate(R.layout.two_state_entry,null);
+            }
+            TextView  name_v=(TextView) convertView.findViewById(R.id.text);
+            name_v.setText(cores[position].arch+": "+cores[position].max_mhz+"Mhz");
+            TextView  state_v=(TextView) convertView.findViewById(R.id.state);
+
+
+            ForegroundColorSpan[] off_on_span_color={
+                    new ForegroundColorSpan(Color.GRAY),
+                    new ForegroundColorSpan(theme_is_night(ctx)?Color.YELLOW:Color.rgb(255,127,63))
+            };
+            SpannableString span_text=new SpannableString(((mask & (1<<position))!=0)?"on":"off");
+            span_text.setSpan(off_on_span_color[(mask>>position)&1],0,span_text.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+            state_v.setText(span_text);
+            return convertView;
+        }
+    }
+
+    static int load_int_val(Emulator.Config cfg,String key,int def_val){
+        String val=cfg.load_config_entry(key);
+        return val==null?def_val:Integer.parseInt(val);
+    };
+    static void load_affinity_mask(View root, Emulator.Config cfg){
+        ListView[] lv=new ListView[]{
+                (ListView) root.findViewById(R.id.ppu_use_cores),
+                (ListView) root.findViewById(R.id.spu_use_cores),
+                (ListView) root.findViewById(R.id.rsx_use_cores)
+        };
+
+        int[] mask=new int[]{
+                load_int_val(cfg,EmulatorSettings.Core$Thread_Affinity_Mask+"|PPU Threads",1),
+                load_int_val(cfg,EmulatorSettings.Core$Thread_Affinity_Mask+"|SPU Threads",1),
+                load_int_val(cfg,EmulatorSettings.Core$Thread_Affinity_Mask+"|RSX Threads",1)
+        };
+
+        for(int i=0;i<lv.length;i++){
+            CoreMaskAdapter adapter=new CoreMaskAdapter(root.getContext(),mask[i]);
+            lv[i].setAdapter(adapter);
+            lv[i].setOnItemClickListener(adapter);
+        }
+    }
+
+    static void save_affinity_mask(View root,Emulator.Config cfg){
+        ListView[] lv=new ListView[]{
+                (ListView) root.findViewById(R.id.ppu_use_cores),
+                (ListView) root.findViewById(R.id.spu_use_cores),
+                (ListView) root.findViewById(R.id.rsx_use_cores)
+        };
+        String[] keys=new String[]{
+                EmulatorSettings.Core$Thread_Affinity_Mask+"|PPU Threads",
+                EmulatorSettings.Core$Thread_Affinity_Mask+"|SPU Threads",
+                EmulatorSettings.Core$Thread_Affinity_Mask+"|RSX Threads"
+
+        };
+        for(int i=0;i<lv.length;i++){
+            CoreMaskAdapter adapter=(CoreMaskAdapter) lv[i].getAdapter();
+            cfg.save_config_entry(keys[i],Integer.toString(adapter.get_mask()));
+        }
     }
 }

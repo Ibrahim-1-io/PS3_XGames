@@ -135,7 +135,7 @@
 
 #define LOG_TAG "aps3e_native"
 
-#if 0
+#if 1
 
 #define LOGI(...) {}
 #define LOGW(...) {}
@@ -238,15 +238,16 @@ static void j_setup_surface(JNIEnv* env,jobject self,jobject surface){
     }
 }
 
-std::shared_ptr<AndroidVirtualPadHandler> padh=nullptr;
 static void j_key_event(JNIEnv* env,jobject self,jint key_code,jboolean pressed,jint value){
 	pthread_mutex_lock(&aps3e_emu::key_event_mutex);
-	if(!padh){
-		auto& pad_thr=g_fxo->get<named_thread<pad_thread>>();
-		auto xx=pad_thr.get_handlers().at(pad_handler::keyboard);
-		padh=std::dynamic_pointer_cast<AndroidVirtualPadHandler>(xx);
+	{
+		auto* pad_thr=g_fxo->try_get<named_thread<pad_thread>>();
+        if(pad_thr){
+            auto xx=pad_thr->get_handlers().at(pad_handler::keyboard);
+            std::shared_ptr<AndroidVirtualPadHandler> padh=std::dynamic_pointer_cast<AndroidVirtualPadHandler>(xx);
+            padh->Key(static_cast<u32>(key_code), static_cast<bool>(pressed),value);
+        }
 	}
-	padh->Key(static_cast<u32>(key_code), static_cast<bool>(pressed),value);
 	pthread_mutex_unlock(&aps3e_emu::key_event_mutex);
 }
 
@@ -449,6 +450,20 @@ static jobject j_meta_info_from_iso(JNIEnv* env,jobject self,jint fd,jstring jis
     return meta_info;
 }
 
+/*public native int get_cpu_core_count();
+public native String get_cpu_name(int core_idx);
+public native int get_cpu_max_mhz(int core_idx);*/
+static jint j_get_cpu_core_count(JNIEnv* env,jobject self){
+    return cpu_get_core_count();
+}
+static jstring j_get_cpu_name(JNIEnv* env,jobject self,jint core_idx){
+    const std::string& name=cpu_get_processor_name(core_idx);
+    jstring r= env->NewStringUTF(name.c_str());
+    return r;
+}
+static jint j_get_cpu_max_mhz(JNIEnv* env,jobject self,jint core_idx){
+    return cpu_get_max_mhz(core_idx);
+}
 #include "aps3e_config.cpp"
 
 /*
@@ -460,7 +475,9 @@ int register_Emulator(JNIEnv* env){
 
 	static const JNINativeMethod methods[] = {
 
-
+            {"get_cpu_core_count", "()I",(void *)j_get_cpu_core_count},
+            {"get_cpu_name", "(I)Ljava/lang/String;",(void *)j_get_cpu_name},
+            {"get_cpu_max_mhz", "(I)I",(void *)j_get_cpu_max_mhz},
                     {"simple_device_info", "()Ljava/lang/String;",(void *)j_simple_device_info},
                     {"get_native_llvm_cpu_list", "()[Ljava/lang/String;",(void *)j_get_native_llvm_cpu_list},
             {"get_support_llvm_cpu_list", "()[Ljava/lang/String;",(void *)j_get_support_llvm_cpu_list},

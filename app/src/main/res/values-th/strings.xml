@@ -1,0 +1,997 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="use_cores_ppu">ใช้คอร์ (PPU)</string>
+	<string name="use_cores_spu">ใช้คอร์ (SPU)</string>
+	<string name="use_cores_rsx">ใช้คอร์ (RSX)</string>
+	<string name="emulator_settings_core_thread_affinity_mask">มาสก์ความสัมพันธ์ของเธรด</string>
+	<string name="create_shortcut">สร้างทางลัด</string>
+	<string name="loading">กำลังโหลด...</string>
+	<string name="resolution_not_support">ไม่รองรับความละเอียดหรืออัตราส่วนภาพนี้\nเกมนี้รองรับเฉพาะ:\n%s\n\nโปรดปรับเปลี่ยนการตั้งค่าตามนี้:\n%s\n%s\n</string>
+	<string name="show_game_info">แสดงข้อมูลเกม</string>
+	<string name="quick_start_page">หน้าเริ่มต้นด่วน</string>
+	<string name="prev_step">ขั้นตอนก่อนหน้า</string>
+	<string name="next_step">ขั้นตอนถัดไป</string>
+	<string name="finish">เสร็จสิ้น</string>
+
+	<string name="welcome">ยินดีต้อนรับ</string>
+	<string name="welcome_content">ยินดีต้อนรับสู่ %s!</string>
+	<string name="welcome_content2">ด้วยขั้นตอนง่ายๆ ไม่กี่ขั้นตอน คุณก็พร้อมเล่นเกมแล้ว คลิกที่ "%s" เพื่อเริ่มต้น</string>
+
+	<string name="install_ps3_firmware_hiht_content">เพื่อเล่นเกม คุณต้องติดตั้งเฟิร์มแวร์ PS3 (PS3UPDAT.PUP) กรุณาเลือกไฟล์เฟิร์มแวร์</string>
+	<string name="ps3_firmware_installed">ติดตั้งเฟิร์มแวร์แล้ว</string>
+	<string name="select_ps3_firmware">เลือกเฟิร์มแวร์ (PS3UPDAT.PUP)</string>
+	<string name="firmware_not_install">ยังไม่ได้ติดตั้งเฟิร์มแวร์</string>
+
+	<string name="select_ps3_iso_dir_hiht_content">โปรดระบุไดเรกทอรี PS3 ISO แอปจะสแกนและค้นหาเกมที่ใช้งานได้อัตโนมัติ คุณสามารถข้ามขั้นตอนนี้และติดตั้งไฟล์ .pkg ได้โดยตรง</string>
+	<string name="ps3_iso_dir_is_set">ตั้งค่าไดเรกทอรี PS3 ISO แล้ว</string>
+
+	<string name="font_select_hiht_content">กรุณาเลือกไฟล์ฟอนต์ (*.ttf, *.ttc, *.otf) เพื่อติดตั้ง หรือคุณสามารถใช้ฟอนต์จากเฟิร์มแวร์ PS3 ได้ (อาจมีตัวอักษรหายไป)</string>
+	<string name="custom_font_path_prefix">เส้นทางฟอนต์: </string>
+	<string name="select_gpu_driver_hiht_content">กรุณาเลือกไดรเวอร์ GPU คุณสามารถข้ามขั้นตอนนี้ได้ (เกมอาจทำงานผิดปกติ)</string>
+	<string name="custom_gpu_driver_path_prefix">เส้นทางไดรเวอร์ GPU: </string>
+
+	<string name="modify_config_hiht_content">เอมูเลเตอร์จะเลือกการตั้งค่าที่เหมาะสมที่สุดให้อัตโนมัติ แต่การตั้งค่าบางอย่างอาจทำให้อุปกรณ์ของคุณเกิดปัญหา คุณสามารถปรับเปลี่ยนการตั้งค่าได้ในภายหลัง</string>
+
+	<string name="msg_processing">กำลังประมวลผล...</string>
+	<string name="msg_failed">ล้มเหลว!</string>
+
+	<string name="emulator_settings_video_vulkan_debug">ดีบัก</string>
+	<string name="emulator_settings_miscellaneous_memory_debug_overlay">แสดงข้อมูลดีบักหน่วยความจำ</string>
+
+	<string name="vibrator_duration">ระยะเวลาการสั่น</string>
+	<string name="enable_vibrator">เปิดใช้งานการสั่น</string>
+	<string name="dynamic_joystick">จอยสติ๊กแบบไดนามิก</string>
+	<string name="disable">ปิด</string>
+
+	<string name="disable_virtual_keyboard">ปิดคีย์บอร์ดเสมือน</string>
+	<string name="joystick">จอยสติ๊ก</string>
+	<string name="dpad">D-Pad</string>
+	<string name="button">ปุ่ม</string>
+	<string name="lr">LR</string>
+	<string name="start_select">เริ่มต้น/เลือก</string>
+
+	<string name="enable_log">เปิดใช้งานบันทึกข้อมูล</string>
+	<string name="use_global_config">ใช้การตั้งค่าทั่วไป</string>
+	<string name="edit_custom_config">แก้ไขการตั้งค่าเฉพาะ</string>
+	<string name="clear">ล้างค่า</string>
+	<string name="press_a_key">กดปุ่มใดก็ได้เพื่อดำเนินการต่อ...</string>
+	<string name="game_list_loading">กำลังโหลดรายชื่อเกม...</string>
+	<string name="undecrypted_game">ไม่รองรับการรันเกมที่ไม่ได้ถอดรหัสในขณะนี้</string>
+	<string name="delete_game_data">ลบข้อมูลเกม</string>
+	<string name="delete_hdd0_install_data">ลบข้อมูลติดตั้ง hdd0</string>
+	<string name="delete_game_and_data">ลบเกมและข้อมูล</string>
+	<string name="delete_shaders_cache">ลบแคชชเดอร์</string>
+
+	<string name="set_iso_dir">ตั้งค่าไดเรกทอรี (*.iso)</string>
+	<string name="device_info">ข้อมูลอุปกรณ์</string>
+	<string name="reset_as_default">รีเซ็ตเป็นค่าเริ่มต้น</string>
+	<string name="save_and_quit">บันทึกและออก</string>
+	<string name="scale_rate">อัตราการขยาย</string>
+	<string name="open_file_manager">เปิดไฟล์แมนเนเจอร์</string>
+	<string name="installing_firmware">กำลังติดตั้งเฟิร์มแวร์...</string>
+	<string name="refresh_list">รีเฟรชรายชื่อ</string>
+	<string name="select_game">เลือกเกม</string>
+	<string name="install_firmware">ติดตั้งเฟิร์มแวร์</string>
+	<string name="install_game">ติดตั้ง RAP/PKG</string>
+	<string name="installing_game">กำลังติดตั้งเกม...</string>
+	<string name="about">เกี่ยวกับ</string>
+	<string name="quit">ออก</string>
+	<string name="update_log">บันทึกการอัปเดต</string>
+	<string name="empty_game_list">รายชื่อเกมว่างเปล่า โปรดเพิ่มเกมโดยการติดตั้ง pkg หรือตั้งค่าไดเรกทอรี *.iso</string>
+	<string name="delete">ลบ</string>
+	<string name="settings">การตั้งค่า</string>
+	<string name="gratitude">คำขอบคุณ</string>
+	<string name="gratitude_content">ขอบคุณ Ruban สำหรับการออกแบบไอคอนทั้งหมด\n\n
+	ขอบคุณ SRC267 (Sting) สำหรับการดูแล reddit/discord\n\n
+	ขอบคุณ 妖妖 สำหรับการทดสอบ\n\n
+	ขอบคุณ 再见某人 ที่บริจาค GPD XP ซึ่งมีประโยชน์มากในการทดสอบ\n\n
+	ขอบคุณ 再见某人 ที่บริจาคอุปกรณ์พัฒนาการ ซึ่งช่วยผลักดันโปรเจกต์ให้ก้าวหน้า\n\n
+	ขอบคุณผู้ที่ให้การสนับสนุนทางการเงินแก่โปรเจกต์นี้ (ในช่วงเริ่มต้น โดยเรียงตามวันที่):\n\n</string>
+	<string name="gratitude_content2">
+	พัฒนามาจาก RPCS3 ขอบคุณผู้มีส่วนร่วมทั้งหมดของโปรเจกต์ RPCS3\n\n
+การแปลโดย qwen3
+	</string>
+	<string name="key_mappers">ตัวแมปปิ้งปุ่ม</string>
+	<string name="virtual_pad_edit">แก้ไข VirtualPad</string>
+
+	<string name="left">ซ้าย</string>
+	<string name="up">ขึ้น</string>
+	<string name="right">ขวา</string>
+	<string name="down">ลง</string>
+
+	<string name="square">สแควร์</string>
+	<string name="cross">ครอส</string>
+	<string name="circle">วงกลม</string>
+	<string name="triangle">สามเหลี่ยม</string>
+
+	<string name="l1">L1</string>
+	<string name="l2">L2</string>
+	<string name="l3">L3</string>
+
+	<string name="r1">R1</string>
+	<string name="r2">R2</string>
+	<string name="r3">R3</string>
+
+	<string name="start">เริ่มต้น</string>
+	<string name="select">เลือก</string>
+	<string name="ps">PS</string>
+
+	<string name="emulator_settings_video_vulkan_custom_driver_library_path_dialog_title">เลือกไดรเวอร์แบบกำหนดเอง</string>
+	<string name="emulator_settings_video_vulkan_custom_driver_library_path_dialog_add_hint">เพิ่มไดรเวอร์กำหนดเอง (*.zip, *.so)</string>
+
+	<string name="emulator_settings_miscellaneous_custom_font_file_path_dialog_title">เลือกฟอนต์แบบกำหนดเอง</string>
+	<string name="emulator_settings_miscellaneous_custom_font_file_path_dialog_add_hint">เพิ่มฟอนต์ (*.ttf, *.ttc, *.otf)</string>
+
+	<string name="emulator_settings_core">คอร์</string>
+	<string name="emulator_settings_core_ppu_decoder">ตัวถอดรหัส PPU</string>
+	<string-array name="core_ppu_decoder_entries">
+		<item>อินเตอร์พรีเตอร์ (แบบคงที่)</item>
+		<item>รีคอมไพเลอร์ (LLVM)</item>
+	</string-array>
+	<string name="emulator_settings_core_ppu_threads">เธรด PPU</string>
+	<string name="emulator_settings_core_ppu_debug">ดีบัก PPU</string>
+	<string name="emulator_settings_core_ppu_calling_history">ประวัติการเรียก PPU</string>
+	<string name="emulator_settings_core_save_llvm_logs">บันทึกบันทึก LLVM</string>
+	<string name="emulator_settings_core_use_llvm_cpu">ใช้ CPU LLVM</string>
+	<string name="emulator_settings_core_max_llvm_compile_threads">เธรดคอมไพล์ LLVM สูงสุด</string>
+	<string name="emulator_settings_core_ppu_llvm_greedy_mode">โหมด Greedy PPU LLVM</string>
+	<string name="emulator_settings_core_llvm_precompilation">การคอมไพล์ล่วงหน้า LLVM</string>
+	<string name="emulator_settings_core_thread_scheduler_mode">โหมดตัวจัดการเธรด</string>
+	<string-array name="core_thread_scheduler_mode_entries">
+		<item>ระบบปฏิบัติการ</item>
+		<item>ความสัมพันธ์</item>
+	</string-array>
+	<string name="emulator_settings_core_set_daz_and_ftz">ตั้งค่า DAZ และ FTZ</string>
+	<string name="emulator_settings_core_spu_decoder">ตัวถอดรหัส SPU</string>
+	<string-array name="core_spu_decoder_entries">
+		<item>อินเตอร์พรีเตอร์ (แบบคงที่)</item>
+		<item>อินเตอร์พรีเตอร์ (แบบไดนามิก)</item>
+		<item>รีคอมไพเลอร์ (ASMJIT)</item>
+		<item>รีคอมไพเลอร์ (LLVM)</item>
+	</string-array>
+	<string name="emulator_settings_core_spu_reservation_busy_waiting_percentage">เปอร์เซ็นต์การรอแบบ SPU Reservation Busy</string>
+	<string name="emulator_settings_core_spu_getllar_busy_waiting_percentage">เปอร์เซ็นต์การรอแบบ SPU GETLLAR Busy</string>
+	<string name="emulator_settings_core_disable_spu_getllar_spin_optimization">ปิดการปรับปรุงประสิทธิภาพ SPU GETLLAR Spin</string>
+	<string name="emulator_settings_core_spu_debug">ดีบัก SPU</string>
+	<string name="emulator_settings_core_mfc_debug">ดีบัก MFC</string>
+	<string name="emulator_settings_core_preferred_spu_threads">เธรด SPU ที่แนะนำ</string>
+	<string name="emulator_settings_core_spu_delay_penalty">ค่าปรับดีเลย์ SPU</string>
+	<string name="emulator_settings_core_spu_loop_detection">ตรวจจับลูป SPU</string>
+	<string name="emulator_settings_core_max_spurs_threads">เธรด SPURS สูงสุด</string>
+	<string name="emulator_settings_core_spu_block_size">ขนาดบล็อก SPU</string>
+	<string-array name="core_spu_block_size_entries">
+		<item>ปลอดภัย</item>
+		<item>Mega</item>
+		<item>Giga</item>
+	</string-array>
+	<string name="emulator_settings_core_accurate_spu_dma">DMA SPU แบบแม่นยำ</string>
+	<string name="emulator_settings_core_accurate_spu_reservations">การจอง SPU แบบแม่นยำ</string>
+	<string name="emulator_settings_core_accurate_cache_line_stores">การจัดเก็บแคชไลน์แบบแม่นยำ</string>
+	<string name="emulator_settings_core_accurate_rsx_reservation_access">การเข้าถึงการจอง RSX แบบแม่นยำ</string>
+	<string name="emulator_settings_core_rsx_fifo_accuracy">ความแม่นยำ FIFO RSX</string>
+	<string-array name="core_rsx_fifo_accuracy_entries">
+		<item>เร็ว</item>
+		<item>อะตอมิก</item>
+		<item>เรียงลำดับและอะตอมิก</item>
+		<item>PS3</item>
+	</string-array>
+	<string name="emulator_settings_core_spu_verification">การตรวจสอบ SPU</string>
+	<string name="emulator_settings_core_spu_cache">แคช SPU</string>
+	<string name="emulator_settings_core_spu_profiler">โปรไฟเลอร์ SPU</string>
+	<string name="emulator_settings_core_mfc_commands_shuffling_limit">ขีดจำกัดการสลับคำสั่ง MFC</string>
+	<string name="emulator_settings_core_mfc_commands_timeout">การหมดเวลาคำสั่ง MFC</string>
+	<string name="emulator_settings_core_mfc_commands_shuffling_in_steps">สลับคำสั่ง MFC ทีละขั้น</string>
+	<string name="emulator_settings_core_enable_tsx">เปิดใช้งาน TSX</string>
+	<string-array name="core_enable_tsx_entries">
+		<item>ปิด</item>
+		<item>เปิด</item>
+		<item>บังคับ</item>
+	</string-array>
+	<string name="emulator_settings_core_xfloat_accuracy">ความแม่นยำ XFloat</string>
+	<string-array name="core_xfloat_accuracy_entries">
+		<item>แม่นยำ</item>
+		<item>ประมาณ</item>
+		<item>ผ่อนคลาย</item>
+		<item>ไม่แม่นยำ</item>
+	</string-array>
+	<string name="emulator_settings_core_accurate_ppu_128byte_reservation_op_max_length">ความยาวสูงสุดการดำเนินการจอง PPU 128 ไบต์แบบแม่นยำ</string>
+	<string name="emulator_settings_core_stub_ppu_traps">ดักจับ PPU แบบ Stub</string>
+	<string name="emulator_settings_core_precise_spu_verification">การตรวจสอบ SPU แบบแม่นยำ</string>
+	<string name="emulator_settings_core_ppu_llvm_java_mode_handling">การจัดการโหมด Java ของ PPU LLVM</string>
+	<string name="emulator_settings_core_use_accurate_dfma">ใช้ DFMA แบบแม่นยำ</string>
+	<string name="emulator_settings_core_ppu_set_saturation_bit">ตั้งค่าบิต SPU ของ PPU</string>
+	<string name="emulator_settings_core_ppu_accurate_nonjava_mode">โหมด Non-Java ของ PPU แบบแม่นยำ</string>
+	<string name="emulator_settings_core_ppu_fixup_vector_nan_values">แก้ไขค่า NaN ของเวกเตอร์ PPU</string>
+	<string name="emulator_settings_core_ppu_accurate_vector_nan_values">ค่า NaN ของเวกเตอร์ PPU แบบแม่นยำ</string>
+	<string name="emulator_settings_core_ppu_set_fpcc_bits">ตั้งค่าบิต FPCC ของ PPU</string>
+	<string name="emulator_settings_core_debug_console_mode">โหมดคอนโซลดีบัก</string>
+	<string name="emulator_settings_core_hook_static_functions">Hook ฟังก์ชันแบบสถิต</string>
+	<string name="emulator_settings_core_libraries_control">การควบคุมไลบรารี</string>
+	<string name="emulator_settings_core_hle_lwmutex">HLE lwmutex</string>
+	<string name="emulator_settings_core_spu_llvm_lower_bound">ขอบล่าง SPU LLVM</string>
+	<string name="emulator_settings_core_spu_llvm_upper_bound">ขอบบน SPU LLVM</string>
+	<string name="emulator_settings_core_tsx_transaction_first_limit">ขีดจำกัดการทำธุรกรรมแรกของ TSX</string>
+	<string name="emulator_settings_core_tsx_transaction_second_limit">ขีดจำกัดการทำธุรกรรมที่สองของ TSX</string>
+	<string name="emulator_settings_core_clocks_scale">สเกลคล็อก</string>
+	<string name="emulator_settings_core_spu_wakeup_delay">ดีเลย์การตื่น SPU</string>
+	<string name="emulator_settings_core_spu_wakeup_delay_thread_mask">มาสก์เธรดดีเลย์การตื่น SPU</string>
+	<string name="emulator_settings_core_max_cpu_preempt_count">จำนวนการแย่ง CPU สูงสุด</string>
+	<string name="emulator_settings_core_allow_rsx_cpu_preemptions">อนุญาตการแย่ง CPU RSX</string>
+	<string name="emulator_settings_core_sleep_timers_accuracy">ความแม่นยำของตัวจับเวลาการนอนหลับ</string>
+	<string-array name="core_sleep_timers_accuracy_entries">
+		<item>ตามโฮสต์</item>
+		<item>เฉพาะ Usleep</item>
+		<item>ทุกตัวจับเวลา</item>
+	</string-array>
+	<string name="emulator_settings_core_usleep_time_addend">ค่าเพิ่มเติมของเวลา Usleep</string>
+	<string name="emulator_settings_core_performance_report_threshold">เกณฑ์รายงานประสิทธิภาพ</string>
+	<string name="emulator_settings_core_enable_performance_report">เปิดใช้งานรายงานประสิทธิภาพ</string>
+	<string name="emulator_settings_core_assume_external_debugger">สมมติว่ามีดีบักเกอร์ภายนอก</string>
+	<string name="emulator_settings_video">วิดีโอ</string>
+	<string name="emulator_settings_video_vertex_buffer_upload_mode">โหมดอัปโหลดบัฟเฟอร์เวอร์เท็กซ์</string>
+	<string-array name="video_vertex_buffer_upload_mode_entries">
+		<item>อัตโนมัติ</item>
+		<item>มุมมองบัฟเฟอร์</item>
+		<item>บัฟเฟอร์</item>
+	</string-array>
+	<string name="emulator_settings_video_texture_upload_mode">โหมดอัปโหลดเท็กซ์เจอร์</string>
+	<string-array name="video_texture_upload_mode_entries">
+		<item>CPU</item>
+		<item>GPU</item>
+	</string-array>
+	<string name="emulator_settings_video_renderer">เรนเดอร์</string>
+	<string-array name="video_renderer_entries">
+		<item>ว่าง</item>
+		<item>Vulkan</item>
+	</string-array>
+	<string name="emulator_settings_video_resolution">ความละเอียด</string>
+	<string-array name="video_resolution_entries">
+		<item>1920x1080</item>
+		<item>1920x1080i</item>
+		<item>1280x720</item>
+		<item>720x480</item>
+		<item>720x480i</item>
+		<item>720x576</item>
+		<item>720x576i</item>
+		<item>1600x1080</item>
+		<item>1440x1080</item>
+		<item>1280x1080</item>
+		<item>960x1080</item>
+	</string-array>
+	<string name="emulator_settings_video_aspect_ratio">อัตราส่วนภาพ</string>
+	<string-array name="video_aspect_ratio_entries">
+		<item>4:3</item>
+		<item>16:9</item>
+	</string-array>
+	<string name="emulator_settings_video_frame_limit">ขีดจำกัดเฟรม</string>
+	<string-array name="video_frame_limit_entries">
+		<item>ปิด</item>
+		<item>30</item>
+		<item>50</item>
+		<item>60</item>
+		<item>120</item>
+		<item>จอแสดงผล</item>
+		<item>อัตโนมัติ</item>
+		<item>PS3 ดั้งเดิม</item>
+		<item>ไม่จำกัด</item>
+	</string-array>
+	<string name="emulator_settings_video_second_frame_limit">ขีดจำกัดเฟรมที่สอง</string>
+	<string name="emulator_settings_video_msaa">MSAA</string>
+	<string-array name="video_msaa_entries">
+		<item>ปิด</item>
+		<item>อัตโนมัติ</item>
+	</string-array>
+	<string name="emulator_settings_video_shader_mode">โหมดชเดอร์</string>
+	<string-array name="video_shader_mode_entries">
+		<item>คอมไพล์ชเดอร์</item>
+		<item>คอมไพล์ชเดอร์แบบอะซิงค์</item>
+		<item>อะซิงค์พร้อมอินเตอร์พรีเตอร์ชเดอร์</item>
+		<item>อินเตอร์พรีเตอร์ชเดอร์เท่านั้น</item>
+	</string-array>
+	<string name="emulator_settings_video_shader_precision">ความแม่นยำชเดอร์</string>
+	<string-array name="video_shader_precision_entries">
+		<item>สูงสุด</item>
+		<item>สูง</item>
+		<item>ต่ำ</item>
+		<item>อัตโนมัติ</item>
+	</string-array>
+	<string name="emulator_settings_video_write_color_buffers">เขียนบัฟเฟอร์สี</string>
+	<string name="emulator_settings_video_write_depth_buffer">เขียนบัฟเฟอร์ความลึก</string>
+	<string name="emulator_settings_video_read_color_buffers">อ่านบัฟเฟอร์สี</string>
+	<string name="emulator_settings_video_read_depth_buffer">อ่านบัฟเฟอร์ความลึก</string>
+	<string name="emulator_settings_video_handle_rsx_memory_tiling">จัดการการจัดเรียงเมมโมรี่ RSX</string>
+	<string name="emulator_settings_video_log_shader_programs">บันทึกโปรแกรมชเดอร์</string>
+	<string name="emulator_settings_video_vsync">VSync</string>
+	<string name="emulator_settings_video_debug_output">เอาต์พุตดีบัก</string>
+	<string name="emulator_settings_video_debug_overlay">แสดงข้อมูลดีบัก</string>
+	<string name="emulator_settings_video_renderdoc_compatibility_mode">โหมดความเข้ากันได้ Renderdoc</string>
+	<string name="emulator_settings_video_use_gpu_texture_scaling">ใช้การขยายเท็กซ์เจอร์ GPU</string>
+	<string name="emulator_settings_video_stretch_to_display_area">ยืดให้เต็มพื้นที่แสดงผล</string>
+	<string name="emulator_settings_video_force_high_precision_z_buffer">บังคับใช้บัฟเฟอร์ Z ความแม่นยำสูง</string>
+	<string name="emulator_settings_video_strict_rendering_mode">โหมดเรนเดอร์แบบเข้มงวด</string>
+	<string name="emulator_settings_video_disable_zcull_occlusion_queries">ปิดการใช้งานคำขอ ZCull Occlusion</string>
+	<string name="emulator_settings_video_disable_video_output">ปิดการใช้งานเอาต์พุตวิดีโอ</string>
+	<string name="emulator_settings_video_disable_vertex_cache">ปิดการใช้งานแคชเวอร์เท็กซ์</string>
+	<string name="emulator_settings_video_disable_fifo_reordering">ปิดการเรียงลำดับ FIFO</string>
+	<string name="emulator_settings_video_enable_frame_skip">เปิดใช้งานการข้ามเฟรม</string>
+	<string name="emulator_settings_video_force_cpu_blit">บังคับใช้ CPU Blit</string>
+	<string name="emulator_settings_video_disable_ondisk_shader_cache">ปิดการใช้งานแคชชเดอร์บนดิสก์</string>
+	<string name="emulator_settings_video_disable_vulkan_memory_allocator">ปิดการใช้งาน Vulkan Memory Allocator</string>
+	<string name="emulator_settings_video_use_full_rgb_output_range">ใช้ช่วงเอาต์พุต RGB แบบเต็ม</string>
+	<string name="emulator_settings_video_strict_texture_flushing">การล้างเท็กซ์เจอร์แบบเข้มงวด</string>
+	<string name="emulator_settings_video_multithreaded_rsx">RSX แบบหลายเธรด</string>
+	<string name="emulator_settings_video_relaxed_zcull_sync">การซิงค์ ZCULL แบบผ่อนคลาย</string>
+	<string name="emulator_settings_video_force_hardware_msaa_resolve">บังคับใช้การแก้ไข MSAA แบบฮาร์ดแวร์</string>
+	<string name="emulator_settings_video_3d_display_mode">โหมดการแสดงผล 3D</string>
+	<string-array name="video_3d_display_mode_entries">
+		<item>ปิด</item>
+		<item>Side-by-Side</item>
+		<item>Over-Under</item>
+		<item>Interlaced</item>
+		<item>Anaglyph Red-Green</item>
+		<item>Anaglyph Red-Blue</item>
+		<item>Anaglyph Red-Cyan</item>
+		<item>Anaglyph Magenta-Cyan</item>
+		<item>Anaglyph Trioscopic</item>
+		<item>Anaglyph Amber-Blue</item>
+	</string-array>
+	<string name="emulator_settings_video_debug_program_analyser">วิเคราะห์โปรแกรมดีบัก</string>
+	<string name="emulator_settings_video_accurate_zcull_stats">สถิติ ZCULL แบบแม่นยำ</string>
+	<string name="emulator_settings_video_consecutive_frames_to_draw">จำนวนเฟรมที่จะวาดต่อเนื่อง</string>
+	<string name="emulator_settings_video_consecutive_frames_to_skip">จำนวนเฟรมที่จะข้ามต่อเนื่อง</string>
+	<string name="emulator_settings_video_resolution_scale">การขยายความละเอียด</string>
+	<string name="emulator_settings_video_anisotropic_filter_override">การตั้งค่า Anisotropic Filter</string>
+	<string name="emulator_settings_video_texture_lod_bias_addend">ค่าเพิ่มเติม LOD Bias ของเท็กซ์เจอร์</string>
+	<string name="emulator_settings_video_minimum_scalable_dimension">มิติที่สามารถขยายได้ขั้นต่ำ</string>
+	<string name="emulator_settings_video_shader_compiler_threads">เธรดคอมไพล์ชเดอร์</string>
+	<string name="emulator_settings_video_driver_recovery_timeout">เวลาหมดอายุการกู้คืนไดรเวอร์</string>
+	<string name="emulator_settings_video_driver_wakeup_delay">ดีเลย์การตื่นของไดรเวอร์</string>
+	<string name="emulator_settings_video_vblank_rate">อัตราการ Vblank</string>
+	<string name="emulator_settings_video_vblank_ntsc_fixup">การแก้ไข Vblank NTSC</string>
+	<string name="emulator_settings_video_decr_memory_layout">การจัดวางเมมโมรี่ DECR</string>
+	<string name="emulator_settings_video_allow_host_gpu_labels">อนุญาต GPU Labels ของโฮสต์</string>
+	<string name="emulator_settings_video_disable_msl_fast_math">ปิดการใช้งาน MSL Fast Math</string>
+	<string name="emulator_settings_video_disable_asynchronous_memory_manager">ปิดการใช้งาน Memory Manager แบบอะซิงค์</string>
+	<string name="emulator_settings_video_output_scaling_mode">โหมดการขยายเอาต์พุต</string>
+	<string-array name="video_output_scaling_mode_entries">
+		<item>Nearest</item>
+		<item>Bilinear</item>
+		<item>FidelityFX Super Resolution</item>
+	</string-array>
+	<string name="emulator_settings_video_use_bgra_format">ใช้รูปแบบ BGRA</string>
+	<string name="emulator_settings_video_force_convert_texture">บังคับแปลงเท็กซ์เจอร์</string>
+	<string name="emulator_settings_video_vulkan">Vulkan</string>
+	<string name="emulator_settings_video_vulkan_adapter">อะแดปเตอร์</string>
+	<string name="emulator_settings_video_vulkan_force_fifo_present_mode">บังคับโหมด FIFO Present</string>
+	<string name="emulator_settings_video_vulkan_force_primitive_restart_flag">บังคับใช้ฟลักก์ Primitive Restart</string>
+	<string name="emulator_settings_video_vulkan_exclusive_fullscreen_mode">โหมดเต็มหน้าจอแบบเฉพาะ</string>
+	<string-array name="video_vulkan_exclusive_fullscreen_mode_entries">
+		<item>อัตโนมัติ</item>
+		<item>ปิด</item>
+		<item>เปิด</item>
+	</string-array>
+	<string name="emulator_settings_video_vulkan_asynchronous_texture_streaming_2">การสตรีมเท็กซ์เจอร์แบบอะซิงค์ 2</string>
+	<string name="emulator_settings_video_vulkan_fidelityfx_cas_sharpening_intensity">ความเข้ม FidelityFX CAS Sharpening</string>
+	<string name="emulator_settings_video_vulkan_asynchronous_queue_scheduler">ตัวจัดตารางคิวอะซิงค์</string>
+	<string-array name="video_vulkan_asynchronous_queue_scheduler_entries">
+		<item>ปลอดภัย</item>
+		<item>เร็ว</item>
+	</string-array>
+	<string name="emulator_settings_video_vulkan_vram_allocation_limit">ขีดจำกัดการจัดสรร VRAM (MB)</string>
+
+	<string name="emulator_settings_video_vulkan_use_custom_driver">ใช้ไดรเวอร์แบบกำหนดเอง</string>
+
+	<string name="emulator_settings_video_vulkan_custom_driver_library_path">เส้นทางไลบรารีไดรเวอร์แบบกำหนดเอง</string>
+
+	<string name="emulator_settings_video_vulkan_custom_driver_force_max_clocks">บังคับใช้ความเร็วสูงสุดของไดรเวอร์</string>
+
+	<string name="emulator_settings_video_performance_overlay">แสดงข้อมูลประสิทธิภาพ</string>
+	<string name="emulator_settings_video_performance_overlay_enabled">เปิดใช้งาน</string>
+	<string name="emulator_settings_video_performance_overlay_enable_framerate_graph">เปิดใช้งานกราฟเฟรมเรต</string>
+	<string name="emulator_settings_video_performance_overlay_enable_frametime_graph">เปิดใช้งานกราฟเฟรมไทม์</string>
+	<string name="emulator_settings_video_performance_overlay_framerate_datapoints">จุดข้อมูลเฟรมเรต</string>
+	<string name="emulator_settings_video_performance_overlay_frametime_datapoints">จุดข้อมูลเฟรมไทม์</string>
+	<string name="emulator_settings_video_performance_overlay_detail_level">ระดับรายละเอียด</string>
+	<string-array name="video_performance_overlay_detail_level_entries">
+		<item>ไม่มี</item>
+		<item>ขั้นต่ำ</item>
+		<item>ต่ำ</item>
+		<item>ปานกลาง</item>
+		<item>สูง</item>
+	</string-array>
+	<string name="emulator_settings_video_performance_overlay_framerate_graph_detail_level">ระดับรายละเอียดกราฟเฟรมเรต</string>
+	<string-array name="video_performance_overlay_framerate_graph_detail_level_entries">
+		<item>ขั้นต่ำ</item>
+		<item>แสดงค่า min และ max</item>
+		<item>แสดงค่า 1% และค่าเฉลี่ย</item>
+		<item>ทั้งหมด</item>
+	</string-array>
+	<string name="emulator_settings_video_performance_overlay_frametime_graph_detail_level">ระดับรายละเอียดกราฟเฟรมไทม์</string>
+	<string-array name="video_performance_overlay_frametime_graph_detail_level_entries">
+		<item>ขั้นต่ำ</item>
+		<item>แสดงค่า min และ max</item>
+		<item>แสดงค่า 1% และค่าเฉลี่ย</item>
+		<item>ทั้งหมด</item>
+	</string-array>
+	<string name="emulator_settings_video_performance_overlay_metrics_update_interval">ช่วงเวลาอัปเดตเมตริก (มิลลิวินาที)</string>
+	<string name="emulator_settings_video_performance_overlay_font_size">ขนาดฟอนต์ (พิกเซล)</string>
+	<string name="emulator_settings_video_performance_overlay_position">ตำแหน่ง</string>
+	<string-array name="video_performance_overlay_position_entries">
+		<item>มุมบนซ้าย</item>
+		<item>มุมบนขวา</item>
+		<item>มุมล่างซ้าย</item>
+		<item>มุมล่างขวา</item>
+	</string-array>
+	<string name="emulator_settings_video_performance_overlay_font">ฟอนต์</string>
+	<string name="emulator_settings_video_performance_overlay_horizontal_margin">ระยะขอบแนวนอน (พิกเซล)</string>
+	<string name="emulator_settings_video_performance_overlay_vertical_margin">ระยะขอบแนวตั้ง (พิกเซล)</string>
+	<string name="emulator_settings_video_performance_overlay_center_horizontally">จัดกึ่งกลางแนวนอน</string>
+	<string name="emulator_settings_video_performance_overlay_center_vertically">จัดกึ่งกลางแนวตั้ง</string>
+	<string name="emulator_settings_video_performance_overlay_opacity">ความทึบ (%)</string>
+	<string name="emulator_settings_video_performance_overlay_body_color">สีพื้นหลัง (hex)</string>
+	<string name="emulator_settings_video_performance_overlay_body_background">สีพื้นหลัง (hex)</string>
+	<string name="emulator_settings_video_performance_overlay_title_color">สีหัวข้อ (hex)</string>
+	<string name="emulator_settings_video_performance_overlay_title_background">สีพื้นหลังหัวข้อ (hex)</string>
+	<string name="emulator_settings_video_shader_loading_dialog">ไดอะล็อกโหลดชเดอร์</string>
+	<string name="emulator_settings_video_shader_loading_dialog_allow_custom_background">อนุญาตพื้นหลังแบบกำหนดเอง</string>
+	<string name="emulator_settings_video_shader_loading_dialog_darkening_effect_strength">ความเข้มของเอฟเฟกต์มืด</string>
+	<string name="emulator_settings_video_shader_loading_dialog_blur_effect_strength">ความเข้มของเอฟเฟกต์เบลอ</string>
+	<string name="emulator_settings_audio">เสียง</string>
+	<string name="emulator_settings_audio_renderer">เรนเดอร์</string>
+	<string-array name="audio_renderer_entries">
+		<item>ว่าง</item>
+		<item>Cubeb</item>
+	</string-array>
+	<string name="emulator_settings_audio_audio_provider">ผู้ให้บริการเสียง</string>
+	<string-array name="audio_audio_provider_entries">
+		<item>ไม่มี</item>
+		<item>CellAudio</item>
+		<item>RSXAudio</item>
+	</string-array>
+	<string name="emulator_settings_audio_rsxaudio_avport">พอร์ต AV RSXAudio</string>
+	<string-array name="audio_rsxaudio_avport_entries">
+		<item>HDMI 0</item>
+		<item>HDMI 1</item>
+		<item>AV multiout</item>
+		<item>SPDIF 0</item>
+		<item>SPDIF 1</item>
+	</string-array>
+	<string name="emulator_settings_audio_dump_to_file">บันทึกลงไฟล์</string>
+	<string name="emulator_settings_audio_convert_to_16_bit">แปลงเป็น 16 บิต</string>
+	<string name="emulator_settings_audio_audio_format">รูปแบบเสียง</string>
+	<string-array name="audio_audio_format_entries">
+		<item>สเตอริโอ</item>
+		<item>Surround 5.1</item>
+		<item>Surround 7.1</item>
+		<item>อัตโนมัติ</item>
+		<item>กำหนดเอง</item>
+	</string-array>
+	<string name="emulator_settings_audio_audio_formats">รูปแบบเสียง</string>
+	<string name="emulator_settings_audio_audio_channel_layout">การจัดวางช่องเสียง</string>
+	<string-array name="audio_audio_channel_layout_entries">
+		<item>อัตโนมัติ</item>
+		<item>โมโน</item>
+		<item>สเตอริโอ</item>
+		<item>สเตอริโอ LFE</item>
+		<item>Quadraphonic</item>
+		<item>Quadraphonic LFE</item>
+		<item>Surround 5.1</item>
+		<item>Surround 7.1</item>
+	</string-array>
+	<string name="emulator_settings_audio_audio_device">อุปกรณ์เสียง</string>
+	<string name="emulator_settings_audio_master_volume">ระดับเสียงหลัก</string>
+	<string name="emulator_settings_audio_enable_buffering">เปิดใช้งานการจัดเก็บชั่วคราว</string>
+	<string name="emulator_settings_audio_desired_audio_buffer_duration">ระยะเวลาการจัดเก็บเสียงที่ต้องการ</string>
+	<string name="emulator_settings_audio_enable_time_stretching">เปิดใช้งานการยืดเวลา</string>
+	<string name="emulator_settings_audio_disable_sampling_skip">ปิดการข้ามการสุ่มตัวอย่าง</string>
+	<string name="emulator_settings_audio_time_stretching_threshold">เกณฑ์การยืดเวลา</string>
+	<string name="emulator_settings_audio_microphone_type">ประเภทไมโครโฟน</string>
+	<string-array name="audio_microphone_type_entries">
+		<item>ว่าง</item>
+		<item>พื้นฐาน</item>
+		<item>SingStar</item>
+		<item>Real SingStar</item>
+		<item>Rocksmith</item>
+	</string-array>
+	<string name="emulator_settings_audio_microphone_devices">อุปกรณ์ไมโครโฟน</string>
+	<string name="emulator_settings_audio_music_handler">ตัวจัดการเพลง</string>
+	<string-array name="audio_music_handler_entries">
+		<item>ว่าง</item>
+		<item>Qt</item>
+	</string-array>
+	<string name="emulator_settings_input_output">อินพุต/เอาต์พุต</string>
+	<string name="emulator_settings_input_output_keyboard">คีย์บอร์ด</string>
+	<string-array name="input_output_keyboard_entries">
+		<item>ว่าง</item>
+		<item>พื้นฐาน</item>
+	</string-array>
+	<string name="emulator_settings_input_output_mouse">เม้าส์</string>
+	<string-array name="input_output_mouse_entries">
+		<item>ว่าง</item>
+		<item>พื้นฐาน</item>
+		<item>Raw</item>
+	</string-array>
+	<string name="emulator_settings_input_output_camera">กล้อง</string>
+	<string-array name="input_output_camera_entries">
+		<item>ว่าง</item>
+		<item>Fake</item>
+		<item>Qt</item>
+	</string-array>
+	<string name="emulator_settings_input_output_camera_type">ประเภทกล้อง</string>
+	<string-array name="input_output_camera_type_entries">
+		<item>ไม่ทราบ</item>
+		<item>EyeToy</item>
+		<item>PS Eye</item>
+		<item>UVC 1.1</item>
+	</string-array>
+	<string name="emulator_settings_input_output_camera_flip">พลิกกล้อง</string>
+	<string-array name="input_output_camera_flip_entries">
+		<item>ไม่มี</item>
+		<item>แนวนอน</item>
+		<item>แนวตั้ง</item>
+		<item>ทั้งสอง</item>
+	</string-array>
+	<string name="emulator_settings_input_output_camera_id">ID กล้อง</string>
+	<string name="emulator_settings_input_output_move">ย้าย</string>
+	<string-array name="input_output_move_entries">
+		<item>ว่าง</item>
+		<item>Fake</item>
+		<item>เม้าส์</item>
+		<item>เม้าส์ Raw</item>
+	</string-array>
+	<string name="emulator_settings_input_output_buzz_emulated_controller">คอนโทรลเลอร์ Buzz แบบจำลอง</string>
+	<string-array name="input_output_buzz_emulated_controller_entries">
+		<item>ว่าง</item>
+		<item>1 คอนโทรลเลอร์</item>
+		<item>2 คอนโทรลเลอร์</item>
+	</string-array>
+	<string name="emulator_settings_input_output_turntable_emulated_controller">คอนโทรลเลอร์ Turntable แบบจำลอง</string>
+	<string-array name="input_output_turntable_emulated_controller_entries">
+		<item>ว่าง</item>
+		<item>1 คอนโทรลเลอร์</item>
+		<item>2 คอนโทรลเลอร์</item>
+	</string-array>
+	<string name="emulator_settings_input_output_ghltar_emulated_controller">คอนโทรลเลอร์ GHLtar แบบจำลอง</string>
+	<string-array name="input_output_ghltar_emulated_controller_entries">
+		<item>ว่าง</item>
+		<item>1 คอนโทรลเลอร์</item>
+		<item>2 คอนโทรลเลอร์</item>
+	</string-array>
+	<string name="emulator_settings_input_output_pad_handler_mode">โหมดตัวจัดการจอยสติ๊ก</string>
+	<string-array name="input_output_pad_handler_mode_entries">
+		<item>เธรดเดียว</item>
+		<item>หลายเธรด</item>
+	</string-array>
+	<string name="emulator_settings_input_output_keep_pads_connected">รักษาการเชื่อมต่อจอยสติ๊ก</string>
+	<string name="emulator_settings_input_output_pad_handler_sleep">การพักตัวจัดการจอยสติ๊ก (ไมโครวินาที)</string>
+	<string name="emulator_settings_input_output_background_input_enabled">เปิดใช้งานอินพุตพื้นหลัง</string>
+	<string name="emulator_settings_input_output_show_move_cursor">แสดงเคอร์เซอร์ PS Move</string>
+	<string name="emulator_settings_input_output_lock_overlay_input_to_player_one">ล็อกอินพุต overlay ไว้กับผู้เล่น 1</string>
+	<string name="emulator_settings_input_output_emulated_midi_devices">อุปกรณ์ MIDI แบบจำลอง</string>
+	<string name="emulator_settings_input_output_load_sdl_gamecontroller_mappings">โหลด SDL GameController Mappings</string>
+	<string name="emulator_settings_input_output_io_debug_overlay">แสดงข้อมูลดีบัก IO</string>
+	<string name="emulator_settings_system">ระบบ</string>
+	<string name="emulator_settings_system_license_area">พื้นที่ใบอนุญาต</string>
+	<string-array name="system_license_area_entries">
+		<item>SCEJ</item>
+		<item>SCEA</item>
+		<item>SCEE</item>
+		<item>SCEH</item>
+		<item>SCEK</item>
+		<item>SCH</item>
+	</string-array>
+	<string name="emulator_settings_system_language">ภาษา</string>
+	<string-array name="system_language_entries">
+		<item>ญี่ปุ่น</item>
+		<item>อังกฤษ (สหรัฐ)</item>
+		<item>ฝรั่งเศส</item>
+		<item>สเปน</item>
+		<item>เยอรมัน</item>
+		<item>อิตาลี</item>
+		<item>ดัตช์</item>
+		<item>โปรตุเกส (โปรตุเกส)</item>
+		<item>รัสเซีย</item>
+		<item>เกาหลี</item>
+		<item>จีน (ตัวเต็ม)</item>
+		<item>จีน (ตัวย่อ)</item>
+		<item>ฟินแลนด์</item>
+		<item>สวีเดน</item>
+		<item>เดนมาร์ก</item>
+		<item>นอร์เวย์</item>
+		<item>โปแลนด์</item>
+		<item>โปรตุเกส (บราซิล)</item>
+		<item>อังกฤษ (สหราชอาณาจักร)</item>
+		<item>ตุรกี</item>
+	</string-array>
+	<string name="emulator_settings_system_keyboard_type">ประเภทคีย์บอร์ด</string>
+	<string-array name="system_keyboard_type_entries">
+		<item>คีย์บอร์ดภาษาอังกฤษ (มาตรฐานสหรัฐ)</item>
+		<item>คีย์บอร์ดภาษาญี่ปุ่น</item>
+		<item>คีย์บอร์ดภาษาญี่ปุ่น (โหมด Kana)</item>
+		<item>คีย์บอร์ดภาษาเยอรมัน</item>
+		<item>คีย์บอร์ดภาษาสเปน</item>
+		<item>คีย์บอร์ดภาษาฝรั่งเศส</item>
+		<item>คีย์บอร์ดภาษาอิตาลี</item>
+		<item>คีย์บอร์ดภาษาดัตช์</item>
+		<item>คีย์บอร์ดภาษาโปรตุเกส (โปรตุเกส)</item>
+		<item>คีย์บอร์ดภาษากรัสเซีย</item>
+		<item>คีย์บอร์ดภาษาอังกฤษ (มาตรฐานสหราชอาณาจักร)</item>
+		<item>คีย์บอร์ดภาษาเกาหลี</item>
+		<item>คีย์บอร์ดภาษาเดนมาร์ก</item>
+		<item>คีย์บอร์ดภาษาสวีเดน</item>
+		<item>คีย์บอร์ดภาษาจีน (ตัวเต็ม)</item>
+		<item>คีย์บอร์ดภาษาจีน (ตัวย่อ)</item>
+		<item>คีย์บอร์ดภาษาฝรั่งเศส (สวิตเซอร์แลนด์)</item>
+		<item>คีย์บอร์ดภาษาเยอรมัน (สวิตเซอร์แลนด์)</item>
+		<item>คีย์บอร์ดภาษาฝรั่งเศส (แคนาดา)</item>
+		<item>คีย์บอร์ดภาษาฝรั่งเศส (เบลเยียม)</item>
+		<item>คีย์บอร์ดภาษาโปแลนด์</item>
+		<item>คีย์บอร์ดภาษาโปรตุเกส (บราซิล)</item>
+		<item>คีย์บอร์ดภาษาตุรกี</item>
+	</string-array>
+	<string name="emulator_settings_system_enter_button_assignment">ปุ่ม Enter</string>
+	<string-array name="system_enter_button_assignment_entries">
+		<item>Enter ด้วยวงกลม</item>
+		<item>Enter ด้วยกากบาท</item>
+	</string-array>
+	<string name="emulator_settings_system_console_time_offset">ชดเชยเวลาคอนโซล (วินาที)</string>
+	<string name="emulator_settings_system_system_name">ชื่อระบบ</string>
+	<string name="emulator_settings_system_psid_high">PSID สูง</string>
+	<string name="emulator_settings_system_psid_low">PSID ต่ำ</string>
+	<string name="emulator_settings_system_hdd_model_name">ชื่อรุ่น HDD</string>
+	<string name="emulator_settings_system_hdd_serial_number">หมายเลขซีเรียล HDD</string>
+	<string name="emulator_settings_net">เน็ตเวิร์ก</string>
+	<string name="emulator_settings_net_internet_enabled">เปิดใช้งานอินเทอร์เน็ต</string>
+	<string-array name="net_internet_enabled_entries">
+		<item>ตัดการเชื่อมต่อ</item>
+		<item>เชื่อมต่อ</item>
+	</string-array>
+	<string name="emulator_settings_net_ip_address">ที่อยู่ IP</string>
+	<string name="emulator_settings_net_bind_address">ที่อยู่ที่ผูกไว้</string>
+	<string name="emulator_settings_net_dns_address">ที่อยู่ DNS</string>
+	<string name="emulator_settings_net_ip_swap_list">รายการสลับ IP</string>
+	<string name="emulator_settings_net_upnp_enabled">เปิดใช้งาน UPNP</string>
+	<string name="emulator_settings_net_psn_status">สถานะ PSN</string>
+	<string-array name="net_psn_status_entries">
+		<item>ตัดการเชื่อมต่อ</item>
+		<item>เลียนแบบ</item>
+		<item>RPCN</item>
+	</string-array>
+	<string name="emulator_settings_net_psn_country">ประเทศ PSN</string>
+	<string name="emulator_settings_savestate">สถานะการบันทึก</string>
+	<string name="emulator_settings_savestate_start_paused">เริ่มต้นแบบหยุดชั่วคราว</string>
+	<string name="emulator_settings_savestate_suspend_emulation_savestate_mode">โหมดหยุดชั่วคราวเอมูเลเตอร์</string>
+	<string name="emulator_settings_savestate_compatible_savestate_mode">โหมดสถานะบันทึกแบบเข้ากันได้</string>
+	<string name="emulator_settings_savestate_inspection_mode_savestates">โหมดตรวจสอบสถานะบันทึก</string>
+	<string name="emulator_settings_savestate_save_disc_game_data">บันทึกข้อมูลเกมดิสก์</string>
+	<string name="emulator_settings_miscellaneous">อื่นๆ</string>
+	<string name="emulator_settings_miscellaneous_automatically_start_games_after_boot">เริ่มเกมโดยอัตโนมัติหลังบูต</string>
+	<string name="emulator_settings_miscellaneous_exit_rpcs3_when_process_finishes">ออกจาก RPCS3 เมื่อกระบวนการเสร็จสิ้น</string>
+	<string name="emulator_settings_miscellaneous_pause_emulation_on_rpcs3_focus_loss">หยุดชั่วคราวเมื่อ RPCS3 ไม่ได้โฟกัส</string>
+	<string name="emulator_settings_miscellaneous_start_games_in_fullscreen_mode">เริ่มเกมในโหมดเต็มหน้าจอ</string>
+	<string name="emulator_settings_miscellaneous_prevent_display_sleep_while_running_games">ป้องกันการพักหน้าจอขณะเล่นเกม</string>
+	<string name="emulator_settings_miscellaneous_show_trophy_popups">แสดงป๊อปอัปถ้วยรางวัล</string>
+	<string name="emulator_settings_miscellaneous_show_rpcn_popups">แสดงป๊อปอัป RPCN</string>
+	<string name="emulator_settings_miscellaneous_show_shader_compilation_hint">แสดงคำใบ้การคอมไพล์ชเดอร์</string>
+	<string name="emulator_settings_miscellaneous_show_ppu_compilation_hint">แสดงคำใบ้การคอมไพล์ PPU</string>
+	<string name="emulator_settings_miscellaneous_show_pressure_intensity_toggle_hint">แสดงคำใบ้การสลับความเข้มของการกด</string>
+	<string name="emulator_settings_miscellaneous_show_analog_limiter_toggle_hint">แสดงคำใบ้การสลับตัวจำกัดอนาล็อก</string>
+	<string name="emulator_settings_miscellaneous_show_mouse_and_keyboard_toggle_hint">แสดงคำใบ้การสลับเม้าส์และคีย์บอร์ด</string>
+	<string name="emulator_settings_miscellaneous_show_autosave_autoload_hint">แสดงคำใบ้การบันทึก/โหลดอัตโนมัติ</string>
+	<string name="emulator_settings_miscellaneous_use_native_user_interface">ใช้ UI ดั้งเดิม</string>
+	<string name="emulator_settings_miscellaneous_gdb_server">เซิร์ฟเวอร์ GDB</string>
+	<string name="emulator_settings_miscellaneous_silence_all_logs">ปิดบันทึกข้อมูลทั้งหมด</string>
+	<string name="emulator_settings_miscellaneous_window_title_format">รูปแบบหัวข้อหน้าต่าง</string>
+	<string name="emulator_settings_miscellaneous_pause_emulation_during_home_menu">หยุดชั่วคราวเมื่อใช้งานเมนูโฮม</string>
+
+	<string name="emulator_settings_miscellaneous_font_file_selection">การเลือกไฟล์ฟอนต์</string>
+	<string-array name="miscellaneous_font_file_selection_entries">
+		<item>จากเฟิร์มแวร์</item>
+		<item>กำหนดเอง</item>
+	</string-array>
+	<string name="emulator_settings_miscellaneous_custom_font_file_path">เส้นทางไฟล์ฟอนต์กำหนดเอง</string>
+	<string name="emulator_settings_miscellaneous_font_size">ขนาดฟอนต์</string>
+
+	<string name="INVALID">ไม่ถูกต้อง</string>
+	<string name="RSX_OVERLAYS_TROPHY_BRONZE">คุณได้รับถ้วยรางวัลบรอนซ์\n%0</string>
+	<string name="RSX_OVERLAYS_TROPHY_SILVER">คุณได้รับถ้วยรางวัลเงิน\n%0</string>
+	<string name="RSX_OVERLAYS_TROPHY_GOLD">คุณได้รับถ้วยรางวัลทอง\n%0</string>
+	<string name="RSX_OVERLAYS_TROPHY_PLATINUM">คุณได้รับถ้วยรางวัลแพลตินัม\n%0</string>
+	<string name="RSX_OVERLAYS_COMPILING_SHADERS">กำลังคอมไพล์ชเดอร์</string>
+	<string name="RSX_OVERLAYS_COMPILING_PPU_MODULES">กำลังคอมไพล์โมดูล PPU</string>
+	<string name="RSX_OVERLAYS_MSG_DIALOG_YES">ใช่</string>
+	<string name="RSX_OVERLAYS_MSG_DIALOG_NO">ไม่</string>
+	<string name="RSX_OVERLAYS_MSG_DIALOG_CANCEL">ย้อนกลับ</string>
+	<string name="RSX_OVERLAYS_MSG_DIALOG_OK">ตกลง</string>
+	<string name="RSX_OVERLAYS_SAVE_DIALOG_TITLE">ไดอะล็อกบันทึก</string>
+	<string name="RSX_OVERLAYS_SAVE_DIALOG_DELETE">ลบ</string>
+	<string name="RSX_OVERLAYS_SAVE_DIALOG_LOAD">โหลด</string>
+	<string name="RSX_OVERLAYS_SAVE_DIALOG_SAVE">บันทึก</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_ACCEPT">ตกลง</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_CANCEL">ย้อนกลับ</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_SPACE">เว้นวรรค</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_BACKSPACE">ลบด้านหลัง</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_SHIFT">Shift</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_ENTER_TEXT">[ป้อนข้อความ]</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_ENTER_PASSWORD">[ป้อนรหัสผ่าน]</string>
+	<string name="RSX_OVERLAYS_MEDIA_DIALOG_TITLE">เลือกสื่อ</string>
+	<string name="RSX_OVERLAYS_MEDIA_DIALOG_TITLE_PHOTO_IMPORT">เลือกรูปภาพเพื่อนำเข้า</string>
+	<string name="RSX_OVERLAYS_MEDIA_DIALOG_EMPTY">ไม่พบสื่อ</string>
+	<string name="RSX_OVERLAYS_LIST_SELECT">ตกลง</string>
+	<string name="RSX_OVERLAYS_LIST_CANCEL">ย้อนกลับ</string>
+	<string name="RSX_OVERLAYS_LIST_DENY">ปฏิเสธ</string>
+	<string name="RSX_OVERLAYS_PRESSURE_INTENSITY_TOGGLED_OFF">โหมดความเข้มของการกดของผู้เล่น %0 ปิดใช้งาน</string>
+	<string name="RSX_OVERLAYS_PRESSURE_INTENSITY_TOGGLED_ON">โหมดความเข้มของการกดของผู้เล่น %0 เปิดใช้งาน</string>
+<string name="RSX_OVERLAYS_ANALOG_LIMITER_TOGGLED_OFF">ตัวจำกัดแอนะล็อกของผู้เล่น %0 ถูกปิดใช้งาน</string>
+	<string name="RSX_OVERLAYS_ANALOG_LIMITER_TOGGLED_ON">ตัวจำกัดแอนะล็อกของผู้เล่น %0 ถูกเปิดใช้งาน</string>
+	<string name="RSX_OVERLAYS_MOUSE_AND_KEYBOARD_EMULATED">เมาส์และคีย์บอร์ดกำลังถูกใช้เป็นอุปกรณ์จำลอง</string>
+	<string name="RSX_OVERLAYS_MOUSE_AND_KEYBOARD_PAD">เมาส์และคีย์บอร์ดกำลังถูกใช้เป็นแพด</string>
+	<string name="CELL_GAME_ERROR_BROKEN_GAMEDATA">ข้อผิดพลาด: ข้อมูลเกมเสียหาย แอปพลิเคชันจะดำเนินการต่อ</string>
+	<string name="CELL_GAME_ERROR_BROKEN_HDDGAME">ข้อผิดพลาด: เกมบูต HDD เสียหาย แอปพลิเคชันจะดำเนินการต่อ</string>
+	<string name="CELL_GAME_ERROR_BROKEN_EXIT_GAMEDATA">ข้อผิดพลาด: ข้อมูลเกมเสียหาย แอปพลิเคชันจะถูกปิดลง</string>
+	<string name="CELL_GAME_ERROR_BROKEN_EXIT_HDDGAME">ข้อผิดพลาด: เกมบูต HDD เสียหาย แอปพลิเคชันจะถูกปิดลง</string>
+	<string name="CELL_GAME_ERROR_NOSPACE">ข้อผิดพลาด: พื้นที่จัดเก็บไม่เพียงพอ แอปพลิเคชันจะดำเนินการต่อ\nต้องการพื้นที่: %0 KB</string>
+	<string name="CELL_GAME_ERROR_NOSPACE_EXIT">ข้อผิดพลาด: พื้นที่จัดเก็บไม่เพียงพอ แอปพลิเคชันจะถูกปิดลง\nต้องการพื้นที่: %0 KB</string>
+	<string name="CELL_GAME_ERROR_DIR_NAME">ชื่อไดเรกทอรี: %0</string>
+	<string name="CELL_GAME_DATA_EXIT_BROKEN">เกิดข้อผิดพลาด!\n\nกรุณานำข้อมูลเกมนี้ออก</string>
+	<string name="CELL_HDD_GAME_EXIT_BROKEN">เกิดข้อผิดพลาด!\n\nกรุณาติดตั้งเกมบูต HDD ใหม่</string>
+	<string name="CELL_HDD_GAME_CHECK_NOSPACE">พื้นที่ไม่เพียงพอในการสร้างเกมบูต HDD\nต้องการพื้นที่: %0 KB</string>
+	<string name="CELL_HDD_GAME_CHECK_BROKEN">เกมบูต HDD %0 เสียหาย!</string>
+	<string name="CELL_HDD_GAME_CHECK_NODATA">ไม่พบเกมบูต HDD %0!</string>
+	<string name="CELL_HDD_GAME_CHECK_INVALID">ข้อผิดพลาด: %0</string>
+	<string name="CELL_GAMEDATA_CHECK_NOSPACE">พื้นที่ไม่เพียงพอในการสร้างข้อมูลเกม\nต้องการพื้นที่: %0 KB</string>
+	<string name="CELL_GAMEDATA_CHECK_BROKEN">ข้อมูลเกมใน %0 เสียหาย!</string>
+	<string name="CELL_GAMEDATA_CHECK_NODATA">ไม่พบข้อมูลเกมใน %0!</string>
+	<string name="CELL_GAMEDATA_CHECK_INVALID">ข้อผิดพลาด: %0</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010001">ทรัพยากรไม่พร้อมใช้งานชั่วคราว\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010002">อาร์กิวเมนต์หรือแฟล็กไม่ถูกต้อง\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010003">คุณสมบัติยังไม่ถูกพัฒนาเสร็จสมบูรณ์\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010004">การจัดสรรหน่วยความจำล้มเหลว\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010005">ไม่พบทรัพยากรที่ระบุด้วยตัวระบุ\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010006">ไม่พบไฟล์\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010007">ไฟล์อยู่ในรูปแบบที่ไม่รองรับ / ไฟล์ไม่ใช่ไฟล์ ELF ที่ถูกต้อง\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010008">หลีกเลี่ยงการล็อกทรัพยากร\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010009">ไม่อนุญาตให้ดำเนินการ\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000A">อุปกรณ์หรือทรัพยากรกำลังถูกใช้งาน\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000B">การดำเนินการหมดเวลา\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000C">การดำเนินการถูกยกเลิก\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000D">การเข้าถึงหน่วยความจำไม่ถูกต้อง\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000F">สถานะเธรดเป้าหมายไม่ถูกต้อง\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010010">การจัดแนวไม่ถูกต้อง\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010011">ทรัพยากรเคอร์เนลไม่เพียงพอ\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010012">ไฟล์เป็นไดเรกทอรี\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010013">การดำเนินการถูกยกเลิก\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010014">รายการนี้มีอยู่แล้ว\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010015">พอร์ตถูกเชื่อมต่ออยู่แล้ว\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010016">พอร์ตไม่ได้ถูกเชื่อมต่อ\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010017">การอนุญาต SELF ล้มเหลว การตรวจสอบโปรแกรมล้มเหลว\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010018">ไฟล์ไม่ใช่ MSELF\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010019">ข้อผิดพลาดเวอร์ชันระบบ\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001A">เกิดข้อผิดพลาดระบบอย่างร้ายแรงขณะอนุญาต SELF การตรวจสอบ SELF ล้มเหลว\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001B">ข้อผิดพลาดโดเมนคณิตศาสตร์\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001C">ข้อผิดพลาดช่วงคณิตศาสตร์\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001D">ลำดับไบต์หลายตัวอักษรไม่ถูกต้องในอินพุต\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001E">ข้อผิดพลาดตำแหน่งไฟล์\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001F">Syscall ถูกขัดจังหวะ\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010020">ไฟล์มีขนาดใหญ่เกินไป\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010021">ลิงก์มีจำนวนมากเกินไป\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010022">ตารางไฟล์ล้น\ndd(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010023">อุปกรณ์เต็มพื้นที่จัดเก็บ\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010024">ไม่ใช่ TTY\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010025">ท่อเชื่อมต่อเสียหาย\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010026">ระบบไฟล์อ่านอย่างเดียว\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010027">หาค่าตำแหน่งไฟล์ไม่ถูกต้อง\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010028">อาร์กิวเมนต์มีความยาวเกินไป\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010029">การละเมิดสิทธิ์การเข้าถึง\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002A">ตัวระบุไฟล์ไม่ถูกต้อง\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002B">การติดตั้งระบบไฟล์ล้มเหลว\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002C">ไฟล์ถูกเปิดมากเกินไป\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002D">ไม่มีอุปกรณ์\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002E">ไม่ใช่ไดเรกทอรี\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002F">ไม่มีอุปกรณ์หรือ IO นั้น\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010030">ข้อผิดพลาดลิงก์ข้ามอุปกรณ์\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010031">ข้อความไม่ถูกต้อง\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010032">อยู่ระหว่างดำเนินการ\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010033">ขนาดข้อความไม่ถูกต้อง\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010034">ชื่อมีความยาวเกินไป\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010035">ไม่มีล็อก\ndd(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010036">ไดเรกทอรีไม่ว่าง\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010037">ไม่รองรับ\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010038">ข้อผิดพลาดเฉพาะระบบไฟล์\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010039">เกิดการล้น\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003A">ระบบไฟล์ไม่ถูกติดตั้ง\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003B">ไม่ใช่ SData\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003C">เวอร์ชันใน sys_load_param ไม่ถูกต้อง\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003D">ชี้ตำแหน่งเป็นค่าว่าง\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003E">ชี้ตำแหน่งเป็นค่าว่าง\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_DEFAULT">เกิดข้อผิดพลาดขึ้น\n(%0)</string>
+	<string name="CELL_OSK_DIALOG_TITLE">คีย์บอร์ดบนหน้าจอ</string>
+	<string name="CELL_OSK_DIALOG_BUSY">ไม่สามารถเปิดเมนูหลักขณะที่คีย์บอร์ดบนหน้าจอกำลังทำงาน!</string>
+
+	<string name="CELL_SAVEDATA_CB_BROKEN">ข้อผิดพลาด - ข้อมูลเซฟเสียหาย</string>
+	<string name="CELL_SAVEDATA_CB_FAILURE">ข้อผิดพลาด - บันทึกหรือโหลดข้อมูลล้มเหลว</string>
+	<string name="CELL_SAVEDATA_CB_NO_DATA">ข้อผิดพลาด - ไม่พบข้อมูลเซฟ</string>
+	<string name="CELL_SAVEDATA_CB_NO_SPACE">ข้อผิดพลาด - พื้นที่ว่างไม่เพียงพอ\n\nต้องการพื้นที่: %0 KB</string>
+	<string name="CELL_SAVEDATA_NO_DATA">ไม่มีข้อมูลเซฟอยู่</string>
+	<string name="CELL_SAVEDATA_NEW_SAVED_DATA_TITLE">ข้อมูลเซฟใหม่</string>
+	<string name="CELL_SAVEDATA_NEW_SAVED_DATA_SUB_TITLE">เลือกเพื่อสร้างรายการใหม่</string>
+	<string name="CELL_SAVEDATA_SAVE_CONFIRMATION">คุณต้องการบันทึกข้อมูลนี้หรือไม่?</string>
+	<string name="CELL_SAVEDATA_DELETE_CONFIRMATION">คุณต้องการลบข้อมูลนี้หรือไม่?\n\n%0</string>
+	<string name="CELL_SAVEDATA_DELETE_SUCCESS">ลบข้อมูลสำเร็จ!\n\n%0</string>
+	<string name="CELL_SAVEDATA_DELETE">ลบข้อมูลนี้?\n\n%0</string>
+	<string name="CELL_SAVEDATA_LOAD">โหลดข้อมูลนี้?\n\n%0</string>
+	<string name="CELL_SAVEDATA_SAVE">บันทึกข้อมูลนี้?\n\n%0</string>
+	<string name="CELL_SAVEDATA_OVERWRITE">คุณต้องการเขียนทับข้อมูลเซฟหรือไม่?\n\n%0</string>
+	<string name="CELL_SAVEDATA_AUTOSAVE">กำลังบันทึก...</string>
+	<string name="CELL_SAVEDATA_AUTOLOAD">กำลังโหลด...</string>
+	<string name="CELL_CROSS_CONTROLLER_MSG">เริ่มต้นบนระบบ PS Vita\nหากยังไม่ได้ติดตั้ง ให้ไปที่ [การเล่นระยะไกล] บนระบบ PS Vita และเริ่ม [Cross-Controller] จากหน้าจอ LiveArea™</string>
+	<string name="CELL_CROSS_CONTROLLER_FW_MSG">หากเวอร์ชันซอฟต์แวร์ระบบบนระบบ PS Vita ต่ำกว่า 1.80 คุณต้องอัปเดตซอฟต์แวร์ระบบเป็นเวอร์ชันล่าสุด</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_TITLE">เลือกข้อความ</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_TITLE_INVITE">เลือกคำเชิญ</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_TITLE_ADD_FRIEND">เพิ่มเพื่อน</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_FROM">จาก:</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_SUBJECT">หัวข้อ:</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_TITLE">เลือกข้อความที่จะส่ง</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_TITLE_INVITE">ส่งคำเชิญ</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_TITLE_ADD_FRIEND">ส่งคำขอเพื่อน</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_CONFIRMATION">ส่งข้อความถึง %0 ?\n\nหัวข้อ:</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_CONFIRMATION_INVITE">ส่งคำเชิญถึง %0 ?\n\nหัวข้อ:</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_CONFIRMATION_ADD_FRIEND">ส่งคำขอเพื่อนถึง %0 ?\n\nหัวข้อ:</string>
+	<string name="RECORDING_ABORTED">การบันทึกถูกยกเลิก!</string>
+	<string name="RPCN_NO_ERROR">RPCN: ไม่มีข้อผิดพลาด</string>
+	<string name="RPCN_ERROR_INVALID_INPUT">RPCN: อินพุตไม่ถูกต้อง (โฮสต์/พอร์ตผิด)</string>
+	<string name="RPCN_ERROR_WOLFSSL">ข้อผิดพลาดการเชื่อมต่อ RPCN: ข้อผิดพลาด WolfSSL</string>
+	<string name="RPCN_ERROR_RESOLVE">ข้อผิดพลาดการเชื่อมต่อ RPCN: ข้อผิดพลาดการแก้ชื่อโดเมน</string>
+	<string name="RPCN_ERROR_CONNECT">ข้อผิดพลาดการเชื่อมต่อ RPCN</string>
+	<string name="RPCN_ERROR_LOGIN_ERROR">ข้อผิดพลาดการเข้าสู่ระบบ RPCN: ข้อผิดพลาดการระบุตัวตน</string>
+	<string name="RPCN_ERROR_ALREADY_LOGGED">ข้อผิดพลาดการเข้าสู่ระบบ RPCN: ผู้ใช้งานเข้าสู่ระบบอยู่แล้ว</string>
+	<string name="RPCN_ERROR_INVALID_LOGIN">ข้อผิดพลาดการเข้าสู่ระบบ RPCN: ชื่อผู้ใช้ไม่ถูกต้อง</string>
+	<string name="RPCN_ERROR_INVALID_PASSWORD">ข้อผิดพลาดการเข้าสู่ระบบ RPCN: รหัสผ่านไม่ถูกต้อง</string>
+	<string name="RPCN_ERROR_INVALID_TOKEN">ข้อผิดพลาดการเข้าสู่ระบบ RPCN: Token ไม่ถูกต้อง</string>
+	<string name="RPCN_ERROR_INVALID_PROTOCOL_VERSION">ข้อผิดพลาดทั่วไป RPCN: ข้อผิดพลาดเวอร์ชันโปรโตคอล (RPCS3 ล้าสมัย?)</string>
+	<string name="RPCN_ERROR_UNKNOWN">RPCN: ข้อผิดพลาดไม่ทราบสาเหตุ</string>
+	<string name="RPCN_SUCCESS_LOGGED_ON">เข้าสู่ระบบ RPCN สำเร็จ!</string>
+	<string name="RPCN_FRIEND_REQUEST_RECEIVED">RPCN: ได้รับคำขอเพื่อน: %0</string>
+	<string name="RPCN_FRIEND_ADDED">RPCN: เพิ่มเพื่อน: %0</string>
+	<string name="RPCN_FRIEND_LOST">RPCN: ลบเพื่อน: %0</string>
+	<string name="RPCN_FRIEND_LOGGED_IN">RPCN: %0 ออนไลน์</string>
+	<string name="RPCN_FRIEND_LOGGED_OUT">RPCN: %0 ออฟไลน์</string>
+
+    <string name="HOME_MENU_TITLE">เมนูหลัก</string>
+    <string name="HOME_MENU_EXIT_GAME">ออกจากเกม</string>
+    <string name="HOME_MENU_RESUME">ดำเนินการเกมต่อ</string>
+    <string name="HOME_MENU_FRIENDS">เพื่อน</string>
+    <string name="HOME_MENU_FRIENDS_REQUESTS">คำขอเพื่อนที่รอดำเนินการ</string>
+    <string name="HOME_MENU_FRIENDS_BLOCKED">ผู้ใช้ที่ถูกบล็อก</string>
+    <string name="HOME_MENU_FRIENDS_STATUS_ONLINE">ออนไลน์</string>
+    <string name="HOME_MENU_FRIENDS_STATUS_OFFLINE">ออฟไลน์</string>
+    <string name="HOME_MENU_FRIENDS_STATUS_BLOCKED">ถูกบล็อก</string>
+    <string name="HOME_MENU_FRIENDS_REQUEST_SENT">คุณได้ส่งคำขอเพื่อน</string>
+    <string name="HOME_MENU_FRIENDS_REQUEST_RECEIVED">ส่งคำขอเพื่อนถึงคุณ</string>
+    <string name="HOME_MENU_FRIENDS_BLOCK_USER_MSG">บล็อกผู้ใช้นี้หรือไม่?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_UNBLOCK_USER_MSG">เลิกบล็อกผู้ใช้นี้หรือไม่?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_REMOVE_USER_MSG">ลบผู้ใช้นี้หรือไม่?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_ACCEPT_REQUEST_MSG">ยอมรับคำขอหรือไม่?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_CANCEL_REQUEST_MSG">ยกเลิกคำขอหรือไม่?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_REJECT_REQUEST_MSG">ปฏิเสธคำขอหรือไม่?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_REJECT_REQUEST">ปฏิเสธคำขอ</string>
+    <string name="HOME_MENU_FRIENDS_NEXT_LIST">รายการถัดไป</string>
+    <string name="HOME_MENU_RESTART">เริ่มเกมใหม่</string>
+    <string name="HOME_MENU_SETTINGS">การตั้งค่า</string>
+    <string name="HOME_MENU_SETTINGS_SAVE">บันทึกการตั้งค่าแบบกำหนดเอง?</string>
+    <string name="HOME_MENU_SETTINGS_SAVE_BUTTON">บันทึก</string>
+    <string name="HOME_MENU_SETTINGS_DISCARD">ยกเลิกการเปลี่ยนแปลงการตั้งค่าปัจจุบัน?</string>
+    <string name="HOME_MENU_SETTINGS_DISCARD_BUTTON">ยกเลิก</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO">เสียง</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_MASTER_VOLUME">ระดับเสียงหลัก</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_BACKEND">เอนจินเสียง</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_BUFFERING">เปิดใช้งานการบัฟเฟอร์</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_BUFFER_DURATION">ระยะเวลาบัฟเฟอร์เสียงที่ต้องการ</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_TIME_STRETCHING">เปิดใช้งานการยืดขยายเวลา</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_TIME_STRETCHING_THRESHOLD">เกณฑ์การยืดขยายเวลา</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO">วิดีโอ</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_FRAME_LIMIT">จำกัดเฟรมเรต</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_ANISOTROPIC_OVERRIDE">การกรองแอนติสโคปิก</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_OUTPUT_SCALING">การสเกลเอาต์พุต</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_RCAS_SHARPENING">ความเข้มการปรับคม FidelityFX CAS</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_STRETCH_TO_DISPLAY">ยืดให้เต็มพื้นที่แสดงผล</string>
+    <string name="HOME_MENU_SETTINGS_INPUT">อินพุต</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_BACKGROUND_INPUT">เปิดใช้งานอินพุตพื้นหลัง</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_KEEP_PADS_CONNECTED">ให้แพดเชื่อมต่อตลอด</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_SHOW_PS_MOVE_CURSOR">แสดงเคอร์เซอร์ PS Move</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_CAMERA_FLIP">พลิกกล้อง</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_PAD_MODE">โหมดแพด</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_PAD_SLEEP">ดีเลย์แพด</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_FAKE_MOVE_ROTATION_CONE_H">กรวยหมุน PS Move เทียม (แนวนอน)</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_FAKE_MOVE_ROTATION_CONE_V">กรวยหมุน PS Move เทียม (แนวตั้ง)</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED">ขั้นสูง</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_PREFERRED_SPU_THREADS">เธรด SPU ที่แนะนำ</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_MAX_CPU_PREEMPTIONS">การพรีเอมชัน CPU สูงสุดเพื่อประหยัดพลังงาน</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_ACCURATE_RSX_RESERVATION_ACCESS">การเข้าถึงการจอง RSX อย่างแม่นยำ</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_SLEEP_TIMERS_ACCURACY">ความแม่นยำของตัวจับเวลาพัก</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_MAX_SPURS_THREADS">เธรด SPURS สูงสุด</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_DRIVER_WAKE_UP_DELAY">ดีเลย์การตื่นตัวไดรเวอร์</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_VBLANK_FREQUENCY">ความถี่ VBlank</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_VBLANK_NTSC">ปรับปรุงค่า NTSC VBlank</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS">เลเยอร์ทับ</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_TROPHY_POPUPS">แสดงป็อปอัพถ้วยรางวัล</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_RPCN_POPUPS">แสดงป็อปอัพ RPCN</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_SHADER_COMPILATION_HINT">แสดงข้อความเตือนการคอมไพล์ชเดอร์</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_PPU_COMPILATION_HINT">แสดงข้อความเตือนการคอมไพล์ PPU</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_AUTO_SAVE_LOAD_HINT">แสดงข้อความเตือนการบันทึก/โหลดอัตโนมัติ</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_PRESSURE_INTENSITY_TOGGLE_HINT">แสดงข้อความเตือนการเปิด/ปิดความเข้มแรงกด</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_ANALOG_LIMITER_TOGGLE_HINT">แสดงข้อความเตือนการเปิด/ปิดตัวจำกัดแอนะล็อก</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_MOUSE_AND_KB_TOGGLE_HINT">แสดงข้อความเตือนการเปิด/ปิดเมาส์และคีย์บอร์ด</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY">เลเยอร์ประสิทธิภาพ</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_ENABLE">เปิดใช้งานเลเยอร์ประสิทธิภาพ</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_ENABLE_FRAMERATE_GRAPH">เปิดใช้งานกราฟเฟรมเรต</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_ENABLE_FRAMETIME_GRAPH">เปิดใช้งานกราฟเฟรมไทม์</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_DETAIL_LEVEL">ระดับรายละเอียด</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMERATE_DETAIL_LEVEL">ระดับรายละเอียดกราฟเฟรมเรต</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMETIME_DETAIL_LEVEL">ระดับรายละเอียดกราฟเฟรมไทม์</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMERATE_DATAPOINT_COUNT">จำนวนจุดข้อมูลเฟรมเรต</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMETIME_DATAPOINT_COUNT">จำนวนจุดข้อมูลเฟรมไทม์</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_UPDATE_INTERVAL">ช่วงเวลาอัปเดตเมตริก</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_POSITION">ตำแหน่ง</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_CENTER_X">จัดกึ่งกลางแนวนอน</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_CENTER_Y">จัดกึ่งกลางแนวตั้ง</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_MARGIN_X">ระยะขอบแนวนอน</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_MARGIN_Y">ระยะขอบแนวตั้ง</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FONT_SIZE">ขนาดฟอนต์</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_OPACITY">ความโปร่งใส</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG">ดีบัก</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_OVERLAY">เลเยอร์ดีบัก</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_INPUT_OVERLAY">เลเยอร์ดีบักอินพุต</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_DISABLE_VIDEO_OUTPUT">ปิดการใช้งานวิดีโอเอาต์พุต</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_TEXTURE_LOD_BIAS">ค่าเพิ่ม LOD ของเท็กซ์เจอร์</string>
+    <string name="HOME_MENU_SCREENSHOT">ถ่ายภาพหน้าจอ</string>
+    <string name="HOME_MENU_SAVESTATE">บันทึกสถานะ</string>
+    <string name="HOME_MENU_SAVESTATE_SAVE">บันทึกสถานะการเล่นเกม</string>
+    <string name="HOME_MENU_SAVESTATE_AND_EXIT">บันทึกสถานะและออกจากเกม</string>
+    <string name="HOME_MENU_RELOAD_SAVESTATE">โหลดสถานะล่าสุด</string>
+    <string name="HOME_MENU_RECORDING">เริ่ม/หยุดการบันทึก</string>
+    <string name="HOME_MENU_TROPHIES">ถ้วยรางวัล</string>
+    <string name="HOME_MENU_TROPHY_LIST_TITLE">ความคืบหน้าถ้วยรางวัล: %0</string>
+    <string name="HOME_MENU_TROPHY_LOCKED_TITLE">ถ้วยรางวัลถูกล็อก: %0</string>
+    <string name="HOME_MENU_TROPHY_HIDDEN_TITLE">ถ้วยรางวัลซ่อน</string>
+    <string name="HOME_MENU_TROPHY_HIDDEN_DESCRIPTION">ถ้วยรางวัลนี้ถูกซ่อน</string>
+    <string name="HOME_MENU_TROPHY_SHOW_HIDDEN_TROPHIES">แสดงถ้วยรางวัลซ่อน</string>
+    <string name="HOME_MENU_TROPHY_HIDE_HIDDEN_TROPHIES">ซ่อนถ้วยรางวัลซ่อน</string>
+    <string name="HOME_MENU_TROPHY_PLATINUM_RELEVANT">เกี่ยวข้องกับแพลตินัม</string>
+    <string name="HOME_MENU_TROPHY_GRADE_BRONZE">บรอนซ์</string>
+    <string name="HOME_MENU_TROPHY_GRADE_SILVER">เงิน</string>
+    <string name="HOME_MENU_TROPHY_GRADE_GOLD">ทอง</string>
+    <string name="HOME_MENU_TROPHY_GRADE_PLATINUM">แพลตินัม</string>
+
+	<string name="AUDIO_MUTED">ปิดเสียง</string>
+	<string name="AUDIO_UNMUTED">เปิดเสียง</string>
+	<string name="AUDIO_CHANGED">ระดับเสียงเปลี่ยนเป็น %0</string>
+	<string name="PROGRESS_DIALOG_PROGRESS">ความคืบหน้า:</string>
+	<string name="PROGRESS_DIALOG_PROGRESS_ANALYZING">ความคืบหน้า: กำลังวิเคราะห์...</string>
+	<string name="PROGRESS_DIALOG_REMAINING">ที่เหลือ</string>
+	<string name="PROGRESS_DIALOG_DONE">เสร็จสิ้น</string>
+	<string name="PROGRESS_DIALOG_FILE">ไฟล์</string>
+	<string name="PROGRESS_DIALOG_MODULE">โมดูล</string>
+	<string name="PROGRESS_DIALOG_OF">ของ</string>
+	<string name="PROGRESS_DIALOG_PLEASE_WAIT">กรุณารอ</string>
+	<string name="PROGRESS_DIALOG_STOPPING_PLEASE_WAIT">กำลังหยุด กรุณารอ...</string>
+	<string name="PROGRESS_DIALOG_SAVESTATE_PLEASE_WAIT">กำลังสร้างสถานะบันทึก กรุณารอ...</string>
+	<string name="PROGRESS_DIALOG_SCANNING_PPU_EXECUTABLE">กำลังสแกนไฟล์ PPU...</string>
+	<string name="PROGRESS_DIALOG_ANALYZING_PPU_EXECUTABLE">กำลังวิเคราะห์ไฟล์ PPU...</string>
+	<string name="PROGRESS_DIALOG_SCANNING_PPU_MODULES">กำลังสแกนโมดูล PPU...</string>
+	<string name="PROGRESS_DIALOG_LOADING_PPU_MODULES">กำลังโหลดโมดูล PPU...</string>
+	<string name="PROGRESS_DIALOG_COMPILING_PPU_MODULES">กำลังคอมไพล์โมดูล PPU...</string>
+	<string name="PROGRESS_DIALOG_LINKING_PPU_MODULES">กำลังลิงก์โมดูล PPU...</string>
+	<string name="PROGRESS_DIALOG_APPLYING_PPU_CODE">กำลังประยุกต์โค้ด PPU...</string>
+	<string name="PROGRESS_DIALOG_BUILDING_SPU_CACHE">กำลังสร้างแคช SPU...</string>
+	<string name="EMULATION_PAUSED_RESUME_WITH_START">กดปุ่ม START ค้างไว้เพื่อดำเนินการต่อ</string>
+	<string name="EMULATION_RESUMING">กำลังดำเนินการต่อ...!</string>
+	<string name="EMULATION_FROZEN">แอปพลิเคชัน PS3 อาจล้มเหลว คุณสามารถปิดแอปได้</string>
+	<string name="SAVESTATE_FAILED_DUE_TO_SAVEDATA">บันทึกสถานะล้มเหลว: การบันทึกเกมกำลังดำเนินการ รอจนเสร็จสมบูรณ์</string>
+	<string name="SAVESTATE_FAILED_DUE_TO_VDEC">บันทึกสถานะล้มเหลว: วิดีโอ/ซีนวิดีโอฐาน VDEC กำลังดำเนินการ รอจนเสร็จหรือเปิดใช้งาน libvdec.sprx</string>
+	<string name="SAVESTATE_FAILED_DUE_TO_MISSING_SPU_SETTING">บันทึกสถานะล้มเหลว: ล็อกสถานะ SPU ล้มเหลว การเปิดใช้งานโหมด SPU-เข้ากันได้ อาจแก้ไขปัญหา</string>
+	<string name="SAVESTATE_FAILED_DUE_TO_SPU">บันทึกสถานะล้มเหลว: ล็อกสถานะ SPU ล้มเหลว การใช้งาน SPU ASMJIT จะแก้ไขปัญหา</string>
+	<string name="PROGRESS_DIALOG_PRELOADING_SHADER_CACHE">กำลังโหลดชเดอร์แคชจากดิสก์...</string>
+
+</resources>

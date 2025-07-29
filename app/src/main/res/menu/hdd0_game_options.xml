@@ -13,6 +13,9 @@
         android:id="@+id/edit_custom_config"
         android:title="@string/edit_custom_config"/>
     <item
+        android:id="@+id/create_shortcut"
+        android:title="@string/create_shortcut"/>
+    <item
         android:id="@+id/show_game_info"
         android:title="@string/show_game_info"/>
 </menu>

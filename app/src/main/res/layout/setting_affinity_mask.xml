@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/use_cores_ppu"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+        <aenu.view.SVListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ppu_use_cores"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/use_cores_spu"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+        <aenu.view.SVListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spu_use_cores"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/use_cores_rsx"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+        <aenu.view.SVListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rsx_use_cores"
+            />
+        </LinearLayout>
+</ScrollView>

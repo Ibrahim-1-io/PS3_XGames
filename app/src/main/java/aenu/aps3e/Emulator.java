@@ -635,5 +635,9 @@ public class Emulator
     }
 
 	public native String simple_device_info();
+
+	public native int get_cpu_core_count();
+	public native String get_cpu_name(int core_idx);
+	public native int get_cpu_max_mhz(int core_idx);
     
 }

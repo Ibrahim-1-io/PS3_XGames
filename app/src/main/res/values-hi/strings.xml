@@ -1,0 +1,995 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="use_cores_ppu">पीपीयू कोर्स उपयोग करें</string>
+	<string name="use_cores_spu">एसपीयू कोर्स उपयोग करें</string>
+	<string name="use_cores_rsx">आरएसएक्स कोर्स उपयोग करें</string>
+	<string name="emulator_settings_core_thread_affinity_mask">थ्रेड सम्बद्धता मास्क</string>
+	<string name="create_shortcut">शॉर्टकट बनाएं</string>
+	<string name="loading">लोड हो रहा है...</string>
+	<string name="resolution_not_support">संकल्प या आकार अनुपात समर्थित नहीं है\nवर्तमान गेम केवल निम्नलिखित समर्थित है:\n%s\n\nकृपया निम्न सेटिंग्स के साथ संशोधित करें:\n%s\n%s\n</string>
+	<string name="show_game_info">गेम जानकारी दिखाएं</string>
+	<string name="quick_start_page">त्वरित प्रारंभ पृष्ठ</string>
+	<string name="prev_step">पिछला चरण</string>
+	<string name="next_step">अगला चरण</string>
+	<string name="finish">समाप्त करें</string>
+
+	<string name="welcome">स्वागत है</string>
+	<string name="welcome_content">%s में आपका स्वागत है!</string>
+	<string name="welcome_content2">कुछ ही सरल चरणों के साथ आप खेलने के लिए तैयार हो जाएंगे, प्रारंभ करने के लिए "%s" पर क्लिक करें।</string>
+
+	<string name="install_ps3_firmware_hiht_content">गेम खेलने के लिए आपको PS3 फर्मवेयर (PS3UPDAT.PUP) स्थापित करना होगा। कृपया फर्मवेयर फ़ाइल का चयन करें।</string>
+	<string name="ps3_firmware_installed">फर्मवेयर स्थापित</string>
+	<string name="select_ps3_firmware">फर्मवेयर चुनें (PS3UPDAT.PUP)</string>
+	<string name="firmware_not_install">फर्मवेयर स्थापित नहीं है</string>
+
+	<string name="select_ps3_iso_dir_hiht_content">कृपया PS3 ISO निर्देशिका का निर्देश करें, ऐप स्वचालित रूप से वैध गेम्स प्राप्त करने के लिए स्कैन करेगा, आप इस चरण को छोड़ सकते हैं और सीधे .pkg फ़ाइल स्थापित कर सकते हैं।</string>
+	<string name="ps3_iso_dir_is_set">PS3 ISO निर्देशिका सेट है</string>
+
+	<string name="font_select_hiht_content">कृपया एक फ़ॉन्ट फ़ाइल (*.ttf, *.ttc, *.otf) स्थापित करने के लिए चुनें, या आप PS3 फर्मवेयर से एक फ़ॉन्ट उपयोग कर सकते हैं (शब्द गायब हो सकते हैं)।</string>
+	<string name="custom_font_path_prefix">फ़ॉन्ट पथ: </string>
+	<string name="select_gpu_driver_hiht_content">कृपया GPU ड्राइवर का चयन करें, आप इस चरण को छोड़ भी सकते हैं (गेम त्रुटियों के साथ चल सकता है)।</string>
+	<string name="custom_gpu_driver_path_prefix">GPU ड्राइवर पथ: </string>
+
+	<string name="modify_config_hiht_content">एम्यूलेटर सबसे उपयुक्त कॉन्फ़िगरेशन स्वचालित रूप से चुनेगा, लेकिन कुछ कॉन्फ़िगरेशन आपके उपकरण पर समस्याएं पैदा कर सकते हैं। आप बाद में सेटिंग्स में उन्हें संशोधित कर सकते हैं।</string>
+
+	<string name="msg_processing">प्रसंस्करण...</string>
+	<string name="msg_failed">असफल!</string>
+
+	<string name="emulator_settings_video_vulkan_debug">डीबग</string>
+	<string name="emulator_settings_miscellaneous_memory_debug_overlay">मेमोरी डीबग ओवरले</string>
+
+	<string name="vibrator_duration">वाइब्रेटर अवधि</string>
+	<string name="enable_vibrator">वाइब्रेटर सक्षम करें</string>
+	<string name="dynamic_joystick">गतिशील जॉयस्टिक</string>
+	<string name="disable">अक्षम करें</string>
+
+	<string name="disable_virtual_keyboard">वर्चुअल कीबोर्ड अक्षम करें</string>
+	<string name="joystick">जॉयस्टिक</string>
+	<string name="dpad">डीपैड</string>
+	<string name="button">बटन</string>
+	<string name="lr">एलआर</string>
+	<string name="start_select">स्टार्ट/सिलेक्ट</string>
+
+	<string name="enable_log">लॉग सक्षम करें</string>
+	<string name="use_global_config">वैश्विक कॉन्फ़िगरेशन उपयोग करें</string>
+	<string name="edit_custom_config">कस्टम कॉन्फ़िगरेशन संपादित करें</string>
+	<string name="clear">साफ़ करें</string>
+	<string name="press_a_key">जारी रखने के लिए कोई कुंजी दबाएं...</string>
+	<string name="game_list_loading">गेम सूची लोड हो रही है...</string>
+	<string name="undecrypted_game">अभी अनएन्क्रिप्टेड गेम्स चलाना समर्थित नहीं है</string>
+	<string name="delete_game_data">गेम डेटा हटाएं</string>
+	<string name="delete_hdd0_install_data">hdd0 इंस्टॉल डेटा हटाएं</string>
+	<string name="delete_game_and_data">गेम और डेटा हटाएं</string>
+	<string name="delete_shaders_cache">शेडर्स कैश हटाएं</string>
+
+	<string name="set_iso_dir">(*.iso) निर्देशिका सेट करें</string>
+	<string name="device_info">उपकरण जानकारी</string>
+	<string name="reset_as_default">डिफ़ॉल्ट के रूप में रीसेट करें</string>
+	<string name="save_and_quit">सहेजें और बाहर जाएं</string>
+	<string name="scale_rate">स्केल दर</string>
+	<string name="open_file_manager">फ़ाइल प्रबंधक खोलें</string>
+	<string name="installing_firmware">फर्मवेयर स्थापित किया जा रहा है...</string>
+	<string name="refresh_list">सूची ताज़ा करें</string>
+	<string name="select_game">गेम चुनें</string>
+	<string name="install_firmware">फर्मवेयर स्थापित करें</string>
+	<string name="install_game">RAP/PKG स्थापित करें</string>
+	<string name="installing_game">गेम स्थापित किया जा रहा है...</string>
+	<string name="about">बारे में</string>
+	<string name="quit">बाहर जाएं</string>
+	<string name="update_log">अपडेट लॉग</string>
+	<string name="empty_game_list">गेम्स की सूची खाली है, कृपया पीकेज स्थापित करके या *.iso निर्देशिका सेट करके गेम्स जोड़ें</string>
+	<string name="delete">हटाएं</string>
+	<string name="settings">सेटिंग्स</string>
+	<string name="gratitude">आभार</string>
+	<string name="gratitude_content">रुबन के लिए सभी आइकन के लिए धन्यवाद\n\n
+		एसआरसी267 (स्टिंग) के लिए reddit/discord का प्रबंधन करने के लिए धन्यवाद\n\n
+		याओयाओ के लिए परीक्षण के लिए धन्यवाद\n\n
+		अलविदा किसी को GPD XP दान करने के लिए धन्यवाद, जो परीक्षण प्रक्रिया में बहुत मददगार रहा है।\n\n
+		अलविदा किसी को विकास उपकरण दान करने के लिए धन्यवाद, जो परियोजना के विकास को आगे बढ़ाने में बहुत महत्वपूर्ण साबित हुआ।\n\n
+		निम्नलिखित लोगों के लिए धन्यवाद जिन्होंने इस परियोजना के लिए वित्तीय समर्थन प्रदान किया (आरंभिक चरण में, तिथि के अनुसार क्रमबद्ध):\n\n</string>
+	<string name="gratitude_content2">
+		RPCS3 के अनुवाद अनुकूलन पर आधारित, RPCS3 परियोजना में भाग लेने वाले सभी लोगों के लिए धन्यवाद\n\n
+Qwen3 का अनुवाद
+	</string>
+	<string name="key_mappers">कुंजी मैपर्स</string>
+	<string name="virtual_pad_edit">वर्चुअलपैडएडिट</string>
+
+	<string name="left">बाएं</string>
+	<string name="up">ऊपर</string>
+	<string name="right">दाएं</string>
+	<string name="down">नीचे</string>
+
+	<string name="square">वर्ग</string>
+	<string name="cross">क्रॉस</string>
+	<string name="circle">वृत्त</string>
+	<string name="triangle">त्रिकोण</string>
+
+	<string name="l1">एल1</string>
+	<string name="l2">एल2</string>
+	<string name="l3">एल3</string>
+
+	<string name="r1">आर1</string>
+	<string name="r2">आर2</string>
+	<string name="r3">आर3</string>
+
+	<string name="start">स्टार्ट</string>
+	<string name="select">सिलेक्ट</string>
+	<string name="ps">पीएस</string>
+
+	<string name="emulator_settings_video_vulkan_custom_driver_library_path_dialog_title">कस्टम ड्राइवर चुनें</string>
+	<string name="emulator_settings_video_vulkan_custom_driver_library_path_dialog_add_hint">कस्टम ड्राइवर जोड़ें (*.zip, *.so)</string>
+
+	<string name="emulator_settings_miscellaneous_custom_font_file_path_dialog_title">कस्टम फ़ॉन्ट चुनें</string>
+	<string name="emulator_settings_miscellaneous_custom_font_file_path_dialog_add_hint">कस्टम फ़ॉन्ट जोड़ें (*.ttf, *.ttc, *.otf)</string>
+
+	<string name="emulator_settings_core">कोर</string>
+	<string name="emulator_settings_core_ppu_decoder">पीपीयू डिकोडर</string>
+	<string-array name="core_ppu_decoder_entries">
+		<item>इंटरप्रेटर (स्थैतिक)</item>
+		<item>रीकम्पाइलर (एलएलवीएम)</item>
+	</string-array>
+	<string name="emulator_settings_core_ppu_threads">पीपीयू थ्रेड्स</string>
+	<string name="emulator_settings_core_ppu_debug">पीपीयू डीबग</string>
+	<string name="emulator_settings_core_ppu_calling_history">पीपीयू कॉलिंग इतिहास</string>
+	<string name="emulator_settings_core_save_llvm_logs">एलएलवीएम लॉग्स सहेजें</string>
+	<string name="emulator_settings_core_use_llvm_cpu">एलएलवीएम सीपीयू उपयोग करें</string>
+	<string name="emulator_settings_core_max_llvm_compile_threads">अधिकतम एलएलवीएम कम्पाइल थ्रेड्स</string>
+	<string name="emulator_settings_core_ppu_llvm_greedy_mode">पीपीयू एलएलवीएम लालची मोड</string>
+	<string name="emulator_settings_core_llvm_precompilation">एलएलवीएम प्रीकम्पाइलेशन</string>
+	<string name="emulator_settings_core_thread_scheduler_mode">थ्रेड शेड्यूलर मोड</string>
+	<string-array name="core_thread_scheduler_mode_entries">
+		<item>ऑपरेटिंग सिस्टम</item>
+		<item>सम्बद्धता</item>
+	</string-array>
+	<string name="emulator_settings_core_set_daz_and_ftz">DAZ और FTZ सेट करें</string>
+	<string name="emulator_settings_core_spu_decoder">एसपीयू डिकोडर</string>
+	<string-array name="core_spu_decoder_entries">
+		<item>इंटरप्रेटर (स्थैतिक)</item>
+		<item>इंटरप्रेटर (गतिशील)</item>
+		<item>रीकम्पाइलर (ASMJIT)</item>
+		<item>रीकम्पाइलर (एलएलवीएम)</item>
+	</string-array>
+	<string name="emulator_settings_core_spu_reservation_busy_waiting_percentage">एसपीयू आरक्षण व्यस्त प्रतिशत प्रतीक्षा</string>
+	<string name="emulator_settings_core_spu_getllar_busy_waiting_percentage">एसपीयू GETLLAR व्यस्त प्रतिशत प्रतीक्षा</string>
+	<string name="emulator_settings_core_disable_spu_getllar_spin_optimization">एसपीयू GETLLAR स्पिन अनुकूलन अक्षम करें</string>
+	<string name="emulator_settings_core_spu_debug">एसपीयू डीबग</string>
+	<string name="emulator_settings_core_mfc_debug">एमएफसी डीबग</string>
+	<string name="emulator_settings_core_preferred_spu_threads">पसंदीदा एसपीयू थ्रेड्स</string>
+	<string name="emulator_settings_core_spu_delay_penalty">एसपीयू देरी दंड</string>
+	<string name="emulator_settings_core_spu_loop_detection">एसपीयू लूप डिटेक्शन</string>
+	<string name="emulator_settings_core_max_spurs_threads">अधिकतम SPURS थ्रेड्स</string>
+	<string name="emulator_settings_core_spu_block_size">एसपीयू ब्लॉक आकार</string>
+	<string-array name="core_spu_block_size_entries">
+		<item>सुरक्षित</item>
+		<item>मेगा</item>
+		<item>गीगा</item>
+	</string-array>
+	<string name="emulator_settings_core_accurate_spu_dma">सटीक एसपीयू डीएमए</string>
+	<string name="emulator_settings_core_accurate_spu_reservations">सटीक एसपीयू आरक्षण</string>
+	<string name="emulator_settings_core_accurate_cache_line_stores">सटीक कैश लाइन संग्रहण</string>
+	<string name="emulator_settings_core_accurate_rsx_reservation_access">सटीक आरएसएक्स आरक्षण एक्सेस</string>
+	<string name="emulator_settings_core_rsx_fifo_accuracy">आरएसएक्स FIFO सटीकता</string>
+	<string-array name="core_rsx_fifo_accuracy_entries">
+		<item>तेज़</item>
+		<item>एटॉमिक</item>
+		<item>क्रमबद्ध और एटॉमिक</item>
+		<item>पीएस3</item>
+	</string-array>
+	<string name="emulator_settings_core_spu_verification">एसपीयू सत्यापन</string>
+	<string name="emulator_settings_core_spu_cache">एसपीयू कैश</string>
+	<string name="emulator_settings_core_spu_profiler">एसपीयू प्रोफ़ाइलर</string>
+	<string name="emulator_settings_core_mfc_commands_shuffling_limit">एमएफसी कमांड्स शफलिंग सीमा</string>
+	<string name="emulator_settings_core_mfc_commands_timeout">एमएफसी कमांड्स टाइमआउट</string>
+	<string name="emulator_settings_core_mfc_commands_shuffling_in_steps">एमएफसी कमांड्स चरणों में शफलिंग</string>
+	<string name="emulator_settings_core_enable_tsx">TSX सक्षम करें</string>
+	<string-array name="core_enable_tsx_entries">
+		<item>अक्षम</item>
+		<item>सक्षम</item>
+		<item>बाध्यकारी</item>
+	</string-array>
+	<string name="emulator_settings_core_xfloat_accuracy">एक्सफ़्लोट सटीकता</string>
+	<string-array name="core_xfloat_accuracy_entries">
+		<item>सटीक</item>
+		<item>अनुमानित</item>
+		<item>आरामदायक</item>
+		<item>असटीक</item>
+	</string-array>
+	<string name="emulator_settings_core_accurate_ppu_128byte_reservation_op_max_length">सटीक पीपीयू 128-बाइट आरक्षण ऑप्स अधिकतम लंबाई</string>
+	<string name="emulator_settings_core_stub_ppu_traps">स्टब पीपीयू ट्रैप्स</string>
+	<string name="emulator_settings_core_precise_spu_verification">परिशुद्ध एसपीयू सत्यापन</string>
+	<string name="emulator_settings_core_ppu_llvm_java_mode_handling">पीपीयू एलएलवीएम जावा मोड हैंडलिंग</string>
+	<string name="emulator_settings_core_use_accurate_dfma">सटीक DFMA उपयोग करें</string>
+	<string name="emulator_settings_core_ppu_set_saturation_bit">पीपीयू संतृप्ति बिट सेट करें</string>
+	<string name="emulator_settings_core_ppu_accurate_nonjava_mode">पीपीयू सटीक गैर-जावा मोड</string>
+	<string name="emulator_settings_core_ppu_fixup_vector_nan_values">पीपीयू वेक्टर NaN मानों को ठीक करें</string>
+	<string name="emulator_settings_core_ppu_accurate_vector_nan_values">पीपीयू सटीक वेक्टर NaN मान</string>
+	<string name="emulator_settings_core_ppu_set_fpcc_bits">पीपीयू FPCC बिट्स सेट करें</string>
+	<string name="emulator_settings_core_debug_console_mode">डीबग कंसोल मोड</string>
+	<string name="emulator_settings_core_hook_static_functions">स्थैतिक फ़ंक्शन्स हुक करें</string>
+	<string name="emulator_settings_core_libraries_control">लाइब्रेरीज़ नियंत्रण</string>
+	<string name="emulator_settings_core_hle_lwmutex">HLE lwmutex</string>
+	<string name="emulator_settings_core_spu_llvm_lower_bound">एसपीयू एलएलवीएम निम्न सीमा</string>
+	<string name="emulator_settings_core_spu_llvm_upper_bound">एसपीयू एलएलवीएम उच्च सीमा</string>
+	<string name="emulator_settings_core_tsx_transaction_first_limit">TSX लेन-देन पहली सीमा</string>
+	<string name="emulator_settings_core_tsx_transaction_second_limit">TSX लेन-देन दूसरी सीमा</string>
+	<string name="emulator_settings_core_clocks_scale">घड़ियों का पैमाना</string>
+	<string name="emulator_settings_core_spu_wakeup_delay">एसपीयू जागने की देरी</string>
+	<string name="emulator_settings_core_spu_wakeup_delay_thread_mask">एसपीयू जागने की देरी थ्रेड मास्क</string>
+	<string name="emulator_settings_core_max_cpu_preempt_count">अधिकतम सीपीयू प्रीएम्प्ट काउंट</string>
+	<string name="emulator_settings_core_allow_rsx_cpu_preemptions">आरएसएक्स सीपीयू प्रीएम्प्शन स्वीकारें</string>
+	<string name="emulator_settings_core_sleep_timers_accuracy">स्लीप टाइमर्स सटीकता</string>
+	<string-array name="core_sleep_timers_accuracy_entries">
+		<item>होस्ट के रूप में</item>
+		<item>केवल Usleep</item>
+		<item>सभी टाइमर्स</item>
+	</string-array>
+	<string name="emulator_settings_core_usleep_time_addend">Usleep समय जोड़</string>
+	<string name="emulator_settings_core_performance_report_threshold">प्रदर्शन रिपोर्ट थ्रेशहोल्ड</string>
+	<string name="emulator_settings_core_enable_performance_report">प्रदर्शन रिपोर्ट सक्षम करें</string>
+	<string name="emulator_settings_core_assume_external_debugger">बाहरी डीबगर मानें</string>
+	<string name="emulator_settings_video">वीडियो</string>
+	<string name="emulator_settings_video_vertex_buffer_upload_mode">शीर्ष बफर अपलोड मोड</string>
+	<string-array name="video_vertex_buffer_upload_mode_entries">
+		<item>स्वचालित</item>
+		<item>बफर दृश्य</item>
+		<item>बफर</item>
+	</string-array>
+	<string name="emulator_settings_video_texture_upload_mode">टेक्सचर अपलोड मोड</string>
+	<string-array name="video_texture_upload_mode_entries">
+		<item>सीपीयू</item>
+		<item>जीपीयू</item>
+	</string-array>
+	<string name="emulator_settings_video_renderer">रेंडरर</string>
+	<string-array name="video_renderer_entries">
+		<item>शून्य</item>
+		<item>Vulkan</item>
+	</string-array>
+	<string name="emulator_settings_video_resolution">संकल्प</string>
+	<string-array name="video_resolution_entries">
+		<item>1920x1080</item>
+		<item>1920x1080i</item>
+		<item>1280x720</item>
+		<item>720x480</item>
+		<item>720x480i</item>
+		<item>720x576</item>
+		<item>720x576i</item>
+		<item>1600x1080</item>
+		<item>1440x1080</item>
+		<item>1280x1080</item>
+		<item>960x1080</item>
+	</string-array>
+	<string name="emulator_settings_video_aspect_ratio">आकार अनुपात</string>
+	<string-array name="video_aspect_ratio_entries">
+		<item>4:3</item>
+		<item>16:9</item>
+	</string-array>
+	<string name="emulator_settings_video_frame_limit">फ़्रेम सीमा</string>
+	<string-array name="video_frame_limit_entries">
+		<item>बंद</item>
+		<item>30</item>
+		<item>50</item>
+		<item>60</item>
+		<item>120</item>
+		<item>डिस्प्ले</item>
+		<item>स्वचालित</item>
+		<item>पीएस3 मूल</item>
+		<item>असीमित</item>
+	</string-array>
+	<string name="emulator_settings_video_second_frame_limit">दूसरी फ़्रेम सीमा</string>
+	<string name="emulator_settings_video_msaa">MSAA</string>
+	<string-array name="video_msaa_entries">
+		<item>अक्षम</item>
+		<item>स्वचालित</item>
+	</string-array>
+	<string name="emulator_settings_video_shader_mode">शेडर मोड</string>
+	<string-array name="video_shader_mode_entries">
+		<item>शेडर रीकम्पाइलर</item>
+		<item>असमान शेडर रीकम्पाइलर</item>
+		<item>असमान शेडर इंटरप्रेटर के साथ</item>
+		<item>शेडर इंटरप्रेटर केवल</item>
+	</string-array>
+	<string name="emulator_settings_video_shader_precision">शेडर सटीकता</string>
+	<string-array name="video_shader_precision_entries">
+		<item>उच्च</item>
+		<item>उच्च</item>
+		<item>निम्न</item>
+		<item>स्वचालित</item>
+	</string-array>
+	<string name="emulator_settings_video_write_color_buffers">रंग बफर्स लिखें</string>
+	<string name="emulator_settings_video_write_depth_buffer">गहराई बफर लिखें</string>
+	<string name="emulator_settings_video_read_color_buffers">रंग बफर्स पढ़ें</string>
+
+    <string name="emulator_settings_video_read_depth_buffer">गहराई बफर पढ़ें</string>
+<string name="emulator_settings_video_handle_rsx_memory_tiling">RSX मेमोरी टाइलिंग संभालें</string>
+<string name="emulator_settings_video_log_shader_programs">शेडर प्रोग्राम लॉग करें</string>
+<string name="emulator_settings_video_vsync">VSync</string>
+<string name="emulator_settings_video_debug_output">डीबग आउटपुट</string>
+<string name="emulator_settings_video_debug_overlay">डीबग ओवरले</string>
+<string name="emulator_settings_video_renderdoc_compatibility_mode">Renderdoc संगतता मोड</string>
+<string name="emulator_settings_video_use_gpu_texture_scaling">GPU टेक्सचर स्केलिंग उपयोग करें</string>
+<string name="emulator_settings_video_stretch_to_display_area">प्रदर्शन क्षेत्र तक खींचें</string>
+<string name="emulator_settings_video_force_high_precision_z_buffer">उच्च परिशुद्धता Z बफर लागू करें</string>
+<string name="emulator_settings_video_strict_rendering_mode">कठोर रेंडरिंग मोड</string>
+<string name="emulator_settings_video_disable_zcull_occlusion_queries">ZCull ओक्लूज़न प्रश्न अक्षम करें</string>
+<string name="emulator_settings_video_disable_video_output">वीडियो आउटपुट अक्षम करें</string>
+<string name="emulator_settings_video_disable_vertex_cache">शीर्ष छिपाना अक्षम करें</string>
+<string name="emulator_settings_video_disable_fifo_reordering">FIFO पुनःक्रमण अक्षम करें</string>
+<string name="emulator_settings_video_enable_frame_skip">फ्रेम छलांग सक्षम करें</string>
+<string name="emulator_settings_video_force_cpu_blit">CPU ब्लिट लागू करें</string>
+<string name="emulator_settings_video_disable_ondisk_shader_cache">डिस्क पर शेडर कैश अक्षम करें</string>
+<string name="emulator_settings_video_disable_vulkan_memory_allocator">वुल्कन मेमोरी आवंटक अक्षम करें</string>
+<string name="emulator_settings_video_use_full_rgb_output_range">पूर्ण RGB आउटपुट रेंज उपयोग करें</string>
+<string name="emulator_settings_video_strict_texture_flushing">कठोर टेक्सचर फ़्लशिंग</string>
+<string name="emulator_settings_video_multithreaded_rsx">मल्टीथ्रेडेड RSX</string>
+<string name="emulator_settings_video_relaxed_zcull_sync">लचीला ZCULL सिंक</string>
+<string name="emulator_settings_video_force_hardware_msaa_resolve">हार्डवेयर MSAA रिज़ॉल्यूशन लागू करें</string>
+<string name="emulator_settings_video_3d_display_mode">3D प्रदर्शन मोड</string>
+<string-array name="video_3d_display_mode_entries">
+    <item>अक्षम</item>
+    <item>साइड-बाय-साइड</item>
+    <item>ऊपर-नीचे</item>
+    <item>इंटरलेस्ड</item>
+    <item>एनाग्लिफ़ लाल-हरा</item>
+    <item>एनाग्लिफ़ लाल-नीला</item>
+    <item>एनाग्लिफ़ लाल-सियान</item>
+    <item>एनाग्लिफ़ मैजेंटा-सियान</item>
+    <item>एनाग्लिफ़ ट्रायोस्कोपिक</item>
+    <item>एनाग्लिफ़ एम्बर-नीला</item>
+</string-array>
+<string name="emulator_settings_video_debug_program_analyser">डीबग प्रोग्राम विश्लेषक</string>
+<string name="emulator_settings_video_accurate_zcull_stats">यथार्थ ZCULL सांख्यिकी</string>
+<string name="emulator_settings_video_consecutive_frames_to_draw">चित्रित करने योग्य क्रमागत फ्रेम</string>
+<string name="emulator_settings_video_consecutive_frames_to_skip">छोड़ने योग्य क्रमागत फ्रेम</string>
+<string name="emulator_settings_video_resolution_scale">संकल्प स्केल</string>
+<string name="emulator_settings_video_anisotropic_filter_override">एनिसोट्रॉपिक फ़िल्टर ओवरराइड</string>
+<string name="emulator_settings_video_texture_lod_bias_addend">टेक्सचर LOD बायस ऐडेंडम</string>
+<string name="emulator_settings_video_minimum_scalable_dimension">न्यूनतम स्केलयोग्य आयाम</string>
+<string name="emulator_settings_video_shader_compiler_threads">शेडर कंपाइलर थ्रेड</string>
+<string name="emulator_settings_video_driver_recovery_timeout">ड्राइवर रिकवरी टाइमआउट</string>
+<string name="emulator_settings_video_driver_wakeup_delay">ड्राइवर जागने की देरी</string>
+<string name="emulator_settings_video_vblank_rate">Vblank दर</string>
+<string name="emulator_settings_video_vblank_ntsc_fixup">Vblank NTSC सुधार</string>
+<string name="emulator_settings_video_decr_memory_layout">DECR मेमोरी लेआउट</string>
+<string name="emulator_settings_video_allow_host_gpu_labels">होस्ट GPU लेबल्स अनुमति दें</string>
+<string name="emulator_settings_video_disable_msl_fast_math">MSL तीव्र गणित अक्षम करें</string>
+<string name="emulator_settings_video_disable_asynchronous_memory_manager">असमकालिक मेमोरी मैनेजर अक्षम करें</string>
+<string name="emulator_settings_video_output_scaling_mode">आउटपुट स्केलिंग मोड</string>
+<string-array name="video_output_scaling_mode_entries">
+    <item>निकटतम</item>
+    <item>बाइलिनियर</item>
+    <item>फिडेलिटीएफएक्स सुपर रेज़ोल्यूशन</item>
+</string-array>
+<string name="emulator_settings_video_use_bgra_format">BGRA प्रारूप उपयोग करें</string>
+<string name="emulator_settings_video_force_convert_texture">टेक्सचर रूपांतरण लागू करें</string>
+<string name="emulator_settings_video_vulkan">वुल्कन</string>
+<string name="emulator_settings_video_vulkan_adapter">एडाप्टर</string>
+<string name="emulator_settings_video_vulkan_force_fifo_present_mode">FIFO प्रस्तुति मोड लागू करें</string>
+<string name="emulator_settings_video_vulkan_force_primitive_restart_flag">प्राइमिटिव पुनःप्रारंभ झंडा लागू करें</string>
+<string name="emulator_settings_video_vulkan_exclusive_fullscreen_mode">एकलवार्ता पूर्ण परदा मोड</string>
+<string-array name="video_vulkan_exclusive_fullscreen_mode_entries">
+    <item>स्वचालित</item>
+    <item>अक्षम</item>
+    <item>सक्षम</item>
+</string-array>
+<string name="emulator_settings_video_vulkan_asynchronous_texture_streaming_2">असमकालिक टेक्सचर स्ट्रीमिंग 2</string>
+<string name="emulator_settings_video_vulkan_fidelityfx_cas_sharpening_intensity">फिडेलिटीएफएक्स CAS तीक्ष्णता तीव्रता</string>
+<string name="emulator_settings_video_vulkan_asynchronous_queue_scheduler">असमकालिक फ़ील्ड अनुसूचक</string>
+<string-array name="video_vulkan_asynchronous_queue_scheduler_entries">
+    <item>सुरक्षित</item>
+    <item>तीव्र</item>
+</string-array>
+<string name="emulator_settings_video_vulkan_vram_allocation_limit">VRAM आवंटन सीमा (MB)</string>
+
+<string name="emulator_settings_video_vulkan_use_custom_driver">कस्टम ड्राइवर उपयोग करें</string>
+<string name="emulator_settings_video_vulkan_custom_driver_library_path">कस्टम ड्राइवर संचयन पथ</string>
+<string name="emulator_settings_video_vulkan_custom_driver_force_max_clocks">अधिकतम क्लॉक लागू करें</string>
+
+<string name="emulator_settings_video_performance_overlay">प्रदर्शन ओवरले</string>
+<string name="emulator_settings_video_performance_overlay_enabled">सक्षम</string>
+<string name="emulator_settings_video_performance_overlay_enable_framerate_graph">फ़्रेमदर ग्राफ़ सक्षम करें</string>
+<string name="emulator_settings_video_performance_overlay_enable_frametime_graph">फ़्रेमसमय ग्राफ़ सक्षम करें</string>
+<string name="emulator_settings_video_performance_overlay_framerate_datapoints">फ़्रेमदर डेटापॉइंट</string>
+<string name="emulator_settings_video_performance_overlay_frametime_datapoints">फ़्रेमसमय डेटापॉइंट</string>
+<string name="emulator_settings_video_performance_overlay_detail_level">विस्तार स्तर</string>
+<string-array name="video_performance_overlay_detail_level_entries">
+	<item>कोई नहीं</item>
+	<item>न्यूनतम</item>
+	<item>कम</item>
+	<item>मध्यम</item>
+	<item>उच्च</item>
+</string-array>
+<string name="emulator_settings_video_performance_overlay_framerate_graph_detail_level">फ़्रेमदर ग्राफ़ विस्तार स्तर</string>
+<string-array name="video_performance_overlay_framerate_graph_detail_level_entries">
+	<item>न्यूनतम</item>
+	<item>न्यूनतम और अधिकतम दिखाएं</item>
+	<item>1% और औसत दिखाएं</item>
+	<item>सभी</item>
+</string-array>
+<string name="emulator_settings_video_performance_overlay_frametime_graph_detail_level">फ़्रेमसमय ग्राफ़ विस्तार स्तर</string>
+<string-array name="video_performance_overlay_frametime_graph_detail_level_entries">
+	<item>न्यूनतम</item>
+	<item>न्यूनतम और अधिकतम दिखाएं</item>
+	<item>1% और औसत दिखाएं</item>
+	<item>सभी</item>
+</string-array>
+<string name="emulator_settings_video_performance_overlay_metrics_update_interval">मेट्रिक्स अद्यतन अंतराल (मिलीसेकंड)</string>
+<string name="emulator_settings_video_performance_overlay_font_size">फ़ॉन्ट आकार (पिक्सेल)</string>
+<string name="emulator_settings_video_performance_overlay_position">स्थिति</string>
+<string-array name="video_performance_overlay_position_entries">
+	<item>ऊपरी बाएं</item>
+	<item>ऊपरी दाएं</item>
+	<item>निचला बाएं</item>
+	<item>निचला दाएं</item>
+</string-array>
+<string name="emulator_settings_video_performance_overlay_font">फ़ॉन्ट</string>
+<string name="emulator_settings_video_performance_overlay_horizontal_margin">क्षैतिज मार्जिन (पिक्सेल)</string>
+<string name="emulator_settings_video_performance_overlay_vertical_margin">लंबवत मार्जिन (पिक्सेल)</string>
+<string name="emulator_settings_video_performance_overlay_center_horizontally">क्षैतिज रूप से केंद्रित करें</string>
+<string name="emulator_settings_video_performance_overlay_center_vertically">लंबवत रूप से केंद्रित करें</string>
+<string name="emulator_settings_video_performance_overlay_opacity">अपारदर्शिता (%)</string>
+<string name="emulator_settings_video_performance_overlay_body_color">शरीर रंग (हेक्स)</string>
+<string name="emulator_settings_video_performance_overlay_body_background">शरीर पृष्ठभूमि (हेक्स)</string>
+<string name="emulator_settings_video_performance_overlay_title_color">शीर्षक रंग (हेक्स)</string>
+<string name="emulator_settings_video_performance_overlay_title_background">शीर्षक पृष्ठभूमि (हेक्स)</string>
+<string name="emulator_settings_video_shader_loading_dialog">शेडर लोडिंग डायलॉग</string>
+<string name="emulator_settings_video_shader_loading_dialog_allow_custom_background">कस्टम पृष्ठभूमि की अनुमति दें</string>
+<string name="emulator_settings_video_shader_loading_dialog_darkening_effect_strength">अंधेरा प्रभाव तीव्रता</string>
+<string name="emulator_settings_video_shader_loading_dialog_blur_effect_strength">धुंधला प्रभाव तीव्रता</string>
+<string name="emulator_settings_audio">ऑडियो</string>
+<string name="emulator_settings_audio_renderer">रेंडरर</string>
+<string-array name="audio_renderer_entries">
+	<item>शून्य</item>
+	<item>क्यूबेब</item>
+</string-array>
+<string name="emulator_settings_audio_audio_provider">ऑडियो प्रदाता</string>
+<string-array name="audio_audio_provider_entries">
+	<item>कोई नहीं</item>
+	<item>सेलऑडियो</item>
+	<item>आरएसएक्सऑडियो</item>
+</string-array>
+<string name="emulator_settings_audio_rsxaudio_avport">आरएसएक्सऑडियो एवी पोर्ट</string>
+<string-array name="audio_rsxaudio_avport_entries">
+	<item>एचडीएमआई 0</item>
+	<item>एचडीएमआई 1</item>
+	<item>एवी मल्टीआउट</item>
+	<item>एसपीडीआईएफ 0</item>
+	<item>एसपीडीआईएफ 1</item>
+</string-array>
+<string name="emulator_settings_audio_dump_to_file">फ़ाइल में डंप करें</string>
+<string name="emulator_settings_audio_convert_to_16_bit">16 बिट में परिवर्तित करें</string>
+<string name="emulator_settings_audio_audio_format">ऑडियो प्रारूप</string>
+<string-array name="audio_audio_format_entries">
+	<item>स्टीरियो</item>
+	<item>सराउंड 5.1</item>
+	<item>सराउंड 7.1</item>
+	<item>स्वचालित</item>
+	<item>मैनुअल</item>
+</string-array>
+<string name="emulator_settings_audio_audio_formats">ऑडियो प्रारूप</string>
+<string name="emulator_settings_audio_audio_channel_layout">ऑडियो चैनल लेआउट</string>
+<string-array name="audio_audio_channel_layout_entries">
+	<item>स्वचालित</item>
+	<item>मोनो</item>
+	<item>स्टीरियो</item>
+	<item>स्टीरियो एलएफई</item>
+	<item>क्वाड्राफोनिक</item>
+	<item>क्वाड्राफोनिक एलएफई</item>
+	<item>सराउंड 5.1</item>
+	<item>सराउंड 7.1</item>
+</string-array>
+<string name="emulator_settings_audio_audio_device">ऑडियो डिवाइस</string>
+<string name="emulator_settings_audio_master_volume">मास्टर वॉल्यूम</string>
+<string name="emulator_settings_audio_enable_buffering">बफरिंग सक्षम करें</string>
+<string name="emulator_settings_audio_desired_audio_buffer_duration">वांछित ऑडियो बफर अवधि</string>
+<string name="emulator_settings_audio_enable_time_stretching">समय खींचना सक्षम करें</string>
+<string name="emulator_settings_audio_disable_sampling_skip">नमूनाकरण छलांग अक्षम करें</string>
+<string name="emulator_settings_audio_time_stretching_threshold">समय खींचना थ्रेशोल्ड</string>
+<string name="emulator_settings_audio_microphone_type">माइक्रोफ़ोन प्रकार</string>
+<string-array name="audio_microphone_type_entries">
+	<item>शून्य</item>
+	<item>मानक</item>
+	<item>सिंगस्टार</item>
+	<item>वास्तविक सिंगस्टार</item>
+	<item>रॉकस्मिथ</item>
+</string-array>
+<string name="emulator_settings_audio_microphone_devices">माइक्रोफ़ोन डिवाइस</string>
+<string name="emulator_settings_audio_music_handler">संगीत हैंडलर</string>
+<string-array name="audio_music_handler_entries">
+	<item>शून्य</item>
+	<item>क्यूटी</item>
+</string-array>
+<string name="emulator_settings_input_output">इनपुट/आउटपुट</string>
+<string name="emulator_settings_input_output_keyboard">कीबोर्ड</string>
+<string-array name="input_output_keyboard_entries">
+	<item>शून्य</item>
+	<item>बुनियादी</item>
+</string-array>
+<string name="emulator_settings_input_output_mouse">माउस</string>
+<string-array name="input_output_mouse_entries">
+	<item>शून्य</item>
+	<item>बुनियादी</item>
+	<item>कच्चा</item>
+</string-array>
+<string name="emulator_settings_input_output_camera">कैमरा</string>
+<string-array name="input_output_camera_entries">
+	<item>शून्य</item>
+	<item>नकली</item>
+	<item>क्यूटी</item>
+</string-array>
+<string name="emulator_settings_input_output_camera_type">कैमरा प्रकार</string>
+<string-array name="input_output_camera_type_entries">
+	<item>अज्ञात</item>
+	<item>आईटॉय</item>
+	<item>पीएस आई</item>
+	<item>यूवीसी 1.1</item>
+</string-array>
+<string name="emulator_settings_input_output_camera_flip">कैमरा उल्टा करें</string>
+<string-array name="input_output_camera_flip_entries">
+	<item>कोई नहीं</item>
+	<item>क्षैतिज</item>
+	<item>लंबवत</item>
+	<item>दोनों</item>
+</string-array>
+<string name="emulator_settings_input_output_camera_id">कैमरा आईडी</string>
+<string name="emulator_settings_input_output_move">मूव</string>
+<string-array name="input_output_move_entries">
+	<item>शून्य</item>
+	<item>नकली</item>
+	<item>माउस</item>
+	<item>कच्चा माउस</item>
+</string-array>
+<string name="emulator_settings_input_output_buzz_emulated_controller">बज़ अनुकरित नियंत्रक</string>
+<string-array name="input_output_buzz_emulated_controller_entries">
+	<item>शून्य</item>
+	<item>1 कंट्रोलर</item>
+	<item>2 कंट्रोलर</item>
+</string-array>
+<string name="emulator_settings_input_output_turntable_emulated_controller">टर्नटेबल अनुकरित कंट्रोलर</string>
+<string-array name="input_output_turntable_emulated_controller_entries">
+	<item>शून्य</item>
+	<item>1 कंट्रोलर</item>
+	<item>2 कंट्रोलर</item>
+</string-array>
+<string name="emulator_settings_input_output_ghltar_emulated_controller">जीएचएलटैर अनुकरित कंट्रोलर</string>
+<string-array name="input_output_ghltar_emulated_controller_entries">
+	<item>शून्य</item>
+	<item>1 कंट्रोलर</item>
+	<item>2 कंट्रोलर</item>
+</string-array>
+<string name="emulator_settings_input_output_pad_handler_mode">पैड हैंडलर मोड</string>
+<string-array name="input_output_pad_handler_mode_entries">
+	<item>एकल-थ्रेडेड</item>
+	<item>मल्टी-थ्रेडेड</item>
+</string-array>
+<string name="emulator_settings_input_output_keep_pads_connected">पैड को कनेक्टेड रखें</string>
+<string name="emulator_settings_input_output_pad_handler_sleep">पैड हैंडलर स्लीप (माइक्रोसेकंड)</string>
+<string name="emulator_settings_input_output_background_input_enabled">बैकग्राउंड इनपुट सक्षम</string>
+<string name="emulator_settings_input_output_show_move_cursor">मूव कर्सर दिखाएं</string>
+<string name="emulator_settings_input_output_lock_overlay_input_to_player_one">ओवरले इनपुट को प्लेयर एक पर लॉक करें</string>
+<string name="emulator_settings_input_output_emulated_midi_devices">अनुकरित मिडी डिवाइस</string>
+<string name="emulator_settings_input_output_load_sdl_gamecontroller_mappings">एसडीएल गेमकंट्रोलर मैपिंग लोड करें</string>
+<string name="emulator_settings_input_output_io_debug_overlay">आईओ डीबग ओवरले</string>
+<string name="emulator_settings_system">सिस्टम</string>
+<string name="emulator_settings_system_license_area">लाइसेंस क्षेत्र</string>
+<string-array name="system_license_area_entries">
+	<item>एससीईजे</item>
+	<item>एससीईए</item>
+	<item>एससीईई</item>
+	<item>एससीईएच</item>
+	<item>एससीईके</item>
+	<item>एससीएच</item>
+</string-array>
+<string name="emulator_settings_system_language">भाषा</string>
+<string-array name="system_language_entries">
+	<item>जापानी</item>
+	<item>अंग्रेज़ी (संयुक्त राज्य)</item>
+	<item>फ्रेंच</item>
+	<item>स्पेनिश</item>
+	<item>जर्मन</item>
+	<item>इतालवी</item>
+	<item>डच</item>
+	<item>पुर्तगाली (पुर्तगाल)</item>
+	<item>रूसी</item>
+	<item>कोरियाई</item>
+	<item>चीनी (पारंपरिक)</item>
+	<item>चीनी (सरलीकृत)</item>
+	<item>फिनिश</item>
+	<item>स्वीडिश</item>
+	<item>डेनिश</item>
+	<item>नॉर्वेजियन</item>
+	<item>पोलिश</item>
+	<item>पुर्तगाली (ब्राजील)</item>
+	<item>अंग्रेज़ी (यूके)</item>
+	<item>तुर्की</item>
+</string-array>
+<string name="emulator_settings_system_keyboard_type">कीबोर्ड प्रकार</string>
+<string-array name="system_keyboard_type_entries">
+	<item>अंग्रेज़ी कीबोर्ड (यूएस मानक)</item>
+	<item>जापानी कीबोर्ड</item>
+	<item>जापानी कीबोर्ड (काना स्थिति)</item>
+	<item>जर्मन कीबोर्ड</item>
+	<item>स्पेनिश कीबोर्ड</item>
+	<item>फ्रेंच कीबोर्ड</item>
+	<item>इतालवी कीबोर्ड</item>
+	<item>डच कीबोर्ड</item>
+	<item>पुर्तगाली कीबोर्ड (पुर्तगाल)</item>
+	<item>रूसी कीबोर्ड</item>
+	<item>अंग्रेज़ी कीबोर्ड (यूके मानक)</item>
+	<item>कोरियाई कीबोर्ड</item>
+	<item>नॉर्वेजियन कीबोर्ड</item>
+	<item>फिनिश कीबोर्ड</item>
+	<item>डेनिश कीबोर्ड</item>
+	<item>स्वीडिश कीबोर्ड</item>
+	<item>चीनी कीबोर्ड (पारंपरिक)</item>
+	<item>चीनी कीबोर्ड (सरलीकृत)</item>
+	<item>फ्रेंच कीबोर्ड (स्विट्जरलैंड)</item>
+	<item>जर्मन कीबोर्ड (स्विट्जरलैंड)</item>
+	<item>फ्रेंच कीबोर्ड (कनाडा)</item>
+	<item>फ्रेंच कीबोर्ड (बेल्जियम)</item>
+	<item>पोलिश कीबोर्ड</item>
+	<item>पुर्तगाली कीबोर्ड (ब्राजील)</item>
+	<item>तुर्की कीबोर्ड</item>
+</string-array>
+<string name="emulator_settings_system_enter_button_assignment">एंटर बटन असाइनमेंट</string>
+<string-array name="system_enter_button_assignment_entries">
+	<item>सर्कल के साथ एंटर</item>
+	<item>क्रॉस के साथ एंटर</item>
+</string-array>
+<string name="emulator_settings_system_console_time_offset">कंसोल समय ऑफ़सेट (एस)</string>
+<string name="emulator_settings_system_system_name">सिस्टम नाम</string>
+<string name="emulator_settings_system_psid_high">पीएसआईडी उच्च</string>
+<string name="emulator_settings_system_psid_low">पीएसआईडी निम्न</string>
+<string name="emulator_settings_system_hdd_model_name">एचडीडी मॉडल नाम</string>
+<string name="emulator_settings_system_hdd_serial_number">एचडीडी श्रृंखला संख्या</string>
+<string name="emulator_settings_net">नेट</string>
+<string name="emulator_settings_net_internet_enabled">इंटरनेट सक्षम</string>
+<string-array name="net_internet_enabled_entries">
+	<item>डिस्कनेक्टेड</item>
+	<item>कनेक्टेड</item>
+</string-array>
+<string name="emulator_settings_net_ip_address">आईपी पता</string>
+<string name="emulator_settings_net_bind_address">बाइंड पता</string>
+<string name="emulator_settings_net_dns_address">डीएनएस पता</string>
+<string name="emulator_settings_net_ip_swap_list">आईपी स्वैप सूची</string>
+<string name="emulator_settings_net_upnp_enabled">यूपीएनपी सक्षम</string>
+<string name="emulator_settings_net_psn_status">पीएसएन स्थिति</string>
+<string-array name="net_psn_status_entries">
+	<item>डिस्कनेक्टेड</item>
+	<item>सिमुलेटेड</item>
+	<item>आरपीसीएन</item>
+</string-array>
+<string name="emulator_settings_net_psn_country">पीएसएन देश</string>
+<string name="emulator_settings_savestate">सेवस्टेट</string>
+<string name="emulator_settings_savestate_start_paused">शुरुआत में रुकावट</string>
+<string name="emulator_settings_savestate_suspend_emulation_savestate_mode">निलंबित अनुकरण सेवस्टेट मोड</string>
+<string name="emulator_settings_savestate_compatible_savestate_mode">अनुकूल सेवस्टेट मोड</string>
+<string name="emulator_settings_savestate_inspection_mode_savestates">निरीक्षण मोड सेवस्टेट</string>
+<string name="emulator_settings_savestate_save_disc_game_data">डिस्क गेम डेटा सहेजें</string>
+<string name="emulator_settings_miscellaneous">विविध</string>
+<string name="emulator_settings_miscellaneous_automatically_start_games_after_boot">बूट के बाद गेम स्वचालित रूप से शुरू करें</string>
+<string name="emulator_settings_miscellaneous_exit_rpcs3_when_process_finishes">प्रक्रिया समाप्त होने पर आरपीसीएस3 से बाहर निकलें</string>
+<string name="emulator_settings_miscellaneous_pause_emulation_on_rpcs3_focus_loss">आरपीसीएस3 फ़ोकस खोने पर अनुकरण रोकें</string>
+<string name="emulator_settings_miscellaneous_start_games_in_fullscreen_mode">पूर्ण स्क्रीन मोड में गेम शुरू करें</string>
+<string name="emulator_settings_miscellaneous_prevent_display_sleep_while_running_games">गेम चलाते समय डिस्प्ले स्लीप रोकें</string>
+<string name="emulator_settings_miscellaneous_show_trophy_popups">ट्रॉफी पॉपअप दिखाएं</string>
+<string name="emulator_settings_miscellaneous_show_rpcn_popups">आरपीसीएन पॉपअप दिखाएं</string>
+<string name="emulator_settings_miscellaneous_show_shader_compilation_hint">शेडर संकलन संकेत दिखाएं</string>
+<string name="emulator_settings_miscellaneous_show_ppu_compilation_hint">पीपीयू संकलन संकेत दिखाएं</string>
+<string name="emulator_settings_miscellaneous_show_pressure_intensity_toggle_hint">दबाव तीव्रता स्विच संकेत दिखाएं</string>
+<string name="emulator_settings_miscellaneous_show_analog_limiter_toggle_hint">एनालॉग लिमिटर स्विच संकेत दिखाएं</string>
+<string name="emulator_settings_miscellaneous_show_mouse_and_keyboard_toggle_hint">माउस और कीबोर्ड स्विच संकेत दिखाएं</string>
+<string name="emulator_settings_miscellaneous_show_autosave_autoload_hint">ऑटोसेव/ऑटोलोड संकेत दिखाएं</string>
+<string name="emulator_settings_miscellaneous_use_native_user_interface">नेटिव उपयोगकर्ता इंटरफ़ेस का उपयोग करें</string>
+<string name="emulator_settings_miscellaneous_gdb_server">जीडीबी सर्वर</string>
+<string name="emulator_settings_miscellaneous_silence_all_logs">सभी लॉग्स को चुप करें</string>
+<string name="emulator_settings_miscellaneous_window_title_format">विंडो शीर्षक प्रारूप</string>
+<string name="emulator_settings_miscellaneous_pause_emulation_during_home_menu">होम मेनू के दौरान अनुकरण रोकें</string>
+<string name="emulator_settings_miscellaneous_font_file_selection">फ़ॉन्ट फ़ाइल चयन</string>
+<string-array name="miscellaneous_font_file_selection_entries">
+	<item>फर्मवेयर से</item>
+	<item>कस्टम</item>
+</string-array>
+<string name="emulator_settings_miscellaneous_custom_font_file_path">कस्टम फ़ॉन्ट फ़ाइल पथ</string>
+<string name="emulator_settings_miscellaneous_font_size">फ़ॉन्ट आकार</string>
+<string name="INVALID">अमान्य</string>
+<string name="RSX_OVERLAYS_TROPHY_BRONZE">आपने एक कांस्य ट्रॉफी अर्जित की है।\n%0</string>
+<string name="RSX_OVERLAYS_TROPHY_SILVER">आपने एक चांदी की ट्रॉफी अर्जित की है।\n%0</string>
+<string name="RSX_OVERLAYS_TROPHY_GOLD">आपने एक स्वर्ण ट्रॉफी अर्जित की है।\n%0</string>
+<string name="RSX_OVERLAYS_TROPHY_PLATINUM">आपने एक प्लेटिनम ट्रॉफी अर्जित की है।\n%0</string>
+<string name="RSX_OVERLAYS_COMPILING_SHADERS">शेडर संकलित कर रहा है</string>
+<string name="RSX_OVERLAYS_COMPILING_PPU_MODULES">पीपीयू मॉड्यूल संकलित कर रहा है</string>
+<string name="RSX_OVERLAYS_MSG_DIALOG_YES">हाँ</string>
+<string name="RSX_OVERLAYS_MSG_DIALOG_NO">नहीं</string>
+<string name="RSX_OVERLAYS_MSG_DIALOG_CANCEL">वापस</string>
+<string name="RSX_OVERLAYS_MSG_DIALOG_OK">ठीक है</string>
+<string name="RSX_OVERLAYS_SAVE_DIALOG_TITLE">सेव डायलॉग</string>
+<string name="RSX_OVERLAYS_SAVE_DIALOG_DELETE">सेव हटाएं</string>
+<string name="RSX_OVERLAYS_SAVE_DIALOG_LOAD">सेव लोड करें</string>
+<string name="RSX_OVERLAYS_SAVE_DIALOG_SAVE">सहेजें</string>
+<string name="RSX_OVERLAYS_OSK_DIALOG_ACCEPT">एंटर</string>
+<string name="RSX_OVERLAYS_OSK_DIALOG_CANCEL">वापस</string>
+<string name="RSX_OVERLAYS_OSK_DIALOG_SPACE">स्पेस</string>
+<string name="RSX_OVERLAYS_OSK_DIALOG_BACKSPACE">बैकस्पेस</string>
+<string name="RSX_OVERLAYS_OSK_DIALOG_SHIFT">शिफ्ट</string>
+<string name="RSX_OVERLAYS_OSK_DIALOG_ENTER_TEXT">[पाठ दर्ज करें]</string>
+<string name="RSX_OVERLAYS_OSK_DIALOG_ENTER_PASSWORD">[पासवर्ड दर्ज करें]</string>
+<string name="RSX_OVERLAYS_MEDIA_DIALOG_TITLE">मीडिया चुनें</string>
+<string name="RSX_OVERLAYS_MEDIA_DIALOG_TITLE_PHOTO_IMPORT">आयात करने के लिए फोटो चुनें</string>
+<string name="RSX_OVERLAYS_MEDIA_DIALOG_EMPTY">कोई मीडिया नहीं मिला।</string>
+<string name="RSX_OVERLAYS_LIST_SELECT">एंटर</string>
+<string name="RSX_OVERLAYS_LIST_CANCEL">वापस</string>
+<string name="RSX_OVERLAYS_LIST_DENY">अस्वीकार करें</string>
+
+    <string name="RSX_OVERLAYS_PRESSURE_INTENSITY_TOGGLED_OFF">प्लेयर %0 के लिए दबाव तीव्रता मोड अक्षम है</string>
+	<string name="RSX_OVERLAYS_PRESSURE_INTENSITY_TOGGLED_ON">प्लेयर %0 के लिए दबाव तीव्रता मोड सक्षम है</string>
+	<string name="RSX_OVERLAYS_ANALOG_LIMITER_TOGGLED_OFF">प्लेयर %0 के लिए एनालॉग लिमिटर अक्षम है</string>
+	<string name="RSX_OVERLAYS_ANALOG_LIMITER_TOGGLED_ON">प्लेयर %0 के लिए एनालॉग लिमिटर सक्षम है</string>
+	<string name="RSX_OVERLAYS_MOUSE_AND_KEYBOARD_EMULATED">माउस और कीबोर्ड अब एमुलेटेड डिवाइस के रूप में उपयोग किए जा रहे हैं</string>
+	<string name="RSX_OVERLAYS_MOUSE_AND_KEYBOARD_PAD">माउस और कीबोर्ड अब पैड के रूप में उपयोग किए जा रहे हैं</string>
+	<string name="CELL_GAME_ERROR_BROKEN_GAMEDATA">त्रुटि: गेम डेटा क्षतिग्रस्त है। एप्लिकेशन जारी रहेगा</string>
+	<string name="CELL_GAME_ERROR_BROKEN_HDDGAME">त्रुटि: HDD बूट गेम क्षतिग्रस्त है। एप्लिकेशन जारी रहेगा</string>
+	<string name="CELL_GAME_ERROR_BROKEN_EXIT_GAMEDATA">त्रुटि: गेम डेटा क्षतिग्रस्त है। एप्लिकेशन समाप्त कर दिया जाएगा</string>
+	<string name="CELL_GAME_ERROR_BROKEN_EXIT_HDDGAME">त्रुटि: HDD बूट गेम क्षतिग्रस्त है। एप्लिकेशन समाप्त कर दिया जाएगा</string>
+	<string name="CELL_GAME_ERROR_NOSPACE">त्रुटि: पर्याप्त स्थान नहीं है। एप्लिकेशन जारी रहेगा।\nआवश्यक स्थान: %0 KB</string>
+	<string name="CELL_GAME_ERROR_NOSPACE_EXIT">त्रुटि: पर्याप्त स्थान नहीं है। एप्लिकेशन समाप्त कर दिया जाएगा।\nआवश्यक स्थान: %0 KB</string>
+	<string name="CELL_GAME_ERROR_DIR_NAME">निर्देशिका का नाम: %0</string>
+	<string name="CELL_GAME_DATA_EXIT_BROKEN">एक त्रुटि हुई है!\n\nकृपया इस शीर्षक के लिए गेम डेटा हटा दें</string>
+	<string name="CELL_HDD_GAME_EXIT_BROKEN">एक त्रुटि हुई है!\n\nकृपया HDD बूट गेम को पुनः स्थापित करें</string>
+	<string name="CELL_HDD_GAME_CHECK_NOSPACE">HDD बूट गेम बनाने के लिए पर्याप्त स्थान नहीं है।\nआवश्यक स्थान: %0 KB</string>
+	<string name="CELL_HDD_GAME_CHECK_BROKEN">HDD बूट गेम %0 क्षतिग्रस्त है!</string>
+	<string name="CELL_HDD_GAME_CHECK_NODATA">HDD बूट गेम %0 नहीं मिल सका!</string>
+	<string name="CELL_HDD_GAME_CHECK_INVALID">त्रुटि: %0</string>
+	<string name="CELL_GAMEDATA_CHECK_NOSPACE">गेम डेटा बनाने के लिए पर्याप्त स्थान नहीं है।\nआवश्यक स्थान: %0 KB</string>
+	<string name="CELL_GAMEDATA_CHECK_BROKEN">निर्देशिका %0 में गेम डेटा क्षतिग्रस्त है!</string>
+	<string name="CELL_GAMEDATA_CHECK_NODATA">निर्देशिका %0 में गेम डेटा नहीं मिल सका!</string>
+	<string name="CELL_GAMEDATA_CHECK_INVALID">त्रुटि: %0</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010001">संसाधन अस्थायी रूप से अनुपलब्ध है।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010002">अमान्य तर्क या झंडा।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010003">सुविधा अभी तक कार्यान्वित नहीं हुई है।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010004">मेमोरी आवंटन असफल।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010005">निर्दिष्ट पहचानकर्ता के साथ संसाधन मौजूद नहीं है।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010006">फ़ाइल मौजूद नहीं है।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010007">फ़ाइल अमान्य प्रारूप में है / फ़ाइल एक मान्य ELF फ़ाइल नहीं है।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010008">संसाधन द्वंद्व रोका गया है।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010009">संचालन की अनुमति नहीं है।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000A">डिवाइस या संसाधन व्यस्त है।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000B">संचालन समय समाप्त हो गया।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000C">संचालन रद्द कर दिया गया।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000D">अमान्य मेमोरी एक्सेस।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000F">लक्ष्य थ्रेड की स्थिति अमान्य है।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010010">संरेखण अमान्य है।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010011">कर्नेल संसाधनों की कमी।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010012">फ़ाइल एक निर्देशिका है।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010013">संचालन रद्द कर दिया गया।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010014">प्रविष्टि पहले से मौजूद है।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010015">पोर्ट पहले से जुड़ा हुआ है।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010016">पोर्ट जुड़ा नहीं हुआ है।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010017">SELF के लिए अधिकृत करने में असफल। प्रोग्राम प्रमाणीकरण असफल।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010018">फ़ाइल MSELF नहीं है।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010019">सिस्टम संस्करण त्रुटि।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001A">SELF के लिए अधिकृत करने के दौरान सिस्टम त्रुटि। SELF प्रमाणीकरण असफल।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001B">गणित डोमेन उल्लंघन।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001C">गणित सीमा उल्लंघन।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001D">इनपुट में अवैध मल्टी-बाइट अनुक्रम।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001E">फ़ाइल स्थिति त्रुटि।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001F">सिस्टम कॉल बाधित हुई।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010020">फ़ाइल बहुत बड़ी है।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010021">बहुत सारे लिंक।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010022">फ़ाइल तालिका ओवरफ्लो।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010023">डिवाइस पर कोई स्थान नहीं बचा है।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010024">टीटीवाई नहीं है।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010025">टूटा हुआ पाइप।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010026">केवल पढ़ने योग्य फ़ाइल सिस्टम।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010027">अवैध सीक।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010028">आर्ग सूची बहुत लंबी है।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010029">अभिगमन उल्लंघन।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002A">अमान्य फ़ाइल डिस्क्रिप्टर।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002B">फ़ाइल सिस्टम माउंटिंग असफल।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002C">बहुत सारी फ़ाइलें खुली हैं।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002D">कोई डिवाइस नहीं।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002E">निर्देशिका नहीं है।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002F">कोई ऐसा डिवाइस या IO नहीं है।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010030">क्रॉस-डिवाइस लिंक त्रुटि।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010031">खराब संदेश।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010032">प्रगति में।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010033">संदेश का आकार त्रुटि।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010034">नाम बहुत लंबा है।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010035">कोई लॉक नहीं।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010036">खाली नहीं है।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010037">समर्थित नहीं।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010038">फ़ाइल सिस्टम विशिष्ट त्रुटि।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010039">ओवरफ्लो हुआ।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003A">फ़ाइल सिस्टम माउंट नहीं है।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003B">SData नहीं है।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003C">sys_load_param में संस्करण गलत है।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003D">पॉइंटर शून्य है।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003E">पॉइंटर शून्य है।\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_DEFAULT">एक त्रुटि हुई है।\n(%0)</string>
+	<string name="CELL_OSK_DIALOG_TITLE">स्क्रीन पर कीबोर्ड</string>
+	<string name="CELL_OSK_DIALOG_BUSY">स्क्रीन पर कीबोर्ड व्यस्त है, होम मेनू नहीं खोला जा सकता!</string>
+    <string name="CELL_SAVEDATA_CB_BROKEN">त्रुटि - सहेजा गया डेटा क्षतिग्रस्त</string>
+	<string name="CELL_SAVEDATA_CB_FAILURE">त्रुटि - सहेजने या लोड करने में असफल</string>
+	<string name="CELL_SAVEDATA_CB_NO_DATA">त्रुटि - सहेजा गया डेटा नहीं मिल सका</string>
+	<string name="CELL_SAVEDATA_CB_NO_SPACE">त्रुटि - पर्याप्त मुक्त स्थान नहीं है\n\nआवश्यक स्थान: %0 KB</string>
+	<string name="CELL_SAVEDATA_NO_DATA">कोई सहेजा गया डेटा नहीं है।</string>
+	<string name="CELL_SAVEDATA_NEW_SAVED_DATA_TITLE">नया सहेजा गया डेटा</string>
+	<string name="CELL_SAVEDATA_NEW_SAVED_DATA_SUB_TITLE">नई प्रविष्टि बनाने के लिए चुनें</string>
+	<string name="CELL_SAVEDATA_SAVE_CONFIRMATION">क्या आप यह डेटा सहेजना चाहते हैं?</string>
+	<string name="CELL_SAVEDATA_DELETE_CONFIRMATION">क्या आप वाकई इस डेटा को हटाना चाहते हैं?\n\n%0</string>
+	<string name="CELL_SAVEDATA_DELETE_SUCCESS">डेटा सफलतापूर्वक हटा दिया गया!\n\n%0</string>
+	<string name="CELL_SAVEDATA_DELETE">इस डेटा को हटाना चाहते हैं?\n\n%0</string>
+	<string name="CELL_SAVEDATA_LOAD">इस डेटा को लोड करना चाहते हैं?\n\n%0</string>
+	<string name="CELL_SAVEDATA_SAVE">इस डेटा को सहेजना चाहते हैं?\n\n%0</string>
+	<string name="CELL_SAVEDATA_OVERWRITE">क्या आप सहेजे गए डेटा को ओवरराइट करना चाहते हैं?\n\n%0</string>
+	<string name="CELL_SAVEDATA_AUTOSAVE">सहेजना जारी है...</string>
+	<string name="CELL_SAVEDATA_AUTOLOAD">लोड करना जारी है...</string>
+	<string name="CELL_CROSS_CONTROLLER_MSG">PS Vita सिस्टम पर शुरू करें।\nयदि आपने स्थापित नहीं किया है, तो PS Vita सिस्टम पर [रिमोट प्ले] पर जाएं और LiveArea™ स्क्रीन से [क्रॉस-कंट्रोलर] शुरू करें।</string>
+	<string name="CELL_CROSS_CONTROLLER_FW_MSG">यदि PS Vita सिस्टम पर आपका सिस्टम सॉफ़्टवेयर संस्करण 1.80 से पुराना है, तो आपको सिस्टम सॉफ़्टवेयर को नवीनतम संस्करण में अपडेट करना होगा।</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_TITLE">संदेश चुनें</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_TITLE_INVITE">आमंत्रण चुनें</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_TITLE_ADD_FRIEND">दोस्त जोड़ें</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_FROM">से:</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_SUBJECT">विषय:</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_TITLE">भेजने के लिए संदेश चुनें</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_TITLE_INVITE">आमंत्रण भेजें</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_TITLE_ADD_FRIEND">दोस्त जोड़ें</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_CONFIRMATION">%0 को संदेश भेजना है?\n\nविषय:</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_CONFIRMATION_INVITE">%0 को आमंत्रण भेजना है?\n\nविषय:</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_CONFIRMATION_ADD_FRIEND">%0 को दोस्त अनुरोध भेजना है?\n\nविषय:</string>
+	<string name="RECORDING_ABORTED">रिकॉर्डिंग रद्द कर दी गई!</string>
+	<string name="RPCN_NO_ERROR">RPCN: कोई त्रुटि नहीं</string>
+	<string name="RPCN_ERROR_INVALID_INPUT">RPCN: अमान्य इनपुट (गलत होस्ट/पोर्ट)</string>
+	<string name="RPCN_ERROR_WOLFSSL">RPCN कनेक्शन त्रुटि: WolfSSL त्रुटि</string>
+	<string name="RPCN_ERROR_RESOLVE">RPCN कनेक्शन त्रुटि: रिज़ॉल्व त्रुटि</string>
+	<string name="RPCN_ERROR_CONNECT">RPCN कनेक्शन त्रुटि</string>
+	<string name="RPCN_ERROR_LOGIN_ERROR">RPCN लॉगिन त्रुटि: पहचान त्रुटि</string>
+	<string name="RPCN_ERROR_ALREADY_LOGGED">RPCN लॉगिन त्रुटि: उपयोगकर्ता पहले से लॉगिन है</string>
+	<string name="RPCN_ERROR_INVALID_LOGIN">RPCN लॉगिन त्रुटि: अमान्य उपयोगकर्ता नाम</string>
+	<string name="RPCN_ERROR_INVALID_PASSWORD">RPCN लॉगिन त्रुटि: अमान्य पासवर्ड</string>
+	<string name="RPCN_ERROR_INVALID_TOKEN">RPCN लॉगिन त्रुटि: अमान्य टोकन</string>
+	<string name="RPCN_ERROR_INVALID_PROTOCOL_VERSION">RPCN विविध त्रुटि: प्रोटोकॉल संस्करण त्रुटि (पुराना RPCS3?)</string>
+	<string name="RPCN_ERROR_UNKNOWN">RPCN: अज्ञात त्रुटि</string>
+	<string name="RPCN_SUCCESS_LOGGED_ON">RPCN में सफलतापूर्वक लॉगिन किया गया!</string>
+	<string name="RPCN_FRIEND_REQUEST_RECEIVED">RPCN: दोस्त अनुरोध प्राप्त हुआ: %0</string>
+	<string name="RPCN_FRIEND_ADDED">RPCN: दोस्त जोड़ा गया: %0</string>
+	<string name="RPCN_FRIEND_LOST">RPCN: दोस्त हटा दिया गया: %0</string>
+	<string name="RPCN_FRIEND_LOGGED_IN">RPCN: %0 लॉगिन हुआ</string>
+	<string name="RPCN_FRIEND_LOGGED_OUT">RPCN: %0 लॉग आउट हुआ</string>
+    <string name="HOME_MENU_TITLE">होम मेनू</string>
+    <string name="HOME_MENU_EXIT_GAME">गेम से बाहर निकलें</string>
+    <string name="HOME_MENU_RESUME">गेम फिर से शुरू करें</string>
+    <string name="HOME_MENU_FRIENDS">दोस्त</string>
+    <string name="HOME_MENU_FRIENDS_REQUESTS">लंबित दोस्त अनुरोध</string>
+    <string name="HOME_MENU_FRIENDS_BLOCKED">ब्लॉक किए गए उपयोगकर्ता</string>
+    <string name="HOME_MENU_FRIENDS_STATUS_ONLINE">ऑनलाइन</string>
+    <string name="HOME_MENU_FRIENDS_STATUS_OFFLINE">ऑफ़लाइन</string>
+    <string name="HOME_MENU_FRIENDS_STATUS_BLOCKED">ब्लॉक किया गया</string>
+    <string name="HOME_MENU_FRIENDS_REQUEST_SENT">आपने एक दोस्त अनुरोध भेजा</string>
+    <string name="HOME_MENU_FRIENDS_REQUEST_RECEIVED">आपको एक दोस्त अनुरोध मिला</string>
+    <string name="HOME_MENU_FRIENDS_BLOCK_USER_MSG">क्या आप इस उपयोगकर्ता को ब्लॉक करना चाहते हैं?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_UNBLOCK_USER_MSG">क्या आप इस उपयोगकर्ता को अनब्लॉक करना चाहते हैं?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_REMOVE_USER_MSG">क्या आप इस उपयोगकर्ता को हटाना चाहते हैं?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_ACCEPT_REQUEST_MSG">अनुरोध स्वीकार करें?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_CANCEL_REQUEST_MSG">अनुरोध रद्द करें?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_REJECT_REQUEST_MSG">अनुरोध अस्वीकार करें?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_REJECT_REQUEST">अनुरोध अस्वीकार करें</string>
+    <string name="HOME_MENU_FRIENDS_NEXT_LIST">अगली सूची</string>
+    <string name="HOME_MENU_RESTART">गेम पुनः शुरू करें</string>
+    <string name="HOME_MENU_SETTINGS">सेटिंग्स</string>
+    <string name="HOME_MENU_SETTINGS_SAVE">कस्टम कॉन्फ़िगरेशन सहेजें?</string>
+    <string name="HOME_MENU_SETTINGS_SAVE_BUTTON">सहेजें</string>
+    <string name="HOME_MENU_SETTINGS_DISCARD">वर्तमान सेटिंग्स परिवर्तन छोड़ दें?</string>
+    <string name="HOME_MENU_SETTINGS_DISCARD_BUTTON">छोड़ दें</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO">ऑडियो</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_MASTER_VOLUME">मास्टर वॉल्यूम</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_BACKEND">ऑडियो बैकएंड</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_BUFFERING">बफ़रिंग सक्षम करें</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_BUFFER_DURATION">वांछित ऑडियो बफ़र अवधि</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_TIME_STRETCHING">टाइम स्ट्रेचिंग सक्षम करें</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_TIME_STRETCHING_THRESHOLD">टाइम स्ट्रेचिंग थ्रेशोल्ड</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO">वीडियो</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_FRAME_LIMIT">फ़्रेम सीमा</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_ANISOTROPIC_OVERRIDE">एनिसोट्रोपिक फ़िल्टर ओवरराइड</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_OUTPUT_SCALING">आउटपुट स्केलिंग</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_RCAS_SHARPENING">FidelityFX CAS तीक्ष्णता तीव्रता</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_STRETCH_TO_DISPLAY">डिस्प्ले क्षेत्र में फैलाएँ</string>
+    <string name="HOME_MENU_SETTINGS_INPUT">इनपुट</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_BACKGROUND_INPUT">बैकग्राउंड इनपुट सक्षम</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_KEEP_PADS_CONNECTED">पैड कनेक्टेड रखें</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_SHOW_PS_MOVE_CURSOR">PS मूव कर्सर दिखाएं</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_CAMERA_FLIP">कैमरा फ्लिप</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_PAD_MODE">पैड हैंडलर मोड</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_PAD_SLEEP">पैड हैंडलर स्लीप</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_FAKE_MOVE_ROTATION_CONE_H">नकली PS मूव घूर्णन कोन (क्षैतिज)</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_FAKE_MOVE_ROTATION_CONE_V">नकली PS मूव घूर्णन कोन (ऊर्ध्वाधर)</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED">उन्नत</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_PREFERRED_SPU_THREADS">पसंदीदा SPU थ्रेड्स</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_MAX_CPU_PREEMPTIONS">अधिकतम पावर सेविंग CPU-प्रीम्प्शन्स</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_ACCURATE_RSX_RESERVATION_ACCESS">सटीक RSX आरक्षण एक्सेस</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_SLEEP_TIMERS_ACCURACY">स्लीप टाइमर शुद्धता</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_MAX_SPURS_THREADS">अधिकतम SPURS थ्रेड्स</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_DRIVER_WAKE_UP_DELAY">ड्राइवर जागने की देरी</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_VBLANK_FREQUENCY">VBlank आवृत्ति</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_VBLANK_NTSC">VBlank NTSC ठीक करें</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS">ओवरले</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_TROPHY_POPUPS">ट्रॉफी पॉपअप दिखाएं</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_RPCN_POPUPS">RPCN पॉपअप दिखाएं</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_SHADER_COMPILATION_HINT">शेडर संकलन संकेत दिखाएं</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_PPU_COMPILATION_HINT">PPU संकलन संकेत दिखाएं</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_AUTO_SAVE_LOAD_HINT">ऑटोसेव/ऑटोलोड संकेत दिखाएं</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_PRESSURE_INTENSITY_TOGGLE_HINT">दबाव तीव्रता स्विच संकेत दिखाएं</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_ANALOG_LIMITER_TOGGLE_HINT">एनालॉग लिमिटर स्विच संकेत दिखाएं</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_MOUSE_AND_KB_TOGGLE_HINT">माउस और कीबोर्ड स्विच संकेत दिखाएं</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY">प्रदर्शन ओवरले</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_ENABLE">प्रदर्शन ओवरले सक्षम करें</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_ENABLE_FRAMERATE_GRAPH">फ़्रेम दर ग्राफ सक्षम करें</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_ENABLE_FRAMETIME_GRAPH">फ़्रेमटाइम ग्राफ सक्षम करें</string>
+
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_DETAIL_LEVEL">विस्तार स्तर</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMERATE_DETAIL_LEVEL">फ़्रेम दर ग्राफ़ विस्तार स्तर</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMETIME_DETAIL_LEVEL">फ़्रेम समय ग्राफ़ विस्तार स्तर</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMERATE_DATAPOINT_COUNT">फ़्रेम दर डेटा बिंदु</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMETIME_DATAPOINT_COUNT">फ़्रेम समय डेटा बिंदु</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_UPDATE_INTERVAL">मेट्रिक्स अद्यतन अंतराल</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_POSITION">स्थिति</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_CENTER_X">क्षैतिज रूप से केंद्रित</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_CENTER_Y">ऊर्ध्वाधर रूप से केंद्रित</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_MARGIN_X">क्षैतिज मार्जिन</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_MARGIN_Y">ऊर्ध्वाधर मार्जिन</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FONT_SIZE">फ़ॉन्ट आकार</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_OPACITY">अपारदर्शिता</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG">डीबग</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_OVERLAY">डीबग ओवरले</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_INPUT_OVERLAY">इनपुट डीबग ओवरले</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_DISABLE_VIDEO_OUTPUT">वीडियो आउटपुट अक्षम करें</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_TEXTURE_LOD_BIAS">टेक्सचर LOD बायस एडेंड</string>
+    <string name="HOME_MENU_SCREENSHOT">स्क्रीनशॉट लें</string>
+    <string name="HOME_MENU_SAVESTATE">सेवस्टेट</string>
+    <string name="HOME_MENU_SAVESTATE_SAVE">एमुलेशन स्थिति सहेजें</string>
+    <string name="HOME_MENU_SAVESTATE_AND_EXIT">एमुलेशन स्थिति सहेजें और बाहर निकलें</string>
+    <string name="HOME_MENU_RELOAD_SAVESTATE">अंतिम एमुलेशन स्थिति पुनः लोड करें</string>
+    <string name="HOME_MENU_RECORDING">रिकॉर्डिंग शुरू/रोकें</string>
+    <string name="HOME_MENU_TROPHIES">ट्रॉफियां</string>
+    <string name="HOME_MENU_TROPHY_LIST_TITLE">ट्रॉफी प्रगति: %0</string>
+    <string name="HOME_MENU_TROPHY_LOCKED_TITLE">लॉक की गई ट्रॉफी: %0</string>
+    <string name="HOME_MENU_TROPHY_HIDDEN_TITLE">छिपी हुई ट्रॉफी</string>
+    <string name="HOME_MENU_TROPHY_HIDDEN_DESCRIPTION">यह ट्रॉफी छिपी हुई है</string>
+    <string name="HOME_MENU_TROPHY_SHOW_HIDDEN_TROPHIES">छिपी हुई ट्रॉफियां दिखाएं</string>
+    <string name="HOME_MENU_TROPHY_HIDE_HIDDEN_TROPHIES">छिपी हुई ट्रॉफियां छिपाएं</string>
+    <string name="HOME_MENU_TROPHY_PLATINUM_RELEVANT">प्लेटिनम प्रासंगिक</string>
+    <string name="HOME_MENU_TROPHY_GRADE_BRONZE">कांस्य</string>
+    <string name="HOME_MENU_TROPHY_GRADE_SILVER">चांदी</string>
+    <string name="HOME_MENU_TROPHY_GRADE_GOLD">स्वर्ण</string>
+    <string name="HOME_MENU_TROPHY_GRADE_PLATINUM">प्लेटिनम</string>
+
+    <string name="AUDIO_MUTED">ऑडियो म्यूट किया गया</string>
+    <string name="AUDIO_UNMUTED">ऑडियो अनम्यूट किया गया</string>
+    <string name="AUDIO_CHANGED">मात्रा %0 पर सेट कर दी गई</string>
+    <string name="PROGRESS_DIALOG_PROGRESS">प्रगति:</string>
+    <string name="PROGRESS_DIALOG_PROGRESS_ANALYZING">प्रगति: विश्लेषण कर रहा है...</string>
+    <string name="PROGRESS_DIALOG_REMAINING">शेष</string>
+    <string name="PROGRESS_DIALOG_DONE">पूर्ण</string>
+    <string name="PROGRESS_DIALOG_FILE">फ़ाइल</string>
+    <string name="PROGRESS_DIALOG_MODULE">मॉड्यूल</string>
+    <string name="PROGRESS_DIALOG_OF">का</string>
+    <string name="PROGRESS_DIALOG_PLEASE_WAIT">कृपया प्रतीक्षा करें</string>
+    <string name="PROGRESS_DIALOG_STOPPING_PLEASE_WAIT">रोका जा रहा है। कृपया प्रतीक्षा करें...</string>
+    <string name="PROGRESS_DIALOG_SAVESTATE_PLEASE_WAIT">सेवस्टेट बनाया जा रहा है। कृपया प्रतीक्षा करें...</string>
+    <string name="PROGRESS_DIALOG_SCANNING_PPU_EXECUTABLE">पीपीयू निष्पादन योग्य स्कैन कर रहा है...</string>
+    <string name="PROGRESS_DIALOG_ANALYZING_PPU_EXECUTABLE">पीपीयू निष्पादन योग्य विश्लेषण कर रहा है...</string>
+    <string name="PROGRESS_DIALOG_SCANNING_PPU_MODULES">पीपीयू मॉड्यूल स्कैन कर रहा है...</string>
+    <string name="PROGRESS_DIALOG_LOADING_PPU_MODULES">पीपीयू मॉड्यूल लोड कर रहा है...</string>
+    <string name="PROGRESS_DIALOG_COMPILING_PPU_MODULES">पीपीयू मॉड्यूल संकलित कर रहा है...</string>
+    <string name="PROGRESS_DIALOG_LINKING_PPU_MODULES">पीपीयू मॉड्यूल लिंक कर रहा है...</string>
+    <string name="PROGRESS_DIALOG_APPLYING_PPU_CODE">पीपीयू कोड लागू कर रहा है...</string>
+    <string name="PROGRESS_DIALOG_BUILDING_SPU_CACHE">एसपीयू कैश बना रहा है...</string>
+    <string name="EMULATION_PAUSED_RESUME_WITH_START">फिर से शुरू करने के लिए START बटन दबाएं और रखें</string>
+    <string name="EMULATION_RESUMING">फिर से शुरू हो रहा है...!</string>
+    <string name="EMULATION_FROZEN">पीएस3 एप्लिकेशन क्रैश हो गया है, आप इसे बंद कर सकते हैं</string>
+    <string name="SAVESTATE_FAILED_DUE_TO_SAVEDATA">सेवस्टेट विफल: गेम सहेजा जा रहा है, पूरा होने तक प्रतीक्षा करें</string>
+    <string name="SAVESTATE_FAILED_DUE_TO_VDEC">सेवस्टेट विफल: वीडियो/कटसीन वीडेक आधारित है, उनके समाप्त होने तक प्रतीक्षा करें या libvdec.sprx सक्षम करें</string>
+    <string name="SAVESTATE_FAILED_DUE_TO_MISSING_SPU_SETTING">सेवस्टेट विफल: एसपीयू स्थिति लॉक करने में विफल, एसपीयू-अनुकूलनीय मोड सक्षम करने से समस्या हल हो सकती है</string>
+    <string name="SAVESTATE_FAILED_DUE_TO_SPU">सेवस्टेट विफल: एसपीयू स्थिति लॉक करने में विफल, एसपीयू एएसएमजेआईटी का उपयोग करने से समस्या हल हो सकती है</string>
+    <string name="PROGRESS_DIALOG_PRELOADING_SHADER_CACHE">डिस्क से कैश किए गए शेडर्स पूर्वलोड कर रहा है...</string>
+
+</resources>

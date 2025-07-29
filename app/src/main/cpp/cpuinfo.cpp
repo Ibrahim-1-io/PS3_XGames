@@ -7,6 +7,15 @@
 #include <sstream>
 #include <algorithm>
 #include <map>
+#include <android/log.h>
+
+#define LOG_TAG "cpuinfo"
+
+#define LOGW(...) {      \
+    __android_log_print(ANDROID_LOG_WARN, LOG_TAG,"%s : %d",__func__,__LINE__);\
+	__android_log_print(ANDROID_LOG_WARN, LOG_TAG,__VA_ARGS__);\
+}
+
 std::vector<core_info_t> cpu_get_core_info(){
     std::ifstream cpuinfo("/proc/cpuinfo");
     if (!cpuinfo.is_open()) {
@@ -33,7 +42,6 @@ std::vector<core_info_t> cpu_get_core_info(){
             cores.push_back(core);
         }
         else if (line.find("Features") != std::string::npos) {
-            //FIXME 转换其为编译feature
             std::string features = line.substr(line.find(":") + 2);
             std::istringstream iss(features);
             std::string feature;
@@ -55,6 +63,16 @@ bool operator<(const  core_info_t& lhs,const  core_info_t& rhs){
     return lhs.variant < rhs.variant;
 }
 
+int cpu_get_core_count(){
+    return cpu_get_core_info().size();
+}
+int cpu_get_max_mhz(const int core_idx) {
+    std::string path=std::format("/sys/devices/system/cpu/cpu{}/cpufreq/cpuinfo_max_freq", core_idx);
+    std::ifstream max_freq(path);
+    std::string hz;
+    std::getline(max_freq, hz);
+    return std::stoi(hz)/1000;
+}
 std::string cpu_get_simple_info(const std::vector<core_info_t>& core_info_list){
     std::map<core_info_t, int> core_counts;
     for (const auto& core : core_info_list) {
@@ -168,6 +186,9 @@ std::string cpu_get_processor_name(const core_info_t& core_info){
     return "Unknown";
 }
 
+std::string cpu_get_processor_name(const int core_idx){
+    return cpu_get_processor_name(cpu_get_core_info()[core_idx]);
+}
 
 std::string cpu_get_processor_isa(const core_info_t& core_info){
 

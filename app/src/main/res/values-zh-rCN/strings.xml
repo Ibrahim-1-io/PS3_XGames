@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="use_cores_ppu">使用核心(PPU)</string>
+    <string name="use_cores_spu">使用核心(SPU)</string>
+    <string name="use_cores_rsx">使用核心(RSX)</string>
+
+    <string name="emulator_settings_core_thread_affinity_mask">线程亲和掩码</string>
+    <string name="create_shortcut">创建快捷方式</string>
+    <string name="loading">载入中...</string>
     <string name="resolution_not_support">分辨率或宽高比不支持\n当前游戏仅支持:\n%s\n\n请通过以下设置修改:\n%s\n%s\n</string>
     <string name="show_game_info">显示游戏信息</string>
     <string name="quick_start_page">快速开始页</string>

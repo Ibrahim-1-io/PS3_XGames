@@ -1,0 +1,1001 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="use_cores_ppu">Sử dụng Nhân (PPU)</string>
+	<string name="use_cores_spu">Sử dụng Nhân (SPU)</string>
+	<string name="use_cores_rsx">Sử dụng Nhân (RSX)</string>
+	<string name="emulator_settings_core_thread_affinity_mask">Mặt nạ ưu tiên luồng</string>
+	<string name="create_shortcut">Tạo Phím tắt</string>
+	<string name="loading">Đang tải...</string>
+	<string name="resolution_not_support">Độ phân giải hoặc tỷ lệ khung hình không được hỗ trợ\nTrò chơi hiện tại chỉ hỗ trợ:\n%s\n\nVui lòng chỉnh sửa bằng các cài đặt sau:\n%s\n%s\n</string>
+	<string name="show_game_info">Hiển thị Thông tin Trò chơi</string>
+	<string name="quick_start_page">Trang Bắt đầu Nhanh</string>
+	<string name="prev_step">Bước Trước</string>
+	<string name="next_step">Bước Tiếp</string>
+	<string name="finish">Hoàn tất</string>
+
+	<string name="welcome">Chào mừng</string>
+	<string name="welcome_content">Chào mừng bạn đến với %s!</string>
+	<string name="welcome_content2">Chỉ với vài bước đơn giản, bạn đã sẵn sàng bắt đầu chơi, nhấn vào "%s" để bắt đầu.</string>
+
+	<string name="install_ps3_firmware_hiht_content">Để chơi trò chơi, bạn phải cài đặt firmware PS3 (PS3UPDAT.PUP). Vui lòng chọn tập tin firmware.</string>
+	<string name="ps3_firmware_installed">Đã cài đặt Firmware</string>
+	<string name="select_ps3_firmware">Chọn Firmware (PS3UPDAT.PUP)</string>
+	<string name="firmware_not_install">Chưa cài đặt firmware</string>
+
+
+	<string name="select_ps3_iso_dir_hiht_content">Vui lòng chỉ định thư mục PS3 ISO, ứng dụng sẽ tự động quét để lấy các trò chơi hợp lệ, bạn cũng có thể bỏ qua bước này và cài đặt trực tiếp tệp .pkg.</string>
+	<string name="ps3_iso_dir_is_set">Đã đặt thư mục PS3 ISO</string>
+
+	<string name="font_select_hiht_content">Vui lòng chọn tập tin phông chữ (*.ttf, *.ttc, *.otf) để cài đặt, hoặc bạn có thể sử dụng phông chữ từ firmware PS3 (một số chữ có thể bị thiếu).</string>
+	<string name="custom_font_path_prefix">Đường dẫn phông chữ: </string>
+	<string name="select_gpu_driver_hiht_content">Vui lòng chọn trình điều khiển GPU, bạn cũng có thể bỏ qua bước này (trò chơi có thể chạy bị lỗi).</string>
+	<string name="custom_gpu_driver_path_prefix">Đường dẫn Trình điều khiển GPU: </string>
+
+	<string name="modify_config_hiht_content">Trình giả lập sẽ tự động chọn cấu hình phù hợp nhất, nhưng một số cấu hình có thể gây ra vấn đề trên thiết bị của bạn. Bạn có thể chỉnh sửa chúng sau trong cài đặt.</string>
+
+	<string name="msg_processing">Đang xử lý...</string>
+	<string name="msg_failed">Thất bại!</string>
+
+	<string name="emulator_settings_video_vulkan_debug">Gỡ lỗi</string>
+	<string name="emulator_settings_miscellaneous_memory_debug_overlay">Giao diện gỡ lỗi bộ nhớ</string>
+
+	<string name="vibrator_duration">Thời lượng Rung</string>
+	<string name="enable_vibrator">Bật Rung</string>
+	<string name="dynamic_joystick">Cần điều khiển Động</string>
+	<string name="disable">Tắt</string>
+
+	<string name="disable_virtual_keyboard">Tắt bàn phím ảo</string>
+	<string name="joystick">Cần điều khiển</string>
+	<string name="dpad">DPad</string>
+	<string name="button">Nút</string>
+	<string name="lr">LR</string>
+	<string name="start_select">Start/Select</string>
+
+	<string name="enable_log">Bật Nhật ký</string>
+	<string name="use_global_config">Sử dụng Cấu hình Toàn cục</string>
+	<string name="edit_custom_config">Chỉnh sửa Cấu hình Tùy chỉnh</string>
+	<string name="clear">Xóa</string>
+	<string name="press_a_key">Nhấn bất kỳ phím nào để tiếp tục...</string>
+	<string name="game_list_loading">Danh sách trò chơi đang tải...</string>
+	<string name="undecrypted_game">Chạy trò chơi chưa giải mã hiện không được hỗ trợ</string>
+	<string name="delete_game_data">Xóa Dữ liệu Trò chơi</string>
+	<string name="delete_hdd0_install_data">Xóa Dữ liệu Cài đặt HDD0</string>
+	<string name="delete_game_and_data">Xóa Trò chơi và Dữ liệu</string>
+	<string name="delete_shaders_cache">Xóa Bộ nhớ đệm Shader</string>
+
+	<string name="set_iso_dir">Đặt Thư mục (*.iso)</string>
+	<string name="device_info">Thông tin Thiết bị</string>
+	<string name="reset_as_default">Đặt lại Mặc định</string>
+	<string name="save_and_quit">Lưu &amp; Thoát</string>
+	<string name="scale_rate">Tỷ lệ Phóng</string>
+	<string name="open_file_manager">Mở Trình quản lý Tệp</string>
+	<string name="installing_firmware">Đang cài đặt Firmware...</string>
+	<string name="refresh_list">Làm mới Danh sách</string>
+	<string name="select_game">Chọn Trò chơi</string>
+	<string name="install_firmware">Cài đặt Firmware</string>
+	<string name="install_game">Cài đặt RAP/PKG</string>
+	<string name="installing_game">Đang cài đặt Trò chơi...</string>
+	<string name="about">Giới thiệu</string>
+	<string name="quit">Thoát</string>
+	<string name="update_log">Nhật ký Cập nhật</string>
+	<string name="empty_game_list">Danh sách trò chơi trống, vui lòng thêm trò chơi bằng cách cài đặt pkg hoặc đặt thư mục *.iso</string>
+	<string name="delete">Xóa</string>
+	<string name="settings">Cài đặt</string>
+	<string name="gratitude">Cảm ơn</string>
+	<string name="gratitude_content">Cảm ơn Ruban vì tất cả các ICON\n\n
+		Cảm ơn SRC267 (Sting) vì đã quản lý reddit/discord\n\n
+		Cảm ơn 妖妖 vì đã thử nghiệm\n\n
+		Cảm ơn 再见某人 vì đã quyên góp GPD XP, điều này đã giúp rất nhiều trong quá trình thử nghiệm.\n\n
+		Cảm ơn 再见某人 vì đã quyên góp thiết bị phát triển, điều này đã đóng vai trò quan trọng trong việc thúc đẩy dự án.\n\n
+		Cảm ơn những người sau đây đã hỗ trợ tài chính cho dự án này (Giai đoạn đầu, sắp xếp theo ngày):\n\n</string>
+	<string name="gratitude_content2">
+		Dựa trên tối ưu hóa từ RPCS3, cảm ơn tất cả các thành viên tham gia dự án RPCS3\n\n
+Dịch bởi qwen3
+	</string>
+	<string name="key_mappers">Bản đồ phím</string>
+	<string name="virtual_pad_edit">Chỉnh sửa VirtualPad</string>
+
+	<string name="left">trái</string>
+	<string name="up">lên</string>
+	<string name="right">phải</string>
+	<string name="down">xuống</string>
+
+	<string name="square">vuông</string>
+	<string name="cross">chéo</string>
+	<string name="circle">tròn</string>
+	<string name="triangle">tam giác</string>
+
+	<string name="l1">L1</string>
+	<string name="l2">L2</string>
+	<string name="l3">L3</string>
+
+	<string name="r1">R1</string>
+	<string name="r2">R2</string>
+	<string name="r3">R3</string>
+
+	<string name="start">start</string>
+	<string name="select">select</string>
+	<string name="ps">PS</string>
+
+
+	<string name="emulator_settings_video_vulkan_custom_driver_library_path_dialog_title">Chọn Trình điều khiển Tùy chỉnh</string>
+	<string name="emulator_settings_video_vulkan_custom_driver_library_path_dialog_add_hint">Thêm Trình điều khiển Tùy chỉnh (*.zip, *.so)</string>
+
+	<string name="emulator_settings_miscellaneous_custom_font_file_path_dialog_title">Chọn Phông chữ Tùy chỉnh</string>
+	<string name="emulator_settings_miscellaneous_custom_font_file_path_dialog_add_hint">Thêm Phông chữ Tùy chỉnh (*.ttf, *.ttc, *.otf)</string>
+
+	<string name="emulator_settings_core">Lõi</string>
+	<string name="emulator_settings_core_ppu_decoder">Bộ giải mã PPU</string>
+	<string-array name="core_ppu_decoder_entries">
+		<item>Trình thông dịch (tĩnh)</item>
+		<item>Biên dịch lại (LLVM)</item>
+	</string-array>
+	<string name="emulator_settings_core_ppu_threads">Luồng PPU</string>
+	<string name="emulator_settings_core_ppu_debug">Gỡ lỗi PPU</string>
+	<string name="emulator_settings_core_ppu_calling_history">Lịch sử Gọi PPU</string>
+	<string name="emulator_settings_core_save_llvm_logs">Lưu Nhật ký LLVM</string>
+	<string name="emulator_settings_core_use_llvm_cpu">Sử dụng CPU LLVM</string>
+	<string name="emulator_settings_core_max_llvm_compile_threads">Số luồng biên dịch LLVM tối đa</string>
+	<string name="emulator_settings_core_ppu_llvm_greedy_mode">Chế độ Tham lam PPU LLVM</string>
+	<string name="emulator_settings_core_llvm_precompilation">Tiền biên dịch LLVM</string>
+	<string name="emulator_settings_core_thread_scheduler_mode">Chế độ Lên lịch Luồng</string>
+	<string-array name="core_thread_scheduler_mode_entries">
+		<item>Hệ điều hành</item>
+		<item>Ưu tiên</item>
+	</string-array>
+	<string name="emulator_settings_core_set_daz_and_ftz">Đặt DAZ và FTZ</string>
+	<string name="emulator_settings_core_spu_decoder">Bộ giải mã SPU</string>
+	<string-array name="core_spu_decoder_entries">
+		<item>Trình thông dịch (tĩnh)</item>
+		<item>Trình thông dịch (động)</item>
+		<item>Biên dịch lại (ASMJIT)</item>
+		<item>Biên dịch lại (LLVM)</item>
+	</string-array>
+	<string name="emulator_settings_core_spu_reservation_busy_waiting_percentage">Phần trăm chờ bận đặt chỗ SPU</string>
+	<string name="emulator_settings_core_spu_getllar_busy_waiting_percentage">Phần trăm chờ bận GETLLAR SPU</string>
+	<string name="emulator_settings_core_disable_spu_getllar_spin_optimization">Tắt tối ưu hóa vòng lặp GETLLAR SPU</string>
+	<string name="emulator_settings_core_spu_debug">Gỡ lỗi SPU</string>
+	<string name="emulator_settings_core_mfc_debug">Gỡ lỗi MFC</string>
+	<string name="emulator_settings_core_preferred_spu_threads">Luồng SPU Ưu tiên</string>
+	<string name="emulator_settings_core_spu_delay_penalty">Phạt Độ trễ SPU</string>
+	<string name="emulator_settings_core_spu_loop_detection">Phát hiện vòng lặp SPU</string>
+	<string name="emulator_settings_core_max_spurs_threads">Số luồng SPURS tối đa</string>
+	<string name="emulator_settings_core_spu_block_size">Kích thước Khối SPU</string>
+	<string-array name="core_spu_block_size_entries">
+		<item>An toàn</item>
+		<item>Cực lớn</item>
+		<item>Siêu lớn</item>
+	</string-array>
+	<string name="emulator_settings_core_accurate_spu_dma">DMA SPU Chính xác</string>
+	<string name="emulator_settings_core_accurate_spu_reservations">Đặt chỗ SPU Chính xác</string>
+	<string name="emulator_settings_core_accurate_cache_line_stores">Cửa hàng Dòng bộ nhớ đệm Chính xác</string>
+	<string name="emulator_settings_core_accurate_rsx_reservation_access">Truy cập đặt chỗ RSX Chính xác</string>
+	<string name="emulator_settings_core_rsx_fifo_accuracy">Độ chính xác FIFO RSX</string>
+	<string-array name="core_rsx_fifo_accuracy_entries">
+		<item>Nhanh</item>
+		<item>Nguyên tử</item>
+		<item>Có thứ tự &amp; Nguyên tử</item>
+		<item>PS3</item>
+	</string-array>
+	<string name="emulator_settings_core_spu_verification">Xác minh SPU</string>
+	<string name="emulator_settings_core_spu_cache">Bộ nhớ đệm SPU</string>
+	<string name="emulator_settings_core_spu_profiler">Trình phân tích SPU</string>
+	<string name="emulator_settings_core_mfc_commands_shuffling_limit">Giới hạn xáo trộn Lệnh MFC</string>
+	<string name="emulator_settings_core_mfc_commands_timeout">Thời gian chờ Lệnh MFC</string>
+	<string name="emulator_settings_core_mfc_commands_shuffling_in_steps">Xáo trộn Lệnh MFC theo bước</string>
+	<string name="emulator_settings_core_enable_tsx">Bật TSX</string>
+	<string-array name="core_enable_tsx_entries">
+		<item>Vô hiệu hóa</item>
+		<item>Cho phép</item>
+		<item>Buộc</item>
+	</string-array>
+	<string name="emulator_settings_core_xfloat_accuracy">Độ chính xác XFloat</string>
+	<string-array name="core_xfloat_accuracy_entries">
+		<item>Chính xác</item>
+		<item>Gần đúng</item>
+		<item>Tự do</item>
+		<item>Không chính xác</item>
+	</string-array>
+	<string name="emulator_settings_core_accurate_ppu_128byte_reservation_op_max_length">Chiều dài tối đa Thao tác đặt chỗ 128-byte PPU Chính xác</string>
+	<string name="emulator_settings_core_stub_ppu_traps">Bẫy PPU Giả lập</string>
+	<string name="emulator_settings_core_precise_spu_verification">Xác minh SPU Chính xác</string>
+	<string name="emulator_settings_core_ppu_llvm_java_mode_handling">Xử lý Chế độ Java PPU LLVM</string>
+	<string name="emulator_settings_core_use_accurate_dfma">Sử dụng DFMA Chính xác</string>
+	<string name="emulator_settings_core_ppu_set_saturation_bit">Đặt Bit Bão hòa PPU</string>
+	<string name="emulator_settings_core_ppu_accurate_nonjava_mode">Chế độ Non-Java PPU Chính xác</string>
+	<string name="emulator_settings_core_ppu_fixup_vector_nan_values">Sửa giá trị NaN Vector PPU</string>
+	<string name="emulator_settings_core_ppu_accurate_vector_nan_values">Giá trị NaN Vector PPU Chính xác</string>
+	<string name="emulator_settings_core_ppu_set_fpcc_bits">Đặt Bit FPCC PPU</string>
+	<string name="emulator_settings_core_debug_console_mode">Chế độ Bảng gỡ lỗi</string>
+	<string name="emulator_settings_core_hook_static_functions">Gắn hàm tĩnh</string>
+	<string name="emulator_settings_core_libraries_control">Điều khiển Thư viện</string>
+	<string name="emulator_settings_core_hle_lwmutex">HLE lwmutex</string>
+	<string name="emulator_settings_core_spu_llvm_lower_bound">Giới hạn dưới SPU LLVM</string>
+	<string name="emulator_settings_core_spu_llvm_upper_bound">Giới hạn trên SPU LLVM</string>
+	<string name="emulator_settings_core_tsx_transaction_first_limit">Giới hạn Giao dịch Đầu tiên TSX</string>
+	<string name="emulator_settings_core_tsx_transaction_second_limit">Giới hạn Giao dịch Thứ hai TSX</string>
+	<string name="emulator_settings_core_clocks_scale">Tỷ lệ Đồng hồ</string>
+	<string name="emulator_settings_core_spu_wakeup_delay">Độ trễ Đánh thức SPU</string>
+	<string name="emulator_settings_core_spu_wakeup_delay_thread_mask">Mặt nạ Luồng Độ trễ Đánh thức SPU</string>
+	<string name="emulator_settings_core_max_cpu_preempt_count">Số lần Ngắt CPU tối đa</string>
+	<string name="emulator_settings_core_allow_rsx_cpu_preemptions">Cho phép Ngắt CPU RSX</string>
+	<string name="emulator_settings_core_sleep_timers_accuracy">Độ chính xác Bộ đếm Ngủ</string>
+	<string-array name="core_sleep_timers_accuracy_entries">
+		<item>Như Máy chủ</item>
+		<item>Chỉ usleep</item>
+		<item>Tất cả Bộ đếm</item>
+	</string-array>
+	<string name="emulator_settings_core_usleep_time_addend">Gia số Thời gian usleep</string>
+	<string name="emulator_settings_core_performance_report_threshold">Ngưỡng Báo cáo Hiệu suất</string>
+	<string name="emulator_settings_core_enable_performance_report">Bật Báo cáo Hiệu suất</string>
+	<string name="emulator_settings_core_assume_external_debugger">Giả sử có Bộ gỡ lỗi Ngoài</string>
+	<string name="emulator_settings_video">Hình ảnh</string>
+	<string name="emulator_settings_video_vertex_buffer_upload_mode">Chế độ Tải lên Bộ đệm Đỉnh</string>
+	<string-array name="video_vertex_buffer_upload_mode_entries">
+		<item>Tự động</item>
+		<item>Chế độ Xem</item>
+		<item>Bộ đệm</item>
+	</string-array>
+	<string name="emulator_settings_video_texture_upload_mode">Chế độ Tải lên Kết cấu</string>
+	<string-array name="video_texture_upload_mode_entries">
+		<item>CPU</item>
+		<item>GPU</item>
+	</string-array>
+	<string name="emulator_settings_video_renderer">Bộ kết xuất</string>
+	<string-array name="video_renderer_entries">
+		<item>Trống</item>
+		<item>Vulkan</item>
+	</string-array>
+	<string name="emulator_settings_video_resolution">Độ phân giải</string>
+	<string-array name="video_resolution_entries">
+		<item>1920x1080</item>
+		<item>1920x1080i</item>
+		<item>1280x720</item>
+		<item>720x480</item>
+		<item>720x480i</item>
+		<item>720x576</item>
+		<item>720x576i</item>
+		<item>1600x1080</item>
+		<item>1440x1080</item>
+		<item>1280x1080</item>
+		<item>960x1080</item>
+	</string-array>
+	<string name="emulator_settings_video_aspect_ratio">Tỷ lệ khung hình</string>
+	<string-array name="video_aspect_ratio_entries">
+		<item>4:3</item>
+		<item>16:9</item>
+	</string-array>
+	<string name="emulator_settings_video_frame_limit">Giới hạn khung hình</string>
+	<string-array name="video_frame_limit_entries">
+		<item>Tắt</item>
+		<item>30</item>
+		<item>50</item>
+		<item>60</item>
+		<item>120</item>
+		<item>Màn hình</item>
+		<item>Tự động</item>
+		<item>PS3 gốc</item>
+		<item>Vô hạn</item>
+	</string-array>
+	<string name="emulator_settings_video_second_frame_limit">Giới hạn khung hình Thứ hai</string>
+	<string name="emulator_settings_video_msaa">MSAA</string>
+	<string-array name="video_msaa_entries">
+		<item>Vô hiệu hóa</item>
+		<item>Tự động</item>
+	</string-array>
+	<string name="emulator_settings_video_shader_mode">Chế độ Shader</string>
+	<string-array name="video_shader_mode_entries">
+		<item>Biên dịch lại Shader</item>
+		<item>Biên dịch lại Async</item>
+		<item>Async với Thông dịch Shader</item>
+		<item>Chỉ Thông dịch Shader</item>
+	</string-array>
+	<string name="emulator_settings_video_shader_precision">Độ chính xác Shader</string>
+	<string-array name="video_shader_precision_entries">
+		<item>Cao cấp</item>
+		<item>Cao</item>
+		<item>Thấp</item>
+		<item>Tự động</item>
+	</string-array>
+	<string name="emulator_settings_video_write_color_buffers">Ghi Bộ đệm Màu</string>
+	<string name="emulator_settings_video_write_depth_buffer">Ghi Bộ đệm Độ sâu</string>
+	<string name="emulator_settings_video_read_color_buffers">Đọc Bộ đệm Màu</string>
+	<string name="emulator_settings_video_read_depth_buffer">Đọc Bộ đệm Độ sâu</string>
+	<string name="emulator_settings_video_handle_rsx_memory_tiling">Xử lý Ghép bộ nhớ RSX</string>
+	<string name="emulator_settings_video_log_shader_programs">Ghi Nhật ký Shader</string>
+	<string name="emulator_settings_video_vsync">VSync</string>
+	<string name="emulator_settings_video_debug_output">Đầu ra Gỡ lỗi</string>
+	<string name="emulator_settings_video_debug_overlay">Giao diện Gỡ lỗi</string>
+	<string name="emulator_settings_video_renderdoc_compatibility_mode">Chế độ Tương thích Renderdoc</string>
+	<string name="emulator_settings_video_use_gpu_texture_scaling">Sử dụng Phóng kết cấu GPU</string>
+	<string name="emulator_settings_video_stretch_to_display_area">Kéo dài đến Khu vực Hiển thị</string>
+	<string name="emulator_settings_video_force_high_precision_z_buffer">Bắt buộc Bộ đệm Z Độ chính xác Cao</string>
+	<string name="emulator_settings_video_strict_rendering_mode">Chế độ Kết xuất Khắc khe</string>
+	<string name="emulator_settings_video_disable_zcull_occlusion_queries">Tắt Truy vấn Occlusion ZCull</string>
+	<string name="emulator_settings_video_disable_video_output">Tắt Đầu ra Video</string>
+	<string name="emulator_settings_video_disable_vertex_cache">Tắt Bộ đệm Đỉnh</string>
+	<string name="emulator_settings_video_disable_fifo_reordering">Tắt Sắp xếp lại FIFO</string>
+	<string name="emulator_settings_video_enable_frame_skip">Bật Bỏ khung hình</string>
+	<string name="emulator_settings_video_force_cpu_blit">Bắt buộc CPU Blit</string>
+	<string name="emulator_settings_video_disable_ondisk_shader_cache">Tắt Bộ đệm Shader trên Đĩa</string>
+	<string name="emulator_settings_video_disable_vulkan_memory_allocator">Tắt Bộ phân bổ Bộ nhớ Vulkan</string>
+	<string name="emulator_settings_video_use_full_rgb_output_range">Sử dụng Dải RGB Đầu ra Đầy đủ</string>
+	<string name="emulator_settings_video_strict_texture_flushing">Làm mới Kết cấu Khắc khe</string>
+	<string name="emulator_settings_video_multithreaded_rsx">RSX Đa luồng</string>
+	<string name="emulator_settings_video_relaxed_zcull_sync">Đồng bộ ZCULL Thoải mái</string>
+	<string name="emulator_settings_video_force_hardware_msaa_resolve">Bắt buộc MSAA Phần cứng</string>
+	<string name="emulator_settings_video_3d_display_mode">Chế độ Hiển thị 3D</string>
+	<string-array name="video_3d_display_mode_entries">
+		<item>Vô hiệu hóa</item>
+		<item>Chế độ Cạnh nhau</item>
+		<item>Chế độ Trên-Dưới</item>
+		<item>Chế độ Xen kẽ</item>
+		<item>Anaglyph Đỏ-Xanh lá</item>
+		<item>Anaglyph Đỏ-Xanh lam</item>
+		<item>Anaglyph Đỏ-Cyan</item>
+		<item>Anaglyph Magenta-Cyan</item>
+		<item>Anaglyph Tam diện</item>
+		<item>Anaglyph Hổ phách-Xanh lam</item>
+	</string-array>
+	<string name="emulator_settings_video_debug_program_analyser">Phân tích Chương trình Gỡ lỗi</string>
+	<string name="emulator_settings_video_accurate_zcull_stats">Thống kê ZCULL Chính xác</string>
+	<string name="emulator_settings_video_consecutive_frames_to_draw">Số khung hình Vẽ liên tiếp</string>
+	<string name="emulator_settings_video_consecutive_frames_to_skip">Số khung hình Bỏ liên tiếp</string>
+	<string name="emulator_settings_video_resolution_scale">Tỷ lệ Độ phân giải</string>
+	<string name="emulator_settings_video_anisotropic_filter_override">Ghi đè Lọc Anisotropic</string>
+	<string name="emulator_settings_video_texture_lod_bias_addend">Gia số Độ lệch LOD Kết cấu</string>
+	<string name="emulator_settings_video_minimum_scalable_dimension">Kích thước Có thể thu phóng Tối thiểu</string>
+	<string name="emulator_settings_video_shader_compiler_threads">Số luồng Biên dịch Shader</string>
+	<string name="emulator_settings_video_driver_recovery_timeout">Thời gian chờ Khôi phục Trình điều khiển</string>
+	<string name="emulator_settings_video_driver_wakeup_delay">Độ trễ Đánh thức Trình điều khiển</string>
+	<string name="emulator_settings_video_vblank_rate">Tần số Vblank</string>
+	<string name="emulator_settings_video_vblank_ntsc_fixup">Sửa lỗi NTSC Vblank</string>
+	<string name="emulator_settings_video_decr_memory_layout">Bố trí bộ nhớ DECR</string>
+	<string name="emulator_settings_video_allow_host_gpu_labels">Cho phép Nhãn GPU Máy chủ</string>
+	<string name="emulator_settings_video_disable_msl_fast_math">Tắt Tính toán Nhanh MSL</string>
+	<string name="emulator_settings_video_disable_asynchronous_memory_manager">Tắt Bộ quản lý Bộ nhớ Không đồng bộ</string>
+	<string name="emulator_settings_video_output_scaling_mode">Chế độ Phóng Đầu ra</string>
+	<string-array name="video_output_scaling_mode_entries">
+		<item>Gần nhất</item>
+		<item>Bilinear</item>
+		<item>Giải pháp Siêu phân giải FidelityFX</item>
+	</string-array>
+	<string name="emulator_settings_video_use_bgra_format">Sử dụng Định dạng BGRA</string>
+	<string name="emulator_settings_video_force_convert_texture">Bắt buộc Chuyển đổi Kết cấu</string>
+	<string name="emulator_settings_video_vulkan">Vulkan</string>
+	<string name="emulator_settings_video_vulkan_adapter">Bộ điều hợp</string>
+	<string name="emulator_settings_video_vulkan_force_fifo_present_mode">Bắt buộc Chế độ Hiển thị FIFO</string>
+	<string name="emulator_settings_video_vulkan_force_primitive_restart_flag">Bắt buộc Cờ Khởi động lại Nguyên thủy</string>
+	<string name="emulator_settings_video_vulkan_exclusive_fullscreen_mode">Chế độ Toàn màn Hình Riêng biệt</string>
+	<string-array name="video_vulkan_exclusive_fullscreen_mode_entries">
+		<item>Tự động</item>
+		<item>Vô hiệu hóa</item>
+		<item>Bật</item>
+	</string-array>
+	<string name="emulator_settings_video_vulkan_asynchronous_texture_streaming_2">Truyền phát Kết cấu Không đồng bộ 2</string>
+	<string name="emulator_settings_video_vulkan_fidelityfx_cas_sharpening_intensity">Cường độ Làm sắc FidelityFX CAS</string>
+	<string name="emulator_settings_video_vulkan_asynchronous_queue_scheduler">Lên lịch Hàng đợi Không đồng bộ</string>
+	<string-array name="video_vulkan_asynchronous_queue_scheduler_entries">
+		<item>An toàn</item>
+		<item>Nhanh</item>
+	</string-array>
+	<string name="emulator_settings_video_vulkan_vram_allocation_limit">Giới hạn Cấp phát VRAM (MB)</string>
+
+	<string name="emulator_settings_video_vulkan_use_custom_driver">Sử dụng Trình điều khiển Tùy chỉnh</string>
+
+	<string name="emulator_settings_video_vulkan_custom_driver_library_path">Đường dẫn Thư viện Trình điều khiển Tùy chỉnh</string>
+
+	<string name="emulator_settings_video_vulkan_custom_driver_force_max_clocks">Bắt buộc Đồng hồ Tối đa Trình điều khiển Tùy chỉnh</string>
+
+
+	<string name="emulator_settings_video_performance_overlay">Giao diện Hiệu suất</string>
+	<string name="emulator_settings_video_performance_overlay_enabled">Bật</string>
+	<string name="emulator_settings_video_performance_overlay_enable_framerate_graph">Bật Biểu đồ Tốc độ Khung hình</string>
+	<string name="emulator_settings_video_performance_overlay_enable_frametime_graph">Bật Biểu đồ Thời gian Khung hình</string>
+	<string name="emulator_settings_video_performance_overlay_framerate_datapoints">Điểm dữ liệu Tốc độ Khung hình</string>
+	<string name="emulator_settings_video_performance_overlay_frametime_datapoints">Điểm dữ liệu Thời gian Khung hình</string>
+	<string name="emulator_settings_video_performance_overlay_detail_level">Cấp độ Chi tiết</string>
+	<string-array name="video_performance_overlay_detail_level_entries">
+		<item>Không</item>
+		<item>Tối thiểu</item>
+		<item>Thấp</item>
+		<item>Trung bình</item>
+		<item>Cao</item>
+	</string-array>
+	<string name="emulator_settings_video_performance_overlay_framerate_graph_detail_level">Cấp độ Chi tiết Biểu đồ Tốc độ Khung hình</string>
+	<string-array name="video_performance_overlay_framerate_graph_detail_level_entries">
+		<item>Tối thiểu</item>
+		<item>Hiển thị min và max</item>
+		<item>Hiển thị 1% và trung bình</item>
+		<item>Tất cả</item>
+	</string-array>
+	<string name="emulator_settings_video_performance_overlay_frametime_graph_detail_level">Cấp độ Chi tiết Biểu đồ Thời gian Khung hình</string>
+	<string-array name="video_performance_overlay_frametime_graph_detail_level_entries">
+		<item>Tối thiểu</item>
+		<item>Hiển thị min và max</item>
+		<item>Hiển thị 1% và trung bình</item>
+		<item>Tất cả</item>
+	</string-array>
+	<string name="emulator_settings_video_performance_overlay_metrics_update_interval">Khoảng cập nhật Chỉ số (ms)</string>
+	<string name="emulator_settings_video_performance_overlay_font_size">Kích thước Phông chữ (px)</string>
+	<string name="emulator_settings_video_performance_overlay_position">Vị trí</string>
+	<string-array name="video_performance_overlay_position_entries">
+		<item>Góc trên Trái</item>
+		<item>Góc trên Phải</item>
+		<item>Góc dưới Trái</item>
+		<item>Góc dưới Phải</item>
+	</string-array>
+	<string name="emulator_settings_video_performance_overlay_font">Phông chữ</string>
+	<string name="emulator_settings_video_performance_overlay_horizontal_margin">Lề Ngang (px)</string>
+	<string name="emulator_settings_video_performance_overlay_vertical_margin">Lề Dọc (px)</string>
+	<string name="emulator_settings_video_performance_overlay_center_horizontally">Căn giữa Ngang</string>
+	<string name="emulator_settings_video_performance_overlay_center_vertically">Căn giữa Dọc</string>
+	<string name="emulator_settings_video_performance_overlay_opacity">Độ mờ (%)</string>
+	<string name="emulator_settings_video_performance_overlay_body_color">Màu Nội dung (hex)</string>
+	<string name="emulator_settings_video_performance_overlay_body_background">Nền Nội dung (hex)</string>
+	<string name="emulator_settings_video_performance_overlay_title_color">Màu Tiêu đề (hex)</string>
+	<string name="emulator_settings_video_performance_overlay_title_background">Nền Tiêu đề (hex)</string>
+	<string name="emulator_settings_video_shader_loading_dialog">Hộp thoại Tải Shader</string>
+	<string name="emulator_settings_video_shader_loading_dialog_allow_custom_background">Cho phép Nền Tùy chỉnh</string>
+	<string name="emulator_settings_video_shader_loading_dialog_darkening_effect_strength">Cường độ Làm tối</string>
+	<string name="emulator_settings_video_shader_loading_dialog_blur_effect_strength">Cường độ Làm mờ</string>
+	<string name="emulator_settings_audio">Âm thanh</string>
+	<string name="emulator_settings_audio_renderer">Bộ kết xuất</string>
+	<string-array name="audio_renderer_entries">
+		<item>Trống</item>
+		<item>Cubeb</item>
+	</string-array>
+	<string name="emulator_settings_audio_audio_provider">Nhà cung cấp Âm thanh</string>
+	<string-array name="audio_audio_provider_entries">
+		<item>Không</item>
+		<item>CellAudio</item>
+		<item>RSXAudio</item>
+	</string-array>
+	<string name="emulator_settings_audio_rsxaudio_avport">Cổng AV RSXAudio</string>
+	<string-array name="audio_rsxaudio_avport_entries">
+		<item>HDMI 0</item>
+		<item>HDMI 1</item>
+		<item>AV đa kết nối</item>
+		<item>SPDIF 0</item>
+		<item>SPDIF 1</item>
+	</string-array>
+	<string name="emulator_settings_audio_dump_to_file">Xuất ra Tệp</string>
+	<string name="emulator_settings_audio_convert_to_16_bit">Chuyển đổi thành 16 bit</string>
+	<string name="emulator_settings_audio_audio_format">Định dạng Âm thanh</string>
+	<string-array name="audio_audio_format_entries">
+		<item>Nhị kênh</item>
+		<item>5.1 Surround</item>
+		<item>7.1 Surround</item>
+		<item>Tự động</item>
+		<item>Thủ công</item>
+	</string-array>
+	<string name="emulator_settings_audio_audio_formats">Định dạng Âm thanh</string>
+	<string name="emulator_settings_audio_audio_channel_layout">Bố trí Kênh Âm thanh</string>
+	<string-array name="audio_audio_channel_layout_entries">
+		<item>Tự động</item>
+		<item>Đơn kênh</item>
+		<item>Nhị kênh</item>
+		<item>Nhị kênh và LFE</item>
+		<item>Quadraphonic</item>
+		<item>Quadraphonic và LFE</item>
+		<item>5.1 Surround</item>
+		<item>7.1 Surround</item>
+	</string-array>
+	<string name="emulator_settings_audio_audio_device">Thiết bị Âm thanh</string>
+	<string name="emulator_settings_audio_master_volume">Âm lượng Chính</string>
+	<string name="emulator_settings_audio_enable_buffering">Bật Bộ đệm</string>
+	<string name="emulator_settings_audio_desired_audio_buffer_duration">Thời lượng Bộ đệm Âm thanh Mong muốn</string>
+	<string name="emulator_settings_audio_enable_time_stretching">Bật Kéo giãn Thời gian</string>
+	<string name="emulator_settings_audio_disable_sampling_skip">Tắt Bỏ qua Lấy mẫu</string>
+	<string name="emulator_settings_audio_time_stretching_threshold">Ngưỡng Kéo giãn Thời gian</string>
+	<string name="emulator_settings_audio_microphone_type">Loại Micro</string>
+	<string-array name="audio_microphone_type_entries">
+		<item>Trống</item>
+		<item>Cơ bản</item>
+		<item>SingStar</item>
+		<item>SingStar Thực</item>
+		<item>Rocksmith</item>
+	</string-array>
+	<string name="emulator_settings_audio_microphone_devices">Thiết bị Micro</string>
+	<string name="emulator_settings_audio_music_handler">Bộ xử lý Nhạc</string>
+	<string-array name="audio_music_handler_entries">
+		<item>Trống</item>
+		<item>Qt</item>
+	</string-array>
+	<string name="emulator_settings_input_output">Đầu vào/Đầu ra</string>
+	<string name="emulator_settings_input_output_keyboard">Bàn phím</string>
+	<string-array name="input_output_keyboard_entries">
+		<item>Trống</item>
+		<item>Cơ bản</item>
+	</string-array>
+	<string name="emulator_settings_input_output_mouse">Chuột</string>
+	<string-array name="input_output_mouse_entries">
+		<item>Trống</item>
+		<item>Cơ bản</item>
+		<item>Nguyên bản</item>
+	</string-array>
+	<string name="emulator_settings_input_output_camera">Máy ảnh</string>
+	<string-array name="input_output_camera_entries">
+		<item>Trống</item>
+		<item>Giả lập</item>
+		<item>Qt</item>
+	</string-array>
+	<string name="emulator_settings_input_output_camera_type">Loại Máy ảnh</string>
+	<string-array name="input_output_camera_type_entries">
+		<item>Không xác định</item>
+		<item>EyeToy</item>
+		<item>PS Eye</item>
+		<item>UVC 1.1</item>
+	</string-array>
+	<string name="emulator_settings_input_output_camera_flip">Lật Máy ảnh</string>
+	<string-array name="input_output_camera_flip_entries">
+		<item>Không</item>
+		<item>Ngang</item>
+		<item>Dọc</item>
+		<item>Cả hai</item>
+	</string-array>
+	<string name="emulator_settings_input_output_camera_id">ID Máy ảnh</string>
+	<string name="emulator_settings_input_output_move">Di chuyển</string>
+	<string-array name="input_output_move_entries">
+		<item>Trống</item>
+		<item>Giả lập</item>
+		<item>Chuột</item>
+		<item>Chuột Nguyên bản</item>
+	</string-array>
+	<string name="emulator_settings_input_output_buzz_emulated_controller">Bộ điều khiển Buzz Giả lập</string>
+	<string-array name="input_output_buzz_emulated_controller_entries">
+		<item>Trống</item>
+		<item>1 bộ điều khiển</item>
+		<item>2 bộ điều khiển</item>
+	</string-array>
+	<string name="emulator_settings_input_output_turntable_emulated_controller">Bộ điều khiển Bàn xoay Giả lập</string>
+	<string-array name="input_output_turntable_emulated_controller_entries">
+		<item>Trống</item>
+		<item>1 bộ điều khiển</item>
+		<item>2 bộ điều khiển</item>
+	</string-array>
+	<string name="emulator_settings_input_output_ghltar_emulated_controller">Bộ điều khiển GHLtar Giả lập</string>
+	<string-array name="input_output_ghltar_emulated_controller_entries">
+		<item>Trống</item>
+		<item>1 bộ điều khiển</item>
+		<item>2 bộ điều khiển</item>
+	</string-array>
+	<string name="emulator_settings_input_output_pad_handler_mode">Chế độ Xử lý Tay cầm</string>
+	<string-array name="input_output_pad_handler_mode_entries">
+		<item>Đơn luồng</item>
+		<item>Đa luồng</item>
+	</string-array>
+	<string name="emulator_settings_input_output_keep_pads_connected">Giữ Tay cầm Kết nối</string>
+	<string name="emulator_settings_input_output_pad_handler_sleep">Độ trễ Xử lý Tay cầm (micro giây)</string>
+	<string name="emulator_settings_input_output_background_input_enabled">Bật Đầu vào Nền</string>
+	<string name="emulator_settings_input_output_show_move_cursor">Hiển thị Con trỏ PS Move</string>
+	<string name="emulator_settings_input_output_lock_overlay_input_to_player_one">Khóa Đầu vào Giao diện cho Người chơi 1</string>
+	<string name="emulator_settings_input_output_emulated_midi_devices">Thiết bị MIDI Giả lập</string>
+	<string name="emulator_settings_input_output_load_sdl_gamecontroller_mappings">Tải Ánh xạ SDL GameController</string>
+	<string name="emulator_settings_input_output_io_debug_overlay">Giao diện Gỡ lỗi IO</string>
+	<string name="emulator_settings_system">Hệ thống</string>
+	<string name="emulator_settings_system_license_area">Khu vực Giấy phép</string>
+	<string-array name="system_license_area_entries">
+		<item>SCEJ</item>
+		<item>SCEA</item>
+		<item>SCEE</item>
+		<item>SCEH</item>
+		<item>SCEK</item>
+		<item>SCH</item>
+	</string-array>
+	<string name="emulator_settings_system_language">Ngôn ngữ</string>
+	<string-array name="system_language_entries">
+		<item>Tiếng Nhật</item>
+		<item>Tiếng Anh (Hoa Kỳ)</item>
+		<item>Tiếng Pháp</item>
+		<item>Tiếng Tây Ban Nha</item>
+		<item>Tiếng Đức</item>
+		<item>Tiếng Ý</item>
+		<item>Tiếng Hà Lan</item>
+		<item>Tiếng Bồ Đào Nha (Bồ Đào Nha)</item>
+		<item>Tiếng Nga</item>
+		<item>Tiếng Hàn</item>
+		<item>Tiếng Trung (Phồn thể)</item>
+		<item>Tiếng Trung (Giản thể)</item>
+		<item>Tiếng Phần Lan</item>
+		<item>Tiếng Thụy Điển</item>
+		<item>Tiếng Đan Mạch</item>
+		<item>Tiếng Na Uy</item>
+		<item>Tiếng Ba Lan</item>
+		<item>Tiếng Bồ Đào Nha (Brasil)</item>
+		<item>Tiếng Anh (Vương quốc Anh)</item>
+		<item>Tiếng Thổ Nhĩ Kỳ</item>
+	</string-array>
+	<string name="emulator_settings_system_keyboard_type">Loại Bàn phím</string>
+	<string-array name="system_keyboard_type_entries">
+		<item>Bàn phím Tiếng Anh (tiêu chuẩn US)</item>
+		<item>Bàn phím Tiếng Nhật</item>
+		<item>Bàn phím Tiếng Nhật (trạng thái Kana)</item>
+		<item>Bàn phím Tiếng Đức</item>
+		<item>Bàn phím Tiếng Tây Ban Nha</item>
+		<item>Bàn phím Tiếng Pháp</item>
+		<item>Bàn phím Tiếng Ý</item>
+		<item>Bàn phím Tiếng Hà Lan</item>
+		<item>Bàn phím Tiếng Bồ Đào Nha (Bồ Đào Nha)</item>
+		<item>Bàn phím Tiếng Nga</item>
+		<item>Bàn phím Tiếng Anh (tiêu chuẩn UK)</item>
+		<item>Bàn phím Tiếng Hàn</item>
+		<item>Bàn phím Na Uy</item>
+		<item>Bàn phím Phần Lan</item>
+		<item>Bàn phím Đan Mạch</item>
+		<item>Bàn phím Thụy Điển</item>
+		<item>Bàn phím Tiếng Trung (Phồn thể)</item>
+		<item>Bàn phím Tiếng Trung (Giản thể)</item>
+		<item>Bàn phím Tiếng Pháp (Thụy Sĩ)</item>
+		<item>Bàn phím Tiếng Đức (Thụy Sĩ)</item>
+		<item>Bàn phím Tiếng Pháp (Canada)</item>
+		<item>Bàn phím Tiếng Pháp (Bỉ)</item>
+		<item>Bàn phím Tiếng Ba Lan</item>
+		<item>Bàn phím Tiếng Bồ Đào Nha (Brasil)</item>
+		<item>Bàn phím Tiếng Thổ Nhĩ Kỳ</item>
+	</string-array>
+	<string name="emulator_settings_system_enter_button_assignment">Phân bổ Nút Enter</string>
+	<string-array name="system_enter_button_assignment_entries">
+		<item>Enter với Nút tròn</item>
+		<item>Enter với Nút chéo</item>
+	</string-array>
+	<string name="emulator_settings_system_console_time_offset">Bù giờ Hệ thống (giây)</string>
+	<string name="emulator_settings_system_system_name">Tên Hệ thống</string>
+	<string name="emulator_settings_system_psid_high">PSID Cao</string>
+	<string name="emulator_settings_system_psid_low">PSID Thấp</string>
+	<string name="emulator_settings_system_hdd_model_name">Tên Mô hình HDD</string>
+	<string name="emulator_settings_system_hdd_serial_number">Số Seri HDD</string>
+	<string name="emulator_settings_net">Mạng</string>
+	<string name="emulator_settings_net_internet_enabled">Kết nối Internet</string>
+	<string-array name="net_internet_enabled_entries">
+		<item>Ngắt kết nối</item>
+		<item>Kết nối</item>
+	</string-array>
+	<string name="emulator_settings_net_ip_address">Địa chỉ IP</string>
+	<string name="emulator_settings_net_bind_address">Địa chỉ Ràng buộc</string>
+	<string name="emulator_settings_net_dns_address">Địa chỉ DNS</string>
+	<string name="emulator_settings_net_ip_swap_list">Danh sách Hoán đổi IP</string>
+	<string name="emulator_settings_net_upnp_enabled">Bật UPNP</string>
+	<string name="emulator_settings_net_psn_status">Trạng thái PSN</string>
+	<string-array name="net_psn_status_entries">
+		<item>Ngắt kết nối</item>
+		<item>Giả lập</item>
+		<item>RPCN</item>
+	</string-array>
+	<string name="emulator_settings_net_psn_country">Quốc gia PSN</string>
+	<string name="emulator_settings_savestate">Lưu trạng thái</string>
+	<string name="emulator_settings_savestate_start_paused">Bắt đầu Tạm dừng</string>
+	<string name="emulator_settings_savestate_suspend_emulation_savestate_mode">Chế độ Lưu trạng thái Khi Tạm dừng</string>
+	<string name="emulator_settings_savestate_compatible_savestate_mode">Chế độ Lưu trạng thái Tương thích</string>
+	<string name="emulator_settings_savestate_inspection_mode_savestates">Lưu trạng thái Chế độ Kiểm tra</string>
+	<string name="emulator_settings_savestate_save_disc_game_data">Lưu Dữ liệu Trò chơi Đĩa</string>
+	<string name="emulator_settings_miscellaneous">Linh tinh</string>
+	<string name="emulator_settings_miscellaneous_automatically_start_games_after_boot">Tự động bắt đầu trò chơi sau khi khởi động</string>
+	<string name="emulator_settings_miscellaneous_exit_rpcs3_when_process_finishes">Thoát RPCS3 khi quá trình kết thúc</string>
+	<string name="emulator_settings_miscellaneous_pause_emulation_on_rpcs3_focus_loss">Tạm dừng giả lập khi mất tập trung RPCS3</string>
+	<string name="emulator_settings_miscellaneous_start_games_in_fullscreen_mode">Bắt đầu trò chơi ở chế độ toàn màn hình</string>
+	<string name="emulator_settings_miscellaneous_prevent_display_sleep_while_running_games">Ngăn màn hình tắt khi đang chơi</string>
+	<string name="emulator_settings_miscellaneous_show_trophy_popups">Hiển thị Thông báo Huy hiệu</string>
+	<string name="emulator_settings_miscellaneous_show_rpcn_popups">Hiển thị Thông báo RPCN</string>
+	<string name="emulator_settings_miscellaneous_show_shader_compilation_hint">Hiển thị Gợi ý Biên dịch Shader</string>
+	<string name="emulator_settings_miscellaneous_show_ppu_compilation_hint">Hiển thị Gợi ý Biên dịch PPU</string>
+	<string name="emulator_settings_miscellaneous_show_pressure_intensity_toggle_hint">Hiển thị Gợi ý Chuyển đổi Cường độ Nhấn</string>
+	<string name="emulator_settings_miscellaneous_show_analog_limiter_toggle_hint">Hiển thị Gợi ý Chuyển đổi Giới hạn Analog</string>
+	<string name="emulator_settings_miscellaneous_show_mouse_and_keyboard_toggle_hint">Hiển thị Gợi ý Chuyển đổi Chuột và Bàn phím</string>
+	<string name="emulator_settings_miscellaneous_show_autosave_autoload_hint">Hiển thị Gợi ý Tự động Lưu/Tải</string>
+	<string name="emulator_settings_miscellaneous_use_native_user_interface">Sử dụng Giao diện gốc</string>
+	<string name="emulator_settings_miscellaneous_gdb_server">Máy chủ GDB</string>
+	<string name="emulator_settings_miscellaneous_silence_all_logs">Tắt tất cả Nhật ký</string>
+	<string name="emulator_settings_miscellaneous_window_title_format">Định dạng Tiêu đề Cửa sổ</string>
+	<string name="emulator_settings_miscellaneous_pause_emulation_during_home_menu">Tạm dừng Giả lập Khi ở Trang Chủ</string>
+
+	<string name="emulator_settings_miscellaneous_font_file_selection">Lựa chọn Tập tin Phông chữ</string>
+	<string-array name="miscellaneous_font_file_selection_entries">
+		<item>Từ Firmware</item>
+		<item>Tùy chỉnh</item>
+	</string-array>
+	<string name="emulator_settings_miscellaneous_custom_font_file_path">Đường dẫn Phông chữ Tùy chỉnh</string>
+	<string name="emulator_settings_miscellaneous_font_size">Cỡ Phông chữ</string>
+
+	<string name="INVALID">Không hợp lệ</string>
+	<string name="RSX_OVERLAYS_TROPHY_BRONZE">Bạn đã giành được huy hiệu Đồng.\n%0</string>
+	<string name="RSX_OVERLAYS_TROPHY_SILVER">Bạn đã giành được huy hiệu Bạc.\n%0</string>
+	<string name="RSX_OVERLAYS_TROPHY_GOLD">Bạn đã giành được huy hiệu Vàng.\n%0</string>
+	<string name="RSX_OVERLAYS_TROPHY_PLATINUM">Bạn đã giành được huy hiệu Bạch kim.\n%0</string>
+	<string name="RSX_OVERLAYS_COMPILING_SHADERS">Đang biên dịch Shader</string>
+	<string name="RSX_OVERLAYS_COMPILING_PPU_MODULES">Đang biên dịch Mô-đun PPU</string>
+	<string name="RSX_OVERLAYS_MSG_DIALOG_YES">Có</string>
+	<string name="RSX_OVERLAYS_MSG_DIALOG_NO">Không</string>
+	<string name="RSX_OVERLAYS_MSG_DIALOG_CANCEL">Trở lại</string>
+	<string name="RSX_OVERLAYS_MSG_DIALOG_OK">Đồng ý</string>
+	<string name="RSX_OVERLAYS_SAVE_DIALOG_TITLE">Hộp thoại Lưu</string>
+	<string name="RSX_OVERLAYS_SAVE_DIALOG_DELETE">Xóa Lưu</string>
+	<string name="RSX_OVERLAYS_SAVE_DIALOG_LOAD">Tải Lưu</string>
+	<string name="RSX_OVERLAYS_SAVE_DIALOG_SAVE">Lưu</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_ACCEPT">Nhập</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_CANCEL">Trở lại</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_SPACE">Khoảng trắng</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_BACKSPACE">Xóa</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_SHIFT">Shift</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_ENTER_TEXT">[Nhập Văn bản]</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_ENTER_PASSWORD">[Nhập Mật khẩu]</string>
+	<string name="RSX_OVERLAYS_MEDIA_DIALOG_TITLE">Chọn phương tiện</string>
+	<string name="RSX_OVERLAYS_MEDIA_DIALOG_TITLE_PHOTO_IMPORT">Chọn ảnh để nhập</string>
+	<string name="RSX_OVERLAYS_MEDIA_DIALOG_EMPTY">Không tìm thấy phương tiện nào.</string>
+	<string name="RSX_OVERLAYS_LIST_SELECT">Nhập</string>
+	<string name="RSX_OVERLAYS_LIST_CANCEL">Trở lại</string>
+	<string name="RSX_OVERLAYS_LIST_DENY">Từ chối</string>
+	<string name="RSX_OVERLAYS_PRESSURE_INTENSITY_TOGGLED_OFF">Chế độ Cường độ Nhấn của người chơi %0 đã tắt</string>
+	<string name="RSX_OVERLAYS_PRESSURE_INTENSITY_TOGGLED_ON">Chế độ Cường độ Nhấn của người chơi %0 đã bật</string>
+	<string name="RSX_OVERLAYS_ANALOG_LIMITER_TOGGLED_OFF">Giới hạn Analog của người chơi %0 đã tắt</string>
+	<string name="RSX_OVERLAYS_ANALOG_LIMITER_TOGGLED_ON">Giới hạn Analog của người chơi %0 đã bật</string>
+	<string name="RSX_OVERLAYS_MOUSE_AND_KEYBOARD_EMULATED">Chuột và Bàn phím hiện đang được sử dụng như thiết bị giả lập.</string>
+	<string name="RSX_OVERLAYS_MOUSE_AND_KEYBOARD_PAD">Chuột và Bàn phím hiện đang được sử dụng như Tay cầm.</string>
+	<string name="CELL_GAME_ERROR_BROKEN_GAMEDATA">LỖI: Dữ liệu trò chơi bị lỗi. Ứng dụng sẽ tiếp tục.</string>
+	<string name="CELL_GAME_ERROR_BROKEN_HDDGAME">LỖI: Trò chơi HDD bị lỗi. Ứng dụng sẽ tiếp tục.</string>
+	<string name="CELL_GAME_ERROR_BROKEN_EXIT_GAMEDATA">LỖI: Dữ liệu trò chơi bị lỗi. Ứng dụng sẽ kết thúc.</string>
+	<string name="CELL_GAME_ERROR_BROKEN_EXIT_HDDGAME">LỖI: Trò chơi HDD bị lỗi. Ứng dụng sẽ kết thúc.</string>
+	<string name="CELL_GAME_ERROR_NOSPACE">LỖI: Không đủ không gian trống. Ứng dụng sẽ tiếp tục.\nKhông gian cần thiết: %0 KB</string>
+	<string name="CELL_GAME_ERROR_NOSPACE_EXIT">LỖI: Không đủ không gian trống. Ứng dụng sẽ kết thúc.\nKhông gian cần thiết: %0 KB</string>
+	<string name="CELL_GAME_ERROR_DIR_NAME">Tên thư mục: %0</string>
+	<string name="CELL_GAME_DATA_EXIT_BROKEN">Đã xảy ra lỗi!\n\nVui lòng xóa dữ liệu trò chơi này.</string>
+	<string name="CELL_HDD_GAME_EXIT_BROKEN">Đã xảy ra lỗi!\n\nVui lòng cài đặt lại trò chơi HDD.</string>
+	<string name="CELL_HDD_GAME_CHECK_NOSPACE">Không đủ không gian để tạo trò chơi HDD.\nKhông gian cần thiết: %0 KB</string>
+	<string name="CELL_HDD_GAME_CHECK_BROKEN">Trò chơi HDD %0 bị lỗi!</string>
+	<string name="CELL_HDD_GAME_CHECK_NODATA">Không tìm thấy trò chơi HDD %0!</string>
+	<string name="CELL_HDD_GAME_CHECK_INVALID">Lỗi: %0</string>
+	<string name="CELL_GAMEDATA_CHECK_NOSPACE">Không đủ không gian để tạo dữ liệu trò chơi.\nKhông gian cần thiết: %0 KB</string>
+	<string name="CELL_GAMEDATA_CHECK_BROKEN">Dữ liệu trò chơi trong %0 bị lỗi!</string>
+	<string name="CELL_GAMEDATA_CHECK_NODATA">Không tìm thấy dữ liệu trò chơi trong %0!</string>
+	<string name="CELL_GAMEDATA_CHECK_INVALID">Lỗi: %0</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010001">Tài nguyên tạm thời không khả dụng.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010002">Đối số hoặc cờ không hợp lệ.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010003">Tính năng chưa được thực hiện.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010004">Cấp phát bộ nhớ thất bại.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010005">Tài nguyên với ID chỉ định không tồn tại.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010006">Tệp không tồn tại.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010007">Tệp không ở định dạng công nhận / Tệp không phải là tệp ELF hợp lệ.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010008">Tránh khóa chết tài nguyên.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010009">Thao tác không được phép.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000A">Tài nguyên hoặc thiết bị đang bận.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000B">Thao tác hết thời gian chờ.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000C">Thao tác bị hủy bỏ.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000D">Truy cập bộ nhớ không hợp lệ.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000F">Trạng thái luồng mục tiêu không hợp lệ.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010010">Căn chỉnh không hợp lệ.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010011">Thiếu tài nguyên nhân kernel.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010012">Tệp là thư mục.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010013">Thao tác bị hủy bỏ.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010014">Mục nhập đã tồn tại.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010015">Cổng đã kết nối.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010016">Cổng chưa kết nối.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010017">Lỗi xác thực SELF. Lỗi xác thực chương trình.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010018">Tệp không phải là MSELF.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010019">Lỗi phiên bản hệ thống.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001A">Lỗi hệ thống nghiêm trọng khi xác thực SELF. Lỗi xác thực SELF.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001B">Vi phạm miền toán học.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001C">Vi phạm phạm vi toán học.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001D">Dãy byte đa byte không hợp lệ trong đầu vào.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001E">Lỗi vị trí tệp.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001F">Lệnh hệ thống bị ngắt.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010020">Tệp quá lớn.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010021">Quá nhiều liên kết.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010022">Bảng tệp tràn.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010023">Không còn không gian trên thiết bị.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010024">Không phải cổng TTY.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010025">Ống dẫn bị hỏng.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010026">Hệ thống tập tin chỉ đọc.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010027">Lỗi tìm kiếm tệp.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010028">Danh sách tham số quá dài.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010029">Vi phạm quyền truy cập.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002A">Mô tả tệp không hợp lệ.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002B">Gắn kết hệ thống tập tin thất bại.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002C">Quá nhiều tệp đang mở.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002D">Thiết bị không tồn tại.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002E">Không phải thư mục.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002F">Không tìm thấy thiết bị hoặc thiết bị vào/ra.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010030">Lỗi liên kết giữa các thiết bị.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010031">Thông báo lỗi.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010032">Đang xử lý.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010033">Lỗi kích thước thông báo.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010034">Tên quá dài.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010035">Không có khóa.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010036">Thư mục không trống.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010037">Không được hỗ trợ.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010038">Lỗi hệ thống tập tin.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010039">Tràn số.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003A">Hệ thống tập tin chưa gắn.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003B">Không phải dữ liệu SData.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003C">Phiên bản sys_load_param không đúng.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003D">Con trỏ rỗng.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003E">Con trỏ rỗng.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_DEFAULT">Đã xảy ra lỗi.\n(%0)</string>
+	<string name="CELL_OSK_DIALOG_TITLE">Bàn phím trên màn hình</string>
+	<string name="CELL_OSK_DIALOG_BUSY">Không thể mở Trang chủ trong khi bàn phím đang hoạt động!</string>
+
+	<string name="CELL_SAVEDATA_CB_BROKEN">Lỗi - Dữ liệu lưu bị hỏng</string>
+	<string name="CELL_SAVEDATA_CB_FAILURE">Lỗi - Lưu hoặc tải dữ liệu thất bại</string>
+	<string name="CELL_SAVEDATA_CB_NO_DATA">Lỗi - Không tìm thấy dữ liệu lưu</string>
+	<string name="CELL_SAVEDATA_CB_NO_SPACE">Lỗi - Không đủ không gian trống\n\nKhông gian cần: %0 KB</string>
+	<string name="CELL_SAVEDATA_NO_DATA">Không có dữ liệu lưu.</string>
+	<string name="CELL_SAVEDATA_NEW_SAVED_DATA_TITLE">Dữ Liệu Lưu Mới</string>
+	<string name="CELL_SAVEDATA_NEW_SAVED_DATA_SUB_TITLE">Chọn để tạo mục mới</string>
+	<string name="CELL_SAVEDATA_SAVE_CONFIRMATION">Bạn có muốn lưu dữ liệu này không?</string>
+	<string name="CELL_SAVEDATA_DELETE_CONFIRMATION">Bạn có chắc muốn xóa dữ liệu này không?\n\n%0</string>
+	<string name="CELL_SAVEDATA_DELETE_SUCCESS">Đã xóa dữ liệu thành công!\n\n%0</string>
+	<string name="CELL_SAVEDATA_DELETE">Xóa dữ liệu này?\n\n%0</string>
+	<string name="CELL_SAVEDATA_LOAD">Tải dữ liệu này?\n\n%0</string>
+	<string name="CELL_SAVEDATA_SAVE">Lưu dữ liệu này?\n\n%0</string>
+	<string name="CELL_SAVEDATA_OVERWRITE">Bạn có muốn ghi đè dữ liệu lưu không?\n\n%0</string>
+	<string name="CELL_SAVEDATA_AUTOSAVE">Đang lưu...</string>
+	<string name="CELL_SAVEDATA_AUTOLOAD">Đang tải...</string>
+	<string name="CELL_CROSS_CONTROLLER_MSG">Khởi động trên hệ thống PS Vita.\nNếu chưa cài đặt, hãy vào [Chơi từ xa] trên hệ thống PS Vita và khởi động [Cross-Controller] từ màn hình LiveArea™.</string>
+	<string name="CELL_CROSS_CONTROLLER_FW_MSG">Nếu phiên bản phần mềm hệ thống PS Vita của bạn dưới 1.80, bạn phải cập nhật lên phiên bản mới nhất.</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_TITLE">Chọn Tin Nhắn</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_TITLE_INVITE">Chọn Lời Mời</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_TITLE_ADD_FRIEND">Thêm Bạn Bè</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_FROM">Từ:</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_SUBJECT">Tiêu đề:</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_TITLE">Chọn Tin Nhắn Để Gửi</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_TITLE_INVITE">Gửi Lời Mời</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_TITLE_ADD_FRIEND">Gửi Lời Mời Kết Bạn</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_CONFIRMATION">Gửi tin nhắn cho %0 ?\n\nTiêu đề:</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_CONFIRMATION_INVITE">Gửi lời mời cho %0 ?\n\nTiêu đề:</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_CONFIRMATION_ADD_FRIEND">Gửi yêu cầu kết bạn cho %0 ?\n\nTiêu đề:</string>
+	<string name="RECORDING_ABORTED">Ghi hình bị hủy!</string>
+	<string name="RPCN_NO_ERROR">RPCN: Không có lỗi</string>
+	<string name="RPCN_ERROR_INVALID_INPUT">RPCN: Đầu vào không hợp lệ (Tên máy/chân cắm sai)</string>
+	<string name="RPCN_ERROR_WOLFSSL">RPCN Lỗi kết nối: Lỗi WolfSSL</string>
+	<string name="RPCN_ERROR_RESOLVE">RPCN Lỗi kết nối: Lỗi phân giải</string>
+	<string name="RPCN_ERROR_CONNECT">Lỗi kết nối RPCN</string>
+	<string name="RPCN_ERROR_LOGIN_ERROR">Lỗi đăng nhập RPCN: Lỗi xác thực</string>
+	<string name="RPCN_ERROR_ALREADY_LOGGED">Lỗi đăng nhập RPCN: Người dùng đã đăng nhập</string>
+	<string name="RPCN_ERROR_INVALID_LOGIN">Lỗi đăng nhập RPCN: Tên đăng nhập không hợp lệ</string>
+	<string name="RPCN_ERROR_INVALID_PASSWORD">Lỗi đăng nhập RPCN: Mật khẩu không hợp lệ</string>
+	<string name="RPCN_ERROR_INVALID_TOKEN">Lỗi đăng nhập RPCN: Mã token không hợp lệ</string>
+	<string name="RPCN_ERROR_INVALID_PROTOCOL_VERSION">Lỗi RPCN: Phiên bản giao thức lỗi (RPCS3 lỗi thời?)</string>
+	<string name="RPCN_ERROR_UNKNOWN">RPCN: Lỗi không xác định</string>
+	<string name="RPCN_SUCCESS_LOGGED_ON">Đăng nhập RPCN thành công!</string>
+	<string name="RPCN_FRIEND_REQUEST_RECEIVED">RPCN: Nhận được lời mời kết bạn: %0</string>
+	<string name="RPCN_FRIEND_ADDED">RPCN: Bạn thêm: %0</string>
+	<string name="RPCN_FRIEND_LOST">RPCN: Bạn bị xóa: %0</string>
+	<string name="RPCN_FRIEND_LOGGED_IN">RPCN: %0 đã đăng nhập</string>
+	<string name="RPCN_FRIEND_LOGGED_OUT">RPCN: %0 đã đăng xuất</string>
+
+    <string name="HOME_MENU_TITLE">Trang Chủ</string>
+    <string name="HOME_MENU_EXIT_GAME">Thoát Trò Chơi</string>
+    <string name="HOME_MENU_RESUME">Tiếp Tục Trò Chơi</string>
+    <string name="HOME_MENU_FRIENDS">Bạn Bè</string>
+    <string name="HOME_MENU_FRIENDS_REQUESTS">Lời Mời Chưa Xử Lý</string>
+    <string name="HOME_MENU_FRIENDS_BLOCKED">Người Bị Chặn</string>
+    <string name="HOME_MENU_FRIENDS_STATUS_ONLINE">Trực Tuyến</string>
+    <string name="HOME_MENU_FRIENDS_STATUS_OFFLINE">Ngoại Tuyến</string>
+    <string name="HOME_MENU_FRIENDS_STATUS_BLOCKED">Bị Chặn</string>
+    <string name="HOME_MENU_FRIENDS_REQUEST_SENT">Bạn đã gửi lời mời kết bạn</string>
+    <string name="HOME_MENU_FRIENDS_REQUEST_RECEIVED">Gửi lời mời kết bạn đến bạn</string>
+    <string name="HOME_MENU_FRIENDS_BLOCK_USER_MSG">Chặn người dùng này?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_UNBLOCK_USER_MSG">Bỏ chặn người dùng này?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_REMOVE_USER_MSG">Xóa người dùng này?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_ACCEPT_REQUEST_MSG">Chấp nhận yêu cầu?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_CANCEL_REQUEST_MSG">Hủy yêu cầu?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_REJECT_REQUEST_MSG">Từ chối yêu cầu?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_REJECT_REQUEST">Từ chối yêu cầu</string>
+    <string name="HOME_MENU_FRIENDS_NEXT_LIST">Danh sách tiếp theo</string>
+    <string name="HOME_MENU_RESTART">Khởi Động Lại Trò Chơi</string>
+    <string name="HOME_MENU_SETTINGS">Cài Đặt</string>
+    <string name="HOME_MENU_SETTINGS_SAVE">Lưu cấu hình tùy chỉnh?</string>
+    <string name="HOME_MENU_SETTINGS_SAVE_BUTTON">Lưu</string>
+    <string name="HOME_MENU_SETTINGS_DISCARD">Hủy các thay đổi hiện tại?</string>
+    <string name="HOME_MENU_SETTINGS_DISCARD_BUTTON">Hủy</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO">Âm Thanh</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_MASTER_VOLUME">Âm Lượng Chính</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_BACKEND">Máy Chủ Âm Thanh</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_BUFFERING">Bật bộ đệm</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_BUFFER_DURATION">Thời lượng bộ đệm mong muốn</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_TIME_STRETCHING">Bật giãn thời gian</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_TIME_STRETCHING_THRESHOLD">Ngưỡng giãn thời gian</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO">Hình Ảnh</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_FRAME_LIMIT">Giới hạn khung hình</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_ANISOTROPIC_OVERRIDE">Ghi đè bộ lọc anisotropic</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_OUTPUT_SCALING">Tỷ lệ hiển thị</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_RCAS_SHARPENING">Cường độ làm sắc FidelityFX CAS</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_STRETCH_TO_DISPLAY">Kéo giãn để vừa màn hình</string>
+    <string name="HOME_MENU_SETTINGS_INPUT">Đầu Vào</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_BACKGROUND_INPUT">Bật đầu vào nền</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_KEEP_PADS_CONNECTED">Giữ tay cầm kết nối</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_SHOW_PS_MOVE_CURSOR">Hiển thị con trỏ PS Move</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_CAMERA_FLIP">Lật camera</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_PAD_MODE">Chế độ tay cầm</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_PAD_SLEEP">Thời gian nghỉ tay cầm</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_FAKE_MOVE_ROTATION_CONE_H">Côn quay giả lập PS Move (Ngang)</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_FAKE_MOVE_ROTATION_CONE_V">Côn quay giả lập PS Move (Dọc)</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED">Nâng Cao</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_PREFERRED_SPU_THREADS">Luồng SPU ưa thích</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_MAX_CPU_PREEMPTIONS">Tối đa CPU-Preemptions tiết kiệm năng lượng</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_ACCURATE_RSX_RESERVATION_ACCESS">Truy cập đặt trước RSX chính xác</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_SLEEP_TIMERS_ACCURACY">Độ chính xác bộ hẹn giờ ngủ</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_MAX_SPURS_THREADS">Tối đa luồng SPURS</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_DRIVER_WAKE_UP_DELAY">Trễ đánh thức trình điều khiển</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_VBLANK_FREQUENCY">Tần số VBlank</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_VBLANK_NTSC">Sửa lỗi VBlank NTSC</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS">Lớp phủ</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_TROPHY_POPUPS">Hiển thị thông báo huy hiệu</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_RPCN_POPUPS">Hiển thị thông báo RPCN</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_SHADER_COMPILATION_HINT">Hiển thị gợi ý biên dịch shader</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_PPU_COMPILATION_HINT">Hiển thị gợi ý biên dịch PPU</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_AUTO_SAVE_LOAD_HINT">Hiển thị gợi ý lưu/tải tự động</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_PRESSURE_INTENSITY_TOGGLE_HINT">Hiển thị gợi ý bật/tắt cường độ lực nhấn</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_ANALOG_LIMITER_TOGGLE_HINT">Hiển thị gợi ý bật/tắt giới hạn analog</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_MOUSE_AND_KB_TOGGLE_HINT">Hiển thị gợi ý bật/tắt chuột và bàn phím</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY">Lớp theo dõi hiệu năng</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_ENABLE">Bật lớp theo dõi hiệu năng</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_ENABLE_FRAMERATE_GRAPH">Bật biểu đồ tốc độ khung hình</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_ENABLE_FRAMETIME_GRAPH">Bật biểu đồ thời gian khung hình</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_DETAIL_LEVEL">Mức độ chi tiết</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMERATE_DETAIL_LEVEL">Mức độ chi tiết biểu đồ tốc độ</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMETIME_DETAIL_LEVEL">Mức độ chi tiết biểu đồ thời gian</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMERATE_DATAPOINT_COUNT">Số điểm dữ liệu tốc độ</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMETIME_DATAPOINT_COUNT">Số điểm dữ liệu thời gian</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_UPDATE_INTERVAL">Khoảng cập nhật chỉ số</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_POSITION">Vị trí</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_CENTER_X">Canh giữa theo chiều ngang</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_CENTER_Y">Canh giữa theo chiều dọc</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_MARGIN_X">Lề ngang</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_MARGIN_Y">Lề dọc</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FONT_SIZE">Cỡ chữ</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_OPACITY">Độ mờ</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG">Gỡ Lỗi</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_OVERLAY">Giao diện gỡ lỗi</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_INPUT_OVERLAY">Lớp gỡ lỗi đầu vào</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_DISABLE_VIDEO_OUTPUT">Tắt đầu ra video</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_TEXTURE_LOD_BIAS">Độ lệch LOD kết cấu</string>
+    <string name="HOME_MENU_SCREENSHOT">Chụp ảnh màn hình</string>
+    <string name="HOME_MENU_SAVESTATE">Lưu Trạng Thái</string>
+    <string name="HOME_MENU_SAVESTATE_SAVE">Lưu trạng thái giả lập</string>
+    <string name="HOME_MENU_SAVESTATE_AND_EXIT">Lưu trạng thái và thoát</string>
+    <string name="HOME_MENU_RELOAD_SAVESTATE">Tải lại trạng thái gần nhất</string>
+    <string name="HOME_MENU_RECORDING">Bắt đầu/Dừng ghi hình</string>
+    <string name="HOME_MENU_TROPHIES">Huy Hiệu</string>
+    <string name="HOME_MENU_TROPHY_LIST_TITLE">Tiến độ huy hiệu: %0</string>
+    <string name="HOME_MENU_TROPHY_LOCKED_TITLE">Huy hiệu bị khóa: %0</string>
+    <string name="HOME_MENU_TROPHY_HIDDEN_TITLE">Huy hiệu ẩn</string>
+    <string name="HOME_MENU_TROPHY_HIDDEN_DESCRIPTION">Huy hiệu này bị ẩn</string>
+    <string name="HOME_MENU_TROPHY_SHOW_HIDDEN_TROPHIES">Hiển thị huy hiệu ẩn</string>
+    <string name="HOME_MENU_TROPHY_HIDE_HIDDEN_TROPHIES">Ẩn huy hiệu ẩn</string>
+    <string name="HOME_MENU_TROPHY_PLATINUM_RELEVANT">Liên quan đến huy hiệu Bạch Kim</string>
+    <string name="HOME_MENU_TROPHY_GRADE_BRONZE">Đồng</string>
+    <string name="HOME_MENU_TROPHY_GRADE_SILVER">Bạc</string>
+    <string name="HOME_MENU_TROPHY_GRADE_GOLD">Vàng</string>
+    <string name="HOME_MENU_TROPHY_GRADE_PLATINUM">Bạch Kim</string>
+
+	<string name="AUDIO_MUTED">Âm thanh bị tắt</string>
+	<string name="AUDIO_UNMUTED">Âm thanh được bật</string>
+	<string name="AUDIO_CHANGED">Âm lượng đã thay đổi thành %0</string>
+	<string name="PROGRESS_DIALOG_PROGRESS">Tiến độ:</string>
+	<string name="PROGRESS_DIALOG_PROGRESS_ANALYZING">Tiến độ: Đang phân tích...</string>
+	<string name="PROGRESS_DIALOG_REMAINING">còn lại</string>
+	<string name="PROGRESS_DIALOG_DONE">xong</string>
+	<string name="PROGRESS_DIALOG_FILE">tệp</string>
+	<string name="PROGRESS_DIALOG_MODULE">mô-đun</string>
+	<string name="PROGRESS_DIALOG_OF">của</string>
+	<string name="PROGRESS_DIALOG_PLEASE_WAIT">Vui lòng đợi</string>
+	<string name="PROGRESS_DIALOG_STOPPING_PLEASE_WAIT">Đang dừng. Vui lòng đợi...</string>
+	<string name="PROGRESS_DIALOG_SAVESTATE_PLEASE_WAIT">Đang tạo trạng thái lưu. Vui lòng đợi...</string>
+	<string name="PROGRESS_DIALOG_SCANNING_PPU_EXECUTABLE">Đang quét chương trình PPU...</string>
+	<string name="PROGRESS_DIALOG_ANALYZING_PPU_EXECUTABLE">Đang phân tích chương trình PPU...</string>
+	<string name="PROGRESS_DIALOG_SCANNING_PPU_MODULES">Đang quét mô-đun PPU...</string>
+	<string name="PROGRESS_DIALOG_LOADING_PPU_MODULES">Đang tải mô-đun PPU...</string>
+	<string name="PROGRESS_DIALOG_COMPILING_PPU_MODULES">Đang biên dịch mô-đun PPU...</string>
+	<string name="PROGRESS_DIALOG_LINKING_PPU_MODULES">Đang liên kết mô-đun PPU...</string>
+	<string name="PROGRESS_DIALOG_APPLYING_PPU_CODE">Đang áp dụng mã PPU...</string>
+	<string name="PROGRESS_DIALOG_BUILDING_SPU_CACHE">Đang xây dựng bộ nhớ đệm SPU...</string>
+	<string name="EMULATION_PAUSED_RESUME_WITH_START">Nhấn và giữ nút START để tiếp tục</string>
+	<string name="EMULATION_RESUMING">Đang tiếp tục...!</string>
+	<string name="EMULATION_FROZEN">Ứng dụng PS3 có thể đã treo, bạn có thể đóng nó lại.</string>
+	<string name="SAVESTATE_FAILED_DUE_TO_SAVEDATA">Lưu trạng thái thất bại: Đang lưu trò chơi, hãy đợi đến khi hoàn tất.</string>
+	<string name="SAVESTATE_FAILED_DUE_TO_VDEC">Lưu trạng thái thất bại: Video/cutscene dùng VDEC đang chạy, hãy đợi kết thúc hoặc bật libvdec.sprx.</string>
+	<string name="SAVESTATE_FAILED_DUE_TO_MISSING_SPU_SETTING">Lưu trạng thái thất bại: Không khóa được trạng thái SPU, bật chế độ tương thích SPU có thể khắc phục.</string>
+	<string name="SAVESTATE_FAILED_DUE_TO_SPU">Lưu trạng thái thất bại: Không khóa được trạng thái SPU, dùng SPU ASMJIT sẽ khắc phục</string>
+	<string name="PROGRESS_DIALOG_PRELOADING_SHADER_CACHE">Đang nạp sẵn shader từ đĩa...</string>
+
+</resources>

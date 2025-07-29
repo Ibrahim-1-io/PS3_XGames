@@ -1,0 +1,1001 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="use_cores_ppu">Gunakan Core(PPU)</string>
+	<string name="use_cores_spu">Gunakan Core(SPU)</string>
+	<string name="use_cores_rsx">Gunakan Core(RSX)</string>
+	<string name="emulator_settings_core_thread_affinity_mask">Topeng Keterikatan Benang</string>
+	<string name="create_shortcut">Buat Pintasan</string>
+	<string name="loading">Memuatkan...</string>
+	<string name="resolution_not_support">Resolusi atau nisbah lebar tidak disokong\nPermainan semasa hanya menyokong:\n%s\n\nSila ubah dengan tetapan berikut:\n%s\n%s\n</string>
+	<string name="show_game_info">Tunjukkan Maklumat Permainan</string>
+	<string name="quick_start_page">Halaman Mula Pantas</string>
+	<string name="prev_step">Langkah Sebelumnya</string>
+	<string name="next_step">Langkah Seterusnya</string>
+	<string name="finish">Selesai</string>
+
+	<string name="welcome">Selamat Datang</string>
+	<string name="welcome_content">Selamat datang ke %s!</string>
+	<string name="welcome_content2">Dengan hanya beberapa langkah ringkas, anda sedia untuk mula bermain, klik pada "%s" untuk bermula.</string>
+
+	<string name="install_ps3_firmware_hiht_content">Untuk memainkan permainan, anda mesti memasang firmware PS3 (PS3UPDAT.PUP). Sila pilih fail firmware.</string>
+	<string name="ps3_firmware_installed">Firmware Dipasang</string>
+	<string name="select_ps3_firmware">Pilih Firmware(PS3UPDAT.PUP)</string>
+	<string name="firmware_not_install">firmware tidak dipasang</string>
+
+
+	<string name="select_ps3_iso_dir_hiht_content">Sila tentukan direktori ISO PS3, aplikasi ini akan secara automatik mengimbas untuk mendapatkan permainan yang sah, anda juga boleh melangkau langkah ini dan memasang fail.pkg secara langsung.</string>
+	<string name="ps3_iso_dir_is_set">Direktori ISO PS3 telah ditetapkan</string>
+
+	<string name="font_select_hiht_content">Sila pilih fail fon (*.ttf, *.ttc, *.otf) untuk dipasang, atau anda boleh menggunakan fon daripada firmware PS3 (beberapa aksara mungkin hilang).</string>
+	<string name="custom_font_path_prefix">Laluan Fon: </string>
+	<string name="select_gpu_driver_hiht_content">Sila pilih pemandu GPU, atau anda boleh melangkau langkah ini (permainan mungkin berjalan dengan ralat).</string>
+	<string name="custom_gpu_driver_path_prefix">Laluan Pemandu GPU: </string>
+
+	<string name="modify_config_hiht_content">Pengekivalan akan secara automatik memilih konfigurasi yang paling sesuai, tetapi beberapa konfigurasi mungkin menyebabkan isu pada peranti anda. Anda boleh mengubahnya kemudian dalam tetapan.</string>
+
+	<string name="msg_processing">Memproses...</string>
+	<string name="msg_failed">Gagal!</string>
+
+	<string name="emulator_settings_video_vulkan_debug">Debug</string>
+	<string name="emulator_settings_miscellaneous_memory_debug_overlay">Tindih Memori Debug</string>
+
+	<string name="vibrator_duration">Tempoh Penggegar</string>
+	<string name="enable_vibrator">Dayakan Penggegar</string>
+	<string name="dynamic_joystick">Joystick Dinamik</string>
+	<string name="disable">Lumpuhkan</string>
+
+	<string name="disable_virtual_keyboard">Lumpuhkan papan kekunci maya</string>
+	<string name="joystick">Joystick</string>
+	<string name="dpad">Dpad</string>
+	<string name="button">Butang</string>
+	<string name="lr">LR</string>
+	<string name="start_select">Start/Select</string>
+
+	<string name="enable_log">Dayakan Log</string>
+	<string name="use_global_config">Gunakan Konfigurasi Global</string>
+	<string name="edit_custom_config">Sunting Konfigurasi Tersuai</string>
+	<string name="clear">Kosongkan</string>
+	<string name="press_a_key">Tekan sebarang kekunci untuk teruskan...</string>
+	<string name="game_list_loading">Senarai permainan sedang dimuatkan...</string>
+	<string name="undecrypted_game">Menjalankan permainan yang tidak dienkripsi tidak disokong buat masa ini</string>
+	<string name="delete_game_data">Padam Data Permainan</string>
+	<string name="delete_hdd0_install_data">Padam Data Pemasangan hdd0</string>
+	<string name="delete_game_and_data">Padam Permainan dan Data</string>
+	<string name="delete_shaders_cache">Padam Cache Shaders</string>
+
+	<string name="set_iso_dir">Tetapkan Direktori (*.iso)</string>
+	<string name="device_info">Maklumat Peranti</string>
+	<string name="reset_as_default">Tetapkan Semula sebagai Lalai</string>
+	<string name="save_and_quit">Simpan &amp; Keluar</string>
+	<string name="scale_rate">Kadar Skala</string>
+	<string name="open_file_manager">Buka Pengurus Fail</string>
+	<string name="installing_firmware">Memasang Firmware...</string>
+	<string name="refresh_list">Segarkan Senarai</string>
+	<string name="select_game">Pilih Permainan</string>
+	<string name="install_firmware">Pasang Firmware</string>
+	<string name="install_game">Pasang RAP/PKG</string>
+	<string name="installing_game">Memasang Permainan...</string>
+	<string name="about">Tentang</string>
+	<string name="quit">Keluar</string>
+	<string name="update_log">Log Kemas Kini</string>
+	<string name="empty_game_list">Senarai permainan kosong, sila tambah permainan dengan memasang pkg atau menetapkan direktori *.iso</string>
+	<string name="delete">Padam</string>
+	<string name="settings">Tetapan</string>
+	<string name="gratitude">Ucapan Terima Kasih</string>
+	<string name="gratitude_content">Terima kasih kepada Ruban untuk semua IKON\n\n
+		Terima kasih kepada SRC267 (Sting) untuk pengurusan reddit/discord\n\n
+		Terima kasih kepada 妖妖 untuk ujian\n\n
+		Terima kasih kepada 再见某人 untuk menderma GPD XP, yang sangat membantu dalam proses pengujian.\n\n
+		Terima kasih kepada 再见某人 untuk menderma peralatan pembangunan, yang sangat membantu dalam memajukan projek ini.\n\n
+		Terima kasih kepada orang-orang berikut yang memberi sokongan kewangan untuk projek ini (peringkat permulaan, disusun mengikut tarikh):\n\n</string>
+	<string name="gratitude_content2">
+		Berasaskan pengoptimuman penyeberangan RPCS3, terima kasih kepada semua penyerta dalam projek RPCS3\n\n
+Diterjemahkan oleh qwen3
+	</string>
+	<string name="key_mappers">Mapper Kekunci</string>
+	<string name="virtual_pad_edit">Sunting VirtualPad</string>
+
+	<string name="left">kiri</string>
+	<string name="up">atas</string>
+	<string name="right">kanan</string>
+	<string name="down">bawah</string>
+
+	<string name="square">segi empat</string>
+	<string name="cross">sila</string>
+	<string name="circle">bulat</string>
+	<string name="triangle">segi tiga</string>
+
+	<string name="l1">L1</string>
+	<string name="l2">L2</string>
+	<string name="l3">L3</string>
+
+	<string name="r1">R1</string>
+	<string name="r2">R2</string>
+	<string name="r3">R3</string>
+
+	<string name="start">mula</string>
+	<string name="select">pilih</string>
+	<string name="ps">PS</string>
+
+
+	<string name="emulator_settings_video_vulkan_custom_driver_library_path_dialog_title">Pilih Pemandu Tersuai</string>
+	<string name="emulator_settings_video_vulkan_custom_driver_library_path_dialog_add_hint">Tambah Pemandu Tersuai(*.zip, *.so)</string>
+
+	<string name="emulator_settings_miscellaneous_custom_font_file_path_dialog_title">Pilih Fon Tersuai</string>
+	<string name="emulator_settings_miscellaneous_custom_font_file_path_dialog_add_hint">Tambah Fon Tersuai(*.ttf, *.ttc, *.otf)</string>
+
+	<string name="emulator_settings_core">Core</string>
+	<string name="emulator_settings_core_ppu_decoder">Penyahkod PPU</string>
+	<string-array name="core_ppu_decoder_entries">
+		<item>Penafsir (statis)</item>
+		<item>Pengkompil Semula (LLVM)</item>
+	</string-array>
+	<string name="emulator_settings_core_ppu_threads">Benang PPU</string>
+	<string name="emulator_settings_core_ppu_debug">Debug PPU</string>
+	<string name="emulator_settings_core_ppu_calling_history">Sejarah Panggilan PPU</string>
+	<string name="emulator_settings_core_save_llvm_logs">Simpan Log LLVM</string>
+	<string name="emulator_settings_core_use_llvm_cpu">Gunakan CPU LLVM</string>
+	<string name="emulator_settings_core_max_llvm_compile_threads">Maksimum Benang Kompilasi LLVM</string>
+	<string name="emulator_settings_core_ppu_llvm_greedy_mode">Mod Rakus PPU LLVM</string>
+	<string name="emulator_settings_core_llvm_precompilation">Prakompilasi LLVM</string>
+	<string name="emulator_settings_core_thread_scheduler_mode">Mod Penjadual Benang</string>
+	<string-array name="core_thread_scheduler_mode_entries">
+		<item>Sistem Pengendalian</item>
+		<item>Keterikatan</item>
+	</string-array>
+	<string name="emulator_settings_core_set_daz_and_ftz">Tetapkan DAZ dan FTZ</string>
+	<string name="emulator_settings_core_spu_decoder">Penyahkod SPU</string>
+	<string-array name="core_spu_decoder_entries">
+		<item>Penafsir (statis)</item>
+		<item>Penafsir (dinamik)</item>
+		<item>Pengkompil Semula (ASMJIT)</item>
+		<item>Pengkompil Semula (LLVM)</item>
+	</string-array>
+	<string name="emulator_settings_core_spu_reservation_busy_waiting_percentage">Peratusan Tunggu Sibuk Reservasi SPU</string>
+	<string name="emulator_settings_core_spu_getllar_busy_waiting_percentage">Peratusan Tunggu Sibuk GETLLAR SPU</string>
+	<string name="emulator_settings_core_disable_spu_getllar_spin_optimization">Lumpuhkan Optimumkan Putaran SPU GETLLAR</string>
+	<string name="emulator_settings_core_spu_debug">Debug SPU</string>
+	<string name="emulator_settings_core_mfc_debug">Debug MFC</string>
+	<string name="emulator_settings_core_preferred_spu_threads">Benang SPU Yang Diutamakan</string>
+	<string name="emulator_settings_core_spu_delay_penalty">Penalti Tunggu SPU</string>
+	<string name="emulator_settings_core_spu_loop_detection">Pengesanan Gelung SPU</string>
+	<string name="emulator_settings_core_max_spurs_threads">Maksimum Benang SPURS</string>
+	<string name="emulator_settings_core_spu_block_size">Saiz Blok SPU</string>
+	<string-array name="core_spu_block_size_entries">
+		<item>Selamat</item>
+		<item>Mega</item>
+		<item>Giga</item>
+	</string-array>
+	<string name="emulator_settings_core_accurate_spu_dma">DMA SPU Tepat</string>
+	<string name="emulator_settings_core_accurate_spu_reservations">Reservasi SPU Tepat</string>
+	<string name="emulator_settings_core_accurate_cache_line_stores">Simpan Garis Cache Tepat</string>
+	<string name="emulator_settings_core_accurate_rsx_reservation_access">Akses Reservasi RSX Tepat</string>
+	<string name="emulator_settings_core_rsx_fifo_accuracy">Ketepatan FIFO RSX</string>
+	<string-array name="core_rsx_fifo_accuracy_entries">
+		<item>Pantas</item>
+		<item>Atom</item>
+		<item>Tertib &amp; Atom</item>
+		<item>PS3</item>
+	</string-array>
+	<string name="emulator_settings_core_spu_verification">Pengesahan SPU</string>
+	<string name="emulator_settings_core_spu_cache">Cache SPU</string>
+	<string name="emulator_settings_core_spu_profiler">Profiler SPU</string>
+	<string name="emulator_settings_core_mfc_commands_shuffling_limit">Had Pengacauan Perintah MFC</string>
+	<string name="emulator_settings_core_mfc_commands_timeout">Had Masa Perintah MFC</string>
+	<string name="emulator_settings_core_mfc_commands_shuffling_in_steps">Pengacauan Perintah MFC Dalam Langkah</string>
+	<string name="emulator_settings_core_enable_tsx">Dayakan TSX</string>
+	<string-array name="core_enable_tsx_entries">
+		<item>Dilumpuhkan</item>
+		<item>Didayakan</item>
+		<item>Dipaksa</item>
+	</string-array>
+	<string name="emulator_settings_core_xfloat_accuracy">Ketepatan XFloat</string>
+	<string-array name="core_xfloat_accuracy_entries">
+		<item>Tepat</item>
+		<item>Anggaran</item>
+		<item>Longgar</item>
+		<item>Tidak Tepat</item>
+	</string-array>
+	<string name="emulator_settings_core_accurate_ppu_128byte_reservation_op_max_length">Panjang Maksimum Operasi Reservasi 128-byte PPU Tepat</string>
+	<string name="emulator_settings_core_stub_ppu_traps">Perangkap PPU Stub</string>
+	<string name="emulator_settings_core_precise_spu_verification">Pengesahan SPU Tepat</string>
+	<string name="emulator_settings_core_ppu_llvm_java_mode_handling">Pemprosesan Mod Java PPU LLVM</string>
+	<string name="emulator_settings_core_use_accurate_dfma">Gunakan DFMA Tepat</string>
+	<string name="emulator_settings_core_ppu_set_saturation_bit">Tetapkan Bit Ketepuan PPU</string>
+	<string name="emulator_settings_core_ppu_accurate_nonjava_mode">Mod Bukan Java PPU Tepat</string>
+	<string name="emulator_settings_core_ppu_fixup_vector_nan_values">Nilai NaN Vektor PPU</string>
+	<string name="emulator_settings_core_ppu_accurate_vector_nan_values">Nilai NaN Vektor PPU Tepat</string>
+	<string name="emulator_settings_core_ppu_set_fpcc_bits">Tetapkan Bit FPCC PPU</string>
+	<string name="emulator_settings_core_debug_console_mode">Mod Konsol Debug</string>
+	<string name="emulator_settings_core_hook_static_functions">Hook Fungsi Statis</string>
+	<string name="emulator_settings_core_libraries_control">Kawalan Pustaka</string>
+	<string name="emulator_settings_core_hle_lwmutex">HLE lwmutex</string>
+	<string name="emulator_settings_core_spu_llvm_lower_bound">Had Bawah SPU LLVM</string>
+	<string name="emulator_settings_core_spu_llvm_upper_bound">Had Atas SPU LLVM</string>
+	<string name="emulator_settings_core_tsx_transaction_first_limit">Had Pertama Transaksi TSX</string>
+	<string name="emulator_settings_core_tsx_transaction_second_limit">Had Kedua Transaksi TSX</string>
+	<string name="emulator_settings_core_clocks_scale">Skala Jam</string>
+	<string name="emulator_settings_core_spu_wakeup_delay">Tangguh Bangun SPU</string>
+	<string name="emulator_settings_core_spu_wakeup_delay_thread_mask">Topeng Benang Tangguh Bangun SPU</string>
+	<string name="emulator_settings_core_max_cpu_preempt_count">Kiraan Praminta CPU Maksimum</string>
+	<string name="emulator_settings_core_allow_rsx_cpu_preemptions">Benarkan Praminta CPU RSX</string>
+	<string name="emulator_settings_core_sleep_timers_accuracy">Ketepatan Pemasa Tidur</string>
+	<string-array name="core_sleep_timers_accuracy_entries">
+		<item>Sebagai Hos</item>
+		<item>Hanya Usleep</item>
+		<item>Semua Pemasa</item>
+	</string-array>
+	<string name="emulator_settings_core_usleep_time_addend">Tambahan Masa Usleep</string>
+	<string name="emulator_settings_core_performance_report_threshold">Amaran Prestasi</string>
+	<string name="emulator_settings_core_enable_performance_report">Dayakan Laporan Prestasi</string>
+	<string name="emulator_settings_core_assume_external_debugger">Anggapkan Penyahbugaan Luar</string>
+	<string name="emulator_settings_video">Video</string>
+	<string name="emulator_settings_video_vertex_buffer_upload_mode">Mod Muat Naik Butir Video</string>
+	<string-array name="video_vertex_buffer_upload_mode_entries">
+		<item>Auto</item>
+		<item>Lihat Butir</item>
+		<item>Butir</item>
+	</string-array>
+	<string name="emulator_settings_video_texture_upload_mode">Mod Muat Naik Tekstur</string>
+	<string-array name="video_texture_upload_mode_entries">
+		<item>CPU</item>
+		<item>GPU</item>
+	</string-array>
+	<string name="emulator_settings_video_renderer">Penyahkod</string>
+	<string-array name="video_renderer_entries">
+		<item>Null</item>
+		<item>Vulkan</item>
+	</string-array>
+	<string name="emulator_settings_video_resolution">Resolusi</string>
+	<string-array name="video_resolution_entries">
+		<item>1920x1080</item>
+		<item>1920x1080i</item>
+		<item>1280x720</item>
+		<item>720x480</item>
+		<item>720x480i</item>
+		<item>720x576</item>
+		<item>720x576i</item>
+		<item>1600x1080</item>
+		<item>1440x1080</item>
+		<item>1280x1080</item>
+		<item>960x1080</item>
+	</string-array>
+	<string name="emulator_settings_video_aspect_ratio">Nisbah Aspek</string>
+	<string-array name="video_aspect_ratio_entries">
+		<item>4:3</item>
+		<item>16:9</item>
+	</string-array>
+	<string name="emulator_settings_video_frame_limit">Had Bingkai</string>
+	<string-array name="video_frame_limit_entries">
+		<item>Dimatikan</item>
+		<item>30</item>
+		<item>50</item>
+		<item>60</item>
+		<item>120</item>
+		<item>Paparan</item>
+		<item>Auto</item>
+		<item>Asli PS3</item>
+		<item>Tidak Terhad</item>
+	</string-array>
+	<string name="emulator_settings_video_second_frame_limit">Had Bingkai Kedua</string>
+	<string name="emulator_settings_video_msaa">MSAA</string>
+	<string-array name="video_msaa_entries">
+		<item>Dilumpuhkan</item>
+		<item>Auto</item>
+	</string-array>
+	<string name="emulator_settings_video_shader_mode">Mod Shader</string>
+	<string-array name="video_shader_mode_entries">
+		<item>Penyahkod Shader</item>
+		<item>Penyahkod Shader Asinkron</item>
+		<item>Asinkron dengan Penafsir Shader</item>
+		<item>Hanya Penafsir Shader</item>
+	</string-array>
+	<string name="emulator_settings_video_shader_precision">Ketepatan Shader</string>
+	<string-array name="video_shader_precision_entries">
+		<item>Ultra</item>
+		<item>Tinggi</item>
+		<item>Rendah</item>
+		<item>Auto</item>
+	</string-array>
+	<string name="emulator_settings_video_write_color_buffers">Tulis Butir Warna</string>
+	<string name="emulator_settings_video_write_depth_buffer">Tulis Butir Kedalaman</string>
+	<string name="emulator_settings_video_read_color_buffers">Baca Butir Warna</string>
+	<string name="emulator_settings_video_read_depth_buffer">Baca Butir Kedalaman</string>
+	<string name="emulator_settings_video_handle_rsx_memory_tiling">Urus Pemelanan Memori RSX</string>
+	<string name="emulator_settings_video_log_shader_programs">Log Program Shader</string>
+	<string name="emulator_settings_video_vsync">VSync</string>
+	<string name="emulator_settings_video_debug_output">Output Debug</string>
+	<string name="emulator_settings_video_debug_overlay">Tindih Debug</string>
+	<string name="emulator_settings_video_renderdoc_compatibility_mode">Mod Keserasian Renderdoc</string>
+	<string name="emulator_settings_video_use_gpu_texture_scaling">Gunakan Penskalaan Tekstur GPU</string>
+	<string name="emulator_settings_video_stretch_to_display_area">Regangan Ke Kawasan Paparan</string>
+	<string name="emulator_settings_video_force_high_precision_z_buffer">Paksa Z Buffer Berketepatan Tinggi</string>
+	<string name="emulator_settings_video_strict_rendering_mode">Mod Pameran Ketat</string>
+	<string name="emulator_settings_video_disable_zcull_occlusion_queries">Lumpuhkan Soalan Okslusi ZCull</string>
+	<string name="emulator_settings_video_disable_video_output">Lumpuhkan Output Video</string>
+	<string name="emulator_settings_video_disable_vertex_cache">Lumpuhkan Cache Butir</string>
+	<string name="emulator_settings_video_disable_fifo_reordering">Lumpuhkan Penyusunan FIFO</string>
+	<string name="emulator_settings_video_enable_frame_skip">Dayakan Langkau Bingkai</string>
+	<string name="emulator_settings_video_force_cpu_blit">Paksa CPU Blit</string>
+	<string name="emulator_settings_video_disable_ondisk_shader_cache">Lumpuhkan Cache Shader Pada Disk</string>
+	<string name="emulator_settings_video_disable_vulkan_memory_allocator">Lumpuhkan Pengagih Memori Vulkan</string>
+	<string name="emulator_settings_video_use_full_rgb_output_range">Gunakan Julat Output RGB Penuh</string>
+	<string name="emulator_settings_video_strict_texture_flushing">Pemadaman Tekstur Ketat</string>
+	<string name="emulator_settings_video_multithreaded_rsx">RSX Berbilang Benang</string>
+	<string name="emulator_settings_video_relaxed_zcull_sync">Sinkronisasi ZCULL Longgar</string>
+	<string name="emulator_settings_video_force_hardware_msaa_resolve">Paksa MSAA Resolve Perkakasan</string>
+	<string name="emulator_settings_video_3d_display_mode">Mod Paparan 3D</string>
+	<string-array name="video_3d_display_mode_entries">
+		<item>Dilumpuhkan</item>
+		<item>Sisi ke Sisi</item>
+		<item>Atas-Bawah</item>
+		<item>Disusun</item>
+		<item>Anaglif Merah-Hijau</item>
+		<item>Anaglif Merah-Biru</item>
+		<item>Anaglif Merah-Cyan</item>
+		<item>Anaglif Magenta-Cyan</item>
+		<item>Anaglif Trioscopic</item>
+		<item>Anaglif Amber-Biru</item>
+	</string-array>
+	<string name="emulator_settings_video_debug_program_analyser">Penganalisis Program Debug</string>
+	<string name="emulator_settings_video_accurate_zcull_stats">Statistik ZCull Tepat</string>
+	<string name="emulator_settings_video_consecutive_frames_to_draw">Bingkai Berturut-turut Untuk Dipapar</string>
+	<string name="emulator_settings_video_consecutive_frames_to_skip">Bingkai Berturut-turut Untuk Dilonak</string>
+	<string name="emulator_settings_video_resolution_scale">Skala Resolusi</string>
+	<string name="emulator_settings_video_anisotropic_filter_override">Tetapan Filter Anisotropik</string>
+	<string name="emulator_settings_video_texture_lod_bias_addend">Tambahan Bias LOD Tekstur</string>
+	<string name="emulator_settings_video_minimum_scalable_dimension">Dimensi Minimum Boleh Skala</string>
+	<string name="emulator_settings_video_shader_compiler_threads">Benang Pengkompil Shader</string>
+	<string name="emulator_settings_video_driver_recovery_timeout">Had Masa Pemulihan Pemandu</string>
+	<string name="emulator_settings_video_driver_wakeup_delay">Tangguh Bangun Pemandu</string>
+	<string name="emulator_settings_video_vblank_rate">Kadar Vblank</string>
+	<string name="emulator_settings_video_vblank_ntsc_fixup">Pembaikan NTSC Vblank</string>
+	<string name="emulator_settings_video_decr_memory_layout">Susun Atur Memori DECR</string>
+	<string name="emulator_settings_video_allow_host_gpu_labels">Benarkan Label GPU Hos</string>
+	<string name="emulator_settings_video_disable_msl_fast_math">Lumpuhkan MSL Fast Math</string>
+	<string name="emulator_settings_video_disable_asynchronous_memory_manager">Lumpuhkan Pengurus Memori Asinkron</string>
+	<string name="emulator_settings_video_output_scaling_mode">Mod Penskalaan Output</string>
+	<string-array name="video_output_scaling_mode_entries">
+		<item>Terdekat</item>
+		<item>Linear</item>
+		<item>FidelityFX Super Resolution</item>
+	</string-array>
+	<string name="emulator_settings_video_use_bgra_format">Gunakan Format BGRA</string>
+	<string name="emulator_settings_video_force_convert_texture">Paksa Tukar Tekstur</string>
+	<string name="emulator_settings_video_vulkan">Vulkan</string>
+	<string name="emulator_settings_video_vulkan_adapter">Adaptor</string>
+	<string name="emulator_settings_video_vulkan_force_fifo_present_mode">Paksa Mod FIFO</string>
+	<string name="emulator_settings_video_vulkan_force_primitive_restart_flag">Paksa Bendera Mulakan Semula Primitif</string>
+	<string name="emulator_settings_video_vulkan_exclusive_fullscreen_mode">Mod Penuh Eksklusif</string>
+	<string-array name="video_vulkan_exclusive_fullscreen_mode_entries">
+		<item>Automatik</item>
+		<item>Lumpuhkan</item>
+		<item>Dayakan</item>
+	</string-array>
+	<string name="emulator_settings_video_vulkan_asynchronous_texture_streaming_2">Penghuluran Tekstur Asinkron 2</string>
+	<string name="emulator_settings_video_vulkan_fidelityfx_cas_sharpening_intensity">Kekenalan Tajam FidelityFX CAS</string>
+	<string name="emulator_settings_video_vulkan_asynchronous_queue_scheduler">Penjadual Barisan Asinkron</string>
+	<string-array name="video_vulkan_asynchronous_queue_scheduler_entries">
+		<item>Selamat</item>
+		<item>Pantas</item>
+	</string-array>
+	<string name="emulator_settings_video_vulkan_vram_allocation_limit">Had Alokasi VRAM (MB)</string>
+
+	<string name="emulator_settings_video_vulkan_use_custom_driver">Gunakan Pemandu Tersuai</string>
+
+	<string name="emulator_settings_video_vulkan_custom_driver_library_path">Laluan Pemandu Tersuai</string>
+
+	<string name="emulator_settings_video_vulkan_custom_driver_force_max_clocks">Paksa Maksimum Jam Pemandu</string>
+
+
+	<string name="emulator_settings_video_performance_overlay">Tindih Prestasi</string>
+	<string name="emulator_settings_video_performance_overlay_enabled">Didayakan</string>
+	<string name="emulator_settings_video_performance_overlay_enable_framerate_graph">Dayakan Graf Kadar Bingkai</string>
+	<string name="emulator_settings_video_performance_overlay_enable_frametime_graph">Dayakan Graf Masa Bingkai</string>
+	<string name="emulator_settings_video_performance_overlay_framerate_datapoints">Titik Data Kadar Bingkai</string>
+	<string name="emulator_settings_video_performance_overlay_frametime_datapoints">Titik Data Masa Bingkai</string>
+	<string name="emulator_settings_video_performance_overlay_detail_level">Aras Butiran</string>
+	<string-array name="video_performance_overlay_detail_level_entries">
+		<item>Tiada</item>
+		<item>Minimum</item>
+		<item>Rendah</item>
+		<item>Sederhana</item>
+		<item>Tinggi</item>
+	</string-array>
+	<string name="emulator_settings_video_performance_overlay_framerate_graph_detail_level">Aras Butiran Graf Kadar Bingkai</string>
+	<string-array name="video_performance_overlay_framerate_graph_detail_level_entries">
+		<item>Minimum</item>
+		<item>Tunjuk min dan maks</item>
+		<item>Tunjuk 1% dan purata</item>
+		<item>Semua</item>
+	</string-array>
+	<string name="emulator_settings_video_performance_overlay_frametime_graph_detail_level">Aras Butiran Graf Masa Bingkai</string>
+	<string-array name="video_performance_overlay_frametime_graph_detail_level_entries">
+		<item>Minimum</item>
+		<item>Tunjuk min dan maks</item>
+		<item>Tunjuk 1% dan purata</item>
+		<item>Semua</item>
+	</string-array>
+	<string name="emulator_settings_video_performance_overlay_metrics_update_interval">Sela Kemas Kini Metrik (ms)</string>
+	<string name="emulator_settings_video_performance_overlay_font_size">Saiz Fon (px)</string>
+	<string name="emulator_settings_video_performance_overlay_position">Kedudukan</string>
+	<string-array name="video_performance_overlay_position_entries">
+		<item>Kiri Atas</item>
+		<item>Kanan Atas</item>
+		<item>Kiri Bawah</item>
+		<item>Kanan Bawah</item>
+	</string-array>
+	<string name="emulator_settings_video_performance_overlay_font">Fon</string>
+	<string name="emulator_settings_video_performance_overlay_horizontal_margin">Margin Mendatar (px)</string>
+	<string name="emulator_settings_video_performance_overlay_vertical_margin">Margin Menegak (px)</string>
+	<string name="emulator_settings_video_performance_overlay_center_horizontally">Pusatkan Mendatar</string>
+	<string name="emulator_settings_video_performance_overlay_center_vertically">Pusatkan Menegak</string>
+	<string name="emulator_settings_video_performance_overlay_opacity">Kekenalan (%)</string>
+	<string name="emulator_settings_video_performance_overlay_body_color">Warna Badan (hex)</string>
+	<string name="emulator_settings_video_performance_overlay_body_background">Latar Badan (hex)</string>
+	<string name="emulator_settings_video_performance_overlay_title_color">Warna Tajuk (hex)</string>
+	<string name="emulator_settings_video_performance_overlay_title_background">Latar Tajuk (hex)</string>
+	<string name="emulator_settings_video_shader_loading_dialog">Dialog Muat Shader</string>
+	<string name="emulator_settings_video_shader_loading_dialog_allow_custom_background">Benarkan Latar Tersuai</string>
+	<string name="emulator_settings_video_shader_loading_dialog_darkening_effect_strength">Kekuatan Kesan Kegelapan</string>
+	<string name="emulator_settings_video_shader_loading_dialog_blur_effect_strength">Kekuatan Kesan Kabur</string>
+	<string name="emulator_settings_audio">Audio</string>
+	<string name="emulator_settings_audio_renderer">Penyahkod</string>
+	<string-array name="audio_renderer_entries">
+		<item>Null</item>
+		<item>Cubeb</item>
+	</string-array>
+	<string name="emulator_settings_audio_audio_provider">Pembekal Audio</string>
+	<string-array name="audio_audio_provider_entries">
+		<item>Tiada</item>
+		<item>CellAudio</item>
+		<item>RSXAudio</item>
+	</string-array>
+	<string name="emulator_settings_audio_rsxaudio_avport">Port AV RSXAudio</string>
+	<string-array name="audio_rsxaudio_avport_entries">
+		<item>HDMI 0</item>
+		<item>HDMI 1</item>
+		<item>AV multiout</item>
+		<item>SPDIF 0</item>
+		<item>SPDIF 1</item>
+	</string-array>
+	<string name="emulator_settings_audio_dump_to_file">Tetapkan ke Fail</string>
+	<string name="emulator_settings_audio_convert_to_16_bit">Tukar ke 16 Bit</string>
+	<string name="emulator_settings_audio_audio_format">Format Audio</string>
+	<string-array name="audio_audio_format_entries">
+		<item>Stereo</item>
+		<item>Suara Mengelilingi 5.1</item>
+		<item>Suara Mengelilingi 7.1</item>
+		<item>Automatik</item>
+		<item>Manual</item>
+	</string-array>
+	<string name="emulator_settings_audio_audio_formats">Format Audio</string>
+	<string name="emulator_settings_audio_audio_channel_layout">Susun Atur Saluran Audio</string>
+	<string-array name="audio_audio_channel_layout_entries">
+		<item>Automatik</item>
+		<item>Mono</item>
+		<item>Stereo</item>
+		<item>Stereo LFE</item>
+		<item>Quadraphonic</item>
+		<item>Quadraphonic LFE</item>
+		<item>Suara Mengelilingi 5.1</item>
+		<item>Suara Mengelilingi 7.1</item>
+	</string-array>
+	<string name="emulator_settings_audio_audio_device">Peranti Audio</string>
+	<string name="emulator_settings_audio_master_volume">Kelantangan Utama</string>
+	<string name="emulator_settings_audio_enable_buffering">Dayakan Penampan</string>
+	<string name="emulator_settings_audio_desired_audio_buffer_duration">Tempoh Penampan Audio Yang Diingini</string>
+	<string name="emulator_settings_audio_enable_time_stretching">Dayakan Peregangan Masa</string>
+	<string name="emulator_settings_audio_disable_sampling_skip">Lumpuhkan Langkau Pensampelan</string>
+	<string name="emulator_settings_audio_time_stretching_threshold">Amaran Peregangan Masa</string>
+	<string name="emulator_settings_audio_microphone_type">Jenis Mikrofon</string>
+	<string-array name="audio_microphone_type_entries">
+		<item>Null</item>
+		<item>Piawai</item>
+		<item>SingStar</item>
+		<item>SingStar Sebenar</item>
+		<item>Rocksmith</item>
+	</string-array>
+	<string name="emulator_settings_audio_microphone_devices">Peranti Mikrofon</string>
+	<string name="emulator_settings_audio_music_handler">Pengendali Muzik</string>
+	<string-array name="audio_music_handler_entries">
+		<item>Null</item>
+		<item>Qt</item>
+	</string-array>
+	<string name="emulator_settings_input_output">Input/Output</string>
+	<string name="emulator_settings_input_output_keyboard">Papan Kekunci</string>
+	<string-array name="input_output_keyboard_entries">
+		<item>Null</item>
+		<item>Asas</item>
+	</string-array>
+	<string name="emulator_settings_input_output_mouse">Tetikus</string>
+	<string-array name="input_output_mouse_entries">
+		<item>Null</item>
+		<item>Asas</item>
+		<item>Mentah</item>
+	</string-array>
+	<string name="emulator_settings_input_output_camera">Kamera</string>
+	<string-array name="input_output_camera_entries">
+		<item>Null</item>
+		<item>Fake</item>
+		<item>Qt</item>
+	</string-array>
+	<string name="emulator_settings_input_output_camera_type">Jenis Kamera</string>
+	<string-array name="input_output_camera_type_entries">
+		<item>Tidak Dikenali</item>
+		<item>EyeToy</item>
+		<item>PS Eye</item>
+		<item>UVC 1.1</item>
+	</string-array>
+	<string name="emulator_settings_input_output_camera_flip">Tukar Kamera</string>
+	<string-array name="input_output_camera_flip_entries">
+		<item>Tiada</item>
+		<item>Mendatar</item>
+		<item>Menegak</item>
+		<item>Kedua-dua</item>
+	</string-array>
+	<string name="emulator_settings_input_output_camera_id">ID Kamera</string>
+	<string name="emulator_settings_input_output_move">Gerak</string>
+	<string-array name="input_output_move_entries">
+		<item>Null</item>
+		<item>Fake</item>
+		<item>Tetikus</item>
+		<item>Tetikus Mentah</item>
+	</string-array>
+	<string name="emulator_settings_input_output_buzz_emulated_controller">Pengawal Buzz Emulasi</string>
+	<string-array name="input_output_buzz_emulated_controller_entries">
+		<item>Null</item>
+		<item>1 pengawal</item>
+		<item>2 pengawal</item>
+	</string-array>
+	<string name="emulator_settings_input_output_turntable_emulated_controller">Pengawal Turntable Emulasi</string>
+	<string-array name="input_output_turntable_emulated_controller_entries">
+		<item>Null</item>
+		<item>1 pengawal</item>
+		<item>2 pengawal</item>
+	</string-array>
+	<string name="emulator_settings_input_output_ghltar_emulated_controller">Pengawal GHLtar Emulasi</string>
+	<string-array name="input_output_ghltar_emulated_controller_entries">
+		<item>Null</item>
+		<item>1 pengawal</item>
+		<item>2 pengawal</item>
+	</string-array>
+	<string name="emulator_settings_input_output_pad_handler_mode">Mod Pengendali Pad</string>
+	<string-array name="input_output_pad_handler_mode_entries">
+		<item>Tunggal Benang</item>
+		<item>Berbilang Benang</item>
+	</string-array>
+	<string name="emulator_settings_input_output_keep_pads_connected">Kekal Pad Disambung</string>
+	<string name="emulator_settings_input_output_pad_handler_sleep">Tidur Pengendali Pad (mikro saat)</string>
+	<string name="emulator_settings_input_output_background_input_enabled">Input Latar Belakang Didayakan</string>
+	<string name="emulator_settings_input_output_show_move_cursor">Tunjukkan Kursor Gerak</string>
+	<string name="emulator_settings_input_output_lock_overlay_input_to_player_one">Kunci Input Tindih ke Pemain Satu</string>
+	<string name="emulator_settings_input_output_emulated_midi_devices">Peranti MIDI Emulasi</string>
+	<string name="emulator_settings_input_output_load_sdl_gamecontroller_mappings">Muat Pemetaan SDL GameController</string>
+	<string name="emulator_settings_input_output_io_debug_overlay">Tindih IO Debug</string>
+	<string name="emulator_settings_system">Sistem</string>
+	<string name="emulator_settings_system_license_area">Kawasan Lesen</string>
+	<string-array name="system_license_area_entries">
+		<item>SCEJ</item>
+		<item>SCEA</item>
+		<item>SCEE</item>
+		<item>SCEH</item>
+		<item>SCEK</item>
+		<item>SCH</item>
+	</string-array>
+	<string name="emulator_settings_system_language">Bahasa</string>
+	<string-array name="system_language_entries">
+		<item>Jepun</item>
+		<item>Inggeris (US)</item>
+		<item>Perancis</item>
+		<item>Sepanyol</item>
+		<item>Jerman</item>
+		<item>Itali</item>
+		<item>Belanda</item>
+		<item>Portugis (Portugal)</item>
+		<item>Rusia</item>
+		<item>Korea</item>
+		<item>Cina (Tradisional)</item>
+		<item>Cina (Ringkas)</item>
+		<item>Finland</item>
+		<item>Sweden</item>
+		<item>Denmark</item>
+		<item>Norway</item>
+		<item>Poland</item>
+		<item>Portugis (Brazil)</item>
+		<item>Inggeris (UK)</item>
+		<item>Turki</item>
+	</string-array>
+	<string name="emulator_settings_system_keyboard_type">Jenis Papan Kekunci</string>
+	<string-array name="system_keyboard_type_entries">
+		<item>Papan kekunci Inggeris (standard US)</item>
+		<item>Papan kekunci Jepun</item>
+		<item>Papan kekunci Jepun (keadaan Kana)</item>
+		<item>Papan kekunci Jerman</item>
+		<item>Papan kekunci Sepanyol</item>
+		<item>Papan kekunci Perancis</item>
+		<item>Papan kekunci Itali</item>
+		<item>Papan kekunci Belanda</item>
+		<item>Papan kekunci Portugis (Portugal)</item>
+		<item>Papan kekunci Rusia</item>
+		<item>Papan kekunci Inggeris (standard UK)</item>
+		<item>Papan kekunci Korea</item>
+		<item>Papan kekunci Norway</item>
+		<item>Papan kekunci Finland</item>
+		<item>Papan kekunci Denmark</item>
+		<item>Papan kekunci Sweden</item>
+		<item>Papan kekunci Cina (Tradisional)</item>
+		<item>Papan kekunci Cina (Ringkas)</item>
+		<item>Papan kekunci Perancis (Switzerland)</item>
+		<item>Papan kekunci Jerman (Switzerland)</item>
+		<item>Papan kekunci Perancis (Kanada)</item>
+		<item>Papan kekunci Perancis (Belgium)</item>
+		<item>Papan kekunci Poland</item>
+		<item>Papan kekunci Portugis (Brazil)</item>
+		<item>Papan kekunci Turki</item>
+	</string-array>
+	<string name="emulator_settings_system_enter_button_assignment">Penetapan butang Enter</string>
+	<string-array name="system_enter_button_assignment_entries">
+		<item>Enter dengan bulatan</item>
+		<item>Enter dengan salib</item>
+	</string-array>
+	<string name="emulator_settings_system_console_time_offset">Sela masa konsol (s)</string>
+	<string name="emulator_settings_system_system_name">Nama Sistem</string>
+	<string name="emulator_settings_system_psid_high">PSID tinggi</string>
+	<string name="emulator_settings_system_psid_low">PSID rendah</string>
+	<string name="emulator_settings_system_hdd_model_name">Nama Model HDD</string>
+	<string name="emulator_settings_system_hdd_serial_number">Nombor Siri HDD</string>
+	<string name="emulator_settings_net">Rangkaian</string>
+	<string name="emulator_settings_net_internet_enabled">Internet didayakan</string>
+	<string-array name="net_internet_enabled_entries">
+		<item>Tidak bersambung</item>
+		<item>Bersambung</item>
+	</string-array>
+	<string name="emulator_settings_net_ip_address">Alamat IP</string>
+	<string name="emulator_settings_net_bind_address">Alamat Ikatan</string>
+	<string name="emulator_settings_net_dns_address">Alamat DNS</string>
+	<string name="emulator_settings_net_ip_swap_list">Senarai Tukar IP</string>
+	<string name="emulator_settings_net_upnp_enabled">UPNP Dihidupkan</string>
+	<string name="emulator_settings_net_psn_status">Status PSN</string>
+	<string-array name="net_psn_status_entries">
+		<item>Terputus</item>
+		<item>Dijana</item>
+		<item>RPCN</item>
+	</string-array>
+	<string name="emulator_settings_net_psn_country">Negara PSN</string>
+	<string name="emulator_settings_savestate">Savestate</string>
+	<string name="emulator_settings_savestate_start_paused">Mula Dijeda</string>
+	<string name="emulator_settings_savestate_suspend_emulation_savestate_mode">Mod Sambung Semula Emulasi Savestate</string>
+	<string name="emulator_settings_savestate_compatible_savestate_mode">Mod Savestate Sesuai</string>
+	<string name="emulator_settings_savestate_inspection_mode_savestates">Savestate Mod Pemeriksaan</string>
+	<string name="emulator_settings_savestate_save_disc_game_data">Simpan Data Permainan Cakera</string>
+	<string name="emulator_settings_miscellaneous">Pelbagai</string>
+	<string name="emulator_settings_miscellaneous_automatically_start_games_after_boot">Mula permainan secara automatik selepas but</string>
+	<string name="emulator_settings_miscellaneous_exit_rpcs3_when_process_finishes">Keluar RPCS3 apabila proses selesai</string>
+	<string name="emulator_settings_miscellaneous_pause_emulation_on_rpcs3_focus_loss">Jeda emulasi apabila RPCS3 kehilangan fokus</string>
+	<string name="emulator_settings_miscellaneous_start_games_in_fullscreen_mode">Mula permainan dalam mod skrin penuh</string>
+	<string name="emulator_settings_miscellaneous_prevent_display_sleep_while_running_games">Elakkan skrin tidur semasa permainan dijalankan</string>
+	<string name="emulator_settings_miscellaneous_show_trophy_popups">Tunjukkan pemberitahuan trofi</string>
+	<string name="emulator_settings_miscellaneous_show_rpcn_popups">Tunjukkan pemberitahuan RPCN</string>
+	<string name="emulator_settings_miscellaneous_show_shader_compilation_hint">Tunjukkan petunjuk kompilasi shader</string>
+	<string name="emulator_settings_miscellaneous_show_ppu_compilation_hint">Tunjukkan petunjuk kompilasi PPU</string>
+	<string name="emulator_settings_miscellaneous_show_pressure_intensity_toggle_hint">Tunjukkan petunjuk suis keamatan tekanan</string>
+	<string name="emulator_settings_miscellaneous_show_analog_limiter_toggle_hint">Tunjukkan petunjuk suis penghad analog</string>
+	<string name="emulator_settings_miscellaneous_show_mouse_and_keyboard_toggle_hint">Tunjukkan petunjuk suis tetikus dan papan kekunci</string>
+	<string name="emulator_settings_miscellaneous_show_autosave_autoload_hint">Tunjukkan petunjuk autosimpan/autobeber</string>
+	<string name="emulator_settings_miscellaneous_use_native_user_interface">Gunakan antara muka asli</string>
+	<string name="emulator_settings_miscellaneous_gdb_server">Pelayan GDB</string>
+	<string name="emulator_settings_miscellaneous_silence_all_logs">Diamkan semua log</string>
+	<string name="emulator_settings_miscellaneous_window_title_format">Format Tajuk Tetingkap</string>
+	<string name="emulator_settings_miscellaneous_pause_emulation_during_home_menu">Jeda emulasi semasa menu utama</string>
+
+	<string name="emulator_settings_miscellaneous_font_file_selection">Pemilihan Fail Fon</string>
+	<string-array name="miscellaneous_font_file_selection_entries">
+		<item>Dari Firmware</item>
+		<item>Pasangan</item>
+	</string-array>
+	<string name="emulator_settings_miscellaneous_custom_font_file_path">Laluan Fail Fon Pasangan</string>
+	<string name="emulator_settings_miscellaneous_font_size">Saiz Fon</string>
+
+	<string name="INVALID">Tidak sah</string>
+	<string name="RSX_OVERLAYS_TROPHY_BRONZE">Anda telah memperoleh trofi gangsa.\n%0</string>
+	<string name="RSX_OVERLAYS_TROPHY_SILVER">Anda telah memperoleh trofi perak.\n%0</string>
+	<string name="RSX_OVERLAYS_TROPHY_GOLD">Anda telah memperoleh trofi emas.\n%0</string>
+	<string name="RSX_OVERLAYS_TROPHY_PLATINUM">Anda telah memperoleh trofi platinum.\n%0</string>
+	<string name="RSX_OVERLAYS_COMPILING_SHADERS">Kompilasi shader</string>
+	<string name="RSX_OVERLAYS_COMPILING_PPU_MODULES">Kompilasi Modul PPU</string>
+	<string name="RSX_OVERLAYS_MSG_DIALOG_YES">Ya</string>
+	<string name="RSX_OVERLAYS_MSG_DIALOG_NO">Tidak</string>
+	<string name="RSX_OVERLAYS_MSG_DIALOG_CANCEL">Kembali</string>
+	<string name="RSX_OVERLAYS_MSG_DIALOG_OK">OK</string>
+	<string name="RSX_OVERLAYS_SAVE_DIALOG_TITLE">Dialog Simpan</string>
+	<string name="RSX_OVERLAYS_SAVE_DIALOG_DELETE">Padam Simpanan</string>
+	<string name="RSX_OVERLAYS_SAVE_DIALOG_LOAD">Muat Simpanan</string>
+	<string name="RSX_OVERLAYS_SAVE_DIALOG_SAVE">Simpan</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_ACCEPT">Masukkan</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_CANCEL">Kembali</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_SPACE">Ruang</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_BACKSPACE">Kekunci Hapus</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_SHIFT">Shift</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_ENTER_TEXT">[Masukkan Teks]</string>
+	<string name="RSX_OVERLAYS_OSK_DIALOG_ENTER_PASSWORD">[Masukkan Kata Laluan]</string>
+	<string name="RSX_OVERLAYS_MEDIA_DIALOG_TITLE">Pilih media</string>
+	<string name="RSX_OVERLAYS_MEDIA_DIALOG_TITLE_PHOTO_IMPORT">Pilih foto untuk diimport</string>
+	<string name="RSX_OVERLAYS_MEDIA_DIALOG_EMPTY">Tiada media dijumpai.</string>
+	<string name="RSX_OVERLAYS_LIST_SELECT">Masukkan</string>
+	<string name="RSX_OVERLAYS_LIST_CANCEL">Kembali</string>
+	<string name="RSX_OVERLAYS_LIST_DENY">Tolak</string>
+	<string name="RSX_OVERLAYS_PRESSURE_INTENSITY_TOGGLED_OFF">Mod keamatan tekanan pemain %0 dimatikan</string>
+	<string name="RSX_OVERLAYS_PRESSURE_INTENSITY_TOGGLED_ON">Mod keamatan tekanan pemain %0 dihidupkan</string>
+	<string name="RSX_OVERLAYS_ANALOG_LIMITER_TOGGLED_OFF">Penghad analog pemain %0 dimatikan</string>
+	<string name="RSX_OVERLAYS_ANALOG_LIMITER_TOGGLED_ON">Penghad analog pemain %0 dihidupkan</string>
+	<string name="RSX_OVERLAYS_MOUSE_AND_KEYBOARD_EMULATED">Tetikus dan papan kekunci kini digunakan sebagai peranti emulasi.</string>
+	<string name="RSX_OVERLAYS_MOUSE_AND_KEYBOARD_PAD">Tetikus dan papan kekunci kini digunakan sebagai pad.</string>
+	<string name="CELL_GAME_ERROR_BROKEN_GAMEDATA">RALAT: Data permainan rosak. Aplikasi akan terus berjalan.</string>
+	<string name="CELL_GAME_ERROR_BROKEN_HDDGAME">RALAT: Permainan but HDD rosak. Aplikasi akan terus berjalan.</string>
+	<string name="CELL_GAME_ERROR_BROKEN_EXIT_GAMEDATA">RALAT: Data permainan rosak. Aplikasi akan dihentikan.</string>
+	<string name="CELL_GAME_ERROR_BROKEN_EXIT_HDDGAME">RALAT: Permainan but HDD rosak. Aplikasi akan dihentikan.</string>
+	<string name="CELL_GAME_ERROR_NOSPACE">RALAT: Ruang tidak mencukupi. Aplikasi akan terus berjalan.\nRuang diperlukan: %0 KB</string>
+	<string name="CELL_GAME_ERROR_NOSPACE_EXIT">RALAT: Ruang tidak mencukupi. Aplikasi akan dihentikan.\nRuang diperlukan: %0 KB</string>
+	<string name="CELL_GAME_ERROR_DIR_NAME">Nama direktori: %0</string>
+	<string name="CELL_GAME_DATA_EXIT_BROKEN">Ada ralat!\n\nSila buang data permainan untuk tajuk ini.</string>
+	<string name="CELL_HDD_GAME_EXIT_BROKEN">Ada ralat!\n\nSila pasang semula permainan but HDD.</string>
+	<string name="CELL_HDD_GAME_CHECK_NOSPACE">Tidak cukup ruang untuk mencipta permainan but HDD.\nRuang diperlukan: %0 KB</string>
+	<string name="CELL_HDD_GAME_CHECK_BROKEN">Permainan HDD %0 rosak!</string>
+	<string name="CELL_HDD_GAME_CHECK_NODATA">Permainan but HDD %0 tidak dijumpai!</string>
+	<string name="CELL_HDD_GAME_CHECK_INVALID">Ralat: %0</string>
+	<string name="CELL_GAMEDATA_CHECK_NOSPACE">Tidak cukup ruang untuk mencipta data permainan.\nRuang diperlukan: %0 KB</string>
+	<string name="CELL_GAMEDATA_CHECK_BROKEN">Data permainan dalam %0 rosak!</string>
+	<string name="CELL_GAMEDATA_CHECK_NODATA">Data permainan dalam %0 tidak dijumpai!</string>
+	<string name="CELL_GAMEDATA_CHECK_INVALID">Ralat: %0</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010001">Sumber sementara tidak tersedia.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010002">Hujah atau bendera tidak sah.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010003">Ciri belum dilaksanakan.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010004">Pemakaian memori gagal.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010005">Sumber dengan pengenal pasti yang dinyatakan tidak wujud.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010006">Fail tidak wujud.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010007">Fail dalam format tidak dikenali / Fail bukan fail ELF yang sah.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010008">Dekad sumber dielakkan.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010009">Operasi tidak dibenarkan.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000A">Peranti atau sumber sibuk.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000B">Operasi tamat tempoh.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000C">Operasi dibatalkan.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000D">Akses memori tidak sah.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001000F">Keadaan benang sasaran tidak sah.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010010">Penjajaran tidak sah.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010011">Kekurangan sumber kernel.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010012">Fail adalah direktori.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010013">Operasi dibatalkan.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010014">Kemasukan sudah wujud.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010015">Port sudah disambungkan.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010016">Port tidak disambungkan.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010017">Kegagalan mengesahkah. Pengesahan program gagal.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010018">Fail bukan MSELF.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010019">Ralat versi sistem.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001A">Ralat sistem fatal berlaku semasa mengesahkah. Kegagalan pengesahan SELF.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001B">Pecahan domain matematik.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001C">Julat nilai matematik melebihi had.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001D">Jujukan multi-byte tidak sah dalam input.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001E">Ralat kedudukan fail.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001001F">Panggilan sistem dihentikan.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010020">Fail terlalu besar.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010021">Terlalu banyak pautan.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010022">Melebihi had jadual fail.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010023">Tiada ruang di peranti.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010024">Bukan TTY.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010025">Paip rosak.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010026">Sistem fail baca sahaja.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010027">Pencarian tidak sah.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010028">Senarai argumen terlalu panjang.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010029">Pencerobohan akses.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002A">Pengenal fail tidak sah.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002B">Pemasangan sistem fail gagal.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002C">Terlalu banyak fail dibuka.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002D">Tiada peranti.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002E">Bukan direktori.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001002F">Tiada peranti atau IO seperti yang dinyatakan.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010030">Ralat pautan silang peranti.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010031">Mesej rosak.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010032">Sedang berjalan.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010033">Saiz mesej tidak sah.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010034">Nama terlalu panjang.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010035">Tiada kunci.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010036">Tidak kosong.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010037">Tidak disokong.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010038">Ralat spesifik sistem fail.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_80010039">Limpahan berlaku.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003A">Sistem fail tidak dipasang.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003B">Bukan SData.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003C">Versi tidak betul dalam sys_load_param.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003D">Penuding adalah null.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_8001003E">Penuding adalah null.\n(%0)</string>
+	<string name="CELL_MSG_DIALOG_ERROR_DEFAULT">Ralat berlaku.\n(%0)</string>
+	<string name="CELL_OSK_DIALOG_TITLE">Papan Kekunci Skrin</string>
+	<string name="CELL_OSK_DIALOG_BUSY">Menu Utama tidak boleh dibuka semasa Papan Kekunci Skrin sibuk!</string>
+
+	<string name="CELL_SAVEDATA_CB_BROKEN">Ralat - Data simpan rosak</string>
+	<string name="CELL_SAVEDATA_CB_FAILURE">Ralat - Gagal menyimpan atau memuatkan</string>
+	<string name="CELL_SAVEDATA_CB_NO_DATA">Ralat - Data simpan tidak dijumpai</string>
+	<string name="CELL_SAVEDATA_CB_NO_SPACE">Ralat - Ruang bebas tidak mencukupi\n\nRuang diperlukan: %0 KB</string>
+	<string name="CELL_SAVEDATA_NO_DATA">Tiada data disimpan.</string>
+	<string name="CELL_SAVEDATA_NEW_SAVED_DATA_TITLE">Data Simpan Baharu</string>
+	<string name="CELL_SAVEDATA_NEW_SAVED_DATA_SUB_TITLE">Pilih untuk mencipta kemasukan baru</string>
+	<string name="CELL_SAVEDATA_SAVE_CONFIRMATION">Adakah anda mahu menyimpan data ini?</string>
+	<string name="CELL_SAVEDATA_DELETE_CONFIRMATION">Adakah anda benar-benar mahu memadam data ini?\n\n%0</string>
+	<string name="CELL_SAVEDATA_DELETE_SUCCESS">Berjaya dipadamkan!\n\n%0</string>
+	<string name="CELL_SAVEDATA_DELETE">Padam data ini?\n\n%0</string>
+	<string name="CELL_SAVEDATA_LOAD">Muatkan data ini?\n\n%0</string>
+	<string name="CELL_SAVEDATA_SAVE">Simpan data ini?\n\n%0</string>
+	<string name="CELL_SAVEDATA_OVERWRITE">Adakah anda mahu menimpa data yang disimpan?\n\n%0</string>
+	<string name="CELL_SAVEDATA_AUTOSAVE">Sedang menyimpan...</string>
+	<string name="CELL_SAVEDATA_AUTOLOAD">Sedang memuatkan...</string>
+	<string name="CELL_CROSS_CONTROLLER_MSG">Mula di sistem PS Vita.\nJika belum dipasang, pergi ke [Main Jauh] pada sistem PS Vita dan mula [Cross-Controller] dari skrin LiveArea™.</string>
+	<string name="CELL_CROSS_CONTROLLER_FW_MSG">Jika versi perisian sistem pada sistem PS Vita anda lebih awal daripada 1.80, anda mesti kemas kini perisian sistem ke versi terbaru.</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_TITLE">Pilih Mesej</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_TITLE_INVITE">Pilih Jemputan</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_TITLE_ADD_FRIEND">Tambah Rakan</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_FROM">Dari:</string>
+	<string name="CELL_NP_RECVMESSAGE_DIALOG_SUBJECT">Subjek:</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_TITLE">Pilih Mesej untuk Dihantar</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_TITLE_INVITE">Hantar Jemputan</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_TITLE_ADD_FRIEND">Tambah Rakan</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_CONFIRMATION">Hantar mesej kepada %0 ?\n\nSubjek:</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_CONFIRMATION_INVITE">Hantar jemputan kepada %0 ?\n\nSubjek:</string>
+	<string name="CELL_NP_SENDMESSAGE_DIALOG_CONFIRMATION_ADD_FRIEND">Hantar permintaan rakan kepada %0 ?\n\nSubjek:</string>
+	<string name="RECORDING_ABORTED">Merekod dibatalkan!</string>
+	<string name="RPCN_NO_ERROR">RPCN: Tiada Ralat</string>
+	<string name="RPCN_ERROR_INVALID_INPUT">RPCN: Input tidak sah (Host/Port salah)</string>
+	<string name="RPCN_ERROR_WOLFSSL">Ralat Sambungan RPCN: Ralat WolfSSL</string>
+	<string name="RPCN_ERROR_RESOLVE">Ralat Sambungan RPCN: Ralat Resolve</string>
+	<string name="RPCN_ERROR_CONNECT">Ralat Sambungan RPCN</string>
+	<string name="RPCN_ERROR_LOGIN_ERROR">Ralat Log Masuk RPCN: Ralat Pengenalan</string>
+	<string name="RPCN_ERROR_ALREADY_LOGGED">Ralat Log Masuk RPCN: Pengguna Sudah Log Masuk</string>
+	<string name="RPCN_ERROR_INVALID_LOGIN">Ralat Log Masuk RPCN: Nama pengguna tidak sah</string>
+	<string name="RPCN_ERROR_INVALID_PASSWORD">Ralat Log Masuk RPCN: Kata laluan tidak sah</string>
+	<string name="RPCN_ERROR_INVALID_TOKEN">Ralat Log Masuk RPCN: Token tidak sah</string>
+	<string name="RPCN_ERROR_INVALID_PROTOCOL_VERSION">Ralat Pelbagai RPCN: Ralat Versi Protokol (mungkin RPCS3 usang?)</string>
+	<string name="RPCN_ERROR_UNKNOWN">RPCN: Ralat Tidak Dikenali</string>
+	<string name="RPCN_SUCCESS_LOGGED_ON">Berjaya log masuk ke RPCN!</string>
+	<string name="RPCN_FRIEND_REQUEST_RECEIVED">RPCN: Permintaan rakan diterima: %0</string>
+	<string name="RPCN_FRIEND_ADDED">RPCN: Rakan ditambah: %0</string>
+	<string name="RPCN_FRIEND_LOST">RPCN: Rakan dibuang: %0</string>
+	<string name="RPCN_FRIEND_LOGGED_IN">RPCN: %0 log masuk</string>
+	<string name="RPCN_FRIEND_LOGGED_OUT">RPCN: %0 log keluar</string>
+
+    <string name="HOME_MENU_TITLE">Menu Utama</string>
+    <string name="HOME_MENU_EXIT_GAME">Keluar Permainan</string>
+    <string name="HOME_MENU_RESUME">Sambung Permainan</string>
+    <string name="HOME_MENU_FRIENDS">Rakan</string>
+    <string name="HOME_MENU_FRIENDS_REQUESTS">Permintaan Rakan Tertunda</string>
+    <string name="HOME_MENU_FRIENDS_BLOCKED">Pengguna Dihalang</string>
+    <string name="HOME_MENU_FRIENDS_STATUS_ONLINE">Dalam Talian</string>
+    <string name="HOME_MENU_FRIENDS_STATUS_OFFLINE">Luar Talian</string>
+    <string name="HOME_MENU_FRIENDS_STATUS_BLOCKED">Dihalang</string>
+    <string name="HOME_MENU_FRIENDS_REQUEST_SENT">Anda telah menghantar permintaan rakan</string>
+    <string name="HOME_MENU_FRIENDS_REQUEST_RECEIVED">Menghantar permintaan rakan kepada anda</string>
+    <string name="HOME_MENU_FRIENDS_BLOCK_USER_MSG">Halang pengguna ini?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_UNBLOCK_USER_MSG">Nyahhalang pengguna ini?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_REMOVE_USER_MSG">Buang pengguna ini?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_ACCEPT_REQUEST_MSG">Terima Permintaan?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_CANCEL_REQUEST_MSG">Batal Permintaan?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_REJECT_REQUEST_MSG">Tolak Permintaan?\n\n%0</string>
+    <string name="HOME_MENU_FRIENDS_REJECT_REQUEST">Tolak Permintaan</string>
+    <string name="HOME_MENU_FRIENDS_NEXT_LIST">Senarai seterusnya</string>
+    <string name="HOME_MENU_RESTART">Mula Semula Permainan</string>
+    <string name="HOME_MENU_SETTINGS">Tetapan</string>
+    <string name="HOME_MENU_SETTINGS_SAVE">Simpan konfigurasi tersuai?</string>
+    <string name="HOME_MENU_SETTINGS_SAVE_BUTTON">Simpan</string>
+    <string name="HOME_MENU_SETTINGS_DISCARD">Buang perubahan tetapan semasa?</string>
+    <string name="HOME_MENU_SETTINGS_DISCARD_BUTTON">Buang</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO">Audio</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_MASTER_VOLUME">Jumlah Keluaran</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_BACKEND">Backend Audio</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_BUFFERING">Dayakan Penimbaan</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_BUFFER_DURATION">Tempoh Penimbaan Audio Dikehendaki</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_TIME_STRETCHING">Dayakan Pelanjutan Masa</string>
+    <string name="HOME_MENU_SETTINGS_AUDIO_TIME_STRETCHING_THRESHOLD">Had Pelanjutan Masa</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO">Video</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_FRAME_LIMIT">Had Bingkai</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_ANISOTROPIC_OVERRIDE">Pilihan Penapis Anisotropik</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_OUTPUT_SCALING">Penskalaan Output</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_RCAS_SHARPENING">Kekuatan Penajaman FidelityFX CAS</string>
+    <string name="HOME_MENU_SETTINGS_VIDEO_STRETCH_TO_DISPLAY">Regang ke Kawasan Paparan</string>
+    <string name="HOME_MENU_SETTINGS_INPUT">Input</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_BACKGROUND_INPUT">Input Latar Belakang Dihidupkan</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_KEEP_PADS_CONNECTED">Kekal Pads Disambungkan</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_SHOW_PS_MOVE_CURSOR">Tunjukkan Kursor PS Move</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_CAMERA_FLIP">Pusingan Kamera</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_PAD_MODE">Mod Pengendali Pad</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_PAD_SLEEP">Rehat Pengendali Pad</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_FAKE_MOVE_ROTATION_CONE_H">Kon Putaran PS Move Palsu (Mengufuk)</string>
+    <string name="HOME_MENU_SETTINGS_INPUT_FAKE_MOVE_ROTATION_CONE_V">Kon Putaran PS Move Palsu (Mencancang)</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED">Lanjutan</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_PREFERRED_SPU_THREADS">Benang SPU Dikehendaki</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_MAX_CPU_PREEMPTIONS">Had Pratolak CPU Menjimatkan Kuasa</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_ACCURATE_RSX_RESERVATION_ACCESS">Akses Tempahan RSX Tepat</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_SLEEP_TIMERS_ACCURACY">Ketepatan Pengira Masa Tidur</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_MAX_SPURS_THREADS">Had Benang SPURS</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_DRIVER_WAKE_UP_DELAY">Lengah Bangun Pemandu</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_VBLANK_FREQUENCY">Frekuensi VBlank</string>
+    <string name="HOME_MENU_SETTINGS_ADVANCED_VBLANK_NTSC">Pembaikan NTSC VBlank</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS">Selerak</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_TROPHY_POPUPS">Tunjukkan Pemberitahuan Trofi</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_RPCN_POPUPS">Tunjukkan Pemberitahuan RPCN</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_SHADER_COMPILATION_HINT">Tunjukkan Petunjuk Kompilasi Shader</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_PPU_COMPILATION_HINT">Tunjukkan Petunjuk Kompilasi PPU</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_AUTO_SAVE_LOAD_HINT">Tunjukkan Petunjuk Auto Simpan/Beber</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_PRESSURE_INTENSITY_TOGGLE_HINT">Tunjukkan Petunjuk Suis Keamatan Tekanan</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_ANALOG_LIMITER_TOGGLE_HINT">Tunjukkan Petunjuk Suis Penghad Analog</string>
+    <string name="HOME_MENU_SETTINGS_OVERLAYS_SHOW_MOUSE_AND_KB_TOGGLE_HINT">Tunjukkan Petunjuk Suis Tetikus dan Papan Kekunci</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY">Selerak Prestasi</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_ENABLE">Dayakan Selerak Prestasi</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_ENABLE_FRAMERATE_GRAPH">Dayakan Graf Kadar Bingkai</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_ENABLE_FRAMETIME_GRAPH">Dayakan Graf Masa Bingkai</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_DETAIL_LEVEL">Aras Butiran</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMERATE_DETAIL_LEVEL">Aras Butiran Graf Kadar Bingkai</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMETIME_DETAIL_LEVEL">Aras Butiran Graf Masa Bingkai</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMERATE_DATAPOINT_COUNT">Bilangan Titik Data Kadar Bingkai</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FRAMETIME_DATAPOINT_COUNT">Bilangan Titik Data Masa Bingkai</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_UPDATE_INTERVAL">Selang Kemas Kini</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_POSITION">Kedudukan</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_CENTER_X">Pusat Secara Mencancang</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_CENTER_Y">Pusat Secara Mencancang</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_MARGIN_X">Sempadan Mencancang</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_MARGIN_Y">Sempadan Mencancang</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_FONT_SIZE">Saiz Fon</string>
+    <string name="HOME_MENU_SETTINGS_PERFORMANCE_OVERLAY_OPACITY">Kekenyalan</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG">Nyahpepijat</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_OVERLAY">Selerak Nyahpepijat</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_INPUT_OVERLAY">Selerak Input Nyahpepijat</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_DISABLE_VIDEO_OUTPUT">Matikan Output Video</string>
+    <string name="HOME_MENU_SETTINGS_DEBUG_TEXTURE_LOD_BIAS">Penyimpangan Bias Teksur</string>
+    <string name="HOME_MENU_SCREENSHOT">Ambil Screenshot</string>
+    <string name="HOME_MENU_SAVESTATE">Simpan Keadaan</string>
+    <string name="HOME_MENU_SAVESTATE_SAVE">Simpan Keadaan Emulasi</string>
+    <string name="HOME_MENU_SAVESTATE_AND_EXIT">Simpan Keadaan Emulasi Dan Keluar</string>
+    <string name="HOME_MENU_RELOAD_SAVESTATE">Muat Semula Keadaan Emulasi Terakhir</string>
+    <string name="HOME_MENU_RECORDING">Mula/Henti Merekod</string>
+    <string name="HOME_MENU_TROPHIES">Trofi</string>
+    <string name="HOME_MENU_TROPHY_LIST_TITLE">Kemajuan Trofi: %0</string>
+    <string name="HOME_MENU_TROPHY_LOCKED_TITLE">Trofi Dikunci: %0</string>
+    <string name="HOME_MENU_TROPHY_HIDDEN_TITLE">Trofi Tersembunyi</string>
+    <string name="HOME_MENU_TROPHY_HIDDEN_DESCRIPTION">Trofi ini tersembunyi</string>
+    <string name="HOME_MENU_TROPHY_SHOW_HIDDEN_TROPHIES">Tunjukkan trofi tersembunyi</string>
+    <string name="HOME_MENU_TROPHY_HIDE_HIDDEN_TROPHIES">Sembunyikan trofi tersembunyi</string>
+    <string name="HOME_MENU_TROPHY_PLATINUM_RELEVANT">Berkaitan Platinum</string>
+    <string name="HOME_MENU_TROPHY_GRADE_BRONZE">Gangsa</string>
+    <string name="HOME_MENU_TROPHY_GRADE_SILVER">Perak</string>
+    <string name="HOME_MENU_TROPHY_GRADE_GOLD">Emas</string>
+    <string name="HOME_MENU_TROPHY_GRADE_PLATINUM">Platinum</string>
+
+	<string name="AUDIO_MUTED">Audio dimatikan</string>
+	<string name="AUDIO_UNMUTED">Audio dihidupkan</string>
+	<string name="AUDIO_CHANGED">Jumlah berubah ke %0</string>
+	<string name="PROGRESS_DIALOG_PROGRESS">Kemajuan:</string>
+	<string name="PROGRESS_DIALOG_PROGRESS_ANALYZING">Kemajuan: sedang dianalisis...</string>
+	<string name="PROGRESS_DIALOG_REMAINING">masih tinggal</string>
+	<string name="PROGRESS_DIALOG_DONE">selesai</string>
+	<string name="PROGRESS_DIALOG_FILE">fail</string>
+	<string name="PROGRESS_DIALOG_MODULE">modul</string>
+	<string name="PROGRESS_DIALOG_OF">daripada</string>
+	<string name="PROGRESS_DIALOG_PLEASE_WAIT">Sila tunggu</string>
+	<string name="PROGRESS_DIALOG_STOPPING_PLEASE_WAIT">Berhenti. Sila tunggu...</string>
+	<string name="PROGRESS_DIALOG_SAVESTATE_PLEASE_WAIT">Mencipta savestate. Sila tunggu...</string>
+	<string name="PROGRESS_DIALOG_SCANNING_PPU_EXECUTABLE">Mengimbas Ekseskusi PPU...</string>
+	<string name="PROGRESS_DIALOG_ANALYZING_PPU_EXECUTABLE">Menganalisis Ekseskusi PPU...</string>
+	<string name="PROGRESS_DIALOG_SCANNING_PPU_MODULES">Mengimbas Modul PPU...</string>
+	<string name="PROGRESS_DIALOG_LOADING_PPU_MODULES">Memuatkan Modul PPU...</string>
+	<string name="PROGRESS_DIALOG_COMPILING_PPU_MODULES">Mengkompilasi Modul PPU...</string>
+	<string name="PROGRESS_DIALOG_LINKING_PPU_MODULES">Menghubungkan Modul PPU...</string>
+	<string name="PROGRESS_DIALOG_APPLYING_PPU_CODE">Memohon Kod PPU...</string>
+	<string name="PROGRESS_DIALOG_BUILDING_SPU_CACHE">Membina cache SPU...</string>
+	<string name="EMULATION_PAUSED_RESUME_WITH_START">Tekan dan tahan butang MULA untuk meneruskan</string>
+	<string name="EMULATION_RESUMING">Sedang meneruskan...</string>
+	<string name="EMULATION_FROZEN">Aplikasi PS3 berkemungkinan rosak, anda boleh tutupnya.</string>
+	<string name="SAVESTATE_FAILED_DUE_TO_SAVEDATA">Gagal menyimpan keadaan: Simpanan permainan sedang dijalankan, tunggu sehingga selesai.</string>
+	<string name="SAVESTATE_FAILED_DUE_TO_VDEC">Gagal menyimpan keadaan: Video/cutscene berbasis VDEC sedang berjalan, tunggu sehingga selesai atau dayakan libvdec.sprx.</string>
+	<string name="SAVESTATE_FAILED_DUE_TO_MISSING_SPU_SETTING">Gagal menyimpan keadaan: Gagal mengunci keadaan SPU, mengaktifkan mod SPU-Bersesuai mungkin memperbaikinya.</string>
+	<string name="SAVESTATE_FAILED_DUE_TO_SPU">Gagal menyimpan keadaan: Gagal mengunci keadaan SPU, menggunakan SPU ASMJIT akan memperbaikinya.</string>
+	<string name="PROGRESS_DIALOG_PRELOADING_SHADER_CACHE">Menyediakan semula shader dari cakera...</string>
+
+</resources>

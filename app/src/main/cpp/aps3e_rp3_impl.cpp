@@ -374,6 +374,49 @@ extern std::string rp3_get_cache_dir(){
     return std::string (getenv("APS3E_DATA_DIR"))+"/cache/";
 }
 
+extern VkPhysicalDeviceLimits get_physical_device_limits(){
+    static const VkPhysicalDeviceLimits r=[]{
+        VkApplicationInfo appinfo = {};
+        appinfo.sType = VK_STRUCTURE_TYPE_APPLICATION_INFO;
+        appinfo.pNext = nullptr;
+        appinfo.pApplicationName = "aps3e-cfg-test";
+        appinfo.applicationVersion = VK_MAKE_VERSION(1, 0, 0);
+        appinfo.pEngineName = "nul";
+        appinfo.engineVersion = VK_MAKE_VERSION(1, 0, 0);
+        appinfo.apiVersion = VK_API_VERSION_1_0;
+
+        VkInstanceCreateInfo inst_create_info = {};
+        inst_create_info.sType = VK_STRUCTURE_TYPE_INSTANCE_CREATE_INFO;
+        inst_create_info.pApplicationInfo = &appinfo;
+
+        VkInstance inst;
+        if (vkCreateInstance(&inst_create_info, nullptr, &inst)!= VK_SUCCESS) {
+            __android_log_print(ANDROID_LOG_FATAL, LOG_TAG,"%s : %d",__func__,__LINE__);
+            aps3e_log.fatal("%s : %d",__func__,__LINE__);
+        }
+
+        uint32_t physicalDeviceCount = 0;
+        vkEnumeratePhysicalDevices(inst, &physicalDeviceCount, nullptr);
+        std::vector<VkPhysicalDevice> physicalDevices(physicalDeviceCount);
+        vkEnumeratePhysicalDevices(inst, &physicalDeviceCount, physicalDevices.data());
+
+        assert(physicalDeviceCount==1);
+
+        VkPhysicalDeviceProperties deviceProperties;
+        vkGetPhysicalDeviceProperties(physicalDevices[0], &deviceProperties);
+
+        vkDestroyInstance(inst, nullptr);
+
+        return deviceProperties.limits;
+
+    }();
+
+    return r;
+}
+
+extern bool vk_limit_max_vertex_output_components_le_64(){
+    return get_physical_device_limits().maxVertexOutputComponents<=64;
+}
 
 extern bool cfg_vertex_buffer_upload_mode_use_buffer_view(){
     static const bool r=[]{
@@ -383,44 +426,7 @@ extern bool cfg_vertex_buffer_upload_mode_use_buffer_view(){
             case vertex_buffer_upload_mode::buffer:
                 return false;
             case vertex_buffer_upload_mode::_auto:
-                //TODO 默认驱动
-                return []()->bool{
-                    VkApplicationInfo appinfo = {};
-                    appinfo.sType = VK_STRUCTURE_TYPE_APPLICATION_INFO;
-                    appinfo.pNext = nullptr;
-                    appinfo.pApplicationName = "aps3e-cfg-test";
-                    appinfo.applicationVersion = VK_MAKE_VERSION(1, 0, 0);
-                    appinfo.pEngineName = "nul";
-                    appinfo.engineVersion = VK_MAKE_VERSION(1, 0, 0);
-                    appinfo.apiVersion = VK_API_VERSION_1_0;
-
-                    VkInstanceCreateInfo inst_create_info = {};
-                    inst_create_info.sType = VK_STRUCTURE_TYPE_INSTANCE_CREATE_INFO;
-                    inst_create_info.pApplicationInfo = &appinfo;
-
-                    VkInstance inst;
-                    if (vkCreateInstance(&inst_create_info, nullptr, &inst)!= VK_SUCCESS) {
-                        __android_log_print(ANDROID_LOG_FATAL, LOG_TAG,"%s : %d",__func__,__LINE__);
-                        aps3e_log.fatal("%s : %d",__func__,__LINE__);
-                    }
-
-                    // 获取物理设备数量
-                    uint32_t physicalDeviceCount = 0;
-                    vkEnumeratePhysicalDevices(inst, &physicalDeviceCount, nullptr);
-                    std::vector<VkPhysicalDevice> physicalDevices(physicalDeviceCount);
-                    vkEnumeratePhysicalDevices(inst, &physicalDeviceCount, physicalDevices.data());
-
-                    assert(physicalDeviceCount==1);
-
-                    VkPhysicalDeviceProperties deviceProperties;
-                    vkGetPhysicalDeviceProperties(physicalDevices[0], &deviceProperties);
-
-                    const bool use_buffer_view=deviceProperties.limits.maxTexelBufferElements>=64*1024*1024;//>=64M
-                    vkDestroyInstance(inst, nullptr);
-
-                    return use_buffer_view;
-
-                }();
+                return get_physical_device_limits().maxTexelBufferElements>=64*1024*1024;//>=64M
         }
     }();
     return r;

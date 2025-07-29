@@ -3,6 +3,12 @@
     <!--string name="app_name">aPS3e Premium</string-->
 	<string name="app_name">aPS3e</string>
 
+	<string name="use_cores_ppu">Use Cores(PPU)</string>
+	<string name="use_cores_spu">Use Cores(SPU)</string>
+	<string name="use_cores_rsx">Use Cores(RSX)</string>
+	<string name="emulator_settings_core_thread_affinity_mask">Thread Affinity Mask</string>
+	<string name="create_shortcut">Create Shortcut</string>
+	<string name="loading">Loading...</string>
 	<string name="resolution_not_support">Resolution or aspect ratio is not supported\nThe current game only supports:\n%s\n\nPlease modify with the following settings:\n%s\n%s\n</string>
 	<string name="show_game_info">Show Game Info</string>
 	<string name="quick_start_page">Quick Start Page</string>

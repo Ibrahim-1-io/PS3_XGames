@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+	<string name="use_cores_ppu">코어(PPU) 사용</string>
+	<string name="use_cores_spu">코어(SPU) 사용</string>
+	<string name="use_cores_rsx">코어(RSX) 사용</string>
+	<string name="emulator_settings_core_thread_affinity_mask">쓰레드 친화성 마스크</string>
+	<string name="create_shortcut">바로 가기 만들기</string>
+	<string name="loading">로딩...</string>
 <string name="resolution_not_support">해상도 또는 화면 비율이 지원되지 않음\n현재 게임에서 지원하는 항목:\n%s\n\n다음 설정을 통해 수정하십시오:\n%s\n%s\n</string>
 <string name="show_game_info">게임 정보 표시</string>
 <string name="quick_start_page">빠른 시작 페이지</string>

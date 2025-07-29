@@ -24,6 +24,9 @@ project(aps3e LANGUAGES C CXX)
 
 add_library(lang_System SHARED lang_System.cpp)
 
+add_library(hardware_ProcessorInfo SHARED hardware_ProcessorInfo.cpp)
+target_link_libraries(hardware_ProcessorInfo PRIVATE vulkan)
+
 add_subdirectory(rpcs3 EXCLUDE_FROM_ALL)
 
 add_library(emu SHARED)

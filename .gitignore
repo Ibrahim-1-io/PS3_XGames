@@ -22,3 +22,4 @@ app/src/main/cpp/ffmpeg_out/
 app/src/main/cpp/glslang_out/
 
 app/src/main/lib/
+app/src/main/libs/

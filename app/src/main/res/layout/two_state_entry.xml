@@ -17,7 +17,7 @@
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:id="@+id/lib_type"/>
+        android:id="@+id/state"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -25,7 +25,7 @@
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:id="@+id/lib_name"/>
+        android:id="@+id/text"/>
 
 </RelativeLayout>
 

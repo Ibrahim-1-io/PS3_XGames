@@ -2,6 +2,12 @@
 
 <resources>
 
+    <string name="use_cores_ppu">コアを使用する（PPU）</string>
+    <string name="use_cores_spu">コアを使用する（SPU）</string>
+    <string name="use_cores_rsx">コアを使用する（RSX）</string>
+    <string name="emulator_settings_core_thread_affinity_mask">スレッド アフィニティ マスク</string>
+    <string name="create_shortcut">ショートカットを作成</string>
+    <string name="loading">読み込み中...</string>
     <string name="resolution_not_support">解像度またはアスペクト比はサポートされていません\n現在のゲームがサポートしているのは次の通りです:\n%s\n\n以下の設定で変更してください:\n%s\n%s\n</string>
     <string name="show_game_info">ゲーム情報の表示</string>
     <string name="quick_start_page">クイックスタートページ</string>
